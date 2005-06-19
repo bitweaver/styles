@@ -60,17 +60,14 @@
 	--></script>
 	<script type="text/javascript" src="{$gBitLoc.KERNEL_PKG_URL}bitweaver.js"></script>
 
-	{*if $gBitLoc.browser.client ne 'sf' and $gBitSystemPrefs.feature_jstabs eq 'y'}
-		<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}tabs/listener.js"></script>
-		<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}tabs/tabs.js"></script>
-		<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}tabs/tabs_load.js"></script>
-	{/if*}
-	<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}tabs/tabpane.js"></script>
+	{if $gBitSystemPrefs.disable_jstabs ne 'y'}
+		<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}js/tabs/tabpane.js"></script>
+	{/if}
 
 	{if $gBitLoc.browser.client eq 'ie'}
 		<!-- this wierdness fixes png display and CSS driven dropdown menus in GUESS WHAT BROWSER -->
 		<!--[if gte IE 5.5000]>
-			<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}pngfix.js"></script>
+			<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}js/pngfix.js"></script>
 		<![endif]-->
 		<!--[if gte IE 5.0]>
 			<script type="text/javascript" src="{$gBitLoc.KERNEL_PKG_URL}bitweaver.js"></script>
@@ -79,7 +76,7 @@
 					nexusMenus[0] = 'nav'
 				{php}if( is_file( TEMP_PKG_PATH.'nexus/modules/hoverfix_array.js' ) ) { include_once( TEMP_PKG_PATH.'nexus/modules/hoverfix_array.js' ); }{/php}
 			</script>
-			<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}hoverfix.js"></script>
+			<script type="text/javascript" src="{$gBitLoc.THEMES_PKG_URL}js/hoverfix.js"></script>
 		<![endif]-->
 	{/if}
 
@@ -112,5 +109,5 @@
 	<iframe width="0" height="0" border="0" src="{$gBitLoc.CALENDAR_PKG_URL}minical_reminders.php" />
 {/if}
 {if $gBitSystemPrefs.feature_helppopup eq 'y'}
-	{popup_init src="`$gBitLoc.THEMES_PKG_URL`overlib.js"}
+	{popup_init src="`$gBitLoc.THEMES_PKG_URL`js/overlib.js"}
 {/if}
