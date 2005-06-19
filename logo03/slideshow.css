@@ -1,0 +1,15 @@
+/* this css can be used to generate a new slideshow style
+ * tag settings are not mentioned here, but can be set to override site settings
+ */
+
+/* id surrounding entire slideshow */
+#slideshow {}
+
+/* general wiki page classes */
+.header {}
+h1 {}
+.body {}
+
+/* navigation at bottom of page */
+.structure {}
+.navigation {}

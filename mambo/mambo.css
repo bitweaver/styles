@@ -1,0 +1,349 @@
+@import url( ../../base.css );
+/* this theme is based on one of the themes that is shipped with mambo
+ * http://www.mamboserver.com/
+ * i think the name of the theme is solar flare ***/
+
+				/*** global settings ***/
+/* these settings should be at the top of the css since they are the defaults and can be overridden further down */
+body {
+	font-family: verdana, tahoma, helvetica, arial, sans-serif;
+	color: #777;
+	font-size: 10px;
+	padding: 10px;
+	margin: 0;
+	background-color: #fff;
+	line-height: 14px;
+}
+th {}
+td {
+	vertical-align: top;
+}
+hr {}
+small {}
+h1, h2, h3 {
+	background: transparent url( images/shade.png ) repeat-x left bottom;
+	border-bottom: 1px solid #cccccc;
+	margin: 10px 0 2px 0;
+	font-size: 10px;
+	font-weight: normal;
+	color: #666;
+}
+h1 {}
+h2 {}
+h3 {}
+a {
+	color: #f60;
+	text-decoration: none;
+}
+a:hover {
+	color: #fc0;
+}
+
+				/*** site layout ***/
+#tikibody {
+	position: absolute;
+	left: 50%;
+	margin-left: -404px;
+	width: 802px;
+	padding: 2px;
+	border: 1px solid #cccccc;
+}
+#bittopbar {
+	background: #f60;
+	border: 1px solid #ccc;
+	margin: 0px 0px 2px 0px;
+	padding: 5px 0 4px 0;
+}
+#bittop {
+	height: 150px;
+	width: 634px;
+	float: left;
+	margin-bottom: 2px;
+}
+#bitleft {
+	width: 160px;
+	float: left;
+	border: 1px solid #cccccc;
+	padding: 2px;
+	clear: left;
+}
+#bitright {
+	width: 160px;
+	float: right;
+	border: 1px solid #cccccc;
+	padding: 2px;
+}
+#tikimain {
+	float: left;
+	width: 460px;
+	background: #fff;
+	border: 1px solid #cccccc;
+	padding: 2px;
+	margin-left: 2px;
+}
+#tikibottom {
+	clear: both;
+}
+#tikiprint {}
+#slideshow {}
+
+				/*** common classes ***/
+.display, .admin {}
+.floaticon {
+	padding: 4px 4px 0 0;
+}
+.preview {}
+.header h1 {
+	color: #666;
+	text-transform: uppercase;
+	text-align: left;
+	background: transparent url( images/boxtitle.gif ) repeat-x left top;
+	padding: 4px 0 2px 4px;
+	margin: 0;
+	border: 0;
+}
+.post h1 {
+	background: transparent url( images/shade.png ) repeat-x left bottom;
+	border-bottom: 1px solid #cccccc;
+	margin: 10px 0 2px 0;
+}
+.post {
+	margin: 12px 10px;
+}
+.header, .header a, .header a:hover {
+	color: #777;
+}
+.date {
+	color: #ccc;
+}
+.header h2 {
+	padding: 3px 3%;
+	font-weight: normal;
+	color: #333;
+	border-bottom: 1px solid #cccccc;
+	background: #fff;
+}
+.body {
+	padding: 2px;
+}
+.introduction {}
+.introductionimage {}
+.content {}
+.footer {}
+.actionicon {}
+
+				/*** boxes ***/
+.box {
+	border: 1px solid #cccccc;
+	padding: 2px;
+}
+.boxtitle {
+	color: #666;
+	text-transform: uppercase;
+	text-align: left;
+	background: transparent url( images/boxtitle.gif ) repeat-x left top;
+	padding: 4px 0 2px 4px;
+}
+.boxtitle a {
+	color: #666;
+}
+.boxcontent {
+	padding: 2px;
+}
+.module {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.module .boxcontent {
+	padding: 0;
+}
+#tikimain .menu .menuicon {
+	text-align: center;
+	padding: 0 0 5px 0;
+}
+#tikimain .menu .boxtitle {
+	background-position: left bottom;
+}
+.closebutton {
+	position:absolute;
+	top:4px;
+	right:4px;
+}
+
+				/*** menus ***/
+.menu .head {
+	background: #f60 url( images/link.gif ) no-repeat 4px 50%;
+	border-top: 1px solid #fff;
+	margin: 0px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px 0px 5px 18px;
+	text-decoration: none;	
+}
+.menu .head:hover {
+	background: #fc0 url( images/link_h.gif ) no-repeat 4px 50%;
+	color: #f60;
+}
+.menu .item {
+	background: transparent url( images/links.gif ) no-repeat 5px 50%;
+	padding: 1px 0 1px 18px;
+}
+.menu .item:hover {
+	background: transparent url( images/links_h.gif ) no-repeat 5px 50%;
+	color: #f60;
+}
+#bittopbar .menu .head,
+#bittopbar .menu .item {border: 0;}
+
+/* css dropdown settings */
+.hor .head {
+	background: #f60;
+	padding: 3px 5px;
+}
+.hor .head:hover {
+	background: #fc0;
+}
+.hor .item {
+	background: #f60;
+	border-top: 1px solid #fff;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+	padding: 3px 5px;
+	text-decoration: none;	
+}
+.hor ul .item {
+	background: #fff;
+	font-size: 10px;
+	font-weight: normal;
+	color: #f60;
+}
+.hor .item:hover {
+	background-image: none;
+}
+.hor li ul {
+	border-color: #000;
+}
+.hor li li:hover {
+	background: #fc0;
+}
+.hor li li ul {
+	margin-top: -22px;
+}
+				/*** parsed elements ***/
+.tikibar {}
+.tikicache {}
+.tikibox {
+	padding: 3px;
+	border: 1px solid gray;
+}
+.tikitable {
+	background: #eee;
+}
+.tikitable td {
+	border: 1px solid #fff;
+}
+
+				/*** forms ***/
+input,select,textarea {
+	font-family: verdana, tahoma, helvetica, arial, sans-serif;
+	color: #666;
+	font-size: 12px;
+}
+fieldset {
+	border: 1px dashed #cccccc;
+	padding: 5px 0;
+	margin: 5px 0 20px 0;
+}
+legend {
+	color: #fc0;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: arial, sans-serif;
+	background: #f60;
+	margin: 2px;
+	padding: 3px 10px;
+	border: 1px solid #ccc;
+}
+label:hover {
+	color: #333;
+}
+.row {}
+.formlabel {
+	background: #e5e5e5;
+	border-top: 1px solid #ddd;
+	border: 1px solid #ccc;
+	margin-top: 1px;
+	padding: 0 3px 0 0;
+	width: 35%;
+}
+.forminput {
+	width: 96%;
+}
+.formhelp {}
+.submit {}
+.clear {}
+.minifind {}
+
+				/*** data tables ***/
+.other {}
+.panel {}
+.panelsubmitrow {}
+.data {}
+.odd {}
+.even {
+	color: #666;
+	background: #cccccc;
+}
+tr.odd:hover, tr.even:hover {
+	color: #000;
+	background: #fed;
+}
+.norecords {}
+.find {}
+
+				/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font:10px normal verdana,arial,sans-serif;
+	margin:0 3px;
+	padding:3px 5px 1px 5px;
+	background:transparent url( images/tab_shade.png ) repeat-x;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding-top:2px;
+	border-top:2px solid #f90;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	padding:2px 8px 4px 8px;
+	margin:0 0px;
+	border-top:2px solid #f90;
+	background:#fff;
+	color:#000;
+}
+.tabsystem .tabpage {
+	border:1px solid #ccc;
+	padding:1.5em;
+}
+
+				/*** navigation bars ***/
+.navbar {
+	text-align: right;
+	margin: 10px 0;
+}
+.navbar a {
+	margin: 0 5px;
+}
+.selected {}
+.pagination {}
+
+				/*** bottom bar ***/
+.babelfish {}
+
+				/*** settings that have to be at the end ***/
+.highlight {}

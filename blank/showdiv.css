@@ -1,0 +1,20 @@
+/******************************************************************************************/
+/*** Show <div> structure of page ***/
+div:before, div:after {
+	background-color: White !important;
+	color: Purple !important;
+	font-weight: bolder !important;
+	font-size: 10px !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	text-decoration: none !important;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+	white-space: nowrap !important;
+}
+
+div:before {content: '<div>' !important;}
+div[id]:before {content: '<div id="' attr(id) '">' !important;}
+div[class]:before {content: '<div class="' attr(class)'">' !important;}
+div:after {content: '</div>' !important;}
+div[id]:after {content: '</div> #' attr(id) !important;}
+div[class]:after {content: '</div> .' attr(class) !important;}

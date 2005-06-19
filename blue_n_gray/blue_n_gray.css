@@ -1,0 +1,224 @@
+@import url( ../../base.css );
+/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1 2005/06/19 06:11:02 bitweaver Exp $ */
+/*
+ * if you require information on how this css is set up and how to create a theme, please visit
+ * - http://www.bitweaver.org/wiki/index.php?page_id=94
+ * - view the files included in the theme blank.
+ */
+body {
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 12px;
+	color: #333;
+}
+a {
+	color: #6f86a4;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: #33c;
+}
+h1 {
+	font-size: 1.4em;
+}
+h2 {
+	font-size: 1.2em;
+}
+h3 {
+	font-size: 1.0em;
+}
+				/* common layout */
+#bittop {
+	background: #6f86a4;
+	padding: 20px 0 5px 20px;
+}
+#bittop a {
+	color: #ccc;
+}
+#bittop div {
+	text-align: right;
+}
+#bittop h1,#bittop h3 {
+	padding: 0;
+	margin: 0;
+}
+#bitleft {
+	padding: 0 10px;
+}
+#bitright {
+	padding: 0 10px;
+}
+#bitleft,#bitright {
+	background: #ccc;
+}
+#tikimain {
+	padding: 0 10px;
+}
+#bittopbar {
+	background: #6f86a4;
+	padding: 2px;
+	font-size: 10px;
+	line-height: 18px;
+}
+.header {
+	padding: 2px;
+}
+.date {
+	font-size: 10px;
+}
+.content {}
+.footer {
+	color: #999;
+}
+.storage {
+	border: 1px solid #dedede;
+	background: #6f86a4;
+}
+.storage .item {
+	padding: 3px;
+}
+.storage a {
+	border: 0;
+}
+.comment {
+	border-top: 3px solid #ccc;
+}
+				/* menus */
+.menu .head {
+	display: block;
+}
+#bitleft .menu .item,#bitright .menu .item {
+	font-weight: normal;
+}
+#bittopbar a {
+	color: #ccc;
+}
+#bittopbar a:hover {
+	color: #eee;
+}
+#bittopbar .menu li ul {
+	background: #6f86a4;
+	padding: 5px;
+	border:0;
+}
+#bittopbar .menu li ul ul {
+	margin-top: -22px;
+}
+				/* parsed classes */
+.tikibox {
+	background-color: #6f86a4;
+	border: 1px solid #dedede;
+	padding: 5px;
+}
+.tikibar {
+	letter-spacing: 4px;
+	font-weight: bold;
+	background-color: #6f86a4;
+	border: 1px solid #dedede;
+	padding: 2px;
+}
+.tikitable td {
+	border: 1px solid #dedede;
+}
+				/* data tables */
+/* submission panels */
+/* any table displaying data */
+.data {
+	border: 2px solid #dedede;
+}
+/* alternating odd and even rows in tables */
+.odd {
+	background: #eee;
+}
+.even {}
+				/* forms */
+fieldset {
+	border: 1px solid #ddd;
+	background: #eee;
+	padding: 0.5em;
+}
+legend {
+	padding: 2px;
+	margin: 0 0 1em 0;
+	font-weight: bold;
+	color: #666;
+	font-size: 1.2em;
+	border: 1px solid #ddd;
+	background: #eee;
+}
+input,textarea,select {
+	font-size: 1em;
+}
+.formlabel {
+	font-weight: bold;
+	color: #666;
+	width: auto;
+	text-align: left;
+}
+.forminput {
+	width: 95%;
+	margin-bottom: 1em;
+}
+.formhelp {
+	font-size: 10px;
+}
+/* find bar */
+.minifind {
+	background: #6f86a4;
+	border: 1px solid #dedede;
+	margin: 2px 0;
+}
+				/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font:10px normal verdana,arial,sans-serif;
+	margin:0 3px;
+	padding:3px 5px 1px 5px;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	background: #ddd;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding-top:2px;
+	border-top:2px solid #6f86a4;
+	background: #eee;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	padding:2px 8px 4px 8px;
+	margin:0 0px;
+	border-top:2px solid #6f86a4;
+	background:#fff;
+	color:#000;
+}
+.tabsystem .tabpage {
+	border:1px solid #ccc;
+	padding:1.5em;
+}
+				/* navigation bars and tabs */
+.navbar {
+	margin: 5px 0;
+}
+.navbar a {
+	padding: 0 5px;
+}
+/* pagination at the bottom of pages with listings */
+.pagination {
+	margin: 10px 0;
+}
+				/* boxes */
+.box {
+	margin: 10px 0;
+}
+.boxtitle {
+	text-align: left;
+	padding: 2px;
+	font-weight: bold;
+	color: #666;
+	font-size: 1.2em;
+}
+.boxcontent {
+	padding: 2px;
+}

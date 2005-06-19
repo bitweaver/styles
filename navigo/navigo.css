@@ -1,0 +1,498 @@
+@import url( ../../base.css );
+/*******************************************************************************************/
+/*** global settings ***/
+/* these settings should be at the top of the css since they are the defaults and can be overridden further down */
+body {
+	font-family: Luxi Sans, Nimbus Sans, Century Gothic, Trebuchet MS, Lucida Sans Unicode, Microsoft Sans Serif, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #679;
+	background-image: url( images/page_bg.gif );
+	background-color: white;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: bottom;
+	height: 100%;
+	line-height: 120%;
+}
+th {
+	vertical-align: bottom;
+	background: #fff;
+	color: #000;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	font-size: 10px;
+}
+hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+	padding: 0;
+	margin: 0;
+}
+li {
+	margin-bottom: 10px;
+}
+pre {
+	background: #eee;
+	border: 1px solid #ddd;
+	padding: 5px;
+	color: #900;
+	width: 650px;
+	line-height: 120%;
+}
+/* set the default font-size on the entire page | annoyingly this has to be one in this way for MSIE */
+input, select {}
+textarea {}
+small {}
+/* general page title settings on every page */
+h1 {
+	color: #666;
+	font-size: 18px;
+}
+h2 {
+	color: #777;
+	font-size: 16px;
+}
+h3 {
+	color: #888;
+	font-size: 14px;
+}
+h1, h2, h3 {
+	padding: 3px 20px;
+	font-weight: 600;
+}
+/* links */
+a {
+	color: #66a;
+	text-decoration: none;
+}
+.body a {
+	color: #000;
+}
+a:hover {
+	color: #aaf;
+}
+/* images */
+img {
+	border: 0;
+}
+a img:hover {}
+/*******************************************************************************************/
+/*** site layout ***/
+#tikilogo {
+	color: #eee;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url( images/top_bg.gif );
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: bottom;
+	background-color: #506f8d;
+	width: 160px;
+}
+#tikibody {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#tikilayouttable {
+	border-collapse: collapse;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+#bittopbar {
+	padding: 3px;
+	margin: 0px;
+	color: #eee;
+	background-image: url( images/top_bg.gif );
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: bottom;
+	background-color: #506f8d;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+#bittopbar a {
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	color: #eee;
+}
+#bittopbar a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+#bitleft, #bitright {
+	font-size: 11px;
+	padding: 0 5px;
+	width: 150px;
+}
+#tikimain {
+	height: 1px;
+	padding: 0;
+	margin: 0;
+	width: 700px;
+}
+#tikimainfx {
+	border: 1px solid #4f6e8c;
+	border-top: 0;
+	background: #fff;
+	padding: 30px 10px;
+}
+#tikibottom {
+	vertical-align: top;
+}
+#tikiprint {}
+/*******************************************************************************************/
+/*** common classes ***/
+.preview {
+	border-top: 5px solid #ccc;
+	border-bottom: 5px solid #ccc;
+	background: #eee;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+.header {}
+.header h1 {
+	padding: 5px 0 5px 80px;
+	text-align: left;
+}
+.header h1, .header h1 a, .header h1 a:hover {
+	color: #666;
+}
+.date {
+	font-size: 10px;
+	padding: 0 0 0 20px;
+}
+.header h2 {
+	font-weight: normal;
+	color: #666;
+	padding: 0 5px 0 15px;
+}
+.body {
+	border-top: 5px solid #eee;
+	border-bottom: 5px solid #eee;
+}
+.introduction {}
+.introductionimage {}
+.content {}
+.footer {
+	text-align: left;
+	font-size: 10px;
+	color: #aaa;
+}
+.actionicon {
+	float: right;
+}
+/******************************************************************************************/
+/*** boxes ***/
+.box {
+	margin: 10px 0px;
+}
+.boxtitle {
+	color: #000;
+}
+.boxcontent {
+	background: #eee;
+	border: 1px solid #ddd;
+	padding: 2px;
+}
+.warning {
+	padding: 10px;
+	background: #fdd;
+	border: 1px solid #000;
+}
+.help {}
+/******************************************************************************************/
+/*** menus ***/
+/* first we set the general settings */
+.menu .head {
+	margin-top: 7px;
+	font-size: 12px;
+}
+.menu .head:hover, .menu .head:active {
+	background-image: url( images/down.gif );
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.menu .item {
+	padding: 0 0 0 8px;
+	font-size: 10px;
+}
+.menu .item:hover {
+	background-image: url( images/arrow.gif );
+	background-repeat: no-repeat;
+	background-position: 1px 3px;
+}
+/* icons in menu pages area */
+.menuicon {
+	float: right;
+}
+/******************************************************************************************/
+/*** parsed text elements ***/
+/* -=...=- */
+.tikibar {
+	padding: 1px;
+	margin: 3px 0;
+	font-weight: bold;
+}
+/* cached pages */
+.tikicache {}
+/* links to internal pages */
+.tikitable {
+	background: #ddd;
+	border: 1px solid #4f6e8c;
+}
+.tikitable td {
+	padding: 2px;
+	font-size: 12px;
+	border: 1px solid #fff;
+}
+/******************************************************************************************/
+/*** calendar ***/
+.tikicalendar.tikicalendar table {
+	font-size: 10px;
+}
+.tikicalendar.tikicalendar table th {
+	vertical-align: top;
+}
+.tikicalendar.tikicalendar table td {
+	border-top: 1px solid #ccc;
+}
+.tikicalendar .navigation table td {
+	border: 0;
+}
+.popup {
+	border: 1px solid #4f6e8c;
+	font-size: 12px;
+}
+.weeknumber {
+	border: 0;
+	border-right: 1px solid #ccc;
+	padding-top: 2px;
+}
+.calday {}
+.calcontent {}
+/* the calendar table that displays the days, dates and data */
+table.tikicalendar {}
+/* days in the month view, that are not part of the selected month */
+.notmonth {}
+/* stuff */
+.Cal0		{background: #eee;}
+.Cal1		{background: #ddf;}
+.Cal2		{background: #fdd;}
+.Calwiki	{background: #ffc;}
+.Calblog	{background: #fcf;}
+.Calgal		{background: #cff;}
+.Calart		{background: #ccf;}
+.Calforum	{background: #cfc;}
+.Caldir		{background: #fcc;}
+.Calfgal	{background: #ffd;}
+.Calfaq		{background: #fdf;}
+.Calquiz	{background: #dff;}
+.Caltrack	{background: #ddf;}
+.Calsurv	{background: #dfd;}
+.Calnl		{background: #fdd;}
+.Caleph		{background: #fff;}
+.Calchart	{background: #fff;}
+.Cal0,.Cal1,.Cal2,
+.Calwiki,.Calblog,.Calgal,
+.Calart,.Calforum,.Caldir,
+.Calfgal,.Calfaq,.Calquiz,
+.Caltrack,.Calsurv,.Calnl,
+.Caleph,.Calchart {padding: 2px;}
+/******************************************************************************************/
+/*** structures ***/
+.structure {}
+.navigation {
+	font-size: 10px;
+}
+.path {
+	font-size: 10px;
+}
+/******************************************************************************************/
+/*** categories ***/
+/* this section really has to be worked on at some point */
+.category {
+	font-size: 12px;
+}
+.tree {
+	font-size: 12px;
+	padding-left: 20px;
+}
+.treenode {}
+.categpath {}
+.catname {}
+.catlists {}
+/******************************************************************************************/
+/*** directories ***/
+.directory h1 {
+	text-align: left;
+	margin: 0;
+}
+.subcategories {
+	border-collapse: separate;
+	font-size: 12px;
+}
+.subcategories td {
+	background: #eee;
+	border: 1px solid #ddd;
+	padding: 5px;
+	vertical-align: top;
+}
+.subcategory {
+	font-size: 16px;
+}
+.subsubcategory {
+}
+.site {
+	border: 1px solid #ddd;
+	margin: 10px 0px;
+}
+.site.list {
+	border: 0;
+}
+.related {}
+/******************************************************************************************/
+/*** user messages and priorities in the calendar ***/
+prio1 {}
+prio2 {}
+prio3 {}
+prio4 {}
+prio5 {}
+prio6 {}
+prio7 {}
+prio8 {}
+prio9 {}
+/******************************************************************************************/
+/*** articles ***/
+.articles {}
+.articlerating {}
+/******************************************************************************************/
+/*** image galleries ***/
+.thumbnails td {
+	vertical-align: bottom;
+	height: 150px;
+	font-size: 10px;
+}
+.showimage {
+	text-align: center;
+}
+.caption {}
+/******************************************************************************************/
+/*** bitforums ***/
+.tikiforum.data {}
+.tikiforum.footer {}
+/* threads that are ... */
+.unread {}
+.read {}
+/******************************************************************************************/
+/*** images and icons ***/
+/* icons */
+.icon, .icon:hover {}
+/* floating help and/or admin icon at the top of admin pages */
+.floaticon {}
+/******************************************************************************************/
+/*** data tables ***/
+.other {}
+/* submission panels */
+.panel {
+	font-size: 0.8em;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+}
+/* submission buttons in panels */
+.panelsubmitrow td {
+	border-top: 1px solid #ccc;
+	background: #ddd;
+}
+/* any table displaying data */
+.data {
+	font-size: 0.8em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+}
+.data td {
+	vertical-align: top;
+}
+/* alternating odd and even rows in tables */
+.odd {
+	background: #eee;
+}
+.even {}
+/* when no data is found - either a <tr> or a <div> */
+.norecords {
+	color: #faa;
+	text-align: center;
+}
+/* find table found on pages with listings */
+.find {
+	border-top: 5px solid #eee;
+	border-bottom: 5px solid #eee;
+	margin: 10px 0;
+}
+				/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font-family: Luxi Sans, Nimbus Sans, Century Gothic, Trebuchet MS, Lucida Sans Unicode, Microsoft Sans Serif, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-weight: normal;
+	margin:0 3px;
+	padding:3px 5px 1px 5px;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding-top:2px;
+	border-top:2px solid #f90;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	padding:2px 8px 4px 8px;
+	margin:0 0px;
+	border-top:2px solid #f90;
+	background:#fff;
+	color:#000;
+}
+.tabsystem .tabpage {
+	border:1px solid #ccc;
+	padding:1.5em;
+}
+/******************************************************************************************/
+/*** navigation bars and tabs ***/
+.navbar {
+	font-size: 10px;
+}
+.navbar a {
+	padding: 0 5px;
+}
+/* pagination at the bottom of pages with listings */
+.pagination {
+	width: 150px;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 10px;
+	color: #fff;
+	background: #ccc;
+	text-align: center;
+}
+/******************************************************************************************/
+/*** bottom bar ***/
+.babelfish {}
+/******************************************************************************************/
+/*** settings that have to be at the end ***/
+.highlight, a.highlight {
+	color: #777;
+}

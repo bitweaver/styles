@@ -1,0 +1,261 @@
+@import url( ../../base.css );
+				/*** global settings ***/
+/* these settings should be at the top of the css since they are the defaults and can be overridden further down */
+body {
+	font-family: verdana, tahoma, helvetica, arial, sans-serif;
+	color: #999;
+	font-size: 60%;
+	margin: 0;
+	padding: 1em;
+	background: #fff;
+	line-height: 2em;
+	height: 100%;
+}
+th {}
+hr {}
+input,select {}
+textarea {}
+small {}
+h1 {
+	color: #7794ac;
+	font-size: 140%;
+	font-weight: bold;
+	padding: 2em 0 0.5em 0;
+	margin: 0;
+	border-bottom: 1px solid #7794ac;
+}
+h2 {
+	color: #7794ac;
+	font-size: 120%;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #7794ac;
+}
+h3 {
+	color: #7794ac;
+	font-size: 100%;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #7794ac;
+}
+a {
+	color: #FF9933;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+				/*** site layout ***/
+#bittop {}
+#nav ul {
+	padding:5px;
+}
+#nav li li ul {
+	margin-top:-22px;
+}
+#nav .head {
+	background:#fff;
+}
+#bitmodules {
+	width: 20em;
+	position: absolute;
+	right: 1em;
+	padding: 1em;
+}
+#tikimain {
+	margin: 0em 24em 1em 0em;
+	padding: 0em 1em 1em 1em;
+	overflow: auto;
+}
+#tikibottom {
+	margin: 0em 24em 1em 0em;
+}
+#tikiprint {}
+#slideshow {}
+
+				/*** common classes ***/
+.display, .admin {}
+.preview {}
+.header, .header a, .header a: hover {
+	color: #f93;
+}
+.date {
+	text-align: right;
+	color: #ccc;
+}
+.post .date {
+	margin-top: -20px;
+}
+.body {}
+.introduction {}
+.introductionimage {}
+.content {}
+.footer {}
+.actionicon .icon {
+	border-right: 1px dotted #7794ac;
+}
+
+				/*** boxes ***/
+.box {}
+.boxtitle {
+	color: #7794ac;
+	font-size: 120%;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #e5e5e5;
+}
+.boxcontent {
+	margin: 1.5em 0;
+}
+.module {}
+.popup {
+	padding: 10px;
+	border: 1px solid #7794ac;
+	text-align: justify;
+	background: transparent url( images/popup.png ) repeat;
+}
+.popup .boxtitle {
+	height: 24px;
+	background: transparent url( images/extended_help.png ) no-repeat 50% 50%;
+}
+
+				/*** menus ***/
+.menu .head {
+	color: #999;
+}
+.menu .head: hover {}
+.menu .item {}
+.menu .item:hover {}
+
+				/*** parsed elements ***/
+.tikibar {}
+.tikicache {}
+.tikibox {
+	padding: 3px;
+	border: 1px solid #7794ac;
+}
+.tikitable {
+	background: #eee;
+}
+.tikitable td {
+	border: 1px solid #fff;
+}
+
+				/*** forms ***/
+input,select,textarea {
+	font-family: verdana, tahoma, helvetica, arial, sans-serif;
+	color: #666;
+	font-size: 120%;
+}
+fieldset {
+	border: 1px dashed #e5e5e5;
+	padding: 5px 0;
+	width: 95%;
+	margin: 0 auto;
+}
+legend {
+	padding: 0 2px;
+	background: #fff;
+	letter-spacing: 3px;
+	border: 1px dashed #e5e5e5;
+}
+label {
+	color: #666;
+}
+.row {}
+.formlabel {}
+.formfeedback {}
+.forminput {}
+.formhelp {}
+.submit {}
+.clear {}
+.minifind {}
+
+				/*** data tables ***/
+.other {}
+.panel {}
+.panelsubmitrow {}
+.data {}
+.odd {}
+.even {
+	background: #efefef;
+}
+.norecords {}
+.find {}
+
+/* tabstyle */
+.tabsystem .tabcontainer .tab, .tabsystem .tabcontainer.tab-hover, .tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font:10px verdana,arial,sans-serif;
+	margin:0 3px;
+	padding:4px 5px 1px 5px;
+	background:transparent url( images/tab_shade.png ) repeat-x;
+	border:1px solid #bbb;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding:3px 5px 1px 5px;
+	border-top:2px solid #f60;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	margin:0 0px;
+	color:#000;
+	padding:2px 8px 4px 8px;
+	background:#fff;
+	border-top:2px solid #f60;
+}
+.tabsystem .tabpage {
+	border:1px solid #bbb;
+	margin:0;
+	padding:1em;
+}
+/* rounded tab tops - does not work in MSIE - if active, it screws up Konqeror * /
+.tabsystem .tabcontainer .tab:before {
+	line-height:0.1;
+	font-size:1px;
+	background:transparent url( images/tab_tr_n.gif ) no-repeat top right;
+	margin:-5px -6px 0 -6px;
+	height:3px;
+	display:block;
+	border:none;
+	content:url( images/tab_tl_n.gif );
+}
+.tabsystem .tabcontainer .tab-hover:before {
+	line-height:0.1;
+	font-size:1px;
+	background:transparent url( images/tab_tr.gif ) no-repeat top right;
+	margin:-5px -6px 0 -6px;
+	height:3px;
+	display:block;
+	border:none;
+	content:url( images/tab_tl.gif );
+}
+.tabsystem .tabcontainer .tab-active:before {
+	line-height:0.1;
+	font-size:1px;
+	background:transparent url( images/tab_tr.gif ) no-repeat top right;
+	margin:-4px -9px 0 -9px;
+	height:3px;
+	display:block;
+	border:none;
+	content:url( images/tab_tl.gif );
+}
+/**/
+				/*** navigation bars and tabs ***/
+.navbar {
+	text-align: right;
+	margin: 10px 0;
+}
+.navbar a {
+	margin: 0 5px;
+}
+.selected {}
+.pagination {}
+
+				/*** bottom bar ***/
+.babelfish {}
+
+				/*** settings that have to be at the end ***/
+.highlight {}

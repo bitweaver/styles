@@ -1,0 +1,529 @@
+@import url( ../../base.css );
+/*******************************************************************************************/
+/*** global settings ***/
+/* these settings should be at the top of the css since they are the defaults and can be overridden further down */
+body {
+	background-color: #fff;
+	font-size: 12px;
+	font-family: verdana, arial, sans-serif;
+	color: #999;
+	height: 100%;
+	text-align: center; /* part of IE 5.5 hack needed for central positioning */
+}
+th {
+	vertical-align: bottom;
+	background: #fff;
+	color: #000;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	font-size: 10px;
+}
+hr {
+	border: 1px solid #999;
+}
+small {}
+
+/* general page title settings on every page */
+h1 {
+	color: #666;
+	font-size: 18px;
+}
+h2 {
+	color: #777;
+	font-size: 16px;
+}
+h3 {
+	color: #888;
+	font-size: 14px;
+}
+h1, h2, h3 {
+	padding: 3px 20px;
+	font-weight: normal;
+}
+
+/* links */
+a {
+	color: #c00;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* images */
+img {
+	border: 1px solid #999;
+}
+a img:hover {}
+
+/*******************************************************************************************/
+/*** site layout ***/
+#tikibody {
+	position: absolute;
+	top: 146px;
+	left: 50%;
+	height: 600px;
+	margin-left: -450px;
+	width: 900px;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	background-color: #eee;
+	background-image: url( images/lines.gif );
+	background-repeat: repeat;
+	background-position: top left;
+	background-attachment: scroll;
+	text-align: left; /* part of IE 5.5 hack needed for central positioning */
+}
+#bittop {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	height: 100px;
+	margin-left: -450px;
+	width: 900px;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	background-image: url( images/banner.gif );
+	background-position: top;
+	background-repeat: no-repeat;
+	text-align: right;
+	font-size: 10px;
+	color: #fff;
+}
+#bittop a {
+	color: #fff;
+}
+#bittopbar {
+	position: absolute;
+	top: 130px;
+	left: 50%;
+	height: 20px;
+	margin-left: -450px;
+	width: 900px;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	text-align: center;
+	background: #999;
+}
+#bittopbar a {
+	background: transparent;
+	font-size: 10px;
+	color: #ccc;
+	padding: 0 3px;
+}
+#bittopbar .hor ul a {
+	color: #666;
+}
+#bittopbar a:hover {
+	color: #000;
+}
+#bitleft {
+	position: absolute;
+	top: 0px;
+	right: auto;
+	left: 10px;
+	width: 157px;
+	height: 475px;
+	overflow: auto;
+	font-size: 0.8em;
+	overflow: auto;
+}
+#bitright {
+	position: absolute;
+	top: auto;
+	right: auto;
+	bottom: 19px;
+	left: 8px;
+	width: 149px;
+	height: 100px;
+	overflow: auto;
+	font-size: 0.8em;
+	overflow: auto;
+	border: 1px solid #ddd;
+	background-color: #eee;
+}
+#tikimain {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 14px;
+	left: auto;
+	height: 588px;
+	width: 708px;
+	overflow: auto;
+	padding: 0 10px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background-color: #fff;
+}
+#tikibottom {
+	position: absolute;
+	bottom: 0px;
+	width: 900px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background: #ccc;
+	color: #fff;
+	font-size: 0.8em;
+	height: 12px;
+}
+#tikiprint {}
+
+/*******************************************************************************************/
+/*** common classes ***/
+.display {}
+.preview {
+	border-top: 5px solid #ccc;
+	border-bottom: 5px solid #ccc;
+	background: #eee;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+.header h1, .header h1 a, .header h1 a:hover {
+	color: #c00;
+	padding: 20px 20px 0 20px;
+}
+.header h2 {
+	color: #966;
+	padding-left: 15px;
+	font-size: 14px;
+	margin: 3px 3px 10px 3px;
+}
+.blogs .blogs .header h1 {
+	color: #666;
+}
+.date {
+	font-size: 10px;
+	text-align: right;
+	border-top: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	padding-right: 5px;
+}
+.body {}
+.introduction {}
+.introductionimage {}
+.content {
+	padding: 10px;
+	border-left: 2px solid #ccc;
+	padding-left: 15px;
+}
+.footer {
+	padding-left: 5px;
+	font-size: 10px;
+}
+.actionicon {
+	border: 1px solid #ddd;
+	background-color: #eee;
+	padding: 1px 5px;
+	float: right;
+}
+
+/******************************************************************************************/
+/*** boxes ***/
+.box {
+	margin: 10px 0px;
+}
+.boxtitle {
+	background: #fff;
+	color: #000;
+}
+.boxcontent {
+	background: #eee;
+	border: 1px solid #ddd;
+}
+.admin.box {
+	padding: 0;
+	border: 0;
+}
+.warning {
+	padding: 10px;
+	background: #fdd;
+	border: 1px solid #000;
+}
+.warning .boxtitle {
+	border: 1px solid #000;
+}
+.warning .boxcontent {
+	background: transparent;
+	color: #000;
+	border: none;
+	padding-top: 10px;
+}
+.help {}
+.module .boxtitle,
+.module .boxcontent {
+	background: transparent;
+	border: none;
+}
+.administration .boxcontent {
+	margin-bottom: 15px;
+}
+
+/******************************************************************************************/
+/*** forms ***/
+fieldset {
+	width: 90%;
+	border: 1px dashed #999;
+	padding: 10px;
+	margin: 10px auto;
+}
+legend {
+	color: #000;
+	padding: 1px 5px;
+	background: #eee;
+	border: 1px solid #999;
+}
+input,select,textarea {
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	color: #666;
+}
+input[type="text"], input[type="password"], textarea {
+	font-size: 12px;
+	background: #eee;
+	border: 1px solid #ccc;
+}
+input[type="text"]:hover, input[type="password"]:hover, textarea:hover {
+	background: #fff;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+	background: #fff;
+	color: #000;
+}
+.row {
+	margin-top: 10px;
+}
+.formlabel {
+	width: 30%;
+	padding: 1px 0 2px 0;
+}
+.formfeedback {
+	width: 30%;
+	font-size: 10px;
+}
+.forminput {
+	width: 69%;
+}
+.formhelp {
+	text-align: justify;
+	float: left;
+	clear: both;
+	width: 100%;
+	font-size: 10px;
+	color: #bbb;
+	padding: 0 0 20px 0;
+}
+.submit {
+	text-align: center;
+	padding: 15px 0 10px 0;
+}
+label:hover {
+	color: #000;
+}
+.clear {
+	clear:both;
+}
+.minifind {
+	width: 200px;
+}
+
+/******************************************************************************************/
+/*** menus ***/
+.menu .head { }
+.menu .head:hover,
+.menu .head:active {
+	background-image: url( images/down.gif );
+	background-repeat: no-repeat;
+	background-position: right;
+	text-decoration: none;
+}
+menu .item {
+	font-size: 10px;
+}
+#bitleft .menu .item {
+	padding: 0 0 0 10px;
+}
+.menu .item:hover,
+.menu .item:active {
+	background-image: url( images/arrow.gif );
+	background-repeat: no-repeat;
+	background-position: 1px 3px;
+	text-decoration: none;
+}
+/* icons in menu pages area */
+.midmenu .boxtitle {
+	padding: 0 0 3px 0;
+	font-size: 10px;
+}
+
+/******************************************************************************************/
+/*** parsed text elements ***/
+/* -=...=- */
+.tikibar {
+	padding: 1px;
+	margin: 3px 0;
+	letter-spacing: 2px;
+	color: #fff;
+	background: #ccc;
+}
+
+/* cached pages */
+.tikicache {}
+
+/* links to internal pages */
+.tikitable {
+	background: #eee;
+	border: 1px solid #999;
+}
+.tikitable td {
+	border: 1px solid #fff;
+}
+
+/******************************************************************************************/
+/*** structures ***/
+.structure {}
+.navigation {
+	font-size: 0.8em;
+}
+.path {
+	font-size: 0.8em;
+}
+
+/******************************************************************************************/
+/*** images and icons ***/
+/* icons */
+.icon,.icon:hover {}
+
+/* floating help and/or admin icon at the top of admin pages */
+.floaticon {}
+
+/******************************************************************************************/
+/*** data tables ***/
+.other {}
+
+/* submission panels */
+.panel {
+	font-size: 0.8em;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+	clear: both;
+}
+
+/* submission buttons in panels */
+.panelsubmitrow td {
+	border-top: 1px solid #ccc;
+	background: #ddd;
+}
+
+/* any table displaying data */
+.data {
+	font-size: 0.8em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+	clear: both;
+}
+.data td {
+	vertical-align: top;
+}
+
+/* alternating odd and even rows in tables */
+.odd {
+	background: #eee;
+}
+.even {}
+
+/* when no data is found - either a <tr> or a <div> */
+.norecords {
+	color: #faa;
+	text-align: center;
+}
+
+/* find table found on pages with listings */
+.find {
+	margin: 10px;
+	clear: both;
+	border: 1px solid #ccc;
+	float: left;
+	width: auto;
+	font-size: 10px;
+}
+.find input {
+	font-size: 10px;
+	vertical-align: middle;
+}
+
+				/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font:12px normal verdana,arial,sans-serif;
+	background:transparent url( images/tab_shade.png ) repeat-x;
+	margin:0 3px;
+	padding:3px 5px 1px 5px;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding-top:2px;
+	border-top:2px solid #f90;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	padding:2px 8px 4px 8px;
+	margin:0 0px;
+	border-top:2px solid #f90;
+	background:#fff;
+	color:#000;
+}
+.tabsystem .tabpage {
+	border:1px solid #ccc;
+	padding:1.5em;
+}
+
+/******************************************************************************************/
+/*** navigation bars and tabs ***/
+.navbar {
+	padding: 10px 0;
+	font-size: 0.8em;
+}
+.navbar a {
+	padding: 0 3px;
+	border: 1px solid #ddd;
+	background: #eee;
+	margin: 0 3px 0 0;
+}
+.navbar a:hover {
+	color: #d50;
+	background: #fff;
+	text-decoration: none;
+}
+/* pagination at the bottom of pages with listings */
+.pagination {
+	width: 200px;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.8em;
+	border: 1px solid #ddd;
+}
+.gotopage {
+	font-size: 10px;
+	vertical-align: middle;
+	height: 12px;
+	width: 20px;
+	border: 1px solid #eee;
+}
+
+/******************************************************************************************/
+/*** bottom bar ***/
+.babelfish {}
+
+/******************************************************************************************/
+/*** settings that have to be at the end ***/
+.highlight,a .highlight {
+	color: #777;
+}

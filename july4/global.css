@@ -1,0 +1,152 @@
+/******************************************************************************************/
+/*** global settings ***/
+/* these settings should be at the top of the css since they are the defaults and can be overridden further down */
+body {
+	font-family: Arial, sans-serif, Verdana, Helvetica;
+	font-weight: normal;
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+}
+
+th {
+	font-weight: normal;
+	background: #c8c0ae;
+	padding: 2px;
+}
+
+th a {
+	color: #000;
+	text-decoration: underline;
+}
+
+th a:hover {
+	color: #fff;
+}
+
+hr {
+	height: 1px;
+	background: #fff;
+	border-width: 0px;
+	background-image: url( images/hr.gif );
+	background-position: left;
+	background-repeat: no-repeat;
+	margin: 2px;
+}
+
+/* set the default font-size on the entire page | annoyingly this has to be one in this way for MSIE */
+body,
+div,
+table {
+	font-size: 12px;
+}
+
+input,
+select {
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+textarea,
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+small {
+	font-size: 10px;
+}
+
+/* general page title settings on every page */
+/* addition of the title classes is necessary to override the included base.css */
+/* wiki - ! */
+h1	{	font-size: 18px;	}
+/* wiki - !! */
+h2	{	font-size: 16px;	}
+/* wiki - !!! */
+h3	{	font-size: 14px;	}
+
+/* color: #6c6454; */
+h1 {
+	font-weight: normal;
+	color: #333366;
+	margin: 2px 0;
+}
+h2, h3 {
+	font-weight: normal;
+	color: #999999;
+	margin: 2px 0;
+}
+
+/* links */
+a {
+	color: #a00;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f80;
+	text-decoration: none;
+}
+
+/* images */
+img {
+	border: 1px solid #aea696;
+	padding: 0px;
+}
+
+a img:hover {
+	border: 1px solid #f80;
+}
+
+
+/******************************************************************************************/
+/*** site layout ***/
+#tikiheader {}
+#tikibody {}
+
+/* nab red #b40019 */
+/* orig background here was #e8e5de */
+/* padding: 0px bottom 3px right 3px 15px left; */
+/* color: #999; */
+
+#bittop {
+	font: 20px Arial, Impact, Verdana;
+	font-weight: normal;
+	vertical-align: bottom;
+	padding: 0px 0px 0px 0px;
+}
+
+#bittopbar {
+	background: #333366;
+	padding: 1px 0px 0px 0px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #333366;
+}
+
+#bitleft {
+	vertical-align: top;
+	padding-right: 10px;
+	width: 170px;
+	color: #ffffff;
+	background: #333366 url(images/starsblue1.jpg) repeat right top;
+	border-bottom: 1px solid #333366;
+}
+
+#bitright {
+	vertical-align: top;
+	padding-left: 10px;
+	width: 170px;
+	/*background-image: url( images/col1.gif );*/
+	background-position: left top;
+	background-repeat: repeat-y;
+}
+
+#tikimain {
+	vertical-align: top;
+	padding: 0 10px;
+	/*background-image: url( images/bg.gif );*/
+	background-position: right top;
+	background-repeat: repeat-y;
+}
+
+#tikibottom {
+	border-top: 0px solid #333366;
+}

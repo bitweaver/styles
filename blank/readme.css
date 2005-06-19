@@ -1,0 +1,119 @@
+/*******************************************************************************************
+important urls discussing theme generation for bitweaver and css in general:
+	http://www.bitweaver.org/wiki/index.php?page=CssSchema
+	http://www.bitweaver.org/tiki-index.php?page=ThemeTutorial
+
+blank.css contains a consise list of the most important classes used on bitweaver.
+you can use this as a starting point or a point of reference.
+if you define the classes/ids mentioned within blank.css, the entire site will have a
+design/layout. if you would like to customise the site further, you can refer to
+customisation.css also found in this directory. there are a few classes that can be
+used for more precise and detailed customisation.
+
+if you wish to create a theme from scratch here is a list of all css files present in blank to aid you:
+	blank.css
+		main css file with all globally used classes and more
+	customisation.css
+		contains a list of classes that can be utilised to further customise the site
+	debugwithoutline.css
+		contains a set of classes and definitions that allow you to visualise all structures used on your site
+	showdiv.css
+		if included will visualise all divs used on the site including their classes and ids
+		(works well with debugwithoutline.css)
+	showstructure.css
+		like showdiv.css but it will show you all classes and structures appart from divs
+		(works well with showdiv.css and/or debugwithoutline.css
+	showsitelayout.css
+		visualises the layout of the main tiki ids used by surrounding them with coloured lines
+	showpagelayout.css
+		draws coloured borders on one side of certain elements
+		to allow you to view the classes used without messing with your layout
+
+general layout of a content page
+	<div class="... foo">
+
+	  <div class="header">
+	    <h1>pile of foo</h1>
+	    <h2>desciption of foo</h2>
+	    <div class="date">created by fooster on april 1, 2004</div>
+	  </div>
+
+	  <div class="body">
+	   <div class="introduction">this is foo</div>
+	   <div class="content">this is more foo</div>
+	  </div>
+
+	  <div class="footer">read comments...</div>
+
+	  <div class="navbar">navigation bar</div>
+	  <div class="pagination">page 1/1</div>
+
+	</div>
+
+	... ==> admin...
+
+
+
+	various boxes
+
+	<div class="... box">
+
+	  <div class="boxtitle">title of foobox</div>
+	  <div class="boxcontent">
+		this is some foo that has to be in a box
+	  </div>
+
+	</div>
+
+	... ==> module, admin...
+
+
+
+	brief tutorial
+	please see http://www.bitweaver.org/wiki/index.php?page=ThemeTutorial for more information
+
+	please consider the following page
+
+	<div class="box">2 + 2 = 5</div>
+
+	<div class="foo">
+	  <div class="box">i can sing</div>
+	  <div class="foo box">some chickens have lips</div>
+	</div>
+
+	if you wish to apply a definition to all boxes you use
+	.box { text-decoration: underline; }
+
+	if you wish to apply settings only to the boxes within the foo section
+	.foo .box { font-weight: bold; }
+
+	if you wish to apply settings only to the box that has foo associated with it
+	.foo.box { color: red; }
+
+	please note the lack of a space in the third case as compared to the second case.
+	'.foo .box' vs '.foo.box'
+
+
+
+	use abbreviated styles where possible
+		eg:	padding: 5px 10px;
+		this is equivalent to:
+			padding-top: 5px;
+			padding-right: 10px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+
+		eg:	padding: 1px 2px 3px 4px;
+		this is equivalent to:
+			padding-top: 1px;
+			padding-right: 2px;
+			padding-bottom: 3px;
+			padding-left: 4px;
+
+	other important notes:
+		-	css is still in developement and will be updated continually
+		-	width: 100%; in divs is required to avoid rendering errors in MSIE (MSIE once again **sigh**)
+			this rendering error appears as soon as a div is not it's full size due to borders, padding and the like
+			if you then place a table within this div with 'width="100%"' MSIE pushes the divs outward until
+			the table has the same width it would have without the divs.
+*******************************************************************************************/

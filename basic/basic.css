@@ -1,0 +1,187 @@
+@import url( ../../base.css );
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.1 2005/06/19 06:11:09 bitweaver Exp $ */
+/******************************************************************************************
+ * if you require information on how this css is set up and how to create a theme, please visit
+ * - http://www.bitweaver.org/wiki/index.php?page_id=94
+ * - view the files included in the theme blank. also this has a file called 'readme.css'.
+ ******************************************************************************************/
+/*** common layout ***/
+#bitleft	{ padding: 0 10px; }
+#bitright	{ padding: 0 10px; }
+#bittopbar {
+	background: #e9ecef;
+	padding: 2px;
+	margin-bottom: 5px;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+#bittopbar a {
+	border:0;
+}
+body {
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 12px;
+}
+a {
+	color: #009;
+	text-decoration: none;
+	border: 1px solid #fff;
+}
+a:hover {
+	background: #e9ecef;
+	border: 1px solid #dedede;
+}
+.header {
+	padding: 2px;
+	border-bottom: 4px solid #dedede;
+}
+.body {}
+.introduction {
+	width: 100%;
+}
+.introductionimage {
+	float: right;
+	padding: 5px;
+	margin: 5px;
+}
+.content {
+	width: 100%;
+}
+.footer {
+	color: #999;
+	min-height: 17px;
+}
+.actionicon {
+	float: right;
+}
+.storage {
+	border: 1px solid #dedede;
+	background: #e9ecef;
+}
+.storage .item {
+	padding: 3px;
+}
+.storage a {
+	border: 0;
+}
+/******************************************************************************************/
+/*** menus ***/
+.appmenu {
+	margin: 10px 0;
+}
+.menu .head {
+	display: block;
+	padding: 1px 5px;
+}
+.menu .item {
+	padding: 1px 0 0 1px;
+}
+/******************************************************************************************/
+/*** wiki ***/
+/* parsed wikiclasses */
+/* wiki -=...=- */
+.tikibox {
+	background-color: #e9ecef;
+	border: 1px solid #dedede;
+	padding: 5px;
+}
+.tikibar {
+	letter-spacing: 4px;
+	font-weight: bold;
+	background-color: #e9ecef;
+	border: 1px solid #dedede;
+	padding: 2px;
+}
+.tikitable td {
+	border: 1px solid #dedede;
+}
+/******************************************************************************************/
+/*** data tables ***/
+/* submission panels */
+.panel {
+	border: 2px solid #dedede;
+}
+/* submission buttons in panels */
+.panelsubmitrow {
+	text-align: center;
+}
+/* any table displaying data */
+.data {
+	border: 2px solid #dedede;
+}
+/* alternating odd and even rows in tables */
+.odd {
+	background: #e9ecef;
+}
+.even {}
+/******************************************************************************************/
+/*** forms ***/
+.formlabel {
+	font-weight: bold;
+}
+
+/* find bar */
+.minifind {
+	background: #e9ecef;
+	border: 1px solid #dedede;
+	margin: 2px 0;
+}
+				/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font:12px normal verdana,arial,sans-serif;
+	margin:0 3px;
+	padding:3px 5px 1px 5px;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding-top:2px;
+	border-top:2px solid #f90;
+	background: #e9ecef;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	padding:2px 8px 4px 8px;
+	margin:0 0px;
+	border-top:2px solid #f90;
+	background:#fff;
+	color:#000;
+}
+.tabsystem .tabpage {
+	border:1px solid #ccc;
+	padding:1.5em;
+}
+/******************************************************************************************/
+/*** navigation bars and tabs ***/
+.navbar {
+	margin: 5px 0;
+}
+.navbar a {
+	padding: 0 5px;
+}
+/* pagination at the bottom of pages with listings */
+.pagination {
+	margin: 10px 0;
+}
+/******************************************************************************************/
+/*** boxes ***/
+.box {
+	margin: 10px 0;
+}
+.boxtitle {
+	padding: 2px;
+	border: 1px solid #dedede;
+	background: #e9ecef;
+}
+.boxtitle a {
+	border: none;
+}
+.boxcontent {
+	padding: 2px;
+}
+/******************************************************************************************/
+/*** miscellaneous ***/
+.cached {
+	font-size: 10px;
+}

@@ -1,0 +1,218 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.1 2005/06/19 06:11:05 bitweaver Exp $ */
+@media all {
+body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
+pre {font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#ddd; color:#555;}
+a {text-decoration:none; color:#a60;}
+#tikimain a {font-style:italic;}
+a.create {color:#630;}
+a.external {background:transparent url( images/external_link.png ) no-repeat right;  padding-right:16px;}
+a:hover {text-decoration:none; color:#900;}
+img {border:0;}
+hr {border:0; border-top:1px solid #933; padding:0; margin:0.5em 0;}
+			/*** titles ***/
+h1,h2,h3 {font-style:italic; font-family:"URW Chancery L","Luxi Serif Oblique",fantasy; font-weight:100;}
+h1 {font-size:2.2em; padding:0.5em 0em; margin:0;}
+h2 {font-size:1.8em; padding:0.5em 0em; margin:0;}
+h3 {font-size:1.4em; padding:0.5em 0em; margin:0;}
+			/*** common classes ***/
+.content {font-size:1.2em;}
+.preview {border:1px dotted #f80;}
+.norecords {font-weight:bold;}
+.popup {background:#fff; width:250px; border:1px solid #000;}
+.highlight {font-weight:bolder;}
+.selected {font-weight:bolder}
+.floaticon {float:right;}
+.storage {float:right; border:1px solid #ccc;}
+.storage .item {margin:3px;}
+.comment,.footer {clear:both;}
+.pagination {text-align:center;}
+.icon {border:0;}
+			/*** forms ***/
+form,input,textarea,select{margin:0; padding:0;}
+textarea {width:100%;}
+input,textarea,select {background:#ddd; color:#000; border:0; font-size:inherit;}
+input {max-width:100%;}
+textarea {border:1px dashed #999;}
+fieldset {border:0; border-top:3px double #f80; border-bottom:3px double #aaa; padding:1em;}
+legend {font-size:1.2em; padding:1em;}
+.row {clear:both; margin-bottom:2em;}
+.quicktags {margin:0;}
+.formlabel {font-weight:bold;}
+.forminput {margin-left:3em;}
+.formfeedback,.feedback{display:block; clear:both;}
+.formhelp {cursor:help; clear:both; font-size:0.8em; line-height:normal; color:#67a}
+.module .formlabel,.module .forminput{width:auto; float:left; clear:both;}
+.closebutton{position:absolute; top:1px; right:1px;}
+.submit {text-align:center; padding:1em; margin:1em;}
+.error,.errorpage .boxtitle {color:#f00; font-weight:bold;}
+.warning {color:#f80;}
+.success {color:#090;}
+.clear {clear:both;}
+			/* parsed elements */
+.tikitable td {padding:1em; border:1px solid #ccc;}
+.tikibox {}
+.tikibar {}
+.tikitoc		{width:30%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
+.tikitoc h3		{padding:0; border-bottom:1px solid #999;}
+.tikitoc a		{}
+.tikitoc ul		{margin:0 0 0 1em; padding:0;}
+.tikitoc ul li	{list-style:square outside;}
+.tikitoc ul ul	{margin:0 0 0 2em; padding:0;}
+			/* boxes */
+.box {margin:1em 0;}
+.boxtitle {color:#000; font-style:italic;}
+			/* tables and lists */
+fieldset table {margin:0 2%; width:96%;}
+table {border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal;}
+th {font-weight:normal; border-bottom:2px solid #999; background:#fec;}
+td.actionicon {text-align:right;}
+table.data {border:1px solid #aaa;}
+.odd td,.even td {border-bottom:1px solid #999;}
+.odd {background:#ddd;}
+.even {}
+ul,ul li {list-style:circle;}
+.formfeedback ul {margin:1em 2em 0 2em; padding:2px;}
+li.error,li.success,li.note,li.warning {list-style:none;}
+li.odd,li.even {border-top:1px solid #666; padding:1em 0; margin-bottom:-1px; background:transparent;}
+			/* data lists */
+ul.data,ul.data li.item {padding:0; margin:0; list-style:none;}
+ul.data li.item {padding:0.5em; margin:0 0 0 1%;}
+ul.data li.item:hover {background:#eee;}
+ul.data .thumb {float:right; margin-right:1em;}
+ul.toc,ul.toc ul {margin-left:2em; padding-left:0;}
+			/* package specific settings */
+.fisheye ul.data li.item {border:1px solid #ddd; clear:both; width:70%; margin:0.5em 0; background:#eee;}
+.fisheye ul.data li.odd {position:relative; float:right;}
+.fisheye ul.data li.even { text-align:right;}
+.fisheye ul.data li.even .thumb {float:left;}
+			/* fisheye */
+.thumb {padding:3px; border:1px solid #ccc;}
+.fisheyegallery .thumb {padding:3px; border:3px double #ccc;}
+.thumb:hover {border-color:#bbb;}
+.thumbnailblock .box {padding:5px; text-align:center;}
+.thumbnailblock .box:hover {color:#333;}
+.image {text-align:center;}
+			/* structure navigation */
+.path {display:block;}
+.navigation span {display:block; width:49%;}
+.navigation .left {text-align:right; float:left;}
+.navigation .right {text-align:left; float:right;}
+			/* sticky notes */
+.stickies textarea,.stickies input[type='text'] {background:#000;}
+.stickynote .boxtitle {border-bottom: 1px solid #dda;}
+.stickynote {background-color:#ffc; color:#000; width: 300px; padding: 3px;}
+}
+
+@media screen,projection,tv {
+			/*** layout ***/
+#wrap1 {background:#8a99ac url( images/shadow.png ) top center repeat-y; margin:20px 0;}
+#wrap2 {background:#fff; width:800px; margin:0px auto 0px auto; color:#666; border:1px solid #000;}
+#tikilogo {height:150px; background:transparent url( images/logo.png ) top left no-repeat;}
+#tikilogo h1 {color:#000; text-align:center; vertical-align:bottom; font-size:3em; line-height:30px; padding:60px 0 40px 0; margin:0;}
+#tikilogo h2 {color:#000; text-align:right; font-size:1.6em; line-height:20px; padding:0 20px;}
+#bittop {font-size:8pt; font-family:tahoma,arial,sans-serif; height:16px; padding:0 1em; line-height:16px; background:#ccc url( images/topmenu_bg.png ) left center repeat-x;}
+#toplogin {text-align:right; float:right;}
+#toplogin a {color:#000; padding:0 0.5em;}
+#toplogin a:hover {background:#bec7d3;}
+#bittopbar {}
+#bitmodules {float:right; width:19%; font-size:0.8em; line-height:1.2em;}
+#tikimain {padding:0 1em;}
+#tikibottom {clear:both; font-size:0.8em; text-align:center;}
+.header h1 {padding:1em;}
+			/* forms */
+input[type="text"],input[type="password"] {border-bottom:1px dashed #999;}
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus {color:#000; background:#eee;}
+input[type="submit"] {border:2px solid #000;}
+input[type="submit"]:hover,input[type="submit"]:focus {border-color:#900; background:#f80;}
+.submit input[type="submit"] {padding:5px;}
+			/* navigation bars */
+.navbar {padding:1em}
+.navbar ul {padding:0; margin:0; list-style:none;}
+.navbar ul li {float:left; list-style:none;}
+.navbar a {border:1px solid #bbb; background:#ddd; padding:0 1em; margin:0 0.5em;}
+.navbar a:hover {border:1px solid #999; background:#eee;}
+			/*** miscellaneous settings ***/
+.quicktag {margin:0 1px;}
+			/* modules */
+.module ul,.module ul li {list-style:none; margin:0; padding:0;}
+.module ul {margin-left:1em;}
+#bitmodules .menu .icon {display:none;}
+			/* annoyances and grievances */
+.module textarea {width:auto;}
+			/* tabs */
+.tabsystem .tabcontainer {margin:0; padding:0; border:0; clear:both; z-index:1;}
+.tabsystem .tabcontainer ul,.tabsystem .tabcontainer li {margin:0; padding:0; border:0; list-style-type:none; display:inline; z-index:1;}
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-active {position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
+.tabsystem .tabpage {clear:both; z-index:1;}
+h4 {margin:0; padding:0; z-index:1;}
+			/* tabs design */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer.tab-hover,.tabsystem .tabcontainer .tab-active {top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; background:transparent url( images/tabs/tab_shade.png ) repeat-x; border:1px solid #bbb; border-bottom:0;}
+.tabsystem .tabcontainer .tab-hover {padding:3px 5px 1px 5px; border-top:2px solid #f60;}
+.tabsystem .tabcontainer .tab-active {top:1px; margin:0; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60;}
+.tabsystem .tabpage {border:1px solid #bbb; margin:0; padding:1em;}
+			/* rounded tab tops - does not work in MSIE - if active, it screws up Konqeror * /
+.tabsystem .tabcontainer .tab:before {line-height:0.1; font-size:1px; background:transparent url( images/tabs/tab_tr_n.gif ) no-repeat top right; margin:-5px -6px 0 -6px; height:3px; display:block; border:none; content:url( images/tabs/tab_tl_n.gif );}
+.tabsystem .tabcontainer .tab-hover:before {line-height:0.1; font-size:1px; background:transparent url( images/tabs/tab_tr.gif ) no-repeat top right; margin:-5px -6px 0 -6px; height:3px; display:block; border:none; content:url( images/tabs/tab_tl.gif );}
+.tabsystem .tabcontainer .tab-active:before {line-height:0.1; font-size:1px; background:transparent url( images/tabs/tab_tr.gif ) no-repeat top right; margin:-4px -9px 0 -9px; height:3px; display:block; border:none; content:url( images/tabs/tab_tl.gif );}
+/**/
+			/* regular menus */
+.menu,.menu ul,.menu li {list-style:none;}
+#tikibody .menu,#tikibody .menu ul,#tikibody .menu li {margin:0.3em; padding:0;}
+#tikibody .menu .boxcontent {font-size:0.8em;}
+.menu .icon {vertical-align:middle;}
+.menu .head {display:block;}
+.menu .item {display:block;}
+			/* css driven dropdown menus - horizontal */
+.hor .icon {position:absolute; left:28px; top:0px; vertical-align:middle; margin-left:-26px;}
+.hor,.hor ul,.hor li {padding:0; margin:0; list-style:none; z-index:1000000; line-height:16px;}
+.hor a {white-space:nowrap; color:#000; padding:0 5px;}
+.hor li {width:auto;}
+.hor li li,.hor li ul {width:13em; display:block; text-align:left;}
+.hor li {float:left; position:relative;}
+.hor li:hover,.hor li.ieHover {background:#f5f5f5;}
+.hor li li:hover,.hor li li.ieHover {background:#bec7d3;}
+.hor li li a {margin:0 0 0 2em;}
+.hor ul a.head {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right;}
+.hor ul a.head:hover {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right;}
+.hor li li:hover {border:1px solid #657a96; margin:-1px;}
+.hor li li:ieHover {border:1px solid #657a96; margin:-1px;}
+.hor li ul {position:absolute; left:-999em; background:#fff url( images/menu_ul.gif ) repeat-y 0.3em 0.3em; padding:0.3em; border:1px solid #aaa}
+.hor li ul ul {margin:-20px 0 0 13em;}
+			/* css driven dropdown menus - vertical */
+.ver .icon {margin-left:-26px; padding-right:8px; vertical-align:middle;}
+.ver a {color:#000; padding:0 5px; white-space:nowrap;}
+.ver a.head {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right;}
+.ver, .ver ul {padding:0; margin:0; list-style:none; float:left; width:13em; z-index:1000000;}
+.ver li {position:relative; width:13em;}
+.ver li:hover,.ver li.ieHover {background:#bec7d3;}
+.ver li li {position:relative; float:left; width:13em;}
+.ver li li:hover,.ver li li.ieHover {border:1px solid #657a96; margin:-1px;}
+.ver li li a {margin:0 0 0 2em;}
+.ver li ul {position:absolute; left:-999em; margin-left:13em; margin-top:-2em; padding:0.3em; background:#fff; border:1px solid #999; background:#fff url( images/menu_ul.gif ) repeat-y 0.3em 0.3em;}
+.ver li ul ul {left:-999em;}
+			/* vertical menus on the right hand side */
+#bitright .ver, #bitright .ver li, #bitright .ver ul {width:125px;}
+#bitright .ver li ul {margin-left:-132px;}
+			/* z-index */
+.hor,.hor a,.hor li,.hor ul {z-index:100000;}
+.ver,.ver a,.ver li,.ver ul {z-index:100000;}
+#nav,#nav a,#nav li,#nav ul {z-index:10000000;}
+			/* ieHover used as suckerfish class for MSIE hover support */
+.hor li:hover ul ul, .hor li:hover ul ul ul, .hor li.ieHover ul ul, .hor li.ieHover ul ul ul,
+.ver li:hover ul ul, .ver li:hover ul ul ul, .ver li.ieHover ul ul, .ver li.ieHover ul ul ul {left:-999em;}
+.hor li:hover ul, .hor li li:hover ul, .hor li li li:hover ul, .hor li.ieHover ul, .hor li li.ieHover ul, .hor li li li.ieHover ul,
+.ver li:hover ul, .ver li li:hover ul, .ver li li li:hover ul, .ver li.ieHover ul, .ver li li.ieHover ul, .ver li li li.ieHover ul {left:auto;}
+			/* Support for MSIE select box hiding part of suckerfish - don't touch */
+.hor iframe,.ver iframe {position:absolute; left:0; top:0; z-index:-1; filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);}
+}
+
+@media print {
+#tikilogo {display:none;}
+#bittopbar {display:none;}
+#toplogin {display:none;}
+#tikimain {padding:0 1em;}
+#tikibottom {clear:both; font-size:0.8em; text-align:center;}
+.navbar {display:none;}
+.tabcontainer {display:none;}
+.floaticon {display:none;}
+}

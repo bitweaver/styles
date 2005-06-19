@@ -1,0 +1,107 @@
+@import url( ../../base.css );
+/* @import url( showdiv.css ); */
+/* @import url( showsitelayout.css ); */
+/* @import url( showpagelayout.css ); */
+/* @import url( showstructure.css ); */
+
+/* blank.css is called to simplify styling. if you want to really start from scratch,
+ * please remove or comment the first line. */
+/* documentation for this file can be found in blank_commented.css */
+
+						/*** global settings ***/
+body {}
+th {}
+hr {}
+small {}
+h1 {}
+h2 {}
+h3 {}
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+						/*** site layout ***/
+#tikibody {}
+#tikilayouttable {}
+#bittop {}
+#bittopbar {}
+#bitleft {}
+#bitright {}
+#tikimain {}
+#tikimainfx {}
+#tikibottom {}
+#tikiprint {}
+#slideshow {}
+
+						/*** common classes ***/
+.display {}
+.preview {}
+.header {}
+.date {}
+.body {}
+.introduction {}
+.introductionimage {}
+.content {}
+.footer {}
+.actionicon {}
+
+						/*** forms ***/
+input {}
+select {}
+textarea {}
+fieldset {}
+legend {}
+label {}
+.row {}
+.formlabel {}
+.forminput {}
+.formhelp {}
+.submit {}
+.clear {}
+.minifind {}
+
+						/*** boxes ***/
+.box {}
+.boxtitle {}
+.boxcontent {}
+.module {}
+
+						/*** menus ***/
+.menu .head {}
+.menu .item {}
+
+						/*** parsed text elements ***/
+.tikibar {}
+.tikibox {}
+.tikitable {}
+.tikicache {}
+
+						/*** structures ***/
+.structure {}
+
+						/*** articles ***/
+.articles {}
+.articlerating {}
+
+						/*** image galleries ***/
+.thumbnails {}
+
+						/*** images and icons ***/
+img {}
+.icon {}
+.thumb {}
+
+						/*** data tables ***/
+.data {}
+.odd {}
+.even {}
+.norecords {}
+.minifind {}
+
+						/*** navigation bars and tabs ***/
+.navbar {}
+.pagination {}
+
+						/*** settings that have to be at the end ***/
+.highlight {}

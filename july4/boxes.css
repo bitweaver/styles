@@ -1,0 +1,155 @@
+/* this file lists all classes that are specific for boxes */
+/* this includes boxes found all over the site and additionally modules */
+
+/******************************************************************************************/
+/* nab blue #333366 */
+/* nab red #b40019 */
+/*** boxes ***/
+.box {
+	margin: 5px 0 10px 0px;
+}
+
+.boxtitle {
+	text-align: center;
+	color: #fff;
+	background: #aea696;
+	border: 1px solid #6c6454;
+	padding: 2px;
+}
+
+.boxtitle a {
+	color: #ff9;
+	text-decoration: underline;
+}
+
+.boxtitle a:hover {
+	color: #fff;
+}
+
+.boxcontent {
+	border: 1px solid #6c6454;
+	border-top: 0;
+	padding: 0px;
+}
+
+/* types of boxes */
+/* all modules have <div class="module box"> surrounding them */
+.module {
+	padding: 2px;
+	border: 1px solid #e8e5de;
+}
+
+/* aligning boxtitle text differently depending on what side they are on */
+#bitleft .module .boxtitle		{ 
+	text-align: left; 
+	color: #ffffff;
+	padding: 0px;
+}
+
+#bitleft .search_box { 
+	padding: 0px;
+}
+
+/* Becaue the left bg is dark blue, we need to override the modules settings if the module */
+/* is positioned left */
+#bitleft .module a {
+	color: #fff;
+	padding: 2px; 
+}
+
+#bitleft .module a:hover {
+	color: #f80;
+	text-decoration: none;
+}
+
+#bitleft .module h1 {
+	color: #ffffff;
+}
+
+#bitleft .module .boxcontent {
+	color: #ffffff;
+}
+
+#bitright .module .boxtitle	{ 
+	text-align: left; 
+	color: #336;
+}
+
+#tikimain .boxcontent .menu .item {
+	color: #000;
+}
+
+#tikimain .boxcontent a:hover {
+	color: #f80;
+	text-decoration: none;
+}
+
+/* #search_box {} */
+
+/* was color: #aea696; */
+.module .boxtitle {
+	font-weight: bold;
+	text-align: left;
+	background: transparent;
+	border: 0;
+}
+
+.module .boxcontent {
+	border: 0;
+}
+
+.module .boxcontent td {
+	vertical-align: top;
+}
+
+/* login section of login page */
+.login {}
+
+/* surrounds usermessage */
+.usermessage {}
+
+/* quick help messages */
+.help {}
+
+/* boxes found in administration areas */
+.admin {}
+
+/* list is used when items get listed. occurs for exapmle in the faq and directory site list */
+.list {
+	border-left: 4px solid #aea696;
+}
+
+/* used in quizzes and faqs in conjunction with list when listing items */
+.question {
+	padding: 5px 5px 2px 5px;
+}
+
+.list .answer {
+	background: #e8e5de;
+	padding: 2px 5px;
+}
+
+/* boxes on search page */
+.search {}
+
+/* configuration of individual modules */
+/* in addition _every_ module box has it's individual class corresponding to the module_name */
+/* the application menu for exapmle uses  <div class="module box application-menu"> */
+.box.tikicalendar .navigation {
+	text-align: center;
+}
+
+.module.box.tikicalendar table.mother td {
+	color: #999;
+	text-align: center;
+}
+
+.module.box.tikicalendar .today {
+	color: #00a;
+}
+
+/* popup box for the calendar */
+.tikicalendar.popup {
+	width: 200px;
+	background: #fff;
+}

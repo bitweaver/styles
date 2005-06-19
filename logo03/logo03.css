@@ -1,0 +1,149 @@
+body                  {font-size:74%;font-family:sans-serif;padding:0;margin:0;border:0;background-color:#fff}
+html>body             {font-size:0.8em}
+input, select, td     {font-size:1.0em}
+li li, li p, td p     {font-size:1.0em}
+th,td                 {font-size:1.0em;text-align:left;vertical-align:top}
+hr                    {height:1px;color:#000;background-color:#000;border:1px solid #000}
+img                   {border:none}
+div                   {margin:0;padding:0;border:0}
+p                     {margin:12px 0;line-height:1.6em;max-width:48em}
+.delimeter            {display:none}
+table                 {border-collapse:collapse;margin:0;padding:0}
+
+h1                    {font-size:2.4em;color:#7A756A;font-weight:700;margin:12px 0 12px 24px;float:left}
+h2                    {font-size:1.6em;color:#7A756A;font-weight:700;margin:0}
+h3                    {font-size:1.2em;color:#7A756A;font-weight:700;margin:0}
+
+
+/*** common layout ***/
+#tikibar              {display:none}
+#tikibody             {background-color:#f9f9f7}
+ #bittop             {background-color:#e0e0db;background-image:url(/themes/styles/logo03/images/tikipro.gif);background-repeat:no-repeat;background-position:16px 6px;height:64px;text-align:right}
+  .toplogin           {margin:0 8px 0 0;color:#999}
+  #bittopbar         {background-color:#c8c0b0;border-width:1px 0;border-style:solid;border-color:#c8c0b0 #fff #b8b0a0 #fff;text-align:center;font-size:0.85em}
+   ul.hor             {list-style-type:none;margin:2px 0;position:relative;left:20%;width:64%}
+   ul.hor li          {padding:0 8px}
+   ul.hor a.head      {display:block;float:left}
+   .hor a.menuoption  {display:none}
+   ul.hor li ul       {display:none}
+#bitleft             {float:left;width:16%;padding:8px 0}
+#tikimain             {float:left;width:64%;padding:0}
+#bitright            {float:left;width:16%;padding:8px 0}
+#tikibottom           {background-color:#d8d0c0;border-width:1px 0 0 0;border-style:solid;border-color:#c8c0b0 #fff #c8c0b0 #fff;padding:2px 0;clear:both;color:#7A756A;text-align:center;font-size:0.8em;height:1em}
+
+
+
+/*** links ***/
+a                     {color:#00d;text-decoration:none}
+a:link                {color:#00d;text-decoration:none}
+a:visited             {color:#009;text-decoration:none}
+a:hover               {color:#00f;text-decoration:underline}
+
+#bittopbar a         {color:#7A756A}
+#bittopbar a:visited {color:#7A756A}
+#bittopbar a:hover   {color:#7a0000}
+
+.toplogin a           {color:#999}
+.toplogin a:visited   {color:#999}
+.toplogin a:hover     {color:#999}
+
+
+.introduction         {width:100%}
+.introductionimage    {float:right;padding:5px;margin:5px}
+.actionicon           {float:right}
+
+
+/*** menus ***/
+.appmenu               {margin:10px 0}
+.menuhead              {display:block;padding:1px}
+.menuoption            {padding:1px 0 0 10px}
+
+
+/*** wiki ***/
+.tikibar               {letter-spacing:4px;background-color:#e9ecef;border:1px solid #dedede;padding:2px}
+.tikitable td          {border:1px solid #dedede}
+
+/*** data tables ***/
+.panel                 {border:2px solid #dedede}
+.panelsubmitrow        {text-align:center}
+.data                  {border:2px solid #dedede}
+.odd                   {background:#e9ecef}
+.even                  {}
+.find                  {background:#e9ecef;border:1px solid #dedede;margin:2px 0}
+
+/* tabstyle */
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-hover,
+.tabsystem .tabcontainer .tab-active {top:3px;font:12px normal verdana,arial,sans-serif;margin:0 3px;padding:3px 5px 1px 5px;border:1px solid #ccc;border-bottom:0}
+.tabsystem .tabcontainer .tab-hover  {padding-top:2px;border-top:2px solid #f90;background:#e9ecef}
+.tabsystem .tabcontainer .tab-active {top:1px;padding:2px 8px 4px 8px;margin:0 0px;border-top:2px solid #f90;background:#fff;color:#000}
+.tabsystem .tabpage                  {border:1px solid #ccc;padding:1.5em}
+
+
+/*** navigation bars and tabs ***/
+.navbar                {margin:5px 0}
+.navbar a              {padding:0 5px}
+
+/* pagination at the bottom of pages with listings */
+.pagination            {margin:10px 0}
+
+
+/*** boxes ***/
+.box                   {margin:10px 0}
+.boxtitle              {padding:2px;border:1px solid #dedede;background:#e9ecef}
+.boxtitle a            {border:none}
+.boxcontent            {padding:2px}
+
+
+/*** bottom bar ***/
+.babelfish             {text-align:center}
+
+
+/*** miscellaneous ***/
+.cached                {font-size:10px}
+
+/* floating help and/or admin icon at the top of admin pages */
+.floaticon             {float:right}
+
+
+/* tabs */
+.tabsystem .tabcontainer ul,
+.tabsystem .tabcontainer li {margin:0;padding:0;border:0;list-style-type:none;display:inline;}
+.tabsystem .tabcontainer    {margin:0;padding:0;border:0;clear:both;}
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-active {position:relative;display:inline;float:left;z-index:1;white-space:nowrap;}
+.tabsystem .tabpage         {clear:both;}
+h4                          {margin:0;padding:0;}
+
+
+
+/*** specific ***/
+div.my .boxtitle            {background-color:#fff}
+div.my .boxcontent          {margin-left:8px}
+div.my .boxcontent a        {display:block}
+div.my .delimeter           {display:none}
+
+.application_menu           {padding:8px}
+.application-menu           {padding-left:32px}
+.application-menu .boxtitle {display:none}
+div.appmenu a               {display:block}
+
+div.floaticon               {float:right;width:12px;margin:8px}
+div.display                 {margin-left:8px}
+
+
+
+/* tmp */
+
+
+
+
+/*** strictly required ***/
+#comzone               {display:none;}
+#comzoneopen           {display:block;}
+#attzone               {display:none;}
+#forumpost             {display:none;}
+#forumpostopen         {display:block;}
+#edithelpzone          {display:none;}
+
+

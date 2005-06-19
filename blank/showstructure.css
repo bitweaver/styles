@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/*
+ * this file is a modified version of 'showstructure.css' developed by Opera
+ * classes defined in here, don't display using MSIE! please use opera (best) or mozilla (reads most classes)
+*/
+
+table:before, table:after,
+pre:before, pre:after,
+blockquote:before, blockquote:after,
+html:after
+{display: block !important;}
+
+head {margin-top: 1.8em;}
+
+title {
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 1.2em;
+	width: 98%;
+	overflow: hidden;
+	padding: 0.5em 1% !important;
+	color: White !important;
+	background: #304575 !important;
+	font-size: 0.8em !important;
+	font-weight: bold !important;
+	font-family: sans-serif;
+	text-align: center !important;
+	letter-spacing: 1px !important;
+}
+
+title:before, title:after {
+	background: #304575 !important;
+	color: #CC99CC !important;
+}
+
+title:before {content: '<title>' !important;}
+title[class]:before {content: '<title.' attr(class) '>' !important;}
+title:after {content: '</title>' !important;}
+
+/* Other head content  */
+
+meta, head script[src], link {
+	width: 98%;
+	margin: 0;
+	padding: 0.1em 1% !important;
+	border-bottom: 0.1em solid #525a84;
+	color: White !important;
+	background: #355382 !important;
+	font: 0.8em normal normal sans-serif;
+}
+
+meta:before, head script[src]:before, link:before {
+	display: compact;
+	padding-left: 0.4em;
+	font-weight: bold;
+}
+
+meta:after, head script[src]:after, link:after {
+	display: block;
+	margin-left: 8em;
+}
+
+meta:before {content: attr(name) ":";}
+
+meta[http-equiv]:before {
+	content: attr(http-equiv) ":";
+	font-style: italic; 
+}
+
+meta:after {content: attr(content);}
+
+link:before {content: '@import style:';}
+
+link[rel]:before {content: attr(rel) ":";}
+
+link:after {content: "<" attr(href) ">";}
+
+link[media]:after {content: "<" attr(href) "> (media = " attr(media) ")";}
+
+head script[src]:before {content: "Script source:";}
+
+head script[src]:after {content:  "<" attr(src) ">";}
+
+/*** The BODY section ***/
+
+table:before, table:after,
+pre:before, pre:after,
+p:before, p:after,
+a:before, a:after, a img:before,
+address:before, address:after,
+blockquote:before, blockquote:after,
+h1:before, h1:after,
+h2:before, h2:after,
+h3:before, h3:after,
+h4:before, h4:after,
+h5:before, h5:after,
+h6:before, h6:after,
+ol:before, ol:after,
+ul:before, ul:after,
+dl:before, dl:after {
+	background-color: White !important;
+	color: Purple !important;
+	font-weight: bolder !important;
+	font-size: 10px !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	text-decoration: none !important;
+	letter-spacing: normal !important;
+	word-spacing: normal !important;
+	white-space: nowrap !important;
+}
+
+p:before, p:after,
+address:before, address:after,
+h1:before, h1:after,
+h2:before, h2:after,
+h3:before, h3:after,
+h4:before, h4:after,
+h5:before, h5:after,
+h6:before, h6:after,
+ol:before, ol:after,
+ul:before, ul:after,
+dl:before, dl:after {display: inline !important;}
+
+span:before {content: '<span>' !important;}
+span[id]:before {content: '<span#' attr(id) '>' !important;}
+span[class]:before {content: '<span.' attr(class)'>' !important;}
+span:after {content: '</span>' !important;}
+span[id]:after {content: '</span> #' attr(id) !important;}
+span[class]:after {content: '</span> .' attr(class) !important;}
+
+table:before {content: '<table>' !important;}
+table[class]:before {content: '<table.' attr(class) '>' !important;}
+table[id]:before {content: '<table#' attr(id) '>' !important;}
+table:after {content: '</table>' !important;}
+table[id]:after {content: '</table> #' attr(id) !important;}
+table[class]:after {content: '</table> .' attr(class) !important;}
+
+a:before {content: '<a>' !important;}
+a img[class]:before {content: ' img.' attr(class) !important;}
+a[class]:before {content: '<a.' attr(class) '>' !important;}
+a:after {content: '</a>' !important;}
+
+p:before {content: '<p>' !important;}
+p[class]:before {content: '<p.' attr(class)'>' !important;}
+p:after {content: '</p>' !important;}
+
+h1:before {content: '<h1>' !important;}
+h1[class]:before {content: '<h1.' attr(class)'>' !important;}
+h1:after {content: '</h1>' !important;}
+
+h2:before {content: '<h2>' !important;}
+h2[class]:before {content: '<h2.' attr(class)'>' !important;}
+h2:after {content: '</h2>' !important;}
+
+h3:before {content: '<h3>' !important;}
+h3[class]:before {content: '<h3.' attr(class)'>' !important;}
+h3:after {content: '</h3>' !important;}
+
+h4:before {content: '<h4>' !important;}
+h4[class]:before {content: '<h4.' attr(class)'>' !important;}
+h4:after {content: '</h4>' !important;}
+
+h5:before {content: '<h5>' !important;}
+h5[class]:before {content: '<h5.' attr(class)'>' !important;}
+h5:after {content: '</h5>' !important;}
+
+h6:before {content: '<h6>' !important;}
+h6[class]:before {content: '<h6.' attr(class)'>' !important;}
+h6:after {content: '</h6>' !important;}
+
+pre:before {content: '<pre>' !important;}
+pre[class]:before {content: '<pre.' attr(class)'>' !important;}
+pre:after {content: '</pre>' !important;}
+
+ul:before {content: '<ul>' !important;}
+ul[class]:before {content: '<ul.' attr(class)'>' !important;}
+ul:after {content: '</ul>' !important;}
+
+ol:before {content: '<ol>' !important;}
+ol[class]:before {content: '<ol.' attr(class)'>' !important;}
+ol:after {content: '</ol>' !important;}
+
+dl:before {content: '<dl>' !important;}
+dl[class]:before {content: '<dl.' attr(class)'>' !important;}
+dl:after {content: '</dl>' !important;}
+
+address:before {content: '<address>' !important;}
+address[class]:before {content: '<address.' attr(class)'>' !important;}
+address:after {content: '</address>' !important;}
+
+blockquote:before {content: '<blockquote>' !important;}
+blockquote[class]:before {content: '<blockquote.' attr(class)'>' !important;}
+blockquote:after {content: '</blockquote>' !important;}
+
+font {counter-increment: fontNo;}
+table table {counter-increment: tableNo;}
+div {counter-increment: divNo;}
+a {counter-increment: linkNo;}
+
+html:after {
+	clear: both !important;
+	content: "This page contains " counter(fontNo) " font tags | " counter(tableNo) " nested tables | " counter(divNo) " divs | " counter(linkNo) " links";
+	border-top: 0.1em solid #525a84;
+	padding: 0.1em 0.5em;
+	
+	color: White !important;
+	background: #355382 !important;
+	font: 0.8em normal normal sans-serif;
+}

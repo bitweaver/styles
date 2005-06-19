@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*
+Name: Debug with outline
+Version: 1.10
+Author: Opera Software ASA
+Description: Debug pages with outline. Replace outline with border to avoid overlapping. Note that this causes reflow.
+
+Copyright © 2003 Opera Software ASA.
+*/
+
+iframe {outline: 1px solid green !important;}
+table {outline: 1px solid black !important;}
+div {outline: 1px solid red !important;}
+object {outline: 1px  dashed blue !important;}
+form {outline: 1px dotted green !important;}
+td, th {outline: 1px dashed yellow !important;}
+p {outline: 1px dotted black !important;}
+span {outline: 1px dotted red !important;}

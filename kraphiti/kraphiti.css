@@ -1,0 +1,413 @@
+@import url( ../../base.css );
+/*******************************************************************************************/
+/*** global settings ***/
+/* these settings should be at the top of the css since they are the defaults and can be overridden further down */
+body {
+	background-color: #fff;
+	font-size: 12px;
+	font-family: verdana, arial, sans-serif;
+	color: #999;
+	padding: 30px;
+	margin: 0;
+	text-align: center;
+}
+th {
+	vertical-align: bottom;
+	background: #fff;
+	color: #000;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	font-size: 10px;
+}
+hr {
+	border: 1px solid #999;
+}
+input[type="text"] {
+	height: 14px;
+}
+input,select,textarea {
+	font-family: verdana, arial, sans-serif;
+	font-size: 12px;
+	color: #666;
+	background: #eee;
+	border: 1px solid #999;
+}
+input:hover,select:hover,textarea:hover {
+	background: #fff;
+}
+input:focus,select:focus,textarea:focus {
+	background: #fff;
+	color: #000;
+}
+small {}
+
+/* general page title settings on every page */
+h1 {
+	color: #666;
+	font-size: 18px;
+}
+h2 {
+	color: #777;
+	font-size: 16px;
+}
+h3 {
+	color: #888;
+	font-size: 14px;
+}
+h1, h2, h3 {
+	padding: 3px 20px;
+	font-weight: normal;
+}
+
+/* links */
+a {
+	color: #66a;
+	text-decoration: none;
+}
+a:hover {
+	color: #aaf;
+}
+
+/* images */
+img {
+	border: 1px solid #999;
+}
+a img:hover {}
+
+/*******************************************************************************************/
+/*** site layout ***/
+#tikibody {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 830px;
+	border: 1px solid #999;
+}
+#bittop {
+	background-image: url( images/logo.jpg );
+	background-position: top;
+	background-repeat: no-repeat;
+	color: #000;
+	font-size: 10px;
+	height: 96px;
+	padding: 0px;
+	margin: 0px;
+}
+#bittopbar {
+	border-bottom: 1px solid #999;
+	background: #ccc;
+}
+#bittopbar a {
+	background: transparent;
+	font-size: 10px;
+	color: #666;
+	padding: 0 3px;
+}
+#bittopbar a:hover {
+	color: #000;
+}
+#bitleft {
+	font-size: 0.8em;
+	width: 140px;
+	float: left;
+	overflow: auto;
+}
+#bitright {
+	font-size: 0.8em;
+	width: 100px;
+	float: right;
+	overflow: auto;
+}
+#tikimain {
+	width: 565px;
+	float: left;
+	overflow: auto;
+	padding: 0 5px;
+	margin: 0 5px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+}
+#tikibottom {
+	clear: both;
+}
+#tikiprint {}
+
+/*******************************************************************************************/
+/*** common classes ***/
+.display {}
+.preview {
+	border-top: 5px solid #ccc;
+	border-bottom: 5px solid #ccc;
+	background: #eee;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+.header h1, .header h1 a, .header h1 a:hover {
+	color: #666;
+	padding: 5px;
+	text-align: center;
+	margin: 0 80px;
+}
+.header h2 {
+	font-weight:normal;
+	font-size:14px;
+}
+.date {
+	font-size: 0.8em;
+	color: #fff;
+	text-align: center;
+	background: #ccc;
+}
+.body {
+	border-top: 5px solid #eee;
+	border-bottom: 5px solid #eee;
+}
+.introduction {}
+.introductionimage {}
+.content {}
+.footer {
+	text-align: right;
+	font-size: 0.8em;
+	color: #aaa;
+}
+.actionicon {
+	float: left;
+}
+.post .floaticon {
+	margin-top: 14px;
+}
+/******************************************************************************************/
+/*** boxes ***/
+.box {
+	margin: 10px 0px;
+}
+.boxtitle {
+	background: #fff;
+	color: #000;
+}
+.boxcontent {
+	background: #eee;
+	border: 1px solid #ddd;
+}
+.admin.box {
+	padding: 0;
+	border: 0;
+}
+.warning {
+	padding: 10px;
+	background: #fdd;
+	border: 1px solid #000;
+}
+.warning .boxtitle {
+	border: 1px solid #000;
+}
+.warning .boxcontent {
+	background: transparent;
+	color: #000;
+	border: none;
+	padding-top: 10px;
+}
+.help {}
+.module .boxtitle,
+.module .boxcontent {
+	background: transparent;
+	border: none;
+}
+.administration .boxcontent {
+	margin-bottom: 15px;
+}
+
+/******************************************************************************************/
+/*** menus ***/
+/* first we set the general settings */
+.menu {
+	line-height: 16px;
+}
+.menu .head {
+	font-size: 1.0em;
+}
+.menu .head:hover,
+.menu .head:active {
+	background-image: url( images/down.gif );
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.menu .item {
+	padding: 3px 0;
+	font-size: 10px;
+}
+.menu .item:hover {
+	background-image: url( images/arrow.gif );
+	background-repeat: no-repeat;
+	background-position: 1px 3px;
+}
+/* css dropdown menus */
+.hor li ul {
+	width: 10em;
+}
+.hor li ul ul {
+	margin-left: 10em;
+}
+/* icons in menu pages area */
+.midmenu .boxtitle {
+	height: 48px;
+	text-align: left;
+	padding-left: 3px;
+	font-size: 10px;
+}
+.menuicon {
+	float: right;
+}
+/* hide title of the application menu */
+.application-menu .boxtitle {
+	display: none;
+}
+
+/******************************************************************************************/
+/*** parsed text elements ***/
+/* -=...=- */
+.tikibar {
+	padding: 1px;
+	margin: 3px 0;
+	letter-spacing: 2px;
+	color: #fff;
+	background: #ccc;
+}
+
+/* cached pages */
+.tikicache {}
+
+/* links to internal pages */
+.tikitable {
+	background: #ddd;
+	border: 1px solid #999;
+}
+.tikitable td {
+	border: 1px solid #fff;
+}
+
+/******************************************************************************************/
+/*** images and icons ***/
+/* icons */
+.icon,.icon:hover {}
+
+/* floating help and/or admin icon at the top of admin pages */
+.floaticon {}
+
+/******************************************************************************************/
+/*** data tables ***/
+.other {}
+
+/* submission panels */
+.panel {
+	font-size: 0.8em;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+	clear: both;
+}
+
+/* submission buttons in panels */
+.panelsubmitrow td {
+	border-top: 1px solid #ccc;
+	background: #ddd;
+}
+
+/* any table displaying data */
+.data {
+	font-size: 0.8em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+	clear: both;
+}
+.data td {
+	vertical-align: top;
+}
+
+/* alternating odd and even rows in tables */
+.odd {
+	background: #eee;
+}
+.even {}
+
+/* when no data is found - either a <tr> or a <div> */
+.norecords {
+	color: #faa;
+	text-align: center;
+}
+
+/* find table found on pages with listings */
+.find {
+	border-top: 5px solid #eee;
+	border-bottom: 5px solid #eee;
+	float: right;
+	width: auto;
+}
+
+				/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font:12px normal verdana,arial,sans-serif;
+	margin:0 3px;
+	padding:3px 5px 1px 5px;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding-top:2px;
+	border-top:2px solid #f90;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	padding:2px 8px 4px 8px;
+	margin:0 0px;
+	border-top:2px solid #f90;
+	background:#fff;
+	color:#000;
+}
+.tabsystem .tabpage {
+	border:1px solid #ccc;
+	padding:1.5em;
+}
+
+/******************************************************************************************/
+/*** navigation bars and tabs ***/
+.navbar {
+	margin: 5px 0;
+	font-size: 0.8em;
+}
+.navbar a {
+	padding: 0 5px;
+}
+/* pagination at the bottom of pages with listings */
+.pagination {
+	width: 150px;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.8em;
+	color: #fff;
+	background: #ccc;
+}
+.gotopage {
+	font-size: 10px;
+	vertical-align: middle;
+	height: 12px;
+	width: 20px;
+	background: #ddd;
+	border: 1px solid #eee;
+}
+
+/******************************************************************************************/
+/*** bottom bar ***/
+.babelfish {}
+
+/******************************************************************************************/
+/*** settings that have to be at the end ***/
+.highlight,a .highlight {
+	color: #777;
+}

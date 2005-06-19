@@ -1,0 +1,20 @@
+/* view files in
+	-	'styles/slideshows/'
+		and
+	-	'styles/blank/'
+ * for information on how to create your own slideshow.css */
+#slideshow {
+	width: 800px;
+	overflow: auto;
+}
+h1 {
+	font-size: 2.4em;
+	line-height: 120%;
+}
+.content {
+	color: #666;
+	overflow: auto;
+	height: 550px;
+	font-size: 1.3em;
+	line-height: 120%;
+}

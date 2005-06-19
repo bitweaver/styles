@@ -1,0 +1,418 @@
+@import url( ../../base.css );
+@import url( global.css );
+@import url( boxes.css );
+@import url( menus.css );
+/******************************************************************************************/
+/* if you require information on how this css is set up and how to create a theme, please visit
+ * - http://www.bitweaver.org/tiki-index.php?page=bitweaverThemeTutorial
+ * - view the files included in the theme nab. this has a file called 'readme.css'.
+
+	Important colours in this theme
+		background:			#fff;
+		th bg:				#c8c0ae;
+		title color:		#6c6454;
+		faint text color:	#999;
+		wikicell bg:		#e8e5de;
+		odd:					#faf9f6;
+		even:					#e8e5de;
+		border-colour:		#aea696;
+		link-colour:		#a00;
+		link-hover:			#f80;
+		blue #333366;
+		red #b40019;
+		default search title bg is #cccc99; 
+		default search text bg is #e5e5cc; 
+ */
+/******************************************************************************************/
+/*** common layout ***/
+.header h1, .header h1 a, .header h1 a:hover {
+	font: 20px Impact, Verdana, Arial;
+	font-weight: normal;
+	text-align: left;
+	color: #333366;
+	border-bottom: 1px solid white;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 10;
+}
+
+/* This is the author and date underneath Articles */
+.date {
+	color: #494949;
+	text-align: left;
+}
+
+.body {
+	background-image: url( images/tikipro_mask.gif );
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.admin .body {
+	background: transparent;
+	color: #000000;
+}
+
+.introduction {
+	width: 100%;
+	padding-bottom: 5px;
+	border-top: 1px dashed #aea696;
+	text-align: justify;
+}
+
+.introductionimage {
+	float: right;
+	border: 1px solid #aea696;
+	padding: 5px;
+	margin: 5px;
+}
+
+.content {
+	width: 100%;
+	padding: 5px;
+	border-top: 1px;
+}
+
+.content h1 {
+	color: #333366;
+}
+
+.content h2,h3 {
+	color: #494949;
+}
+
+.content .body img {
+	padding: 12px;
+	margin: 6px;
+	background-color: #E8E5DE;
+	border: 2px #333366;
+}
+.avatar {
+	padding: 6px;
+	border: 0px;
+}
+.footer {
+	color: #494949;
+	/* background-image: url( images/hr.gif );*/
+	background-position: left top;
+	background-repeat: no-repeat;
+	min-height: 17px;
+}
+
+.actionicon {
+	float: right;
+}
+
+.display.blogs .header, .display.blogs .footer, .display.blogs h2, .display.blogs .date {
+	color: #494949;
+	background-color: #E8E5DE;
+}
+
+.display.blogs .header {
+	margin-top: 6px;
+	padding: 3px;
+}
+
+.display.blogs .post .header, .display.blogs .post .footer, .display.blogs .post .date {
+	background-color: transparent;
+}
+
+/******************************************************************************************/
+/*** parsed text elements ***/
+/* -=...=- */
+#bittopbar {
+	background: #e8e5de;
+	padding: 2px;
+}
+
+#bittopbar a {
+	padding-left: 6px;
+	padding-left: 6px;
+}
+
+/* cached pages */
+.tikicache {}
+/* links to internal pages */
+
+.tikitable {}
+
+.tikitable td {
+	background: #e8e5de;
+	vertical-align: middle;
+	border: 1px solid #fff;
+}
+
+/******************************************************************************************/
+/*** structures ***/
+.structurebar {
+	margin-bottom: 10px;
+}
+
+/*** menus ***/
+#bitleft .menu .head,bitright .menu .head {
+	color: #fff;
+	font-weight: bold;
+	padding: 2px 1px;
+}
+
+#bitleft .menu .head:hover,bitright .menu .head:hover {
+	color: #fff;
+	background: #aea696;
+}
+#bitleft .menu .item,bitright .menu .item {
+	margin-left: 10px;
+	color: #ffffff;
+	font-weight: normal;
+	padding: 0 0 0 10px;
+}
+.menu .item:hover {
+	/*color: #fff;*/
+	/* background: #b40019;*/
+}
+
+/******************************************************************************************/
+/*** categories ***/
+/* this section really has to be worked on at some point */
+.category {
+	margin-bottom: 10px;
+}
+
+.tree {
+	margin-left: 25px;
+}
+
+.treenode {}
+.categpath {}
+.catname {}
+.navigation {
+	color: #aea696;
+}
+
+.catlists {
+	margin-bottom: 10px;
+}
+
+/******************************************************************************************/
+/*** directories ***/
+.subcategories {
+	color:#333366;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.subcategories td {
+	font-size: 10px;
+	color: #999;
+	padding: 5px;
+	border: 1px solid #aea696;
+}
+
+.subcategory {
+	font-size: 14px;
+	color:#333366;
+}
+
+.subsubcategory {}
+
+.path {
+	font-size: 14px;
+	color: #999;
+	padding: 3px;
+	margin: 10px 0;
+	border-bottom: 1px solid #aea696;
+}
+
+.site {
+	border: 1px solid #aea696;
+	padding: 10px;
+	margin: 15px 0;
+}
+
+.site h1, .site h1 a, .site h1 a:hover {
+	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.site h1 a			{	color: #a00;	}
+.site h1 a:hover	{	color: #f80;	}
+
+.site .category {
+	color: #333366;
+	margin: 0;
+	border: 0;
+}
+
+.related {}
+
+.related .h2 {
+	color:#333366;
+}
+
+
+/******************************************************************************************/
+/*** images and icons ***/
+/* icons */
+.icon,
+.icon:hover {
+	border: 0;
+}
+
+/* floating help and/or admin icon at the top of admin pages */
+.floaticon {
+	float: right;
+}
+
+
+/******************************************************************************************/
+/*** data tables ***/
+.other {}
+
+/* submission panels */
+.panel {
+	background: #e8e8ff;
+	border: 2px solid #aea696;
+}
+
+table.panel td {
+	border-bottom: 1px solid #fff;
+}
+
+/* removing lines from tables within tables */
+table.panel table tds {
+	border-bottom: 0;
+}
+
+/* submission buttons in panels */
+.panelsubmitrow {
+	background: #d8d8ff;
+	text-align: center;
+}
+
+/* alternating odd and even rows in tables */
+.odd {
+	border-bottom: 1px #fff;
+}
+
+/* background: #e8e5de; */
+.even {
+	background: #cccccc;
+}
+
+/* when no data is found - either a <tr> or a <div> */
+.norecords {
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-align: center;
+	color: #a00;
+}
+
+.norecords,
+.norecords td {
+	text-decoration: blink;
+}
+
+/* find bar found on pages with listings */
+.find {
+	border: 1px solid #aea696;
+	margin: 2px 0;
+}
+
+/* default nab search title bg is #cccc99; */
+/* default nab search text bg is #e5e5cc; */
+.find td {
+	color: #000000;
+	background: #e5e5cc;
+}
+
+
+/******************************************************************************************/
+/*** navigation bars and tabs ***/
+.navbar {
+	margin: 5px 0;
+}
+
+.navbar a {
+	color: #6c6454;
+	background: #e8e5de;
+	border: 1px solid #aea696;
+	padding: 0px 3px;
+	margin: 1px;
+}
+
+.navbar a:hover {
+	color: #fff;
+	background: #aea696;
+	border: 1px solid #6c6454;
+}
+
+/* pagination at the bottom of pages with listings */
+.pagination {
+	color: #999;
+	margin: 10px 0;
+}
+
+/* navbar is usually below <div class="body"> | if above it's <div class="navbar above"> */
+.above		{}
+/* class="navbar message" */
+.message	{}
+/* class="navbar workflow" */
+.workflow	{}
+/* class="navbar above tikiforum" */
+.tikiforum {}
+/* class="navbar help" */
+.help		{	margin: 25px 0	}
+/* class="navbar comment" */
+.comment	{	margin: 5px 0	}
+
+
+/******************************************************************************************/
+/*** settings that have to be at the end ***/
+.highlight,
+.highlight a {
+	font-weight: bold;
+	color: red;
+}
+
+.boxtitle .highlight {
+	background: yellow;
+	color: black;
+}
+
+.prio1	{ border-left: 2px solid #fee; }
+.prio2	{ border-left: 2px solid #fdd; }
+.prio3	{ border-left: 2px solid #fcc; }
+.prio4	{ border-left: 2px solid #fbb; }
+.prio5	{ border-left: 2px solid #faa; }
+.prio6	{ border-left: 2px solid #f99; }
+.prio7	{ border-left: 2px solid #f88; }
+.prio8	{ border-left: 2px solid #f77; }
+.prio9	{ border-left: 2px solid #f66; }
+
+
+/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	top:3px;
+	font:12px normal verdana,arial,sans-serif;
+	margin:0 3px;
+	padding:3px 5px 1px 5px;
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.tabsystem .tabcontainer .tab-hover {
+	padding-top:2px;
+	border-top:2px solid #f90;
+}
+.tabsystem .tabcontainer .tab-active {
+	top:1px;
+	padding:2px 8px 4px 8px;
+	margin:0 0px;
+	border-top:2px solid #f90;
+	background:#fff;
+	color:#000;
+}
+.tabsystem .tabpage {
+	border:1px solid #ccc;
+	padding:1.5em;
+}

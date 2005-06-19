@@ -1,0 +1,70 @@
+/******************************************************************************************/
+/*** Show page layout ***/
+/* global classes */
+.body		{ border-right: 4px solid #0a0; }
+.comment	{ border-right: 4px solid #009; }
+.footer		{ border-right: 4px solid #000; }
+.header		{ border-right: 4px solid #f90; }
+
+/* sections */
+.administration	{ border-left: 4px solid #38a; }
+.articles		{ border-left: 4px solid #99f; }
+.backup			{ border-left: 4px solid #38a; }
+.banners		{ border-left: 4px solid #38a; }
+.blogs			{ border-left: 4px solid #999; }
+.cache			{ border-left: 4px solid #38a; }
+.category		{ border-left: 4px solid #0ff; }
+.charts			{ border-left: 4px solid #daa; }
+.chat			{ border-left: 4px solid #38a; }
+.cookies		{ border-left: 4px solid #38a; }
+.directory		{ border-left: 4px solid #aaf; }
+.drawings		{ border-left: 4px solid #38a; }
+.dsn			{ border-left: 4px solid #38a; }
+.ewiki			{ border-left: 4px solid #38a; }
+.faq			{ border-left: 4px solid #daa; }
+.fgallery		{ border-left: 4px solid #9f0; }
+.gallery		{ border-left: 4px solid #09f; }
+.groups			{ border-left: 4px solid #38a; }
+.hotwords		{ border-left: 4px solid #38a; }
+.htmlpages		{ border-left: 4px solid #daa; }
+.link			{ border-left: 4px solid #38a; }
+.login			{ border-left: 4px solid #f9c; }
+.menus			{ border-left: 4px solid #38a; }
+.notifications	{ border-left: 4px solid #38a; }
+.permission		{ border-left: 4px solid #f00; }
+.phpwiki		{ border-left: 4px solid #38a; }
+.polls			{ border-left: 4px solid #9f9; }
+.quicktags		{ border-left: 4px solid #38a; }
+.quiz			{ border-left: 4px solid #999; }
+.ranking		{ border-left: 4px solid #ff0; }
+.rssmodules		{ border-left: 4px solid #38a; }
+.search			{ border-left: 4px solid #ff0; }
+.structure		{ border-left: 4px solid #f0f; }
+.templates		{ border-left: 4px solid #38a; }
+.themecontrol	{ border-left: 4px solid #daa; }
+.tikicalendar	{ border-left: 4px solid #9f9; }
+.tikiforum		{ border-left: 4px solid #afa; }
+.trackers		{ border-left: 4px solid #daa; }
+.users			{ border-left: 4px solid #38a; }
+.wiki			{ border-left: 4px solid #9f9; }
+.workflow		{ border-left: 4px solid #aaf; }
+
+/* other stuff */
+.admin			{ border-right: 4px solid #f66; }
+.display		{ border-right: 4px solid #66f; }
+.box			{ border-left: 4px solid #acf; }
+.boxtitle		{ border-right: 4px solid #fca; }
+.boxcontent		{ border-right: 4px solid #fac; }
+
+/* user related sections */
+.my					{ border-left: 4px solid #9f9; }
+.userbookmarks		{ border-left: 4px solid #9f9; }
+.userfiles			{ border-left: 4px solid #9f9; }
+.usermessages		{ border-left: 4px solid #9f9; }
+.usermodules		{ border-left: 4px solid #9f9; }
+.userpreferences	{ border-left: 4px solid #9f9; }
+.usertasks			{ border-left: 4px solid #9f9; }
+.userwatches		{ border-left: 4px solid #9f9; }
+
+/*** some debug stuff ***/
+.module.box .boxcontent table.mother { background: #ddf; }

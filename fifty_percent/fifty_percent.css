@@ -1,0 +1,288 @@
+@import url( ../../base.css );
+/* 
+	this theme is based on the CSS Zen Garden theme by Christian Klockau
+	http://www.csszengarden.com/?cssfile=http://www-home.fh-lausitz.de/~cklockau/csszengarden/sample.css
+
+	this theme is distributed under the Creative Commons license
+	http://creativecommons.org/licenses/by-nc-sa/1.0/
+*/
+
+				/*** global settings ***/
+body {
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
+  font-size:0.9em;
+  font-family:verdana, sans-serif;
+  background-color:#e4e9e2;
+  text-align:center;
+}
+th {}
+td {
+	vertical-align:top;
+}
+hr {}
+small {
+	font-size:0.8em;
+	color:#000;
+}
+h1, h2, h3 {
+	text-align:right;
+	background:#53674C;
+	padding:10px;
+	border:0;
+	margin:0;
+	border-bottom:1px solid #000;
+	color:#000;
+	font-family:'century gothic',arial,sans-serif;
+	font-weight:normal;
+}
+h1 {
+	font-size:2em;
+}
+h2 {
+	font-size:1.7em;
+}
+h3 {
+	font-size:1.4em;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+				/*** site layout ***/
+#tikibody {
+	position:relative;
+	margin:0px auto;
+	text-align:left;
+	padding:0px;
+	width:758px;
+}
+#bittop {
+	position:relative;
+	top:0px;
+	margin:5px auto;
+	width:756px;
+	height:299px;
+	background-image:url( images/banner.jpg );
+	background-repeat:no-repeat;
+	background-position:right;
+	border:1px solid #000;
+}
+#bitmodules {
+	position:absolute;
+	top:304px;
+	left:0px;
+	width:375px;
+	padding:0px;
+	margin:0px;
+	border:1px solid #000;
+	background:#53674C;
+}
+#bitright, #bitleft {
+	width:auto;
+}
+#tikimain {
+	position:absolute;
+	top:304px;
+	right:0px;
+	width:375px;
+	padding:0px;
+	margin:0px;
+	margin-bottom:10px;
+	border:1px solid #000;
+	background:#82967d;
+}
+#tikibottom {}
+#tikiprint {}
+#slideshow {}
+
+				/*** common classes ***/
+.display, .admin {}
+.floaticon {
+	float:left;
+}
+.preview {}
+.header h1 {}
+h1, h1 a, h1 a:hover {
+	font-weight:normal;
+	color:#000;
+}
+.header h2 {
+	font-weight:normal;
+	font-size:1em;
+}
+.date {
+	font-weight:normal;
+	text-align:right;
+	color:#000;
+	font-size:0.8em;
+}
+.post .date {
+}
+.body {
+	padding:2px;
+}
+.introduction {}
+.introductionimage {}
+.content {}
+.footer {
+	color:#000;
+	font-size:0.8em;
+}
+.actionicon {}
+
+				/*** boxes ***/
+.box {
+	text-align:left;
+}
+.boxtitle {
+	background:#53674C;
+	border-bottom:1px dotted #000;
+}
+.boxcontent {
+	background-color:#82967d;
+}
+#bitmodules .boxtitle {
+	text-align:left;
+	padding:10px;
+	border-bottom:1px solid #000;
+}
+#bitmodules .boxtitle a {
+	color:#000;
+	border:0;
+	font-size:2em;
+	font-family:'century gothic',arial,sans-serif;
+	font-weight:normal;
+}
+				/*** menus ***/
+.menu .head {
+	color:#000;
+	font-size:0.8em;
+	padding:20px 10px;
+	border-left:10px solid #768872;
+	border-bottom:1px dotted #000;
+	background:transparent url( images/no-press.gif ) no-repeat 100% 50%;
+}
+.menu .head:hover {
+	color:#000;
+	border-left:10px solid #000;
+	border-bottom:1px dotted #000;
+	text-decoration:none;
+	background:#ff7e00 url( images/press.gif ) no-repeat 100% 50%;
+}
+.menu .item {
+	font-weight:normal;
+	color:#000;
+	font-size:0.8em;
+	padding:1px 10px;
+	border-left:10px solid #768872;
+	border-bottom:1px dotted #000;
+}
+.menu .item:hover {
+	color:#000;
+	background-color:#ff7e00;
+	border-left:10px solid #000;
+	border-bottom:1px dotted #000;
+	text-decoration:none;
+}
+				/*** parsed elements ***/
+.tikibar {}
+.tikicache {}
+.tikibox {
+	padding:3px;
+	border:1px solid gray;
+}
+.tikitable {
+	background:#eee;
+}
+.tikitable td {
+	border:1px solid #fff;
+}
+
+				/*** forms ***/
+input[type="text"] {
+	width:90%;
+}
+input,select,textarea {}
+fieldset {
+	border:0;
+}
+legend {
+	display:none;
+}
+label:hover {}
+.row {}
+.formlabel {}
+.formfeedback {}
+.forminput {}
+.formhelp {
+	font-size:0.8em;
+}
+.formfeedback,.formlabel,.forminput {
+	width:100%;
+	float:right;
+	text-align:left;
+}
+.formhelp {
+}
+.submit {}
+.clear {}
+.minifind {}
+
+				/*** data tables ***/
+.other {}
+.panel {}
+.panelsubmitrow {}
+.data {}
+.odd {}
+.even {}
+.norecords {}
+.find {}
+
+				/*** navigation bars ***/
+.navbar {
+	font-size:0.8em;
+}
+.navbar a {
+}
+.selected {}
+.pagination {}
+
+.tabsystem {
+	margin-top: 20px;
+	border-top:1px solid #000;
+}
+				/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
+	font-weight:normal;
+	font-size:0.8em;
+	padding:1px 3px;
+	border-left:5px solid #768872;
+	display:none;
+}
+.tabsystem .tabcontainer .tab-hover {
+	background-color:#ff7e00;
+	border-left:5px solid #000;
+}
+.tabsystem .tabcontainer .tab-active {
+	background:#53674C;
+	border-left:5px solid #000;
+}
+.tabsystem .tabpage {
+	background:#768872;
+	border:1px solid #000;
+	border-width:1px 0;
+}
+				/*** bottom bar ***/
+.babelfish {}
+
+				/*** settings that have to be at the end ***/
+.highlight {}

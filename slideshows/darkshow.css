@@ -1,0 +1,50 @@
+/* overriding previous settings with new ones (not sure if i mention all settings in all css files) */
+body, div, table, ul, ol, li, div, table, 
+a:link, a:hover, a:active, a:visited, 
+h1, h2, h3, .title, .header, 
+.header, .floaticon, .body, .content, .structure, .navigation {
+	font-family: Verdana, Arial, Courier;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: left;
+	text-decoration: none;
+	letter-spacing: normal;
+	color: #bbb;
+	background: transparent;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3 {
+	font-weight: 600;
+	margin: 5px;
+}
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 18px;
+}
+.body {
+	margin: 10px;
+}
+.content {
+	text-align: justify;
+}
+body {
+	background: #000;
+}
+td {
+	border: 1px solid #666;
+}
+a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
