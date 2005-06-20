@@ -49,7 +49,7 @@
 	{/foreach}
 {/strip}
 
-	{* tikipro javascript block *}
+	{* bitweaver javascript block *}
 	<script type="text/javascript"><!--
 		var tikiCookiePath = "{$gBitLoc.cookie_path}";
 		var tikiCookieDomain = "{$gBitLoc.cookie_domain}";
