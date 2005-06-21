@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2 2005/06/21 18:05:16 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.1 2005/06/21 22:26:32 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.2.2.1 $
  * @theme    jill
  * @license  LGPL
  */
@@ -47,6 +47,14 @@ h3			{font-size:1.1em;}
 .menuicon			{text-align:center;}
 small,.small		{font-size:0.8em;}
 ul.small			{line-height:normal;}
+
+/* tocs */
+.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{color:#666;}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 
 /* forms */
 form,textarea,select	{margin:0; padding:0;}
