@@ -21,8 +21,9 @@
 
 	<div id="bitsearch">
 		{form method="get" ipackage=search ifile="index.php"}
-			<input name="highlight" size="14" type="text" accesskey="s" value="{tr}search{/tr}" onfocus="this.value=''" />
-			<select name="where">
+			<input type="hidden" name="where" value="pages" />
+			<input type="text" name="highlight" size="14" accesskey="s" value="{tr}search{/tr}" onfocus="this.value=''" />
+			{*<select name="where">
 				<option value="pages">{tr}Entire Site{/tr}</option>
 				{if $gBitSystem->isFeatureActive( 'feature_wiki' )}
 					<option value="wikis">{tr}Wiki Pages{/tr}</option>
@@ -53,7 +54,7 @@
 				{if $gBitSystem->isFeatureActive( 'feature_trackers' )}
 					<option value="trackers">{tr}Tracker{/tr}</option>
 				{/if}
-			</select>
+			</select>*}
 
 			<input type="submit" name="search" value="{tr}go{/tr}"/>
 		{/form}
