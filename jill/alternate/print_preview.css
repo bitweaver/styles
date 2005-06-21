@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/alternate/print_preview.css,v 1.1 2005/06/21 15:26:08 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/alternate/print_preview.css,v 1.2 2005/06/21 18:05:17 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    jill
  * @license  LGPL
  */
@@ -9,16 +9,16 @@
 body		{background:#fff;}
 
 /* hide large layout bits */
-#tikilogo	{display:none;}
+#bitlogo	{display:none;}
 #bittop	{display:none;}
 #bittopbar	{display:none;}
 #toplogin	{display:none;}
-#tikimain	{padding:0 1em;}
-#tikibottom	{clear:both; font-size:0.8em; text-align:center;}
+#bitmain	{padding:0 1em;}
+#bitbottom	{clear:both; font-size:0.8em; text-align:center;}
 
 /* hide other stuff */
 .pageactions,.navbar	{display:none;}
 .tabcontainer			{display:none;}
-.tikitoc				{display:none;}
+.bittoc				{display:none;}
 .floaticon				{display:none;}
 .minifind				{display:none;}

@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.1 2005/06/21 15:26:07 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2 2005/06/21 18:05:17 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    jill
  * @license  LGPL
  */
@@ -64,7 +64,7 @@ a.external	{background:transparent url( images/external.gif ) no-repeat right; p
 /* boxes and modules */
 .box					{}
 .box h3					{}
-#tikimain .boxcontent	{padding:0 0.5em 0.5em 0.5em;}
+#bitmain .boxcontent	{padding:0 0.5em 0.5em 0.5em;}
 
 /* friggin MSIE requires the width attribute here as well for overflow to work - ARGH */
 #bitleft .module			{width:175px;}
@@ -73,6 +73,7 @@ a.external	{background:transparent url( images/external.gif ) no-repeat right; p
 .module h3					{background:transparent url( images/mh3.gif ) left no-repeat; padding-left:16px;}
 .module h3 a				{color:#000;}
 .module ul,.module ul li	{list-style:none; margin:0; padding:0;}
-.module ul					{}
+.module ul.data				{text-align:center;}
+.module ul.data li			{border-top:0;}
 .module ol,.module ol li	{margin:0 0 0 1.5em; padding:1px 0; line-height:normal;}
 }

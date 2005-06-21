@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.1 2005/06/21 15:26:07 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2 2005/06/21 18:05:16 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    jill
  * @license  LGPL
  */
@@ -15,8 +15,8 @@ hr				{border:0; border-top:1px solid #933; padding:0; margin:0.5em 0;}
 
 /* links */
 :link,:visited					{text-decoration:none; color:#579;}
-#tikimain :link:hover,
-#tikimain :visited:hover		{background-color:#bcd;}
+#bitmain :link:hover,
+#bitmain :visited:hover		{background-color:#bcd;}
 :link:hover,:visited:hover,
 :link:active,:visited:active	{color:#0C2242;}
 
@@ -42,7 +42,7 @@ h3			{font-size:1.1em;}
 .footer				{color:#999; font-size:0.8em;}
 .pagination			{text-align:center;}
 /* images */
-#tikimain .portrait	{float:right;}
+#bitmain .portrait	{float:right;}
 .icon				{border:0; vertical-align:middle; margin:0 0.2em;}
 .menuicon			{text-align:center;}
 small,.small		{font-size:0.8em;}
@@ -55,15 +55,15 @@ textarea				{width:99%;}
 * redering errors */
 input,textarea,select	{font-size:10px;}
 html>body input,textarea,select	{font-size:inherit;}
-#tikimain input,
-#tikimain textarea,
-#tikimain select		{}
+#bitmain input,
+#bitmain textarea,
+#bitmain select		{}
 input[type="text"]		{max-width:100%;}
 textarea				{}
 fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
 legend					{font-size:1.2em; padding:1em;}
 .row					{clear:both;}
-#tikimain .row			{margin-bottom:1em;}
+#bitmain .row			{margin-bottom:1em;}
 .quicktags				{margin:0;}
 .formlabel				{font-weight:bold; float:left; width:20%; text-align:right; font-size:0.8em;}
 .forminput				{margin-left:21%;}
@@ -72,7 +72,7 @@ legend					{font-size:1.2em; padding:1em;}
 .formhelp a				{font-weight:bold;}
 .closebutton			{position:absolute; top:1px; right:1px;}
 .submit					{text-align:center;}
-#tikimain .submit		{padding:1.5em;}
+#bitmain .submit		{padding:1.5em;}
 .error,.errorpage h3	{color:#f00; font-weight:bold;}
 .warning				{color:#f80;}
 .success				{color:#090;}
@@ -81,14 +81,14 @@ legend					{font-size:1.2em; padding:1em;}
 .minifind legend		{display:none;}
 
 /* parsed elements */
-.tikitable td	{padding:0.5em; border:1px solid #ccc;}
-.tikibox		{background:#579; border:1px solid #aaa; padding:0.5em; margin:0 1em; color:#eee;}
-.tikibox a		{color:#fff; font-weight:bold;}
-.tikibar		{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
-.tikitoc		{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
-.tikitoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
-.tikitoc ul ul	{margin:0 0 0 1em;}
-.tikitoc ul li	{}
+.bittable td	{padding:0.5em; border:1px solid #ccc;}
+.bitbox		{background:#579; border:1px solid #aaa; padding:0.5em; margin:0 1em; color:#eee;}
+.bitbox a		{color:#fff; font-weight:bold;}
+.bitbar		{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+.bittoc		{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
+.bittoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
+.bittoc ul ul	{margin:0 0 0 1em;}
+.bittoc ul li	{}
 
 /* tables */
 fieldset table			{margin:0 2%; width:96%;}
@@ -124,7 +124,7 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 /* boxes */
 .box					{}
 .box h3					{}
-#tikimain .boxcontent	{padding:0 1em 1em 1em;}
+#bitmain .boxcontent	{padding:0 1em 1em 1em;}
 
 /* package specific settings */
 

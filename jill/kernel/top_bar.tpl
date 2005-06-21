@@ -36,7 +36,7 @@
 		{/if}
 	</ul>
 
-	<div id="tikilogin">
+	<div id="bitlogin">
 		{if $gBitUser->isRegistered()}
 			{displayname} &bull; <a href="{$gBitLoc.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
 		{else}

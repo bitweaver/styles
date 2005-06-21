@@ -1,8 +1,8 @@
-<div id="tikilogo">
+<div id="bitlogo">
 	{*
-	<div id="tikilogin">
+	<div id="bitlogin">
 		{if $gbituser->isregistered()}
-			{tr}logged in as {displayname}{/tr} &bull; <a href="{$gtikiloc.users_pkg_url}logout.php">{tr}logout{/tr}</a>
+			{tr}logged in as {displayname}{/tr} &bull; <a href="{$gbitloc.users_pkg_url}logout.php">{tr}logout{/tr}</a>
 		{else}
 			{form ipackage="users" ifile="validate.php"}
 				<input type="text" name="user" alt="user name" size="10" value="username" onfocus="this.value=''" />
@@ -11,7 +11,7 @@
 				{if $rememberme ne 'disabled'}
 					<input type="hidden" name="rme" id="rme" value="on" />
 				{/if}
-				{if $gtikisystem->isfeatureactive( 'allowregister' )}
+				{if $gbitsystem->isfeatureactive( 'allowregister' )}
 					<input type="submit" name="register" value="{tr}register{/tr}" />
 				{/if}
 			{/form}
@@ -19,7 +19,7 @@
 	</div><!-- end #tiklogin -->
 	*}
 
-	<div id="tikisearch">
+	<div id="bitsearch">
 		{form method="get" ipackage=search ifile="index.php"}
 			<input name="highlight" size="14" type="text" accesskey="s" value="{tr}search{/tr}" onfocus="this.value=''" />
 			<select name="where">
@@ -40,7 +40,7 @@
 				{if $gBitSystem->isFeatureActive( 'feature_articles' )}
 					<option value="articles">{tr}Articles{/tr}</option>
 				{/if}
-				{if $gBitSystem->isFeatureActive( 'feature_tiki_forums' )}
+				{if $gBitSystem->isFeatureActive( 'feature_bit_forums' )}
 					<option value="forums">{tr}Forums{/tr}</option>
 				{/if}
 				{if $gBitSystem->isFeatureActive( 'feature_blogs' )}

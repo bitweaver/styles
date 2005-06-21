@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/jill/kernel/module.tpl,v 1.1 2005/06/21 15:26:09 bitweaver Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/jill/kernel/module.tpl,v 1.2 2005/06/21 18:05:17 squareing Exp $ *}
 {strip}
 <div class="module box {$module_name|replace:"_":"-"}">
 	{if $module_title}
