@@ -1,0 +1,24 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/alternate/print_preview.css,v 1.1 2005/06/21 15:26:08 bitweaver Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>
+ * @version  $Revision: 1.1 $
+ * @theme    jill
+ * @license  LGPL
+ */
+@import url( ../all.css );
+body		{background:#fff;}
+
+/* hide large layout bits */
+#tikilogo	{display:none;}
+#bittop	{display:none;}
+#bittopbar	{display:none;}
+#toplogin	{display:none;}
+#tikimain	{padding:0 1em;}
+#tikibottom	{clear:both; font-size:0.8em; text-align:center;}
+
+/* hide other stuff */
+.pageactions,.navbar	{display:none;}
+.tabcontainer			{display:none;}
+.tikitoc				{display:none;}
+.floaticon				{display:none;}
+.minifind				{display:none;}

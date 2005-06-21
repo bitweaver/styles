@@ -1,0 +1,46 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/Attic/layout2.css,v 1.1 2005/06/21 15:26:07 bitweaver Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>
+ * @version  $Revision: 1.1 $
+ * @theme    jill
+ * @license  LGPL
+ */
+@media screen,projection,tv {
+/* layout */
+body	{background:transparent url( images/bg.png ) top left no-repeat !important;}
+
+#wrap1		{background:transparent url( images/logo.png ) 12em 0.8em no-repeat !important;}
+#tikibody	{}
+#tikibottom	{clear:both; font-size:0.8em; text-align:center; color:#999;}
+
+#tikimain				{background:transparent url( images/page.png ) top left no-repeat; padding:5px 20px 20px 20px;}
+/*#tikimain				{background:transparent url( images/bottom.png ) bottom right no-repeat; padding:5px 20px 20px 20px;}*/
+#bitleft,#bitright	{position:absolute; font-size:0.8em;}
+#bitleft				{width:175px; left:10px;}
+#bitright				{width:160px; right:10px;}
+
+#tikilogo	{clear:both; height:25px;}
+#bittopbar	{background:transparent url( images/top.png ) bottom left repeat-x; float:left; width:97%; height:1.6em; font-size:0.8em; padding:2px 0 2px 2%;}
+
+#tikilogin		{color:#999; float:right; padding:0; margin:0;}
+#tikilogin a	{color:#999;}
+
+/*
+#tikilogin							{clear:both; text-align:right; color:#999; font-size:0.8em; padding:5px 10px 0 0;}
+#tikilogin input					{font-size:10px;}
+#tikilogin input[type="password"],
+#tikilogin input[type="text"]		{margin:0 0.3em; border:dashed #aaa; border-width:0 0 1px 0; padding:2px; color:#aaa;}
+*/
+
+#tikisearch								{font-size:0.8em; clear:both; text-align:right; color:#999; padding:5px 10px 0 0;}
+#tikisearch *							{color:#999;}
+#tikisearch input[type="text"]			{border:dotted #999; border-width:0 0 1px 0; margin:0 0.3em; padding:2px;}
+#tikisearch input[type="text"]:focus	{border:solid #000; border-width:0 0 1px 0; color:#000;}
+#tikisearch select:hover,
+#tikisearch input:hover,
+#tikisearch input[type="submit"]:focus	{color:#000;}
+
+/* adjusting width of #tikimain depending on displayed columns - in this theme left column should always be present */
+.tiki-cols-2	{margin:10px 170px 10px 185px;}
+.tiki-cols-1	{margin:10px 10px 10px 185px;}
+}
