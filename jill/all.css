@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.1 2005/06/21 22:26:32 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.2 2005/06/22 20:20:08 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.1 $
+ * @version  $Revision: 1.2.2.2 $
  * @theme    jill
  * @license  LGPL
  */
@@ -29,13 +29,14 @@ h3			{font-size:1.1em;}
 /* common classes */
 .body				{font-size:1em; padding:1em 0 0 0;}
 .date				{color:#999; font-size:0.8em;}
+.header .date		{clear:both;}
 .content			{}
 .preview			{border:1px dashed #009; margin:0 0 2em 0;}
 .norecords			{font-weight:bold;}
 .popup				{background:#fff; width:250px; border:1px solid #000;}
 .highlight			{font-weight:bolder; color:#900; background:#eee; border:1px solid #ddd;}
 .selected			{font-weight:bolder}
-.floaticon			{float:right;}
+.floaticon			{float:right; font-size:0.9em;}
 .storage			{float:right; border:1px solid #ccc;}
 .storage .item		{margin:3px;}
 .comment,.footer	{clear:both;}
@@ -65,7 +66,7 @@ input,textarea,select	{font-size:10px;}
 html>body input,textarea,select	{font-size:inherit;}
 #bitmain input,
 #bitmain textarea,
-#bitmain select		{}
+#bitmain select			{}
 input[type="text"]		{max-width:100%;}
 textarea				{}
 fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
@@ -90,10 +91,10 @@ legend					{font-size:1.2em; padding:1em;}
 
 /* parsed elements */
 .bittable td	{padding:0.5em; border:1px solid #ccc;}
-.bitbox		{background:#579; border:1px solid #aaa; padding:0.5em; margin:0 1em; color:#eee;}
+.bitbox			{background:#579; border:1px solid #aaa; padding:0.5em; margin:0 1em; color:#eee;}
 .bitbox a		{color:#fff; font-weight:bold;}
-.bitbar		{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
-.bittoc		{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
+.bitbar			{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+.bittoc			{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
 .bittoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
 .bittoc ul ul	{margin:0 0 0 1em;}
 .bittoc ul li	{}
@@ -107,7 +108,7 @@ th :link, th :visited	{color:#fff;}
 td.actionicon			{text-align:right;}
 table.data				{border:1px solid #000; font-size:0.8em;}
 .menutable td			{padding:10px 4px;}
-.odd,.even		{border-bottom:1px solid #999; padding:3px 2px;}
+.odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
 .odd					{background:#e5e5e5;}
 .even					{}
 
