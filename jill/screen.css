@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.1 2005/06/22 20:33:49 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.2 2005/06/23 21:33:10 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.1 $
+ * @version  $Revision: 1.2.2.2 $
  * @theme    jill
  * @license  LGPL
  */
@@ -14,10 +14,11 @@ a.external	{background:transparent url( images/external.gif ) no-repeat right; p
 /* headings */
 .header		{border-bottom:1px dashed #666; margin-bottom:0em;}
 .header h1	{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px;}
-.header h2	{background:transparent; font-size:0.8em; padding:0; margin:0; font-weight:normal;}
+.header h2	{font-size:0.8em; padding:0; margin:0; font-weight:normal;}
+.comment h3	{border-bottom:2px solid #999;}
+.comment .post	{border-left:1px solid #ddd; padding:0 0 0 0.5em;}
 
 /* common classes */
-.comments		{color:#666;}
 .pagination		{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
 .pagination a	{border:1px solid #ccc; background:#eee; padding:0 2px;}
 .gallerybar,
