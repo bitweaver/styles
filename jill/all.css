@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.3 2005/06/26 07:44:23 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.4 2005/06/26 16:21:52 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.3 $
+ * @version  $Revision: 1.2.2.4 $
  * @theme    jill
  * @license  LGPL
  */
@@ -137,8 +137,10 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 
 /* package specific settings */
 
-/* fisheye */
+/* fisheye and themes listing */
+.themes ul.data li.item,
 .fisheye ul.data li.item		{border:1px solid #ddd; clear:both; margin:0.5em 0px 0.5em 200px; background:#eee;}
+.themes ul.data li.item .thumb,
 .fisheye ul.data li.item .thumb	{float:left; margin:-35px 0 0 -200px;}
 .fisheye .body .image			{margin:0 -1em;}
 
