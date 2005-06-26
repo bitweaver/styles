@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.2 2005/06/22 20:20:08 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.3 2005/06/26 07:44:23 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.2 $
+ * @version  $Revision: 1.2.2.3 $
  * @theme    jill
  * @license  LGPL
  */
@@ -110,7 +110,7 @@ table.data				{border:1px solid #000; font-size:0.8em;}
 .menutable td			{padding:10px 4px;}
 .odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
 .odd					{background:#e5e5e5;}
-.even					{}
+.even					{background:#fff;}
 
 /* lists */
 .formfeedback ul		{margin:1em 2em 0 2em; padding:2px;}
@@ -120,7 +120,7 @@ ul.data					{margin:1em;}
 ul.data li.item			{padding:0.5em; margin:0;}
 ul.data .thumb			{float:right; margin-right:1em;}
 
-li.odd,li.even			{border-top:1px solid #666; padding:1em 0; margin-bottom:-1px;}
+li.odd,li.even			{border-top:1px solid #666; padding:1em 0; margin-bottom:-1px !important;}
 ul.toc,ul.toc ul		{margin-left:2em; padding-left:0;}
 ul.toc li				{list-style:none;}
 
