@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/fifty_percent/mod_application_menu.tpl,v 1.1 2005/06/19 06:11:16 bitweaver Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/fifty_percent/mod_application_menu.tpl,v 1.2 2005/06/28 07:46:02 spiderr Exp $ *}
 {strip}
 
 {bitmodule title="$moduleTitle" name="application_menu"}
@@ -8,7 +8,7 @@
 <div class="menu {$key}menu">
 	{if $menu.title}
 		{if $gBitSystemPrefs.feature_menusfolderstyle eq 'y'}
-			<a class="head" href="javascript:icntoggle('{$key}menu');">{biticon ipackage=liberty iname="folder" id="`$key`menuimg" iexplain="folder"}
+			<a class="head" href="javascript:icntoggle('{$key}menu');">{biticon ipackage=liberty iname="collapsed" id="`$key`menuimg" iexplain="folder"}
 		{else}
 			<a class="head" href="javascript:toggle('{$key}menu');">
 		{/if}
@@ -30,7 +30,7 @@
 {if $gBitSystemPrefs.feature_usermenu eq 'y'and $usr_user_menus}
 <div class="menu usrmenu">
 	{if $gBitSystemPrefs.feature_menusfolderstyle eq 'y'}
-		<a class="head" href="javascript:icntoggle('usrmenu');">{biticon ipackage=liberty iname="folder" id="usrmenu" iexplain="folder"}
+		<a class="head" href="javascript:icntoggle('usrmenu');">{biticon ipackage=liberty iname="collapsed" id="usrmenu" iexplain="folder"}
 	{else}
 		<a class="head" href="javascript:toggle('usrmenu');">
 	{/if}

@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.1 2005/06/19 06:11:05 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.2 2005/06/28 07:46:01 spiderr Exp $ */
 @media all {
 body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
 pre {font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#ddd; color:#555;}
@@ -52,12 +52,12 @@ legend {font-size:1.2em; padding:1em;}
 .tikitable td {padding:1em; border:1px solid #ccc;}
 .tikibox {}
 .tikibar {}
-.tikitoc		{width:30%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
-.tikitoc h3		{padding:0; border-bottom:1px solid #999;}
-.tikitoc a		{}
-.tikitoc ul		{margin:0 0 0 1em; padding:0;}
-.tikitoc ul li	{list-style:square outside;}
-.tikitoc ul ul	{margin:0 0 0 2em; padding:0;}
+.maketoc		{width:30%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 			/* boxes */
 .box {margin:1em 0;}
 .boxtitle {color:#000; font-style:italic;}

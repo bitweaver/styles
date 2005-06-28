@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native.css,v 1.1 2005/06/19 06:11:13 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native.css,v 1.2 2005/06/28 07:46:04 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    native
  * @license  LGPL
  */
@@ -10,6 +10,7 @@
 @import url( native_all.css );
 
 /* import screen media */
+@import url( native_layout.css );
 @import url( native_screen.css );
 @import url( native_jstabs.css );
 @import url( native_cssmenus.css );
