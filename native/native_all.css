@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.1 2005/06/21 22:26:32 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.2 2005/07/03 07:51:40 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.1 $
+ * @version  $Revision: 1.1.1.1.2.2 $
  * @theme    native
  * @license  LGPL
  */
@@ -40,10 +40,10 @@ a img			{border:0;}
 .actionicon		{text-align:right;}
 .clear			{clear:both;}
 			/* parsed elements */
-.tikibox		{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
-.tikitable		{}
-.tikitable td	{border:1px solid #aaa; padding:2px;}
-.tikibar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
+.bitbox		{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
+.bittable		{}
+.bittable td	{border:1px solid #aaa; padding:2px;}
+.bitbar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
 .maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
 .maketoc h3		{padding:0; border-bottom:1px solid #999;}
 .maketoc a		{color:#666;}
@@ -85,7 +85,7 @@ fieldset					{border:0; border-top:2px solid #f30; margin-bottom:10px;}
 legend						{font-size:1.2em; padding:0 5px; margin-bottom:10px;}
 .tabsystem legend			{font-size:1em;}
 textarea,select				{font-size:1em;}
-#tikimain input[type="text"]{max-width:99%;}
+#bitmain input[type="text"]{max-width:99%;}
 textarea					{width:98%;}
 .row						{padding:5px 0; clear:both; padding-top:5px;}
 .formfeedback ul,.formfeedback li	{margin:1em; padding:0; clear:both;}
@@ -140,7 +140,7 @@ table.data			{border:1px solid #666; font-size:0.9em;}
 			/* menu stuff */
 .menu li				{list-style:none}
 .menu ul ul				{margin-left:1em;}
-#tikimain .menuicon		{text-align:center;}
+#bitmain .menuicon		{text-align:center;}
 /* if you hide the icons from msie it goes nuts - use > hack */
 html>body #bitleft .package-menu .icon,
 html>body #bitright .package-menu .icon	{display:none;}

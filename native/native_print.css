@@ -1,13 +1,13 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_print.css,v 1.1 2005/06/19 06:11:13 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_print.css,v 1.1.1.1.2.1 2005/07/03 07:51:40 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.1.1.1.2.1 $
  * @theme    native
  * @license  LGPL
  */
 @media print {
 body			{background:#fff; font-family:sans-serif;}
-#tikibar		{display:none;}
+#bitbar		{display:none;}
 #bittopbarwrap	{display:none;}
 #bittop		{display:none;}
 #bitleft		{display:none;}

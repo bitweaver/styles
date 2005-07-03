@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_cssmenus.css,v 1.1 2005/06/19 06:11:13 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_cssmenus.css,v 1.1.1.1.2.1 2005/07/03 07:51:40 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.1.1.1.2.1 $
  * @theme    native
  * @license  LGPL
  */
@@ -11,10 +11,10 @@
 #bittopbar			{margin:0 20px;}
 .menu				{line-height:1.8em;}
 .menu a				{display:block;}
-#tikimain .menu		{line-height:normal;}
-#tikimain .menu		{background:transparent url( images/pkgicon_bg.png ) 50% 50% repeat;}
-#tikimain .menuicon .icon	{padding:5px;}
-#tikimain .my .menu .item .icon	{display:none;}
+#bitmain .menu		{line-height:normal;}
+#bitmain .menu		{background:transparent url( images/pkgicon_bg.png ) 50% 50% repeat;}
+#bitmain .menuicon .icon	{padding:5px;}
+#bitmain .my .menu .item .icon	{display:none;}
 			/* tikiwiki type nexus menus */
 .tikiwiki div div	{margin:1px;}
 .tikiwiki span		{clear:both;}

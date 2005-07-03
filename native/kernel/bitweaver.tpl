@@ -5,7 +5,7 @@
 		<div dir="rtl">
 	{/if}
 
-	<div id="tikibar">
+	<div id="bitbar">
 		Welcome to {$siteTitle|default:"bitweaver"}
 	</div>
 
@@ -39,7 +39,7 @@
 		{/if}
 
 		<div id="wrap2"><div id="wrap3"><div id="wrap4"><div id="wrap5">
-			<div id="tikibody">
+			<div id="bitbody">
 				{if $gBitSystemPrefs.feature_left_column eq 'y' && $l_modules && !$gHideModules}
 					<div id="bitleft">
 						<div class="bitleft-tl"></div>
@@ -59,7 +59,7 @@
 					</div><!-- end #bitright -->
 				{/if}
 
-				<div id="tikimain" class="tiki-cols-
+				<div id="bitmain" class="bit-cols-
 					{if $gBitSystemPrefs.feature_left_column eq 'y' && $l_modules && !$gHideModules and $gBitSystemPrefs.feature_right_column eq 'y' && $r_modules && !$gHideModules}
 						3
 					{elseif $gBitSystemPrefs.feature_left_column eq 'y' && $l_modules && !$gHideModules}
@@ -75,17 +75,17 @@
 						<div class="error">{$pageError}</div>
 					{/if}
 					{include file=$mid}
-				</div><!-- end #tikimain -->
+				</div><!-- end #bitmain -->
 
 				<div class="clear"></div>
-			</div><!-- end #tikibody -->
+			</div><!-- end #bitbody -->
 		</div></div></div></div><!-- end #wrap2,3,4,5 -->
 
-		<div id="tikibottom">
+		<div id="bitbottom">
 			{if $gBitSystemPrefs.feature_bot_bar eq 'y'}
 				{include file="bitpackage:kernel/bot_bar.tpl"}
 			{/if}
-		</div><!-- end #tikibottom -->
+		</div><!-- end #bitbottom -->
 	</div><!-- end #wrap1 -->
 
 	{if $gBitSystemPrefs.feature_bidi eq 'y'}
