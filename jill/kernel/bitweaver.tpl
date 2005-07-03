@@ -30,13 +30,7 @@
 					</div><!-- end #bitright -->
 				{/if}
 
-				<div id="bitmain" class="bit-cols-
-					{if $gBitSystemPrefs.feature_right_column eq 'y' && $r_modules && !$gHideModules}
-						2
-					{else}
-						1
-					{/if}
-				">
+				<div id="bitmain" class="bit-cols-{if $gBitSystemPrefs.feature_right_column eq 'y' && $r_modules && !$gHideModules}2{else}1{/if}">
 					{include file="bitpackage:liberty/display_structure.tpl"}
 					{if $pageError}
 						<div class="error">{$pageError}</div>
