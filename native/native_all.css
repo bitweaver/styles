@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.3 2005/07/03 08:42:09 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.4 2005/07/03 08:52:04 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.3 $
+ * @version  $Revision: 1.1.1.1.2.4 $
  * @theme    native
  * @license  LGPL
  */
@@ -58,7 +58,8 @@ a img			{border:0;}
 .prio5	{background:#fdc !important;}
 			/* image related stuff */
 .floaticon				{float:right;}
-.blog .post .floaticon img	{display:block; padding:1px 0;}
+.blogs .post .floaticon		{background:#fff; border:1px solid #ccc; margin:0 0 3px 5px; padding:2px;}
+.blogs .post .floaticon a	{display:block; padding:1px 0;}
 .icon					{vertical-align:middle; border:0;}
 .thumb					{padding:2px; margin:2px; background:#ddd; border:1px solid #b82;}
 .thumb:hover			{background:#fff; border:1px solid #a40;}
