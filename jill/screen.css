@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.7 2005/06/26 07:44:24 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.8 2005/07/04 06:23:47 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.7 $
+ * @version  $Revision: 1.2.2.8 $
  * @theme    jill
  * @license  LGPL
  */
@@ -19,14 +19,15 @@ a.external	{background:transparent url( images/external.gif ) no-repeat right; p
 .comment h3	{border-bottom:2px solid #999;}
 .comment .post	{border-left:1px solid #ddd; padding:0 0 0 0.5em; margin:0 0 2em 0;}
 
-/* common classes */
-.pagination		{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
-.pagination a	{border:1px solid #ccc; background:#eee; padding:0 2px;}
+/* various settings */
+.pagination			{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
+.pagination a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
 .gallerybar,
-.structurebar	{font-size:0.8em; color:#666;}
+.structurebar		{font-size:0.8em; color:#666;}
 .gallerybar a,
-.structurebar a	{border:1px solid #ccc; background:#eee; padding:0 2px;}
+.structurebar a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
 #bitmain .avatar	{float:right; margin:0 0 5px 5px;}
+.errorpage .body	{text-align:center;}
 
 /* priorities */
 .prio1	{background:#dfc !important;}
