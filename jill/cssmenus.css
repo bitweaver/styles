@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2 2005/06/21 18:05:17 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.1 2005/07/06 07:17:18 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.2.2.1 $
  * @theme    jill
  * @license  LGPL
  */
@@ -38,7 +38,7 @@
 .hor .current li a		{}
 .hor ul a				{padding:0 5px; line-height:20px;}
 .hor li					{background:transparent url( images/menus/head.gif ) left no-repeat;}
-.hor li:hover,.hor li.ieHover		{}
+.hor li:hover,.hor li.ieHover		{background:transparent url( images/menus/head_h.gif ) left no-repeat;}
 .hor li li:hover,.hor li li.ieHover	{background:#bcd;}
 .hor ul a.head			{}
 .hor ul a.head:hover	{}
