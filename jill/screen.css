@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.10 2005/07/10 09:01:17 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.11 2005/07/12 21:41:39 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.10 $
+ * @version  $Revision: 1.2.2.11 $
  * @theme    jill
  * @license  LGPL
  */
@@ -30,7 +30,7 @@ a.external	{background:transparent url( images/external.gif ) no-repeat right; p
 .gallerybar a,
 .structurebar a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
 #bitmain .avatar	{float:right; margin:0 0 5px 5px;}
-.errorpage .body	{text-align:center;}
+.errorpage p		{text-align:center;}
 
 /* priorities */
 .prio1	{background:#dfc !important;}
