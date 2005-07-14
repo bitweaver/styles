@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.2 2005/07/14 21:22:57 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.3 2005/07/14 21:44:10 spiderr Exp $ */
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -11,8 +11,7 @@ body {
 	color: #333;
 }
 a {
-	color: #6f86a4;
-	font-weight: bold;
+	color: #881F7E;
 	text-decoration: none;
 }
 a:hover {
@@ -59,6 +58,14 @@ h3 {
 	padding: 2px;
 	font-size: 10px;
 	line-height: 18px;
+	color: white;
+}
+#bittopbar ul {
+	font-size: 12px;
+	color: white;
+}
+#bittopbar li {
+	padding: 3px;
 }
 .header {
 	padding: 2px;
@@ -212,6 +219,16 @@ input,textarea,select {
 	padding: 2px;
 }
 
+/* parsed elements */
+.bittable td	{padding:0.5em; border:1px solid #ccc;}
+.bitbox			{background:#579; border:1px solid #aaa; padding:0.5em; margin:0 1em; color:#eee;}
+.bitbox a		{color:#fff; font-weight:bold;}
+.bitbar			{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+.bittoc			{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
+.bittoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
+.bittoc ul ul	{margin:0 0 0 1em;}
+.bittoc ul li	{}
+
 /* structure navigation */
 .structurebar			{background:#eee; padding: 3px;}
 .path					{display:block;}
@@ -226,4 +243,7 @@ input,textarea,select {
 .maketoc ul li	{list-style:square outside;}
 .maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 
+#bittopbar a {
+color: white;
+}
 
