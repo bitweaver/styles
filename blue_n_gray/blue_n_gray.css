@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.3 2005/07/14 21:44:10 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.4 2005/07/14 21:46:23 spiderr Exp $ */
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -48,7 +48,7 @@ h3 {
 	padding: 0 10px;
 }
 #bitleft,#bitright {
-	background: #ccc;
+	background: #ddd;
 }
 #tikimain {
 	padding: 0 10px;
