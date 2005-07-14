@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1 2005/06/19 06:11:02 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.1 2005/07/14 21:17:10 spiderr Exp $ */
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -222,3 +222,19 @@ input,textarea,select {
 .boxcontent {
 	padding: 2px;
 }
+
+/* structure navigation */
+.structurebar			{background:#eee; padding: 3px;}
+.path					{display:block;}
+.navigation .left		{text-align:left; float:left;}
+.navigation .right		{text-align:left; float:right;}
+
+/* tocs */
+.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{color:#666;}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
+
+
