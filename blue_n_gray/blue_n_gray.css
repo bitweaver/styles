@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.1 2005/07/14 21:17:10 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.2 2005/07/14 21:22:57 spiderr Exp $ */
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -132,20 +132,9 @@ h3 {
 }
 .even {}
 				/* forms */
-fieldset {
-	border: 1px solid #ddd;
-	background: #eee;
-	padding: 0.5em;
-}
-legend {
-	padding: 2px;
-	margin: 0 0 1em 0;
-	font-weight: bold;
-	color: #666;
-	font-size: 1.2em;
-	border: 1px solid #ddd;
-	background: #eee;
-}
+fieldset                {border:0; border-top:1px solid #6f86a4; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
+legend                  {font-size:1.1em; padding:1em;}
+
 input,textarea,select {
 	font-size: 1em;
 }
