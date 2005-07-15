@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.4 2005/07/03 08:52:04 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.5 2005/07/15 21:25:27 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.4 $
+ * @version  $Revision: 1.1.1.1.2.5 $
  * @theme    native
  * @license  LGPL
  */
@@ -86,12 +86,13 @@ fieldset					{border:0; border-top:2px solid #f30; margin-bottom:10px;}
 legend						{font-size:1.2em; padding:0 5px; margin-bottom:10px;}
 .tabsystem legend			{font-size:1em;}
 textarea,select				{font-size:1em;}
-#bitmain input[type="text"]{max-width:99%;}
+#bitmain input[type="text"]	{max-width:99%;}
 textarea					{width:98%;}
 .row						{padding:5px 0; clear:both; padding-top:5px;}
 .formfeedback ul,.formfeedback li	{margin:1em; padding:0; clear:both;}
 .formlabel					{float:left; width:25%; text-align:right; margin:0; font-size:95%; padding:0 0 0 0; line-height:18px; border:1px solid #e5e5e5; background:#f0f0f0;}
-.forminput					{margin:2px 0 0 26%;}
+.forminput					{float:right; width:74%; overflow:hidden; margin-top:2px;}
+html>body .forminput		{float:none; width:auto; overflow:visible; margin:2px 0 0 26%;}
 .formhelp					{cursor:help; line-height:normal; font-size:0.9em; color:#999;}
 .submit						{text-align:center; padding-bottom:10px; padding-top:20px;}
 .minifind					{font-size:0.9em; width:200px; clear:both;}
