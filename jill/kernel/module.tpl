@@ -1,9 +1,9 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/jill/kernel/module.tpl,v 1.2 2005/06/21 18:05:17 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/jill/kernel/module.tpl,v 1.2.2.1 2005/07/15 12:01:22 squareing Exp $ *}
 {strip}
 <div class="module box {$module_name|replace:"_":"-"}">
 	{if $module_title}
 		<h3>
-			{if $gBitSystemPrefs.feature_modulecontrols eq 'y'}
+			{if $gBitSystem->isFeatureActive( 'feature_modulecontrols' )}
 				<div class="control">
 					<a title="{tr}Move module up{/tr}" href="{$current_location|escape}{$mpchar}mc_up={$module_name|escape}">
 						{biticon ipackage=liberty iname="move_up" iexplain="up"}</a>
