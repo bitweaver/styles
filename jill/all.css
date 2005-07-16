@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.6 2005/07/16 11:57:34 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.7 2005/07/16 15:57:40 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.6 $
+ * @version  $Revision: 1.2.2.7 $
  * @theme    jill
  * @license  LGPL
  */
@@ -124,7 +124,7 @@ ul.data li.item			{padding:0.5em; margin:0;}
 ul.data .thumb			{float:right; margin-right:1em;}
 
 li.odd,li.even			{border-top:1px solid #666; padding:1em 0; margin-bottom:-1px !important;}
-ul.toc,ul.toc ul		{margin-left:2em; padding-left:0;}
+ul.toc,ul.toc ul		{margin-left:2em; padding-left:0; line-height:normal;}
 ul.toc li				{list-style:none;}
 
 li.error,li.success,li.note,li.warning	{list-style:none;}
