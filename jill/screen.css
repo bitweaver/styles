@@ -1,26 +1,27 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.11 2005/07/12 21:41:39 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.12 2005/07/17 09:19:42 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.11 $
+ * @version  $Revision: 1.2.2.12 $
  * @theme    jill
  * @license  LGPL
  */
 @media screen,projection,tv {
 /* html tags */
-body		{line-height:1.6em; background:#fff;}
-a.create	{background:transparent url( images/create.gif ) no-repeat top right; padding-right:9px; color:#000;}
-a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+body				{line-height:1.6em; background:#fff;}
+a.create			{background:transparent url( images/create.gif ) no-repeat top right; padding-right:9px; color:#000;}
+.bitbox a.create	{color:#fff; font-weight:normal;}
+a.external			{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
 
 /* headings */
-.header		{border-bottom:1px dashed #666; margin-bottom:0em;}
-.header h1	{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px;}
+.header				{border-bottom:1px dashed #666; margin-bottom:0em;}
+.header h1			{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px;}
 .tabsystem .header h1	{background:transparent;}
-.header h2	{font-size:0.8em; padding:0; margin:0; font-weight:normal;}
-.comment	{margin-top:4em; color:#555;}
-.comment h3	{border-bottom:2px solid #999;}
+.header h2			{font-size:0.8em; padding:0; margin:0; font-weight:normal;}
+.comment			{margin-top:4em; color:#555;}
+.comment h3			{border-bottom:2px solid #999;}
 .comment .post		{border-left:1px solid #ddd; padding:0 0 0 0.5em; margin:0 0 2em 0;}
 .comment .content	{overflow:auto;}
-.display	{margin-bottom:3em;}
+.display			{margin-bottom:3em;}
 
 /* various settings */
 .pagination			{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
