@@ -1,0 +1,363 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/babyblue/Attic/babyblue.css,v 1.1 2005/07/18 13:25:15 helge_karl Exp $ */
+/**
+ * @author   Helge_Karl <helge_karl@yahoo.com>
+ * @version  $ Revision: 1.0 $
+ * @theme    yggdra
+ * @license  LGPL
+ */
+
+ /* Under are some notes about colors used in this theme */
+ /* #B0C4DE is the same as color name LightSteelBlue, much used as backgrounds and borders */
+ /* #E6E6FA is the same as color name Lavender, used as a lighter color compliment to LightSteelBlue, used for backrounds and borders*/
+ /* #79b	is a darker blue color than LightSteelBlue, used for borders and boxbackground */
+ /* #334	is a dark blue color, used mainly for some headings */
+
+			/*** global settings ***/
+html {background:#B0C4DE url(images/big_1percent_tree.png) no-repeat center center fixed;
+}
+body
+{
+	font-size: 8pt;
+	line-height: 2em;
+	font-family: verdana,'SUSE Sans'FreeSans,tahoma,helvetica,arial,sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
+/*	background-color: #B0C4DE; */
+}
+th
+{
+	color: #334;
+	border-bottom: 2px solid #79b;
+	border-top: 1px solid #79b;
+}
+hr {border:1px solid #678;}
+pre, code {font-family:monospace; font-size:12px; overflow:auto; text-align:left;}
+small {}
+p {text-align:justify;}
+a
+{
+	color: #930;
+	text-decoration: none;
+}
+a:hover { color: #300; }
+#tikimain a:hover {text-decoration:none; border-bottom:1px dashed #bba; margin-bottom:-1px;}
+a.external {background:transparent url( images/external_link.png ) no-repeat right;  padding-right:1.3em;}
+			/*** site layout ***/
+#bittop
+{
+	padding:0;
+	background-repeat: no-repeat;
+	background-image: url(images/300x225tree.png);
+	background-position: left top;
+	background-attachment: scroll;
+}
+ #bittop h1 
+ {
+ 	padding:20px;
+ 	padding-top:40px;
+ 	color: #fff;
+ 	font-size: 72pt;
+ 	line-height:1.2;
+ 	font-style: oblique;
+ 	text-align:right;
+ 	text-shadow: rgba(0,0,0,.4) 0px 2px 5px; /* Safari-only, but cool */
+ }
+ .toplogin 
+ {
+ 	position: fixed;
+ 	z-index:75;
+ 	right: 0em;
+ 	top: 0em;
+ 	width: 21em;
+ 	text-align: center;
+ 	padding-bottom:0.5em;
+ 	background-image: url(images/loginnboxbg.png);
+ 	background-repeat: no-repeat;
+ 	background-position: left bottom;
+ }
+  .toplogin input {vertical-align:middle;}
+  .toplogin a { color: #336; margin-left:1.8em; }
+    .toplogin a:hover { border-bottom: 2px solid lavender;}
+  .spacer {height:0.2em;}
+#bittopbar
+{
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	background-image: url(images/80percent_transp_lightsteelblue.png);
+	left: 0;
+	margin-right: 20em;
+	text-shadow: rgba(0,0,0,.4) 0px 2px 5px;
+	/* Safari-only, but cool */
+}
+#tikimain
+{
+	position:absolute;
+	margin: 0em 0em 1em 1em;
+	padding: 1em 2em 1em 2em;
+	left:0;
+	right: 18em;
+	border:1px outset #79b;
+	background-color:white;
+	background-image: url(images/big_1percent_tree.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	}
+#bitmodules
+{
+	width: 18em;
+	padding: 0em; 
+	float: right;
+	margin-top:-2em;
+}
+#tikibottom
+{	clear:both;
+	float:right;
+	color: #333;
+	text-align: center;
+	font-size: 1em;
+	margin: 0em;
+	width: 18em;
+}
+#tikiprint {}
+#slideshow {}
+			/*** titles ***/
+h1,h2,h3 {color:#331; background:transparent; font-weight:normal; padding:1em 1em 0.5em 1em; margin:0;}
+h1 {font-size:2em;}
+h2 {font-size:1.6em;}
+h3 {font-size:1.2em;}
+.header h1 {color:#334; font-size:2.4em;font-weight:800;border:none;text-shadow: rgba(0,0,0,.4) 0px 2px 5px; /* Safari-only, but cool */}
+.post h1 {background:#B0C4DE; border:0;}
+.header h2 {font-size:1.1em;}
+ .wiki .date {float:right; text-align:right; margin-right:1em;}
+.clear {clear:both;}
+			/*** Forums ***/
+.cattitle {color:#58718A;}
+.cattitle:hover {color:#334;}			
+			/*** common classes ***/
+.display,.admin {}
+ .preview {}
+.body {margin:0em 1em 1em 0;}
+html>body .body {margin-top:2em;}
+ .introduction {}
+  .introductionimage {}
+ .content {font-size:1.2em;}
+  .storage {margin:0 0 1em 1em; border-left:1px dashed #334;}
+  .storage .item {padding:3px 5px;}
+ .footer {}
+  .actionicon .icon,.floaticon .icon {padding:3px; vertical-align:middle;}
+  .floaticon {padding-bottom:8px;margin: -1em -2em 0 0;background:#79b;}
+  .floaticon .icon {clear:both;float:right;}
+img {border:0}
+			/*** miscellaneous ***/
+.highlight {background:#997; color:#fff;}
+.floaticon {float:right;padding-top:12px;}
+span.actionicon {float:right;}
+td.actionicon {text-align:right;}
+.closebutton{position:absolute; top:1px; right:1px;}
+.image .boxcontent {text-align:center;}
+.norecords {font-weight:bold;}
+.boxtitle {text-align:center;}
+.boxtitle .icon {vertical-align:middle;}
+.popup {background:#fff; width:250px; border:1px solid #000;}
+.icon,.icon:hover,a.icon,a.icon:hover {border:0px;}
+.portrait,.avatar {float:right; padding:0 0 5px 5px;}
+.selected {font-weight:bolder}
+.navbar,.comment,.footer {clear:both;}
+.date,.footer,.pagination,small {color:#334;}
+.panelsubmitrow {text-align:center;}
+.pagination {text-align:center;}
+.storage {float:right; clear:both;}
+			/*** stickies ***/
+.stickies textarea,.stickies input[type='text'] {background:#ffc;}
+.stickynote .boxtitle {border-bottom: 1px solid #dda;}
+.stickynote {background-color:#ffc;  color:#000;  width: 300px;  padding: 3px;}
+			/*** structures and paths ***/
+.structurebar {clear:both;}
+.structurebar .path {display:block;}
+.gallerybar .path {display:block;}
+.navigation span {display:block; width:50%; float:left;}
+.navigation .right {text-align:right;}
+#tikimain .structurebar {background:#79b; padding:0 1em; line-height:normal;}
+ #tikimain .structurebar a {color:#fff;}
+/* if you display the structure navigation links as icons, you can uncomment these lines by removing the space between the next 2 characters * /
+ #tikimain .structurebar .path {margin:0 0 0 20px; display:inline;}
+ #tikimain .structurebar .navigation span {width:20px; display:inline; clear:none;}
+/**/
+			/*** boxes ***/
+.box {}
+/* Show only to IE PC \*/
+* html .boxtitle {height: 1%;} /* For IE 5 PC */
+.boxtitle
+{
+	color: #334;
+	margin-top:-1.2em;
+	font-size: 120%;
+	text-align: left;
+	font-weight: bold;
+	text-shadow: rgba(0,0,0,.4) 0px 2px 5px; /* Safari-only, but cool */
+}
+#bitmodules .boxtitle {	color:#fff;}
+ .boxcontent 
+ {} 
+ .popup {padding:10px; border:1px solid #999; text-align:justify; background:#444;} 
+ .module{} 
+ .module .boxtitle {color:#fff; padding:2em 2em 0.3em 2em;	background-image: url(images/modul_title_bg.png);	background-repeat: no-repeat;	background-position: center top;} 
+ .module .boxcontent {margin:0em; padding: 0.7em 2em 2.5em 2em; 	background-image: url(images/modul_content_bg.png); 	background-repeat: no-repeat; 	background-position: center bottom;} 
+
+			/*** parsed elements ***/
+.tikibar {}
+.tikicache {}
+.tikibox {padding:3px 8px; background:#79b; color:#fff; border:2px ridge lavender; margin:0 4em;}
+.tikitable {background:#eee;}
+ .tikitable td {border:1px solid #fff;}
+			/*** forms ***/
+#editpageform {position:relative;right:18em;left:0;}
+form,input,textarea,select{margin:0; padding:0;}
+ #tikimain form {font-size:1.2em;}
+ fieldset {border:0; border-top:1px solid lavender;}
+  textarea {width:100%;}
+  input,select,textarea  
+  {
+  	font-size: 1em;
+  	font-family: verdana,tahoma,helvetica,arial,sans-serif;
+  	border: 1px solid #999;
+  	color: #334;
+  	background-image: url(images/50percent_white.png);
+  }
+   input[type="text"],input[type="password"] {border:1px dotted #999; border-bottom:1px dashed #999;}
+  legend {padding:0 10px; letter-spacing:3px; color:#000;}
+   .row {clear:both; padding-top:5px;}
+   .formfeedback,{display:block; clear:both;}
+   .formlabel {color:#334; float:left; width:25%; text-align:right;}
+    label {color:#000;}
+   .forminput {float:right; width:74%;}
+   .formhelp {cursor:help; display:block; clear:both; line-height:normal; font-size:85%;}
+    .module .forminput, .module .formlabel {width:auto; float:left; clear:both;}
+  .submit {text-align:center; padding-bottom:10px;}
+   .submit input {padding:0.2em 0.5em;}
+    .submit input:hover {color:#fff; background:#000;}
+.minifind {width:200px;}
+.error,.errorpage .boxtitle {color:#f00; font-weight:bold;}
+.warning {color:#f80;}
+.success {color:#090;}
+			/*** tables and lists ***/
+ul,ol,dl {margin-top:0; margin-bottom:0;}
+dt {font-weight:bold; color:#334;}
+dd {margin-left:2em; padding:0;}
+.module ul {margin:0; padding:0}
+.module li,ul.toc li {list-style:none;}
+ul.data {padding:0; margin:0;}
+ul.data li.item {list-style:none;}
+ul.data li.item .thumb {float:right;}
+ul.toc ul {margin-left:1.5em; padding:0;}
+.navbar {height:2em;}
+.navbar ul {padding:0; margin:0; list-style:none;}
+.navbar ul li {float:left;}
+table {border-collapse:collapse; border-spacing:0; padding:0; margin:0; width:100%;}
+.data {border-left:2px solid #79b; border-right:2px solid #79b;}
+/* .odd,.even {background:#fff;} */
+ .odd { background-image: url(images/odd_bg.png); }
+ .even { 	background-image: url(images/even_bg.png); }
+ .odd,.even { border-bottom: 1px dashed #B0C4DE; }
+ /* .even {border-bottom: 1px dashed #B0C4DE;} */
+.norecords {}
+ .module ol {margin:0; padding:0;}
+ .module ol li {list-style:lower-roman; margin:0 0 0 2em; padding:0;}
+			/* tabs */
+.tabsystem .tabcontainer {margin:0; padding:0; border:0; clear:both;}
+ .tabsystem .tabcontainer ul,.tabsystem .tabcontainer li {margin:0; padding:0; border:0; list-style-type:none; display:inline;}
+ .tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-active {position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
+.tabsystem .tabpage {clear:both;}
+h4 {margin:0; padding:0;}
+			/* tabstyle */
+.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer.tab-hover,.tabsystem .tabcontainer .tab-active {top:2px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; background-image: url(images/odd_bg.png); color:#334; border:1px solid #999; border-bottom:0;}
+ .tabsystem .tabcontainer .tab-hover {padding:3px 5px 1px 5px; border-top:2px solid #79b;background-image: url(images/even_bg.png);}
+ .tabsystem .tabcontainer .tab-active {top:1px; margin:0; color:#79b; padding:2px 8px 4px 8px; background-image: url(images/even_bg.png); border-top:2px solid #79b;}
+.tabsystem .tabpage
+{
+	padding: 1em;
+	background-image: url(images/even_bg.png);
+	border-color: lavender #ddd #ccc #999;
+	border-width: 1px;
+	border-style: solid;
+}
+			/*** navigation bars and tabs ***/
+.navbar {text-align:right; margin:1em;}
+.navbar li{ border-top:1px solid #B0C4DE;border-bottom:1px solid #B0C4DE;}
+ .navbar a {font-weight:normal; text-align:center; padding:0.1em 0.3em 0 0.3em; border-top:0.3em solid transparent;}
+ .navbar a:hover {border:0; border-top:0.3em solid #79b;}
+ .navbar a.selected {border-top:0.3em solid #334; }
+.pagination {}
+			/*** bottom bar ***/
+.babelfish {}
+			/* regular menus */
+.menu ul {margin-left:1em; padding:0;}
+.menu li {list-style:none;}
+.menu a {display:block;}
+			/* css driven dropdown menus - horizontal */
+.ver ul,.hor ul {line-height:16px;}
+.ver a:hover,.hor a:hover {border:0;}
+.hor .icon {position:absolute; left:28px; top:0px; margin-left:-26px;}
+.hor,.hor ul {padding:0; margin:0; list-style:none;}
+.hor a {white-space:nowrap; color:#000; padding:0 5px;}
+.hor li {width:auto;}
+.hor li li,.hor li ul { width:14em; display:block; text-align:left;}
+.hor li {float:left; position:relative;}
+.hor li:hover,.hor li.ieHover { }
+.hor li li a {margin:0 0 0 2em;}
+.hor ul a.head {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right; background-color:transparent;}
+.hor ul a.head:hover {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right;}
+.hor li li:hover
+{
+	border: 1px solid #657a96;
+}
+.hor li li:ieHover
+{
+	border: 1px solid #657a96;
+	margin: -1px;
+}
+.hor li ul
+{
+	position: absolute;
+	z-index: 50;
+	left: -999em;
+	padding: 0.3em;
+	border: 1px outset #79b;
+	background-image: url(images/80percent_transp_lightsteelblue.png);
+}
+.hor li ul ul {margin:-2.2em 0 0 14em;}
+.hor li {	display:inline;}
+
+			/* css driven dropdown menus - vertical */
+.ver .icon {margin-left:-26px; padding-right:8px; vertical-align:middle;}
+.ver a {color:#000; padding:0 5px; white-space:nowrap;}
+.ver a.head {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right;}
+.ver, .ver ul {padding:0; margin:0; list-style:none; float:left; width:13em;}
+.ver li {position:relative; width:13em;}
+.ver li:hover,.ver li.ieHover {background:#bec7d3;}
+.ver li li {position:relative; float:left; width:13em;}
+.ver li li:hover,.ver li li.ieHover {border:1px solid #657a96; margin:-1px;}
+.ver li li a {margin:0 0 0 2em;}
+.ver li ul {position:absolute; left:-999em; margin-left:13em; margin-top:-2em; padding:0.3em; background:#fff; border:1px solid #999; background:#fff url( images/menu_ul.gif ) repeat-y 0.3em 0.3em;}
+.ver li ul ul {left:-999em;}
+			/* vertical menus on the right hand side */
+#bitmodules .ver, #tikimodules .ver li, #tikimodules .ver ul {width:125px;}
+#bitmodules .ver li ul {margin-left:-132px;}
+			/* z-index */
+.hor,.hor a,.hor li,.hor ul {z-index:100000;}
+.ver,.ver a,.ver li,.ver ul {z-index:100000;}
+#nav,#nav a,#nav li,#nav ul {z-index:10000000;}
+.item {z-index:1000000000}
+			/* ieHover used as suckerfish class for MSIE hover support */
+.hor li:hover ul ul, .hor li:hover ul ul ul, .hor li.ieHover ul ul, .hor li.ieHover ul ul ul,
+.ver li:hover ul ul, .ver li:hover ul ul ul, .ver li.ieHover ul ul, .ver li.ieHover ul ul ul {left:-999em;}
+.hor li:hover ul, .hor li li:hover ul, .hor li li li:hover ul, .hor li.ieHover ul, .hor li li.ieHover ul, .hor li li li.ieHover ul,
+.ver li:hover ul, .ver li li:hover ul, .ver li li li:hover ul, .ver li.ieHover ul, .ver li li.ieHover ul, .ver li li li.ieHover ul {left:auto;}
+			/* Support for MSIE select box hiding part of suckerfish - don't touch */
+.hor iframe,.ver iframe {position:absolute; left:0; top:0; z-index:-1; filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);}
+#bittopbar a {background-image: url(images/unselected_gradient_bg.png);	background-position: center top; background-repeat: repeat-x;border:1px solid transparent;border-top:0px solid transparent;border-bottom:2px solid transparent;}
+#bittopbar .current a {	background-image: url(images/selected_gradient_bg.png);	background-position: center top;	background-repeat: repeat-x;border:1px solid #B0C4DE;border-bottom:0px solid #B0C4DE;border-top:2px solid #B0C4DE;}
+#bittopbar a:hover, #bittopbar a.iehover {	background-image: url(images/selected_gradient_bg.png);	background-position: center top;	background-repeat: repeat-x;border:1px solid #B0C4DE;border-bottom:0px solid #B0C4DE;border-top:2px solid #B0C4DE;}
