@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.7 2005/07/16 15:57:40 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.8 2005/07/19 15:43:06 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.7 $
+ * @version  $Revision: 1.2.2.8 $
  * @theme    jill
  * @license  LGPL
  */
@@ -102,6 +102,11 @@ table .forminput		{margin:0;}
 .bittoc ul ul	{margin:0 0 0 1em;}
 .bittoc ul li	{}
 
+/* common settings for listings */
+.odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
+.odd					{background:#e5e5e5;}
+.even					{background:#fff;}
+
 /* tables */
 fieldset table			{margin:0 2%; width:96%;}
 table					{border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal;}
@@ -111,9 +116,6 @@ th :link, th :visited	{color:#fff;}
 td.actionicon			{text-align:right;}
 table.data				{border:1px solid #000; font-size:0.8em;}
 .menutable td			{padding:10px 4px;}
-.odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
-.odd					{background:#e5e5e5;}
-.even					{background:#fff;}
 
 /* lists */
 .formfeedback ul		{margin:1em 2em 0 2em; padding:2px;}
@@ -126,6 +128,8 @@ ul.data .thumb			{float:right; margin-right:1em;}
 li.odd,li.even			{border-top:1px solid #666; padding:1em 0; margin-bottom:-1px !important;}
 ul.toc,ul.toc ul		{margin-left:2em; padding-left:0; line-height:normal;}
 ul.toc li				{list-style:none;}
+ul.toc ul.data			{border:1px solid #ccc; padding:0.5em 1em;}
+ul.toc p				{margin:0.5em 0 1em 18px; padding:0;}
 
 li.error,li.success,li.note,li.warning	{list-style:none;}
 
