@@ -32,10 +32,12 @@
 
 				<div id="bitmain" class="bit-cols-{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}2{else}1{/if}">
 					{include file="bitpackage:liberty/display_structure.tpl"}
+					{include file="bitpackage:pigeonholes/display_paths.tpl"}
 					{if $pageError}
 						<div class="error">{$pageError}</div>
 					{/if}
 					{include file=$mid}
+					{include file="bitpackage:pigeonholes/display_members.tpl"}
 				</div><!-- end #bitmain -->
 
 				<div id="bitbottom">
