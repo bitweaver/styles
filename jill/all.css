@@ -1,13 +1,15 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.4 2005/07/17 17:36:37 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.5 2005/07/25 20:02:51 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.4 $
+ * @version  $Revision: 1.5 $
  * @theme    jill
  * @license  LGPL
  */
 @media all {
 *				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
-body			{font-size:12px; color:#000; margin:0; padding:0;}
+body			{font-size:0.8em;}
+html>body		{font-size:12px;}
+body			{color:#000; margin:0; padding:0;}
 pre,.code		{width:96%; margin:0 auto; padding:1em 0; font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#eee; color:#000; border:1px solid #999;}
 html>body pre	{width:auto;}
 img				{border:0;}
@@ -94,13 +96,18 @@ table .forminput		{margin:0;}
 
 /* parsed elements */
 .bittable td	{padding:0.5em; border:1px solid #ccc;}
-.bitbox			{background:#579; border:1px solid #aaa; padding:0.5em; margin:0 1em; color:#eee;}
-.bitbox a		{color:#fff; font-weight:bold;}
+.bitbox			{background:#abc; border:1px solid #666; padding:0.5em; margin:0 1em;}
+.bitbox a		{color:#357}
 .bitbar			{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
 .bittoc			{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
 .bittoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
 .bittoc ul ul	{margin:0 0 0 1em;}
 .bittoc ul li	{}
+
+/* common settings for listings */
+.odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
+.odd					{background:#e5e5e5;}
+.even					{background:#fff;}
 
 /* tables */
 fieldset table			{margin:0 2%; width:96%;}
@@ -111,9 +118,6 @@ th :link, th :visited	{color:#fff;}
 td.actionicon			{text-align:right;}
 table.data				{border:1px solid #000; font-size:0.8em;}
 .menutable td			{padding:10px 4px;}
-.odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
-.odd					{background:#e5e5e5;}
-.even					{background:#fff;}
 
 /* lists */
 .formfeedback ul		{margin:1em 2em 0 2em; padding:2px;}
@@ -126,6 +130,8 @@ ul.data .thumb			{float:right; margin-right:1em;}
 li.odd,li.even			{border-top:1px solid #666; padding:1em 0; margin-bottom:-1px !important;}
 ul.toc,ul.toc ul		{margin-left:2em; padding-left:0; line-height:normal;}
 ul.toc li				{list-style:none;}
+ul.toc ul.data			{border:1px solid #ccc; padding:0.5em 1em;}
+ul.toc p				{margin:0.5em 0 1em 18px; padding:0;}
 
 li.error,li.success,li.note,li.warning	{list-style:none;}
 
