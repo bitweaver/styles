@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.1 2005/07/06 07:17:18 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.2 2005/07/27 07:58:25 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.1 $
+ * @version  $Revision: 1.2.2.2 $
  * @theme    jill
  * @license  LGPL
  */
@@ -15,6 +15,7 @@
 #bitmain .menu			{font-size:0.8em;}
 #bitmain .menu li		{background:#f5f5f5; border:1px solid #ccc; line-height:2.4em; padding:0em; margin-bottom:-1px;}
 #bitmain .menu a:hover	{background:#579; color:#fff;}
+.tikiwiki div div		{margin-left:1em;}
 
 /* css driven dropdown menus - horizontal */
 
