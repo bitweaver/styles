@@ -22,7 +22,7 @@ hr {}
 small {}
 h1, h2, h3 {
 	background: transparent url( images/shade.png ) repeat-x left bottom;
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #ccc;
 	margin: 10px 0 2px 0;
 	font-size: 10px;
 	font-weight: normal;
@@ -40,13 +40,13 @@ a:hover {
 }
 
 				/*** site layout ***/
-#tikibody {
+#bitbody {
 	position: absolute;
 	left: 50%;
 	margin-left: -404px;
 	width: 802px;
 	padding: 2px;
-	border: 1px solid #cccccc;
+	border: 1px solid #ccc;
 }
 #bittopbar {
 	background: #f60;
@@ -63,28 +63,33 @@ a:hover {
 #bitleft {
 	width: 160px;
 	float: left;
-	border: 1px solid #cccccc;
+	border: 1px solid #ccc;
 	padding: 2px;
 	clear: left;
 }
 #bitright {
 	width: 160px;
 	float: right;
-	border: 1px solid #cccccc;
+	border: 1px solid #ccc;
 	padding: 2px;
 }
-#tikimain {
+#bitmain {
 	float: left;
-	width: 460px;
 	background: #fff;
-	border: 1px solid #cccccc;
+	border: 1px solid #ccc;
 	padding: 2px;
+}
+.bit-cols-1 {
+	width: 628px;
+}
+.bit-cols-2 {
+	width: 460px;
 	margin-left: 2px;
 }
-#tikibottom {
+#bitbottom {
 	clear: both;
 }
-#tikiprint {}
+#bitprint {}
 #slideshow {}
 
 				/*** common classes ***/
@@ -104,7 +109,7 @@ a:hover {
 }
 .post h1 {
 	background: transparent url( images/shade.png ) repeat-x left bottom;
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #ccc;
 	margin: 10px 0 2px 0;
 }
 .post {
@@ -120,7 +125,7 @@ a:hover {
 	padding: 3px 3%;
 	font-weight: normal;
 	color: #333;
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #ccc;
 	background: #fff;
 }
 .body {
@@ -134,7 +139,7 @@ a:hover {
 
 				/*** boxes ***/
 .box {
-	border: 1px solid #cccccc;
+	border: 1px solid #ccc;
 	padding: 2px;
 }
 .boxtitle {
@@ -158,11 +163,11 @@ a:hover {
 .module .boxcontent {
 	padding: 0;
 }
-#tikimain .menu .menuicon {
+#bitmain .menu .menuicon {
 	text-align: center;
 	padding: 0 0 5px 0;
 }
-#tikimain .menu .boxtitle {
+#bitmain .menu .boxtitle {
 	background-position: left bottom;
 }
 .closebutton {
@@ -233,16 +238,16 @@ a:hover {
 	margin-top: -22px;
 }
 				/*** parsed elements ***/
-.tikibar {}
-.tikicache {}
-.tikibox {
+.bitbar {}
+.bitcache {}
+.bitbox {
 	padding: 3px;
 	border: 1px solid gray;
 }
-.tikitable {
+.bittable {
 	background: #eee;
 }
-.tikitable td {
+.bittable td {
 	border: 1px solid #fff;
 }
 
@@ -253,7 +258,7 @@ input,select,textarea {
 	font-size: 12px;
 }
 fieldset {
-	border: 1px dashed #cccccc;
+	border: 1px dashed #ccc;
 	padding: 5px 0;
 	margin: 5px 0 20px 0;
 }
@@ -295,7 +300,7 @@ label:hover {
 .odd {}
 .even {
 	color: #666;
-	background: #cccccc;
+	background: #ccc;
 }
 tr.odd:hover, tr.even:hover {
 	color: #000;
