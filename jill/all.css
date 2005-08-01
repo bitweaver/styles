@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.5 2005/07/25 20:02:51 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.6 2005/08/01 18:41:56 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.5 $
+ * @version  $Revision: 1.6 $
  * @theme    jill
  * @license  LGPL
  */
@@ -14,7 +14,7 @@ pre,.code		{width:96%; margin:0 auto; padding:1em 0; font-family:monospace; font
 html>body pre	{width:auto;}
 img				{border:0;}
 hr				{border:0; border-top:1px solid #933; padding:0; margin:0.5em 0;}
-small			{font-size:0.8em; color:#999;}
+#bitmain small	{font-size:0.8em; color:#999;}
 
 /* links */
 :link,:visited					{text-decoration:none; color:#579;}
