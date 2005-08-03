@@ -1,10 +1,11 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.1.1.1.2.1 2005/06/21 22:26:31 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.1.1.1.2.2 2005/08/03 22:44:14 squareing Exp $ */
 @media all {
 body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
 pre {font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#ddd; color:#555;}
 a {text-decoration:none; color:#a60;}
 #tikimain a {font-style:italic;}
 a.create {color:#630;}
+a.skip:active, a.skip:focus {left:0em !important;}
 a.external {background:transparent url( images/external_link.png ) no-repeat right;  padding-right:16px;}
 a:hover {text-decoration:none; color:#900;}
 img {border:0;}

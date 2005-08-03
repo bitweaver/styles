@@ -1,7 +1,6 @@
 {strip}
+<a class="skip" style="position:absolute;top:0;left:-999em;" href="#content">{tr}Skip Navigation{/tr}</a>
 <div id="bittopbar">
-	{* this link is for textbrowsers *}
-	<a style="display:none;position:absolute;top:0px;left:0px;" href="#top">{tr}go to top{/tr}</a>
 	<ul id="nav" class="menu hor">
 		{if $use_custom_top_bar and $gBitSystemPrefs.top_bar_position eq 'replace'}
 			{include file="`$gBitLoc.TEMP_PKG_PATH`nexus/modules/top_bar_inc.tpl"}
@@ -64,6 +63,5 @@
 	</div><!-- end #tiklogin -->
 
 	<div class="clear"></div>
-	<a style="padding:0;margin:0;border:0;" name="top"></a>
 </div>
 {/strip}

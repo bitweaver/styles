@@ -27,10 +27,9 @@
 			</div><!-- end #bittop -->
 			
 			<div id="tikibody">
-
 				<div id="tikimain">
-
 					{include file="bitpackage:liberty/display_structure.tpl"}
+					<a style="padding:0;margin:0;border:0;" name="content"></a>
 					{if $pageError}
 						<div class="error">{$pageError}</div>
 					{/if}
