@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/chemokine/Attic/my_bitweaver.tpl,v 1.1 2005/06/19 06:11:10 bitweaver Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/chemokine/Attic/my_bitweaver.tpl,v 1.1.1.1.2.1 2005/08/05 23:00:27 squareing Exp $ *}
 {strip}
 
 <div class="floaticon">{bithelp}</div>
@@ -42,8 +42,8 @@
     <table width=100%>
     <tr>
       <td width=70%>{tr}User Pages{/tr}</td>
-      <td><div class="button2"><a href="{$gBitLoc.USERS_PKG_URL}my.php?by=creator" title="{tr}List pages where I am a creator{/tr}">{tr}by creator{/tr}</a></div></td>
-      <td><div class="button2"><a href="{$gBitLoc.USERS_PKG_URL}my.php?by=modificator" title="{tr}List pages where I am a modificator{/tr}">{tr}by modificator{/tr}</a></div></td>
+      <td><div class="button2"><a href="{$smarty.const.USERS_PKG_URL}my.php?by=creator" title="{tr}List pages where I am a creator{/tr}">{tr}by creator{/tr}</a></div></td>
+      <td><div class="button2"><a href="{$smarty.const.USERS_PKG_URL}my.php?by=modificator" title="{tr}List pages where I am a modificator{/tr}">{tr}by modificator{/tr}</a></div></td>
     </tr>
     </table>
   </div>
@@ -51,9 +51,9 @@
   <table>
   {section name=ix loop=$user_pages}
   <tr><td>
-  <a title="{$user_pages[ix].page_name}" href="{$gBitLoc.WIKI_PKG_URL}index.php?page={$user_pages[ix].page_name|escape:"url"}">{$user_pages[ix].page_name|truncate:30:"(...)"}</a>
+  <a title="{$user_pages[ix].page_name}" href="{$smarty.const.WIKI_PKG_URL}index.php?page={$user_pages[ix].page_name|escape:"url"}">{$user_pages[ix].page_name|truncate:30:"(...)"}</a>
   </td><td align="right">
-  (<a href="{$gBitLoc.WIKI_PKG_URL}edit.php?page={$user_pages[ix].page_name|escape:"url"}">{tr}edit{/tr}</a>)
+  (<a href="{$smarty.const.WIKI_PKG_URL}edit.php?page={$user_pages[ix].page_name|escape:"url"}">{tr}edit{/tr}</a>)
   </td></tr>
   {/section}
   </table>
@@ -70,9 +70,9 @@
   <table>
   {section name=ix loop=$user_galleries}
   <tr><td>
-  <a href="{$gBitLoc.IMAGEGALS_PKG_URL}browse_gallery.php?gallery_id={$user_galleries[ix].gallery_id}">{$user_galleries[ix].name}</a>
+  <a href="{$smarty.const.IMAGEGALS_PKG_URL}browse_gallery.php?gallery_id={$user_galleries[ix].gallery_id}">{$user_galleries[ix].name}</a>
   </td><td align="right">
-  <a href="{$gBitLoc.IMAGEGALS_PKG_URL}index.php?editgal={$user_galleries[ix].gallery_id}">({tr}edit{/tr})</a>
+  <a href="{$smarty.const.IMAGEGALS_PKG_URL}index.php?editgal={$user_galleries[ix].gallery_id}">({tr}edit{/tr})</a>
   </td></tr>
   {/section}
   </table>
@@ -123,7 +123,7 @@
   <table>
   {section name=ix loop=$tasks}
   <tr><td>
-  <a href="{$gBitLoc.USERS_PKG_URL}tasks.php?task_id={$tasks[ix].task_id}">{$tasks[ix].title}</a>
+  <a href="{$smarty.const.USERS_PKG_URL}tasks.php?task_id={$tasks[ix].task_id}">{$tasks[ix].title}</a>
   </td></tr>
   {/section}
   </table>
@@ -140,9 +140,9 @@
   <table>
   {section name=ix loop=$user_blogs}
   <tr><td>
-  <a href="{$gBitLoc.BLOGS_PKG_URL}view.php?blog_id={$user_blogs[ix].blog_id}">{$user_blogs[ix].title}</a>
+  <a href="{$smarty.const.BLOGS_PKG_URL}view.php?blog_id={$user_blogs[ix].blog_id}">{$user_blogs[ix].title}</a>
   </td><td align="right">
-  (<a href="{$gBitLoc.BLOGS_PKG_URL}edit.php?blog_id={$user_blogs[ix].blog_id}">{tr}edit{/tr}</a>)
+  (<a href="{$smarty.const.BLOGS_PKG_URL}edit.php?blog_id={$user_blogs[ix].blog_id}">{tr}edit{/tr}</a>)
   </td></tr>
   {/section}
   </table>

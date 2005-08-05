@@ -13,9 +13,9 @@
     <td>{include file="bitpackage:kernel/top_bar.tpl"}</td>
     <td style="text-align: right; padding: 0 2px;">
       {if !$user}
-        <a class="menuhead" href="{$gBitLoc.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
+        <a class="menuhead" href="{$smarty.const.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
       {else}
-        <a class="menuhead" href="{$gBitLoc.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
+        <a class="menuhead" href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
       {/if}
     </td>
   </tr>

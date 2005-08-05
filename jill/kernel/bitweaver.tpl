@@ -5,7 +5,7 @@
 		<div dir="rtl">
 	{/if}
 
-	<div id="wrap1" class="pkg-{$gBitLoc.ACTIVE_PACKAGE|lower}">
+	<div id="wrap1" class="pkg-{$smarty.const.ACTIVE_PACKAGE|lower}">
 		<div id="wrap2">
 			{if $gBitSystem->isFeatureActive( 'feature_top_bar' )}
 				{include file="bitpackage:kernel/top_bar.tpl"}
