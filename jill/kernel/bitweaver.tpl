@@ -5,7 +5,7 @@
 		<div dir="rtl">
 	{/if}
 
-	<div id="wrap1" class="pkg-{$gBitLoc.ACTIVE_PACKAGE|lower}">
+	<div id="wrap1" class="pkg-{$smarty.const.ACTIVE_PACKAGE|lower}">
 		<div id="wrap2">
 			{if $gBitSystem->isFeatureActive( 'feature_top_bar' )}
 				{include file="bitpackage:kernel/top_bar.tpl"}
@@ -32,6 +32,7 @@
 
 				<div id="bitmain" class="bit-cols-{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}2{else}1{/if}">
 					{include file="bitpackage:liberty/display_structure.tpl"}
+					<a style="padding:0;margin:0;border:0;" name="content"></a>
 					{if $pageError}
 						<div class="error">{$pageError}</div>
 					{/if}

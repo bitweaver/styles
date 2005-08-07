@@ -1,11 +1,11 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/mambo/kernel/Attic/header.tpl,v 1.4 2005/07/17 17:36:38 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/mambo/kernel/Attic/header.tpl,v 1.5 2005/08/07 17:45:07 squareing Exp $ *}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>{$browserTitle} - {$siteTitle}</title>
 
 	{* get custom header files from individual packages *}
-	{foreach from=$gBitLoc.headerIncFiles item=file}
+	{foreach from=$gBitSystem->mStyles.headerIncFiles item=file}
 		{include file=$file}
 	{/foreach}
 
@@ -17,7 +17,7 @@
 		$this->assign( 'banner',$banner );
 	{/php}
 	#bittop {literal}{{/literal}
-		background: #fff url('{$gBitLoc.THEMES_STYLE_URL}images/{$banner}') top center no-repeat;
+		background: #fff url('{$smarty.const.THEMES_STYLE_URL}images/{$banner}') top center no-repeat;
 	{literal}}{/literal}
 	-->
 	</style>
@@ -25,8 +25,8 @@
 
 <body>
 {if $minical_reminders>100}
-	<iframe width="0" height="0" border="0" src="{$gBitLoc.CALENDAR_PKG_URL}minical_reminders.php" />
+	<iframe width="0" height="0" border="0" src="{$smarty.const.CALENDAR_PKG_URL}minical_reminders.php" />
 {/if}
 {if $gBitSystem->isFeatureActive( 'feature_helppopup' )}
-	{popup_init src="`$gBitLoc.THEMES_PKG_URL`js/overlib.js"}
+	{popup_init src="`$smarty.const.THEMES_PKG_URL`js/overlib.js"}
 {/if}

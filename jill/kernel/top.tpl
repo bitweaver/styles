@@ -1,24 +1,4 @@
 <div id="bitlogo">
-	{*
-	<div id="bitlogin">
-		{if $gbituser->isregistered()}
-			{tr}logged in as {displayname}{/tr} &bull; <a href="{$gbitloc.users_pkg_url}logout.php">{tr}logout{/tr}</a>
-		{else}
-			{form ipackage="users" ifile="validate.php"}
-				<input type="text" name="user" alt="user name" size="10" value="username" onfocus="this.value=''" />
-				<input type="password" name="pass" alt="password" size="10" value="password" onfocus="this.value=''" />
-				<input type="submit" name="login" value="{tr}login{/tr}" />
-				{if $rememberme ne 'disabled'}
-					<input type="hidden" name="rme" id="rme" value="on" />
-				{/if}
-				{if $gbitsystem->isfeatureactive( 'allowregister' )}
-					<input type="submit" name="register" value="{tr}register{/tr}" />
-				{/if}
-			{/form}
-		{/if}
-	</div><!-- end #tiklogin -->
-	*}
-
 	{if $gBitSystem->isPackageActive( 'search' ) }
 		<div id="bitsearch">
 			{form method="get" ipackage=search ifile="index.php"}
