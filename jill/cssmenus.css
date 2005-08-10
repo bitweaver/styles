@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.5 2005/08/10 18:58:54 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.6 2005/08/10 19:50:49 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.5 $
+ * @version  $Revision: 1.2.2.6 $
  * @theme    jill
  * @license  LGPL
  */
@@ -12,7 +12,7 @@
 .menu a					{display:block;}
 
 .suckerfish ul ul		{margin-left:1em;}
-.suckerfish li			{line-height:2.4em; padding:0em;}
+.suckerfish li			{line-height:2.0em; padding:0em;}
 .suckerfish li a:hover	{background:#579; color:#fff;}
 
 #bitmain .menu			{font-size:0.8em;}
@@ -50,22 +50,27 @@
 .hor li ul				{padding:0.3em; background:transparent url( images/menus/alpha.png ) top left repeat; border:1px solid #999;}
 
 /* css driven dropdown menus - vertical */
-.ver a								{padding:0 5px;}
-.ver, .ver ul						{padding:0; margin:0; list-style:none; float:left; width:165px; z-index:1000000;}
-.ver li								{position:relative; width:165px;}
-.ver li:hover,.ver li.ieHover		{background:#bec7d3;}
-.ver li li							{position:relative; float:left; width:165px;}
-.ver li li:hover,.ver li li.ieHover	{border:1px solid #657a96; margin:-1px;}
-.ver li ul							{position:absolute; left:-999em; margin-left:165px; margin-top:-28px; padding:0.3em; background:#fff; border:1px solid #999; background:#fff url( images/menu_ul.gif ) repeat-y 0.3em 0.3em;}
+
+/* layout first */
+.ver, .ver ul						{padding:0; margin:0; list-style:none; float:left; width:170px;}
+.ver li								{width:170px;}
+.ver li li							{position:relative; float:left; width:170px;}
+.ver li ul							{position:absolute; left:-999em; margin-left:170px; margin-top:-24px;}
 .ver li ul ul						{left:-999em;}
 
 /* vertical menus on the right hand side */
-#bitright .ver, #bitright .ver li, #bitright .ver ul	{width:125px;}
-#bitright .ver li ul									{margin-left:-132px;}
+#bitright .ver, #bitright .ver li, #bitright .ver ul	{width:155px;}
+#bitright .ver li ul									{margin-left:-155px;}
+
+/* now comes the dropdown style - modify away! */
+.ver a								{padding:0 5px;}
+.ver li:hover,.ver li.ieHover		{background:#bec7d3;}
+.ver li li:hover,.ver li li.ieHover	{border:1px solid #657a96; margin:-1px;}
+.ver li ul							{padding:0.3em; background:transparent url( images/menus/alpha.png ) top left repeat; border:1px solid #999;}
 
 /* z-index */
 .hor,.hor a,.hor li,.hor ul	{z-index:100000;}
-.ver,.ver a,.ver li,.ver ul	{z-index:100000;}
+.ver,.ver a,.ver li,.ver ul	{z-index:1000000;}
 #nav,#nav a,#nav li,#nav ul	{z-index:10000000;}
 
 /* ieHover used as suckerfish class for MSIE hover support */
