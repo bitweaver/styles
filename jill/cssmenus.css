@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.4 2005/08/10 18:45:43 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.5 2005/08/10 18:58:54 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.4 $
+ * @version  $Revision: 1.2.2.5 $
  * @theme    jill
  * @license  LGPL
  */
@@ -51,12 +51,12 @@
 
 /* css driven dropdown menus - vertical */
 .ver a								{padding:0 5px;}
-.ver, .ver ul						{padding:0; margin:0; list-style:none; float:left; width:13em; z-index:1000000;}
-.ver li								{position:relative; width:13em;}
+.ver, .ver ul						{padding:0; margin:0; list-style:none; float:left; width:165px; z-index:1000000;}
+.ver li								{position:relative; width:165px;}
 .ver li:hover,.ver li.ieHover		{background:#bec7d3;}
-.ver li li							{position:relative; float:left; width:13em;}
+.ver li li							{position:relative; float:left; width:165px;}
 .ver li li:hover,.ver li li.ieHover	{border:1px solid #657a96; margin:-1px;}
-.ver li ul							{position:absolute; left:-999em; margin-left:13em; margin-top:-28px; padding:0.3em; background:#fff; border:1px solid #999; background:#fff url( images/menu_ul.gif ) repeat-y 0.3em 0.3em;}
+.ver li ul							{position:absolute; left:-999em; margin-left:165px; margin-top:-28px; padding:0.3em; background:#fff; border:1px solid #999; background:#fff url( images/menu_ul.gif ) repeat-y 0.3em 0.3em;}
 .ver li ul ul						{left:-999em;}
 
 /* vertical menus on the right hand side */
