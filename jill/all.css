@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.6 2005/08/01 18:41:56 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.7 2005/08/11 13:03:47 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.6 $
+ * @version  $Revision: 1.7 $
  * @theme    jill
  * @license  LGPL
  */
@@ -14,7 +14,8 @@ pre,.code		{width:96%; margin:0 auto; padding:1em 0; font-family:monospace; font
 html>body pre	{width:auto;}
 img				{border:0;}
 hr				{border:0; border-top:1px solid #933; padding:0; margin:0.5em 0;}
-#bitmain small	{font-size:0.8em; color:#999;}
+#bitmain small,
+#bitmain .small	{font-size:0.8em; color:#999;}
 
 /* links */
 :link,:visited					{text-decoration:none; color:#579;}
@@ -49,7 +50,6 @@ h3			{font-size:1.1em;}
 #bitmain .portrait	{float:right;}
 .icon				{border:0; vertical-align:middle; margin:0 0.2em;}
 .menuicon			{text-align:center;}
-.small				{font-size:0.8em;}
 ul.small			{line-height:normal;}
 
 /* tocs */
@@ -91,6 +91,7 @@ legend					{font-size:1.2em; padding:1em;}
 .clear					{clear:both;}
 .minifind fieldset		{border:0;}
 .minifind legend		{display:none;}
+.minifind fieldset		{padding:0.5em; margin:0;}
 table .formlabel		{float:none; width:auto; text-align:left;}
 table .forminput		{margin:0;}
 
