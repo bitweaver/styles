@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.14 2005/08/15 15:48:53 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.15 2005/08/19 23:28:17 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.14 $
+ * @version  $Revision: 1.2.2.15 $
  * @theme    jill
  * @license  LGPL
  */
@@ -72,6 +72,9 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 /* boxes and modules */
 .box					{}
 .box h3					{}
+.popup					{background:#0c2242; color:#fff; border:1px solid #000;}
+.popup small			{color:#aaa !important;}
+.popup h3				{margin:3px; padding:3px; color:#ccc; border-bottom:2px solid #f80;}
 #bitmain .boxcontent	{padding:0 0.5em 0.5em 0.5em;}
 
 /* friggin MSIE requires the width attribute here as well for overflow to work - ARGH */
