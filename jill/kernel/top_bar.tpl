@@ -10,14 +10,14 @@
 			{/if}
 
 			<li class="m-home">
-				<a class="head" href="{$smarty.const.BIT_ROOT_URL}">{tr}{$siteTitle|default:"Home"}{/tr}</a>
+				<a class="head" href="{$smarty.const.BIT_ROOT_URL}">{$gBitSystemPrefs.site_menu_title|default:$siteTitle}</a>
 				{include file="bitpackage:kernel/menu_global.tpl"}
 			</li>
 
 			{foreach key=key item=menu from=$appMenu}
 				{if $menu.title && $menu.titleUrl && $menu.template}
 					<li class="m-{$key}{if $smarty.const.ACTIVE_PACKAGE eq $menu.adminPanel} current{/if}">
-						<a accesskey="{$key|regex_replace:"/(.).*/":"\$1"}" class="{if $gBitSystem->isFeatureActive( 'feature_top_bar_dropdown' )}head{else}item{/if}{if $smarty.const.ACTIVE_PACKAGE eq $menu.adminPanel} selected{/if}" href="{$menu.titleUrl}">{tr}{$menu.title}{/tr}</a>
+						<a accesskey="{$key|truncate:1:""}" class="{if $gBitSystem->isFeatureActive( 'feature_top_bar_dropdown' )}head{else}item{/if}{if $smarty.const.ACTIVE_PACKAGE eq $menu.adminPanel} selected{/if}" href="{$menu.titleUrl}">{tr}{$menu.title}{/tr}</a>
 						{if $gBitSystem->isFeatureActive( 'feature_top_bar_dropdown' )}
 							{include file="`$menu.template`"}
 						{/if}

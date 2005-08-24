@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.6 2005/08/01 18:41:58 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.7 2005/08/24 20:58:44 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.6 $
+ * @version  $Revision: 1.7 $
  * @theme    jill
  * @license  LGPL
  */
@@ -16,7 +16,7 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 .header h1			{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px;}
 .tabsystem .header h1	{background:transparent;}
 .header h2			{font-size:0.8em; padding:0; margin:0; font-weight:normal;}
-.comment			{margin-top:4em; color:#555;}
+.comment			{color:#555;}
 .comment h3			{border-bottom:2px solid #999;}
 .comment .post		{border-left:1px solid #ddd; padding:0 0 0 0.5em; margin:0 0 2em 0;}
 .comment .content	{overflow:auto;}
@@ -72,8 +72,12 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 /* boxes and modules */
 .box					{}
 .box h3					{}
+.popup					{background:#0c2242; color:#fff; border:1px solid #000;}
+.popup small			{color:#aaa !important;}
+.popup h3				{margin:3px; padding:3px; color:#ccc; border-bottom:2px solid #f80;}
 #bitmain .boxcontent	{padding:0 0.5em 0.5em 0.5em;}
 
+/* modules */
 /* friggin MSIE requires the width attribute here as well for overflow to work - ARGH */
 #bitleft .module			{width:175px;}
 #bitright .module			{width:160px;}
@@ -83,4 +87,13 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 .module ul,.module ul li	{list-style:none; margin:0; padding:0;}
 .module ul.data				{text-align:center;}
 .module ol,.module ol li	{margin:0 0 0 1.5em; padding:1px 0; line-height:normal;}
+
+/* calendar stuff */
+.caltable .current				{background:#ff9;}
+.caltable .calnumber			{border-bottom:1px solid #900; text-align:right; padding:2px; margin:2px;}
+.module .caltable				{font-size:10px;}
+.module .caltable th			{padding:0; font-weight:normal; background:transparent; color:#666;}
+.module .caltable td			{border:0; text-align:center; padding:0;}
+.module .caltable .calday a			{padding:2px 0; display:block;}
+.module .caltable .calday a:hover	{background:#f90;}
 }
