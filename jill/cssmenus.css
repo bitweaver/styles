@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.5 2005/08/11 13:03:47 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.6 2005/08/30 22:36:00 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.5 $
+ * @version  $Revision: 1.6 $
  * @theme    jill
  * @license  LGPL
  */
@@ -12,7 +12,7 @@
 .menu a					{display:block;}
 
 .suckerfish ul ul		{margin-left:1em;}
-.suckerfish li			{line-height:2.0em; padding:0em;}
+.suckerfish li			{line-height:2.5em; padding:0em;}
 .suckerfish li a:hover	{background-color:#579; color:#fff;}
 
 #bitmain .menu			{font-size:0.8em;}
@@ -41,12 +41,13 @@
 .hor li li a:hover		{background:#579; color:#fff;}
 .hor .current a			{}
 .hor .current li a		{}
+.hor a.head				{background:transparent url( images/head.gif ) left no-repeat;}
 .hor ul a				{padding:0 5px; line-height:20px;}
+.hor ul a.head			{background:transparent url( images/menus/head.gif ) right no-repeat;}
+.hor ul a.head:hover	{background:#579 url( images/menus/head_h.gif ) right no-repeat;}
 .hor li					{background:transparent url( images/menus/head.gif ) left no-repeat;}
 .hor li:hover,.hor li.ieHover		{background:transparent url( images/menus/head_h.gif ) left no-repeat;}
 .hor li li:hover,.hor li li.ieHover	{background:#bcd;}
-.hor ul a.head			{}
-.hor ul a.head:hover	{}
 .hor li ul				{padding:0.3em; background:transparent url( images/menus/alpha.png ) top left repeat; border:1px solid #999;}
 
 /* css driven dropdown menus - vertical */
@@ -55,7 +56,7 @@
 .ver, .ver ul	{padding:0; margin:0; list-style:none; float:left; width:170px;}
 .ver li			{width:170px;}
 .ver li li		{position:relative; float:left; width:170px;}
-.ver li ul		{position:absolute; left:-999em; margin-left:170px; margin-top:-24px;}
+.ver li ul		{position:absolute; left:-999em; margin-left:170px; margin-top:-2.6em;}
 .ver li ul ul	{left:-999em;}
 
 /* vertical menus on the right hand side */
@@ -63,16 +64,27 @@
 #bitright .ver li ul									{margin-left:-155px;}
 
 /* now comes the dropdown style - modify away! */
-.ver a			{padding:0 5px;}
-.ver a.head		{background:transparent url( images/mh3.gif ) right no-repeat;}
-.ver li:hover,
-.ver li.ieHover	{background:#bec7d3;}
-.ver li ul		{padding:0.3em; background:transparent url( images/menus/alpha.png ) top left repeat; border:1px solid #999;}
+.suckerfish			{line-height:4em;}
+.suckerfish ul		{background:#eee; border:solid #999; border-width:1px 1px 0 1px;}
+.suckerfish li		{border-bottom:1px solid #999;}
+.ver a					{margin:0; padding:0.1em 0.7em 0.1em 10px;}
+.ver a:hover			{color:#000;}
+.ver li li a			{background:transparent;}
+.ver li li a:hover		{background:#579; color:#fff;}
+.ver .current a			{}
+.ver .current li a		{}
+.ver a				{padding:0 5px;}
+.ver a.head			{background:transparent url( images/menus/head.gif ) right no-repeat;}
+.ver a.head:hover	{background:#579 url( images/menus/head_h.gif ) right no-repeat;}
+.ver li					{}
+.ver li:hover,.hor li.ieHover		{}
+.ver li li:hover,.hor li li.ieHover	{background:#bcd;}
+.ver li ul				{background:transparent url( images/menus/alpha.png ) top left repeat;}
 
 /* z-index */
-.hor,.hor a,.hor li,.hor ul	{z-index:100000;}
-.ver,.ver a,.ver li,.ver ul	{z-index:1000000;}
-#nav,#nav a,#nav li,#nav ul	{z-index:10000000;}
+.hor,.hor a,.hor li,.hor ul	{z-index:20;}
+.ver,.ver a,.ver li,.ver ul	{z-index:200;}
+#nav,#nav a,#nav li,#nav ul	{z-index:2000;}
 
 /* ieHover used as suckerfish class for MSIE hover support */
 .hor li:hover ul ul, .hor li:hover ul ul ul, .hor li.ieHover ul ul, .hor li.ieHover ul ul ul,

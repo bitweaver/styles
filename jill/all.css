@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.8 2005/08/24 20:58:44 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.9 2005/08/30 22:36:00 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.8 $
+ * @version  $Revision: 1.9 $
  * @theme    jill
  * @license  LGPL
  */
@@ -36,6 +36,7 @@ h3			{font-size:1.1em;}
 .date				{color:#999; font-size:0.8em;}
 .header .date		{clear:both;}
 .content			{}
+.post				{border-bottom:1px dotted #ccc;}
 .preview			{border:1px dashed #009; margin:0 0 2em 0;}
 .norecords			{font-weight:bold;}
 .popup				{background:#fff; width:250px; border:1px solid #000;}
@@ -146,8 +147,15 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 .box h3					{}
 #bitmain .boxcontent	{padding:0 1em 1em 1em;}
 
-/* package specific settings */
+/* structure navigation */
+.path					{display:block;}
+.navigation span		{display:block; width:49%;}
+.navigation .left		{text-align:right; float:left;}
+.navigation .right		{text-align:left; float:right;}
 
+/* package specific settings */
+/* articles */
+.introduction .image	{float:right; margin:3px 0px 3px 10px;}
 /* fisheye and themes listing */
 .themes ul.data li.item,
 .fisheye ul.data li.item		{border:1px solid #ddd; clear:both; margin:0.5em 0px 0.5em 200px; background:#eee;}
@@ -162,14 +170,13 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 .thumbnailblock .box:hover		{color:#333;}
 .image							{text-align:center;}
 
-/* structure navigation */
-.path					{display:block;}
-.navigation span		{display:block; width:49%;}
-.navigation .left		{text-align:right; float:left;}
-.navigation .right		{text-align:left; float:right;}
-
 /* sticky notes */
 .stickies textarea,.stickies input[type='text']		{background:#fe9;}
 .stickynote h3			{border-bottom: 1px solid #dda;}
 .stickynote				{background-color:#fe9; color:#000; width: 300px; padding: 3px;}
+
+/* this is the attachment browser */
+.attbrowser				{padding:0 20px; margin:0; background:#fff;}
+.attbrowser .data		{text-align:center;}
+.attbrowser .data td	{padding:10px;}
 }

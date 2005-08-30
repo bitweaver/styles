@@ -55,8 +55,9 @@ a:hover {
 	padding: 5px 0 4px 0;
 }
 #bittop {
-	height: 150px;
-	width: 634px;
+	height: 130px;
+	width: 614px;
+	padding: 10px;
 	float: left;
 	margin-bottom: 2px;
 }
