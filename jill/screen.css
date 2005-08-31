@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.18 2005/08/27 19:18:21 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.2.2.19 2005/08/31 09:44:52 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.18 $
+ * @version  $Revision: 1.2.2.19 $
  * @theme    jill
  * @license  LGPL
  */
@@ -90,7 +90,6 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 .module ol,.module ol li	{margin:0 0 0 1.5em; padding:1px 0; line-height:normal;}
 
 /* calendar stuff */
-.caltable .current				{background:#ff9;}
 .caltable .calnumber			{border-bottom:1px solid #900; text-align:right; padding:2px; margin:2px;}
 .module .caltable				{font-size:10px;}
 .module .caltable th			{padding:0; font-weight:normal; background:transparent; color:#666;}
