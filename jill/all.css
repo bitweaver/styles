@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.19 2005/08/28 18:31:54 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.20 2005/09/03 09:46:53 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.19 $
+ * @version  $Revision: 1.2.2.20 $
  * @theme    jill
  * @license  LGPL
  */
@@ -115,11 +115,12 @@ table .forminput		{margin:0;}
 /* tables */
 fieldset table			{margin:0 2%; width:96%;}
 table					{border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal;}
-caption					{font-weight:bold; padding:2px;}
+caption					{font-weight:bold; padding:1.5em 0 0.5em 0;}
 th						{border-bottom:1px solid #000; background:#0c2242; color:#ccc; padding:5px 2px;}
 th :link, th :visited	{color:#fff;}
 td.actionicon			{text-align:right;}
 table.data				{border:1px solid #000; font-size:0.8em;}
+table.optionbar			{font-size:0.8em;}
 .menutable td			{padding:10px 4px;}
 
 /* lists */
