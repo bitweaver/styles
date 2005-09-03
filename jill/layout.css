@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/layout.css,v 1.4 2005/07/17 17:36:37 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/layout.css,v 1.5 2005/09/03 10:21:46 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.4 $
+ * @version  $Revision: 1.5 $
  * @theme    jill
  * @license  LGPL
  */
@@ -24,9 +24,9 @@ body	{background:transparent url( images/full.png ) top left no-repeat !importan
 #bitlogin	{color:#999; float:right; padding:0; margin:0;}
 #bitlogin a	{color:#999;}
 
-#bitsearch								{font-size:0.8em; clear:both; text-align:right; color:#999; padding:5px 10px 0 0;}
-#bitsearch *							{color:#999;}
-#bitsearch input[type="text"]			{border:dotted #999; border-width:0 0 1px 0; margin:0 0.3em; padding:2px;}
+#bitsearch								{font-size:0.8em; clear:both; text-align:right; color:#666; padding:5px 10px 0 0;}
+#bitsearch *							{color:#666;}
+#bitsearch input[type="text"]			{border:solid #666; border-width:0 0 1px 0; margin:0 0.3em; padding:2px;}
 #bitsearch input[type="text"]:focus		{border:solid #000; border-width:0 0 1px 0; color:#000;}
 #bitsearch input:hover,
 #bitsearch input[type="submit"]:focus	{color:#000;}
