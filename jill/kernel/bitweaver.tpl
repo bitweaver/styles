@@ -14,6 +14,15 @@
 			{include file="bitpackage:kernel/top.tpl"}
 
 			<div id="bitbody">
+				<div id="bitmain" class="bit-cols-{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}2{else}1{/if}">
+					{include file="bitpackage:liberty/display_structure.tpl"}
+					<a style="padding:0;margin:0;border:0;" name="content"></a>
+					{if $pageError}
+						<div class="error">{$pageError}</div>
+					{/if}
+					{include file=$mid}
+				</div><!-- end #bitmain -->
+
 				{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
 					<div id="bitleft">
 						{section name=homeix loop=$l_modules}
@@ -29,15 +38,6 @@
 						{/section}
 					</div><!-- end #bitright -->
 				{/if}
-
-				<div id="bitmain" class="bit-cols-{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}2{else}1{/if}">
-					{include file="bitpackage:liberty/display_structure.tpl"}
-					<a style="padding:0;margin:0;border:0;" name="content"></a>
-					{if $pageError}
-						<div class="error">{$pageError}</div>
-					{/if}
-					{include file=$mid}
-				</div><!-- end #bitmain -->
 
 				<div id="bitbottom">
 					{if $gBitSystem->isFeatureActive( 'feature_bot_bar' )}
