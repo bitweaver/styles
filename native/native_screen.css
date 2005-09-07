@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.1.1.1.2.3 2005/07/03 08:42:09 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.1.1.1.2.4 2005/09/07 07:40:00 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.3 $
+ * @version  $Revision: 1.1.1.1.2.4 $
  * @theme    native
  * @license  LGPL
  */
@@ -58,7 +58,7 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus	{border:1px
 
 /* date settings */
 .date						{color:#999; font-size:0.9em;}
-.wiki .header .date			{padding:0 0 5px 0; width:35%; float:right; text-align:right; line-height:normal; margin-top:-20px;}
+.wiki .header .date			{padding:0 0 5px 0; width:35%; float:right; text-align:right; line-height:normal; margin-top:-48px;}
 .blogs .post .header .date	{padding:0 0 5px 0; width:35%; float:right; text-align:right; line-height:normal; margin:-38px 5px 0 0;}
 .comment .post .date		{}
 #bitmain .blogs>.header>.date	{width:auto; float:none; margin:0; text-align:left;}
