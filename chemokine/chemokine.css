@@ -63,15 +63,15 @@ a:hover {
 	right: 1em;
 	padding: 1em;
 }
-#tikimain {
+#bitmain {
 	margin: 0em 24em 1em 0em;
 	padding: 0em 1em 1em 1em;
 	overflow: auto;
 }
-#tikibottom {
+#bitbottom {
 	margin: 0em 24em 1em 0em;
 }
-#tikiprint {}
+#bitprint {}
 #slideshow {}
 
 				/*** common classes ***/
@@ -128,17 +128,25 @@ a:hover {
 .menu .item {}
 .menu .item:hover {}
 
+.menu .icon {
+	display:none;
+}
+
+#bitmain .menu .boxtitle .icon {
+	display:block;
+}
+
 				/*** parsed elements ***/
-.tikibar {}
-.tikicache {}
-.tikibox {
+.bitbar {}
+.bitcache {}
+.bitbox {
 	padding: 3px;
 	border: 1px solid #7794ac;
 }
-.tikitable {
+.bittable {
 	background: #eee;
 }
-.tikitable td {
+.bittable td {
 	border: 1px solid #fff;
 }
 

@@ -24,7 +24,7 @@
 		</div>
 	{/if}
 
-	<div id="tikimain">
+	<div id="bitmain">
 		{include file="bitpackage:liberty/display_structure.tpl"}
 
 		<a style="padding:0;margin:0;border:0;" name="content"></a>
@@ -36,7 +36,7 @@
 	</div>
 
 	{if $gBitSystem->isFeatureActive( 'feature_bot_bar' )}
-		<div id="tikibottom">
+		<div id="bitbottom">
 			{include file="bitpackage:kernel/bot_bar.tpl"}
 		</div>
 	{/if}
