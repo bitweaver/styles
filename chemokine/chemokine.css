@@ -144,8 +144,6 @@ a:hover {
 
 				/*** forms ***/
 input,select,textarea {
-	font-family: verdana, tahoma, helvetica, arial, sans-serif;
-	color: #666;
 	font-size: 120%;
 }
 fieldset {
