@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.1 2005/09/18 09:11:10 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.2 2005/09/18 09:59:54 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
  * @version  $ Revision: 1.6 $
@@ -110,12 +110,12 @@ form,input,textarea,select{margin:0; padding:0;}
   input,select,textarea {font-size:1em; font-family:verdana,tahoma,helvetica,arial,sans-serif; color:#666; background:#333; border:1px solid #999; color:#fff;}
    input[type="text"],input[type="password"] {border:0; border-bottom:1px dashed #999;}
   legend {padding:0 10px; letter-spacing:3px; color:#fff;}
-   .row {clear:both; padding-top:5px;}
+   .row {padding-bottom:5px;}
    .formfeedback,{display:block; clear:both;}
    .formlabel {color:#eee; float:left; width:25%; text-align:right;}
     label {color:#fff;}
-   .forminput {float:right; width:74%;}
-   .formhelp {cursor:help; display:block; clear:both; line-height:normal; font-size:85%;}
+   .forminput {margin-left:26%;}
+   .formhelp {cursor:help; line-height:normal; font-size:85%;}
     .module .forminput, .module .formlabel {width:auto; float:left; clear:both;}
   .submit {text-align:center; padding-bottom:10px;}
    .submit input {padding:0.2em 0.5em;}
