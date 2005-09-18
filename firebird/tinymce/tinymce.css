@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/tinymce/tinymce.css,v 1.1.1.1.2.1 2005/09/18 13:22:13 lsces Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/tinymce/tinymce.css,v 1.1.1.1.2.2 2005/09/18 13:48:04 lsces Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.1 $
+ * @version  $Revision: 1.1.1.1.2.2 $
  * @theme    olfactory
  * @license  LGPL
  */
@@ -10,7 +10,7 @@ body			{font-weight:normal; font-size:12px; margin:0; padding:0; color:#000;}
 caption			{font-weight:bold; font-size:1.2em;}
 th				{background:#14205A; color:#fff; padding:2px; font-weight:normal;}
 hr				{border:0; border-top:1px solid #999;}
-pre,code,td.code{font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#fff; border:1px solid #900; color:#000; font-family:mono-space; text-align:left; padding:5px;}
+pre,code,td.code{font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#fff; border:1px solid #900; color:#000; text-align:left; padding:5px;}
 small,.small	{font-size:0.85em; line-height:normal;}
 			/* parsed elements */
 .bitbox			{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
