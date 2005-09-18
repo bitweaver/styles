@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1 2005/06/19 06:11:10 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.1 2005/09/18 09:11:10 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
  * @version  $ Revision: 1.6 $
@@ -24,7 +24,7 @@ a.external {background:transparent url( images/external_link.png ) no-repeat rig
   .toplogin input {vertical-align:middle;}
   .toplogin a {color:#cc9;}
   .spacer {height:2em;}
-#bittopbar {background:#997;}
+#bittopbar {width:82%;}
 #tikimain {margin:0em 0em 1em 0em; padding:0em 0em 1em 0em; float:left; width:82%;}
 #bitmodules {width:18%; padding:3em 0em 1em 0em; float:right; background:#678}
 #tikibottom {color:#999; text-align:center; clear:both; font-size:0.8em; margin:0em 27.5em 1em 0em;}
@@ -173,18 +173,19 @@ h4 {margin:0; padding:0;}
 .ver a:hover,.hor a:hover {border:0;}
 .hor .icon {position:absolute; left:28px; top:0px; margin-left:-26px;}
 .hor,.hor ul {padding:0; margin:0; list-style:none;}
-.hor a {white-space:nowrap; color:#000; padding:0 5px;}
+.hor a {white-space:nowrap; padding:0 5px;}
 .hor li {width:auto;}
 .hor li li,.hor li ul {width:14em; display:block; text-align:left;}
 .hor li {float:left; position:relative;}
-.hor li:hover,.hor li.ieHover {background:#cc9;}
-.hor li li a {margin:0 0 0 2em;}
+.hor li:hover,.hor li.ieHover {background:#000;}
+.hor li li a {margin:0 0 0 2em; color:#000;}
 .hor ul a.head {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right; background-color:transparent;}
 .hor ul a.head:hover {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right;}
 .hor li li:hover {border:1px solid #657a96; background:#bec7d3; margin:-1px;}
 .hor li li:ieHover {border:1px solid #657a96; background:#bec7d3; margin:-1px;}
 .hor li ul {position:absolute; left:-999em; background:#fff url( images/menu_ul.gif ) repeat-y 0.3em 0.3em; padding:0.3em; border:1px solid #aaa}
-.hor li ul ul {margin:-2.2em 0 0 14em;}
+/* if you want to flip the admin menu to the right, remove the '-' in front of 14em; */
+.hor li ul ul {margin:-1.9em 0 0 -14em;}
 			/* css driven dropdown menus - vertical */
 .ver .icon {margin-left:-26px; padding-right:8px; vertical-align:middle;}
 .ver a {color:#000; padding:0 5px; white-space:nowrap;}
@@ -201,9 +202,9 @@ h4 {margin:0; padding:0;}
 #bitmodules .ver, #bitmodules .ver li, #bitmodules .ver ul {width:125px;}
 #bitmodules .ver li ul {margin-left:-132px;}
 			/* z-index */
-.hor,.hor a,.hor li,.hor ul {z-index:100000;}
-.ver,.ver a,.ver li,.ver ul {z-index:100000;}
-#nav,#nav a,#nav li,#nav ul {z-index:10000000;}
+#nav,#nav a,#nav li ul {z-index:10000;}
+.hor,.hor a,.hor li ul {z-index:1000;}
+.ver,.ver a,.ver li ul {z-index:1000;}
 			/* ieHover used as suckerfish class for MSIE hover support */
 .hor li:hover ul ul, .hor li:hover ul ul ul, .hor li.ieHover ul ul, .hor li.ieHover ul ul ul,
 .ver li:hover ul ul, .ver li:hover ul ul ul, .ver li.ieHover ul ul, .ver li.ieHover ul ul ul {left:-999em;}
