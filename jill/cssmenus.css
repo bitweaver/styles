@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.9 2005/09/17 13:59:48 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.10 2005/09/18 08:55:52 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.9 $
+ * @version  $Revision: 1.2.2.10 $
  * @theme    jill
  * @license  LGPL
  */
@@ -24,7 +24,7 @@
 
 /* layout first */
 .hor .icon				{position:absolute; left:28px; top:2px; margin-left:-26px;}
-.hor,.hor ul,.hor li	{padding:0; margin:0; list-style:none; z-index:1000000; line-height:normal;}
+.hor,.hor ul,.hor li	{padding:0; margin:0; list-style:none; line-height:normal;}
 .hor a					{line-height:normal;}
 .hor li					{width:auto;}
 .hor li li,.hor li ul	{width:14em; display:block; text-align:left; background:transparent;}
@@ -82,9 +82,9 @@
 .ver li ul				{background:transparent url( images/menus/alpha.png ) top left repeat;}
 
 /* z-index */
-.hor,.hor a,.hor li,.hor ul	{z-index:20;}
-.ver,.ver a,.ver li,.ver ul	{z-index:200;}
-#nav,#nav a,#nav li,#nav ul	{z-index:2000;}
+#nav,#nav a,#nav li ul	{z-index:2000;}
+.ver,.ver a,.ver li ul	{z-index:200;}
+.hor,.hor a,.hor li ul	{z-index:20;}
 
 /* ieHover used as suckerfish class for MSIE hover support */
 .hor li:hover ul ul, .hor li:hover ul ul ul, .hor li.ieHover ul ul, .hor li.ieHover ul ul ul,
