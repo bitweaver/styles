@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_cssmenus.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_cssmenus.css,v 1.1.1.1.2.1 2005/09/18 13:22:14 lsces Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.1.1.1.2.1 $
  * @theme    native
  * @license  LGPL
  */
@@ -11,10 +11,10 @@
 #bittopbar			{margin:0 20px;}
 .menu				{line-height:1.8em;}
 .menu a				{display:block;}
-#tikimain .menu		{line-height:normal;}
-#tikimain .menu		{background:transparent url( images/pkgicon_bg.png ) 50% 50% repeat;}
-#tikimain .menuicon .icon	{padding:5px;}
-#tikimain .my .menu .item .icon	{display:none;}
+#bitmain .menu		{line-height:normal;}
+#bitmain .menu		{background:transparent url( images/pkgicon_bg.png ) 50% 50% repeat;}
+#bitmain .menuicon .icon	{padding:5px;}
+#bitmain .my .menu .item .icon	{display:none;}
 			/* tikiwiki type nexus menus */
 .tikiwiki div div	{margin:1px;}
 .tikiwiki span		{clear:both;}
@@ -40,7 +40,7 @@
 .hor li li:hover	{border:solid #ccc; border-width:1px 0; margin:-1px 0;}
 .hor li li:ieHover	{border:solid #ccc; border-width:1px 0; margin:-1px 0;}
 .hor li ul			{position:absolute; left:-999em; background:#fff url( images/menu_ul.gif ) repeat-y top left; padding:0.3em; border:1px solid #aaa}
-.hor li ul ul		{margin:-2.4em 0 0 13em;}
+.hor li ul ul		{margin:-2.4em 0 0 -13em;}
 			/* top bar specific */
 #nav a:hover		{color:#000;}
 #nav li ul			{background:#eee url( images/nav_ul.gif ) repeat-y top left;}
