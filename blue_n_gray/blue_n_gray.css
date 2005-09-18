@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.4 2005/07/14 21:46:23 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.1.1.1.2.5 2005/09/18 20:31:12 squareing Exp $ */
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -148,11 +148,9 @@ input,textarea,select {
 .formlabel {
 	font-weight: bold;
 	color: #666;
-	width: auto;
 	text-align: left;
 }
 .forminput {
-	width: 95%;
 	margin-bottom: 1em;
 }
 .formhelp {
