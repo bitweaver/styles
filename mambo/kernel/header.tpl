@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/mambo/kernel/Attic/header.tpl,v 1.3.2.3 2005/08/05 23:00:31 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/mambo/kernel/Attic/header.tpl,v 1.3.2.4 2005/09/20 09:27:19 squareing Exp $ *}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -24,9 +24,7 @@
 </head>
 
 <body>
-{if $minical_reminders>100}
-	<iframe width="0" height="0" border="0" src="{$smarty.const.CALENDAR_PKG_URL}minical_reminders.php" />
-{/if}
+<div style="display:none;position:absolute;top:0;left:-999em;"><a class="skip" style="position:absolute;top:0;left:-999em;width:0;height:0;" href="#content">{tr}Skip Navigation{/tr}</a></div>
 {if $gBitSystem->isFeatureActive( 'feature_helppopup' )}
 	{popup_init src="`$smarty.const.THEMES_PKG_URL`js/overlib.js"}
 {/if}
