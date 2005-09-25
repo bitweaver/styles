@@ -16,15 +16,15 @@ a:hover {}					/* link while mouse pointer is hovering over it */
 a:active {}					/* link after it has been clicked */
 
 						/*** site layout ***/
-div#tikibody {}				/* div encasing entire site */
+div#bitbody {}				/* div encasing entire site */
  div#bittop {}				/* usually contains the banner of the site */
  div#bittopbar {}			/* menu bar just below the site banner */
- div#tikilayouttable {}		/* table that is used to position #bitleft, #tikimain and #bitright (not present if using divs for positioning) */
+ div#bitlayouttable {}		/* table that is used to position #bitleft, #bitmain and #bitright (not present if using divs for positioning) */
   div#bitleft {}			/* left column for modules */
-  div#tikimain {}			/* main content area in center of page */
+  div#bitmain {}			/* main content area in center of page */
   div#bitright {}			/* right column for modules */
- div#tikibottom {}			/* bottom bar accors the page */
-div#tikiprint {}			/* encases page when user wants to print */
+ div#bitbottom {}			/* bottom bar accors the page */
+div#bitprint {}			/* encases page when user wants to print */
 div#slideshow {}			/* encases page when user is viewing a wikipage as a slideshow */
 
 						/*** common classes ***/
@@ -69,10 +69,10 @@ div.box {}					/* any box on the site, including <div class="box module"> for mo
 .menu .item {}				/* options that are part of the menu section - also used in the 'My Site' page */
 
 						/*** parsed text elements ***/
-/* these definitions only really apply when using tikiwiki format syntax */
-div.tikibar {}				/* -=...=- */
-div.tikibox {}				/* ^...^ */
-div.tikitable {}			/* tables ||r1c1|r1c2||r2c1|r2c2|| */
+/* these definitions only really apply when using bitwiki format syntax */
+div.bitbar {}				/* -=...=- */
+div.bitbox {}				/* ^...^ */
+div.bittable {}			/* tables ||r1c1|r1c2||r2c1|r2c2|| */
 
 						/*** images and icons ***/
 img {}						/* images */

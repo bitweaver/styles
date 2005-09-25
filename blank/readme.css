@@ -1,7 +1,7 @@
 /*******************************************************************************************
 important urls discussing theme generation for bitweaver and css in general:
 	http://www.bitweaver.org/wiki/index.php?page=CssSchema
-	http://www.bitweaver.org/tiki-index.php?page=ThemeTutorial
+	http://www.bitweaver.org/wiki/index.php?page=ThemeTutorial
 
 blank.css contains a consise list of the most important classes used on bitweaver.
 you can use this as a starting point or a point of reference.
@@ -24,7 +24,7 @@ if you wish to create a theme from scratch here is a list of all css files prese
 		like showdiv.css but it will show you all classes and structures appart from divs
 		(works well with showdiv.css and/or debugwithoutline.css
 	showsitelayout.css
-		visualises the layout of the main tiki ids used by surrounding them with coloured lines
+		visualises the layout of the main bit ids used by surrounding them with coloured lines
 	showpagelayout.css
 		draws coloured borders on one side of certain elements
 		to allow you to view the classes used without messing with your layout
@@ -50,7 +50,7 @@ general layout of a content page
 
 	</div>
 
-	... ==> admin...
+	... ==> display, admin, listing, edit
 
 
 
@@ -65,7 +65,7 @@ general layout of a content page
 
 	</div>
 
-	... ==> module, admin...
+	... ==> module, admin, help
 
 
 
