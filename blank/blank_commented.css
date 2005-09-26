@@ -2,106 +2,117 @@
 
 /* indenting in this file tries to illustrate nesting of elements as they occur in most cases */
 
-						/*** global settings ***/
-body {}						/* encases entire visible area */
-hr {}						/* horizontal line */
-h1 {}						/* large headings - ! */
-h2 {}						/* medium headings - !! */
-h3 {}						/* smaller headings - !!! */
-small {}					/* small text */
-strong {}					/* bold text */
-a:link {}					/* regular link */
-a:visited {}				/* link after it has been visited */
-a:hover {}					/* link while mouse pointer is hovering over it */
-a:active {}					/* link after it has been clicked */
+                        /*** global settings ***/
+body {}                      /* encases entire visible area */
+hr {}                        /* horizontal line */
+h1 {}                        /* large headings - ! */
+h2 {}                        /* medium headings - !! */
+h3 {}                        /* smaller headings - !!! */
+small {}                     /* small text */
+strong {}                    /* bold text */
+a:link {}                    /* regular link */
+a:visited {}                 /* link after it has been visited */
+a:hover {}                   /* link while mouse pointer is hovering over it */
+a:active {}                  /* link after it has been clicked */
 
-						/*** site layout ***/
-div#bitbody {}				/* div encasing entire site */
- div#bittop {}				/* usually contains the banner of the site */
- div#bittopbar {}			/* menu bar just below the site banner */
- div#bitlayouttable {}		/* table that is used to position #bitleft, #bitmain and #bitright (not present if using divs for positioning) */
-  div#bitleft {}			/* left column for modules */
-  div#bitmain {}			/* main content area in center of page */
-  div#bitright {}			/* right column for modules */
- div#bitbottom {}			/* bottom bar accors the page */
-div#bitprint {}			/* encases page when user wants to print */
-div#slideshow {}			/* encases page when user is viewing a wikipage as a slideshow */
+                        /*** site layout ***/
+/* some of these might vary depending on the layout of the site. see the appropriate themes/styles/<style>/kernel/bitweaver.tpl file for details */
+div#bitbody {}               /* div encasing entire site */
+ div#bittop {}               /* usually contains the banner of the site */
+ div#bittopbar {}            /* menu bar just below the site banner */
+ div#bitlayouttable {}       /* table that is used to position #bitleft, #bitmain and #bitright (not present if using divs for positioning) */
+  div#bitleft {}             /* left column for modules */
+  div#bitmain {}             /* main content area in center of page */
+  div#bitright {}            /* right column for modules */
+ div#bitbottom {}            /* bottom bar accors the page */
+/* printing is done using css classes most of the time. this is not used much anymore */
+div#bitprint {}              /* encases page when user wants to print */
+div#slideshow {}             /* encases page when user is viewing a wikipage as a slideshow */
 
-						/*** common classes ***/
-div.display {}				/* essentially contains .header, .body and navigation bar */
-div.admin {}				/* used instead of display on admin pages */
- div.preview {}				/* encases preview of entry when requested */
- div.header {}				/* contains the h1 and .date of page */
-  div.header h1 {}			/* the actual heading */
-  div.header h2 {}			/* description of the page you're on */
-  div.date {}				/* just after h2 or h1 if there is no h2 */
- div.body {}				/* contains all textual data of the page including .date, .content and .footer */
-  div.introduction {}		/* used for pages that allow an introduction to the main part of the page */
-  div.content {}			/* contains the actual text of the page */
-  div.footer {}				/* additional information regarding the particular page */
-   span.actionicon {}		/* action items available for particular page */
+                        /*** common classes ***/
+/* .display .edit .listing and .admin are used in the outermost divs in the center column */
+div.display {}               /* essentially contains .header, .body and navigation bar */
+div.edit {}                  /* when the page is used to edit content */
+div.listing {}               /* pages containing lists of data such as wiki pages listing */
+div.admin {}                 /* used instead of display on admin pages */
+ div.preview {}              /* encases preview of entry when requested */
+ div.header {}               /* contains the h1 and .date of page */
+  div.header h1 {}           /* the actual heading */
+  div.header h2 {}           /* description of the page you're on */
+  div.date {}                /* just after h2 or h1 if there is no h2 */
+ div.body {}                 /* contains all textual data of the page including .date, .content and .footer */
+  div.introduction {}        /* used for pages that allow an introduction to the main part of the page */
+  div.content {}             /* contains the actual text of the page */
+  div.footer {}              /* additional information regarding the particular page */
+   .actionicon {}            /* action items available for particular page - used in table.data td as well */
 
-						/*** forms ***/
-form {}						/* complete form */
- fieldset {}				/* frame surrounding sections of / complete form */
-  legend {}					/* description of form - typically top left corner of form */
-  div.row {}				/* form elements are in <div class="row"></div> */
-   div.formfeedback {}		/* used to display feedback after form submission */
-   div.formlabel {}			/* span that encases description of a particular form element (usually in combination with label) */
-    label {}				/* label for a particular form element */
-   div.forminput {}			/* span surrounding form elements */
-    input {}				/* input elements in form */
-    select {}				/* selection dropdown boxes */
-    textarea {}				/* textareas */
-    div.formhelp {}			/* help regarding a particular form element */
-  div.submit {}				/* contains <input type="submit" /> */
-  form.minifind {}			/* small search form to find items in a set of data */
+                        /*** forms ***/
+form {}                      /* complete form */
+ fieldset {}                 /* frame surrounding sections of / complete form */
+  legend {}                  /* description of form - typically top left corner of form */
+  div.row {}                 /* form elements are in <div class="row"></div> */
+   div.formfeedback {}       /* used to display feedback after form submission */
+   div.formlabel {}          /* span that encases description of a particular form element (usually in combination with label) */
+    label {}                 /* label for a particular form element */
+   div.forminput {}          /* span surrounding form elements */
+    input {}                 /* input elements in form */
+    select {}                /* selection dropdown boxes */
+    textarea {}              /* textareas */
+    div.formhelp {}          /* help regarding a particular form element */
+  div.submit {}              /* contains <input type="submit" /> */
+  form.minifind {}           /* small search form to find items in a set of data */
 
-						/*** boxes ***/
-div.module {}				/* any module in #bitleft or #bitright */
-div.box {}					/* any box on the site, including <div class="box module"> for modules */
- div.boxtitle {}			/* titles in boxes */
- div.boxcontent {}			/* content in boxes */
+                        /*** boxes ***/
+div.module {}                /* any module in #bitleft or #bitright */
+div.help {}                  /* modules that contain help notes such as the wiki help at the bottom of the wiki edit page */
+div.box {}                   /* any box on the site, including <div class="box module"> for modules */
+ div.boxtitle {}             /* titles in boxes */
+ div.box h3 {}               /* used in some themes instead of .boxtitle */
+ div.boxcontent {}           /* content in boxes */
 
-						/*** menus ***/
-/* menus can be tricky to define since we use CSS dropdown menus which require a lot of sophisticated css code. please view existing themes and base.css on how to define classes correctly */
-.menu .head {}				/* main section of menus - also menu items in #bittopbar */
-.menu .item {}				/* options that are part of the menu section - also used in the 'My Site' page */
+                        /*** menus ***/
+/* menus can be tricky to define since we use CSS dropdown menus which require a lot of sophisticated css code. please view existing themes and base.css on how to create a working css dropdown menu */
+.menu .head {}               /* main section of menus - also menu items in #bittopbar */
+.menu .item {}               /* options that are part of the menu section - also used in the 'My Site' page */
 
-						/*** parsed text elements ***/
+                        /*** parsed text elements ***/
 /* these definitions only really apply when using bitwiki format syntax */
-div.bitbar {}				/* -=...=- */
-div.bitbox {}				/* ^...^ */
-div.bittable {}			/* tables ||r1c1|r1c2||r2c1|r2c2|| */
+div.bitbar {}                /* -=...=- */
+div.bitbox {}                /* ^...^ */
+div.bittable {}              /* tables ||r1c1|r1c2||r2c1|r2c2|| */
 
-						/*** images and icons ***/
-img {}						/* images */
-img.icon {}					/* icons */
+                        /*** images and icons ***/
+img {}                       /* images */
+img.icon {}                  /* icons */
 
-						/*** data tables ***/
-table {}					/* any table found in the site */
-th {}						/* table headings */
-table.data {}				/* any table displaying data */
+                        /*** data tables ***/
+table {}                     /* any table found in the site */
+caption {}                   /* used to describe the contents of a table */
+th {}                        /* column headings */
+table.data {}                /* any table displaying data */
 /* setting the border for tr doesn't work in MSIE. please use 'tr.odd td {}' to specify an MSIE visible border */
- tr.odd {}					/* alternating odd and even rows in tables */
- tr.even {}					/* alternating odd and even rows in tables */
- .norecords {}				/* when no data is found - either a tr or a div */
+ tr.odd {}                   /* alternating odd and even rows in tables */
+ tr.even {}                  /* alternating odd and even rows in tables */
+ .norecords {}               /* when no data is found - either a tr or a div */
 
-						/*** navigation bars and tabs ***/
-div.navbar {}				/* navigation bar with buttons for navigation */
- a.selected {}				/* selected navigation tab */
-div.pagination {}			/* pagination at the bottom of pages with listings */
+                        /*** navigation bars and tabs ***/
+div.navbar {}                /* navigation bar with buttons for navigation */
+ a.selected {}               /* selected navigation tab */
+div.pagination {}            /* pagination at the bottom of pages with listings */
 
-						/*** lists ***/
-ul {}						/* any unordered list */
-ol {}						/* ordered lists */
- li {}						/* any list items */
-ul.toc {}					/* table of contents - visible when you use structures - aka wiki books */
-ul.data {}					/* several data listing use <ul> <li> as it allows greater styling freedom compared to tables */
- ul.data li.item {}			/* items found in data listings */
+                        /*** lists ***/
+dl {}                        /* definition lists */
+ dt {}                       /* definition term */
+ dd {}                       /* definition of term */
+ul {}                        /* any unordered list */
+ol {}                        /* ordered lists */
+ li {}                       /* any list items */
+ul.toc {}                    /* table of contents - visible when you use structures - aka wiki books */
+ul.data {}                   /* several data listing use <ul> <li> as it allows greater styling freedom compared to tables */
+ ul.data li.item {}          /* items found in data listings */
 /* virtually all data in modules is expressed as ul or ol lists since this allows custom numbering */
-.module ul {}				/* any lists displayed in modules that don't require numbering */
-.module ol {}				/* any lists displayed in modules that require numbering */
+div.module ul {}             /* any lists displayed in modules that generally don't require numbering */
+div.module ol {}             /* any lists displayed in modules that generally require numbering */
 
-						/*** miscellaneous ***/
-.highlight {}				/* highlighting text - span or a */
+                        /*** miscellaneous ***/
+.highlight {}                /* highlighting text - div, span or a */
