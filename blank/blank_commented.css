@@ -74,6 +74,7 @@ div.box {}                   /* any box on the site, including <div class="box m
 /* menus can be tricky to define since we use CSS dropdown menus which require a lot of sophisticated css code. please view existing themes and base.css on how to create a working css dropdown menu */
 .menu .head {}               /* main section of menus - also menu items in #bittopbar */
 .menu .item {}               /* options that are part of the menu section - also used in the 'My Site' page */
+.m-<package> {}              /* these classes are used in the top bar menu. every single menu dropdown has "m-" + "package name" as class for the ultimate in menu styling options */
 
                         /*** parsed text elements ***/
 /* these definitions only really apply when using bitwiki format syntax */
