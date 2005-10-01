@@ -1,19 +1,14 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/jill.css,v 1.2 2005/06/21 18:05:17 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/jill.css,v 1.2.2.1 2005/10/01 12:29:27 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.2.2.1 $
  * @theme    jill
  * @license  LGPL
  */
 
 /* import settings that apply to all media */
-@import url( all.css );
 
 /* import screen media */
-@import url( layout.css );
 @import url( screen.css );
-@import url( jstabs.css );
-@import url( cssmenus.css );
 
 /* apply print display settings */
-@import url( print.css );
