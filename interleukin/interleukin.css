@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.2 2005/09/18 09:59:54 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.3 2005/10/05 07:38:59 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
  * @version  $ Revision: 1.6 $
@@ -121,9 +121,11 @@ form,input,textarea,select{margin:0; padding:0;}
    .submit input {padding:0.2em 0.5em;}
     .submit input:hover {color:#fff; background:#000;}
 .minifind {width:200px;}
-.error,.errorpage .boxtitle {color:#f00; font-weight:bold;}
-.warning {color:#f80;}
-.success {color:#090;}
+.errorpage .boxtitle {color:#f00; font-weight:bold;}
+.error {color:#f00; background:#666;}
+.warning {color:#f80; background:#666;}
+.success {color:#090; background:#666;}
+li.error,li.success,li.note,li.warning	{list-style:none;}
 			/*** tables and lists ***/
 ul,ol,dl {margin-top:0; margin-bottom:0;}
 dt {font-weight:bold; color:#eee;}
