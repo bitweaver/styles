@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.21 2005/10/08 11:18:30 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.22 2005/10/08 17:39:57 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.21 $
+ * @version  $Revision: 1.2.2.22 $
  * @theme    jill
  * @license  LGPL
  */
@@ -95,6 +95,7 @@ legend					{font-size:1.2em; padding:1em;}
 .minifind legend		{display:none;}
 .minifind fieldset		{padding:0.5em; margin:0;}
 table .formlabel		{float:none; width:auto; text-align:left;}
+table .forminput		{margin:0;}
 
 /* parsed elements */
 .bittable td	{padding:0.5em; border:1px solid #ccc;}
