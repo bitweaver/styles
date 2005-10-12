@@ -1,10 +1,10 @@
 /******************************************************************************************/
 /*** Show site layout ***/
-#tikibody	{ border: 4px solid cyan; }
+#bitbody	{ border: 4px solid cyan; }
 #bittop	{ border: 3px dashed pink; }
 #bittopbar	{ border: 2px dotted lightgreen; }
 #bitleft	{ border: 4px dashed green; }
 #bitright	{ border: 4px dashed magenta; }
-#tikimain	{ border: 3px dashed blue; }
-#tikimainfx	{ border: 2px solid silver; }
-#tikibottom	{ border: 4px dashed red; }
+#bitmain	{ border: 3px dashed blue; }
+#bitmainfx	{ border: 2px solid silver; }
+#bitbottom	{ border: 4px dashed red; }

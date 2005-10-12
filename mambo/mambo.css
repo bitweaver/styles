@@ -93,6 +93,7 @@ a:hover {
 #bitprint {}
 #slideshow {}
 
+ul.data li.item .thumb					{float:right;}
 				/*** common classes ***/
 .display, .admin {}
 .floaticon {
@@ -284,9 +285,11 @@ label:hover {
 	margin-top: 1px;
 	padding: 0 3px 0 0;
 	width: 35%;
+	float: none;
 }
 .forminput {
 	width: 96%;
+	margin: 0 0 0 4%;
 }
 .formhelp {}
 .submit {}
@@ -294,9 +297,6 @@ label:hover {
 .minifind {}
 
 				/*** data tables ***/
-.other {}
-.panel {}
-.panelsubmitrow {}
 .data {}
 .odd {}
 .even {

@@ -1,5 +1,4 @@
 {strip}
-<a class="skip" style="position:absolute;top:0;left:-999em;" href="#content">{tr}Skip Navigation{/tr}</a>
 <div id="bittopbar">
 	<ul id="nav" class="menu hor">
 		{if $use_custom_top_bar and $gBitSystemPrefs.top_bar_position eq 'replace'}

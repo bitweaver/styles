@@ -22,16 +22,16 @@ a:hover {}
 a:active {}
 
 						/*** site layout ***/
-#tikibody {}
-#tikilayouttable {}
+#bitbody {}
+#bitlayouttable {}
 #bittop {}
 #bittopbar {}
 #bitleft {}
 #bitright {}
-#tikimain {}
-#tikimainfx {}
-#tikibottom {}
-#tikiprint {}
+#bitmain {}
+#bitmainfx {}
+#bitbottom {}
+#bitprint {}
 #slideshow {}
 
 						/*** common classes ***/
@@ -72,10 +72,10 @@ label {}
 .menu .item {}
 
 						/*** parsed text elements ***/
-.tikibar {}
-.tikibox {}
-.tikitable {}
-.tikicache {}
+.bitbar {}
+.bitbox {}
+.bittable {}
+.bitcache {}
 
 						/*** structures ***/
 .structure {}

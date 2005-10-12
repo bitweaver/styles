@@ -96,7 +96,6 @@ a img:hover {}
 }
 .date {}
 .body {
-	background: #fff;
 	border: 1px solid #8cacbb;
 	font-size: 12px;
 	padding: 5px;
@@ -108,9 +107,6 @@ a img:hover {}
 	background: #fff;
 	min-height: 16px;
 	border-top: 1px solid #8cacbb;
-}
-.actionicon {
-	float: right;
 }
 
 /******************************************************************************************/
@@ -202,27 +198,8 @@ a img:hover {}
 .floaticon {}
 
 /******************************************************************************************/
-/*** data tables ***/
-.other {}
-
-/* submission panels */
-.panel {
-	background: #c7d0d9;
-	border: 1px solid #8cacbb;
-}
-.panel td {
-	border: 1px solid #8cacbb;
-}
-.panel table td {
-	border: 0;
-}
-
-/* submission buttons in panels */
-.panelsubmitrow {}
-
 /* any table displaying data */
 .data {
-	background: #c7d0d9;
 	border: 1px solid #8cacbb;
 }
 .data td {
@@ -231,9 +208,10 @@ a img:hover {}
 
 /* alternating odd and even rows in tables */
 .odd {
+}
+.even {
 	background: #f7f9fa;
 }
-.even {}
 
 /* when no data is found - either a <tr> or a <div> */
 .norecords {}

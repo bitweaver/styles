@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.3 2005/08/07 17:45:04 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.4 2005/10/12 15:13:56 spiderr Exp $ */
 @media all {
 body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
 pre {font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#ddd; color:#555;}
@@ -111,7 +111,7 @@ ul.toc,ul.toc ul {margin-left:2em; padding-left:0;}
 #tikilogo {height:150px; background:transparent url( images/logo.png ) top left no-repeat;}
 #tikilogo h1 {color:#000; text-align:center; vertical-align:bottom; font-size:3em; line-height:30px; padding:60px 0 40px 0; margin:0;}
 #tikilogo h2 {color:#000; text-align:right; font-size:1.6em; line-height:20px; padding:0 20px;}
-#bittop {font-size:8pt; font-family:tahoma,arial,sans-serif; height:16px; padding:0 1em; line-height:16px; background:#ccc url( images/topmenu_bg.png ) left center repeat-x;}
+#bittop {font-size:8pt; font-family:tahoma,arial,sans-serif; height:20px; padding:0 1em; line-height:16px; background:#ccc url( images/topmenu_bg.png ) left center repeat-x;}
 #toplogin {text-align:right; float:right;}
 #toplogin a {color:#000; padding:0 0.5em;}
 #toplogin a:hover {background:#bec7d3;}
@@ -165,7 +165,7 @@ h4 {margin:0; padding:0; z-index:1;}
 .menu .item {display:block;}
 			/* css driven dropdown menus - horizontal */
 .hor .icon {position:absolute; left:28px; top:0px; vertical-align:middle; margin-left:-26px;}
-.hor,.hor ul,.hor li {padding:0; margin:0; list-style:none; z-index:1000000; line-height:16px;}
+.hor,.hor ul,.hor li {padding:0; margin:0; list-style:none; line-height:16px;}
 .hor a {white-space:nowrap; color:#000; padding:0 5px;}
 .hor li {width:auto;}
 .hor li li,.hor li ul {width:13em; display:block; text-align:left;}
@@ -183,7 +183,7 @@ h4 {margin:0; padding:0; z-index:1;}
 .ver .icon {margin-left:-26px; padding-right:8px; vertical-align:middle;}
 .ver a {color:#000; padding:0 5px; white-space:nowrap;}
 .ver a.head {background-image:url( images/arrow.gif ); background-repeat:no-repeat; background-position:right;}
-.ver, .ver ul {padding:0; margin:0; list-style:none; float:left; width:13em; z-index:1000000;}
+.ver, .ver ul {padding:0; margin:0; list-style:none; float:left; width:13em;}
 .ver li {position:relative; width:13em;}
 .ver li:hover,.ver li.ieHover {background:#bec7d3;}
 .ver li li {position:relative; float:left; width:13em;}
@@ -195,9 +195,9 @@ h4 {margin:0; padding:0; z-index:1;}
 #bitright .ver, #bitright .ver li, #bitright .ver ul {width:125px;}
 #bitright .ver li ul {margin-left:-132px;}
 			/* z-index */
-.hor,.hor a,.hor li,.hor ul {z-index:100000;}
-.ver,.ver a,.ver li,.ver ul {z-index:100000;}
-#nav,#nav a,#nav li,#nav ul {z-index:10000000;}
+#nav,#nav a,#nav li ul	{z-index:2000;}
+.ver,.ver a,.ver li ul	{z-index:200;}
+.hor,.hor a,.hor li ul	{z-index:20;}
 			/* ieHover used as suckerfish class for MSIE hover support */
 .hor li:hover ul ul, .hor li:hover ul ul ul, .hor li.ieHover ul ul, .hor li.ieHover ul ul ul,
 .ver li:hover ul ul, .ver li:hover ul ul ul, .ver li.ieHover ul ul, .ver li.ieHover ul ul ul {left:-999em;}
