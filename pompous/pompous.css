@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/pompous.css,v 1.2 2005/10/18 16:59:09 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/pompous.css,v 1.3 2005/10/18 17:01:09 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.3 $
  * @theme    hp
  * @license  LGPL
  */
@@ -25,7 +25,7 @@ small,.small	{line-height:normal; font-size:0.8em; font-weight:normal;}
 /* links */
 :link,:visited					{text-decoration:none; color:#fff; font-weight:bold;}
 :link:hover,:visited:hover,
-:link:active,:visited:active	{color:#900;}
+:link:active,:visited:active	{color:#ec0;}
 
 /* set up all the boxes */
 .box		{float:right; width:190px; text-align:center;}
