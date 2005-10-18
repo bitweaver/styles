@@ -1,0 +1,103 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/pompous.css,v 1.1 2005/10/18 16:29:36 squareing Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>
+ * @version  $Revision: 1.1 $
+ * @theme    hp
+ * @license  LGPL
+ */
+
+/* layout */
+html		{background:#eee url( images/bg.png ) top left repeat-x;}
+body		{text-align:center;}
+#bitbody	{width:620px; background:transparent url( images/logo.png ) 0px 30px no-repeat; margin:50px auto; padding:0; text-align:left;}
+#bitmain	{padding:220px 0 0 0;}
+
+*				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
+body			{font-size:0.8em; line-height:1.5em;}
+html>body		{font-size:12px;}
+body			{color:#000; margin:0; padding:0;}
+pre,.code		{width:96%; margin:0 auto; padding:1em 0; font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#eee; color:#000; border:1px solid #999;}
+html>body pre	{width:auto;}
+img				{border:0;}
+hr				{border:0; border-top:1px solid #933; padding:0; margin:0.5em 0;}
+small,.small	{line-height:normal; font-size:0.8em; font-weight:normal;}
+
+/* links */
+:link,:visited					{text-decoration:none; color:#009; font-weight:bold;}
+:link:hover,:visited:hover,
+:link:active,:visited:active	{color:#900;}
+
+/* set up all the boxes */
+.box		{float:right; width:190px; text-align:center;}
+.box ul		{text-align:left;}
+
+.box .top	{background:url( images/red.png ) top center no-repeat;}
+.box .cen	{background:url( images/red_bg.png ) top center repeat-y;}
+.box .bot	{background:url( images/red.png ) bottom center no-repeat;}
+
+.box .top	{height:15px;}
+.box .cen	{padding:0 20px;}
+.box .bot	{height:15px;}
+
+.box a		{display:block; color:#fff; font-size:10px;}
+.box img	{margin:5px;}
+
+.download .top	{background:url( images/white.png ) top center no-repeat;}
+.download .cen	{background:url( images/white_bg.png ) top center repeat-y;}
+.download .bot	{background:url( images/white.png ) bottom center no-repeat;}
+
+/* titles */
+h1,h2,h3	{font-weight:900; margin:0.6em 0 0 0; padding:0;}
+h1			{font-size:1.3em;}
+h2			{font-size:1.2em;}
+h3			{font-size:1.1em;}
+
+/* hide some stuff */
+.date,
+.floaticon,
+.header,
+.navbar		{display:none;}
+
+/* other styling */
+.content	{text-align:justify;}
+
+/* forms - keep these that we can edit content using this theme. */
+form,textarea,select	{margin:0; padding:0;}
+textarea				{width:99%;}
+/* since MSIE is so crap at rendering this stuff, we shrink text size to avoid
+* redering errors */
+input,textarea,select	{font-size:10px;}
+html>body input,textarea,select	{font-size:inherit;}
+#bitmain input,
+#bitmain textarea,
+#bitmain select			{}
+input[type="text"]		{max-width:100%;}
+textarea				{}
+fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
+legend					{font-size:1.2em; padding:1em;}
+.row					{clear:both;}
+#bitmain .row			{margin-bottom:1em;}
+.quicktags				{margin:0;}
+.formlabel				{font-weight:bold; float:left; width:20%; text-align:right; font-size:0.8em;}
+.forminput				{margin-left:21%;}
+.formfeedback			{}
+.formhelp				{cursor:help; font-size:0.8em; line-height:normal; color:#67a; border-bottom:1px dotted #999;}
+.formhelp a				{font-weight:bold;}
+.closebutton			{position:absolute; top:1px; right:1px;}
+.submit					{text-align:center;}
+#bitmain .submit		{padding:1.5em;}
+.error,.errorpage h3	{color:#f00; font-weight:bold;}
+.warning				{color:#f80;}
+.success				{color:#090;}
+.clear					{clear:both;}
+.minifind fieldset		{border:0;}
+.minifind legend		{display:none;}
+.minifind fieldset		{padding:0.5em; margin:0;}
+table .formlabel		{float:none; width:auto; text-align:left;}
+table .forminput		{margin:0;}
+
+/* regular menus */
+.menu,.menu ul,.menu li	{list-style:none; padding:0; margin:0;}
+.menu ul				{padding:0 0 0 15px;}
+.menu .icon				{vertical-align:middle;}
+.menu a					{display:block;}

@@ -1,0 +1,19 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/layout.css,v 1.1 2005/10/18 16:29:36 squareing Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>
+ * @version  $Revision: 1.1 $
+ * @theme    jill
+ * @license  LGPL
+ */
+@media screen,projection,tv {
+/* layout */
+html	{background:#eee url( images/bg.png ) top left repeat-x;}
+/** /
+body	{background:transparent url( images/full.png ) top left no-repeat !important;}
+div		{border:1px dotted #fff;}
+/**/
+
+#bitbody	{width:650px; margin:0 auto; padding:00px 0 0 0;}
+#bitmain	{margin:66px 0; padding:200px 0 0 0; background:transparent url( images/logo.png ) top left no-repeat !important;}
+
+}
