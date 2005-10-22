@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/pompous.css,v 1.4 2005/10/18 17:27:02 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/pompous.css,v 1.5 2005/10/22 16:15:05 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.4 $
+ * @version  $Revision: 1.5 $
  * @theme    hp
  * @license  LGPL
  */
@@ -22,9 +22,10 @@ html>body pre	{width:auto;}
 img				{border:0;}
 hr				{border:0; border-top:1px solid #933; padding:0; margin:0.5em 0;}
 small,.small	{line-height:normal; font-size:0.8em; font-weight:normal;}
+p				{padding:0; margin:0.5em 0 2em 1em;}
 
 /* links */
-:link,:visited					{text-decoration:none; color:#fff; font-weight:bold;}
+:link,:visited					{text-decoration:none; color:#620; font-weight:bold;}
 :link:hover,:visited:hover,
 :link:active,:visited:active	{color:#ec0;}
 
@@ -32,9 +33,9 @@ small,.small	{line-height:normal; font-size:0.8em; font-weight:normal;}
 .box		{float:right; width:190px; text-align:center;}
 .box ul		{text-align:left;}
 
-.box .top	{background:url( images/red.png ) top center no-repeat;}
-.box .cen	{background:url( images/red_bg.png ) top center repeat-y;}
-.box .bot	{background:url( images/red.png ) bottom center no-repeat;}
+.box .top	{background:url( images/yellow.png ) top center no-repeat;}
+.box .cen	{background:url( images/yellow_bg.png ) top center repeat-y;}
+.box .bot	{background:url( images/yellow.png ) bottom center no-repeat;}
 
 .box .top	{height:15px;}
 .box .cen	{padding:0 20px;}
