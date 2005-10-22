@@ -1,267 +1,114 @@
-@import url( ../../base.css );
-				/*** global settings ***/
+@import url( ../../base.css ); 			/*** global settings ***/
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
-body {
-	font-family: verdana, tahoma, helvetica, arial, sans-serif;
-	color: #999;
-	font-size: 60%;
-	margin: 0;
-	padding: 1em;
-	background: #fff;
-	line-height: 2em;
-	height: 100%;
-}
-th {}
-hr {}
-input,select {}
-textarea {}
-small {}
-h1 {
-	color: #7794ac;
-	font-size: 140%;
-	font-weight: bold;
-	padding: 2em 0 0.5em 0;
-	margin: 0;
-	border-bottom: 1px solid #7794ac;
-}
-h2 {
-	color: #7794ac;
-	font-size: 120%;
-	font-weight: bold;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #7794ac;
-}
-h3 {
-	color: #7794ac;
-	font-size: 100%;
-	font-weight: bold;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #7794ac;
-}
-a {
-	color: #FF9933;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
+*			{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
+body		{color:#666; font-size:10px; margin:0; padding:0em; background:#eee; line-height:1.7em;}
+th			{}
+hr			{}
+small		{}
+a			{color:#f93; text-decoration:none;}
+a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+a:hover		{text-decoration:underline;}
 
-				/*** site layout ***/
-#bittop {}
-#nav ul {
-	padding:5px;
-}
-#nav li li ul {
-	margin-top:-22px;
-}
-#nav .head {
-	background:#fff;
-}
-#bitmodules {
-	width: 20em;
-	position: absolute;
-	right: 1em;
-	padding: 1em;
-}
-#bitmain {
-	margin: 0em 24em 1em 0em;
-	padding: 0em 1em 1em 1em;
-	overflow: auto;
-}
-#bitbottom {
-	margin: 0em 24em 1em 0em;
-}
-#bitprint {}
-#slideshow {}
+/*** site layout ***/
+#bittop			{padding:0; margin:0; background:#fff; border-bottom:1px solid #999;}
+.login			{float:left; clear:left;}
+#wrap1			{padding:1em 0;}
+/* the width setting is needed for opera < 7.5 - if you don't care about that, you can remove it */
+#bittopbar		{float:left; width:80%;}
+#bitmodules		{width:18em; position:absolute; right:1em; background:#fff; border:1px solid #ccc;}
+#bitmain		{margin:0em 22em 1em 2em; padding:1em; background:#fff; border:1px solid #ccc;}
+#bitbottom		{text-align:center; color:#ccc; margin-top:2em;}
+#bitbottom a	{color:#ccc; background:transparent;}
+#bitprint		{}
+#slideshow		{}
 
-				/*** common classes ***/
-.display, .admin {}
-.preview {}
-.header, .header a, .header a: hover {
-	color: #f93;
-}
-.date {
-	text-align: right;
-	color: #ccc;
-}
-.post .date {
-	margin-top: -20px;
-}
-.body {}
-.introduction {}
-.introductionimage {}
-.content {}
-.footer {}
-.actionicon .icon {
-	border-right: 1px dotted #7794ac;
-}
+/* headings */
+h1			{color:#444; font-size:100%; font-weight:bold; padding:0.3em; margin:0;}
+h2			{color:#444; font-size:100%; font-weight:bold;}
+h3			{color:#999; font-size:100%; font-weight:bold;}
+#bittop h1,
+#bittop h3	{padding:0 2em; margin:0; text-align:right;}
+#bittop h3	{font-weight:normal;}
+.header h1	{color:#8ad; margin:0 0 0 -2em; background:#f9f9f9; padding-left:2em; border:1px dashed #ddd; letter-spacing:0.2em;}
+.header h2	{margin:0; letter-spacing:0.2em; font-weight:normal}
+.module h3	{color:#9bf; margin:0 0 0 -2em; background:#f9f9f9; padding-left:2em; border:1px dashed #ddd; letter-spacing:0.2em;}
 
-				/*** boxes ***/
-.box {}
-.boxtitle {
-	color: #7794ac;
-	font-size: 120%;
-	font-weight: bold;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #e5e5e5;
-}
-.boxcontent {
-	margin: 1.5em 0;
-}
-.module {}
-.popup {
-	padding: 10px;
-	border: 1px solid #7794ac;
-	text-align: justify;
-	background: transparent url( images/popup.png ) repeat;
-}
-.popup .boxtitle {
-	height: 24px;
-	background: transparent url( images/extended_help.png ) no-repeat 50% 50%;
-}
+/*** common classes ***/
+.date				{text-align:right; color:#ccc;}
+.body				{}
+.introduction		{}
+.introductionimage	{}
+.content			{}
+.footer				{}
+.floaticon .icon	{padding:4px 2px;}
 
-				/*** menus ***/
-.menu .head {
-	color: #999;
-}
-.menu .head: hover {}
-.menu .item {}
-.menu .item:hover {}
+/*** boxes ***/
+.box				{}
+.boxcontent			{margin:0.5em 0;}
+.module				{padding:1em;}
+.popup				{padding:10px; border:1px solid #ccc; text-align:justify; background:transparent url( images/popup.png ) repeat;}
 
-.menu .icon {
-	display:none;
-}
+/*** menus ***/
+#nav ul			{padding:5px;}
+#nav li li ul	{margin-top:-22px;}
+#nav .head		{background:#fff;}
 
-#bitmain .menu .boxtitle .icon {
-	display:block;
-}
+.menu .head			{color:#999;}
+.menu .head:hover	{}
+.menu .item			{}
+.menu .item:hover	{}
 
-				/*** parsed elements ***/
-.bitbar {}
-.bitcache {}
-.bitbox {
-	padding: 3px;
-	border: 1px solid #7794ac;
-}
-.bittable {
-	background: #eee;
-}
-.bittable td {
-	border: 1px solid #fff;
-}
+/* don't display icons in dropdown menu */
+.menu .icon		{display:none;}
+.hor li li a	{margin:0;}
+.hor li ul		{width:14em;}
 
-				/*** forms ***/
-input,select,textarea {
-	font-size: 120%;
-}
-fieldset {
-	border: 1px dashed #e5e5e5;
-	padding: 5px 0;
-	width: 95%;
-	margin: 0 auto;
-}
-legend {
-	padding: 0 2px;
-	background: #fff;
-	letter-spacing: 3px;
-	border: 1px dashed #e5e5e5;
-}
-label {
-	color: #666;
-}
-.row {}
-.formlabel {}
-.formfeedback {}
-.forminput {}
-.formhelp {}
-.submit {}
-.clear {}
-.minifind {}
+/*** parsed elements ***/
+.bitbar			{border-bottom:1px dashed #ddd;}
+.bitbox			{padding:3px; border:1px dashed #ddd; background:#f9f9f9;}
+.bittable		{background:#eee;}
+.bittable td	{border:1px solid #fff;}
 
-				/*** data tables ***/
-.other {}
-.panel {}
-.panelsubmitrow {}
-.data {}
-.odd {}
-.even {
-	background: #efefef;
-}
-.norecords {}
-.find {}
+/*** forms ***/
+textarea		{font-size:120%;}
+fieldset		{border:1px dashed #ddd; width:96%; margin:1.5em auto;}
+legend			{padding:2px 4px; font-weight:bold; letter-spacing:2px; border:1px dashed #ddd; margin:0 0 1.5em 0;}
+label			{color:#666;}
+.row			{margin:0 0 1em 0;}
+.formlabel		{}
+.formfeedback	{}
+.forminput		{}
+.formhelp		{color:#a66;}
+.submit			{}
+.clear			{}
+.minifind		{}
+
+/*** data tables ***/
+.other			{}
+.panel			{}
+.panelsubmitrow	{}
+.data			{}
+.odd			{}
+.even			{background:#efefef;}
+.norecords		{}
+.find			{}
 
 /* tabstyle */
-.tabsystem .tabcontainer .tab, .tabsystem .tabcontainer.tab-hover, .tabsystem .tabcontainer .tab-active {
-	top:3px;
-	font:10px verdana,arial,sans-serif;
-	margin:0 3px;
-	padding:4px 5px 1px 5px;
-	background:transparent url( images/tab_shade.png ) repeat-x;
-	border:1px solid #bbb;
-	border-bottom:0;
-}
-.tabsystem .tabcontainer .tab-hover {
-	padding:3px 5px 1px 5px;
-	border-top:2px solid #f60;
-}
-.tabsystem .tabcontainer .tab-active {
-	top:1px;
-	margin:0 0px;
-	color:#000;
-	padding:2px 8px 4px 8px;
-	background:#fff;
-	border-top:2px solid #f60;
-}
-.tabsystem .tabpage {
-	border:1px solid #bbb;
-	margin:0;
-	padding:1em;
-}
-/* rounded tab tops - does not work in MSIE - if active, it screws up Konqeror * /
-.tabsystem .tabcontainer .tab:before {
-	line-height:0.1;
-	font-size:1px;
-	background:transparent url( images/tab_tr_n.gif ) no-repeat top right;
-	margin:-5px -6px 0 -6px;
-	height:3px;
-	display:block;
-	border:none;
-	content:url( images/tab_tl_n.gif );
-}
-.tabsystem .tabcontainer .tab-hover:before {
-	line-height:0.1;
-	font-size:1px;
-	background:transparent url( images/tab_tr.gif ) no-repeat top right;
-	margin:-5px -6px 0 -6px;
-	height:3px;
-	display:block;
-	border:none;
-	content:url( images/tab_tl.gif );
-}
-.tabsystem .tabcontainer .tab-active:before {
-	line-height:0.1;
-	font-size:1px;
-	background:transparent url( images/tab_tr.gif ) no-repeat top right;
-	margin:-4px -9px 0 -9px;
-	height:3px;
-	display:block;
-	border:none;
-	content:url( images/tab_tl.gif );
-}
-/**/
-				/*** navigation bars and tabs ***/
-.navbar {
-	text-align: right;
-	margin: 10px 0;
-}
-.navbar a {
-	margin: 0 5px;
-}
-.selected {}
-.pagination {}
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer.tab-hover,
+.tabsystem .tabcontainer .tab-active	{top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; background:transparent url( images/tab_shade.png ) repeat-x; border:1px solid #bbb; border-bottom:0;}
+.tabsystem .tabcontainer .tab-hover		{padding:3px 5px 1px 5px; border-top:2px solid #f60;}
+.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60;}
+.tabsystem .tabpage						{border:1px solid #bbb; margin:0; padding:1em;}
 
-				/*** bottom bar ***/
-.babelfish {}
+/*** navigation bars and tabs ***/
+.navbar		{text-align:right; margin:10px 0;}
+.navbar a	{margin:0 5px;}
+.selected	{}
+.pagination	{}
 
-				/*** settings that have to be at the end ***/
-.highlight {}
+/*** bottom bar ***/
+.babelfish	{}
+
+/*** settings that have to be at the end ***/
+.highlight	{}
