@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.10 2005/10/12 15:13:57 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/screen.css,v 1.11 2005/10/23 14:42:33 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.10 $
+ * @version  $Revision: 1.11 $
  * @theme    jill
  * @license  LGPL
  */
@@ -73,7 +73,7 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 /* boxes and modules */
 .box					{}
 .box h3					{}
-.popup					{background:#0c2242; color:#fff; border:1px solid #000;}
+.popup					{background:#0c2242; color:#fff; border:1px solid #000; padding:10px;}
 .popup small			{color:#aaa !important;}
 .popup h3				{margin:3px; padding:3px; color:#ccc; border-bottom:2px solid #f80;}
 #bitmain .boxcontent	{padding:0 0.5em 0.5em 0.5em;}

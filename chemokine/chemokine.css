@@ -1,267 +1,124 @@
-@import url( ../../base.css );
-				/*** global settings ***/
+@import url( ../../base.css ); 			/*** global settings ***/
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
-body {
-	font-family: verdana, tahoma, helvetica, arial, sans-serif;
-	color: #999;
-	font-size: 60%;
-	margin: 0;
-	padding: 1em;
-	background: #fff;
-	line-height: 2em;
-	height: 100%;
-}
-th {}
-hr {}
-input,select {}
-textarea {}
-small {}
-h1 {
-	color: #7794ac;
-	font-size: 140%;
-	font-weight: bold;
-	padding: 2em 0 0.5em 0;
-	margin: 0;
-	border-bottom: 1px solid #7794ac;
-}
-h2 {
-	color: #7794ac;
-	font-size: 120%;
-	font-weight: bold;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #7794ac;
-}
-h3 {
-	color: #7794ac;
-	font-size: 100%;
-	font-weight: bold;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #7794ac;
-}
-a {
-	color: #FF9933;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
+*			{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
+body		{color:#666; font-size:10px; margin:0; padding:0em; background:#eee; line-height:1.7em;}
+th			{border-bottom:1px solid #ccc;}
+hr			{}
+small		{}
+a			{color:#f93; text-decoration:none;}
+a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+a:hover		{text-decoration:underline;}
 
-				/*** site layout ***/
-#bittop {}
-#nav ul {
-	padding:5px;
-}
-#nav li li ul {
-	margin-top:-22px;
-}
-#nav .head {
-	background:#fff;
-}
-#bitmodules {
-	width: 20em;
-	position: absolute;
-	right: 1em;
-	padding: 1em;
-}
-#bitmain {
-	margin: 0em 24em 1em 0em;
-	padding: 0em 1em 1em 1em;
-	overflow: auto;
-}
-#bitbottom {
-	margin: 0em 24em 1em 0em;
-}
-#bitprint {}
-#slideshow {}
+/*** site layout ***/
+#bittop			{padding:0; margin:0; background:#fff; border-bottom:1px solid #ccc;}
+#bittop .login	{float:left; clear:left; margin:0 0.5em;}
+#wrap1			{margin:1em 0;}
+/* the width setting is needed for opera < 7.5 - if you don't care about that, you can remove it */
+#bittopbar		{float:left; width:80%;}
+#bitleft,
+#bitright		{width:18em; position:absolute; background:#fff; border:1px solid #ccc; overflow:visible;}
+#bitleft		{left:1em;}
+#bitright		{right:1em;}
+#bitmain		{padding:1em; background:#fff; border:1px solid #ccc;}
+#bitbottom		{text-align:center; color:#ccc; margin-top:2em; clear:both;}
+#bitbottom a	{color:#ccc; background:transparent;}
+#bitprint		{}
+#slideshow		{}
 
-				/*** common classes ***/
-.display, .admin {}
-.preview {}
-.header, .header a, .header a: hover {
-	color: #f93;
-}
-.date {
-	text-align: right;
-	color: #ccc;
-}
-.post .date {
-	margin-top: -20px;
-}
-.body {}
-.introduction {}
-.introductionimage {}
-.content {}
-.footer {}
-.actionicon .icon {
-	border-right: 1px dotted #7794ac;
-}
+.bit-cols-3		{margin: 0em 21em  1em 21em;}
+.bit-cols-2l	{margin: 0em  2em  1em 21em;}
+.bit-cols-2r	{margin: 0em 21em  1em  2em;}
+.bit-cols-1		{margin: 0em  2em  1em  2em;}
 
-				/*** boxes ***/
-.box {}
-.boxtitle {
-	color: #7794ac;
-	font-size: 120%;
-	font-weight: bold;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #e5e5e5;
-}
-.boxcontent {
-	margin: 1.5em 0;
-}
-.module {}
-.popup {
-	padding: 10px;
-	border: 1px solid #7794ac;
-	text-align: justify;
-	background: transparent url( images/popup.png ) repeat;
-}
-.popup .boxtitle {
-	height: 24px;
-	background: transparent url( images/extended_help.png ) no-repeat 50% 50%;
-}
+/* headings - poor old konqueror needs long description of background stuff */
+h1,h2,h3	{font-size:100%; font-weight:bold; padding:0; margin:0;}
+h1			{color:#000;}
+h2			{color:#444;}
+h3			{color:#999;}
+#bittop h1,
+#bittop h3	{padding:0 2em; margin:0; text-align:right; letter-spacing:3px;}
+#bittop h3	{font-weight:normal;}
+.header h1	{color:#8ad; margin:0 0 0 -2em;  padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em;
+			background-color:#f9f9f9; background-image:url( images/hh1.gif ); background-position:4px; background-repeat:no-repeat;}
+.header h2	{margin:0; letter-spacing:0.2em; font-weight:normal; color:#666;}
+.module h3	{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px; margin:0 0 0 -2em;
+			background-color:#f9f9f9; background-image:url( images/mh3.gif ); background-position:4px; background-repeat:no-repeat;}
 
-				/*** menus ***/
-.menu .head {
-	color: #999;
-}
-.menu .head: hover {}
-.menu .item {}
-.menu .item:hover {}
+/*** common classes ***/
+.date				{text-align:right; color:#ccc;}
+.body				{}
+.introduction		{}
+.introductionimage	{}
+.content			{}
+.footer				{}
+.floaticon .icon	{padding:1px 2px;}
 
-.menu .icon {
-	display:none;
-}
+/*** boxes ***/
+.box				{}
+.boxcontent			{margin:0.5em 0;}
+.module				{padding:1em;}
+.popup				{padding:10px; border:1px solid #ccc; text-align:justify; background:transparent url( images/popup.png ) repeat;}
 
-#bitmain .menu .boxtitle .icon {
-	display:block;
-}
+/*** menus ***/
+#nav ul			{padding:5px;}
+#nav li li ul	{margin-top:-22px;}
+#nav .head		{background:#fff;}
 
-				/*** parsed elements ***/
-.bitbar {}
-.bitcache {}
-.bitbox {
-	padding: 3px;
-	border: 1px solid #7794ac;
-}
-.bittable {
-	background: #eee;
-}
-.bittable td {
-	border: 1px solid #fff;
-}
+.menu .head			{color:#999;}
+.menu .head:hover	{}
+.menu .item			{}
+.menu .item:hover	{}
 
-				/*** forms ***/
-input,select,textarea {
-	font-size: 120%;
-}
-fieldset {
-	border: 1px dashed #e5e5e5;
-	padding: 5px 0;
-	width: 95%;
-	margin: 0 auto;
-}
-legend {
-	padding: 0 2px;
-	background: #fff;
-	letter-spacing: 3px;
-	border: 1px dashed #e5e5e5;
-}
-label {
-	color: #666;
-}
-.row {}
-.formlabel {}
-.formfeedback {}
-.forminput {}
-.formhelp {}
-.submit {}
-.clear {}
-.minifind {}
+/* don't display icons in dropdown menu */
+.menu .icon		{display:none;}
+.hor li li a	{margin:0;}
+.hor li ul		{width:14em;}
 
-				/*** data tables ***/
-.other {}
-.panel {}
-.panelsubmitrow {}
-.data {}
-.odd {}
-.even {
-	background: #efefef;
-}
-.norecords {}
-.find {}
+/*** parsed elements ***/
+.bitbar			{border-bottom:1px dashed #ddd;}
+.bitbox			{padding:3px; border:1px dashed #ddd; background:#f9f9f9;}
+.bittable		{background:#eee;}
+.bittable td	{border:1px solid #fff;}
+
+/*** forms ***/
+textarea		{font-size:120%;}
+fieldset		{border:1px dashed #ddd; width:96%; margin:1.5em auto;}
+legend			{padding:2px 4px; font-weight:bold; letter-spacing:2px; border:1px dashed #ddd; margin:0 0 1.5em 0;}
+label			{color:#666;}
+.row			{margin:0 0 1em 0;}
+.formlabel		{}
+.formfeedback	{}
+.forminput		{}
+.formhelp		{color:#a66;}
+.submit			{}
+.clear			{}
+.minifind			{width:auto;}
+.minifind fieldset	{border:0;}
+.minifind legend	{display:none;}
+.minifind fieldset	{padding:0.5em; margin:0;}
+
+/*** data ***/
+.data			{}
+.odd			{}
+.even			{background:#eee;}
+.norecords		{}
+.find			{}
+ul.data li.item	{padding:0.5em; border-bottom:1px dashed #ccc;}
+ul.data li.item .thumb	{margin:0 0 1em 1em; border:1px solid #ccc;}
 
 /* tabstyle */
-.tabsystem .tabcontainer .tab, .tabsystem .tabcontainer.tab-hover, .tabsystem .tabcontainer .tab-active {
-	top:3px;
-	font:10px verdana,arial,sans-serif;
-	margin:0 3px;
-	padding:4px 5px 1px 5px;
-	background:transparent url( images/tab_shade.png ) repeat-x;
-	border:1px solid #bbb;
-	border-bottom:0;
-}
-.tabsystem .tabcontainer .tab-hover {
-	padding:3px 5px 1px 5px;
-	border-top:2px solid #f60;
-}
-.tabsystem .tabcontainer .tab-active {
-	top:1px;
-	margin:0 0px;
-	color:#000;
-	padding:2px 8px 4px 8px;
-	background:#fff;
-	border-top:2px solid #f60;
-}
-.tabsystem .tabpage {
-	border:1px solid #bbb;
-	margin:0;
-	padding:1em;
-}
-/* rounded tab tops - does not work in MSIE - if active, it screws up Konqeror * /
-.tabsystem .tabcontainer .tab:before {
-	line-height:0.1;
-	font-size:1px;
-	background:transparent url( images/tab_tr_n.gif ) no-repeat top right;
-	margin:-5px -6px 0 -6px;
-	height:3px;
-	display:block;
-	border:none;
-	content:url( images/tab_tl_n.gif );
-}
-.tabsystem .tabcontainer .tab-hover:before {
-	line-height:0.1;
-	font-size:1px;
-	background:transparent url( images/tab_tr.gif ) no-repeat top right;
-	margin:-5px -6px 0 -6px;
-	height:3px;
-	display:block;
-	border:none;
-	content:url( images/tab_tl.gif );
-}
-.tabsystem .tabcontainer .tab-active:before {
-	line-height:0.1;
-	font-size:1px;
-	background:transparent url( images/tab_tr.gif ) no-repeat top right;
-	margin:-4px -9px 0 -9px;
-	height:3px;
-	display:block;
-	border:none;
-	content:url( images/tab_tl.gif );
-}
-/**/
-				/*** navigation bars and tabs ***/
-.navbar {
-	text-align: right;
-	margin: 10px 0;
-}
-.navbar a {
-	margin: 0 5px;
-}
-.selected {}
-.pagination {}
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer.tab-hover,
+.tabsystem .tabcontainer .tab-active	{top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; background:transparent url( images/tab_shade.png ) repeat-x; border:1px solid #bbb; border-bottom:0;}
+.tabsystem .tabcontainer .tab-hover		{padding:3px 5px 1px 5px; border-top:2px solid #f60;}
+.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60;}
+.tabsystem .tabpage						{border:1px solid #bbb; margin:0; padding:1em;}
 
-				/*** bottom bar ***/
-.babelfish {}
+/*** navigation bars and tabs ***/
+.navbar		{margin:1em 0;}
+.navbar a	{margin:0 5px;}
+.selected	{}
+.pagination	{}
 
-				/*** settings that have to be at the end ***/
-.highlight {}
+/*** settings that have to be at the end ***/
+.highlight	{}

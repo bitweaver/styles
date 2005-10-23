@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.10 2005/09/03 10:21:46 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.11 2005/10/23 14:42:33 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.10 $
+ * @version  $Revision: 1.11 $
  * @theme    jill
  * @license  LGPL
  */
@@ -157,6 +157,7 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 /* package specific settings */
 /* articles */
 .introduction .image	{float:right; margin:3px 0px 3px 10px;}
+
 /* fisheye and themes listing */
 .themes ul.data li.item,
 .fisheye ul.data li.item		{border:1px solid #ddd; clear:both; margin:0.5em 0px 0.5em 200px; background:#eee;}
@@ -164,17 +165,20 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 .fisheye ul.data li.item .thumb	{float:left; margin:-35px 0 0 -200px;}
 .fisheye .body .image			{margin:0 -1em;}
 
+/* other fisheye settings */
 .thumb							{padding:3px; border:1px solid #ccc;}
 .fisheyegallery .thumb			{padding:3px; border:3px double #ccc;}
 .thumb:hover					{border-color:#bbb;}
-.thumbnailblock .box			{padding:5px; text-align:center;}
-.thumbnailblock .box:hover		{color:#333;}
+.thumbnailblock .box			{margin:3px; padding:5px 0; text-align:center;}
+.thumbnailblock .box:hover		{background:#eee; outline:1px solid #ccc;}
+.thumbnailblock .box a:hover	{background:transparent !important;}
 .image							{text-align:center;}
 
 /* sticky notes */
-.stickies textarea,.stickies input[type='text']		{background:#fe9;}
-.stickynote h3			{border-bottom: 1px solid #dda;}
-.stickynote				{background-color:#fe9; color:#000; width: 300px; padding: 3px;}
+.stickies textarea,
+.stickies input[type='text']	{background:#ffc;}
+.stickynote .boxtitle			{border-bottom: 1px solid #dda;}
+.stickynote						{background-color:#ffc; width:300px; padding:3px;}
 
 /* this is the attachment browser */
 .attbrowser				{padding:0 20px; margin:0; background:#fff;}
