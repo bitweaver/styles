@@ -16,7 +16,7 @@ a:hover		{text-decoration:underline;}
 /* the width setting is needed for opera < 7.5 - if you don't care about that, you can remove it */
 #bittopbar		{float:left; width:80%;}
 #bitleft,
-#bitright		{width:18em; position:absolute; background:#fff; border:1px solid #ccc;}
+#bitright		{width:18em; position:absolute; background:#fff; border:1px solid #ccc; overflow:visible;}
 #bitleft		{left:1em;}
 #bitright		{right:1em;}
 #bitmain		{padding:1em; background:#fff; border:1px solid #ccc;}
@@ -30,7 +30,7 @@ a:hover		{text-decoration:underline;}
 .bit-cols-2r	{margin: 0em 21em  1em  2em;}
 .bit-cols-1		{margin: 0em  2em  1em  2em;}
 
-/* headings */
+/* headings - poor old konqueror needs long description of background stuff */
 h1,h2,h3	{font-size:100%; font-weight:bold; padding:0; margin:0;}
 h1			{color:#000;}
 h2			{color:#444;}
@@ -38,9 +38,11 @@ h3			{color:#999;}
 #bittop h1,
 #bittop h3	{padding:0 2em; margin:0; text-align:right; letter-spacing:3px;}
 #bittop h3	{font-weight:normal;}
-.header h1	{color:#8ad; margin:0 0 0 -2em; background:#f9f9f9 url( images/hh1.gif ) 4px no-repeat; padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em;}
+.header h1	{color:#8ad; margin:0 0 0 -2em;  padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em;
+			background-color:#f9f9f9; background-image:url( images/hh1.gif ); background-position:4px; background-repeat:no-repeat;}
 .header h2	{margin:0; letter-spacing:0.2em; font-weight:normal; color:#666;}
-.module h3	{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px; margin:0 0 0 -2em; background:#f9f9f9 url( images/mh3.gif ) 4px no-repeat;}
+.module h3	{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px; margin:0 0 0 -2em;
+			background-color:#f9f9f9; background-image:url( images/mh3.gif ); background-position:4px; background-repeat:no-repeat;}
 
 /*** common classes ***/
 .date				{text-align:right; color:#ccc;}
