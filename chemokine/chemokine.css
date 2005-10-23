@@ -2,7 +2,7 @@
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
 *			{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
 body		{color:#666; font-size:10px; margin:0; padding:0em; background:#eee; line-height:1.7em;}
-th			{}
+th			{border-bottom:1px solid #ccc;}
 hr			{}
 small		{}
 a			{color:#f93; text-decoration:none;}
@@ -10,28 +10,37 @@ a.external	{background:transparent url( images/external.gif ) no-repeat right; p
 a:hover		{text-decoration:underline;}
 
 /*** site layout ***/
-#bittop			{padding:0; margin:0; background:#fff; border-bottom:1px solid #999;}
-.login			{float:left; clear:left;}
-#wrap1			{padding:1em 0;}
+#bittop			{padding:0; margin:0; background:#fff; border-bottom:1px solid #ccc;}
+#bittop .login	{float:left; clear:left; margin:0 0.5em;}
+#wrap1			{margin:1em 0;}
 /* the width setting is needed for opera < 7.5 - if you don't care about that, you can remove it */
 #bittopbar		{float:left; width:80%;}
-#bitmodules		{width:18em; position:absolute; right:1em; background:#fff; border:1px solid #ccc;}
-#bitmain		{margin:0em 22em 1em 2em; padding:1em; background:#fff; border:1px solid #ccc;}
-#bitbottom		{text-align:center; color:#ccc; margin-top:2em;}
+#bitleft,
+#bitright		{width:18em; position:absolute; background:#fff; border:1px solid #ccc;}
+#bitleft		{left:1em;}
+#bitright		{right:1em;}
+#bitmain		{padding:1em; background:#fff; border:1px solid #ccc;}
+#bitbottom		{text-align:center; color:#ccc; margin-top:2em; clear:both;}
 #bitbottom a	{color:#ccc; background:transparent;}
 #bitprint		{}
 #slideshow		{}
 
+.bit-cols-3		{margin: 0em 21em  1em 21em;}
+.bit-cols-2l	{margin: 0em  2em  1em 21em;}
+.bit-cols-2r	{margin: 0em 21em  1em  2em;}
+.bit-cols-1		{margin: 0em  2em  1em  2em;}
+
 /* headings */
-h1			{color:#444; font-size:100%; font-weight:bold; padding:0.3em; margin:0;}
-h2			{color:#444; font-size:100%; font-weight:bold;}
-h3			{color:#999; font-size:100%; font-weight:bold;}
+h1,h2,h3	{font-size:100%; font-weight:bold; padding:0; margin:0;}
+h1			{color:#000;}
+h2			{color:#444;}
+h3			{color:#999;}
 #bittop h1,
-#bittop h3	{padding:0 2em; margin:0; text-align:right;}
+#bittop h3	{padding:0 2em; margin:0; text-align:right; letter-spacing:3px;}
 #bittop h3	{font-weight:normal;}
-.header h1	{color:#8ad; margin:0 0 0 -2em; background:#f9f9f9; padding-left:2em; border:1px dashed #ddd; letter-spacing:0.2em;}
-.header h2	{margin:0; letter-spacing:0.2em; font-weight:normal}
-.module h3	{color:#9bf; margin:0 0 0 -2em; background:#f9f9f9; padding-left:2em; border:1px dashed #ddd; letter-spacing:0.2em;}
+.header h1	{color:#8ad; margin:0 0 0 -2em; background:#f9f9f9 url( images/hh1.gif ) 4px no-repeat; padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em;}
+.header h2	{margin:0; letter-spacing:0.2em; font-weight:normal; color:#666;}
+.module h3	{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px; margin:0 0 0 -2em; background:#f9f9f9 url( images/mh3.gif ) 4px no-repeat;}
 
 /*** common classes ***/
 .date				{text-align:right; color:#ccc;}
@@ -40,7 +49,7 @@ h3			{color:#999; font-size:100%; font-weight:bold;}
 .introductionimage	{}
 .content			{}
 .footer				{}
-.floaticon .icon	{padding:4px 2px;}
+.floaticon .icon	{padding:1px 2px;}
 
 /*** boxes ***/
 .box				{}
@@ -81,17 +90,19 @@ label			{color:#666;}
 .formhelp		{color:#a66;}
 .submit			{}
 .clear			{}
-.minifind		{}
+.minifind			{width:auto;}
+.minifind fieldset	{border:0;}
+.minifind legend	{display:none;}
+.minifind fieldset	{padding:0.5em; margin:0;}
 
-/*** data tables ***/
-.other			{}
-.panel			{}
-.panelsubmitrow	{}
+/*** data ***/
 .data			{}
 .odd			{}
-.even			{background:#efefef;}
+.even			{background:#eee;}
 .norecords		{}
 .find			{}
+ul.data li.item	{padding:0.5em; border-bottom:1px dashed #ccc;}
+ul.data li.item .thumb	{margin:0 0 1em 1em; border:1px solid #ccc;}
 
 /* tabstyle */
 .tabsystem .tabcontainer .tab,
@@ -102,13 +113,10 @@ label			{color:#666;}
 .tabsystem .tabpage						{border:1px solid #bbb; margin:0; padding:1em;}
 
 /*** navigation bars and tabs ***/
-.navbar		{text-align:right; margin:10px 0;}
+.navbar		{margin:1em 0;}
 .navbar a	{margin:0 5px;}
 .selected	{}
 .pagination	{}
-
-/*** bottom bar ***/
-.babelfish	{}
 
 /*** settings that have to be at the end ***/
 .highlight	{}
