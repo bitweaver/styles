@@ -65,12 +65,12 @@ h3			{color:#999;}
 #nav .head		{background:#fff;}
 
 .menu .head			{color:#999;}
-.menu .head:hover	{}
 .menu .item			{}
-.menu .item:hover	{}
 
 /* don't display icons in dropdown menu */
-.menu .icon		{display:none;}
+#bitleft .icon,
+#bitright .icon,
+#nav .icon		{display:none;}
 .hor li li a	{margin:0;}
 .hor li ul		{width:14em;}
 
