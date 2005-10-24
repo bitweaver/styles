@@ -64,12 +64,12 @@ h3			{color:#999;}
 #nav li li ul	{margin-top:-22px;}
 #nav .head		{background:#fff;}
 
-.menu .head			{color:#999;}
-.menu .item			{}
+.menu .head		{color:#999;}
+.menu .item		{}
 
 /* don't display icons in dropdown menu */
-#bitleft .icon,
-#bitright .icon,
+#bitleft .menu .icon,
+#bitright .menu .icon,
 #nav .icon		{display:none;}
 .hor li li a	{margin:0;}
 .hor li ul		{width:14em;}
@@ -90,7 +90,7 @@ label			{color:#666;}
 .formfeedback	{}
 .forminput		{}
 .formhelp		{color:#a66;}
-.submit			{}
+.submit			{margin:1em 0;}
 .clear			{}
 .minifind			{width:auto;}
 .minifind fieldset	{border:0;}
