@@ -25,6 +25,7 @@ a:hover		{text-decoration:underline;}
 #bitprint		{}
 #slideshow		{}
 
+/* adjust the width of the center column depending on number of side columns */
 .bit-cols-3		{margin: 0em 21em  1em 21em;}
 .bit-cols-2l	{margin: 0em  2em  1em 21em;}
 .bit-cols-2r	{margin: 0em 21em  1em  2em;}
@@ -47,6 +48,7 @@ h3			{color:#999;}
 /*** common classes ***/
 .date				{text-align:right; color:#ccc;}
 .body				{}
+.post				{margin:0 0 2em 0;}
 .introduction		{}
 .introductionimage	{}
 .content			{}
