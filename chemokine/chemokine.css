@@ -124,3 +124,9 @@ ul.data li.item .thumb	{margin:0 0 1em 1em; border:1px solid #ccc;}
 
 /*** settings that have to be at the end ***/
 .highlight	{}
+
+/* fisheye and themes listing */
+.themes ul.data li.item,
+.fisheye ul.data li.item		{border:1px solid #ddd; clear:both; margin:0.5em 0px 0.5em 200px; background:#eee;}
+.themes ul.data li.item .thumb,
+.fisheye ul.data li.item .thumb	{float:left; margin:-20px 0 0 -200px;}
