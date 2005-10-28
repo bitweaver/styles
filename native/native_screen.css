@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.1.1.1.2.5 2005/09/10 08:01:54 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.1.1.1.2.6 2005/10/28 00:26:25 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.5 $
+ * @version  $Revision: 1.1.1.1.2.6 $
  * @theme    native
  * @license  LGPL
  */
@@ -89,4 +89,8 @@ table h1, table h2, table h3	{border:0; margin:0; padding:1em 0 0 0;}
 .navbar ul li	{float:left; list-style:none; line-height:normal; padding:1px;}
 .navbar a		{border:1px solid #bbb; background:#ddd; padding:0 0.5em; margin:0 0.5em; line-height:normal;}
 .navbar a:hover	{border:1px solid #999; background:#eee;}
+
+/* multi file upload */
+#fileslist div		{border-bottom:1px solid #ccc; color:#900;}
+#fileslist div span	{display:block; width:75%; float:left;}
 }
