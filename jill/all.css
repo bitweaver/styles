@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.23 2005/10/21 14:52:55 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.24 2005/10/28 13:18:45 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.23 $
+ * @version  $Revision: 1.2.2.24 $
  * @theme    jill
  * @license  LGPL
  */
@@ -64,7 +64,7 @@ ul.small			{line-height:normal;}
 
 /* forms */
 form,textarea,select	{margin:0; padding:0;}
-textarea				{width:99%;}
+html>body textarea		{width:99%;}
 /* since MSIE is so crap at rendering this stuff, we shrink text size to avoid
 * redering errors */
 input,textarea,select	{font-size:10px;}
@@ -73,7 +73,6 @@ html>body input,textarea,select	{font-size:inherit;}
 #bitmain textarea,
 #bitmain select			{}
 input[type="text"]		{max-width:100%;}
-textarea				{}
 fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
 legend					{font-size:1.2em; padding:1em;}
 .row					{clear:both;}
@@ -82,7 +81,7 @@ legend					{font-size:1.2em; padding:1em;}
 .formlabel				{font-weight:bold; float:left; width:20%; text-align:right; font-size:0.8em;}
 .forminput				{margin-left:21%;}
 .formfeedback			{}
-.formhelp				{cursor:help; font-size:0.8em; line-height:normal; color:#67a; border-bottom:1px dotted #999;}
+.formhelp				{cursor:help; font-size:0.8em; line-height:normal; color:#a76; border-bottom:1px dotted #999;}
 .formhelp a				{font-weight:bold;}
 .closebutton			{position:absolute; top:1px; right:1px;}
 .submit					{text-align:center;}
