@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.6 2005/08/03 22:44:18 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_all.css,v 1.1.1.1.2.7 2005/10/29 15:05:32 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.6 $
+ * @version  $Revision: 1.1.1.1.2.7 $
  * @theme    native
  * @license  LGPL
  */
@@ -133,8 +133,8 @@ table				{line-height:normal; border-spacing:0; border-collapse:collapse; width:
 fieldset table		{margin:0 2%; width:96%;}
 #attbrowser td		{vertical-align:top; text-align:center; padding:5px;}
 table.data			{border:1px solid #666; font-size:0.9em;}
-.odd,.even			{border:1px solid #d0d0d0;}
-.odd				{background:#fcfcfc;}
+.odd,.even			{border-bottom:1px solid #d0d0d0;}
+.odd				{background:#ddd;}
 .even				{background:#f5f5f5;}
 .norecords			{font-weight:bold;}
 			/* pagination */
