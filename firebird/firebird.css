@@ -1,11 +1,12 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/firebird.css,v 1.1.1.1.2.2 2005/10/29 13:02:56 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/firebird.css,v 1.1.1.1.2.3 2005/10/29 13:06:27 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
- * @version  $Revision: 1.1.1.1.2.2 $
+ * @version  $Revision: 1.1.1.1.2.3 $
  * @theme    native
  * @license  LGPL
  */
 
 /* import settings that apply to all media */
 @import url( ../native/native.css );
+#bittop	{background:transparent url( images/bar_logo.png ) no-repeat left;}
 #wrap4	{background:#fff url( images/firebird-mask.gif ) no-repeat 95% 50px;}
