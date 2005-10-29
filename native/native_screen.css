@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.3 2005/07/17 17:36:39 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.4 2005/10/29 17:57:03 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.3 $
+ * @version  $Revision: 1.4 $
  * @theme    native
  * @license  LGPL
  */
@@ -12,7 +12,7 @@ body			{background:#666; text-align:center;}
 small,.small	{color:#777;}
 
 /* adding some basic styling */
-#bitbar		{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
+#bitbar			{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
 .toplogin		{font-size:0.9em; color:#999; text-align:right; float:right; margin:0px; padding:4px 5px;}
 #bitbody		{background:transparent url( images/title_bg.png ) no-repeat top left; padding:0px 0px 1px 0px; text-align:left;}
 #bittop			{background:transparent url( images/bar_logo.png ) no-repeat left;}
@@ -89,4 +89,8 @@ table h1, table h2, table h3	{border:0; margin:0; padding:1em 0 0 0;}
 .navbar ul li	{float:left; list-style:none; line-height:normal; padding:1px;}
 .navbar a		{border:1px solid #bbb; background:#ddd; padding:0 0.5em; margin:0 0.5em; line-height:normal;}
 .navbar a:hover	{border:1px solid #999; background:#eee;}
+
+/* multi file upload */
+#fileslist div		{border-bottom:1px solid #ccc; color:#900;}
+#fileslist div span	{display:block; width:75%; float:left;}
 }
