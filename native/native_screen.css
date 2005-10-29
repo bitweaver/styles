@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.1.1.1.2.6 2005/10/28 00:26:25 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_screen.css,v 1.1.1.1.2.7 2005/10/29 13:04:27 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1.1.1.2.6 $
+ * @version  $Revision: 1.1.1.1.2.7 $
  * @theme    native
  * @license  LGPL
  */
@@ -12,7 +12,7 @@ body			{background:#666; text-align:center;}
 small,.small	{color:#777;}
 
 /* adding some basic styling */
-#bitbar		{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
+#bitbar			{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
 .toplogin		{font-size:0.9em; color:#999; text-align:right; float:right; margin:0px; padding:4px 5px;}
 #bitbody		{background:transparent url( images/title_bg.png ) no-repeat top left; padding:0px 0px 1px 0px; text-align:left;}
 #bittop			{background:transparent url( images/bar_logo.png ) no-repeat left;}
