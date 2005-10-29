@@ -84,7 +84,7 @@ html>body .module h3	{margin:0 0 0 -2em;}
 .bittable td	{border:1px solid #fff;}
 
 /*** forms ***/
-textarea		{font-size:120%;}
+textarea		{}
 fieldset		{border:1px dashed #ddd; width:96%; margin:1.5em auto;}
 legend			{padding:2px 4px; font-weight:bold; letter-spacing:2px; border:1px dashed #ddd; margin:0 0 1.5em 0;}
 label			{color:#666;}
