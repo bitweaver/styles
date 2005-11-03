@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.24 2005/10/28 13:18:45 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.25 2005/11/03 21:27:31 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.24 $
+ * @version  $Revision: 1.2.2.25 $
  * @theme    jill
  * @license  LGPL
  */
@@ -152,6 +152,7 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 .navigation span		{display:block; width:49%;}
 .navigation .left		{text-align:right; float:left;}
 .navigation .right		{text-align:left; float:right;}
+.navigation span a		{display:block;}
 
 /* package specific settings */
 /* articles */
