@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.25 2005/11/03 21:27:31 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.26 2005/11/05 22:33:12 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.25 $
+ * @version  $Revision: 1.2.2.26 $
  * @theme    jill
  * @license  LGPL
  */
@@ -64,10 +64,8 @@ ul.small			{line-height:normal;}
 
 /* forms */
 form,textarea,select	{margin:0; padding:0;}
-html>body textarea		{width:99%;}
-/* since MSIE is so crap at rendering this stuff, we shrink text size to avoid
-* redering errors */
-input,textarea,select	{font-size:10px;}
+textarea				{width:100%;}
+input,textarea,select	{font-size:12px;}
 html>body input,textarea,select	{font-size:inherit;}
 #bitmain input,
 #bitmain textarea,
