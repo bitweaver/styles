@@ -16,7 +16,7 @@ a:hover		{text-decoration:underline;}
 /* the width setting is needed for opera < 7.5 - if you don't care about that, you can remove it */
 #bittopbar		{float:left; width:80%;}
 #bitleft,
-#bitright		{width:18em; position:absolute; z-index:-1; background:#fff; border:1px solid #ccc; overflow:visible;}
+#bitright		{width:18em; position:absolute; z-index:0; background:#fff; border:1px solid #ccc; overflow:visible;}
 #bitleft		{left:1em;}
 #bitright		{right:1em;}
 #bitmain		{padding:1em; background:#fff; border:1px solid #ccc;}
