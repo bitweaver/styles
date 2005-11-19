@@ -58,7 +58,7 @@ html>body .module h3	{margin:0 0 0 -2em;}
 
 /*** boxes ***/
 .box				{}
-.boxcontent			{margin:0.5em 0;}
+.boxcontent			{margin:0.3em 0.5em 0.7em 0.5em;}
 .module				{padding:1em;}
 .popup				{padding:10px; border:1px solid #ccc; text-align:justify; background:transparent url( images/popup.png ) repeat;}
 
