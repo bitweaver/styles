@@ -55,6 +55,7 @@ html>body .module h3	{margin:0 0 0 -2em;}
 .content			{}
 .footer				{}
 .floaticon .icon	{padding:1px 2px;}
+.maketoc			{padding:5px; margin:5px 0; border:1px dotted #aaa; background:#f5f5f5;}
 
 /*** boxes ***/
 .box				{}
