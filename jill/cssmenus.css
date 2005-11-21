@@ -1,21 +1,21 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.13 2005/11/05 22:29:28 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.2.2.14 2005/11/21 19:56:40 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.13 $
+ * @version  $Revision: 1.2.2.14 $
  * @theme    jill
  * @license  LGPL
  */
 @media screen,projection,tv {
 /* regular menus */
-.menu,.menu ul,.menu li	{list-style:none; padding:0; margin:0;}
-.module div ul			{margin-left:1em;}
 .menu .icon				{vertical-align:middle;}
 .menu a					{display:block;}
 
 /* suckerfish nexus menus */
-.suckerfish ul ul		{margin-left:1em;}
-.suckerfish li			{line-height:2.5em; padding:0em;}
-.suckerfish li a:hover	{background-color:#579; color:#fff;}
+.suckerfish ul,
+.suckerfish ul li	{list-style:square; margin:0; padding:0;}
+.suckerfish ul		{margin:0 0 0 1.5em;}
+.suckerfish ul ul	{margin:0 0 0.4em 1em;}
+.suckerfish li		{line-height:normal; color:#999; padding:0.2em 0 0 0;}
 
 /* apply seperate menu style for menus in middle of page - like admin screen */
 #bitmain .menu			{font-size:0.8em;}
@@ -58,7 +58,7 @@
 /* css driven dropdown menus - vertical */
 /* layout first */
 .ver, .ver ul	{padding:0; margin:0; list-style:none; float:left; width:170px;}
-.ver li			{width:170px;}
+.ver li			{width:170px; margin:0; padding:0;}
 .ver li li		{position:relative; float:left; width:170px;}
 .ver li ul		{position:absolute; left:-999em; margin-left:170px; margin-top:-2.6em;}
 .ver li ul ul	{left:-999em;}
@@ -68,10 +68,10 @@
 #bitright .ver li ul									{margin-left:-155px;}
 
 /* now comes the dropdown style - modify away! */
-.suckerfish		{line-height:4em;}
-.suckerfish ul	{background:#eee; border:solid #999; border-width:1px 1px 0 1px;}
-.suckerfish li	{border-bottom:1px solid #999;}
-.ver a					{margin:0; padding:0.1em 0.7em 0.1em 10px;}
+.ver,.ver li			{background:#eee; list-style:none !important; margin:0 !important; padding:0;}
+.ver ul					{border:solid #999; border-width:1px 1px 0 1px;}
+.ver li					{border-bottom:1px solid #999; line-height:2.5em;}
+.ver a					{margin:0; display:block;}
 .ver a:hover			{color:#000;}
 .ver li li a			{background:transparent;}
 .ver li li a:hover		{background:#579; color:#fff;}
@@ -82,9 +82,9 @@
 .ver a.head:hover		{background:#579 url( images/menus/head_h.gif ) right no-repeat;}
 .ver li					{}
 .ver li:hover,
-.hor li.ieHover			{}
+.ver li.ieHover			{}
 .ver li li:hover,
-.hor li li.ieHover		{background:#bcd;}
+.ver li li.ieHover		{background:#bcd;}
 .ver li ul				{background:transparent url( images/menus/alpha.png ) top left repeat;}
 
 /* z-index */

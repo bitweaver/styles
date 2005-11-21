@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.27 2005/11/21 18:03:48 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.28 2005/11/21 19:56:40 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.27 $
+ * @version  $Revision: 1.2.2.28 $
  * @theme    jill
  * @license  LGPL
  */
@@ -43,8 +43,8 @@ h3			{font-size:1.1em;}
 .highlight			{font-weight:bolder; color:#900; background:#eee; border:1px solid #ddd;}
 .selected			{font-weight:bolder}
 .floaticon			{float:right; font-size:0.9em;}
-.storage			{float:right; border:1px solid #ccc;}
-.storage .item		{margin:3px;}
+.storage			{float:right; border:1px solid #ccc; background:#fff;}
+.storage .item		{margin:3px; text-align:center;}
 .comment,.footer	{clear:both;}
 .footer				{color:#999; font-size:0.8em;}
 .pagination			{text-align:center;}
