@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.26 2005/11/05 22:33:12 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/jill/all.css,v 1.2.2.27 2005/11/21 18:03:48 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2.2.26 $
+ * @version  $Revision: 1.2.2.27 $
  * @theme    jill
  * @license  LGPL
  */
@@ -55,7 +55,7 @@ h3			{font-size:1.1em;}
 ul.small			{line-height:normal;}
 
 /* tocs */
-.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
+.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
 .maketoc h3		{padding:0; border-bottom:1px solid #999;}
 .maketoc a		{color:#666;}
 .maketoc ul		{margin:0 0 0 1em; padding:0;}
