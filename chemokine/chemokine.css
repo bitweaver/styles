@@ -16,7 +16,7 @@ a:hover		{text-decoration:underline;}
 /* the width setting is needed for opera < 7.5 - if you don't care about that, you can remove it */
 #bittopbar		{float:left; width:80%;}
 #bitleft,
-#bitright		{width:18em; position:absolute; z-index:-1; background:#fff; border:1px solid #ccc; overflow:visible;}
+#bitright		{width:18em; position:absolute; z-index:0; background:#fff; border:1px solid #ccc; overflow:visible;}
 #bitleft		{left:1em;}
 #bitright		{right:1em;}
 #bitmain		{padding:1em; background:#fff; border:1px solid #ccc;}
@@ -48,19 +48,20 @@ html>body .module h3	{margin:0 0 0 -2em;}
 
 /*** common classes ***/
 .date				{text-align:right; color:#ccc;}
-.body				{}
+.body				{clear:right}
 .post				{margin:0 0 2em 0;}
 .introduction		{}
 .introductionimage	{}
 .content			{}
 .footer				{}
 .floaticon .icon	{padding:1px 2px;}
+.maketoc			{padding:5px; margin:5px 0; border:1px dotted #aaa; background:#f5f5f5;}
 
 /*** boxes ***/
 .box				{}
-.boxcontent			{margin:0.5em 0;}
+.boxcontent			{margin:0.3em 0.5em 0.7em 0.5em;}
 .module				{padding:1em;}
-.popup				{padding:10px; border:1px solid #ccc; text-align:justify; background:transparent url( images/popup.png ) repeat;}
+.popup				{padding:10px; border:1px solid #ccc;}
 
 /*** menus ***/
 #nav ul			{padding:5px;}

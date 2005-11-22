@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_layout.css,v 1.4 2005/10/29 17:57:03 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_layout.css,v 1.5 2005/11/22 07:27:58 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.4 $
+ * @version  $Revision: 1.5 $
  * @theme    native
  * @license  LGPL
  */
@@ -19,7 +19,7 @@ html>body .bit-cols-2l	{float:left; width:79%;}
 .bit-cols-2r	{float:left; width:79%;}
 html>body .bit-cols-2r	{float:left; width:81%;}
 .bit-cols-3		{float:left; width:61%;}
-#bitmain .structurebar,#bitmain .gallerybar	{font-size:10px; position:absolute; top:20px; width:620px;}
+#bitmain .structurebar,#bitmain .gallerybar	{font-size:10px; position:absolute; top:20px; width:60%;}
 
 /* columns */
 #bitleft .module .boxcontent	{overflow:hidden; width:100%;}
