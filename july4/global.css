@@ -99,8 +99,8 @@ a img:hover {
 
 /******************************************************************************************/
 /*** site layout ***/
-#tikiheader {}
-#tikibody {}
+#bitheader {}
+#bitbody {}
 
 /* nab red #b40019 */
 /* orig background here was #e8e5de */
@@ -139,7 +139,7 @@ a img:hover {
 	background-repeat: repeat-y;
 }
 
-#tikimain {
+#bitmain {
 	vertical-align: top;
 	padding: 0 10px;
 	/*background-image: url( images/bg.gif );*/
@@ -147,6 +147,6 @@ a img:hover {
 	background-repeat: repeat-y;
 }
 
-#tikibottom {
+#bitbottom {
 	border-top: 0px solid #333366;
 }

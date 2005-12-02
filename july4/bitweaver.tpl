@@ -4,7 +4,7 @@
 <table dir="rtl"><tr><td>
 {/if}
 
-<div id="tikibody">
+<div id="bitbody">
 
 {include file="bitpackage:kernel/top.tpl"}
 
@@ -12,7 +12,7 @@
     {include file="bitpackage:kernel/top_bar.tpl"}
 {/if}
 
-<table id="tikilayouttable" cellspacing="0" cellpadding="0" border="0">
+<table id="bitlayouttable" cellspacing="0" cellpadding="0" border="0">
 <tr>
 {if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
   <td id="bitleft">
@@ -21,16 +21,16 @@
     {/section}
   </td> <!-- end #bitleft -->
 {/if}
-  <td id="tikimain">
-    <div id="tikimainfx">
+  <td id="bitmain">
+    <div id="bitmainfx">
 	{include file="bitpackage:liberty/display_structure.tpl"}
 	<a style="padding:0;margin:0;border:0;" name="content"></a>
 {if $pageError}
 <div class="error">{$pageError}</div>
 {/if}
       {include file=$mid}
-    </div> <!-- end #tikimainfx -->
-  </td> <!-- end #tikimain -->
+    </div> <!-- end #bitmainfx -->
+  </td> <!-- end #bitmain -->
 {if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
   <td id="bitright">
     {section name=homeix loop=$r_modules}
@@ -42,12 +42,12 @@
 </table>
 
 {if $gBitSystem->isFeatureActive( 'feature_bot_bar' )}
-  <div id="tikibottom">
+  <div id="bitbottom">
     {include file="bitpackage:kernel/bot_bar.tpl"}
-  </div> <!-- end #tikibottom -->
+  </div> <!-- end #bitbottom -->
 {/if}
 
-</div> <!-- end #tikibody -->
+</div> <!-- end #bitbody -->
 
 {if $gBitSystem->isFeatureActive( 'feature_bidi' )}
 </td></tr></table>

@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.1 2005/06/19 06:11:09 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.1.1.1.2.1 2005/12/02 11:31:22 squareing Exp $ */
 /******************************************************************************************
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -80,19 +80,19 @@ a:hover {
 /*** wiki ***/
 /* parsed wikiclasses */
 /* wiki -=...=- */
-.tikibox {
+.bitbox {
 	background-color: #e9ecef;
 	border: 1px solid #dedede;
 	padding: 5px;
 }
-.tikibar {
+.bitbar {
 	letter-spacing: 4px;
 	font-weight: bold;
 	background-color: #e9ecef;
 	border: 1px solid #dedede;
 	padding: 2px;
 }
-.tikitable td {
+.bittable td {
 	border: 1px solid #dedede;
 }
 /******************************************************************************************/

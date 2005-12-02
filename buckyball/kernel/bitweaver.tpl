@@ -26,15 +26,15 @@
 				{/if}
 			</div><!-- end #bittop -->
 			
-			<div id="tikibody">
-				<div id="tikimain">
+			<div id="bitbody">
+				<div id="bitmain">
 					{include file="bitpackage:liberty/display_structure.tpl"}
 					<a style="padding:0;margin:0;border:0;" name="content"></a>
 					{if $pageError}
 						<div class="error">{$pageError}</div>
 					{/if}
 					{include file=$mid}
-				</div><!-- end #tikimain -->
+				</div><!-- end #bitmain -->
 
 				{*<div id="bitmodules">
 					{section name=homeix loop=$l_modules}
@@ -46,12 +46,12 @@
 					{/section}
 				</div><!-- end #bitmodules -->*}
 
-				<div id="tikibottom">
+				<div id="bitbottom">
 					{if $gBitSystem->isFeatureActive( 'feature_bot_bar' )}
 						{include file="bitpackage:kernel/bot_bar.tpl"}
 					{/if}
-				</div><!-- end #tikibottom -->
-			</div><!-- end #tikibody -->
+				</div><!-- end #bitbottom -->
+			</div><!-- end #bitbody -->
 		</div><!-- end #wrap2 -->
 	</div><!-- end #wrap1 -->
 	{if $gBitSystem->isFeatureActive( 'feature_bidi' )}

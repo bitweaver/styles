@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.3 2005/10/05 07:38:59 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.4 2005/12/02 11:31:22 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
  * @version  $ Revision: 1.6 $
@@ -15,7 +15,7 @@ small {}
 p {text-align:justify;}
 a {color:#f90; text-decoration:none;}
 a:hover {color:#fc9;}
-#tikimain a:hover {text-decoration:none; border-bottom:1px dashed #bba; margin-bottom:-1px;}
+#bitmain a:hover {text-decoration:none; border-bottom:1px dashed #bba; margin-bottom:-1px;}
 a.external {background:transparent url( images/external_link.png ) no-repeat right;  padding-right:1.3em;}
 			/*** site layout ***/
 #bittop {padding:0 18% 0 0; background:#997}
@@ -25,10 +25,10 @@ a.external {background:transparent url( images/external_link.png ) no-repeat rig
   .toplogin a {color:#cc9;}
   .spacer {height:2em;}
 #bittopbar {width:82%;}
-#tikimain {margin:0em 0em 1em 0em; padding:0em 0em 1em 0em; float:left; width:82%;}
+#bitmain {margin:0em 0em 1em 0em; padding:0em 0em 1em 0em; float:left; width:82%;}
 #bitmodules {width:18%; padding:3em 0em 1em 0em; float:right; background:#678}
-#tikibottom {color:#999; text-align:center; clear:both; font-size:0.8em; margin:0em 27.5em 1em 0em;}
-#tikiprint {}
+#bitbottom {color:#999; text-align:center; clear:both; font-size:0.8em; margin:0em 27.5em 1em 0em;}
+#bitprint {}
 #slideshow {}
 			/*** titles ***/
 h1,h2,h3 {color:#fff; background:#666; font-weight:normal; padding:1em 1em 0.5em 1em; margin:0;}
@@ -82,11 +82,11 @@ td.actionicon {text-align:right;}
 .gallerybar .path {display:block;}
 .navigation span {display:block; width:50%; float:left;}
 .navigation .right {text-align:right;}
-#tikimain .structurebar {background:#79b; padding:0 1em; line-height:normal;}
- #tikimain .structurebar a {color:#fff;}
+#bitmain .structurebar {background:#79b; padding:0 1em; line-height:normal;}
+ #bitmain .structurebar a {color:#fff;}
 /* if you display the structure navigation links as icons, you can uncomment these lines by removing the space between the next 2 characters * /
- #tikimain .structurebar .path {margin:0 0 0 20px; display:inline;}
- #tikimain .structurebar .navigation span {width:20px; display:inline; clear:none;}
+ #bitmain .structurebar .path {margin:0 0 0 20px; display:inline;}
+ #bitmain .structurebar .navigation span {width:20px; display:inline; clear:none;}
 /**/
 			/*** boxes ***/
 .box {}
@@ -97,14 +97,14 @@ td.actionicon {text-align:right;}
  .module .boxtitle {color:#eee; padding-left:30px; background:transparent url( images/module.gif ) 5px center no-repeat; background-repeat:no-repeat;}
  .module .boxcontent {border:1px solid #999; background:#444; margin:0.5em; padding:0.5em; background:#444 url( images/ruler.png ) repeat-y 98% 0 fixed;}
 			/*** parsed elements ***/
-.tikibar {}
-.tikicache {}
-.tikibox {padding:3px 8px; background:#997; color:#fff; margin:0 4em;}
-.tikitable {background:#eee;}
- .tikitable td {border:1px solid #fff;}
+.bitbar {}
+.bitcache {}
+.bitbox {padding:3px 8px; background:#997; color:#fff; margin:0 4em;}
+.bittable {background:#eee;}
+ .bittable td {border:1px solid #fff;}
 			/*** forms ***/
 form,input,textarea,select{margin:0; padding:0;}
- #tikimain form {font-size:1.2em;}
+ #bitmain form {font-size:1.2em;}
  fieldset {border:0; border-top:1px solid #cc9;}
   textarea {width:100%;}
   input,select,textarea {font-size:1em; font-family:verdana,tahoma,helvetica,arial,sans-serif; color:#666; background:#333; border:1px solid #999; color:#fff;}

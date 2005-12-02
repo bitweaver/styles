@@ -75,11 +75,11 @@
 	color: #336;
 }
 
-#tikimain .boxcontent .menu .item {
+#bitmain .boxcontent .menu .item {
 	color: #000;
 }
 
-#tikimain .boxcontent a:hover {
+#bitmain .boxcontent a:hover {
 	color: #f80;
 	text-decoration: none;
 }
@@ -135,21 +135,21 @@
 /* configuration of individual modules */
 /* in addition _every_ module box has it's individual class corresponding to the module_name */
 /* the application menu for exapmle uses  <div class="module box application-menu"> */
-.box.tikicalendar .navigation {
+.box.bitcalendar .navigation {
 	text-align: center;
 }
 
-.module.box.tikicalendar table.mother td {
+.module.box.bitcalendar table.mother td {
 	color: #999;
 	text-align: center;
 }
 
-.module.box.tikicalendar .today {
+.module.box.bitcalendar .today {
 	color: #00a;
 }
 
 /* popup box for the calendar */
-.tikicalendar.popup {
+.bitcalendar.popup {
 	width: 200px;
 	background: #fff;
 }

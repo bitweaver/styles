@@ -43,12 +43,7 @@
 	text-align: left;
 }
 
-.body {
-	background-image: url( images/tikipro_mask.gif );
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+.body {}
 
 .admin .body {
 	background: transparent;
@@ -133,12 +128,12 @@
 }
 
 /* cached pages */
-.tikicache {}
+.bitcache {}
 /* links to internal pages */
 
-.tikitable {}
+.bittable {}
 
-.tikitable td {
+.bittable td {
 	background: #e8e5de;
 	vertical-align: middle;
 	border: 1px solid #fff;
