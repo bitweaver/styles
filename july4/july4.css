@@ -354,8 +354,8 @@ table.panel table tds {
 .message	{}
 /* class="navbar workflow" */
 .workflow	{}
-/* class="navbar above tikiforum" */
-.tikiforum {}
+/* class="navbar above bitforum" */
+.bitforum {}
 /* class="navbar help" */
 .help		{	margin: 25px 0	}
 /* class="navbar comment" */
