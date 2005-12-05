@@ -1,10 +1,3 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_cssmenus.css,v 1.4 2005/10/12 15:13:57 spiderr Exp $ */
-/**
- * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.4 $
- * @theme    native
- * @license  LGPL
- */
 @media screen,projection {
 			/* menu stuff */
 #bittopbarwrap		{background:#900; height:1.6em; border:solid #000; border-width:1px 0; font-size:8pt;}

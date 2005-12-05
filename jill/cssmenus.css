@@ -1,10 +1,3 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/cssmenus.css,v 1.8 2005/11/22 07:27:58 squareing Exp $ */
-/**
- * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.8 $
- * @theme    jill
- * @license  LGPL
- */
 @media screen,projection,tv {
 /* regular menus */
 .menu .icon				{vertical-align:middle;}
@@ -14,8 +7,10 @@
 .suckerfish ul,
 .suckerfish ul li	{list-style:square; margin:0; padding:0;}
 .suckerfish ul		{margin:0 0 0 1.5em;}
-.suckerfish ul ul	{margin:0 0 0.4em 1em;}
-.suckerfish li		{line-height:normal; color:#999; padding:0.2em 0 0 0;}
+.suckerfish ul ul	{margin:0 0 1em 1em;}
+.suckerfish ul li	{line-height:normal; color:#666;}
+.suckerfish ul li a	{padding:0.2em 0;}
+.suckerfish ul li a:hover	{background:#eee; color:#c40;}
 
 /* apply seperate menu style for menus in middle of page - like admin screen */
 #bitmain .menu			{font-size:0.8em;}

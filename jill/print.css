@@ -1,10 +1,3 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/print.css,v 1.3 2005/07/17 17:36:37 squareing Exp $ */
-/**
- * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.3 $
- * @theme    jill
- * @license  LGPL
- */
 @media print {
 body		{background:#fff;}
 /* hide large layout bits */

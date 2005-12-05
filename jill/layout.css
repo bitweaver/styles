@@ -1,10 +1,3 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/layout.css,v 1.6 2005/10/12 15:13:57 spiderr Exp $ */
-/**
- * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.6 $
- * @theme    jill
- * @license  LGPL
- */
 @media screen,projection,tv {
 /* layout */
 html	{background:transparent url( images/top.png ) top left repeat-x !important;}

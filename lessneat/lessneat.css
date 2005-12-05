@@ -57,8 +57,8 @@ a img:hover {}
 
 /*******************************************************************************************/
 /*** site layout ***/
-#tikibody {}
-#tikilayouttable {}
+#bitbody {}
+#bitlayouttable {}
 #bittop {}
 #bittopbar {
 	background: #c7d0d9;
@@ -74,10 +74,10 @@ a img:hover {}
 #bitright {
 	padding: 0 5px;
 }
-#tikimain {}
-#tikimainfx {}
-#tikibottom {}
-#tikiprint {}
+#bitmain {}
+#bitmainfx {}
+#bitbottom {}
+#bitprint {}
 
 /*******************************************************************************************/
 /*** common classes ***/
@@ -174,18 +174,18 @@ a img:hover {}
 /******************************************************************************************/
 /*** parsed text elements ***/
 /* -=...=- */
-.tikibar {
+.bitbar {
 	background: #c7d0d9;
 	border: 1px solid #8cacbb;
 	padding: 1px; 
 }
 
 /* cached pages */
-.tikicache {}
+.bitcache {}
 
 /* links to internal pages */
-.tikitable {}
-.tikitable td {
+.bittable {}
+.bittable td {
 	border: 1px solid #8cacbb;
 }
 

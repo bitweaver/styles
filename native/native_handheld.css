@@ -1,10 +1,3 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/native/native_handheld.css,v 1.2 2005/07/17 17:36:39 squareing Exp $ */
-/**
- * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
- * @theme    native
- * @license  LGPL
- */
 @media handheld {
 body			{background:#fff; font-family:sans-serif;}
 #bitbar		{display:none;}
