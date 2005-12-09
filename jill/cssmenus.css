@@ -8,7 +8,7 @@
 .suckerfish ul li	{list-style:square; margin:0; padding:0;}
 .suckerfish ul		{margin:0 0 0 1.5em;}
 .suckerfish ul ul	{margin:0 0 1em 1em;}
-.suckerfish ul li	{line-height:normal; color:#666;}
+.suckerfish ul li	{line-height:1em; color:#666;}
 .suckerfish ul li a	{padding:0.2em 0;}
 .suckerfish ul li a:hover	{background:#eee; color:#c40;}
 
