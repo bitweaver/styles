@@ -1,0 +1,388 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/ygg.css,v 1.1.2.1 2005/12/14 14:58:55 helge_karl Exp $ */
+
+/**
+ * @author   Helge_Karl <helge_karl@yahoo.com>
+ * @version  $ Revision: 1.0 $
+ * @theme    yggdra
+ * @license  LGPL
+ */
+ 
+
+/* Under are some notes about colors used in this theme */
+/* #b0c4de is the same as color name LightSteelBlue, much used as backgrounds and borders */
+/* #79b	is a darker blue color than LightSteelBlue, used for borders and boxbackground */
+/* #334	is a dark blue color, used mainly for some headings */
+
+
+/* import settings that apply to all media */
+@import url( all.css );
+
+/* import screen media */
+@import url( layout.css );
+@import url( modules.css );
+	/* @import url( screen.css ); */
+	@import url( jstabs.css );
+@import url( calendar.css );
+	 @import url( cssmenus.css ); 
+
+/* apply print display settings */
+@import url( print.css );
+
+/*** global settings ***/
+
+/*** miscellaneous ***/
+span.actionicon { float: right; }
+td.actionicon { text-align: right; }
+
+.closebutton
+{
+	position: absolute;
+	top: 1px;
+	right: 1px;
+}
+
+.image .boxcontent { text-align: center; }
+.norecords { font-weight: bold; }
+.boxtitle { text-align: center; }
+.boxtitle .icon { vertical-align: middle; }
+
+.popup
+{
+	background: #fff;
+	width: 250px;
+	border: 1px solid #79b;
+	text-align:justify;
+	padding:10px;
+}
+
+.icon,.icon:hover,a.icon,a.icon:hover { border: 0px; }
+
+.portrait,.avatar
+{
+	float: right;
+	padding: 0 0 5px 5px;
+}
+
+.selected { font-weight: bolder; }
+.navbar,.comment,.footer { clear: both; }
+.date,.footer,.pagination,small { color: #334; }
+.panelsubmitrow { text-align: center; }
+.pagination { text-align: center; }
+
+.storage
+{
+	float: right;
+	clear: both;
+}
+
+
+
+/*** stickies ***/
+.stickies textarea,.stickies input[type='text'] { background: #ffc; }
+
+.stickynote .boxtitle
+{
+	border-bottom: 1px solid #dda;
+	padding-top: 0.7em;
+}
+
+.stickynote
+{
+	background-color: #ffc;
+	color: #000;
+	width: 300px;
+	padding: 0.5em;
+}
+
+/*** structures and paths ***/
+.structurebar { clear: both; }
+.structurebar .path { display: block; }
+.gallerybar .path { display: block; }
+
+.navigation span
+{
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+.navigation .right { text-align: right; }
+
+#tikimain .structurebar
+{
+	background: #79b;
+	padding: 0 1em;
+	line-height: normal;
+}
+
+#tikimain .structurebar a { color: #fff; }
+
+/* if you display the structure navigation links as icons, you can uncomment these lines by removing the space between the next 2 characters * /
+ #tikimain .structurebar .path {margin:0 0 0 20px; display:inline;}
+ #tikimain .structurebar .navigation span {width:20px; display:inline; clear:none;}
+/**/
+
+/*** boxes ***/
+.box { }
+
+
+/*** parsed elements ***/
+.tikibar { }
+.tikicache { }
+
+.tikibox
+{
+	padding: 3px 8px;
+	background: #79b;
+	color: #fff;
+	border: 2px ridge #e6e6fa;
+	margin: 0 4em;
+}
+
+.tikitable { background: #eee; }
+.tikitable td { border: 1px solid #fff; }
+
+/*** forms ***/
+#editpageform
+{
+	position: relative;
+	right: 18em;
+	left: 0;
+}
+
+form,input,textarea,select
+{
+	margin: 0;
+	padding: 0;
+}
+
+#tikimain form { font-size: 1.2em; }
+
+fieldset
+{
+	border: 0;
+	border-top: 1px solid #e6e6fa;
+}
+
+textarea { width: 100%; }
+
+input,select,textarea
+{
+	font-size: 1em;
+	font-family: verdana,tahoma,helvetica,arial,sans-serif;
+	border: 1px solid #999;
+	color: #334;
+	background-color:#fcfcfc;
+}
+
+input[type="text"],input[type="password"]
+{
+	border: 1px dotted #999;
+	border-bottom: 1px dashed #999;
+}
+
+legend
+{
+	padding: 0 10px;
+	letter-spacing: 3px;
+	color: #000;
+}
+
+.row
+{
+	clear: both;
+	padding-top: 5px;
+}
+
+.formfeedback
+{
+	display: block;
+	clear: both;
+}
+
+.formlabel
+{
+	color: #334;
+	float: left;
+	width: 25%;
+	text-align: right;
+}
+
+label { color: #000; }
+
+.forminput
+{
+	float: right;
+	width: 74%;
+}
+
+.formhelp
+{
+	cursor: help;
+	display: block;
+	clear: both;
+	line-height: normal;
+	font-size: 85%;
+}
+
+.module .forminput, .module .formlabel
+{
+	width: auto;
+	float: left;
+	clear: both;
+}
+
+.submit
+{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.submit input { padding: 0.2em 0.5em; background: #e3e3e3  url(images/bg/left_and_right.png)}
+
+.submit input:hover
+{
+	color: #fff;
+	background: #000 url(images/menus/midbluegradient.png);
+}
+
+.minifind { width: 200px; }
+
+.error,.errorpage .boxtitle
+{
+	color: #f00;
+	font-weight: bold;
+}
+
+.warning { color: #f80; }
+.success { color: #090; }
+
+/*** tables and lists ***/
+ul,ol,dl
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+dt
+{
+	font-weight: bold;
+	color: #334;
+}
+
+dd
+{
+	margin-left: 2em;
+	padding: 0;
+}
+
+.module ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.module li,ul.toc li { list-style: none; }
+
+ul.data
+{
+	padding: 0;
+	margin: 0;
+}
+
+ul.data li.item { list-style: none; }
+ul.data li.item .thumb { float: right; }
+
+ul.toc ul
+{
+	margin-left: 1.5em;
+	padding: 0;
+}
+
+.navbar { height: 2em; }
+
+.navbar ul
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.navbar ul li { float: left; }
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.data
+{
+	border: 2px solid #79b;
+}
+
+/* .odd,.even {background:#fff;} */
+.odd { background-image: url(images/bg/odd.png); }
+.even { background-image: url(images/bg/even.png); }
+.odd,.even { border-bottom: 1px solid #B0C4DE; }
+
+/* .even {border-bottom: 1px dashed #B0C4DE;} */
+.norecords { }
+
+.module ol
+{
+	margin: 0;
+	padding: 0;
+}
+
+.module ol li
+{
+	list-style: lower-roman;
+	margin: 0 0 0 2em;
+	padding: 0;
+}
+
+
+/*** navigation bars and tabs ***/
+.navbar
+{
+	text-align: right;
+	margin: 1em;
+}
+
+.navbar li
+{
+	border-top: 1px solid #B0C4DE;
+	border-bottom: 1px solid #B0C4DE;
+	height:2em;
+	list-style:none;
+}
+
+.navbar img {vertical-align:middle;}
+
+.navbar a
+{
+	font-weight: normal;
+	text-align: center;
+	padding: 0.1em 0.3em 0 0.3em;
+	margin-top:0.3em;
+	border-top-width: 0;
+	border-top-style: solid;
+	border-top-color: transparent;
+}
+
+.navbar a:hover
+{
+	margin-top:0;
+	border: 0;
+	border-top: 0.3em solid #79b;
+}
+
+.navbar a.selected { border-top: 0.3em solid #b0c4de; }
+.pagination { }
+
+/*** bottom bar ***/
+.babelfish { }

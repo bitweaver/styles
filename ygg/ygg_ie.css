@@ -1,0 +1,13 @@
+table { width:auto; }
+
+.odd {background:none;background-color:#f5f5f5}
+.even {background:none;background-color:#f0f8ff}
+
+.hor a.head		{background: none;}
+.hor a.head:hover	{background: none;} 
+.hor .current a.head	{background: none;}
+.hor li ul				{padding:0.3em; background:transparent url( images/lightsteelblue.png ) top left repeat; border:1px solid #999;}
+
+.tabpage {width:85%;}
+.help {background:none}
+.boxcontent {color:#334;}
