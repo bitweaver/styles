@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/chemokine/kernel/module.tpl,v 1.1.2.1 2005/10/22 23:33:48 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/chemokine/kernel/module.tpl,v 1.1.2.2 2005/12/18 19:58:52 squareing Exp $ *}
 {strip}
 <div class="module box {$module_name|replace:"_":"-"}">
 	{if $module_title}
@@ -11,7 +11,7 @@
 						{biticon ipackage=liberty iname="move_down" iexplain="down"}</a>
 					<a title="{tr}Move module to opposite side{/tr}" href="{$current_location|escape}{$mpchar}mc_move={$module_name|escape}">
 						{biticon ipackage=liberty iname="move_left_right" iexplain="move left right"}</a>
-					<a title="{tr}Unassign this module{/tr}" href="{$current_location|escape}{$mpchar}mc_unassign={$module_name|escape}" onclick="return confirmTheLink(this,'{tr}Are you sure you want to unassign this module?{/tr}')">
+					<a title="{tr}Unassign this module{/tr}" href="{$current_location|escape}{$mpchar}mc_unassign={$module_name|escape}" onclick="return confirm('{tr}Are you sure you want to unassign this module?{/tr}')">
 						{biticon ipackage=liberty iname="delete_small" iexplain="remove"}</a>
 				</div>
 			{/if}
