@@ -1,0 +1,82 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/layout.css,v 1.2 2005/12/18 22:32:28 squareing Exp $ */
+/**
+ * @author   helge_karl <helge_karl@yahoo.com>
+ * @version  $Revision: 1.2 $
+ * @theme    ygg
+ * @license  LGPL
+ */
+@media screen,projection,tv {}
+
+/* layout */
+
+html
+{	background:transparent url(images/bg/bodybg.gif) repeat;
+}
+
+
+#bitbody	{background:white;margin:20px;}
+#bitbottom
+{
+	color:#444;
+	margin:0;
+	padding: 0.1em 2em;
+	display: block;
+	text-align:center;
+	background-image:url( images/menus/midbluegradient.png);
+	border-top:1px dotted #79b;
+
+	
+}
+
+#bitbottom a {color:#334;}
+
+#bittop 	
+{
+	margin:0;
+	border:none;
+	padding:2px;
+	background-image: url( http://folk.uio.no/hkhajnal/Forum_Romanum_panorama.png);
+background-image: url(images/bg/bittop.jpg);
+	background-position:center top;
+}
+#bittop div {text-align:right;color:#ccc;padding:0;font-size:8pt;right:0;left:auto;}
+#bittop h3 
+{
+	background:url(images/logo.png) no-repeat 10px 0px;
+	padding:52px 0 7px 84px;
+}
+
+#bitleft,#bitright 
+{
+	width:170px;
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align:top;
+	background-image:url(images/bg/left_and_right.png); 
+	background-repeat:repeat;
+	background-position: center center;
+}
+#bitleft {border-right:1px dotted #79b;}
+#bitright {border-left:1px dotted #79b;}
+			
+#bitmain
+{ 
+	margin:0;
+	padding: 12px 24px 24px;
+	clear:both; 
+	vertical-align:top;
+}
+
+#bittopbar
+{
+	margin:0;
+	font-size:0.8em;
+	background-color:white;
+	background-image:url( images/menus/midbluegradient.png );
+	background-repeat: repeat;
+	background-position: left top;
+	border-bottom:1px dotted #79b;
+	border-top:1px dotted #79b;
+
+}

@@ -1,0 +1,80 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/modules.css,v 1.2 2005/12/18 22:32:28 squareing Exp $ */
+/**
+ * @author   helge_karl <helge_karl@yahoo.com>
+ * @version  $Revision: 1.2 $
+ * @theme    ygg
+ * @license  LGPL
+ */
+@media screen,projection,tv {}
+
+.module.box { 
+	color: #000;
+	margin:0;
+	border-bottom:1px dotted #b0c4de;
+	font-size:0.9em;
+}
+.module.box .boxtitle {
+	color: #334;
+	font-weight:bolder;
+	padding:0 10px;
+	margin:0;
+	font-size:1.1em;
+	text-align:left;
+	line-height:26px;
+}
+.module.box .boxtitle a {
+	color: #334;
+	font-weight:bolder;
+}
+
+.module.box .boxtitle a:hover {text-decoration:underline;}
+
+.boxcontent { 
+	padding:0 10px;
+	border:none;
+	margin:0;
+}
+
+#clock.boxcontent {padding:0;}
+#pkg_search_box.boxcontent .row.submit {margin-top:-23px;float:right}
+.module.package-menu .boxcontent {padding:0;margin:0;}
+.packages-links .boxcontent {padding:0;margin:0;}
+.package-menu .boxcontent .menu a {font-weight:600;padding:3px 12px 1px;margin-left:0;}
+.package-menu .boxcontent .menu a.head
+{
+	padding-left: 18px;
+	background-image: url(images/arrows/rarr_7x7.gif);
+	background-repeat: no-repeat;
+	background-position: 8px 5px;
+
+}
+.package-menu .boxcontent .menu ul
+{
+	margin: 0 12px;
+	border: 1px dotted #666;
+	background-image: url(images/bg/left_and_right_ul.gif);
+}
+.package-menu .boxcontent .menu ul li:hover
+{
+	background-color: transparent;
+	background-image: url(images/menus/midbluegradient.png);
+	background-repeat: repeat;
+	background-position: left center;
+}
+
+.package-menu .boxcontent .menu ul li a {font-weight:600;padding:3px 12px 1px 12px;margin-left:0;}
+.packages-links .boxcontent .menu li a {font-weight:600;padding:2px 12px;margin-left:0px;}
+
+.module .boxcontent a { color: #c30; }
+.module .boxcontent a:hover {background-image:url(images/menus/midbluegradient.png);color:#334;}
+.package-menu .boxcontent .menu ul li a
+{
+	background-color: transparent;
+	background-image: url(images/bg/ul_expanded_li_bg.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.module .boxcontent .menu {margin:0;padding:0;}
+/*	#package_menu ul li {list-style-type:square;}	*/
+
+.module { }

@@ -1,0 +1,30 @@
+/*** calendar ***/
+
+
+/* simple calendar styling to avaoid cumbersome maintenance of calendar css section */
+/* any of these settings can be overridden in your theme css file */
+/* hopefully we can select calendar styling options for the admin area soon */
+.caltable th,.caltable td		{vertical-align:top;}
+.caltable td				{height:6em;}
+.caltable .current			{border:2px solid #79b; background:#b0c4de;}/*LightSteelBlue*/
+.caloptions div 			{border-width:0 0 2px 0; border-style:solid; padding:3px 0 0 0;}
+.calitems div a				{border-width:0 0 2px 0; border-style:solid; display:block; padding:3px 2px;}
+.calitems .calnumber a			{border-width:0; border-bottom:1px solid #fff; padding:0;color:#334;}
+
+/* now for the individual content type settings */
+.caloptions .calbitarticle	,.calitems .calbitarticle 	a	{border-bottom-color:#f80;}
+.caloptions .calbitblog		,.calitems .calbitblog		a	{border-bottom-color:#6495ed;}
+.caloptions .calbitblogpost	,.calitems .calbitblogpost 	a	{border-bottom-color:#6495ed;}
+.caloptions .calbitcomment	,.calitems .calbitcomment 	a	{border-bottom-color:#a5a;}
+.caloptions .calbituser		,.calitems .calbituser		a	{border-bottom-color:#ffe777;}
+.caloptions .calfisheyegallery	,.calitems .calfisheyegallery	a	{border-bottom-color:#acf;}
+.caloptions .calfisheyeimage	,.calitems .calfisheyeimage	a	{border-bottom-color:#7af;}
+.caloptions .calpigeonholes	,.calitems .calpigeonholes	a	{border-bottom-color:#f99;}
+.caloptions .caltikisticky	,.calitems .caltikisticky	a	{border-bottom-color:#ff9;}
+.caloptions .calbitbook		,.calitems .calbitbook		a	{border-bottom-color:#777;}
+.caloptions .calbitpage		,.calitems .calbitpage		a	{border-bottom-color:#2e8b57;}
+
+.calendar.popup.box 			{background-color:white;color:#9acd32;}/*yellowgreen*/
+.calday .boxcontent 			{}
+.calday .username 			{}
+.calday.notmonth			{background:none;}

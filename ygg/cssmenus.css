@@ -8,14 +8,14 @@
 .suckerfish ul li	{list-style:square; margin:0; padding:0;}
 .suckerfish ul		{margin:0 0 0 1.5em;}
 .suckerfish ul ul	{margin:0 0 1em 1em;}
-.suckerfish ul li	{line-height:1em; color:#666;}
+.suckerfish ul li	{line-height:normal; color:#666;}
 .suckerfish ul li a	{padding:0.2em 0;}
-.suckerfish ul li a:hover	{background:#eee; color:#c40;}
+.suckerfish ul li a:hover	{background:#579; color:#fff;}
 
 /* apply seperate menu style for menus in middle of page - like admin screen */
 #bitmain .menu			{font-size:0.8em;}
 #bitmain .menu li		{background:#f5f5f5; border:1px solid #ccc; line-height:2.4em; padding:0em; margin-bottom:-1px;}
-#bitmain .menu a:hover	{background:#579; color:#fff;}
+#bitmain .menu a:hover	{background:#ddd url(images/lightsteelblue.png) repeat top left; color:#334;}
 
 /* tikiwiki nexus menus */
 .tikiwiki div div		{margin-left:1em;}
@@ -34,21 +34,71 @@
 .hor li.m-admin  ul	ul	{margin:-24px 0 0 -13em;}
 
 /* now comes the dropdown style - modify away! */
-.hor a					{margin:0; padding:0.1em 0.7em 0.1em 10px;}
+.hor a					{margin:0; padding:0.4em 0.4em 0.4em 13px;color:#000;}
 .hor a:hover			{color:#000;}
 .hor li li a			{background:transparent;}
 .hor li li a:hover		{background:#579; color:#fff;}
 .hor .current a			{}
 .hor .current li a		{}
 .hor ul a				{padding:0 5px; line-height:20px;}
-.hor ul a.head			{background:transparent url( images/menus/head.gif ) right no-repeat;}
-.hor ul a.head:hover	{background:#579 url( images/menus/head_h.gif ) right no-repeat;}
-.hor li					{background:transparent url( images/menus/head.gif ) left no-repeat;}
+.hor ul a.head
+{
+	background-image: url(images/arrows/rarr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.hor .current ul a.head
+{
+	background-image: url(images/arrows/filled_rarr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.hor ul a.head:hover
+{
+	background-color: #579;
+	background-image: url(images/arrows/darr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.hor .current ul a.head:hover
+{
+	background-color: #579;
+	background-image: url(images/arrows/filled_darr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.hor li
+{
+	background-image: url(images/arrows/rarr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: 3px;
+}
+.hor li.current
+{
+	background-image: url(images/arrows/filled_rarr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: 3px;
+}
 .hor li:hover,
-.hor li.ieHover			{background:transparent url( images/menus/head_h.gif ) left no-repeat;}
+.hor li.ieHover
+{
+	background-image: url(images/arrows/darr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: 3px;
+}
+.hor li.current:hover,
+.hor li.current.ieHover
+{
+	background-image: url(images/arrows/filled_darr_5x5.gif);
+	background-repeat: no-repeat;
+	background-position: 3px;
+}
 .hor li li:hover,
 .hor li li.ieHover		{background:#bcd;}
+
 .hor li ul				{padding:0.3em; background:transparent url( images/menus/alpha.png ) top left repeat; border:1px solid #999;}
+.hor li.current ul				{background:transparent url( images/menus/alphablue.png ) top left repeat; border:1px solid #999;}
+
 
 /* css driven dropdown menus - vertical */
 /* layout first */
@@ -80,7 +130,9 @@
 .ver li.ieHover			{}
 .ver li li:hover,
 .ver li li.ieHover		{background:#bcd;}
-.ver li ul				{background:transparent url( images/menus/alpha.png ) top left repeat;}
+
+.ver li ul				{padding:0.3em; background:transparent url( images/menus/alpha.png ) top left repeat; border:1px solid #999;}
+.ver li.current ul				{background:transparent url( images/menus/alphablue.png ) top left repeat; border:1px solid #999;}
 
 /* z-index */
 #nav,#nav a,#nav li ul	{z-index:2000;}
