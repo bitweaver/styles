@@ -89,7 +89,7 @@ textarea					{width:98%;}
 html>body .forminput		{float:none; width:auto; overflow:visible; margin:2px 0 0 26%;}
 .formhelp					{cursor:help; line-height:normal; font-size:0.9em; color:#999;}
 .submit						{text-align:center; padding-bottom:10px; padding-top:20px;}
-.minifind					{font-size:0.9em; width:200px; clear:both;}
+.minifind					{font-size:0.9em; clear:both;}
 .minifind legend			{display:none;}
 .minifind fieldset			{border:0; padding:10px;}
 .success					{color:#090;}
