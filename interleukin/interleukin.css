@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.4 2005/12/02 11:31:22 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.1.1.1.2.5 2005/12/26 10:14:02 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
  * @version  $ Revision: 1.6 $
@@ -76,6 +76,8 @@ td.actionicon {text-align:right;}
 .stickies textarea,.stickies input[type='text'] {background:#ffc;}
 .stickynote .boxtitle {border-bottom: 1px solid #dda;}
 .stickynote {background-color:#ffc;  color:#000;  width: 300px;  padding: 3px;}
+			/*** articles ***/
+.articles .content div.image	{float:left; padding:0 1em 0 0;}
 			/*** structures and paths ***/
 .structurebar {clear:both;}
 .structurebar .path {display:block;}
