@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/ygg.css,v 1.2 2005/12/18 22:32:28 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/ygg.css,v 1.3 2005/12/26 12:26:32 squareing Exp $ */
 
 /**
  * @author   Helge_Karl <helge_karl@yahoo.com>
@@ -386,3 +386,6 @@ table
 
 /*** bottom bar ***/
 .babelfish { }
+
+/*** articles ***/
+.articles .content div.image	{float:left; padding:0 1em 0 0;}
