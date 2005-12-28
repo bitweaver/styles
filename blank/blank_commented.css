@@ -41,7 +41,6 @@ div.admin {}                 /* used instead of display on admin pages */
   div.header h2 {}           /* description of the page you're on */
   div.date {}                /* just after h2 or h1 if there is no h2 */
  div.body {}                 /* contains all textual data of the page including .date, .content and .footer */
-  div.introduction {}        /* used for pages that allow an introduction to the main part of the page */
   div.content {}             /* contains the actual text of the page */
   div.footer {}              /* additional information regarding the particular page */
    .actionicon {}            /* action items available for particular page - used in table.data td as well */
