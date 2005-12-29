@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.2 2005/12/05 23:54:19 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.3 2005/12/29 18:28:02 squareing Exp $ */
 /******************************************************************************************
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -36,14 +36,6 @@ a:hover {
 	border-bottom: 4px solid #dedede;
 }
 .body {}
-.introduction {
-	width: 100%;
-}
-.introductionimage {
-	float: right;
-	padding: 5px;
-	margin: 5px;
-}
 .content {
 	width: 100%;
 }

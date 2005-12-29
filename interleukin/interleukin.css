@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.4 2005/12/26 12:26:32 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.5 2005/12/29 18:28:03 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
  * @version  $ Revision: 1.6 $
@@ -45,8 +45,6 @@ h3 {font-size:1.2em;}
  .preview {}
 .body {margin:0em 1em 1em 0;}
 html>body .body {margin-top:2em;}
- .introduction {}
-  .introductionimage {}
  .content {font-size:1.2em;}
   .storage {margin:0 0 1em 1em; border-left:1px dashed #fff;}
   .storage .item {padding:3px 5px;}

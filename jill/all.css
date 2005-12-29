@@ -147,7 +147,7 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 
 /* package specific settings */
 /* articles */
-.introduction .image	{float:right; margin:3px 0px 3px 10px;}
+.articles .content div.image	{float:right; margin:0.5em 0 0.5em 1emx;}
 
 /* fisheye and themes listing */
 .themes ul.data li.item,

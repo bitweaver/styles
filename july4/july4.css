@@ -13,8 +13,8 @@
 		title color:		#6c6454;
 		faint text color:	#999;
 		wikicell bg:		#e8e5de;
-		odd:					#faf9f6;
-		even:					#e8e5de;
+		odd:				#faf9f6;
+		even:				#e8e5de;
 		border-colour:		#aea696;
 		link-colour:		#a00;
 		link-hover:			#f80;
@@ -48,20 +48,6 @@
 .admin .body {
 	background: transparent;
 	color: #000000;
-}
-
-.introduction {
-	width: 100%;
-	padding-bottom: 5px;
-	border-top: 1px dashed #aea696;
-	text-align: justify;
-}
-
-.introductionimage {
-	float: right;
-	border: 1px solid #aea696;
-	padding: 5px;
-	margin: 5px;
 }
 
 .content {
