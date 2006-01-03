@@ -23,7 +23,7 @@ a img			{border:0;}
 .content		{text-align:justify;}
 .storage		{float:right; padding:3px; margin:0 0 5px 5px; text-align:center; background:#f5f5f5; border:1px solid #ddd;}
 .storage .item	{padding:2px;}
-.footer			{font-size:0.9em; background:#f0f0f0; border:1px solid #e0e0e0; margin-bottom:10px; padding:1px 5px;}
+.footer			{clear:both; font-size:0.9em; background:#f0f0f0; border:1px solid #e0e0e0; margin-bottom:10px; padding:1px 5px;}
 .post			{clear:both;}
 .comment		{border-top:1px solid #fea; color:#666;}
 .comment .post	{line-height:normal; border-left:1px dashed #999; padding-left:1em;}
@@ -34,10 +34,10 @@ a img			{border:0;}
 .actionicon		{text-align:right;}
 .clear			{clear:both;}
 			/* parsed elements */
-.bitbox		{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
+.bitbox			{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
 .bittable		{}
 .bittable td	{border:1px solid #aaa; padding:2px;}
-.bitbar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
+.bitbar			{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
 .maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
 .maketoc h3		{padding:0; border-bottom:1px solid #999;}
 .maketoc a		{color:#666;}
@@ -57,6 +57,8 @@ a img			{border:0;}
 .icon					{vertical-align:middle; border:0;}
 .thumb					{padding:2px; margin:2px; background:#ddd; border:1px solid #b82;}
 .thumb:hover			{background:#fff; border:1px solid #a40;}
+			/* some articles stuff */
+.articles .content div.image	{float:left; padding:0 1em 0.5em 0;}
 			/* some fisheye stuff */
 .fisheye .boxcontent				{text-align:center;}
 .fisheye .box h1,.fisheye .box h2	{border:0;}
