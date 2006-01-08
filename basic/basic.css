@@ -1,5 +1,5 @@
 @import url( ../../base.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.1.1.1.2.2 2005/12/28 11:16:21 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.1.1.1.2.3 2006/01/08 02:17:10 wolff_borg Exp $ */
 /******************************************************************************************
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -32,8 +32,12 @@ a:hover {
 	border: 1px solid #dedede;
 }
 .header {
-	padding: 2px;
+	margin: 2px;
 	border-bottom: 4px solid #dedede;
+}
+.header h2 {
+	font-size: 12px;
+	font-weight: normal;
 }
 .body {}
 .content {
@@ -177,3 +181,11 @@ a:hover {
 .cached {
 	font-size: 10px;
 }
+/* tocs */
+.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{color:#666;}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
+
