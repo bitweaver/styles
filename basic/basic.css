@@ -1,7 +1,7 @@
 @import url( ../../base.css );
 
 @import url( print.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.1.1.1.2.4 2006/01/08 02:23:28 wolff_borg Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.1.1.1.2.5 2006/01/08 10:03:15 wolff_borg Exp $ */
 /******************************************************************************************
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -22,6 +22,9 @@
 }
 body {
 	font-family: Arial, Verdana, Tahoma;
+	font-size: 0.8em;
+}
+html>body {
 	font-size: 12px;
 }
 a {
