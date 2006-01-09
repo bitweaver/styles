@@ -150,8 +150,10 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 .articles .content div.image	{float:right; margin:0.5em 0 0.5em 1emx;}
 
 /* fisheye and themes listing */
+.articles ul.data li.item,
 .themes ul.data li.item,
 .fisheye ul.data li.item		{border:1px solid #ddd; clear:both; margin:0.5em 0px 0.5em 200px; background:#eee;}
+.articles ul.data li.item .thumb,
 .themes ul.data li.item .thumb,
 .fisheye ul.data li.item .thumb	{float:left; margin:-35px 0 0 -200px;}
 .fisheye .body .image			{margin:0 -1em;}
