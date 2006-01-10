@@ -93,4 +93,12 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 
 /* multi file upload */
 #fileslist div span	{border:1px solid #ccc; background:#eee; color:#900; display:block; width:75%; float:left; margin:0 3px 0 0; padding:0 0 0 3px;}
+
+/* dynamic tree styling */
+.DynamicTree .text			{padding:1px 10px;}
+.DynamicTree .text-active	{background:#fed;  padding:0px 9px; border:1px solid #ccc;}
+.DynamicTree .tree-top		{line-height:30px; color:#900; font-weight:bold;}
+.DynamicTree .tree-wrapper1	{background:#f8f8f8; padding:1em; margin:1em; border:2px solid ; border-color:#eee #ccc #bbb #ddd;}
+.DynamicTree .tree-tooltip	{padding:3px 0 0 5px; font-weight:bold;}
+.DynamicTree .navbar a		{padding:10px;}
 }
