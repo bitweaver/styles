@@ -101,4 +101,5 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 .DynamicTree .tree-wrapper1	{background:#f8f8f8; padding:1em; margin:1em; border:2px solid ; border-color:#eee #ccc #bbb #ddd;}
 .DynamicTree .tree-tooltip	{padding:3px 0 0 5px; font-weight:bold;}
 .DynamicTree .navbar a		{padding:10px;}
+.DynamicTree span .move		{padding:0 5px; margin:0 20px; border:1px solid #ccc; background:#eee;}
 }
