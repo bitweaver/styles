@@ -200,6 +200,8 @@ a img:hover {}
 	padding-right: 5px;
 }
 .body {}
+.introduction {}
+.introductionimage {}
 .content {
 	padding: 10px;
 	border-left: 2px solid #ccc;

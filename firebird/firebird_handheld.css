@@ -1,0 +1,13 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_handheld.css,v 1.1.1.1.2.1 2005/09/18 13:22:14 lsces Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
+ * @version  $Revision: 1.1.1.1.2.1 $
+ * @theme    native
+ * @license  LGPL
+ */
+@media handheld {
+body			{background:#fff; font-family:sans-serif;}
+#bitbar		{display:none;}
+#bittopbarwrap	{display:none;}
+#bittop		{display:none;}
+}

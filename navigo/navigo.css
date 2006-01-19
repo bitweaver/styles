@@ -1,9 +1,4 @@
 @import url( ../../base.css );
-/*@import url( ../blank/showdiv.css );*/
-/*@import url( ../blank/showsitelayout.css );*/
-/*@import url( ../blank/showpagelayout.css );*/
-/*@import url( ../blank/showstructure.css );*/
-
 /*******************************************************************************************/
 /*** global settings ***/
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
@@ -183,6 +178,8 @@ a img:hover {}
 	border-top: 5px solid #eee;
 	border-bottom: 5px solid #eee;
 }
+.introduction {}
+.introductionimage {}
 .content {}
 .footer {
 	text-align: left;
