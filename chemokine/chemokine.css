@@ -4,7 +4,7 @@
 body		{color:#666; font-size:10px; margin:0; padding:0em; background:#eee; line-height:1.7em;}
 th			{border-bottom:1px solid #ccc;}
 hr			{}
-small		{}
+small		{font-size:0.9em;}
 a			{color:#f93; text-decoration:none;}
 a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
 a:hover		{text-decoration:underline;}
