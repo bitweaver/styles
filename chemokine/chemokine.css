@@ -39,12 +39,12 @@ h3			{color:#999;}
 #bittop h1,
 #bittop h3	{padding:0 2em; margin:0; text-align:right; letter-spacing:3px;}
 #bittop h3	{font-weight:normal;}
-.header h1	{color:#8ad; margin:0 0 0 -2em;  padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em;
+.header h1	{position:relative; left:-2em; color:#8ad;  padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em;
 			background-color:#f9f9f9; background-image:url( images/hh1.gif ); background-position:4px; background-repeat:no-repeat;}
 .header h2	{margin:0; letter-spacing:0.2em; font-weight:normal; color:#666;}
 .module h3	{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px;
 			background-color:#f9f9f9; background-image:url( images/mh3.gif ); background-position:4px; background-repeat:no-repeat;}
-.module h3	{margin:0 0 0 -2em;}
+.module h3	{position:relative; left:-2em;}
 
 /*** common classes ***/
 .date				{text-align:right; color:#ccc;}
