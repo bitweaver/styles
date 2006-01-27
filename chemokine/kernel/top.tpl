@@ -16,7 +16,7 @@
 		{/if}
 	</div>
 
-	<h1>{$siteTitle}</h1>
-	<h3>{$site_slogan}</h3>
+	<h1>{$gBitSystemPrefs.siteTitle}</h1>
+	<h3>{$gBitSystemPrefs.site_slogan}</h3>
 </div>
 {/strip}
