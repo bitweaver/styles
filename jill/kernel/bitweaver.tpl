@@ -21,6 +21,7 @@
 						<div class="error">{$pageError}</div>
 					{/if}
 					{include file=$mid}
+					<div class="clear"></div>
 				</div><!-- end #bitmain -->
 
 				{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
