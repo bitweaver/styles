@@ -2,7 +2,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%" height="58">
 <tr>
 	<td colspan="0" rowspan="0" bgcolor="#FFFFFF" height="58" width="180" style="vertical-align: bottom;background-image:url('{$smarty.const.THEMES_PKG_URL}styles/july4/images/fade_flag-h.gif');background-repeat:no-repeat;background-position:right;"></td>
-	<td bgcolor="#b40019" align="left" style="vertical-align: bottom;color: #ffffff;padding:3px;"><h1 style="vertical-align: bottom;color: #ffffff;">{$siteTitle|default:"bitweaver"}</h1>
+	<td bgcolor="#b40019" align="left" style="vertical-align: bottom;color: #ffffff;padding:3px;"><h1 style="vertical-align: bottom;color: #ffffff;">{$gBitSystemPrefs.siteTitle|default:"bitweaver"}</h1>
 			<h2 style="vertical-align: bottom;color: #ffffff;font-size:small;">{$gBitSystemPrefs.site_slogan}</h2>
 
 	</td>

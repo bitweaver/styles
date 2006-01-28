@@ -34,7 +34,7 @@
 			{/form}
 		{/if}
 	</div>
-	<h1>{$siteTitle|default:"Your Site"}</h1>
+	<h1>{$gBitSystemPrefs.siteTitle|default:"Your Site"}</h1>
 </div>
 
 {if ( $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules ) or ( $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules ) }
