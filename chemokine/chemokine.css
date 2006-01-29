@@ -19,7 +19,7 @@ a:hover		{text-decoration:underline;}
 #bitright		{width:18em; position:absolute; z-index:0; background:#fff; border:1px solid #ccc; overflow:visible;}
 #bitleft		{left:1em;}
 #bitright		{right:1em;}
-#bitmain		{padding:1em; background:#fff; border:1px solid #ccc;}
+#bitmain		{padding:10px; background:#fff; border:1px solid #ccc;}
 #bitbottom		{text-align:center; color:#ccc; margin-top:2em; clear:both;}
 #bitbottom a	{color:#ccc; background:transparent;}
 #bitprint		{}
@@ -47,12 +47,13 @@ h3			{color:#999;}
 .module h3	{position:relative; left:-2em;}
 
 /*** common classes ***/
-.date				{text-align:right; color:#ccc;}
+.date				{color:#ccc;}
 .body				{clear:right}
 .post				{margin:0 0 2em 0;}
 .content			{}
 .footer				{}
-.floaticon .icon	{padding:1px 2px;}
+#bitmain>div>.floaticon	{position:relative; top:-34px; background:#fff; border:solid #ccc; border-width:1px 1px 0 1px; padding:0; margin:0;}
+.floaticon .icon	{padding:1px 2px; vertical-align:center;}
 .maketoc			{padding:5px; margin:5px 0; border:1px dotted #aaa; background:#f5f5f5;}
 
 /*** boxes ***/
