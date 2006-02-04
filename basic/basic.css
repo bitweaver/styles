@@ -1,7 +1,7 @@
 @import url( ../../base.css );
 
 @import url( print.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.4 2006/01/10 21:16:45 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.5 2006/02/04 11:20:27 squareing Exp $ */
 /******************************************************************************************
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -33,7 +33,7 @@ a {
 	border: 1px solid #fff;
 }
 a:hover {
-	background: #e9ecef;
+	background-color: #e9ecef;
 	border: 1px solid #dedede;
 }
 .header {
