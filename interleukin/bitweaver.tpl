@@ -26,7 +26,7 @@
 					{if $rememberme ne 'disabled'}
 						<input type="hidden" name="rme" id="rme" value="on" />
 					{/if}
-					{if $gBitSystem->isFeatureActive( 'allowRegister' )}
+					{if $gBitSystem->isFeatureActive( 'allow_register' )}
 						<div class="spacer"></div>
 						<a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}register{/tr}</a>
 					{/if}
@@ -34,7 +34,7 @@
 			{/form}
 		{/if}
 	</div>
-	<h1>{$gBitSystemPrefs.siteTitle|default:"Your Site"}</h1>
+	<h1>{$gBitSystemPrefs.site_title|default:"Your Site"}</h1>
 </div>
 
 {if ( $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules ) or ( $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules ) }

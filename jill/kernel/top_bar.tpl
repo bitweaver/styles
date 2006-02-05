@@ -9,7 +9,7 @@
 			{/if}
 
 			<li class="m-home">
-				<a class="head" accesskey="h" href="{$smarty.const.BIT_ROOT_URL}">{$gBitSystemPrefs.site_menu_title|default:$gBitSystemPrefs.siteTitle}</a>
+				<a class="head" accesskey="h" href="{$smarty.const.BIT_ROOT_URL}">{$gBitSystemPrefs.site_menu_title|default:$gBitSystemPrefs.site_title}</a>
 				{include file="bitpackage:kernel/menu_global.tpl"}
 			</li>
 
@@ -55,7 +55,7 @@
 			{displayname} &bull; <a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
 		{else}
 			<a href="{$smarty.const.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
-			{if $gBitSystem->isFeatureActive( 'allowRegister' )}
+			{if $gBitSystem->isFeatureActive( 'allow_register' )}
 				&nbsp;&bull; <a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}register{/tr}</a>
 			{/if}
 		{/if}
