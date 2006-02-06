@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/fifty_percent/mod_application_menu.tpl,v 1.3 2005/07/17 17:36:36 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/fifty_percent/mod_application_menu.tpl,v 1.4 2006/02/06 22:56:49 squareing Exp $ *}
 {strip}
 
 {bitmodule title="$moduleTitle" name="application_menu"}
@@ -27,7 +27,7 @@
 {/foreach}
 
 {* =========================== User menu =========================== *}
-{if $gBitSystem->isFeatureActive( 'feature_usermenu' )and $usr_user_menus}
+{if $gBitSystem->isFeatureActive( 'usermenu' )and $usr_user_menus}
 <div class="menu usrmenu">
 	{if $gBitSystem->isFeatureActive( 'feature_menusfolderstyle' )}
 		<a class="head" href="javascript:icntoggle('usrmenu');">{biticon ipackage=liberty iname="collapsed" id="usrmenu" iexplain="folder"}
