@@ -1,6 +1,6 @@
 @import url( ../../base.css );
 @import url( print.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.6 2006/02/07 09:47:30 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.7 2006/02/07 09:53:34 squareing Exp $ */
 /******************************************************************************************
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -55,7 +55,9 @@ a:hover			{color:#900;}
 .even	{}
 
 /*** forms ***/
+.row		{padding:0 0 1em 0;}
 .formlabel	{font-weight:bold;}
+.formhelp	{font-size:0.8em; color:#066;}
 
 /*** find bar ***/
 .minifind			{background:#e9ecef; border:1px solid #dedede; margin:2px 0; text-align:center; padding:0.5em; margin:0.5em auto;}
