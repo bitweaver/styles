@@ -1,192 +1,92 @@
 @import url( ../../base.css );
-
 @import url( print.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.5 2006/02/04 11:20:27 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.6 2006/02/07 09:47:30 squareing Exp $ */
 /******************************************************************************************
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
- * - view the files included in the theme blank. also this has a file called 'readme.css'.
+ * - view the files included in the theme 'blank'. also this has a file called 'readme.css'.
+ * - the one line style is used to fit more in one screen for an easy overview.
+ *   if you don't like this, you can use this substitution in vim to get everything into a multi-line layout:
+ *   %s,\([{;]\)\s*,\1\r\t,g
  ******************************************************************************************/
-/*** common layout ***/
-#bitleft	{ padding: 0 10px; }
-#bitright	{ padding: 0 10px; }
-#bittopbar {
-	background: #e9ecef;
-	padding: 2px;
-	margin-bottom: 5px;
-	border-top: 1px solid #dedede;
-	border-bottom: 1px solid #dedede;
-}
-#bittopbar a {
-	border:0;
-}
-body {
-	font-family: Arial, Verdana, Tahoma;
-	font-size: 0.8em;
-}
-html>body {
-	font-size: 12px;
-}
-a {
-	color: #009;
-	text-decoration: none;
-	border: 1px solid #fff;
-}
-a:hover {
-	background-color: #e9ecef;
-	border: 1px solid #dedede;
-}
-.header {
-	margin: 2px;
-	border-bottom: 4px solid #dedede;
-}
-.header h2 {
-	font-size: 12px;
-	font-weight: normal;
-}
-.body {}
-.content {
-	width: 100%;
-}
-.footer {
-	color: #999;
-	min-height: 17px;
-}
-.actionicon {
-	float: right;
-}
-.storage {
-	border: 1px solid #dedede;
-	background: #e9ecef;
-}
-.storage .item {
-	padding: 3px;
-}
-.storage a {
-	border: 0;
-}
-/******************************************************************************************/
+/*** layout ***/
+#bitleft		{padding:0 10px;}
+#bitright		{padding:0 10px;}
+#bittopbar		{background:#e9ecef; padding:2px; margin-bottom:5px; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
+#bittopbar a	{border:0;}
+body			{font-family:Arial, Verdana, Tahoma; font-size:0.8em;}
+html>body		{font-size:12px;}
+.header			{margin:2px; border-bottom:4px solid #dedede;}
+.header h2		{font-size:12px; font-weight:normal;}
+.body			{}
+.content		{width:100%;}
+.footer			{color:#999; min-height:17px;}
+.actionicon		{float:right;}
+.storage		{border:1px solid #dedede; background:#e9ecef;}
+.storage .item	{padding:3px;}
+
+/*** links ***/
+a				{color:#009; text-decoration:none;}
+a:hover			{color:#900;}
+.navbar a,
+.menu a			{border:1px solid #fff; padding:3px 5px;}
+.navbar a:hover,
+.menu a:hover	{background-color:#e9ecef; border:1px solid #dedede;}
+
 /*** menus ***/
-.appmenu {
-	margin: 10px 0;
-}
-.menu .head {
-	display: block;
-	padding: 1px 5px;
-}
-.menu .item {
-	padding: 1px 0 0 1px;
-}
-/******************************************************************************************/
+.menu .icon	{vertical-align:middle;}
+#nav .head	{padding:1px 5px;}
+#nav .m-admin a	{margin:0 !important;}
+/* specify the width and positioning of 2nd level dropdowns as in admin menu */
+.hor li ul ul	{margin:-23px 0 0 9em;}
+
 /*** wiki ***/
 /* parsed wikiclasses */
 /* wiki -=...=- */
-.bitbox {
-	background-color: #e9ecef;
-	border: 1px solid #dedede;
-	padding: 5px;
-}
-.bitbar {
-	letter-spacing: 4px;
-	font-weight: bold;
-	background-color: #e9ecef;
-	border: 1px solid #dedede;
-	padding: 2px;
-}
-.bittable td {
-	border: 1px solid #dedede;
-}
-/******************************************************************************************/
-/*** data tables ***/
-/* submission panels */
-.panel {
-	border: 2px solid #dedede;
-}
-/* submission buttons in panels */
-.panelsubmitrow {
-	text-align: center;
-}
-/* any table displaying data */
-.data {
-	border: 2px solid #dedede;
-}
-/* alternating odd and even rows in tables */
-.odd {
-	background: #e9ecef;
-}
-.even {}
-/******************************************************************************************/
-/*** forms ***/
-.formlabel {
-	font-weight: bold;
-}
+.bitbox			{background-color:#e9ecef; border:1px solid #dedede; padding:5px;}
+.bitbar			{letter-spacing:4px; font-weight:bold; background-color:#e9ecef; border:1px solid #dedede; padding:2px;}
+.bittable td	{border:1px solid #dedede;}
 
-/* find bar */
-.minifind {
-	background: #e9ecef;
-	border: 1px solid #dedede;
-	margin: 2px 0;
-}
-				/* tabstyle */
-.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
-	top:3px;
-	font:12px normal verdana,arial,sans-serif;
-	margin:0 3px;
-	padding:3px 5px 1px 5px;
-	border:1px solid #ccc;
-	border-bottom:0;
-}
-.tabsystem .tabcontainer .tab-hover {
-	padding-top:2px;
-	border-top:2px solid #f90;
-	background: #e9ecef;
-}
-.tabsystem .tabcontainer .tab-active {
-	top:1px;
-	padding:2px 8px 4px 8px;
-	margin:0 0px;
-	border-top:2px solid #f90;
-	background:#fff;
-	color:#000;
-}
-.tabsystem .tabpage {
-	border:1px solid #ccc;
-	padding:1.5em;
-}
-/******************************************************************************************/
+/*** data tables ***/
+/* any table displaying data */
+.data	{border:2px solid #dedede;}
+/* alternating odd and even rows in tables */
+.odd	{background:#e9ecef;}
+.even	{}
+
+/*** forms ***/
+.formlabel	{font-weight:bold;}
+
+/*** find bar ***/
+.minifind			{background:#e9ecef; border:1px solid #dedede; margin:2px 0; text-align:center; padding:0.5em; margin:0.5em auto;}
+.minifind legend	{display:none;}
+.minifind fieldset	{border:none;}
+
+/*** tabstyle ***/
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-hover,
+.tabsystem .tabcontainer .tab-active	{top:3px; font:12px normal verdana,arial,sans-serif; margin:0 3px; padding:3px 5px 1px 5px; border:1px solid #ccc; border-bottom:0;}
+.tabsystem .tabcontainer .tab-hover		{padding-top:2px; border-top:2px solid #f90; background:#e9ecef;}
+.tabsystem .tabcontainer .tab-active	{top:1px; padding:2px 8px 4px 8px; margin:0 0px; border-top:2px solid #f90; background:#fff; color:#000;}
+.tabsystem .tabpage						{border:1px solid #ccc; padding:1.5em;}
+
 /*** navigation bars and tabs ***/
-.navbar {
-	margin: 5px 0;
-}
-.navbar a {
-	padding: 0 5px;
-}
-/* pagination at the bottom of pages with listings */
-.pagination {
-	margin: 10px 0;
-}
-/******************************************************************************************/
+.navbar		{margin:5px 0;}
+.navbar a	{padding:0 5px;}
+
+/*** pagination at the bottom of pages with listings ***/
+.pagination	{margin:10px 0;}
+
 /*** boxes ***/
-.box {
-	margin: 10px 0;
-}
-.boxtitle {
-	padding: 2px;
-	border: 1px solid #dedede;
-	background: #e9ecef;
-}
-.boxtitle a {
-	border: none;
-}
-.boxcontent {
-	padding: 2px;
-}
-/******************************************************************************************/
+.box		{margin:10px 0;}
+.boxtitle	{padding:2px; border:1px solid #dedede; background:#e9ecef;}
+.boxtitle a	{border:none;}
+.boxcontent	{padding:2px;}
+
 /*** miscellaneous ***/
-.cached {
-	font-size: 10px;
-}
-/* tocs */
+.cached		{font-size:10px;}
+
+/*** tocs ***/
 .maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
 .maketoc h3		{padding:0; border-bottom:1px solid #999;}
 .maketoc a		{color:#666;}
