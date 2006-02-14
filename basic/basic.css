@@ -1,14 +1,10 @@
 @import url( ../../base.css );
 @import url( print.css );
-/* $Header: /cvsroot/bitweaver/_bit_styles/basic/basic.css,v 1.7 2006/02/07 09:53:34 squareing Exp $ */
-/******************************************************************************************
+/*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
  * - view the files included in the theme 'blank'. also this has a file called 'readme.css'.
- * - the one line style is used to fit more in one screen for an easy overview.
- *   if you don't like this, you can use this substitution in vim to get everything into a multi-line layout:
- *   %s,\([{;]\)\s*,\1\r\t,g
- ******************************************************************************************/
+ */
 /*** layout ***/
 #bitleft		{padding:0 10px;}
 #bitright		{padding:0 10px;}
