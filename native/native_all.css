@@ -67,7 +67,7 @@ a img			{border:0;}
 .display .image .boxcontent			{overflow:auto;}
 			/* some stickies stuff */
 .stickies textarea,.stickies input[type="text"]	{background:#ff9;}
-.stickynote				{background-color:#ff9;  color:#000;  width:250px; height:250px; overflow:auto; padding:3px; margin:0 auto;}
+.stickynote				{background-color:#ff9;  color:#000;  width:250px; height:250px; overflow:auto; padding:3px; margin:5px;float:left;}
 .stickynote .boxtitle	{border-bottom: 1px solid #dd0;}
 			/* structures */
 .structurebar,.gallerybar				{clear:both;}
@@ -140,3 +140,5 @@ table.data			{border:1px solid #666; font-size:0.9em;}
 /* if you hide the icons from msie it goes nuts - use > hack */
 html>body #bitleft .package-menu .icon,
 html>body #bitright .package-menu .icon	{display:none;}
+
+.meta { float: left; width: 30%; }
