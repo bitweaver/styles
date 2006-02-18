@@ -44,7 +44,8 @@ h3			{color:#999;}
 .header h2	{margin:0; letter-spacing:0.2em; font-weight:normal; color:#666;}
 .module h3	{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px;
 			background-color:#f9f9f9; background-image:url( images/mh3.gif ); background-position:4px; background-repeat:no-repeat;}
-.module h3	{position:relative; left:-2em;}
+#bitright .module h3,
+#bitleft .module h3	{position:relative; left:-2em;}
 
 /*** common classes ***/
 .date				{color:#ccc;}
