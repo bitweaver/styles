@@ -40,7 +40,7 @@
 					</div><!-- end #bitright -->
 				{/if}
 
-				<div id="bitbottom">
+				<div id="bitbottom" class="bit-cols-{if $gBitSystem->isFeatureActive( 'right_column' ) && $r_modules && !$gHideModules}2{else}1{/if}">
 					{if $gBitSystem->isFeatureActive( 'bot_bar' )}
 						{include file="bitpackage:kernel/bot_bar.tpl"}
 					{/if}
