@@ -1,6 +1,6 @@
 @media screen,projection,tv {
 /* layout */
-html	{background:transparent url( images/top.png ) top left repeat-x !important;}
+html	{background:#fff url( images/top.png ) top left repeat-x !important;}
 body	{background:transparent url( images/full.png ) top left no-repeat !important;}
 
 #bitbody	{}
