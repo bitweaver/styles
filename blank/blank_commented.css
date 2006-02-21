@@ -116,3 +116,23 @@ div.module ol {}             /* any lists displayed in modules that generally re
 
                         /*** miscellaneous ***/
 .highlight {}                /* highlighting text - div, span or a */
+
+/*
+	if you are interested in using individually styled dropdown menus, try using this in your theme
+	the '!important' is required to override the existing settings
+*/
+.m-home,       .m-home ul,       .m-home li,       .m-home a		{background:#fff !important;}
+.m-admin,      .m-admin ul,      .m-admin li,      .m-admin a		{background:#eee !important;}
+.m-blogs,      .m-blogs ul,      .m-blogs li,      .m-blogs a		{background:#ddd !important;}
+.m-calendar,   .m-calendar ul,   .m-calendar li,   .m-calendar a	{background:#ccc !important;}
+.m-categories, .m-categories ul, .m-categories li, .m-categories a	{background:#aaa !important;}
+.m-contacts,   .m-contacts ul,   .m-contacts li,   .m-contacts a	{background:#999 !important;}
+.m-phpbb,      .m-phpbb ul,      .m-phpbb li,      .m-phpbb a		{background:#fce !important;}
+.m-fisheye,    .m-fisheye ul,    .m-fisheye li,    .m-fisheye a		{background:#fcb !important;}
+.m-users,      .m-users ul,      .m-users li,      .m-users a		{background:#fec !important;}
+.m-nexus,      .m-nexus ul,      .m-nexus li,      .m-nexus a		{background:#fbc !important;}
+.m-sample,     .m-sample ul,     .m-sample li,     .m-sample a		{background:#cef !important;}
+.m-stats,      .m-stats ul,      .m-stats li,      .m-stats a		{background:#cbf !important;}
+.m-stylist,    .m-stylist ul,    .m-stylist li,    .m-stylist a		{background:#cfe !important;}
+.m-wiki,       .m-wiki ul,       .m-wiki li,       .m-wiki a		{background:#cfb !important;}
+
