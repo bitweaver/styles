@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.6 2005/12/26 12:26:32 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.7 2006/02/21 09:02:20 squareing Exp $ */
 @media all {
 body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
 pre {font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#ddd; color:#555;}
@@ -200,13 +200,9 @@ h4 {margin:0; padding:0; z-index:1;}
 #nav,#nav a,#nav li ul	{z-index:2000;}
 .ver,.ver a,.ver li ul	{z-index:200;}
 .hor,.hor a,.hor li ul	{z-index:20;}
-			/* ieHover used as suckerfish class for MSIE hover support */
-.hor li:hover ul ul, .hor li:hover ul ul ul, .hor li.ieHover ul ul, .hor li.ieHover ul ul ul,
-.ver li:hover ul ul, .ver li:hover ul ul ul, .ver li.ieHover ul ul, .ver li.ieHover ul ul ul {left:-999em;}
-.hor li:hover ul, .hor li li:hover ul, .hor li li li:hover ul, .hor li.ieHover ul, .hor li li.ieHover ul, .hor li li li.ieHover ul,
-.ver li:hover ul, .ver li li:hover ul, .ver li li li:hover ul, .ver li.ieHover ul, .ver li li.ieHover ul, .ver li li li.ieHover ul {left:auto;}
-			/* Support for MSIE select box hiding part of suckerfish - don't touch */
-.hor iframe,.ver iframe {position:absolute; left:0; top:0; z-index:-1; filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);}
+
+.hor li:hover ul ul,.hor li:hover ul ul ul,.ver li:hover ul ul,.ver li:hover ul ul ul	{left:-999em;}
+.hor li:hover ul,.hor li li:hover ul,.hor li li li:hover ul,.ver li:hover ul,.ver li li:hover ul,.ver li li li:hover ul	{left:auto;}
 }
 
 @media print {
