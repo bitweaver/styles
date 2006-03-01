@@ -16,7 +16,7 @@
 		{/if}
 	</div>
 
-	<h1>{$gBitSystemPrefs.site_title}</h1>
-	<h3>{$gBitSystemPrefs.site_slogan}</h3>
+	<h1>{$gBitSystem->getConfig('site_title')}</h1>
+	<h3>{$gBitSystem->getConfig('site_slogan')}</h3>
 </div>
 {/strip}
