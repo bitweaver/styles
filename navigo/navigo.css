@@ -1,4 +1,5 @@
 @import url( ../../base.css );
+@import url( print.css );
 /*@import url( ../blank/showdiv.css );*/
 /*@import url( ../blank/showsitelayout.css );*/
 /*@import url( ../blank/showpagelayout.css );*/
@@ -8,8 +9,8 @@
 /*** global settings ***/
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
 body {
-	font-family: Luxi Sans, Nimbus Sans, Century Gothic, Trebuchet MS, Lucida Sans Unicode, Microsoft Sans Serif, Arial, Helvetica, sans-serif;
-	font-size: 11pt;
+	font-family: URW Gothic L, Century Gothic, Nimbus Sans, Trebuchet MS, Lucida Sans Unicode, Microsoft Sans Serif, Arial, Helvetica, sans-serif;
+	font-size: 100%;
 	font-style: normal;
 	font-weight: normal;
 	color: #679;
@@ -20,6 +21,7 @@ body {
 	background-position: bottom;
 	height: 100%;
 	line-height: 120%;
+	text-align: center;
 }
 th {
 	vertical-align: bottom;
@@ -27,16 +29,13 @@ th {
 	color: #000;
 	border-bottom: 1px solid #ccc;
 	font-weight: normal;
-	font-size: 10px;
+	font-size: 91%;
 }
 hr {
 	border: 0;
 	border-top: 1px solid #ccc;
 	padding: 0;
 	margin: 0;
-}
-li {
-	margin-bottom: 10px;
 }
 pre {
 	background: #eee;
@@ -49,23 +48,24 @@ pre {
 /* set the default font-size on the entire page | annoyingly this has to be one in this way for MSIE */
 input, select {}
 textarea {}
-small {}
+small { font-size:xx-small;}
 /* general page title settings on every page */
 h1 {
 	color: #666;
-	font-size: 18px;
+	font-size: 164%;
 }
 h2 {
 	color: #777;
-	font-size: 16px;
+	font-size: 145%;
 }
 h3 {
 	color: #888;
-	font-size: 14px;
+	font-size: 127%;
 }
 h1, h2, h3 {
-	padding: 3px 20px;
+	padding: 5px 0px;
 	font-weight: 600;
+	margin-bottom: 5px;
 }
 /* links */
 a {
@@ -74,6 +74,7 @@ a {
 }
 .body a {
 	color: #000;
+	text-decoration: underline;
 }
 a:hover {
 	color: #aaf;
@@ -85,93 +86,91 @@ img {
 a img:hover {}
 /*******************************************************************************************/
 /*** site layout ***/
-#tikilogo {
-	color: #eee;
-	font-size: 18px;
-	text-align: center;
-	vertical-align: middle;
-	background-image: url( images/top_bg.gif );
-	background-repeat: repeat-x;
-	background-attachment: scroll;
-	background-position: bottom;
-	background-color: #506f8d;
-	width: 160px;
-}
-#tikibody {
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-#tikilayouttable {
-	border-collapse: collapse;
-	padding: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
+#bitbody {
+	padding: 10px;
 }
 #bittopbar {
-	padding: 3px;
-	margin: 0px;
-	color: #eee;
+	background-color: inherit;
 	background-image: url( images/top_bg.gif );
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: bottom;
+	height: 20px;
+}
+#bittop {
+	text-align: center;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
 	background-color: #506f8d;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
-}
-#bittopbar a {
-	background: transparent;
-	padding: 0;
-	margin: 0;
-	font-size: 10px;
-	color: #eee;
-}
-#bittopbar a:hover {
-	text-decoration: underline;
-	color: #fff;
-}
-#bitleft, #bitright {
-	font-size: 11px;
-	padding: 0 5px;
-	width: 150px;
-}
-#tikimain {
-	height: 1px;
-	padding: 0;
-	margin: 0;
 	width: 700px;
 }
-#tikimainfx {
+#bitleft, #bitright, #bitlogo {
+	position: absolute;
+	font-size: 91%;
+	margin: auto;
+	left: 50%;
+}
+#bitlogo {
+	width: 90px;
+	height: 120px;
+	top: 10px;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+#bitleft, #bitright {
+	top: 150px;
+	width: 140px;
+}
+#bitleft, #bitlogo {
+	margin-left: -495px;
+}
+#bitright {
+	margin-left: 355px;
+}
+#bitmain {
+	padding: 0px;
+	margin: auto;
+	width: 700px;
+	background-color: white;
+	text-align: left;
 	border: 1px solid #4f6e8c;
-	border-top: 0;
-	background: #fff;
-	padding: 30px 10px;
 }
-#tikibottom {
+#bitbottom {
 	vertical-align: top;
+	background-color: #506f8d;
+	background-image: url( images/bottom_bg.gif );
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: bottom;
+	height: 20px;
+	width: 700px;
+	margin: 0px auto 30px;
+	color: #eee;
 }
-#tikiprint {}
+#bitbottom  a {
+	color: #eee;
+	font-size: 130%;
+	font-weight: semi-bold;
+}
+#bitprint {}
 /*******************************************************************************************/
 /*** common classes ***/
 .preview {
-	border-top: 5px solid #ccc;
-	border-bottom: 5px solid #ccc;
-	background: #eee;
+	border: 1px solid #ccc;
 	margin: 10px 0;
 	padding: 10px 0;
 }
 .header {}
 .header h1 {
-	padding: 5px 0 5px 80px;
+	margin: 15px 0px 5px;
 	text-align: left;
 }
 .header h1, .header h1 a, .header h1 a:hover {
 	color: #666;
 }
 .date {
-	font-size: 10px;
+	font-size: 91%;
 	padding: 0 0 0 20px;
 }
 .header h2 {
@@ -182,11 +181,16 @@ a img:hover {}
 .body {
 	border-top: 5px solid #eee;
 	border-bottom: 5px solid #eee;
+	padding: 0px 50px;
 }
-.content {}
+.introduction {}
+.introductionimage {}
+.content {
+	padding: 1px;
+}
 .footer {
 	text-align: left;
-	font-size: 10px;
+	font-size: 91%;
 	color: #aaa;
 }
 .actionicon {
@@ -203,7 +207,10 @@ a img:hover {}
 .boxcontent {
 	background: #eee;
 	border: 1px solid #ddd;
-	padding: 2px;
+	padding: 5px;
+}
+.boxcontent ol li {
+	margin-left: -5px;
 }
 .warning {
 	padding: 10px;
@@ -215,64 +222,133 @@ a img:hover {}
 /*** menus ***/
 /* first we set the general settings */
 .menu .head {
-	margin-top: 7px;
-	font-size: 12px;
+	font-size: 82%;
+	color: #eee;
+	background-color: #506f8d;
+	text-decoration: none;
+	border-right: 1px solid white;
+	margin: 0px;
 }
 .menu .head:hover, .menu .head:active {
-	background-image: url( images/down.gif );
-	background-repeat: no-repeat;
-	background-position: right;
+	color: #506f8d;
+	background-color: #eee;
 }
 .menu .item {
-	padding: 0 0 0 8px;
-	font-size: 10px;
+	font-size: 82%;
+	text-decoration: none;
+	white-space: normal;
+	color: #eee;
+	background-color: #506f8d;
+	border-right: 1px solid white;
+	padding: 0px 2px;
+	margin: 0px;
 }
 .menu .item:hover {
-	background-image: url( images/arrow.gif );
-	background-repeat: no-repeat;
-	background-position: 1px 3px;
+	color: #506f8d;
+	background-color: #eee;
+}
+.boxcontent li {
+	font-size: 91%;
 }
 /* icons in menu pages area */
 .menuicon {
 	float: right;
 }
 /******************************************************************************************/
+/* tocs */
+.maketoc		{font-size:81%; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{color:#666;}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
+
+/* forms */
+form,textarea,select	{margin:0; padding:0;}
+textarea				{width:100%;}
+input,textarea,select	{font-size:91%;}
+html>body input,textarea,select	{font-family:inherit;font-size:91%;}
+#bitmain input,
+#bitmain textarea,
+#bitmain select			{}
+input[type="text"]		{max-width:100%;}
+fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
+legend					{font-size:100%; padding:1em;}
+.row					{clear:both;}
+#bitmain .row			{margin-bottom:1em;}
+.quicktags				{margin:0;}
+.formlabel				{font-weight:bold; float:left; width:20%; text-align:right; font-size:91%;}
+.forminput				{margin-left:21%;}
+.formfeedback			{}
+.formhelp				{cursor:help; font-size:91%; line-height:normal; color:#a76; border-bottom:1px dotted #999;}
+.formhelp a				{font-weight:bold;}
+.closebutton			{position:absolute; top:1px; right:1px;}
+.submit					{text-align:center;}
+#bitmain .submit		{padding:1.5em;}
+.error,.errorpage h3	{color:#f00; font-weight:bold;}
+.warning				{color:#f80;}
+.success				{color:#090;}
+.clear					{clear:both;}
+.minifind fieldset		{border:0;}
+.minifind legend		{display:none;}
+.minifind fieldset		{padding:0.5em; margin:0;}
+table .formlabel		{float:none; width:auto; text-align:left;}
+table .forminput		{margin:0;}
+
 /*** parsed text elements ***/
+.bitbox {
+	color: #eee;
+	background: #abc;
+	border: 1px solid #666;
+	padding: 0.5em;
+	margin: 0 1em;
+}
+.bitbox a {
+	color: #357;
+}
 /* -=...=- */
-.tikibar {
+.bitbar {
 	padding: 1px;
 	margin: 3px 0;
 	font-weight: bold;
+	color: #eee;
+	background-color: #679;
+	border-bottom: 1px solid #ddd;
+	border-top:1px solid #ddd;
 }
+.bittoc			{float:right; border:1px solid #ddd; font-size:91%; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
+.bittoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
+.bittoc ul ul	{margin:0 0 0 1em;}
+.bittoc ul li	{}
 /* cached pages */
-.tikicache {}
+.cached {display:none; font-size:xx-small;}
 /* links to internal pages */
-.tikitable {
+.bittable {
 	background: #ddd;
 	border: 1px solid #4f6e8c;
 }
-.tikitable td {
+.bittable td {
 	padding: 2px;
-	font-size: 12px;
+	font-size: 110%;
 	border: 1px solid #fff;
 }
 /******************************************************************************************/
 /*** calendar ***/
-.tikicalendar.tikicalendar table {
-	font-size: 10px;
+.bitcalendar.bitcalendar table {
+	font-size: 91%;
 }
-.tikicalendar.tikicalendar table th {
+.bitcalendar.bitcalendar table th {
 	vertical-align: top;
 }
-.tikicalendar.tikicalendar table td {
+.bitcalendar.bitcalendar table td {
 	border-top: 1px solid #ccc;
 }
-.tikicalendar .navigation table td {
+.bitcalendar .navigation table td {
 	border: 0;
 }
 .popup {
 	border: 1px solid #4f6e8c;
-	font-size: 12px;
+	font-size: 110%;
 }
 .weeknumber {
 	border: 0;
@@ -282,7 +358,7 @@ a img:hover {}
 .calday {}
 .calcontent {}
 /* the calendar table that displays the days, dates and data */
-table.tikicalendar {}
+table.bitcalendar {}
 /* days in the month view, that are not part of the selected month */
 .notmonth {}
 /* stuff */
@@ -312,26 +388,59 @@ table.tikicalendar {}
 /******************************************************************************************/
 /*** structures ***/
 .structure {}
+.structurebar {
+	color: #000;
+	padding: 5px 0px;
+}
+.structurebar .path {
+	padding: 2px 0px 0px;
+	text-align: left;
+	font-weight: bold;
+}
 .navigation {
-	font-size: 10px;
+	border: 1px solid #eee;
+	font-size: 91%;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
 }
 .path {
-	font-size: 10px;
+	font-size: 91%;
 }
 /******************************************************************************************/
 /*** categories ***/
 /* this section really has to be worked on at some point */
 .category {
-	font-size: 12px;
+	font-size: 91%;
+	margin: 0px -10px;
 }
 .tree {
-	font-size: 12px;
+	font-size: 110%;
 	padding-left: 20px;
 }
 .treenode {}
-.categpath {}
+.category .path {
+	color: #eee;
+	background: #abc;
+	padding: 2px 10px;
+	text-align: right;
+}
+.categpath {
+	color: #eee;
+	font-weight: bold;
+}
 .catname {}
 .catlists {}
+.category .boxtitle {
+	font-weight: bold;
+}
+.category .boxcontent {
+	color: #eee;
+	background: #abc;
+}
 /******************************************************************************************/
 /*** directories ***/
 .directory h1 {
@@ -340,7 +449,7 @@ table.tikicalendar {}
 }
 .subcategories {
 	border-collapse: separate;
-	font-size: 12px;
+	font-size: 110%;
 }
 .subcategories td {
 	background: #eee;
@@ -349,7 +458,7 @@ table.tikicalendar {}
 	vertical-align: top;
 }
 .subcategory {
-	font-size: 16px;
+	font-size: 145%;
 }
 .subsubcategory {
 }
@@ -381,7 +490,7 @@ prio9 {}
 .thumbnails td {
 	vertical-align: bottom;
 	height: 150px;
-	font-size: 10px;
+	font-size: 91%;
 }
 .showimage {
 	text-align: center;
@@ -389,15 +498,19 @@ prio9 {}
 .caption {}
 /******************************************************************************************/
 /*** bitforums ***/
-.tikiforum.data {}
-.tikiforum.footer {}
+.bitforum.data {}
+.bitforum.footer {}
 /* threads that are ... */
 .unread {}
 .read {}
 /******************************************************************************************/
 /*** images and icons ***/
 /* icons */
-.icon, .icon:hover {}
+.icon, .icon:hover {
+	width: 16px;
+	height: 16px;
+
+}
 /* floating help and/or admin icon at the top of admin pages */
 .floaticon {}
 /******************************************************************************************/
@@ -405,7 +518,7 @@ prio9 {}
 .other {}
 /* submission panels */
 .panel {
-	font-size: 0.8em;
+	font-size: 91%;
 	background: #fff;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -418,7 +531,7 @@ prio9 {}
 }
 /* any table displaying data */
 .data {
-	font-size: 0.8em;
+	font-size: 91%;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	margin: 10px 0;
@@ -445,8 +558,7 @@ prio9 {}
 				/* tabstyle */
 .tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
 	top:3px;
-	font-family: Luxi Sans, Nimbus Sans, Century Gothic, Trebuchet MS, Lucida Sans Unicode, Microsoft Sans Serif, Arial, Helvetica, sans-serif;
-	font-size: 11pt;
+	font-size: 100%;
 	font-style: normal;
 	font-weight: normal;
 	margin:0 3px;
@@ -473,10 +585,18 @@ prio9 {}
 /******************************************************************************************/
 /*** navigation bars and tabs ***/
 .navbar {
-	font-size: 10px;
+	font-size: 81%;
 }
 .navbar a {
-	padding: 0 5px;
+	border: 1px solid #ccc;
+	border-top: 2px solid #777;
+	border-right: 2px solid #777;
+	padding: 1px 3px;
+	margin: 0px 3px;
+}
+.copyright {
+	margin-top: 0px;
+	font-size: 91%;
 }
 /* pagination at the bottom of pages with listings */
 .pagination {
@@ -486,7 +606,7 @@ prio9 {}
 	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 10px;
+	font-size: 91%;
 	color: #fff;
 	background: #ccc;
 	text-align: center;

@@ -1,60 +1,19 @@
 {strip}
 <div id="bittop">
-	<ul id="nav" class="menu hor">
-		{if $use_custom_top_bar and $gBitSystemPrefs.top_bar_position eq 'replace'}
-			{include file="`$smarty.const.TEMP_PKG_PATH`nexus/modules/top_bar_inc.tpl"}
-		{else}
-			{if $use_custom_top_bar and $gBitSystemPrefs.top_bar_position eq 'left'}
-				{include file="`$smarty.const.TEMP_PKG_PATH`nexus/modules/top_bar_inc.tpl"}
-			{/if}
+	{php}
+		global $gBitSmarty;
+		$x = (rand() % 3) + 1;
+		$gBitSmarty->assign( 'x', $x );
+	{/php}
+	<img alt="{$site_slogan}" src="{$smarty.const.THEMES_PKG_URL}styles/navigo/images/slogan.gif"/>
 
-			<li class="m-home">
-				<a class="head" accesskey="h" href="{$smarty.const.BIT_ROOT_URL}">{$gBitSystemPrefs.site_menu_title|default:$siteTitle}</a>
-				{include file="bitpackage:kernel/menu_global.tpl"}
-			</li>
-
-			{foreach key=key item=menu from=$appMenu}
-				{if $menu.title && $menu.titleUrl && $menu.template}
-					<li class="m-{$key}{if $smarty.const.ACTIVE_PACKAGE eq $menu.adminPanel} current{/if}">
-						<a accesskey="{$key|truncate:1:""}" class="{if $gBitSystem->isFeatureActive( 'feature_top_bar_dropdown' )}head{else}item{/if}{if $smarty.const.ACTIVE_PACKAGE eq $menu.adminPanel} selected{/if}" href="{$menu.titleUrl}">{tr}{$menu.title}{/tr}</a>
-						{if $gBitSystem->isFeatureActive( 'feature_top_bar_dropdown' )}
-							{include file="`$menu.template`"}
-						{/if}
-					</li>
-				{/if}
-			{/foreach}
-
-			{if $gBitUser->isAdmin()}
-				<li class="m-admin{if $smarty.const.ACTIVE_PACKAGE eq 'kernel'} current{/if}">
-					<a accesskey="A" class="{if $gBitSystem->isFeatureActive( 'feature_top_bar_dropdown' )}head{else}item{/if}{if $smarty.const.ACTIVE_PACKAGE eq 'kernel'} selected{/if}" href="{$smarty.const.KERNEL_PKG_URL}admin/index.php">{tr}Administration{/tr}</a>
-					{if $gBitSystem->isFeatureActive( 'feature_top_bar_dropdown' )}
-						<ul>
-							{foreach key=key item=menu from=$adminMenu}
-								<li>
-									<a class="head" href="{$smarty.const.KERNEL_PKG_URL}admin/index.php">{tr}{$key|capitalize}{/tr}</a>
-									{include file=`$menu.tpl`}
-								</li>
-							{/foreach}
-							<li>
-								<a class="head" href="{$smarty.const.KERNEL_PKG_URL}admin/index.php">{tr}Layout and Design{/tr}</a>
-								{include file="bitpackage:kernel/menu_layout_admin.tpl"}
-							</li>
-						</ul>
-					{/if}
-				</li>
-			{/if}
-
-			{if $use_custom_top_bar and ( !$gBitSystemPrefs.top_bar_position or $gBitSystemPrefs.top_bar_position eq 'right' )}
-				{include file="`$smarty.const.TEMP_PKG_PATH`nexus/modules/top_bar_inc.tpl"}
-			{/if}
-		{/if}
-	</ul>
-	<div style="float:right;">
-		{if $gBitUser->isRegistered()}
-			<a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
-		{else}
-			<a href="{$smarty.const.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
-		{/if}
-	</div>
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="700" height="88">
+		<param name="movie" value="{$smarty.const.THEMES_PKG_URL}styles/navigo/images/image{$x}.swf">
+		<param name="quality" value="high">
+		<embed src="{$smarty.const.THEMES_PKG_URL}styles/navigo/images/image{$x}.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="700" height="88">
+	</object>
+	{if $gBitSystem->isFeatureActive( 'feature_top_bar' )}
+		{include file="bitpackage:kernel/top_bar.tpl"}
+	{/if}
 </div>
 {/strip}
