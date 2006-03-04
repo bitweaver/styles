@@ -7,7 +7,7 @@
 
 	<div class="pkg-{$smarty.const.ACTIVE_PACKAGE|lower}">
 		<div id="bitbody" class="bit-cols-{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}2{else}1{/if}">
-			<img id="bitlogo" src="{$smarty.const.THEMES_PKG_URL}styles/navigo/images/logo_small.png" alt="Navigo Systems" />
+			<img id="bitlogo" src="{$smarty.const.THEMES_PKG_URL}styles/navigo/images/logo.png" alt="Bitweaver Web Application Framework" />
 
 			<div id="bitmain">
 				{include file="bitpackage:kernel/top.tpl"}

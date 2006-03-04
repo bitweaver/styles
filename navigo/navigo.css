@@ -95,7 +95,7 @@ a img:hover {}
 	background-repeat: repeat-x;
 	background-attachment: scroll;
 	background-position: bottom;
-	height: 20px;
+	height: 40px;
 }
 #bittop {
 	text-align: center;
@@ -112,8 +112,6 @@ a img:hover {}
 	left: 50%;
 }
 #bitlogo {
-	width: 90px;
-	height: 120px;
 	top: 10px;
 	padding-top: 20px;
 	padding-left: 40px;
@@ -507,8 +505,6 @@ prio9 {}
 /*** images and icons ***/
 /* icons */
 .icon, .icon:hover {
-	width: 16px;
-	height: 16px;
 
 }
 /* floating help and/or admin icon at the top of admin pages */
