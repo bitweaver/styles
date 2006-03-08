@@ -21,7 +21,7 @@ body {
 	background-position: bottom;
 	height: 100%;
 	line-height: 120%;
-	text-align: center;
+	text-align: justify;
 }
 th {
 	vertical-align: bottom;
@@ -69,10 +69,6 @@ h1, h2, h3 {
 }
 /* links */
 a {
-	color: #66a;
-	text-decoration: none;
-}
-.body a {
 	color: #000;
 	text-decoration: underline;
 }
@@ -115,6 +111,8 @@ a img:hover {}
 	top: 10px;
 	padding-top: 20px;
 	padding-left: 40px;
+	width: 90px;
+	height: 120px;
 }
 #bitleft, #bitright {
 	top: 150px;
@@ -198,6 +196,7 @@ a img:hover {}
 /*** boxes ***/
 .box {
 	margin: 10px 0px;
+	text-align: left;
 }
 .boxtitle {
 	color: #000;
@@ -206,6 +205,7 @@ a img:hover {}
 	background: #eee;
 	border: 1px solid #ddd;
 	padding: 5px;
+	font-size: 91%;
 }
 .boxcontent ol li {
 	margin-left: -5px;
@@ -264,12 +264,17 @@ a img:hover {}
 /* forms */
 form,textarea,select	{margin:0; padding:0;}
 textarea				{width:100%;}
-input,textarea,select	{font-size:91%;}
+input,textarea,select {
+	font-size:91%;
+	border: 1px solid #ddd;
+	margin: 1px;
+}
 html>body input,textarea,select	{font-family:inherit;font-size:91%;}
 #bitmain input,
 #bitmain textarea,
 #bitmain select			{}
-input[type="text"]		{max-width:100%;}
+.row input	{max-width: 100%;}
+.submit input		{background-color: #506f8d; color: #fff; margin: 2px;}
 fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
 legend					{font-size:100%; padding:1em;}
 .row					{clear:both;}
