@@ -70,19 +70,24 @@ h3			{color:#999;}
 .popup				{padding:10px; border:1px solid #ccc;}
 
 /*** menus ***/
-#nav ul			{padding:5px;}
-#nav li li ul	{margin-top:-22px;}
-#nav .head		{background:#fff;}
+#nav li li ul	{margin-top:-25px;}
+#nav .head		{color:#999;}
+#nav ul .head:visited,
+#nav ul .head	{background:#def;}
+#nav ul a:visited,
+#nav ul a		{color:#666; background:#eee; padding:2px; margin:2px 2px 0 2px; width:auto;}
+#nav ul a:hover	{color:#666; background:#fed !important; text-decoration:none;}
 
-.menu .head		{color:#999;}
 .menu .item		{}
 
 /* don't display icons in dropdown menu */
 #bitleft .menu .icon,
 #bitright .menu .icon,
 #nav .icon		{display:none;}
-.hor li li a	{margin:0;}
+.hor li li,
 .hor li ul		{width:14em;}
+.hor li ul		{padding-bottom:2px;}
+.hor li li a	{margin:0;}
 
 /*** parsed elements ***/
 .bitbar			{border-bottom:1px dashed #ddd;}
