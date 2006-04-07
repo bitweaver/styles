@@ -2,7 +2,8 @@
 *				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
 body			{font-size:0.8em; background:#fff; color:#000; margin:0; padding:0;}
 html>body		{font-size:12px;}
-pre,.code		{width:96%; margin:0 auto; padding:1em 0; font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #999;}
+pre *,code *	{font-family:monospace;}
+pre,			{width:96%; margin:0 auto; padding:1em 0; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #999;}
 html>body pre	{width:auto;}
 img				{border:0;}
 hr				{border:0; border-top:1px solid #933; padding:0; margin:1.5em 20%;}
