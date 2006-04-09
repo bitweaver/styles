@@ -1,6 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.7 2006/02/21 09:02:20 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.8 2006/04/09 06:32:41 squareing Exp $ */
 @media all {
 body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
+pre,pre *,code,code *,.code	{font-family:monospace !important; text-align:left;}
 pre {font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#ddd; color:#555;}
 a {text-decoration:none; color:#a60;}
 #bitmain a {font-style:italic;}
