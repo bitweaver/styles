@@ -6,7 +6,7 @@
 |  <a href="{$gBitLoc.CATEGORIES_PKG_URL}index.php">{tr}Categories{/tr}</a>
 {/if}{if $gBitSystem->isFeatureActive( 'feature_chat' ) and $gBitUser->hasPermission( 'bit_p_chat' )}
 |  <a href="{$gBitLoc.CHAT_PKG_URL}index.php">{tr}Chat{/tr}</a>
-{/if}{if $gBitSystem->isFeatureActive( 'site_contact' )}
+{/if}{if $gBitSystem->isFeatureActive( 'messages_site_contact' )}
 |  <a href="{$gBitLoc.MESSU_PKG_URL}contact.php">{tr}Contact us{/tr}</a>
 {/if}{if $gBitSystem->isFeatureActive( 'feature_games' ) and $gBitUser->hasPermission( 'bit_p_play_games' )}
 |  <a href="{$gBitLoc.GAMES_PKG_URL}index.php">{tr}Games{/tr}</a>
