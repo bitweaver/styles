@@ -36,6 +36,14 @@ a:hover			{color:#900;}
 /* specify the width and positioning of 2nd level dropdowns as in admin menu */
 .hor li ul ul	{margin:-23px 0 0 9em;}
 
+.m-admin			{position:absolute !important; top:0em !important; left:50% !important; margin-left:-286px !important; width:592px !important; text-align:center;}
+.m-admin>a			{border:1px solid #ccc !important; background:#eee !important;}
+.m-admin>ul			{width:550px !important; padding:20px; background:#eee !important;}
+.m-admin>ul ul		{margin:-30px 0 0 70px !important;}
+.m-admin>ul>li		{width:100px !important; margin:5px;}
+.m-admin>ul>li>a	{text-align:center; background:#fff; border:1px solid #ccc !important;}
+.m-admin>ul>li>a>.icon	{padding:20px; vertical-align:middle;}
+
 /*** wiki ***/
 /* parsed wikiclasses */
 /* wiki -=...=- */
