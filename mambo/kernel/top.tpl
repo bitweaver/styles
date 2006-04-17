@@ -1,5 +1,5 @@
 {strip}
-{if $gBitSystem->isFeatureActive( 'top_bar' )}
+{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 	{include file="bitpackage:kernel/top_bar.tpl"}
 {/if}
 <div id="bittop">

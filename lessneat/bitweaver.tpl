@@ -8,13 +8,13 @@
 
 {include file="bitpackage:kernel/top.tpl"}
 
-{if $gBitSystem->isFeatureActive( 'top_bar' )}
+{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
     {include file="bitpackage:kernel/top_bar.tpl"}
 {/if}
 
 <table id="bitlayouttable" cellspacing="0" cellpadding="0" border="0">
 <tr>
-{if $gBitSystem->isFeatureActive( 'left_column' ) && $l_modules && !$gHideModules}
+{if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules}
   <td id="bitleft">
     {section name=homeix loop=$l_modules}
       {$l_modules[homeix].data}
@@ -31,7 +31,7 @@
       {include file=$mid}
     </div> <!-- end #bitmainfx -->
   </td> <!-- end #bitmain -->
-{if $gBitSystem->isFeatureActive( 'right_column' ) && $r_modules && !$gHideModules}
+{if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules}
   <td id="bitright">
     {section name=homeix loop=$r_modules}
       {$r_modules[homeix].data}
@@ -41,7 +41,7 @@
 </tr>
 </table>
 
-{if $gBitSystem->isFeatureActive( 'bot_bar' )}
+{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
   <div id="bitbottom">
     {include file="bitpackage:kernel/bot_bar.tpl"}
   </div> <!-- end #bitbottom -->

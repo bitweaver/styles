@@ -21,7 +21,7 @@
 					{/if}
 				</div>
 
-				{if $gBitSystem->isFeatureActive( 'top_bar' )}
+				{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 					{include file="bitpackage:kernel/top_bar.tpl"}
 				{/if}
 			</div><!-- end #bittop -->
@@ -47,7 +47,7 @@
 				</div><!-- end #bitmodules -->*}
 
 				<div id="bitbottom">
-					{if $gBitSystem->isFeatureActive( 'bot_bar' )}
+					{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
 						{include file="bitpackage:kernel/bot_bar.tpl"}
 					{/if}
 				</div><!-- end #bitbottom -->

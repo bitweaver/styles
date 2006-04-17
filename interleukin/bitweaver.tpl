@@ -6,7 +6,7 @@
 	<div dir="rtl">
 {/if}
 
-{if $gBitSystem->isFeatureActive( 'top_bar' )}
+{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 	{include file="bitpackage:kernel/top_bar.tpl"}
 {/if}
 
@@ -37,7 +37,7 @@
 	<h1>{$gBitSystem->getConfig('site_title')|default:"Your Site"}</h1>
 </div>
 
-{if ( $gBitSystem->isFeatureActive( 'left_column' ) && $l_modules && !$gHideModules ) or ( $gBitSystem->isFeatureActive( 'right_column' ) && $r_modules && !$gHideModules ) }
+{if ( $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules ) or ( $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules ) }
 	<div id="bitmodules">
 		{section name=homeix loop=$l_modules}
 		{$l_modules[homeix].data}
@@ -59,7 +59,7 @@
 	{include file=$mid}
 </div>
 
-{if $gBitSystem->isFeatureActive( 'bot_bar' )}
+{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
 	<div id="bitbottom">
 		{include file="bitpackage:kernel/bot_bar.tpl"}
 	</div>

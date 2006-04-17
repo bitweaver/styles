@@ -10,11 +10,11 @@
 
 	{include file="bitpackage:kernel/top.tpl"}
 
-	{if $gBitSystem->isFeatureActive( 'top_bar' )}
+	{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 		{include file="bitpackage:kernel/top_bar.tpl"}
 	{/if}
 
-	{if $gBitSystem->isFeatureActive( 'left_column' ) && $l_modules && !$gHideModules}
+	{if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules}
 	<div id="bitleft">
 		{section name=homeix loop=$l_modules}
 		{$l_modules[homeix].data}
@@ -32,7 +32,7 @@
 		{include file=$mid}
     </div>
 
-	{if $gBitSystem->isFeatureActive( 'right_column' ) && $r_modules && !$gHideModules}
+	{if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules}
 	<div id="bitright">
 		{section name=homeix loop=$r_modules}
 		{$r_modules[homeix].data}
@@ -40,7 +40,7 @@
 	</div>
 	{/if}
 
-	{if $gBitSystem->isFeatureActive( 'bot_bar' )}
+	{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
 	<div id="tikibottom">
 		{include file="bitpackage:kernel/bot_bar.tpl"}
 	</div>
