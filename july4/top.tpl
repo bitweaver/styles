@@ -10,7 +10,7 @@
 	{if $gBitUser->isRegistered()}
 	{tr}Welcome{/tr} <b><a href="{$smarty.const.USERS_PKG_URL}my.php" style="color:#white;">{displayname hash=$gBitUser->mInfo nolink=1}</a></b> | <b><a href="{$smarty.const.USERS_PKG_URL}logout.php" style="color: #ffffff;">{tr}logout{/tr}</a></b>
 {else}
-	{tr}Please {/tr}<b><a href="{$smarty.const.USERS_PKG_URL}login.php" style="color: #ffffff;">{tr}login{/tr}</a></b>{if $allow_register eq 'y'} | <b><a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}register{/tr}</a></b>{/if}
+	{tr}Please {/tr}<b><a href="{$smarty.const.USERS_PKG_URL}login.php" style="color: #ffffff;">{tr}login{/tr}</a></b>{if $gBitSystem->isFeatureActive('users_allow_register')} | <b><a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}register{/tr}</a></b>{/if}
 {/if}
 	<br/>{$smarty.now|bit_short_datetime}
 	</td>
