@@ -1,13 +1,3 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/jill/alternate/print_preview.css,v 1.3 2006/04/09 19:12:45 bitweaver Exp $ */
-/**
- * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.3 $
- * @theme    jill
- * @license  LGPL
- */
-@import url( ../all.css );
 body		{background:#fff;}
 #bitmain	{padding:0 1em;}
-/* hide other stuff */
-#bitlogo,#bittop,#bitleft,#bitright,#bittopbar,#toplogin,#bitbottom,
-.pageactions,.navbar,.tabcontainer,.bittoc,.floaticon,.minifind	{display:none;}
+#bitlogo,#bittop,#bitleft,#bitright,#bittopbar,#toplogin,#bitbottom,.pageactions,.navbar,.tabcontainer,.bittoc,.floaticon,.minifind	{display:none;}
