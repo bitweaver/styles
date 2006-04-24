@@ -1,7 +1,6 @@
 @media print {
 body		{background:#fff;}
 #bitmain	{padding:0 1em;}
-/* hide other stuff */
-#bitlogo,#bittop,#bitleft,#bitright,#bittopbar,#toplogin,#bitbottom,
-.pageactions,.navbar,.tabcontainer,.bittoc,.floaticon,.minifind	{display:none;}
+#bitlogo,#bittop,#bitleft,#bitright,#bittopbar,#toplogin,#bitbottom,.pageactions,.navbar,.tabcontainer,.bittoc,.floaticon,.minifind	{display:none;}
+.display.comment	{page-break-before:always;}
 }
