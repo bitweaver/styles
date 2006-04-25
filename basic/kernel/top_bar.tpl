@@ -26,7 +26,7 @@
 
 			{if $gBitUser->isAdmin()}
 				<li class="m-admin{if $smarty.const.ACTIVE_PACKAGE eq 'kernel'} current{/if}">
-					<a accesskey="A" class="{if $gBitSystem->isFeatureActive( 'site_top_bar_dropdown' )}head{else}item{/if}{if $smarty.const.ACTIVE_PACKAGE eq 'kernel'} selected{/if}" href="{$smarty.const.KERNEL_PKG_URL}admin/index.php">{tr}Administration{/tr}<br />{biticon class="m-icon" iname="pkg_kernel" ipackage=kernel iexplain=Kernel}</a>
+					<a accesskey="A" class="{if $gBitSystem->isFeatureActive( 'site_top_bar_dropdown' )}head{else}item{/if}{if $smarty.const.ACTIVE_PACKAGE eq 'kernel'} selected{/if}" href="{$smarty.const.KERNEL_PKG_URL}admin/index.php">{tr}Administration{/tr}</a>
 					{if $gBitSystem->isFeatureActive( 'site_top_bar_dropdown' )}
 						<ul>
 							{foreach key=key item=menu from=$adminMenu}
