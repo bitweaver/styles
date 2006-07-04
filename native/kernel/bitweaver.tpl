@@ -6,11 +6,14 @@
 	{/if}
 
 	<div id="bitbar">
+	<!-- nohighlight -->
 		Welcome to {$gBitSystem->getConfig('site_title')|default:"bitweaver"}
+	<!-- /nohighlight -->
 	</div>
 
 	<div id="wrap1">
 		<div id="bittop">
+		<!-- nohighlight -->
 			<div class="toplogin">
 				{if $gBitUser->isRegistered()}
 					{tr}logged in as{/tr} {displayname}<br /><a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
@@ -31,6 +34,7 @@
 			</div>
 			<h1>{$gBitSystem->getConfig('site_title')|default:"bitweaver"}</h1>
 			<h2>{$gBitSystem->getConfig('site_slogan')}</h2>
+		<!-- /nohighlight -->	
 		</div><!-- end #bittop -->
 
 		{if $gBitSystem->isFeatureActive( 'site_top_bar' )}

@@ -1,6 +1,7 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/chemokine/kernel/module.tpl,v 1.4 2006/02/13 10:06:21 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/chemokine/kernel/module.tpl,v 1.5 2006/07/04 20:44:56 windblown Exp $ *}
 {strip}
 <div class="module box {$module_name|replace:"_":"-"}">
+<!-- nohighlight -->
 	{if $module_title}
 		<h3>
 			{if $gBitSystem->isFeatureActive( 'themes_module_controls' )}
@@ -19,9 +20,12 @@
 			{tr}{$module_title}{/tr}
 			{if $gBitSystem->isFeatureActive( 'themes_collapsible_modules' )}</a>{/if}
 		</h3>
+		<!-- /nohighlight -->
 	{/if}
 	<div class="boxcontent" id="{$module_name}"{if $gBitSystem->isFeatureActive( 'themes_collapsible_modules' )} style="display:{$toggle_state};"{/if}>
-	    {$module_content}
+	    <!-- nohighlight -->
+		{$module_content}
+		<!-- /nohighlight -->
 	</div>
 </div>
 {/strip}

@@ -1,5 +1,6 @@
 {strip}
 <div class="{$class|default:"box"}" {$atts}>
+
 	{if $title or ($ipackage and $iname)}
 		{if $ipackage and $iname}
 			{if $idiv}

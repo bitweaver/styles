@@ -1,4 +1,5 @@
 {strip}
+<!-- nohighlight -->
 <div id="bittopbar">
 	<ul id="nav" class="menu hor">
 		{if $use_custom_top_bar and $gBitSystem->getConfig('nexus_top_bar') eq 'replace'}
@@ -59,4 +60,5 @@
 
 	<div class="clear"></div>
 </div>
+<!-- /nohighlight -->
 {/strip}

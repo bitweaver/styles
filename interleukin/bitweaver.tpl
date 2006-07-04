@@ -11,6 +11,7 @@
 {/if}
 
 <div id="bittop">
+<!-- nohighlight -->
 	<div class="toplogin">
 		{if $gBitUser->isRegistered()}
 			{tr}logged in as{/tr} {displayname}
@@ -35,6 +36,7 @@
 		{/if}
 	</div>
 	<h1>{$gBitSystem->getConfig('site_title')|default:"Your Site"}</h1>
+<!-- nohighlight -->
 </div>
 
 {if ( $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules ) or ( $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules ) }
