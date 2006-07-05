@@ -1,5 +1,5 @@
 {strip}
-<!-- nohighlight -->
+
 <div id="bittopbar">
 
 	<ul id="nav" class="menu hor">
@@ -49,5 +49,5 @@
 	</ul>
 	<div class="clear"></div>
 </div>
-<!-- /nohighlight -->
+
 {/strip}

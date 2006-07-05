@@ -1,8 +1,8 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/lynx/kernel/module.tpl,v 1.2 2006/07/04 20:44:57 windblown Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/lynx/kernel/module.tpl,v 1.3 2006/07/05 15:18:19 windblown Exp $ *}
 {strip}
 	{if $module_title}
 		<h3>
-		<!-- nohighlight -->
+		
 			{if $gBitSystem->isFeatureActive( 'themes_module_controls' )}
 				<div class="control">
 				
@@ -20,9 +20,9 @@
 			{tr}{$module_title}{/tr}
 			{if $gBitSystem->isFeatureActive( 'themes_collapsible_modules' )}</a>{/if}
 		</h3>
-		<!-- /nohighlight -->
+		
 	{/if}
-	<!-- nohighlight -->
+	
 	{$module_content}
-	<!-- /nohighlight -->
+	
 {/strip}

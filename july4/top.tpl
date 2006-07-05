@@ -1,5 +1,5 @@
 <div id="bittop">
-<!-- nohighlight -->
+
 <table border="0" cellpadding="0" cellspacing="0" width="100%" height="58">
 <tr>
 	<td colspan="0" rowspan="0" bgcolor="#FFFFFF" height="58" width="180" style="vertical-align: bottom;background-image:url('{$smarty.const.THEMES_PKG_URL}styles/july4/images/fade_flag-h.gif');background-repeat:no-repeat;background-position:right;"></td>
@@ -17,5 +17,5 @@
 	</td>
 </tr>
 </table>
-<!-- /nohighlight -->
+
 </div>
