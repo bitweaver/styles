@@ -17,7 +17,7 @@ html>body		{font-size:12px;}
 .body			{}
 .content		{width:100%;}
 .footer			{color:#999; min-height:17px;}
-.actionicon		{float:right;}
+td.actionicon	{text-align:right;}
 .storage		{border:1px solid #dedede; background:#e9ecef;}
 .storage .item	{padding:3px;}
 
