@@ -57,17 +57,6 @@
 		{/if}
 	</ul>
 
-	<div id="bitlogin">
-		{if $gBitUser->isRegistered()}
-			{displayname} &bull; <a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
-		{else}
-			<a href="{$smarty.const.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
-			{if $gBitSystem->isFeatureActive( 'users_allow_register' )}
-				&nbsp;&bull; <a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}register{/tr}</a>
-			{/if}
-		{/if}
-	</div><!-- end #tiklogin -->
-
 	<div class="clear"></div>
 </div>
 {/strip}
