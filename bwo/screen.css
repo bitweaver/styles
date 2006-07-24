@@ -1,0 +1,106 @@
+@media screen,projection,tv {
+/* html tags */
+body				{line-height:1.6em; background:#fff;}
+a.create			{background:transparent url( images/create.gif ) no-repeat top right; padding-right:9px; color:#000;}
+a.external			{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+
+/* headings */
+.header				{border-bottom:1px dashed #666; margin-bottom:0em;}
+.header h1			{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px; text-shadow:0px 2px 2px #888;}
+.tabsystem .header h1	{background:transparent;}
+.header h2			{font-size:0.8em; padding:0; margin:0; font-weight:normal;}
+.comment			{color:#555;}
+.comment h3			{border-bottom:2px solid #999;}
+.post				{margin:0 0 2em 0;}
+.comment .post		{border-left:1px solid #ddd; padding:0 0 0 0.5em;}
+.comment .content	{overflow:auto;}
+.display			{margin-bottom:3em;}
+
+/* various settings */
+.pagination			{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
+.pagination a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
+.gallerybar,
+.structurebar		{font-size:0.8em; color:#666;}
+.gallerybar a,
+.structurebar a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
+#bitmain .avatar	{float:right; margin:0 0 5px 5px;}
+.errorpage p		{text-align:center;}
+
+/* priorities */
+.prio1	{background:#dfc !important;}
+.prio2	{background:#efc !important;}
+.prio3	{background:#ffc !important;}
+.prio4	{background:#fec !important;}
+.prio5	{background:#fdc !important;}
+
+/* navigation bars */
+/* navbar is deprecated and will be removed from the templates with next version - new class is pageactions */
+.navbar			{padding:1em; clear:both; font-size:0.8em;}
+.navbar ul		{padding:0; margin:0; list-style:none;}
+.navbar ul li	{float:left; list-style:none; line-height:normal; padding:1px;}
+.navbar a		{border:1px solid #ccc; background:#eee; padding:0 0.5em; margin:0 0.5em; line-height:normal;}
+.navbar a:hover	{border:1px solid #999; background:#eee;}
+
+/* pageactions */
+.pageactions		{float:left; width:100%; clear:both; padding:0.5em 0; line-height:normal;}
+.pageactions ul		{margin:0; padding:0; list-style:none;}
+.pageactions li		{margin:0; padding:0; display:inline;}
+.sort a				{border:1px solid #bbb; background:#ddd; padding:0 1em; margin:0 0.5em;}
+.sort a:hover		{border:1px solid #999; background:#eee;}
+.tools				{text-align:center;}
+.tools .icon		{padding:0.5em; margin:0 0.5em; border:1px solid #bbb; background:#ddd;}
+.tools .icon:hover	{border-color:#999; background:#fff;}
+.tabs				{}
+.tabs li			{padding:0.5em 0 0.5em 1px;}
+.tabs a				{padding:0.5em 1.5em; margin:0; float:left;}
+.tabs a:hover		{}
+.tabs li.current	{padding:0.5em 0 0.5em 1px;}
+.tabs .current a	{font-weight:bold;}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.tabs a				{float:none;}
+/* End IE5-Mac hack */
+
+/*** miscellaneous settings ***/
+.quicktag	{margin:0 1px;}
+
+/* boxes and modules */
+.box					{}
+.box h3					{}
+.popup					{background:#0c2242; color:#fff; border:1px solid #000; padding:10px;}
+.popup small			{color:#aaa !important;}
+.popup h3				{margin:3px; padding:3px; color:#ccc; border-bottom:2px solid #f80;}
+#bitmain .boxcontent	{padding:0 0.5em 0.5em 0.5em;}
+#bitmain .pigeonholes .boxcontent	{font-size:0.8em; line-height:normal;}
+
+/* modules */
+/* friggin MSIE requires the width attribute here as well for overflow to work - ARGH */
+#bitleft .module			{width:175px;}
+#bitright .module			{width:160px;}
+.module 					{margin-bottom:1em; overflow:hidden;}
+.module h3					{background:transparent url( images/mh3.gif ) left no-repeat; padding-left:16px;}
+.module h3 a				{color:#000;}
+.module ul,.module ul li	{list-style:none; margin:0; padding:0;}
+.module ul.data				{text-align:center;}
+.module ol,.module ol li	{margin:0 0 0 1.5em; padding:1px 0; line-height:normal;}
+.module form				{text-align:center;}
+
+/* calendar stuff */
+.caltable .calnumber			{border-bottom:1px solid #900; text-align:right; padding:2px; margin:2px;}
+.module .caltable				{font-size:10px;}
+.module .caltable th			{padding:0; font-weight:normal; background:transparent; color:#666;}
+.module .caltable td			{border:0; text-align:center; padding:0;}
+.module .caltable .calday a			{padding:2px 0; display:block;}
+.module .caltable .calday a:hover	{background:#f90;}
+
+/* multi file upload */
+#fileslist div span	{border:1px solid #ccc; background:#eee; color:#900; display:block; width:75%; float:left; margin:0 3px 0 0; padding:0 0 0 3px;}
+
+/* dynamic tree styling */
+.DynamicTree .text			{padding:1px 10px;}
+.DynamicTree .text-active	{background:#fed;  padding:0px 9px; border:1px solid #ccc;}
+.DynamicTree .tree-top		{line-height:30px; color:#900; font-weight:bold;}
+.DynamicTree .tree-wrapper1	{background:#f8f8f8; padding:1em; margin:1em; border:2px solid ; border-color:#eee #ccc #bbb #ddd;}
+.DynamicTree .tree-tooltip	{padding:3px 0 0 5px; font-weight:bold;}
+.DynamicTree .navbar a		{padding:10px;}
+.DynamicTree span .move		{padding:0 5px; margin:0 20px; border:1px solid #ccc; background:#eee;}
+}

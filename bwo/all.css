@@ -1,0 +1,189 @@
+@media all {
+*				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
+body			{font-size:0.8em; background:#fff; color:#000; margin:0; padding:0;}
+html>body		{font-size:12px;}
+pre *,code *,.code	{font-family:monospace;}
+pre				{width:96%; margin:0 auto; padding:1em 0; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #999;}
+html>body pre	{width:auto;}
+img				{border:0;}
+hr				{border:0; border-top:1px solid #933; padding:0; margin:1.5em 20%;}
+small,.small	{line-height:normal;}
+#bitmain small,
+#bitmain .small	{font-size:0.8em; color:#666;}
+
+/* links */
+:link,:visited					{text-decoration:none; color:#579;}
+#bitmain :link:hover,
+#bitmain :visited:hover			{background-color:#bcd;}
+:link:hover,:visited:hover,
+:link:active,:visited:active	{color:#0c2242;}
+
+/* titles */
+h1,h2,h3	{font-weight:900; margin:0.6em 0 0 0; padding:0;}
+h1			{font-size:1.3em;}
+h2			{font-size:1.2em;}
+h3			{font-size:1.1em;}
+
+/* common classes */
+.body				{font-size:1em; padding:1em 0 0 0;}
+.date				{color:#999; font-size:0.8em;}
+.header .date		{clear:both;}
+.content			{}
+.post				{border-bottom:1px dotted #ccc;}
+.preview			{border:1px dashed #009; margin:0 0 2em 0;}
+.norecords			{font-weight:bold;}
+.popup				{background:#fff; width:250px; border:1px solid #000;}
+.highlight			{font-weight:bolder; color:#900; background:#eee; border:1px solid #ddd;}
+.selected			{font-weight:bolder}
+.floaticon			{float:right; font-size:0.9em;}
+.storage			{float:right; border:1px solid #ccc; background:#fff;}
+.storage .item		{margin:3px; text-align:center;}
+.comment,.footer	{clear:both;}
+.footer				{color:#999; font-size:0.8em;}
+.pagination			{text-align:center;}
+/* images */
+#bitmain .portrait	{float:right;}
+.icon				{border:0; vertical-align:middle; margin:0 0.2em;}
+.menuicon			{text-align:center;}
+ul.small			{line-height:normal;}
+
+/* tocs */
+.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{color:#666;}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
+
+/* forms */
+form,textarea,select	{margin:0; padding:0;}
+textarea				{width:100%;}
+input,textarea,select	{font-size:12px;}
+html>body input,textarea,select	{font-size:inherit;}
+#bitmain input,
+#bitmain textarea,
+#bitmain select			{}
+input[type="text"]		{max-width:100%;}
+fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
+legend					{font-size:1.2em; padding:1em;}
+.row					{clear:both;}
+#bitmain .row			{margin-bottom:1em;}
+.quicktags				{margin:0;}
+.formlabel				{font-weight:bold; float:left; width:20%; text-align:right; font-size:0.8em;}
+.forminput				{margin-left:21%;}
+.formfeedback			{}
+.formhelp				{cursor:help; font-size:0.8em; line-height:normal; color:#a76; border-bottom:1px dotted #999;}
+.formhelp a				{font-weight:bold;}
+.closebutton			{position:absolute; top:1px; right:1px;}
+.submit					{text-align:center;}
+#bitmain .submit		{padding:1.5em;}
+.error,.errorpage h3	{color:#f00; font-weight:bold;}
+.warning				{color:#f80;}
+.success				{color:#090;}
+.clear					{clear:both;}
+.minifind fieldset		{border:0;}
+.minifind legend		{display:none;}
+.minifind fieldset		{padding:0.5em; margin:0;}
+table .formlabel		{float:none; width:auto; text-align:left;}
+table .forminput		{margin:0;}
+
+/* parsed elements */
+.bittable td	{padding:0.5em; border:1px solid #ccc;}
+.bitbox			{background:#abc; border:1px solid #666; padding:0.5em; margin:0 1em;}
+.bitbox a		{color:#357}
+.bitbar			{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+.bittoc			{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
+.bittoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
+.bittoc ul ul	{margin:0 0 0 1em;}
+.bittoc ul li	{}
+
+/* common settings for listings */
+.odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
+.odd					{background:#e5e5e5;}
+.even					{background:#fff;}
+
+/* tables */
+fieldset table			{margin:0 2%; width:96%;}
+table					{border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal;}
+caption					{font-weight:bold; padding:1.5em 0 0.5em 0;}
+th						{border-bottom:1px solid #000; background:#0c2242; color:#ccc; padding:5px 2px;}
+th :link, th :visited	{color:#fff;}
+td.actionicon			{text-align:right;}
+table.data				{border:1px solid #000; font-size:0.8em;}
+table.optionbar			{font-size:0.8em;}
+.menutable td			{padding:10px 4px;}
+
+/* lists */
+.formfeedback ul		{margin:1em 2em 0 2em; padding:2px;}
+ul,ul li				{list-style:circle;}
+ul.data,ul.data li.item	{padding:0; margin:0; list-style:none;}
+ul.data					{margin:1em;}
+ul.data li.item			{padding:0.5em; margin:0;}
+ul.data .thumb			{float:right; margin-right:1em;}
+
+li.odd,li.even			{border-top:1px solid #666; padding:1em 0; margin-bottom:-1px !important;}
+ul.toc,ul.toc ul		{margin-left:2em; padding-left:0; line-height:normal;}
+ul.toc li				{list-style:none;}
+ul.toc ul.data			{border:1px solid #ccc; padding:0.5em 1em;}
+ul.toc p				{margin:0.5em 0 1em 18px; padding:0;}
+
+li.error,li.success,li.note,li.warning	{list-style:none;}
+
+dl	{padding:0; margin:0.5em 0; line-height:1.3em;}
+dt	{padding:0; margin:0; width:30%; text-align:right; font-weight:bold;}
+dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
+
+/* boxes */
+.box					{}
+.box h3					{}
+#bitmain .boxcontent	{padding:0 1em 1em 1em;}
+
+/* structure navigation */
+.path					{display:block;}
+.navigation span		{display:block; width:49%;}
+.navigation .left		{text-align:right; float:left;}
+.navigation .right		{text-align:left; float:right;}
+.navigation span a		{display:block;}
+
+/* package specific settings */
+/* articles */
+.articles .content div.image	{float:right; margin:0.5em 0 0.5em 1em;}
+/* add some css3 stuff * /
+.articles .post:nth-child(2n+1)	{width:48%; float:left; clear:both; margin:0 0 3em 0;}
+.articles .post:nth-child(2n)	{width:48%; float:right; margin:0 0 2em 0;}
+.articles .post:nth-child(4)	{color:#222; opacity:.90;}
+.articles .post:nth-child(5)	{color:#444; opacity:.80;}
+.articles .post:nth-child(6)	{color:#666; opacity:.70;}
+.articles .post:nth-child(7)	{color:#888; opacity:.60;}
+.articles .post:nth-child(8)	{color:#aaa; opacity:.50;}
+.articles .post:nth-child(n+9) 	{color:#ccc; opacity:.40;}
+
+/* fisheye and themes listing */
+.articles ul.data li.item,
+.themes ul.data li.item,
+.fisheye ul.data li.item		{border:1px solid #ddd; clear:both; margin:0.5em 0px 0.5em 200px; background:#eee;}
+.articles ul.data li.item .thumb,
+.themes ul.data li.item .thumb,
+.fisheye ul.data li.item .thumb	{float:left; margin:-35px 0 0 -200px;}
+.fisheye .body .image			{margin:0 -1em;}
+
+/* other fisheye settings */
+.thumb							{padding:3px; border:1px solid #ccc;}
+.fisheyegallery .thumb			{padding:3px; border:3px double #ccc;}
+.thumb:hover					{border-color:#bbb;}
+.thumbnailblock .box			{margin:3px; padding:5px 0; text-align:center;}
+.thumbnailblock .box:hover		{background:#eee; outline:1px solid #ccc;}
+.thumbnailblock .box a:hover	{background:transparent !important;}
+.image							{text-align:center;}
+
+/* sticky notes */
+.stickies textarea,
+.stickies input[type='text']	{background:#ffc;}
+.stickynote .boxtitle			{border-bottom: 1px solid #dda;}
+.stickynote						{background-color:#ffc; width:300px; padding:3px;}
+
+/* this is the attachment browser */
+.attbrowser				{padding:0 20px; margin:0; background:#fff;}
+.attbrowser .data		{text-align:center;}
+.attbrowser .data td	{padding:10px;}
+}

@@ -1,0 +1,30 @@
+@media screen,projection,tv {
+/* layout */
+html	{background:#fff url( images/top.png ) top left repeat-x !important;}
+body	{background:transparent url( images/full.png ) top left no-repeat !important;}
+
+#bitbody	{}
+#bitbottom	{clear:both; font-size:0.8em; text-align:center; color:#999;}
+
+#bitmain				{background:transparent url( images/bottom.png ) bottom right no-repeat; padding:5px 20px 20px 20px;}
+#bitleft,#bitright		{position:absolute; font-size:0.8em;}
+#bitleft				{width:175px; left:10px; top:50px;}
+#bitright				{width:160px; right:10px; top:50px;}
+
+#bitlogo	{clear:both; height:25px;}
+#bittopbar	{float:left; width:97%; height:1.4em; font-size:0.8em; padding:2px 0 2px 2%;}
+
+#bitlogin	{color:#999; float:right; padding:0; margin:0; line-height:normal;}
+#bitlogin a	{color:#666;}
+
+#bitsearch								{font-size:0.8em; clear:both; text-align:right; color:#666; padding:5px 10px 0 0;}
+#bitsearch *							{color:#666;}
+#bitsearch input[type="text"]			{border:solid #666; border-width:0 0 1px 0; margin:0 0.3em; padding:2px;}
+#bitsearch input[type="text"]:focus		{border:solid #000; border-width:0 0 1px 0; color:#000;}
+#bitsearch input:hover,
+#bitsearch input[type="submit"]:focus	{color:#000;}
+
+/* adjusting width of #bitmain depending on displayed columns - in this theme left column should always be present */
+.bit-cols-2	{margin:10px 170px 10px 185px;}
+.bit-cols-1	{margin:10px 10px 10px 185px;}
+}

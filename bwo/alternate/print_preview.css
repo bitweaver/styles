@@ -1,0 +1,4 @@
+body		{background:#fff;}
+#bitmain	{padding:0 1em;}
+#bitlogo,#bittop,#bitleft,#bitright,#bittopbar,#toplogin,#bitbottom,.pageactions,.navbar,.tabcontainer,.bittoc,.floaticon,.minifind	{display:none;}
+.display.comment	{page-break-before:always;}
