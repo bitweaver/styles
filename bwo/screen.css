@@ -6,7 +6,7 @@ a.external			{background:transparent url( images/external.gif ) no-repeat right;
 
 /* headings */
 .header				{border-bottom:1px dashed #666; margin-bottom:0em;}
-.header h1			{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px; text-shadow:0px 2px 2px #888;}
+.header h1			{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px; text-shadow:0px 2px 2px #888; margin-bottom:.3em}
 .tabsystem .header h1	{background:transparent;}
 .header h2			{font-size:0.8em; padding:0; margin:0; font-weight:normal;}
 .comment			{color:#555;}
