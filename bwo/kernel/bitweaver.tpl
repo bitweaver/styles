@@ -1,18 +1,33 @@
 {include file="bitpackage:kernel/header.tpl"}
 {strip}
 {if $print_page ne "y"}
-	{if $gBitSystem->isFeatureActive( 'bidirectional_text' )}
-		<div dir="rtl">
-	{/if}
-
 	{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 		{include file="bitpackage:kernel/top_bar.tpl"}
+	{/if}
+
+<div id="bitholder" class="bit-holder-
+{if $gBitSystem->isFeatureActive( 'site_right_column' ) 
+			&& $r_modules 
+			&& !$gHideModules}
+	{if $gBitSystem->isFeatureActive( 'site_left_column' ) 
+			&& $l_modules 
+			&& !$gHideModules}2
+	{else}1r
+	{/if}
+{elseif $gBitSystem->isFeatureActive( 'site_left_column' ) 
+			&& $l_modules 
+			&& !$gHideModules}1l
+{else}0{/if}">
+
+
+	{if $gBitSystem->isFeatureActive( 'bidirectional_text' )}
+		<div dir="rtl">
 	{/if}
 
 	{include file="bitpackage:kernel/top.tpl"}
 
 	<div id="bitbody">
-		<div id="bitmain" class="bit-cols-{if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules}2{else}1{/if}">
+		<div id="bitmain" class="bit-cols">
 			{include file="bitpackage:liberty/display_structure.tpl"}
 			<a style="padding:0;margin:0;border:0;" name="content"></a>
 			{if $pageError}
@@ -48,6 +63,7 @@
 		</div>
 	{/if}
 	{include file="bitpackage:kernel/footer.tpl"}
+</div>
 {/if}
 {/strip}
 

@@ -12,17 +12,22 @@ small,.small	{line-height:normal;}
 #bitmain .small	{font-size:0.8em; color:#666;}
 
 /* links */
-:link,:visited					{text-decoration:none; color:#579;}
+:link,:visited					{text-decoration:none; color:#06c}
+.content :link,:visited			{text-decoration:none; border-bottom:1px dotted #69f; color:#06c}
 #bitmain :link:hover,
 #bitmain :visited:hover			{background-color:#bcd;}
 :link:hover,:visited:hover,
 :link:active,:visited:active	{color:#0c2242;}
+#bittopbar a {text-decoration:none; border:none; color:#579;}
+#bittopbar a:hover {text-decoration:none; border:none; color:#cc3300;}
+
 
 /* titles */
 h1,h2,h3	{font-weight:900; margin:0.6em 0 0 0; padding:0;}
-h1			{font-size:1.3em;}
-h2			{font-size:1.2em;}
-h3			{font-size:1.1em;}
+h1			{font-size:1.55em;}
+h2			{font-size:1.4em;}
+h3			{font-size:1.2em;}
+h4			{font-size:1em;}
 
 /* common classes */
 .body				{font-size:1em; padding:1em 0 0 0;}
@@ -46,6 +51,10 @@ h3			{font-size:1.1em;}
 .icon				{border:0; vertical-align:middle; margin:0 0.2em;}
 .menuicon			{text-align:center;}
 ul.small			{line-height:normal;}
+
+.header h1{font-size:2.2em; font-weight:300;}
+.content h2{color:#607078; font-weight:900;}
+.content h3{color:#607078; font-weight:900;}
 
 /* tocs */
 .maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}

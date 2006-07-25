@@ -1,0 +1,20 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.1 2006/07/25 22:50:46 wjames5 Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>
+ * @version  $Revision: 1.1 $
+ * @theme    jill
+ * @license  LGPL
+ */
+
+/* import settings that apply to all media */
+@import url( all.css );
+
+/* import screen media */
+@import url( layout.css );
+@import url( screen.css );
+@import url( jstabs.css );
+@import url( cssmenus.css );
+
+/* apply print display settings */
+@import url( print.css );
+
