@@ -1,8 +1,8 @@
 @media screen,projection,tv {
 /* html tags */
 body				{line-height:1.6em; background:#fff;}
-a.create			{background:transparent url( images/create.gif ) no-repeat top right; padding-right:9px; color:#000;}
-a.external			{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+a.create, .content a.create {background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #000; padding-right:9px; color:#000;}
+a.external .content a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
 
 /* headings */
 .header				{border-bottom:1px dashed #666; margin-bottom:0em;}
