@@ -21,9 +21,9 @@ small,.small	{line-height:normal;}
 #bittopbar a {text-decoration:none; border:none; color:#579;}
 #bittopbar a:hover {text-decoration:none; border:none; color:#cc3300;}
 
-
 /* titles */
-h1,h2,h3	{font-weight:900; margin:0.6em 0 0 0; padding:0;}
+h1,h2,h3	{font-weight:900; margin:0.3em 0 0 0; padding:0;}
+h1			{font-size:1.6em;}
 h2			{font-size:1.4em;}
 h3			{font-size:1.2em;}
 h4			{font-size:1em;}
@@ -51,9 +51,9 @@ h4			{font-size:1em;}
 .menuicon			{text-align:center;}
 ul.small			{line-height:normal;}
 
-.header h1{font-size:2.2em; font-weight:300;}
-.content h2{color:#607078; font-weight:900;}
-.content h3{color:#607078; font-weight:900;}
+.header h1{font-size:2.1em; font-weight:300; line-height:1em;}
+.content h2, .content h3{color:#607078; font-weight:900;}
+.articles .header h1 {font-size:1.6em; font-weight:900;}
 
 /* tocs */
 .maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
