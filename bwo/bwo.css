@@ -1,20 +1,383 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.1 2006/07/25 22:50:46 wjames5 Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.2 2006/07/30 14:18:38 squareing Exp $ */
 /**
- * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
- * @theme    jill
+ * @author   wjames
+ * @version  $Revision: 1.2 $
+ * @theme    bwo
  * @license  LGPL
  */
 
 /* import settings that apply to all media */
-@import url( all.css );
+@media all {
+*				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
+body			{font-size:0.8em; background:#fff; color:#000; margin:0; padding:0;}
+html>body		{font-size:12px;}
+pre *,code *,.code	{font-family:monospace;}
+pre				{width:96%; margin:0 auto; padding:1em 0; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #999;}
+html>body pre	{width:auto;}
+img				{border:0;}
+hr				{border:0; border-top:1px solid #933; padding:0; margin:1.5em 20%;}
+small,.small	{line-height:normal;}
+#bitmain small,
+#bitmain .small	{font-size:0.8em; color:#666;}
 
-/* import screen media */
-@import url( layout.css );
-@import url( screen.css );
-@import url( jstabs.css );
-@import url( cssmenus.css );
+/* links */
+:link,:visited					{text-decoration:none; color:#06c}
+.content :link,:visited			{text-decoration:none; border-bottom:1px dotted #69f; color:#06c}
+#bitmain :link:hover,
+#bitmain :visited:hover			{background-color:#bcd;}
+:link:hover,:visited:hover,
+:link:active,:visited:active	{color:#0c2242;}
+#bittopbar a		{text-decoration:none; border:none; color:#579; padding:3px 15px;}
+#bittopbar a:hover	{text-decoration:none; border:none; color:#c30;}
 
-/* apply print display settings */
-@import url( print.css );
+/* titles */
+h1,h2,h3	{font-weight:900; margin:0.3em 0 0 0; padding:0;}
+h1			{font-size:1.6em;}
+h2			{font-size:1.4em;}
+h3			{font-size:1.2em;}
+h4			{font-size:1em;}
 
+/* common classes */
+.body				{font-size:1em; padding:1em 0 0 0;}
+.date				{color:#999; font-size:0.8em;}
+.header .date		{clear:both;}
+.content			{}
+.post				{border-bottom:1px dotted #ccc;}
+.preview			{border:1px dashed #009; margin:0 0 2em 0;}
+.norecords			{font-weight:bold;}
+.popup				{background:#fff; width:250px; border:1px solid #000;}
+.highlight			{font-weight:bolder; color:#900; background:#eee; border:1px solid #ddd;}
+.selected			{font-weight:bolder}
+.floaticon			{float:right; font-size:0.9em;}
+.storage			{float:right; border:1px solid #ccc; background:#fff;}
+.storage .item		{margin:3px; text-align:center;}
+.comment,.footer	{clear:both;}
+.footer				{color:#999; font-size:0.8em;}
+.pagination			{text-align:center;}
+/* images */
+#bitmain .portrait	{float:right;}
+.icon				{border:0; vertical-align:middle; margin:0 0.2em;}
+.menuicon			{text-align:center;}
+ul.small			{line-height:normal;}
+
+.header h1{font-size:2.1em; font-weight:300; line-height:1em;}
+.content h2, .content h3{color:#607078; font-weight:900;}
+.articles .header h1 {font-size:1.6em; font-weight:900;}
+
+/* tocs */
+.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{color:#666;}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
+
+/* forms */
+form,textarea,select	{margin:0; padding:0;}
+textarea				{width:100%;}
+input,textarea,select	{font-size:12px;}
+html>body input,textarea,select	{font-size:inherit;}
+#bitmain input,
+#bitmain textarea,
+#bitmain select			{}
+input[type="text"]		{max-width:100%;}
+fieldset				{border:0; border-top:3px double #7ac; border-bottom:1px solid #aaa; padding:1em; margin-bottom:1em;}
+legend					{font-size:1.2em; padding:1em;}
+.row					{clear:both;}
+#bitmain .row			{margin-bottom:1em;}
+.quicktags				{margin:0;}
+.formlabel				{font-weight:bold; float:left; width:20%; text-align:right; font-size:0.8em;}
+.forminput				{margin-left:21%;}
+.formfeedback			{}
+.formhelp				{cursor:help; font-size:0.8em; line-height:normal; color:#a76; border-bottom:1px dotted #999;}
+.formhelp a				{font-weight:bold;}
+.closebutton			{position:absolute; top:1px; right:1px;}
+.submit					{text-align:center;}
+#bitmain .submit		{padding:1.5em;}
+.error,.errorpage h3	{color:#f00; font-weight:bold;}
+.warning				{color:#f80;}
+.success				{color:#090;}
+.clear					{clear:both;}
+.minifind fieldset		{border:0;}
+.minifind legend		{display:none;}
+.minifind fieldset		{padding:0.5em; margin:0;}
+table .formlabel		{float:none; width:auto; text-align:left;}
+table .forminput		{margin:0;}
+
+/* parsed elements */
+.bittable td	{padding:0.5em; border:1px solid #ccc;}
+.bitbox			{background:#abc; border:1px solid #666; padding:0.5em; margin:0 1em;}
+.bitbox a		{color:#357}
+.bitbar			{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+.bittoc			{float:right; border:1px solid #ddd; font-size:0.8em; background:#eee; margin:0 0 1em 1em; padding:0 1em; width:35%;}
+.bittoc ul		{margin:0.5em 0 0.5em 1.5em; padding:0;}
+.bittoc ul ul	{margin:0 0 0 1em;}
+.bittoc ul li	{}
+
+/* common settings for listings */
+.odd,.even				{border-bottom:1px solid #999; padding:3px 2px;}
+.odd					{background:#e5e5e5;}
+.even					{background:#fff;}
+
+/* tables */
+fieldset table			{margin:0 2%; width:96%;}
+table					{border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal;}
+caption					{font-weight:bold; padding:1.5em 0 0.5em 0;}
+th						{border-bottom:1px solid #000; background:#0c2242; color:#ccc; padding:5px 2px;}
+th :link, th :visited	{color:#fff;}
+td.actionicon			{text-align:right;}
+table.data				{border:1px solid #000; font-size:0.8em;}
+table.optionbar			{font-size:0.8em;}
+.menutable td			{padding:10px 4px;}
+
+/* lists */
+.formfeedback ul		{margin:1em 2em 0 2em; padding:2px;}
+ul,ul li				{list-style:circle;}
+ul.data,ul.data li.item	{padding:0; margin:0; list-style:none;}
+ul.data					{margin:1em;}
+ul.data li.item			{padding:0.5em; margin:0;}
+ul.data .thumb			{float:right; margin-right:1em;}
+
+li.odd,li.even			{border-top:1px solid #666; padding:1em 0; margin-bottom:-1px !important;}
+ul.toc,ul.toc ul		{margin-left:2em; padding-left:0; line-height:normal;}
+ul.toc li				{list-style:none;}
+ul.toc ul.data			{border:1px solid #ccc; padding:0.5em 1em;}
+ul.toc p				{margin:0.5em 0 1em 18px; padding:0;}
+
+li.error,li.success,li.note,li.warning	{list-style:none;}
+
+dl	{padding:0; margin:0.5em 0; line-height:1.3em;}
+dt	{padding:0; margin:0; width:30%; text-align:right; font-weight:bold;}
+dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
+
+/* boxes */
+.box					{}
+.box h3					{}
+#bitmain .boxcontent	{padding:0 1em 1em 1em;}
+
+/* structure navigation */
+.path					{display:block;}
+.navigation span		{display:block; width:49%;}
+.navigation .left		{text-align:right; float:left;}
+.navigation .right		{text-align:left; float:right;}
+.navigation span a		{display:block;}
+
+/* package specific settings */
+/* articles */
+.articles .content div.image	{float:right; margin:0.5em 0 0.5em 1em;}
+/* add some css3 stuff * /
+.articles .post:nth-child(2n+1)	{width:48%; float:left; clear:both; margin:0 0 3em 0;}
+.articles .post:nth-child(2n)	{width:48%; float:right; margin:0 0 2em 0;}
+.articles .post:nth-child(4)	{color:#222; opacity:.90;}
+.articles .post:nth-child(5)	{color:#444; opacity:.80;}
+.articles .post:nth-child(6)	{color:#666; opacity:.70;}
+.articles .post:nth-child(7)	{color:#888; opacity:.60;}
+.articles .post:nth-child(8)	{color:#aaa; opacity:.50;}
+.articles .post:nth-child(n+9) 	{color:#ccc; opacity:.40;}
+
+/* fisheye and themes listing */
+.articles ul.data li.item,
+.themes ul.data li.item,
+.fisheye ul.data li.item		{border:1px solid #ddd; clear:both; margin:0.5em 0px 0.5em 200px; background:#eee;}
+.articles ul.data li.item .thumb,
+.themes ul.data li.item .thumb,
+.fisheye ul.data li.item .thumb	{float:left; margin:-35px 0 0 -200px;}
+.fisheye .body .image			{margin:0 -1em;}
+
+/* other fisheye settings */
+.thumb							{padding:3px; border:1px solid #ccc;}
+.fisheyegallery .thumb			{padding:3px; border:3px double #ccc;}
+.thumb:hover					{border-color:#bbb;}
+.thumbnailblock .box			{margin:3px; padding:5px 0; text-align:center;}
+.thumbnailblock .box:hover		{background:#eee; outline:1px solid #ccc;}
+.thumbnailblock .box a:hover	{background:transparent !important;}
+.image							{text-align:center;}
+
+/* sticky notes */
+.stickies textarea,
+.stickies input[type='text']	{background:#ffc;}
+.stickynote .boxtitle			{border-bottom: 1px solid #dda;}
+.stickynote						{background-color:#ffc; width:300px; padding:3px;}
+
+/* this is the attachment browser */
+.attbrowser				{padding:0 20px; margin:0; background:#fff;}
+.attbrowser .data		{text-align:center;}
+.attbrowser .data td	{padding:10px;}
+}
+
+@media screen,projection,tv {
+/* layout */
+html	{background:#fff}
+body	{}
+
+#bitholder {background:transparent url( images/narrow.png ) top left no-repeat !important;}
+#bitbody	{}
+#bitbottom	{clear:both; font-size:0.8em; text-align:center; color:#999;}
+
+#bitmain	{background:transparent url( images/bottom.png ) bottom right no-repeat; padding:5px 20px 20px 20px;}
+#bitleft,
+#bitright	{position:absolute; font-size:0.8em;}
+#bitleft	{width:175px; left:10px; top:50px;}
+#bitright	{width:160px; right:10px; top:70px;}
+
+#bitlogo	{clear:both; height:25px; text-align:right; padding:6px 30px 0 0;}
+#bittopbar	{text-align:center; padding:4px 0 2px 0; font-size:1.1em; font-weight:900;}
+
+/*#bitlogin	{color:#999; float:right; padding:0; margin:0; line-height:normal;}*/
+#bitlogin	{color:#999; padding:0; margin:0; line-height:normal;}
+#bitlogin a	{color:#666;}
+
+/* #bitsearch								{font-size:0.8em; clear:both; text-align:right; color:#666; padding:5px 10px 0 0;}*/
+#bitsearch								{font-size:0.8em; color:#666; padding:2px 0 0 0;}
+#bitsearch *							{color:#666;}
+#bitsearch input[type="text"]			{border:solid #666; border-width:0 0 1px 0; margin:0 0.3em; padding:2px;}
+#bitsearch input[type="text"]:focus		{border:solid #000; border-width:0 0 1px 0; color:#000;}
+#bitsearch input:hover,
+#bitsearch input[type="submit"]:focus	{color:#000;}
+
+/* adjusting width of #bitmain depending on displayed columns - in this theme left column should always be present */
+.bit-cols{margin:10px 50px 10px 64px;}
+
+.bit-holder-2	{margin-left:130px; margin-right:130px;}
+.bit-holder-1l	{margin-left:130px; margin-right:10px;}
+.bit-holder-1r	{margin-left:10px; margin-right:130px;}
+.bit-holder-0	{margin-left:10%; margin-right:10%;}
+
+/* html tags */
+body							{line-height:1.6em; background:#fff;}
+a.create, .content a.create		{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #000; padding-right:9px; color:#000;}
+a.external .content a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+
+/* headings */
+.header				{border-bottom:1px dashed #666; margin-bottom:0em;}
+.header h1			{background:transparent url( images/hh1.gif ) left no-repeat; padding-left:16px; margin-left:-16px; text-shadow:0px 2px 2px #888; margin-bottom:.3em}
+.header h2			{font-size:0.8em; padding:0; margin:0; font-weight:normal;}
+.comment			{color:#555;}
+.comment h3			{border-bottom:2px solid #999;}
+.post				{margin:0 0 2em 0;}
+.comment .post		{border-left:1px solid #ddd; padding:0 0 0 0.5em;}
+.comment .content	{overflow:auto;}
+.display			{margin-bottom:3em;}
+
+/* various settings */
+.pagination			{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
+.pagination a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
+.gallerybar,
+.structurebar		{font-size:0.8em; color:#666;}
+.gallerybar a,
+.structurebar a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
+#bitmain .avatar	{float:right; margin:0 0 5px 5px;}
+.errorpage p		{text-align:center;}
+
+/* priorities */
+.prio1	{background:#dfc !important;}
+.prio2	{background:#efc !important;}
+.prio3	{background:#ffc !important;}
+.prio4	{background:#fec !important;}
+.prio5	{background:#fdc !important;}
+
+/* navigation bars */
+/* navbar is deprecated and will be removed from the templates with next version - new class is pageactions */
+.navbar			{padding:1em; clear:both; font-size:0.8em;}
+.navbar ul		{padding:0; margin:0; list-style:none;}
+.navbar ul li	{float:left; list-style:none; line-height:normal; padding:1px;}
+.navbar a		{border:1px solid #ccc; background:#eee; padding:0 0.5em; margin:0 0.5em; line-height:normal;}
+.navbar a:hover	{border:1px solid #999; background:#eee;}
+
+/* pageactions */
+.pageactions		{float:left; width:100%; clear:both; padding:0.5em 0; line-height:normal;}
+.pageactions ul		{margin:0; padding:0; list-style:none;}
+.pageactions li		{margin:0; padding:0; display:inline;}
+.sort a				{border:1px solid #bbb; background:#ddd; padding:0 1em; margin:0 0.5em;}
+.sort a:hover		{border:1px solid #999; background:#eee;}
+.tools				{text-align:center;}
+.tools .icon		{padding:0.5em; margin:0 0.5em; border:1px solid #bbb; background:#ddd;}
+.tools .icon:hover	{border-color:#999; background:#fff;}
+.tabs				{}
+.tabs li			{padding:0.5em 0 0.5em 1px;}
+.tabs a				{padding:0.5em 1.5em; margin:0; float:left;}
+.tabs a:hover		{}
+.tabs li.current	{padding:0.5em 0 0.5em 1px;}
+.tabs .current a	{font-weight:bold;}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.tabs a				{float:none;}
+/* End IE5-Mac hack */
+
+/*** miscellaneous settings ***/
+.quicktag	{margin:0 1px;}
+
+/* boxes and modules */
+.box					{}
+.box h3					{}
+.popup					{background:#0c2242; color:#fff; border:1px solid #000; padding:10px;}
+.popup small			{color:#aaa !important;}
+.popup h3				{margin:3px; padding:3px; color:#ccc; border-bottom:2px solid #f80;}
+#bitmain .boxcontent	{padding:0 0.5em 0.5em 0.5em;}
+#bitmain .pigeonholes .boxcontent	{font-size:0.8em; line-height:normal;}
+
+/* modules */
+/* friggin MSIE requires the width attribute here as well for overflow to work - ARGH */
+#bitleft .module			{width:175px;}
+#bitright .module			{width:160px;}
+.module 					{margin-bottom:1em; overflow:hidden;}
+.module h3					{background:transparent url( images/mh3.gif ) left no-repeat; padding-left:16px;}
+.module h3 a				{color:#000;}
+.module ul,.module ul li	{list-style:none; margin:0; padding:0;}
+.module ul.data				{text-align:center;}
+.module ol,.module ol li	{margin:0 0 0 1.5em; padding:1px 0; line-height:normal;}
+.module form				{text-align:center;}
+
+/* calendar stuff */
+.caltable .calnumber			{border-bottom:1px solid #900; text-align:right; padding:2px; margin:2px;}
+.module .caltable				{font-size:10px;}
+.module .caltable th			{padding:0; font-weight:normal; background:transparent; color:#666;}
+.module .caltable td			{border:0; text-align:center; padding:0;}
+.module .caltable .calday a			{padding:2px 0; display:block;}
+.module .caltable .calday a:hover	{background:#f90;}
+
+/* multi file upload */
+#fileslist div span	{border:1px solid #ccc; background:#eee; color:#900; display:block; width:75%; float:left; margin:0 3px 0 0; padding:0 0 0 3px;}
+
+/* dynamic tree styling */
+.DynamicTree .text			{padding:1px 10px;}
+.DynamicTree .text-active	{background:#fed;  padding:0px 9px; border:1px solid #ccc;}
+.DynamicTree .tree-top		{line-height:30px; color:#900; font-weight:bold;}
+.DynamicTree .tree-wrapper1	{background:#f8f8f8; padding:1em; margin:1em; border:2px solid ; border-color:#eee #ccc #bbb #ddd;}
+.DynamicTree .tree-tooltip	{padding:3px 0 0 5px; font-weight:bold;}
+.DynamicTree .navbar a		{padding:10px;}
+.DynamicTree span .move		{padding:0 5px; margin:0 20px; border:1px solid #ccc; background:#eee;}
+
+/* tabs */
+.tabsystem .header h1					{background:transparent;}
+.tabsystem .tabcontainer				{margin:0; padding:0; border:0; clear:both; z-index:1;}
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-active	{position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
+.tabsystem .tabpage						{z-index:1; clear:both;}
+h4										{margin:0; padding:0; z-index:1;}
+
+/* tabs design */
+.tabsystem .tabcontainer a				{color:#666 !important;}
+.tabsystem .tabcontainer a:hover		{color:#666 !important; background:transparent !important;}
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-hover,
+.tabsystem .tabcontainer .tab-active	{cursor:pointer; top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; background:transparent url( images/jstabs/tab_shade.png ) repeat-x; border:1px solid #bbb; border-bottom:0; text-decoration:none;}
+.tabsystem .tabcontainer .tab-hover		{padding:3px 5px 1px 5px; border-top:2px solid #f60;}
+.tabsystem .tabcontainer .tab-active	{top:1px; margin:0; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60;}
+.tabsystem .tabpage						{border:1px solid #bbb; margin:0 0 1em 0; padding:0 1em;}
+
+/* regular menus */
+.menu .icon	{vertical-align:middle;}
+.menu a		{display:block;}
+
+/* apply seperate menu style for menus in middle of page - like admin screen */
+#bitmain .menu			{font-size:0.8em;}
+#bitmain .menu li		{background:#f5f5f5; border:1px solid #ccc; line-height:2.4em; padding:0em; margin-bottom:-1px;}
+#bitmain .menu a:hover	{background:#579; color:#fff;}
+}
+
+@media print {
+body		{background:#fff;}
+#bitmain	{padding:0 1em;}
+#bitlogo,#bittop,#bitleft,#bitright,#bittopbar,#toplogin,#bitbottom,.pageactions,.navbar,.tabcontainer,.bittoc,.floaticon,.minifind	{display:none;}
+.display.comment	{page-break-before:always;}
+}
