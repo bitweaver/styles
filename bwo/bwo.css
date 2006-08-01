@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.2 2006/07/30 14:18:38 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.3 2006/08/01 13:27:23 squareing Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.3 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -21,14 +21,24 @@ small,.small	{line-height:normal;}
 #bitmain .small	{font-size:0.8em; color:#666;}
 
 /* links */
-:link,:visited					{text-decoration:none; color:#06c}
-.content :link,:visited			{text-decoration:none; border-bottom:1px dotted #69f; color:#06c}
-#bitmain :link:hover,
-#bitmain :visited:hover			{background-color:#bcd;}
-:link:hover,:visited:hover,
-:link:active,:visited:active	{color:#0c2242;}
+:link,
+:visited			{text-decoration:none; color:#06c}
+:link:hover,
+:visited:hover,
+:link:active,
+:visited:active		{color:#0c2242;}
+
+#bitmain .content :link,
+#bitmain .content :visited			{border-bottom:1px dotted #69f;}
+#bitmain .content :link:hover,
+#bitmain .content :visited:hover	{background-color:#bcd;}
+
 #bittopbar a		{text-decoration:none; border:none; color:#579; padding:3px 15px;}
 #bittopbar a:hover	{text-decoration:none; border:none; color:#c30;}
+
+a.create	{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #000; padding-right:9px; color:#000;}
+a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+a.more		{border:0;}
 
 /* titles */
 h1,h2,h3	{font-weight:900; margin:0.3em 0 0 0; padding:0;}
@@ -245,8 +255,6 @@ body	{}
 
 /* html tags */
 body							{line-height:1.6em; background:#fff;}
-a.create, .content a.create		{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #000; padding-right:9px; color:#000;}
-a.external .content a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
 
 /* headings */
 .header				{border-bottom:1px dashed #666; margin-bottom:0em;}
