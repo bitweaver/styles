@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.4 2006/08/02 06:38:17 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.5 2006/08/05 17:16:41 squareing Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.4 $
+ * @version  $Revision: 1.5 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -12,7 +12,6 @@
 body			{font-size:0.8em; background:#fff; color:#000; margin:0; padding:0;}
 html>body		{font-size:12px;}
 pre *,code *,.code	{font-family:monospace;}
-pre				{width:96%; margin:0 auto; padding:1em 0; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #999;}
 html>body pre	{width:auto;}
 img				{border:0;}
 hr				{border:0; border-top:1px solid #933; padding:0; margin:1.5em 20%;}
@@ -83,7 +82,7 @@ ul.small			{line-height:normal;}
 .maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 
 /* forms */
-form,textarea,select	{margin:0; padding:0;}
+form,textarea			{margin:0; padding:0;}
 textarea				{width:100%;}
 input,textarea,select	{font-size:12px;}
 html>body input,textarea,select	{font-size:inherit;}
@@ -265,6 +264,10 @@ body							{line-height:1.6em; background:#fff;}
 .comment .post		{border-left:1px solid #ddd; padding:0 0 0 0.5em;}
 .comment .content	{overflow:auto;}
 .display			{margin-bottom:3em;}
+
+/* code sections */
+pre			{width:96%; margin:0 auto; padding:0.5em; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #999;}
+.codetitle	{font-weight:bold; background:#c64; color:#fff; margin:1em 0 0 0; padding:3px 0 0 0.5em; border:1px solid #999; border-bottom:0;}
 
 /* various settings */
 .pagination			{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
