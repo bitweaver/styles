@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.6 2006/08/07 07:40:27 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.7 2006/08/07 07:44:27 bitweaver Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.6 $
+ * @version  $Revision: 1.7 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -28,10 +28,10 @@ small,.small	{line-height:normal;}
 :visited:active		{color:#0c2242;}
 
 #bitmain .content :link,
-#bitmain .content :visited			{border-bottom:1px dotted #69f;}
+#bitmain .content :visited				{border-bottom:1px dotted #69f;}
 #bitmain .content :link:hover,
-#bitmain .content :visited:hover	{background-color:#bcd;}
-#bitmain .content .stars-container	{border:0}
+#bitmain .content :visited:hover		{background-color:#bcd;}
+#bitmain .content .stars-container a	{border:0;}
 
 #bittopbar a		{text-decoration:none; border:none; color:#579; padding:3px 15px;}
 #bittopbar a:hover	{text-decoration:none; border:none; color:#c30;}
