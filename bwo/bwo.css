@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.5 2006/08/05 17:16:41 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.6 2006/08/07 07:40:27 squareing Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.5 $
+ * @version  $Revision: 1.6 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -31,13 +31,14 @@ small,.small	{line-height:normal;}
 #bitmain .content :visited			{border-bottom:1px dotted #69f;}
 #bitmain .content :link:hover,
 #bitmain .content :visited:hover	{background-color:#bcd;}
+#bitmain .content .stars-container	{border:0}
 
 #bittopbar a		{text-decoration:none; border:none; color:#579; padding:3px 15px;}
 #bittopbar a:hover	{text-decoration:none; border:none; color:#c30;}
 
 a.create	{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #000; padding-right:9px; color:#000;}
 a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
-a.more		{border:0;}
+a.more		{border:0 !important;}
 
 /* titles */
 h1,h2,h3	{font-weight:900; margin:0.3em 0 0 0; padding:0;}
@@ -174,15 +175,6 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 /* package specific settings */
 /* articles */
 .articles .content div.image	{float:right; margin:0.5em 0 0.5em 1em;}
-/* add some css3 stuff * /
-.articles .post:nth-child(2n+1)	{width:48%; float:left; clear:both; margin:0 0 3em 0;}
-.articles .post:nth-child(2n)	{width:48%; float:right; margin:0 0 2em 0;}
-.articles .post:nth-child(4)	{color:#222; opacity:.90;}
-.articles .post:nth-child(5)	{color:#444; opacity:.80;}
-.articles .post:nth-child(6)	{color:#666; opacity:.70;}
-.articles .post:nth-child(7)	{color:#888; opacity:.60;}
-.articles .post:nth-child(8)	{color:#aaa; opacity:.50;}
-.articles .post:nth-child(n+9) 	{color:#ccc; opacity:.40;}
 
 /* fisheye and themes listing */
 .articles ul.data li.item,
