@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.7 2006/08/07 07:44:27 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.8 2006/08/08 10:46:17 bitweaver Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.7 $
+ * @version  $Revision: 1.8 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -39,6 +39,7 @@ small,.small	{line-height:normal;}
 a.create	{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #000; padding-right:9px; color:#000;}
 a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
 a.more		{border:0 !important;}
+th :link:hover	{color:#ff9;}
 
 /* titles */
 h1,h2,h3	{font-weight:900; margin:0.3em 0 0 0; padding:0;}
