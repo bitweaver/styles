@@ -16,13 +16,25 @@ classes that can be used for more precise and detailed customisation.
 
 File Format
 -----------
+
 the one line style is used to fit more in one screen for an easy overview.
+
+Vim users (www.vim.org):
 	if you don't like this, you can use this substitution in vim to get
 	everything into a multi-line layout:
-		%s,\([{;]\)\s*,\1\r\t,g|%s,\t},},g|%s,\s*{, {,g
+		%s,\([{;]\)\s*,\1\r\t,g|%s,\t},},g|%s,\_s*{, {,g
 
 	when you have set gdefault in your .vimrc file, use the following:
-		%s,\([{;]\)\s*,\1\r\t,|%s,\t},},|%s,\s*{, {,
+		%s,\([{;]\)\s*,\1\r\t,|%s,\t},},|%s,\_s*{, {,
+
+
+	to revert to a one-line layout:
+	without gdefault:
+		%s,\_s\+{\_s\+,\t\t\t{,g|%s,\_s\+},},g|%s,;\_s\+,; ,g|%s,:\_s\+,:,g
+
+	with gedefault set:
+		%s,\_s\+{\_s\+,\t\t\t{,|%s,\_s\+},},|%s,;\_s\+,; ,|%s,:\_s\+,:,
+
 
 	to use the above substitution, position the cursor on the %, and then
 	execute the following:

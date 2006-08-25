@@ -1,80 +1,80 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/essential/essential.css,v 1.2 2006/07/21 18:56:55 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/essential/essential.css,v 1.3 2006/08/25 18:28:00 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
- * @theme    jill
+ * @version  $Revision: 1.3 $
+ * @theme    essential
  * @license  LGPL
  */
 @media all {
-	*				{}
-	body			{}
-	html>body		{}
-	pre *,code *,.code,.codelisting,.codelisting *	{}
-	pre				{}
-	html>body pre	{}
-	img				{}
-	hr				{}
-	small,.small	{}
-	#bitmain small,
-	#bitmain .small	{}
+	/* basics */
+	*						{}
+	body					{}
+	html>body				{}
+	pre *,code *,
+	.code,.codelisting,
+	.codelisting *			{}
+	pre						{}
+	html>body pre			{}
+	img						{}
+	hr						{}
+	small,.small			{}
+
+	#container				{}
+	#header					{}
 
 	/* links */
-	:link,:visited					{}
-	#bitmain :link:hover,
-	#bitmain :visited:hover			{}
-	:link:hover,:visited:hover,
-	:link:active,:visited:active	{}
+	:link,
+	:visited				{}
+	:link:hover,
+	:visited:hover,
+	:link:active,
+	:visited:active			{}
 
 	/* titles */
-	h1,h2,h3	{}
-	h1			{}
-	h2			{}
-	h3			{}
+	h1,h2,h3				{padding:0; margin:0;}
+	h1						{}
+	h2						{}
+	h3						{}
 
 	/* common classes */
-	.body				{}
-	.date				{}
-	.header .date		{}
-	.content			{}
-	.post				{}
-	.preview			{}
-	.norecords			{}
-	.popup				{}
-	.highlight			{}
-	.selected			{}
-	.floaticon			{}
-	.storage			{}
-	.storage .item		{}
-	.comment,.footer	{}
-	.footer				{}
-	.pagination			{}
+	.body					{}
+	.date					{}
+	.header .date			{}
+	.content				{}
+	.post					{}
+	.preview				{}
+	.norecords				{}
+	.popup					{}
+	.highlight				{}
+	.selected				{}
+	.floaticon				{}
+	.storage				{}
+	.storage .item			{}
+	.comment,.footer		{}
+	.footer					{}
+	.pagination				{}
 	/* images */
-	#bitmain .portrait	{}
-	.icon				{}
-	.menuicon			{}
-	ul.small			{}
+	.portrait				{}
+	.icon					{}
+	.menuicon				{}
+	ul.small				{}
 
 	/* tocs */
-	.maketoc		{}
-	.maketoc h3		{}
-	.maketoc a		{}
-	.maketoc ul		{}
-	.maketoc ul li	{}
-	.maketoc ul ul	{}
+	.maketoc				{}
+	.maketoc h3				{}
+	.maketoc a				{}
+	.maketoc ul				{}
+	.maketoc ul li			{}
+	.maketoc ul ul			{}
 
 	/* forms */
 	form,textarea,select	{}
 	textarea				{}
 	input,textarea,select	{}
-	html>body input,textarea,select	{}
-	#bitmain input,
-	#bitmain textarea,
-	#bitmain select			{}
 	input[type="text"]		{}
 	fieldset				{}
 	legend					{}
 	.row					{}
-	#bitmain .row			{}
 	.quicktags				{}
 	.formlabel				{}
 	.forminput				{}
@@ -83,11 +83,10 @@
 	.formhelp a				{}
 	.closebutton			{}
 	.submit					{}
-	#bitmain .submit		{}
 	.error,.errorpage h3	{}
 	.warning				{}
 	.success				{}
-	.clear					{}
+	.clear					{clear:both;}
 	.minifind fieldset		{}
 	.minifind legend		{}
 	.minifind fieldset		{}
@@ -95,14 +94,14 @@
 	table .forminput		{}
 
 	/* parsed elements from the tikiwiki parser */
-	.bittable td	{}
-	.bitbox			{}
-	.bitbox a		{}
-	.bitbar			{}
-	.bittoc			{}
-	.bittoc ul		{}
-	.bittoc ul ul	{}
-	.bittoc ul li	{}
+	.bittable td			{}
+	.bitbox					{}
+	.bitbox a				{}
+	.bitbar					{}
+	.bittoc					{}
+	.bittoc ul				{}
+	.bittoc ul ul			{}
+	.bittoc ul li			{}
 
 	/* common settings for listings */
 	.odd,.even				{}
@@ -111,7 +110,7 @@
 
 	/* tables */
 	fieldset table			{}
-	table					{}
+	table					{border-collapse:collapse; border-spacing:0; padding:0; margin:0; width:100%;}
 	caption					{}
 	th						{}
 	th :link, th :visited	{}
@@ -119,9 +118,6 @@
 	table.data				{}
 	table.optionbar			{}
 	.menutable td			{}
-	.pigeonholes table.data h3	{}
-	.pigeonholes table.data ul	{}
-	.pigeonholes table.data li	{}
 
 	/* lists */
 	.formfeedback ul		{}
@@ -137,16 +133,18 @@
 	ul.toc ul.data			{}
 	ul.toc p				{}
 
-	li.error,li.success,li.note,li.warning	{}
+	li.error,
+	li.success,
+	li.warning				{}
 
-	dl	{}
-	dt	{}
-	dd	{}
+	dl						{}
+	dt						{}
+	dd						{}
 
 	/* boxes */
 	.box					{}
 	.box h3					{}
-	#bitmain .boxcontent	{}
+	.boxcontent				{}
 
 	/* structure navigation */
 	.path					{}
@@ -154,10 +152,6 @@
 	.navigation .left		{}
 	.navigation .right		{}
 	.navigation span a		{}
-
-	/* package specific settings */
-	/* articles */
-	.articles .content div.image	{}
 
 	/* package specific list stylings */
 	.articles ul.data li.item,
@@ -193,98 +187,78 @@
 
 @media screen,projection,tv {
 	/* layout */
-	html	{}
-	body	{}
+	html					{}
+	body					{margin:0; padding:0;}
 
-	#bitbody	{clear:both;}
-	#bitbottom	{}
+	#container				{}
+	#header					{}
+	#content				{}
+	#navigation				{}
+	#extra					{}
 
-	#bitmain				{}
-	#bitleft,#bitright		{}
-	#bitleft				{}
-	#bitright				{}
-
-	#bitlogo	{}
-	#bittop		{}
-	#bittopbar	{}
-
-	#bitlogin	{}
-	#bitlogin a	{}
-
-	#bitsearch								{}
-	#bitsearch *							{}
-	#bitsearch input[type="text"]			{}
-	#bitsearch input[type="text"]:focus		{}
-	#bitsearch input:hover,
-	#bitsearch input[type="submit"]:focus	{}
-
-	/* adjusting width of #bitmain depending on displayed columns - in this theme left column should always be present */
-	.bit-cols-2	{}
-	.bit-cols-1	{}
+	#bittop					{}
+	#bittopbar				{}
 
 	/* html tags */
-	body				{}
-	a.create			{}
-	a.external			{}
+	body					{}
+	a.create				{}
+	a.external				{}
 
 	/* headings */
-	.header				{}
-	.header h1			{}
+	.header					{}
+	.header h1				{}
 	.tabsystem .header h1	{}
-	.header h2			{}
-	.comment			{}
-	.comment h3			{}
-	.post				{}
-	.comment .post		{}
-	.comment .content	{}
-	.display			{}
+	.header h2				{}
+	.comment				{}
+	.comment h3				{}
+	.post					{}
+	.comment .post			{}
+	.comment .content		{}
+	.display				{}
 
 	/* various settings */
-	.pagination			{}
-	.pagination a		{}
+	.pagination				{}
+	.pagination a			{}
 	.gallerybar,
-	.structurebar		{}
+	.structurebar			{}
 	.gallerybar a,
-	.structurebar a		{}
-	#bitmain .avatar	{}
-	.errorpage p		{}
+	.structurebar a			{}
+	.avatar					{}
+	.errorpage p			{}
 
 	/* priorities */
-	.prio1	{}
-	.prio2	{}
-	.prio3	{}
-	.prio4	{}
-	.prio5	{}
+	.prio1					{}
+	.prio2					{}
+	.prio3					{}
+	.prio4					{}
+	.prio5					{}
 
 	/* navigation bars */
 	/* navbar is deprecated and will be removed from the templates with next version - new class is pageactions */
-	.navbar			{}
-	.navbar ul		{}
-	.navbar ul li	{}
-	.navbar a		{}
-	.navbar a:hover	{}
+	.navbar					{}
+	.navbar ul				{}
+	.navbar ul li			{}
+	.navbar a				{}
+	.navbar a:hover			{}
 
 	/* pageactions */
-	.pageactions		{}
-	.pageactions ul		{}
-	.pageactions li		{}
-	.sort a				{}
-	.sort a:hover		{}
-	.tools				{}
-	.tools .icon		{}
-	.tools .icon:hover	{}
-	.tabs				{}
-	.tabs li			{}
-	.tabs a				{}
-	.tabs a:hover		{}
-	.tabs li.current	{}
-	.tabs .current a	{}
-	/* Commented Backslash Hack hides rule from IE5-Mac \*/
-	.tabs a				{}
-	/* End IE5-Mac hack */
+	.pageactions			{}
+	.pageactions ul			{}
+	.pageactions li			{}
+	.sort a					{}
+	.sort a:hover			{}
+	.tools					{}
+	.tools .icon			{}
+	.tools .icon:hover		{}
+	.tabs					{}
+	.tabs li				{}
+	.tabs a					{}
+	.tabs a:hover			{}
+	.tabs li.current		{}
+	.tabs .current a		{}
 
 	/*** miscellaneous settings ***/
-	.quicktag	{}
+	.quicktag				{}
 
 	/* boxes and modules */
 	.box					{}
@@ -292,28 +266,17 @@
 	.popup					{}
 	.popup small			{}
 	.popup h3				{}
-	#bitmain .boxcontent	{}
-	#bitmain .pigeonholes .boxcontent	{}
 
 	/* modules */
-	/* friggin MSIE requires the width attribute here as well for overflow to work - ARGH */
-	#bitleft .module			{}
-	#bitright .module			{}
-	.module 					{}
-	.module h3					{}
-	.module h3 a				{}
-	.module ul,.module ul li	{}
-	.module ul.data				{}
-	.module ol,.module ol li	{}
-	.module form				{}
-
-	/* calendar stuff */
-	.caltable .calnumber			{}
-	.module .caltable				{}
-	.module .caltable th			{}
-	.module .caltable td			{}
-	.module .caltable .calday a			{}
-	.module .caltable .calday a:hover	{}
+	.module 				{}
+	.module h3				{}
+	.module h3 a			{}
+	.module ul,
+	.module ul li			{}
+	.module ul.data			{}
+	.module ol,
+	.module ol li			{}
+	.module form			{}
 
 	/* multi file upload */
 	#fileslist div span	{}
@@ -344,78 +307,49 @@
 	.tabsystem .tabcontainer .tab-active	{top:1px; margin:0; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60;}
 	.tabsystem .tabpage						{border:1px solid #bbb; margin:0 0 1em 0; padding:0 1em;}
 
-	/* regular menus */
-	.menu .icon				{vertical-align:middle;}
-	.menu a					{display:block;}
-
-	/* suckerfish nexus menus */
-	.suckerfish ul,
-	.suckerfish ul li	{}
-	.suckerfish ul		{}
-	.suckerfish ul ul	{}
-	.suckerfish ul li	{}
-	.suckerfish ul li a	{}
-	.suckerfish ul li a:hover	{}
-
-	/* apply seperate menu style for menus in middle of page - like admin screen */
-	#bitmain .menu			{}
-	#bitmain .menu li		{}
-	#bitmain .menu a:hover	{}
+	/* main bitweaver menu - http://cssplay.co.uk/menus/centered.html * /
+	#bittopmenu			{width:468px; height:76px; padding:0; margin:0 auto; list-style-type:none; white-space:nowrap; line-height:16px;}
+	#bittopmenu li		{float:left; width:150px; padding:1px; margin:1px; border:1px solid #999;}
+	#bittopmenu li a	{float:left; width:150px; padding:5px 0; color:#fff; background:#128; display:block; position:relative; text-align:center;}
+	#bittopmenu li a:first-letter	{font-weight:bold; font-size:16px;}
+	#bittopmenu li a:hover			{color:#fff; background:#f80; display:block; position:relative; text-align:center;}
+	#bittopmenu .topadmin	{position:absolute; margin-left:-156px;}
+	#bittopmenu .topadmin a	{padding:22px 0; background:#c64;}
+	#bittopmenu .topadmin a:hover	{padding:22px 0; background:#f80;}
 
 	/* css driven dropdown menus - horizontal */
-	/* layout first */
-	.hor .icon				{position:absolute; left:28px; top:2px; margin-left:-26px;}
-	.hor,.hor ul,.hor li	{padding:0; margin:0; list-style:none; line-height:normal;}
-	.hor a					{line-height:normal;}
-	.hor li					{width:auto;}
-	.hor li li,.hor li ul	{width:14em; display:block; text-align:left;}
-	.hor li					{float:left; position:relative;}
-	.hor li li a			{margin:0 0 0 20px;}
-	.hor li ul				{position:absolute; left:-999em;}
-	.hor li ul ul			{margin:-24px 0 0 13em;}
-	.hor li.m-admin  ul	ul	{margin:-24px 0 0 -13em;}
+	.hor			{line-height:18px;}
+	#nav,#nav a,#nav li ul {z-index:10000;}
+	.hor,.hor a,.hor li ul {z-index:1000;}
+	.hor,.hor ul	{padding:0; margin:0; list-style:none;}
+	.hor a			{display:block;}
+	.hor li			{width:auto;}
+	.hor li li,
+	.hor li ul		{width:13em; display:block; text-align:left;}
+	.hor .head		{width:auto; padding:0 0.5em;}
+	.hor li			{float:left; position:relative;}
+	.hor li ul		{position:absolute; left:-999em; background:#fff; border:1px solid #999;}
+	.hor li ul ul	{margin:-20px 0 0 13em;}
+	.hor .icon		{position:absolute; left:28px; top:2px; vertical-align:middle; margin-left:-26px;}
+	.hor li li a	{margin:0 0 0 2em;}
 
-	/* now comes the dropdown style - modify away! */
-	.hor a					{margin:0; padding:0.1em 0.7em 0.1em 10px;}
-	.hor a:hover			{}
-	.hor li li a			{}
-	.hor li li a:hover		{}
-	.hor .current a			{}
-	.hor .current li a		{}
-	.hor ul a				{padding:0 5px; line-height:20px;}
-	.hor ul a.head			{}
-	.hor ul a.head:hover	{}
-	.hor li					{}
-	.hor li:hover			{}
-	.hor li li:hover		{}
-	.hor li ul				{background:#fff; padding:0.3em; border:1px solid #999;}
-
-	/* z-index */
-	#nav,#nav a,#nav li ul	{z-index:2000;}
-	.hor,.hor a,.hor li ul	{z-index:20;}
-
-	.hor li:hover ul ul, .hor li:hover ul ul ul	{left:-999em;}
-	.hor li:hover ul, .hor li li:hover ul, .hor li li li:hover ul	{left:auto;}
-
-
-	/* some extras specific to bitweaver.org */
-	.bitweaverfaq .content h1	{}
-	.bitweaverfaq .content h2	{}
-	.bitweaverfaq .content h3	{}
-	.bitweaverfaq .faqtoc 		{}
-	.bitweaverfaq .faqtoc li	{}
-	.bitweaverfaq .faqtoc li li	{}
-	.bitweaverfaq .faqtoc h3	{}
-
-	/*
-	.stars-container		{}
-	.stars-container small	{}
-	 */
+	.hor li:hover ul ul,
+	.hor li:hover ul ul ul	{left:-999em;}
+	.hor li:hover ul,
+	.hor li li:hover ul,
+	.hor li li li:hover ul	{left:auto;}
 }
 
 @media print {
-	body		{}
-	#bitmain	{}
-	#bitlogo,#bittop,#bitleft,#bitright,#bittopbar,#toplogin,#bitbottom,.pageactions,.navbar,.tabcontainer,.bittoc,.floaticon,.minifind	{}
-	.display.comment	{}
+	body				{}
+	#wrapper,
+	#content			{width:100% !important;}
+	#header,
+	#navigation,
+	#extra,
+	#footer,
+	.navbar,
+	.bittoc,
+	.floaticon,
+	.minifind			{display:none;}
 }

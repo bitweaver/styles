@@ -1,51 +1,44 @@
 @import url( ../../base.css ); 			/*** global settings ***/
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
-*			{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
-body		{color:#666; font-size:10px; margin:0; padding:0em; background:#eee; line-height:1.7em;}
-th			{border-bottom:1px solid #ccc;}
-hr			{}
-small		{font-size:0.9em;}
-a			{color:#f93; text-decoration:none;}
-a.external	{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
-a:hover		{text-decoration:underline;}
+*					{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
+body				{color:#666; font-size:10px; margin:0; padding:0em; background:#eee; line-height:1.7em;}
+th					{border-bottom:1px solid #ccc;}
+hr					{}
+small				{font-size:0.9em;}
+a					{color:#f93; text-decoration:none;}
+a.external			{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px;}
+a:hover				{text-decoration:underline;}
 
 /*** site layout ***/
-#bittop			{padding:0; margin:0; background:#fff; border-bottom:1px solid #ccc;}
-#bittop .login	{float:left; clear:left; margin:0 0.5em;}
-#wrap1			{margin:1em 0;}
+#header				{padding:0; margin:0; background:#fff; border:solid #ccc; border-width:0px 1px 1px 1px;}
+#header .login		{float:left; clear:left; margin:0 0.5em;}
 /* the width setting is needed for opera < 7.5 - if you don't care about that, you can remove it */
-#bittopbar		{float:left; width:80%;}
-#bitleft,
-#bitright		{width:18em; position:absolute; z-index:0; background:#fff; border:1px solid #ccc; overflow:visible;}
-#bitleft		{left:1em;}
-#bitright		{right:1em;}
-#bitmain		{padding:10px; background:#fff; border:1px solid #ccc;}
-#bitbottom		{text-align:center; color:#ccc; margin-top:2em; clear:both;}
-#bitbottom a	{color:#ccc; background:transparent;}
-#bitprint		{}
-#slideshow		{}
-
-/* adjust the width of the center column depending on number of side columns */
-.bit-cols-3		{margin: 0em 21em  1em 21em;}
-.bit-cols-2l	{margin: 0em  2em  1em 21em;}
-.bit-cols-2r	{margin: 0em 21em  1em  2em;}
-.bit-cols-1		{margin: 0em  2em  1em  2em;}
+#bittopbar			{float:left; width:80%;}
+/* depending on what layout you choose, you might want to remove this padding */
+#content .display,
+#content .edit,
+#content .list,
+#content .admin		{padding:1.5em; margin:0.5em; background:#fff; border:1px solid #ccc}
+#footer				{text-align:center; color:#ccc; margin-top:2em;}
+#footer a			{color:#ccc; background:transparent;}
+#bitprint			{}
+#slideshow			{}
 
 /* headings - poor old konqueror needs long description of background stuff */
-h1,h2,h3	{font-size:100%; font-weight:bold; padding:0; margin:0;}
-h1			{color:#000;}
-h2			{color:#444;}
-h3			{color:#999;}
-#bittop h1,
-#bittop h3	{line-height:18px; padding:0 2em; margin:0; text-align:right; letter-spacing:3px;}
-#bittop h3	{font-weight:normal;}
-.display .header h1	{position:relative; left:-2em; color:#8ad;  padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em; z-index:1;
-			background-color:#f9f9f9; background-image:url( images/hh1.gif ); background-position:4px; background-repeat:no-repeat;}
-.header h2	{margin:0; letter-spacing:0.2em; font-weight:normal; color:#666;}
-.module h3	{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px;
-			background-color:#f9f9f9; background-image:url( images/mh3.gif ); background-position:4px; background-repeat:no-repeat;}
-#bitright .module h3,
-#bitleft .module h3	{position:relative; left:-2em;}
+h1,h2,h3			{font-size:100%; font-weight:bold; padding:0; margin:0;}
+h1					{color:#000;}
+h2					{color:#444;}
+h3					{color:#999;}
+#header h1,
+#header h3			{line-height:18px; padding:0 2em; margin:0; text-align:right; letter-spacing:3px;}
+#header h3			{font-weight:normal;}
+.display .header h1	{color:#8ad;  padding-left:20px; border:1px dashed #ddd; letter-spacing:0.2em;
+					background-color:#f9f9f9; background-image:url( images/hh1.gif ); background-position:4px; background-repeat:no-repeat;}
+.header h2			{margin:0; letter-spacing:0.2em; font-weight:normal; color:#666;}
+.module h3			{color:#9bf; border:1px dashed #ddd; letter-spacing:0.2em; padding-left:20px;
+					background-color:#f9f9f9; background-image:url( images/mh3.gif ); background-position:4px; background-repeat:no-repeat;}
+#navigation .module h3,
+#extra .module h3	{position:relative; left:-2em; width:100%;}
 
 /*** common classes ***/
 .date				{color:#ccc;}
@@ -53,12 +46,6 @@ h3			{color:#999;}
 .post				{margin:0 0 2em 0;}
 .content			{}
 .footer				{}
-#bitmain>div>.floaticon	{position:relative; top:-22px; background:#fff; border:solid #ccc; border-width:1px 1px 0 1px; padding:0; margin:0 2em;}
-/* a different variant of the icon placement
-#bitmain>div>.floaticon		{padding:0; margin:0 -10px 0 0;}
-#bitmain>div>.floaticon a	{display:block;}
-*/
-.post .floaticon	{position:relative; top:19px;}
 .icon				{padding:1px 2px; vertical-align:middle;}
 .maketoc			{padding:5px; margin:5px 0; border:1px dotted #aaa; background:#f5f5f5;}
 .preview			{border:2px solid #ccc; margin:1em 0.5em; padding:1em 0.5em;}
@@ -66,59 +53,59 @@ h3			{color:#999;}
 /*** boxes ***/
 .box				{}
 .boxcontent			{margin:0.3em 0.5em 0.7em 0.5em;}
-.module				{padding:1em;}
+.module				{padding:1em; margin:0.5em 1em; background:#fff; border:1px solid #ccc}
 .popup				{padding:10px; border:1px solid #ccc;}
 
 /*** menus ***/
-#nav li li ul	{margin-top:-25px;}
-#nav .head		{color:#999;}
+#nav li li ul		{margin-top:-25px;}
+#nav .head			{color:#999;}
 #nav ul .head:visited,
-#nav ul .head	{background:#def;}
+#nav ul .head		{background:#def;}
 #nav ul a:visited,
-#nav ul a		{color:#666; background:#eee; padding:2px; margin:2px 2px 0 2px; width:auto;}
-#nav ul a:hover	{color:#666; background:#fed !important; text-decoration:none;}
+#nav ul a			{color:#666; background:#eee; padding:2px; margin:2px 2px 0 2px; width:auto;}
+#nav ul a:hover		{color:#666; background:#fed !important; text-decoration:none;}
 
-.menu .item		{}
+.menu .item			{}
 
 /* don't display icons in dropdown menu */
-#bitleft .menu .icon,
-#bitright .menu .icon,
-#nav .icon		{display:none;}
+#navigation .menu .icon,
+#extra .menu .icon,
+#nav .icon			{display:none;}
 .hor li li,
-.hor li ul		{width:14em;}
-.hor li ul		{padding-bottom:2px;}
-.hor li li a	{margin:0;}
+.hor li ul			{width:14em;}
+.hor li ul			{padding-bottom:2px;}
+.hor li li a		{margin:0;}
 
 /*** parsed elements ***/
-.bitbar			{border-bottom:1px dashed #ddd;}
-.bitbox			{padding:3px; border:1px dashed #ddd; background:#f9f9f9;}
-.bittable		{background:#eee;}
-.bittable td	{border:1px solid #fff;}
+.bitbar				{border-bottom:1px dashed #ddd;}
+.bitbox				{padding:3px; border:1px dashed #ddd; background:#f9f9f9;}
+.bittable			{background:#eee;}
+.bittable td		{border:1px solid #fff;}
 
 /*** forms ***/
-textarea		{}
-fieldset		{border:1px dashed #ddd; width:96%; margin:1.5em auto;}
-legend			{padding:2px 4px; font-weight:bold; letter-spacing:2px; border:1px dashed #ddd; margin:0 0 1.5em 0;}
-label			{color:#666;}
-.row			{margin:0 0 1em 0;}
-.formlabel		{}
-.formfeedback	{}
-.forminput		{}
-.formhelp		{color:#a66;}
-.submit			{margin:1em 0;}
-.clear			{}
+textarea			{}
+fieldset			{border:1px dashed #ddd; width:96%; margin:1.5em auto;}
+legend				{padding:2px 4px; font-weight:bold; letter-spacing:2px; border:1px dashed #ddd; margin:0 0 1.5em 0;}
+label				{color:#666;}
+.row				{margin:0 0 1em 0;}
+.formlabel			{}
+.formfeedback		{}
+.forminput			{}
+.formhelp			{color:#a66;}
+.submit				{margin:1em 0;}
+.clear				{}
 .minifind			{width:auto;}
 .minifind fieldset	{border:0;}
 .minifind legend	{display:none;}
 .minifind fieldset	{padding:0.5em; margin:0;}
 
 /*** data ***/
-.data			{}
-.odd			{}
-.even			{background:#eee;}
-.norecords		{}
-.find			{}
-ul.data li.item	{padding:0.5em; border-bottom:1px dashed #ccc;}
+.data				{}
+.odd				{}
+.even				{background:#eee;}
+.norecords			{}
+.find				{}
+ul.data li.item		{padding:0.5em; border-bottom:1px dashed #ccc;}
 ul.data li.item .thumb	{margin:0 0 1em 1em; border:1px solid #ccc;}
 
 /* tabstyle */
@@ -130,10 +117,10 @@ ul.data li.item .thumb	{margin:0 0 1em 1em; border:1px solid #ccc;}
 .tabsystem .tabpage						{border:1px solid #bbb; margin:0; padding:1em;}
 
 /*** navigation bars and tabs ***/
-.navbar		{margin:1em 0;}
-.navbar a	{margin:0 5px;}
-.selected	{}
-.pagination	{}
+.navbar				{margin:1em 0;}
+.navbar a			{margin:0 5px;}
+.selected			{}
+.pagination			{}
 
 /*** settings that have to be at the end ***/
 .highlight	{}
