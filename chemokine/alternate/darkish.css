@@ -1,0 +1,31 @@
+@import url( ../chemokine.css );
+body				{color:#ccc; background:#666;}
+th					{border-color:#333;}
+#header				{background:#333;}
+#content .display,
+#content .edit,
+#content .list,
+#content .admin		{background:#333;}
+.header h1			{background-color:#444;}
+.module h3			{background-color:#444;}
+.date				{color:#999;}
+.maketoc			{background:#222;}
+.module				{background:#333;}
+#nav .head			{color:#aaa;}
+#nav ul .head:visited,
+#nav ul .head		{background:#024;}
+#nav ul a:visited,
+#nav ul a			{color:#aaa; background:#222;}
+#nav ul a:hover		{color:#aaa; background:#420 !important;}
+#nav ul 			{background:#111;}
+.bitbar				{border-bottom:1px dashed #444;}
+.bitbox				{padding:3px; border:1px dashed #444; background:#333;}
+.bittable			{background:#222;}
+.bittable td		{border-color:#333;}
+textarea,
+select,
+input				{background:#222; color:#eee;}
+.even				{background:#222;}
+.tabsystem .tabcontainer .tab-active	{background:#333;}
+.themes ul.data li.item,
+.fisheye ul.data li.item	{background:#222;}

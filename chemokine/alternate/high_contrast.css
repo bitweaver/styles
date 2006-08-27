@@ -1,0 +1,16 @@
+@import url( ../chemokine.css );
+
+body				{color:#000;}
+a					{color:#950;}
+h1					{color:#000;}
+h2					{color:#333;}
+h3					{color:#555;}
+.header h1			{color:#269;}
+.header h2			{color:#333;}
+.module h3			{color:#269;}
+.date				{color:#aaa;}
+#nav .head			{color:#555;}
+#nav ul a			{color:#333;}
+#nav ul a:hover		{color:#333;}
+label				{color:#333;}
+.formhelp			{color:#a66;}
