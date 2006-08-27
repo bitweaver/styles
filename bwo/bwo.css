@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.8 2006/08/08 10:46:17 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.9 2006/08/27 08:58:15 bitweaver Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.8 $
+ * @version  $Revision: 1.9 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -11,7 +11,10 @@
 *				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
 body			{font-size:0.8em; background:#fff; color:#000; margin:0; padding:0;}
 html>body		{font-size:12px;}
-pre *,code *,.code	{font-family:monospace;}
+pre,
+pre *,
+code *,
+.code			{font-family:monospace;}
 html>body pre	{width:auto;}
 img				{border:0;}
 hr				{border:0; border-top:1px solid #933; padding:0; margin:1.5em 20%;}
