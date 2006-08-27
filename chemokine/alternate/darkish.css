@@ -24,7 +24,7 @@ th					{border-color:#333;}
 .bittable td		{border-color:#333;}
 textarea,
 select,
-input				{background:#222; color:#eee;}
+input				{background:#222; color:#eee; border:1px solid #666;}
 .even				{background:#222;}
 .tabsystem .tabcontainer .tab-active	{background:#333;}
 .themes ul.data li.item,
