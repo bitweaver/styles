@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.9 2006/08/27 08:58:15 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.10 2006/08/27 09:26:40 bitweaver Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.9 $
+ * @version  $Revision: 1.10 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -262,8 +262,8 @@ body							{line-height:1.6em; background:#fff;}
 .display			{margin-bottom:3em;}
 
 /* code sections */
-pre			{width:96%; margin:0 auto; padding:0.5em; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #999;}
-.codetitle	{font-weight:bold; background:#c64; color:#fff; margin:1em 0 0 0; padding:3px 0 0 0.5em; border:1px solid #999; border-bottom:0;}
+.codetitle	{font-weight:bold; background:#e97; color:#fff; margin:1em 0 0 0; padding:3px 0 0 2.5em; border:1px solid #ccc; border-bottom:0;}
+pre			{width:96%; margin:0 auto; padding:0.5em; font-size:12px; overflow:auto; text-align:left; background:#f5f5f5; color:#000; border:1px solid #ccc;}
 
 /* various settings */
 .pagination			{font-size:0.8em; color:#666; margin:1.5em 0 0 0;}
