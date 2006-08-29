@@ -1,6 +1,6 @@
 @import url( ../chemokine.css );
 body				{color:#ccc; background:#666;}
-th					{border-color:#333;}
+th					{border-color:#999; background:#222;}
 #header				{background:#333;}
 #content .display,
 #content .edit,
