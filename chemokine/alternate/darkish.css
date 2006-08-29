@@ -2,10 +2,12 @@
 body				{color:#ccc; background:#666;}
 th					{border-color:#999; background:#222;}
 #header				{background:#333;}
+#header h1			{color:#fff}
 #content .display,
 #content .edit,
 #content .list,
 #content .admin		{background:#333;}
+h2					{color:#999}
 .header h1			{background-color:#444;}
 .module h3			{background-color:#444;}
 .date				{color:#999;}
@@ -25,6 +27,7 @@ th					{border-color:#999; background:#222;}
 textarea,
 select,
 input				{background:#222; color:#eee; border:1px solid #666;}
+input[type="submit"]{padding:5px 10px;}
 .even				{background:#222;}
 .tabsystem .tabcontainer .tab-active	{background:#333;}
 .themes ul.data li.item,
