@@ -20,8 +20,10 @@ a:hover				{text-decoration:underline;}
 /* depending on what layout you choose, you might want to remove this padding */
 #content .display,
 #content .edit,
-#content .list,
-#content .admin		{padding:1.5em; margin:0.5em; background:#fff; border:1px solid #ccc}
+#content .listing,
+#content .admin		{padding:1.5em; margin:0.5em; background:#fff; border:1px solid #ccc;}
+.floaticon			{padding:1.5em; margin:0.5em; background:#fff; border:1px solid #ccc;}
+.body .floaticon	{padding:0; margin:0;}
 #footer				{text-align:center; color:#ccc; margin-top:2em;}
 #footer a			{color:#ccc; background:transparent;}
 #bitprint			{}
