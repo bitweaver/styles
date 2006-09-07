@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/fifty_percent/mod_application_menu.tpl,v 1.5 2006/09/03 20:14:19 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/fifty_percent/mod_application_menu.tpl,v 1.6 2006/09/07 16:54:37 squareing Exp $ *}
 {strip}
 
 {bitmodule title="$moduleTitle" name="application_menu"}
@@ -7,13 +7,13 @@
 {if $menu.template}
 <div class="menu {$key}menu">
 	{if $menu.title}
-		{if $gBitSystem->isFeatureActive( 'feature_menusfolderstyle' )}
+		{if $gBitSystem->isFeatureActive( 'site_menu_flip_icon' )}
 			<a class="head" href="javascript:icntoggle('{$key}menu');">{biticon ipackage="icons" iname="list-add" id="`$key`menuimg" iexplain="folder"}
 		{else}
 			<a class="head" href="javascript:toggle('{$key}menu');">
 		{/if}
 		{tr}{$menu.title}{/tr}</a>
-		{if $gBitSystem->isFeatureActive( 'feature_menusfolderstyle' )}
+		{if $gBitSystem->isFeatureActive( 'site_menu_flip_icon' )}
 			<script type="text/javascript">
 				setfoldericonstate('{$key}menu');
 			</script>
@@ -29,7 +29,7 @@
 {* =========================== User menu =========================== *}
 {if $gBitSystem->isFeatureActive( 'usermenu' )and $usr_user_menus}
 <div class="menu usrmenu">
-	{if $gBitSystem->isFeatureActive( 'feature_menusfolderstyle' )}
+	{if $gBitSystem->isFeatureActive( 'site_menu_flip_icon' )}
 		<a class="head" href="javascript:icntoggle('usrmenu');">{biticon ipackage="icons" iname="list-add" id="usrmenu" iexplain="folder"}
 	{else}
 		<a class="head" href="javascript:toggle('usrmenu');">
