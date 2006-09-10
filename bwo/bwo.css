@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.10 2006/08/27 09:26:40 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.11 2006/09/10 09:54:40 bitweaver Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.10 $
+ * @version  $Revision: 1.11 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -260,6 +260,7 @@ body							{line-height:1.6em; background:#fff;}
 .comment .post		{border-left:1px solid #ddd; padding:0 0 0 0.5em;}
 .comment .content	{overflow:auto;}
 .display			{margin-bottom:3em;}
+p.description		{text-align:center; font-weight:bold;}
 
 /* code sections */
 .codetitle	{font-weight:bold; background:#e97; color:#fff; margin:1em 0 0 0; padding:3px 0 0 2.5em; border:1px solid #ccc; border-bottom:0;}
@@ -274,6 +275,13 @@ pre			{width:96%; margin:0 auto; padding:0.5em; font-size:12px; overflow:auto; t
 .structurebar a		{border:1px solid #ccc; background:#eee; padding:0 2px;}
 #bitmain .avatar	{float:right; margin:0 0 5px 5px;}
 .errorpage p		{text-align:center;}
+
+/* custom bitweaver styling */
+.faqtoc	h3			{font-size:1.6em; color:#000;}
+.faqtoc	ul			{margin-bottom:1.5em;}
+.faqtoc ul li		{font-weight:bold;}
+.faqtoc ul li li	{font-weight:normal;}
+.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #ccc; margin-top:2em; color:#000;}
 
 /* priorities */
 .prio1	{background:#dfc !important;}
