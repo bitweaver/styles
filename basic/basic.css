@@ -87,7 +87,6 @@ a:hover			{color:#900;}
 /*** boxes ***/
 .box		{margin:10px 0;}
 .boxtitle	{padding:2px; border:1px solid #dedede; background:#e9ecef;}
-.boxtitle a	{border:none;}
 .boxcontent	{padding:2px;}
 
 /*** miscellaneous ***/

@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.11 2006/09/10 09:54:40 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.12 2006/09/14 20:23:49 squareing Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.11 $
+ * @version  $Revision: 1.12 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -201,7 +201,6 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 /* sticky notes */
 .stickies textarea,
 .stickies input[type='text']	{background:#ffc;}
-.stickynote .boxtitle			{border-bottom: 1px solid #dda;}
 .stickynote						{background-color:#ffc; width:300px; padding:3px;}
 
 /* this is the attachment browser */

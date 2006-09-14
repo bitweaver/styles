@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.8 2006/04/09 06:32:41 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.9 2006/09/14 20:23:49 squareing Exp $ */
 @media all {
 body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
 pre,pre *,code,code *,.code	{font-family:monospace !important; text-align:left;}
@@ -46,7 +46,7 @@ legend {font-size:1.2em; padding:1em;}
 .module .formlabel,.module .forminput{width:auto; float:left; clear:both;}
 .closebutton{position:absolute; top:1px; right:1px;}
 .submit {text-align:center; padding:1em; margin:1em;}
-.error,.errorpage .boxtitle {color:#f00; font-weight:bold;}
+.error,.errorpage .boxtitle {color:#f00;}
 .warning {color:#f80;}
 .success {color:#090;}
 .clear {clear:both;}
