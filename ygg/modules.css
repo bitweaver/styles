@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/modules.css,v 1.2 2005/12/18 22:32:28 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/modules.css,v 1.3 2006/09/15 07:54:58 squareing Exp $ */
 /**
  * @author   helge_karl <helge_karl@yahoo.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.3 $
  * @theme    ygg
  * @license  LGPL
  */
@@ -13,7 +13,7 @@
 	border-bottom:1px dotted #b0c4de;
 	font-size:0.9em;
 }
-.module.box .boxtitle {
+.module.box h3 {
 	color: #334;
 	font-weight:bolder;
 	padding:0 10px;
@@ -22,12 +22,12 @@
 	text-align:left;
 	line-height:26px;
 }
-.module.box .boxtitle a {
+.module.box h3 a {
 	color: #334;
 	font-weight:bolder;
 }
 
-.module.box .boxtitle a:hover {text-decoration:underline;}
+.module.box h3 a:hover {text-decoration:underline;}
 
 .boxcontent { 
 	padding:0 10px;

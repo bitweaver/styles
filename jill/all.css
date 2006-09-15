@@ -44,7 +44,6 @@ h3			{font-size:1.1em;}
 /* images */
 #bitmain .portrait	{float:right;}
 .icon				{border:0; vertical-align:middle; margin:0 0.2em;}
-.menuicon			{text-align:center;}
 ul.small			{line-height:normal;}
 
 /* tocs */
@@ -179,7 +178,7 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 /* sticky notes */
 .stickies textarea,
 .stickies input[type='text']	{background:#ffc;}
-.stickynote .boxtitle			{border-bottom: 1px solid #dda;}
+.stickynote .box h3				{border-bottom: 1px solid #dda;}
 .stickynote						{background-color:#ffc; width:300px; padding:3px;}
 
 /* this is the attachment browser */

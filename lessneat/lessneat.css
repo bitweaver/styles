@@ -54,8 +54,8 @@ a img:hover			{}
 
 /*** boxes ***/
 .box				{background:#fff; border:1px solid #8cacbb; margin:5px;}
-.boxtitle			{background-color:#c7d0d9; border-bottom:1px solid #8cacbb;}
-.boxtitle a			{text-decoration:none;}
+.box h3				{background-color:#c7d0d9; border-bottom:1px solid #8cacbb;}
+.box h3 a			{text-decoration:none;}
 .boxcontent			{padding:5px;}
 
 

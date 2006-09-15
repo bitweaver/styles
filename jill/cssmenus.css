@@ -13,9 +13,12 @@
 .suckerfish ul li a:hover	{background:#eee; color:#c40;}
 
 /* apply seperate menu style for menus in middle of page - like admin screen */
-#bitmain .menu			{font-size:0.8em;}
-#bitmain .menu li		{background:#f5f5f5; border:1px solid #ccc; line-height:2.4em; padding:0em; margin-bottom:-1px;}
-#bitmain .menu a:hover	{background:#579; color:#fff;}
+#bitmain .menu				{font-size:0.8em;}
+#bitmain .menu a:hover		{background:#579; color:#fff;}
+#bitmain .menu.box			{text-align:center;}
+#bitmain .menu.box ul,
+#bitmain .menu.box ul li	{list-style:none; margin:0; padding:0;}
+#bitmain .menu.box ul li	{background:#f5f5f5; border:1px solid #ccc; line-height:2.4em; margin-bottom:-1px;}
 
 /* tikiwiki nexus menus */
 .tikiwiki div div		{margin-left:1em;}

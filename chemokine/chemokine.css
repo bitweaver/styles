@@ -58,6 +58,7 @@ h3					{color:#999;}
 
 /*** boxes ***/
 .box				{}
+#content .menu.box	{text-align:center;}
 .boxcontent			{margin:0.3em 0.5em 0.7em 0.5em;}
 .module				{padding:1em; margin:0.5em 1em; background:#fff; border:1px solid #ccc}
 .popup				{padding:10px; border:1px solid #ccc;}

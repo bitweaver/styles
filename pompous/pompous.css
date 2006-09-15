@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/pompous.css,v 1.6 2006/02/21 09:02:21 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/pompous/pompous.css,v 1.7 2006/09/15 07:54:58 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.6 $
+ * @version  $Revision: 1.7 $
  * @theme    hp
  * @license  LGPL
  */
@@ -199,7 +199,7 @@ dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
 /* sticky notes */
 .stickies textarea,
 .stickies input[type='text']	{background:#ffc;}
-.stickynote .boxtitle			{border-bottom: 1px solid #dda;}
+.stickynote .box h3				{border-bottom: 1px solid #dda;}
 .stickynote						{background-color:#ffc; width:300px; padding:3px;}
 
 /* this is the attachment browser */

@@ -6,8 +6,7 @@
 .menu a				{display:block;}
 #bitmain .menu		{line-height:normal;}
 #bitmain .menu		{background:transparent url( images/pkgicon_bg.png ) 50% 50% repeat;}
-#bitmain .menuicon .icon	{padding:5px;}
-#bitmain .my .menu .item .icon	{display:none;}
+#bitmain .menuicon	{padding:5px;}
 			/* tikiwiki type nexus menus */
 .tikiwiki div div	{margin:1px;}
 .tikiwiki span		{clear:both;}

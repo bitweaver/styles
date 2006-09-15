@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.7 2006/04/09 06:32:41 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/interleukin/interleukin.css,v 1.8 2006/09/15 07:54:57 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
  * @version  $ Revision: 1.6 $
@@ -60,8 +60,8 @@ td.actionicon {text-align:right;}
 .closebutton{position:absolute; top:1px; right:1px;}
 .image .boxcontent {text-align:center;}
 .norecords {font-weight:bold;}
-.boxtitle {text-align:center;}
-.boxtitle .icon {vertical-align:middle;}
+.box h3 {text-align:center;}
+.box h3 .icon {vertical-align:middle;}
 .popup {background:#fff; width:250px; border:1px solid #000;}
 .icon,.icon:hover,a.icon,a.icon:hover {border:0px;}
 .portrait,.avatar {float:right; padding:0 0 5px 5px;}
@@ -73,7 +73,7 @@ td.actionicon {text-align:right;}
 .storage {float:right; clear:both;}
 			/*** stickies ***/
 .stickies textarea,.stickies input[type='text'] {background:#ffc;}
-.stickynote .boxtitle {border-bottom: 1px solid #dda;}
+.stickynote .box h3 {border-bottom: 1px solid #dda;}
 .stickynote {background-color:#ffc;  color:#000;  width: 300px;  padding: 3px;}
 			/*** articles ***/
 .articles .content div.image	{float:left; padding:0 1em 0 0;}
@@ -91,11 +91,11 @@ td.actionicon {text-align:right;}
 /**/
 			/*** boxes ***/
 .box {}
- .boxtitle {color:#fff; font-size:120%; text-align:left; font-weight:bold;}
+ .box h3 {color:#fff; font-size:120%; text-align:left; font-weight:bold;}
  .boxcontent {padding:1em;}
 .popup {padding:10px; border:1px solid #999; text-align:justify; background:#444;}
 .module{}
- .module .boxtitle {color:#eee; padding-left:30px; background:transparent url( images/module.gif ) 5px center no-repeat; background-repeat:no-repeat;}
+ .module .box h3 {color:#eee; padding-left:30px; background:transparent url( images/module.gif ) 5px center no-repeat; background-repeat:no-repeat;}
  .module .boxcontent {border:1px solid #999; background:#444; margin:0.5em; padding:0.5em; background:#444 url( images/ruler.png ) repeat-y 98% 0 fixed;}
 			/*** parsed elements ***/
 .bitbar {}
@@ -122,7 +122,7 @@ form,input,textarea,select{margin:0; padding:0;}
    .submit input {padding:0.2em 0.5em;}
     .submit input:hover {color:#fff; background:#000;}
 .minifind {width:200px;}
-.errorpage .boxtitle {color:#f00; font-weight:bold;}
+.errorpage .box h3 {color:#f00; font-weight:bold;}
 .error {color:#f00; background:#666;}
 .warning {color:#f80; background:#666;}
 .success {color:#090; background:#666;}

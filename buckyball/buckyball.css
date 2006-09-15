@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.9 2006/09/14 20:23:49 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/buckyball/buckyball.css,v 1.10 2006/09/15 07:54:56 squareing Exp $ */
 @media all {
 body {font-size:10px; font-family:verdana,sans-serif; color:#666; line-height:1.6em; background:#8a99ac; margin:0; padding:0;}
 pre,pre *,code,code *,.code	{font-family:monospace !important; text-align:left;}
@@ -46,7 +46,7 @@ legend {font-size:1.2em; padding:1em;}
 .module .formlabel,.module .forminput{width:auto; float:left; clear:both;}
 .closebutton{position:absolute; top:1px; right:1px;}
 .submit {text-align:center; padding:1em; margin:1em;}
-.error,.errorpage .boxtitle {color:#f00;}
+.error,.errorpage .box h3 {color:#f00;}
 .warning {color:#f80;}
 .success {color:#090;}
 .clear {clear:both;}
@@ -62,7 +62,7 @@ legend {font-size:1.2em; padding:1em;}
 .maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 			/* boxes */
 .box {margin:1em 0;}
-.boxtitle {color:#000; font-style:italic;}
+.hox h3 {color:#000; font-style:italic;}
 			/* tables and lists */
 fieldset table {margin:0 2%; width:96%;}
 table {border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal;}
@@ -101,7 +101,7 @@ ul.toc,ul.toc ul {margin-left:2em; padding-left:0;}
 .navigation .right {text-align:left; float:right;}
 			/* sticky notes */
 .stickies textarea,.stickies input[type='text'] {background:#000;}
-.stickynote .boxtitle {border-bottom: 1px solid #dda;}
+.stickynote .hox h3 {border-bottom: 1px solid #dda;}
 .stickynote {background-color:#ffc; color:#000; width: 300px; padding: 3px;}
 			/* articles */
 .articles .content div.image {float:left; padding:0 1em 0 0;}

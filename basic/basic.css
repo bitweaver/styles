@@ -86,7 +86,7 @@ a:hover			{color:#900;}
 
 /*** boxes ***/
 .box		{margin:10px 0;}
-.boxtitle	{padding:2px; border:1px solid #dedede; background:#e9ecef;}
+.box h3		{padding:2px; border:1px solid #dedede; background:#e9ecef;}
 .boxcontent	{padding:2px;}
 
 /*** miscellaneous ***/

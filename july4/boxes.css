@@ -9,7 +9,7 @@
 	margin: 5px 0 10px 0px;
 }
 
-.boxtitle {
+.box h3 {
 	text-align: center;
 	color: #fff;
 	background: #aea696;
@@ -17,12 +17,12 @@
 	padding: 2px;
 }
 
-.boxtitle a {
+.box h3 a {
 	color: #ff9;
 	text-decoration: underline;
 }
 
-.boxtitle a:hover {
+.box h3 a:hover {
 	color: #fff;
 }
 
@@ -40,7 +40,7 @@
 }
 
 /* aligning boxtitle text differently depending on what side they are on */
-#bitleft .module .boxtitle		{ 
+#bitleft .module h3		{ 
 	text-align: left; 
 	color: #ffffff;
 	padding: 0px;
@@ -70,7 +70,7 @@
 	color: #ffffff;
 }
 
-#bitright .module .boxtitle	{ 
+#bitright .module h3	{ 
 	text-align: left; 
 	color: #336;
 }
@@ -87,7 +87,7 @@
 /* #search_box {} */
 
 /* was color: #aea696; */
-.module .boxtitle {
+.module h3 {
 	font-weight: bold;
 	text-align: left;
 	background: transparent;

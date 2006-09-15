@@ -181,7 +181,7 @@ a img:hover {}
 .box {
 	margin: 10px 0px;
 }
-.boxtitle {
+.box h3 {
 	background: #fff;
 	color: #000;
 }
@@ -198,7 +198,7 @@ a img:hover {}
 	background: #fdd;
 	border: 1px solid #000;
 }
-.warning .boxtitle {
+.warning .h3 {
 	border: 1px solid #000;
 }
 .warning .boxcontent {
@@ -208,7 +208,7 @@ a img:hover {}
 	padding-top: 10px;
 }
 .help {}
-.module .boxtitle,
+.module .h3,
 .module .boxcontent {
 	background: transparent;
 	border: none;
@@ -249,7 +249,7 @@ a img:hover {}
 	margin-left: 10em;
 }
 /* icons in menu pages area */
-.midmenu .boxtitle {
+.midmenu .h3 {
 	height: 48px;
 	text-align: left;
 	padding-left: 3px;
@@ -259,7 +259,7 @@ a img:hover {}
 	float: right;
 }
 /* hide title of the application menu */
-.application-menu .boxtitle {
+.application-menu .h3 {
 	display: none;
 }
 

@@ -223,7 +223,7 @@ a img:hover {}
 .box {
 	margin: 10px 0px;
 }
-.boxtitle {
+.box h3 {
 	background: #fff;
 	color: #000;
 }
@@ -240,7 +240,7 @@ a img:hover {}
 	background: #fdd;
 	border: 1px solid #000;
 }
-.warning .boxtitle {
+.warning h3 {
 	border: 1px solid #000;
 }
 .warning .boxcontent {
@@ -250,7 +250,7 @@ a img:hover {}
 	padding-top: 10px;
 }
 .help {}
-.module .boxtitle,
+.module h3,
 .module .boxcontent {
 	background: transparent;
 	border: none;
@@ -351,7 +351,7 @@ menu .item {
 	text-decoration: none;
 }
 /* icons in menu pages area */
-.midmenu .boxtitle {
+.midmenu h3 {
 	padding: 0 0 3px 0;
 	font-size: 10px;
 }

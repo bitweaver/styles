@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.2 2006/09/14 09:49:41 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.3 2006/09/15 07:54:57 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.3 $
  * @theme    essential
  * @license  LGPL
  */
@@ -162,7 +162,7 @@
 	/* sticky notes */
 	.stickies textarea,
 	.stickies input[type='text']	{}
-	.stickynote .boxtitle			{}
+	.stickynote .hox h3				{}
 	.stickynote						{}
 
 	/* this is the attachment browser */

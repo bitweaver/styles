@@ -71,7 +71,7 @@ form {}                      /* complete form */
 div.module {}                /* any module in #bitleft or #bitright */
 div.help {}                  /* modules that contain help notes such as the wiki help at the bottom of the wiki edit page */
 div.box {}                   /* any box on the site, including <div class="box module"> for modules */
- div.box h3 {}               /* used in some themes instead of .boxtitle */
+ div.box h3 {}               /* the title in any .box is an h3. */
  div.boxcontent {}           /* content in boxes */
 
                         /*** menus ***/

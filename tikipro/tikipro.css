@@ -230,18 +230,18 @@ label:hover {
 	border: 1px solid #6c6454;
 	margin: 5px 0;
 }
-.boxtitle {
+.box h3 {
 	text-align: center;
 	color: #fff;
 	background: #aea696;
 	border-bottom: 1px solid #6c6454;
 	padding: 2px;
 }
-.boxtitle a {
+.box h3 a {
 	color: #ff9;
 	text-decoration: underline;
 }
-.boxtitle a:hover {
+.box h3 a:hover {
 	color: #fff;
 }
 .boxcontent {
@@ -254,14 +254,14 @@ label:hover {
 	border: 1px solid #e8e5de;
 }
 /* aligning boxtitle text differently depending on what side they are on */
-#bitright .module .boxtitle	{ text-align: left; }
-#bitleft .module .boxtitle		{ text-align: right; }
-.module .boxtitle {
+#bitright .module h3	{ text-align: left; }
+#bitleft .module h3		{ text-align: right; }
+.module h3 {
 	color: #aea696;
 	background: transparent;
 	border: 0;
 }
-.module .boxtitle a {
+.module h3 a {
 	color: #aea696;
 	text-decoration: none;
 }
@@ -352,7 +352,7 @@ label:hover {
 }
 /* additionally every section within the menus can be customised individually */
 /* hide title of the application menu */
-.application-menu .boxtitle {
+.application-menu h3 {
 	display: none;
 }
 /******************************************************************************************/

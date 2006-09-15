@@ -194,7 +194,7 @@ a img:hover {}
 .box {
 	margin: 10px 0px;
 }
-.boxtitle {
+.box h3 {
 	color: #000;
 }
 .boxcontent {

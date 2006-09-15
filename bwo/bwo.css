@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.12 2006/09/14 20:23:49 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.13 2006/09/15 07:54:57 squareing Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.12 $
+ * @version  $Revision: 1.13 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -71,7 +71,6 @@ h4			{font-size:1em;}
 /* images */
 #bitmain .portrait	{float:right;}
 .icon				{border:0; vertical-align:middle; margin:0 0.2em;}
-.menuicon			{text-align:center;}
 ul.small			{line-height:normal;}
 
 .header h1{font-size:2.1em; font-weight:300; line-height:1em;}

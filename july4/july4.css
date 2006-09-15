@@ -356,11 +356,6 @@ table.panel table tds {
 	color: red;
 }
 
-.boxtitle .highlight {
-	background: yellow;
-	color: black;
-}
-
 .prio1	{ border-left: 2px solid #fee; }
 .prio2	{ border-left: 2px solid #fdd; }
 .prio3	{ border-left: 2px solid #fcc; }
