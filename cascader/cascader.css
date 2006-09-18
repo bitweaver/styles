@@ -1,14 +1,14 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.4 2006/09/15 21:07:16 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.5 2006/09/18 08:02:18 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.4 $
+ * @version  $Revision: 1.5 $
  * @theme    essential
  * @license  LGPL
  */
 @media all {
 	/* basics */
 	*								{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
-	body							{line-height:2em; font-size:100%;}
+	body							{line-height:2em; font-size:12px;}
 	pre *,code *,
 	.code,.codelisting,
 	.codelisting *					{font-family:monospace !important; text-align:left !important;}
