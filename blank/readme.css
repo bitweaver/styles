@@ -73,29 +73,53 @@ showpagelayout.css
 
 Css Schema
 ----------
-general layout of a content page
+layout schema - when using the layout system provided by bitweaver, you don't
+really need to concern yourself with this
 
-<div class="... foo">
+<div id="container" class="layout">
+	<div id="header"> #header </div>
 
-	<div class="header">
-		<h1>pile of foo</h1>
-		<h2>desciption of foo</h2>
-		<div class="date">created by fooster on april 1, 2004</div>
+	<div id="wrapper">
+		<div id="content">
+		</div>
 	</div>
 
-	<div class="body">
-		<div class="introduction">this is foo</div>
-		<div class="content">this is more foo</div>
+	<div id="navigation">
+		<div class="module"></div>
 	</div>
 
-	<div class="footer">read comments...</div>
+	<div id="extra">
+		<div class="module"></div>
+	</div>
 
-	<div class="navbar">navigation bar</div>
-	<div class="pagination">page 1/1</div>
-
+	<div id="footer"></div>
 </div>
 
-... == is usually one of the following:
+This is contained within the #content which is the main center column.
+<div id="content">
+	<div class="... foo">
+
+		<div class="header">
+			<h1>pile of foo</h1>
+			<h2>desciption of foo</h2>
+			<div class="date">
+				created by fooster on april 1, 2004
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="content">
+				this is more foo
+			</div>
+
+			<div class="navbar">
+				navigation bar
+			</div>
+		</div>
+	</div>
+</div>
+
+... == is one of the following:
 		display, admin, listing, edit
 
 
