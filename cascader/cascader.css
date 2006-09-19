@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.5 2006/09/18 08:02:18 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.6 2006/09/19 16:02:44 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.5 $
+ * @version  $Revision: 1.6 $
  * @theme    essential
  * @license  LGPL
  */
@@ -298,6 +298,8 @@
 	.hor li:hover ul,
 	.hor li li:hover ul,
 	.hor li li li:hover ul			{left:auto;}
+	/* msie specific */
+	.hor table						{margin:-1px; width:auto; border-collapse:collapse; font-size:1em;}
 }
 
 @media print {
