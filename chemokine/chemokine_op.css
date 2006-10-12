@@ -1,0 +1,4 @@
+#content a[title]:link:hover:before,
+#content a[title]:visited:hover:before,
+#content a .icon[title]:hover:before		{content:attr(title); position:absolute; margin-top:-3em; background:#def; padding:5px; border:1px solid #ccc; font-weight:normal; color:#666;}
+#content a[title] .icon[title]:hover:before	{display:none;}
