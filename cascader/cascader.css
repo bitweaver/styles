@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.7 2006/09/25 16:20:31 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.8 2006/11/01 07:47:10 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.7 $
+ * @version  $Revision: 1.8 $
  * @theme    essential
  * @license  LGPL
  */
@@ -51,7 +51,7 @@
 
 	/* images */
 	.portrait							{}
-	.icon								{vertical-align:middle;}
+	.icon								{vertical-align:middle; border:0;}
 	.menuicon							{}
 	ul.small							{}
 
