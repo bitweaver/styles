@@ -89,6 +89,8 @@ a:hover			{color:#900;}
 .box h3		{padding:2px; border:1px solid #dedede; background:#e9ecef;}
 .boxcontent	{padding:2px;}
 
+.module.box h3 {border:0px; background:none}
+
 /*** miscellaneous ***/
 .cached		{font-size:10px;}
 
