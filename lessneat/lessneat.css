@@ -151,3 +151,15 @@ a img:hover			{}
 /*** settings that have to be at the end ***/
 .highlight,
 a .highlight		{}
+
+
+@media print {
+	*			{background:#fff !important;}
+	body		{padding:0 !important; margin:0 !important;}
+	#container	{width:100% !important; margin:0 !important;}
+	#wrapper	{float:none !important; width:100% !important;}
+	#content	{margin:0 !important;}
+	#bittopbar,.floaticon,.navbar,.footer,#logout,
+	.menubar,#navigation,#extra,#navigation,
+	#footer		{display:none !important;}
+}
