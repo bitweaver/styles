@@ -41,14 +41,15 @@ a img:hover			{}
 .display			{}
 .preview			{}
 .header				{}
+.header h1			{margin:0; padding:0.5em 0;}
 .header h1,
 .header h1 a,
 .header h1 a:hover	{font-size:26px; font-family:"Trebuchet MS",Verdana, Arial, Helvetica, sans-serif; color :#000; text-decoration:none;}
 .header h2			{font-size:14px; font-weight:normal;}
 .date				{}
-.body				{border:1px solid #8cacbb; font-size:12px; padding:5px;}
+.body				{border:1px solid #8cacbb; padding:5px; background:#fff; font-size:12px;}
 .content			{}
-.footer				{background:#fff; min-height:16px; border-top:1px solid #8cacbb;}
+.footer				{}
 
 
 
@@ -79,9 +80,7 @@ a img:hover			{}
 
 
 /*** articles ***/
-.articles			{background:#fff; margin-bottom:20px;}
-.articles .body		{border:0;}
-.articles .title	{font-size:16px;}
+.articles .post			{margin-bottom:30px;}
 
 
 
