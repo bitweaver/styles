@@ -12,7 +12,7 @@
 .suckerfish ul li a	{padding:0.2em 0;}
 .suckerfish ul li a:hover	{background:#eee; color:#c40;}
 
-/* apply seperate menu style for menus in middle of page - like admin screen */
+/* apply separate menu style for menus in middle of page - like admin screen */
 #bitmain .menu				{font-size:0.8em;}
 #bitmain .menu a:hover		{background:#579; color:#fff;}
 #bitmain .menu.box			{text-align:center;}
