@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/print.css,v 1.2 2005/12/18 22:32:28 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/print.css,v 1.3 2007/03/05 16:31:29 squareing Exp $ */
 /**
  * @author   helge_karl <helge_karl@yahoo.com>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.3 $
  * @theme    ygg
  * @license  LGPL
  */
@@ -10,12 +10,12 @@ body		{background:#fff;}
 /* hide large layout bits */
 #bitlogo	{display:none;}
 #bittop		{display:none;}
-#bitleft	{display:none;}
-#bitright	{display:none;}
+#navigation	{display:none;}
+#extra		{display:none;}
 #bittopbar	{display:none;}
 #toplogin	{display:none;}
 #bitlogin	{display:none;}
-#bitmain	{border:none;margin:0;right:0;left:0;width:auto;}
+#content	{border:none;margin:0;right:0;left:0;width:auto;}
 #bitbottom	{display:none;}
 #bitmodules	{display:none;}
 #tikibottom	{display:none;}
