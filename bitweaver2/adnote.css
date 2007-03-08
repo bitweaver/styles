@@ -1,44 +1,52 @@
 /* splash column */
-#top_bar															{clear:both;margin:0;padding:0}
-#top_bar	#logo												{text-align:center;overflow:hidden;z-index:1;position:relative;top:8px;background:#006fc0;margin:8px;padding:8px 0}
-#top_bar	#logo	p											{font-family:sans-serif;text-align:center;font-size:11px;color:#f9f7e8;clear:both;max-width:16em;margin:0 auto}
+#top_bar						{clear:both;margin:0;padding:0}
+#top_bar	#logo				{overflow:hidden;z-index:1;position:relative;background:url(images/bitweaver_contentmanagement.jpg) no-repeat center top;display:block;clear:both;margin:0 auto}
+#top_bar	#logo	p			{text-align:center;color:#fadc00;clear:both;margin:240px auto 0 auto;width:75%;max-width:26em;text-transform:uppercase}
+#top_bar	#logo	p			{font-size:0.6em;font-family:'Palatino Linotype','Book Antiqua',Palatino,Georgia,serif;line-height:1.3em}
 
 
 
 /* 3 areas, all */
-ul.doc,	ul.com,	ul.dev								{width:28%;float:left;margin:32px 0}
-ul.doc																{margin-left:32px}
+ul.doc,	ul.com,	ul.dev			{width:28%;float:left;margin:32px 0}
+ul.doc							{margin-left:32px}
 ul.doc	li, 
 ul.com	li, 
-ul.dev	li														{list-style-type:disc;padding-left:0;margin-left:30px;color:#000;line-height:1.4em}
+ul.dev	li						{list-style-type:disc;padding-left:0;margin-left:30px;color:#000;line-height:1.4em}
 ul.doc	li	a, 
 ul.com	li	a,
-ul.dev	li	a													{color:#000;border-bottom:1px solid #cfca93;text-decoration:none}
+ul.dev	li	a					{color:#000;border-bottom:1px solid #cfca93;text-decoration:none}
 ul.doc	li	a:hover,	
 ul.com 	li	a:hover,
-ul.dev	li	a:hover										{border-bottom:1px solid #121212;color:#000}
+ul.dev	li	a:hover				{border-bottom:1px solid #121212;color:#000}
 
 
 /* read more */
 ul.doc em a, 
 ul.com em a, 
-ul.dev em a														{color:#f2f2f0;background:#121212;font-style:normal;padding:0 4px;font-size:11px;border:3px double #fff}
+ul.dev em a						{color:#f2f2f0;background:#121212;font-style:normal;padding:0 4px;font-size:11px;border:3px double #fff}
 
 ul.doc em a:visited, 
 ul.com em a:visited, 
-ul.dev em a:visited										{color:#f2f2f0;background:#121212;font-style:normal;border:3px double #fff}
+ul.dev em a:visited				{color:#f2f2f0;background:#121212;font-style:normal;border:3px double #fff}
 
 ul.doc em a:hover, 
 ul.com em a:hover, 
-ul.dev em a:hover											{color:#ffffff;background:#404040;text-decoration:none;border:3px double #fadc00}
+ul.dev em a:hover				{color:#ffffff;background:#404040;text-decoration:none;border:3px double #fadc00}
 
 
 
 /* images */
-li.area	a															{border-bottom:4px solid #f9f7e8;display:block;height:80px;width:160px}	
-li.area a:visited											{border-bottom:4px solid #f9f7e8;display:block;height:80px;width:160px}
-li.area	a:hover												{border-bottom:4px solid #fadc00;display:block}
+li.area	a						{border-bottom:4px solid #f9f7e8;display:block;height:80px;width:160px}	
+li.area a:visited				{border-bottom:4px solid #f9f7e8;display:block;height:80px;width:160px}
+li.area	a:hover					{border-bottom:4px solid #fadc00;display:block}
 
-ul li.area														{list-style-type:none;margin-left:0}
-ul li.area	a													{border:none;border-bottom:4px solid #fadc00}
-ul:hover li.area	a										{border-bottom:4px solid #ffe85a}
+ul li.area						{list-style-type:none;margin-left:0}
+ul li.area	a					{border:none;border-bottom:4px solid #fadc00}
+ul:hover li.area	a			{border-bottom:4px solid #ffe85a}
+
+/* download / home / demo */
+body.articles #top ul 			{text-align:center;}
+body.articles #top ul li		{text-align:center;display:inline}
+body.articles #top ul li a		{color:#f0f0f0;background:#3fceee}
+body.articles #top ul a:visited	{color:#f0f0f0;background:#3fceee}
+body.articles #top ul a:hover	{background:#0048fe}

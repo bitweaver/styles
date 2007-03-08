@@ -3,18 +3,15 @@
 	
 		<div id="top">
 			<ul>
-				<li><a title="demo" href="http://demo.bitweaver.org">demo</a></li>
-				<li><a title="download" href="http://bitweaver.org/GetCode">download</a></li>
-				<li><a title="homepage" href="http://bitweav.er">home</a></li>
+				<li><a title="try bitweaver live install" href="http://demo.bitweaver.org">demo</a></li>
+				<li><a title="download latest bitweaver" href="http://bitweaver.org/GetCode">download</a></li>
+				<li><a title="homepage" href="/">home</a></li>
 			</ul>
 		</div>
 
-		{if $SCRIPT_NAME eq "/articles/index.php" or $SCRIPT_NAME eq "/~laetzer/articles/index.php"}
+		{if $smarty.const.ACTIVE_PACKAGE eq 'articles'}
 		
 			<div id="logo">
-				<a href="/"><img src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver/images/bitweaver_splash.jpg" height="205" width="215" /></a>
-				<br />
-				<br />
 				<p>Bitweaver is ideal for large scale community websites and corporate applications &ndash; yet it is easy to set up and to administrate. <br /><br />Out of the box bitweaver comes with a full set of content packages like Articles, Wiki, Blogs, Galleries &ndash; and framework packages like User Management, Choice of Database, Languages, Theming, Comments &hellip; and many, many more. <br /><br />Each package sports various optional features for you to set up your site just like you need. Bitweaver is Open Source, fast, scalable, modular, and free.</p>
 			</div>
 		
@@ -22,7 +19,7 @@
 
 			<div style="width:120px;height:120px;margin:0 auto;">
 				<a href="/">
-					<img src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver/images/bitweaver_logo.gif" height="120" width="120" />
+					<img src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver2/images/bitweaver_logo.gif" height="120" width="120" />
 				</a>
 			</div>
 			
