@@ -39,22 +39,23 @@
 	
 	
 	/* images */
-	li.area	a						{border-bottom:4px solid #f9f7e8;display:block;height:80px;width:160px}	
-	li.area a:visited				{border-bottom:4px solid #f9f7e8;display:block;height:80px;width:160px}
+	li.area	a						{border-bottom:4px solid #f9f7e8;display:block;height:42px;width:164px}	
+	li.area a:visited				{border-bottom:4px solid #f9f7e8;display:block;height:42px;width:164px}
 	li.area	a:hover					{border-bottom:4px solid #fadc00;display:block}
 	
 	ul li.area						{list-style-type:none;margin-left:0}
 	ul li.area	a					{border:none;border-bottom:4px solid #fadc00}
+	ul li.area	a:visited			{border:none;border-bottom:4px solid #fadc00}
 	ul:hover li.area	a			{border-bottom:4px solid #ffe85a}
 	
 	
 	
 	/* download / home / demo */
-	#articles #top ul 				{text-align:center;margin:8px 0 16px 0}
+	#articles #top ul 				{text-align:center;margin:16px 0}
 	#articles #top ul li			{text-align:center;display:inline}
-	#articles #top ul li a			{color:#f0f0f0;background:#7aa9dd}
-	#articles #top ul a:visited		{color:#f0f0f0;background:#7aa9dd}
-	#articles #top ul a:hover		{background:#3fceee}
+	#articles #top ul li a			{color:#ffffff;background:#005999}
+	#articles #top ul li a:visited	{color:#ffffff;background:#005999}
+	#articles #top ul li a:hover	{color:#ffffff;background:#3fceee}
 	
 </style>
 {/literal}	

@@ -4,7 +4,6 @@ hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:b
 small							{font-size:0.8em}
 p								{margin:12px 0;padding:0}
 embed,object					{display:block;clear:both}
-
 h1								{font-size:1.3em;margin:12px 0 0 0;color:#000000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.08em;display:block;clear:both}
 h2								{font-size:1.1em;margin:12px 0 0 0;color:#000000;}
 h3								{font-size:0.9em;margin:12px 0 0 0;color:#BFA408;text-decoration:underline}
@@ -23,12 +22,6 @@ div#header						{}
 body.articles #content			{}
 
 #navigation						{}
-	#top						{margin:16px 8px 8px 8px;padding:0;display:block;clear:both}
-	#top	ul					{margin:0;display:block;clear:both}
-	#top	ul	li				{font-size:0.8em;font-weight:700}
-	#top	ul	a				{color:#ffffff;margin:4px;padding:4px 4px 1px 4px;width:30%}
-	#top	ul	a:visited		{color:#ffffff}
-	#top	ul	a:hover			{color:#3fceee}		
 
 #extra							{background:#004373 url(images/bg_footer.jpg) repeat-x;border-top:16px solid #006fbf;height:500px}
 	#extra	div.module			{width:30%;float:left;margin:64px 8px 8px 16px}
@@ -118,16 +111,16 @@ div.formfeedback				{margin:0 12px}
 
 
 /* search */
-form.minifind					{border:none}
-form.minifind fieldset			{border:0;margin:0;padding:0;border:none}
-form.minifind legend			{display:none}
-
-#search_new h3					{display:none !important}
-#search_new form				{margin:0;text-align:center;margin-top:8px}
-#search_new select				{display:none}
-#search_new input				{display:inline;border-color:#004272}
-#search_new input#fuser			{background:#6ba0d9;color:#121210;width:8em}
-#search_new input#fbutton		{background:#004373;color:#b4cfec}
+#search							{display:block;clear:both}
+#search h3						{display:none !important}
+#search form					{margin:16px 0 0 0}
+#search	*						{float:right}
+#search	div.row					{border:0px;display:inline;float:left}
+#search fieldset				{border:0;margin:0;padding:0;border:none}
+#search legend					{display:none}
+#search select					{display:none}
+#search input#fuser				{background:#ffffff;color:#121210;display:block;margin:0 8px}
+#search input#fbutton			{background:#004373;color:#b4cfec;display:block;margin:0}
 
 
 
@@ -375,15 +368,15 @@ div.tabcontainer h4.tab-hover a		{color:#006fbf;text-decoration:underline}
 
 
 /* kernel */
-body.kernel	div.admin div.menu	img.menuicon	{border:3px double #006FC0;display:inline;float:left;padding:2px}
-body.kernel	div.admin div.menu	h3				{display:inline;float:left;background:#006FC0 url(images/bg_header_2.gif) no-repeat right top;color:#F2F2F0;text-transform:uppercase;padding:0 16px 0 2px;font-size:0.8em;margin:32px 0 0 0}
-body.kernel	div.admin div.menu	div.boxcontent	{padding:0;margin:0}
-body.kernel	div.admin div.menu	ul				{list-style-type:none;padding:0;float:left;clear:both;margin:2px 0 0 0}
-body.kernel	div.admin div.menu	ul	li			{list-style-type:none;padding:0;margin:0 0 2px 0;width:100%}
+#kernel	div.admin div.menu	img.menuicon	{border:3px double #006FC0;display:inline;float:left;padding:2px}
+#kernel	div.admin div.menu	h3				{display:inline;float:left;background:#006FC0 url(images/bg_header_2.gif) no-repeat right top;color:#F2F2F0;text-transform:uppercase;padding:0 16px 0 2px;font-size:0.8em;margin:32px 0 0 0}
+#kernel	div.admin div.menu	div.boxcontent	{padding:0;margin:0}
+#kernel	div.admin div.menu	ul				{list-style-type:none;padding:0;float:left;clear:both;margin:2px 0 0 0}
+#kernel	div.admin div.menu	ul	li			{list-style-type:none;padding:0;margin:0 0 2px 0;width:100%}
 
-body.kernel	div.admin div.menu	a				{color:#aa3f20;display:inline;border-bottom:1px solid #cfca93;text-decoration:none}
-body.kernel div.admin div.menu	a:visited 		{color:#696967;text-decoration:none}
-body.kernel div.admin div.menu	a:hover			{color:#F07300;background:#FFFBE2;text-decoration:none}
+#kernel	div.admin div.menu	a				{color:#aa3f20;display:inline;border-bottom:1px solid #cfca93;text-decoration:none}
+#kernel div.admin div.menu	a:visited 		{color:#696967;text-decoration:none}
+#kernel div.admin div.menu	a:hover			{color:#F07300;background:#FFFBE2;text-decoration:none}
 
 /* important menu titles */
 div.libertymenu		a.head		{font-weight:700;border-bottom:1px solid white}
@@ -445,20 +438,20 @@ div#container 									{}
 
 
 /* links below logo */
-#doc_com_dev					{margin:0;padding:0;text-align:center}
-#doc_com_dev	li				{display:inline;margin:4px}
-#doc_com_dev	li	a			{color:#121212;border-width:3px 0;border:double 3px #006fbf;padding:0 6px;font-family:monospace;font-size:13px}
+#top_bar 					{text-align:center}
+#top_bar ul					{margin:0;padding:0;text-align:center}
+#top_bar ul	li				{display:inline;margin:4px;font-size:1em;font-weight:500;font-family:monospace}
+#top_bar ul	li	a			{background:#004373;color:#6ba0d9;border-width:3px 0;border:double 3px #006fbf;padding:0 6px}
+#top_bar ul	li	a:visited	{background:#004373;color:#6ba0d9}
+#top_bar ul	li.doc	a:hover	{background:#bfa408;color:#fff}
+#top_bar ul	li.com	a:hover	{background:#aa3f20;color:#fff}
+#top_bar ul	li.dev	a:hover	{background:#3fceee;color:#fff}
 
-#doc_com_dev	li.doc	a		{background:#004373}
-#doc_com_dev	li.com	a		{background:#004373}
-#doc_com_dev	li.dev	a		{background:#004373}
-#doc_com_dev	li.doc	a:hover	{background:#bfa408}
-#doc_com_dev	li.com	a:hover	{background:#aa3f20}
-#doc_com_dev	li.dev	a:hover	{background:#3fceee}
+#top_bar #top ul 			{margin:16px 0}
+#top_bar #top ul a			{background:#006fbf;color:#ffffff;margin:4px;padding:4px 4px 1px 4px;width:30%}
+#top_bar #top ul a:visited	{background:#006fbf;color:#ffffff}
+#top_bar #top ul a:hover	{background:#006fbf;color:#3fceee}		
 
-#doc_com_dev	a				{color:#6ba0d9}
-#doc_com_dev	a:visited		{color:#6ba0d9}
-#doc_com_dev	a:hover			{color:#ffffff;text-decoration:none}
 
 
 /* gala_29.css */

@@ -23,6 +23,10 @@
 
 		<div id="wrapper">
 			<div id="content">
+				<div id="search">
+					{include file="bitpackage:search/global_mini_search.tpl"}
+					<div class="clear"><!-- --></div>
+				</div>
 				{if $smarty.const.ACTIVE_PACKAGE eq 'articles'}
 					{include file="bitpackage:kernel/display_adnote.tpl"}
 				{/if}

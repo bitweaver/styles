@@ -17,13 +17,11 @@
 		
 		{else}
 
-			<div style="width:120px;height:120px;margin:0 auto;">
-				<a href="/">
-					<img src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver2/images/bitweaver_logo.gif" height="120" width="120" />
-				</a>
-			</div>
+			<a href="/">
+				<img src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver2/images/bitweaver_logo.gif" height="120" width="120" />
+			</a>
 			
-			<ul id="doc_com_dev">
+			<ul>
 				<li class="doc"><a href="">doc</a></li>
 				<li class="com"><a href="">com</a></li>
 				<li class="dev"><a href="">dev</a></li>
