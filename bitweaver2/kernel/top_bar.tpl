@@ -12,7 +12,7 @@
 		{if $smarty.const.ACTIVE_PACKAGE eq 'articles'}
 		
 			<div id="logo">
-				<p>Bitweaver is ideal for large scale community websites and corporate applications &ndash; yet it is easy to set up and to administrate. <br /><br />Out of the box bitweaver comes with a full set of content packages like Articles, Wiki, Blogs, Galleries &ndash; and framework packages like User Management, Choice of Database, Languages, Theming, Comments &hellip; and many, many more. <br /><br />Each package sports various optional features for you to set up your site just like you need. Bitweaver is Open Source, fast, scalable, modular, and free.</p>
+				<p>Out of the box bitweaver comes with a full set of content packages like Articles, Wiki, Blogs, Image and Video Galleries &ndash; and framework packages like User Management, Choice of Database, Languages, Theming, Comments &hellip; and many, many more. <br /><br/>Each package sports various optional features for you to set up your site just like you need. Bitweaver is ideal for large scale community websites and corporate applications &ndash; yet it is easy to set up and to administrate. It's Open Source, fast, scalable, modular, and free.</p>
 			</div>
 		
 		{else}

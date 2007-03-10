@@ -24,33 +24,25 @@ body.articles #content			{}
 
 #navigation						{}
 	#top						{margin:16px 8px 8px 8px;padding:0;display:block;clear:both}
-		#top	ul				{margin:0;display:block;clear:both}
-		#top	ul	li			{font-size:0.8em;font-weight:700}
-		#top	ul	a			{color:#ffffff;margin:4px;padding:4px 4px 1px 4px;width:30%}
-		#top	ul	a:visited	{color:#ffffff}
-		#top	ul	a:hover		{color:#3fceee}		
+	#top	ul					{margin:0;display:block;clear:both}
+	#top	ul	li				{font-size:0.8em;font-weight:700}
+	#top	ul	a				{color:#ffffff;margin:4px;padding:4px 4px 1px 4px;width:30%}
+	#top	ul	a:visited		{color:#ffffff}
+	#top	ul	a:hover			{color:#3fceee}		
 
-#extra							{background:#004373;border-top:16px solid #006fbf}
-#footer							{background:#121210 url(images/bg_fooooooter.gif) repeat-x;text-align:center;padding:64px 0;border-top:4px solid #121210}
-	#footer	p					{color:#F2F2F0;margin:0 0 0 128px;text-align:left}
-	#footer	p	a				{color:#F2F2F0}
-	#footer	div.module			{width:22%;float:left;background:none;padding:64px 0 0 16px;text-align:left;overflow:hidden;max-height:300px}
-	#footer	div.module	h3		{padding:0 0 0 32px;font-weight:500;color:#F07300;display:inline;text-transform:uppercase;font-size:0.7em;border-bottom:1px solid #FADC00}
-	#footer	div.modulecontent	{margin:8px 0 0 0}
-	#footer	ol, #footer ul		{list-style-type:upper-roman;text-align:left;margin:0 0 0 32px}
-	#footer li								{list-style-type:upper-roman;text-align:left;color:#004272}
-	#footer li	a							{color:#BFA408;border-bottom:1px solid #004272}
-	#footer li	a:hover			{color:#006FC0;border-bottom:1px solid #006FC0;background:#004272}
+#extra							{background:#004373 url(images/bg_footer.jpg) repeat-x;border-top:16px solid #006fbf;height:500px}
+	#extra	div.module			{width:30%;float:left;margin:64px 8px 8px 16px}
+	#extra	div.module	h3		{color:#e90;font-style:normal;font-family:monospace;margin:0;text-decoration:none}
+	#extra	div.module	ol		{list-style-type:circle;margin:0 0 0 16px;padding:0}
+	#extra	div.module	ol li	{color:#006fbf;list-style-type:circle;margin:0;padding:0}
+	#extra	div.module	li:hover{color:#e8f1fa}	
+	#extra	a.more				{color:#006fbf;font-family:monospace;margin:0;display:block}
+	#extra	a.more:hover		{color:#fadc00;text-decoration:underline}
+	#extra	li a				{color:#7aa9dd;font-family:sans-serif;text-decoration:none;font-size:0.8em}
+	#extra	li a:hover			{color:#fadc00}
 
-	#wiki_last_comments			{text-align:center;width:96%;margin:0 auto}
-	#wiki_last_comments	h3		{display:none}
-	#wiki_last_comments	ul		{margin:0 auto !important;text-align:center}
-	#wiki_last_comments	li		{color:#B4CFEC;text-align:center;font-size:0.7em;list-style-type:none}
-	#wiki_last_comments	li	a	{color:#B4CFEC;border:1px dotted #006FC0;border-width:0 0 1px 0}
-	#wiki_last_comments	li	b	{font-weight:500}
-	#wiki_last_comments	li.odd	{background-color:transparent;border:0}
-	#wiki_last_comments	li.even	{background-color:transparent;border:0}
-
+#footer							{background:#063e6f;color:#fff;padding:16px}
+#footer	a						{color:#fff}
 
 
 /* common classes */
@@ -414,16 +406,16 @@ a.more							{border:0 !important}
 
 
 /* menus */                        		
-.menu .icon					{vertical-align:middle}
-.menu a						{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
-.menu a:visited				{color:#dddddd}
-.menu a:hover				{color:#fadc00;border-bottom:1px solid #6ba0d9;line-height:1.4em;text-decoration:none !important}
-.menu img 					{display:none}
+.menu .icon						{vertical-align:middle}
+.menu a							{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
+.menu a:visited					{color:#dddddd}
+.menu a:hover					{color:#fadc00;border-bottom:1px solid #6ba0d9;line-height:1.4em;text-decoration:none !important}
+.menu img 						{display:none}
 
-#navigation	div.module				{margin:16px auto;width:85%;max-width:85%;overflow:hidden}
-#navigation	h3						{background:#fadc00;color:#000;margin:0 0 0 24px;padding:0 4px 0 28px;text-decoration:none;font-size:0.7em;font-weight:700;text-transform:uppercase}
-#navigation	h3						{border:6px solid #006fbf;border-color:#006fbf #006fbf #006fbf #fadc00;border-width:0px 6px 6px 6px;display:inline}
-#navigation	div.modulecontent		{display:block;clear:both;margin:0 8px;padding-top:8px}
+#navigation	div.module			{margin:16px auto;width:85%;max-width:85%;overflow:hidden}
+#navigation	h3					{background:#fadc00;color:#000;margin:0 0 0 0;padding:0 4px 0 8px;text-decoration:none;font-size:0.7em;font-weight:700;text-transform:uppercase}
+#navigation	h3					{border:6px solid #006fbf;border-color:#fadc00 #006fbf #006fbf #006fbf;border-width:6px 0px 0px 6px;display:inline}
+#navigation	div.modulecontent	{display:block;clear:both;margin:0 8px;padding-top:8px}
 
 
                         		
@@ -477,3 +469,4 @@ div.blocks2n #wrapper			{width:74%}
 div.blocks1  #wrapper			{width:100%}
 div#navigation					{float:left;width:25.9%}
 div#extra						{clear:both;width:100%}
+

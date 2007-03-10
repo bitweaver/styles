@@ -1,9 +1,5 @@
 {include file="bitpackage:kernel/header.tpl"}
 
-{if $smarty.const.ACTIVE_PACKAGE eq 'articles'}
-	<link rel="stylesheet" href="{$smarty.const.THEMES_PKG_URL}styles/bitweaver2/adnote.css" type="text/css" media="screen" />	
-{/if}
-
 {strip}
 
 {if $print_page ne "y"}
@@ -27,7 +23,7 @@
 
 		<div id="wrapper">
 			<div id="content">
-				{if $SCRIPT_NAME eq "/articles/index.php" or $SCRIPT_NAME eq "/~laetzer/articles/index.php"}
+				{if $smarty.const.ACTIVE_PACKAGE eq 'articles'}
 					{include file="bitpackage:kernel/display_adnote.tpl"}
 				{/if}
 				{include file="bitpackage:liberty/display_structure.tpl"}
@@ -48,6 +44,7 @@
 		{if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules}
 			<div id="extra">
 				{include file="bitpackage:kernel/bit_right.tpl"}
+				<div class="clear"><!-- --></div>
 			</div>
 		{/if}
 
