@@ -7,13 +7,12 @@ embed,object					{display:block;clear:both}
 h1								{font-size:1.3em;margin:12px 0 0 0;color:#000000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.08em;display:block;clear:both}
 h2								{font-size:1.1em;margin:12px 0 0 0;color:#000000;}
 h3								{font-size:0.9em;margin:12px 0 0 0;color:#BFA408;text-decoration:underline}
-table.menutable h3				{text-decoration:none}
 h4								{font-size:0.8em}
 
 
 div#header						{}
 #wrapper						{}
-#content						{background:#f6f6f6}
+#content						{background:#f6f6f6;padding:0 0 16px 8px}
 	div.display					{margin:0 24px 0 12px}
 		div.header				{}
 		div.body				{}
@@ -134,18 +133,27 @@ div.bitbox a					{}
 
 
 /* tables */
-table .formlabel				{float:none; width:auto; text-align:left}
-table .forminput				{margin:0}
 fieldset table					{margin:0 2%; width:96%}
 table							{border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal}
+	table.menutable h3			{text-decoration:none}
+	table.menutable td			{padding:10px 4px}
+	table.optionbar				{font-size:0.8em}
+	table .formlabel			{float:none; width:auto; text-align:left}
+	table .forminput			{margin:0}
 caption							{display:none}
-th								{border-bottom:1px solid #F2F2F0;background:#005A99;color:#B4CFEC;padding:2px 4px;font-weight:500;font-size:0.8em}
-td.actionicon					{text-align:right}
-table.optionbar					{font-size:0.8em}
-.menutable td					{padding:10px 4px}
-tr.odd td						{border-bottom:1px dotted #004272}
-tr.even td						{border-bottom:1px dotted #004272}
+th								{border-bottom:1px solid #F2F2F0;background:#fadc00;color:#000;padding:2px 4px;font-weight:500;font-size:0.8em}
+	th a						{color:#000;font-weight:700;text-decoration:none}
+	th a:hover					{color:#fff}
+td								{font-size:0.8em}
+	td.actionicon				{text-align:right}
+	tr.odd td					{border-bottom:1px solid #fadc00}
+	tr.even td					{border-bottom:1px solid #fadc00}
 
+#wiki table th					{overflow:hidden}
+#wiki table td span				{color:#aaaaa0}
+#wiki table td span a			{color:#aaaaa0;text-decoration:none}
+
+tr.norecords td					{height:16em;text-align:center}
 
 
 /* lists */
@@ -158,7 +166,15 @@ ul.data							{margin:1em}
 ul.data li.item					{padding:0.5em; margin:0}
 ul.data .thumb					{float:right; margin-right:1em}
 
-li.odd,li.even					{border-top:1px solid #696967; padding:1em 0; margin-bottom:-1px !important}
+li.odd							{border-top:1px solid #696967; padding:1em 0; margin-bottom:-1px !important}
+li.even							{border-top:1px solid #696967; padding:1em 0; margin-bottom:-1px !important}
+
+
+div.ranking	ol					{line-height:1.4em}
+div.ranking	ol li.odd			{border:0px;padding:0;margin:0}
+div.ranking	ol li.even			{border:0px;padding:0;margin:0}
+div.ranking	ol li a				{text-decoration:none}
+
 ul.toc,ul.toc ul				{margin-left:2em; padding-left:0; line-height:normal}
 ul.toc li						{list-style:none}
 ul.toc ul.data					{border:1px solid #969694; padding:0.5em 1em}
@@ -335,18 +351,18 @@ div.comment .content			{overflow:auto}
 /* End IE5-Mac hack */
 
 /* tabs design */
-div.tabsystem 					{margin:0}
+div.tabsystem 					{margin:0 8px 0 0;min-height:16em}
 div.tabsystem div.tabcontainer	{margin:0;padding:0;border:0;clear:both;z-index:1}
-div.tabsystem div.tabpage		{background:#fff url(images/bg_tabpage.gif) repeat-x left top;z-index:1;clear:both;border:1px solid #ddd}
+div.tabsystem div.tabpage		{background:#fff url(images/bg_tabpage.gif) repeat-x left top;z-index:1;clear:both;border:1px solid #ddd;min-height:16em}
                                 	
 div.tabcontainer h4				{margin:0;padding:0;z-index:1;position:relative;display:inline;float:left;white-space:nowrap;font-size:1em;font-weight:500}
 div.tabcontainer h4.tab			{background:#dddddd;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none;border:0px}
 div.tabcontainer h4.tab-hover	{background:#F2F2F0;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none}
-div.tabcontainer h4.tab-active	{background:#F2F2F0;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none;border:1px solid #F2F2F0;border-width:1px 1px 0 1px}
+div.tabcontainer h4.tab-active	{background:#F2F2F0;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none;border:1px solid #ccc;border-width:1px 1px 0 1px}
 
-div.tabcontainer h4.tab	a			{color:#121210;text-decoration:none}
-div.tabcontainer h4.tab-active a	{color:#121210;text-decoration:none;font-weight:700}
-div.tabcontainer h4.tab-hover a		{color:#006fbf;text-decoration:underline}
+div.tabcontainer h4.tab	a			{color:#999;text-decoration:none}
+div.tabcontainer h4.tab-active a	{color:#000;text-decoration:none;font-weight:700}
+div.tabcontainer h4.tab-hover a		{color:#00c;text-decoration:underline}
 
 
 
@@ -375,18 +391,12 @@ div.tabcontainer h4.tab-hover a		{color:#006fbf;text-decoration:underline}
 #kernel div.admin div.menu	a:visited 		{color:#696967;text-decoration:none}
 #kernel div.admin div.menu	a:hover			{color:#F07300;background:#FFFBE2;text-decoration:none}
 
-/* important menu titles */
-div.libertymenu		a.head		{font-weight:700;border-bottom:1px solid white}
-div.kernelmenu		a.head		{font-weight:700;border-bottom:1px solid white}
-div.usersmenu		a.head		{font-weight:700;border-bottom:1px solid white}
-div.themesmenu		a.head		{font-weight:700;border-bottom:1px solid white}
-div.languagesmenu	a.head		{font-weight:700;border-bottom:1px solid white}
 
 
 /* links */
 a								{color:#006FC0;text-decoration:underline}
 a:visited						{color:#000000;text-decoration:underline}
-a:hover							{color:#b00000;text-decoration:underline}
+a:hover							{color:#fadc00;text-decoration:underline}
                         		
 a.create						{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #004272; padding-right:9px; color:#004272;text-decoration:none}
 a.external						{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px}
@@ -426,17 +436,16 @@ a.more							{}
 
 
 /* certain listings */
-div#container .articles	ul.data	li.item,
-div#container .themes	ul.data	li.item,
-div#container .fisheye	ul.data	li.item			{border:1px solid #6CA0DA; clear:both; margin:0.5em 200px 0.5em 0; background:#E5EFF9}
-div#container .articles	ul.data	li.item h2 a,
-div#container .themes	ul.data	li.item h2 a,
-div#container .fisheye	ul.data	li.item h2 a	{color:#BFA408;}
-div#container .articles	ul.data	li.item	.thumb,
-div#container .themes	ul.data	li.item	.thumb,
-div#container .fisheye	ul.data	li.item	.thumb	{float:right; margin:-35px -200px 0 0}
-div#container 			ul.data	li.item	.date	{clear:none;}
-div#container 									{}
+#container #articles	ul.data	li.item,
+#container #themes		ul.data	li.item,
+#container #fisheye		ul.data	li.item			{border:1px solid #6CA0DA; clear:both; margin:0.5em 200px 0.5em 0; background:#E5EFF9}
+#container #articles	ul.data	li.item h2 a,
+#container #themes		ul.data	li.item h2 a,
+#container #fisheye		ul.data	li.item h2 a	{color:#BFA408;}
+#container #articles	ul.data	li.item	.thumb,
+#container #themes		ul.data	li.item	.thumb,
+#container #fisheye		ul.data	li.item	.thumb	{float:right; margin:-35px -200px 0 0}
+#container 				ul.data	li.item	.date	{clear:none;}
 
 
 
