@@ -36,27 +36,27 @@
 			</div>
 		</div>
 
-		{if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules}
+		{* if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules *}
 			<div id="navigation">
 				{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 					{include file="bitpackage:kernel/top_bar.tpl"}
 				{/if}
 				{include file="bitpackage:kernel/bit_left.tpl"}
 			</div>
-		{/if}
+		{* /if *}
 
-		{if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules}
+		{* if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules *}
 			<div id="extra">
 				{include file="bitpackage:kernel/bit_right.tpl"}
 				<div class="clear"><!-- --></div>
 			</div>
-		{/if}
+		{* /if *}
 
-		{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
+		{* if $gBitSystem->isFeatureActive( 'site_bot_bar' ) *}
 			<div id="footer">
 				{include file="bitpackage:kernel/bot_bar.tpl"}
 			</div>
-		{/if}
+		{* /if *}
 
 	</div>
 
