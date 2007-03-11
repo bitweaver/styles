@@ -10,9 +10,10 @@ h3								{font-size:0.9em;margin:12px 0 0 0;color:#BFA408;text-decoration:under
 table.menutable h3				{text-decoration:none}
 h4								{font-size:0.8em}
 
+
 div#header						{}
 #wrapper						{}
-#content						{background:#f6f6f6;border:6px solid #006fbf;border-color:#006fbf #006fbf #006fbf #f6f6f6;border-width:0 12px 6px 6px}
+#content						{background:#f6f6f6}
 	div.display					{margin:0 24px 0 12px}
 		div.header				{}
 		div.body				{}
@@ -29,10 +30,6 @@ body.articles #content			{}
 	#extra	div.module	ol		{list-style-type:circle;margin:0 0 0 16px;padding:0}
 	#extra	div.module	ol li	{color:#006fbf;list-style-type:circle;margin:0;padding:0}
 	#extra	div.module	li:hover{color:#e8f1fa}	
-	#extra	a.more				{color:#006fbf;font-family:monospace;margin:0;display:block}
-	#extra	a.more:hover		{color:#fadc00;text-decoration:underline}
-	#extra	li a				{color:#7aa9dd;font-family:sans-serif;text-decoration:none;font-size:0.8em}
-	#extra	li a:hover			{color:#fadc00}
 
 #footer							{background:#063e6f;color:#fff;padding:16px}
 #footer	a						{color:#fff}
@@ -393,7 +390,13 @@ a:hover							{color:#b00000;text-decoration:underline}
                         		
 a.create						{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #004272; padding-right:9px; color:#004272;text-decoration:none}
 a.external						{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px}
-a.more							{border:0 !important}
+a.arrow							{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.5em;padding:0;color:#fff;display:block;font-style:normal;font-size:0.7em;text-decoration:none;font-weight:700}
+a.more							{}
+
+#extra	a.more					{background:#014375}
+#extra	a.more:hover			{}
+#extra	li a					{color:#7aa9dd;font-family:sans-serif;text-decoration:none;font-size:0.8em}
+#extra	li a:hover				{color:#fadc00}
 
 #navigation	a					{text-decoration:none}
 

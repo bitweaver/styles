@@ -27,7 +27,7 @@
 					{include file="bitpackage:search/global_mini_search.tpl"}
 					<div class="clear"><!-- --></div>
 				</div>
-				{if $smarty.const.ACTIVE_PACKAGE eq 'articles'}
+				{if $SCRIPT_NAME eq '/articles/index.php'}
 					{include file="bitpackage:kernel/display_adnote.tpl"}
 				{/if}
 				{include file="bitpackage:liberty/display_structure.tpl"}
