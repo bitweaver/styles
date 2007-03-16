@@ -4,9 +4,9 @@ hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:b
 small							{font-size:0.8em}
 p								{margin:12px 0;padding:0}
 embed,object					{display:block;clear:both}
-h1								{font-size:1.3em;margin:12px 0 0 0;color:#000000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.08em;display:block;clear:both}
-h2								{font-size:1.1em;margin:12px 0 0 0;color:#000000;}
-h3								{font-size:0.9em;margin:12px 0 0 0;color:#BFA408;text-decoration:underline}
+h1								{font-size:1.5em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.06em;display:block;clear:both;font-weight:700}
+h2								{font-size:1.2em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.08em;font-weight:700}
+h3								{font-size:1.0em;margin:12px 0 0 0;color:#000;font-weight:700}
 h4								{font-size:0.8em}
 
 
@@ -24,13 +24,13 @@ body.articles #content			{}
 #navigation						{}
 
 #extra							{background:#004373 url(images/bg_footer.jpg) repeat-x;border-top:16px solid #006fbf;height:500px}
-	#extra	div.module			{width:30%;float:left;margin:64px 8px 8px 16px}
+	#extra	div.module			{width:28%;float:left;margin:64px 8px 8px 32px}
 	#extra	div.module	h3		{color:#e90;font-style:normal;font-family:monospace;margin:0;text-decoration:none}
 	#extra	div.module	ol		{list-style-type:circle;margin:0 0 0 16px;padding:0}
 	#extra	div.module	ol li	{color:#006fbf;list-style-type:circle;margin:0;padding:0}
 	#extra	div.module	li:hover{color:#e8f1fa}	
 
-#footer							{background:#063e6f;color:#fff;padding:16px}
+#footer							{background:#073c6e;color:#fff;padding:16px}
 #footer	a						{color:#fff}
 
 
@@ -46,7 +46,7 @@ body.articles #content			{}
 .comment,.footer				{clear:both}
 .icon							{border:0; vertical-align:middle; margin:0 0.2em}
 .menuicon						{text-align:center}
-.clear							{clear:both}
+.clear							{clear:both;height:1px}
 .quicktag						{margin:0 1px}
 #fileslist div span				{border:1px solid #969694; background:#BFBFBD; color:#8A0000; display:block; width:75%; float:left; margin:0 3px 0 0; padding:0 0 0 3px}
 .pagination						{text-align:center; font-size:0.8em; color:#C3A40E; padding:2.5em 0 1em 0;}
@@ -190,7 +190,8 @@ div.navbar						{text-align:center;font-family:monospace;display:block;clear:bot
 div.navbar	ul					{list-style-type:none;display:block;clear:both}
 div.navbar	ul	li				{list-style-type:none;display:inline}
 
-div.display	div.date			{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0 0 16px;padding:0;color:#121210}
+div.display	div.date			{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
+	div.display	span.info		{padding:0 4px}
 div.display div.footer			{text-align:left;font-family:monospace;display:block;clear:both;margin:0 0 12px 0;color:#bfbfbd}
 
 
@@ -222,7 +223,7 @@ html>body pre					{width:auto}
 
 
 /* wiki */
-body.wiki p.description			{color:#e3bb1d;clear:both;text-align:left;font-size:0.7em;text-transform:uppercase}
+#wiki p.description				{color:#e3bb1d;clear:both;text-align:left;font-size:0.7em;text-transform:uppercase}
 
 
 /* articles */
@@ -403,12 +404,22 @@ a.external						{background:transparent url( images/external.gif ) no-repeat rig
 a.arrow							{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.5em;padding:0;color:#fff;display:block;font-style:normal;font-size:0.7em;text-decoration:none;font-weight:700}
 a.more							{}
 
+em.more							{background:#ddddd0 url(images/more_arrow.gif) no-repeat right 50%;margin:0;padding:0;float:right;font-style:normal}
+em.more a						{color:#fff;border-style:solid;border-color:#f6f6f6;border-width:0;margin:0 1.5em 0 0;padding:0;float:left;font-size:0.7em;text-decoration:none;font-weight:700}
+em.more a:visited				{color:#fff}
+em.more a:hover					{color:#000}
+
 #extra	a.more					{background:#014375}
 #extra	a.more:hover			{}
 #extra	li a					{color:#7aa9dd;font-family:sans-serif;text-decoration:none;font-size:0.8em}
-#extra	li a:hover				{color:#fadc00}
+#extra	li a:hover				{color:#005999}
 
 #navigation	a					{text-decoration:none}
+
+h1 a							{color:#000;text-decoration:none}
+h1 a:visited					{color:#000;text-decoration:none}
+h1 a:hover						{color:#005999;text-decoration:none}
+
 
 
 /* menus */                        		
@@ -459,10 +470,11 @@ a.more							{}
 #top_bar ul	li.com	a:hover	{background:#aa3f20;color:#fff}
 #top_bar ul	li.dev	a:hover	{background:#3fceee;color:#fff}
 
-#top_bar #top ul 			{margin:16px 0}
-#top_bar #top ul a			{background:#006fbf;color:#ffffff;margin:4px;padding:4px 4px 1px 4px;width:30%}
+/* links above logo */
+#top_bar #top ul 			{margin:12px 0}
+#top_bar #top ul a			{background:#006fbf;color:#ffffff;margin:2px;padding:2px 4px 1px 2px;width:30%}
 #top_bar #top ul a:visited	{background:#006fbf;color:#ffffff}
-#top_bar #top ul a:hover	{background:#006fbf;color:#3fceee}		
+#top_bar #top ul a:hover	{background:##3fceee;}
 
 
 
