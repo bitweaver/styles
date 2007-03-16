@@ -57,12 +57,12 @@ body.articles #content			{}
 .structurebar					{font-size:0.8em; color:#696967}
 .gallerybar a					{border:1px solid #969694; background:#BFBFBD; padding:0}
 .structurebar a					{border:1px solid #969694; background:#BFBFBD; padding:0}
-p.description					{font-weight:bold;clear:both;margin-top:0}
+p.description					{font-weight:bold;clear:both;margin:0 0 4px 0}
 
 
 
 /* tocs */
-div.maketoc						{background:#fffff9;width:36%;float:right;margin:0 0 0 1em;padding:0;border:1px solid #ddd;border-color:#888 #ddd #ddd #888}
+div.maketoc						{background:#fafafa;width:36%;float:right;margin:0 0 0 1em;padding:0;border:1px solid #ddd;border-color:#888 #ddd #ddd #888}
 div.maketoc h3					{background:#dddddd;padding:2px 6px;margin:0;position:relative;top:2px;left:16px;border-width:1px 0 0 1px;border-color:#888;border-style:solid;color:#fff;font-weight:700;line-height:normal;text-transform:uppercase;text-decoration:none;font-size:0.7em;display:inline}
 div.maketoc a					{color:#006FC0;text-decoration:none}
 div.maketoc a:visited			{color:#006FC0;text-decoration:none}
@@ -190,8 +190,16 @@ div.navbar						{text-align:center;font-family:monospace;display:block;clear:bot
 div.navbar	ul					{list-style-type:none;display:block;clear:both}
 div.navbar	ul	li				{list-style-type:none;display:inline}
 
-div.display	div.date			{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
-	div.display	span.info		{padding:0 4px}
+
+/* header, footer */
+div.header p.description		{color:#e3bb1d;clear:both;text-align:left;font-size:0.7em;text-transform:uppercase}
+div.header div.date				{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
+div.header div.date:hover		{color:#000}
+	div.date span.info			{padding:0 4px}
+	div.date a					{color:#fff;text-decoration:none;font-weight:700}
+	div.date a:visited			{color:#fff;text-decoration:none;font-weight:700}
+	div.date a:hover			{color:#000;text-decoration:none}
+	div.date:hover a			{color:#000}
 div.display div.footer			{text-align:left;font-family:monospace;display:block;clear:both;margin:0 0 12px 0;color:#bfbfbd}
 
 
@@ -223,7 +231,7 @@ html>body pre					{width:auto}
 
 
 /* wiki */
-#wiki p.description				{color:#e3bb1d;clear:both;text-align:left;font-size:0.7em;text-transform:uppercase}
+
 
 
 /* articles */
@@ -383,7 +391,7 @@ div.tabcontainer h4.tab-hover a		{color:#00c;text-decoration:underline}
 
 /* kernel */
 #kernel	div.admin div.menu	img.menuicon	{border:3px double #006FC0;display:inline;float:left;padding:2px}
-#kernel	div.admin div.menu	h3				{display:inline;float:left;background:#006FC0 url(images/bg_header_2.gif) no-repeat right top;color:#F2F2F0;text-transform:uppercase;padding:0 16px 0 2px;font-size:0.8em;margin:32px 0 0 0}
+#kernel	div.admin div.menu	h3				{display:inline;float:left;background:#006FC0 url(images/bg_header_2.gif) no-repeat right top;color:#F2F2F0;text-transform:uppercase;padding:0 16px 0 2px;font-size:0.9em;margin:32px 0 0 0}
 #kernel	div.admin div.menu	div.boxcontent	{padding:0;margin:0}
 #kernel	div.admin div.menu	ul				{list-style-type:none;padding:0;float:left;clear:both;margin:2px 0 0 0}
 #kernel	div.admin div.menu	ul	li			{list-style-type:none;padding:0;margin:0 0 2px 0;width:100%}
@@ -423,11 +431,10 @@ h1 a:hover						{color:#005999;text-decoration:none}
 
 
 /* menus */                        		
-.menu .icon						{vertical-align:middle}
-.menu a							{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
-.menu a:visited					{color:#dddddd}
-.menu a:hover					{color:#fadc00;border-bottom:1px solid #6ba0d9;line-height:1.4em;text-decoration:none !important}
-.menu img 						{display:none}
+#navigation div.module a		{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
+#navigation div.module a:visited{color:#dddddd}
+#navigation div.module a:hover	{color:#fadc00;border-bottom:1px solid #6ba0d9;line-height:1.4em;text-decoration:none !important}
+#navigation div.module img 		{display:none}
 
 #navigation	div.module			{margin:16px auto;width:85%;max-width:85%;overflow:hidden}
 #navigation	h3					{background:#fadc00;color:#000;margin:0 0 0 0;padding:0 4px 0 8px;text-decoration:none;font-size:0.7em;font-weight:700;text-transform:uppercase}

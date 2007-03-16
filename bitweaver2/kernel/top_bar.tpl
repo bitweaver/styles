@@ -4,7 +4,7 @@
 		<div id="top">
 			<ul>
 				<li><a title="try bitweaver live install" href="http://demo.bitweaver.org">demo</a></li>
-				<li style="position:relative;top:-4px"><a title="download latest bitweaver" href="http://bitweaver.org/GetCode">download</a></li>
+				<li{if $SCRIPT_NAME eq '/articles/index.php'} style="position:relative;top:-4px"{/if}><a title="download latest bitweaver" href="http://bitweaver.org/GetCode">download</a></li>
 				<li><a title="homepage" href="/">home</a></li>
 			</ul>
 		</div>
