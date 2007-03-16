@@ -1,7 +1,7 @@
 body							{color:#121210;margin:0;padding:0;border:0;font-family:sans-serif;background:#006fbf}
 img								{border:0}
 hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:block;margin:12px 0}
-small							{font-size:0.8em}
+/*small							{font-size:0.8em}*/
 p								{margin:12px 0;padding:0}
 embed,object					{display:block;clear:both}
 h1								{font-size:1.5em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.06em;display:block;clear:both;font-weight:700}
@@ -192,13 +192,14 @@ div.navbar	ul	li				{list-style-type:none;display:inline}
 
 
 /* header, footer */
-div.header p.description		{color:#e3bb1d;clear:both;text-align:left;font-size:0.7em;text-transform:uppercase}
-div.header div.date				{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
-div.header div.date:hover		{color:#000}
+div.header	p.description		{color:#e3bb1d;clear:both;text-align:left;font-size:0.7em;text-transform:uppercase}
+div.header	div.date			{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
+div.post	div.date			{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
 	div.date span.info			{padding:0 4px}
 	div.date a					{color:#fff;text-decoration:none;font-weight:700}
 	div.date a:visited			{color:#fff;text-decoration:none;font-weight:700}
 	div.date a:hover			{color:#000;text-decoration:none}
+	div.date:hover				{color:#000}
 	div.date:hover a			{color:#000}
 div.display div.footer			{text-align:left;font-family:monospace;display:block;clear:both;margin:0 0 12px 0;color:#bfbfbd}
 
@@ -264,10 +265,10 @@ div.bit-holder-0				{margin-left:10%; margin-right:10%}
 
 
 /* comments */
-div.comment						{color:#404040}
-div.comment h3					{border-bottom:2px solid #969694}
-div.comment .post				{border-left:1px solid #404040;}
-div.comment .content			{overflow:auto}
+
+div.comment div 				{overflow:auto}
+div.comment h3					{color:#aa3f20;border-bottom:2px solid #fff;margin:32px 0 0 00;padding:0}
+div.post div.content 			{font-size:12px;font-family:palatino,'palatino linotype';overflow:hidden;text-align:justify}
 
 
 
@@ -494,3 +495,7 @@ div.blocks1  #wrapper			{width:100%}
 div#navigation					{float:left;width:25.9%}
 div#extra						{clear:both;width:100%}
 
+
+/* temp */
+#articles div.display div.image {float:left;margin:0;padding:0}
+#articles div.display div.image img {width:64px}
