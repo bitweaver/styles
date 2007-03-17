@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/eclipse/eclipse.css,v 1.1 2007/03/09 15:08:24 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/eclipse/eclipse.css,v 1.2 2007/03/17 14:36:35 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    essential
  * @license  LGPL
  */
@@ -10,7 +10,8 @@
 	*									{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
 	body								{background:#000; color:#ddd; line-height:1.6; font:x-small sans-serif;}
 	#container							{font-size:127%;}
-	pre *,code *,
+	pre,code							{font-size:larger;}
+	pre,pre *,code,code *,
 	.code,.codelisting,
 	.codelisting *						{font-family:monospace !important; text-align:left !important;}
 	pre									{overflow:auto; text-align:left;}
