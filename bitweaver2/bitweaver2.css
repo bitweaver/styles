@@ -1,11 +1,10 @@
 body							{color:#121210;margin:0;padding:0;border:0;font-family:sans-serif;background:#006fbf}
-img								{border:0}
 hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:block;margin:12px 0}
-/*small							{font-size:0.8em}*/
+small							{font-size:1em}
 p								{margin:12px 0;padding:0}
 embed,object					{display:block;clear:both}
 h1								{font-size:1.5em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.06em;display:block;clear:both;font-weight:700}
-h2								{font-size:1.2em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.08em;font-weight:700}
+h2								{font-size:1.3em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;font-weight:500}
 h3								{font-size:1.0em;margin:12px 0 0 0;color:#000;font-weight:700}
 h4								{font-size:0.8em}
 
@@ -23,14 +22,17 @@ body.articles #content			{}
 
 #navigation						{}
 
-#extra							{background:#004373 url(images/bg_footer.jpg) repeat-x;border-top:16px solid #006fbf;height:500px}
+#extra							{background:#004373 url(images/bg_footer.jpg) repeat-x;border-top:16px solid #006fbf;height:500px;overflow:hidden}
 	#extra	div.module			{width:28%;float:left;margin:64px 8px 8px 32px}
 	#extra	div.module	h3		{color:#e90;font-style:normal;font-family:monospace;margin:0;text-decoration:none}
 	#extra	div.module	ol		{list-style-type:circle;margin:0 0 0 16px;padding:0}
-	#extra	div.module	ol li	{color:#006fbf;list-style-type:circle;margin:0;padding:0}
-	#extra	div.module	li:hover{color:#e8f1fa}	
+	#extra	div.module	ul		{list-style-type:circle;margin:0 0 0 16px;padding:0}
+	#extra	div.module	li		{color:#006fbf;list-style-type:circle;margin:0;padding:4px 0;font-size:0.8em;border:0px}
+	#extra	div.module	li:hover{color:#e8f1fa;border-bottom:0px}
+	#last_blog_posts div.date	{display:none}
+	#last_blog_posts li br		{display:inline;float:left}	
 
-#footer							{background:#073c6e;color:#fff;padding:16px}
+#footer							{background:#073c6e;color:#fff;padding:16px;text-align:center}
 #footer	a						{color:#fff}
 
 
@@ -74,13 +76,14 @@ div.maketoc ul ul				{margin:0 0 0 1em;padding:0}
 
 
 /* forms */
-form *							{border-width:1px}
-select							{border-width:1px}
 form							{margin:12px 0;padding:0;border:none}
+form *							{border-width:1px}
 fieldset						{margin:0;padding:0;border:none}
 legend							{color:#C96100;font-weight:700;padding:12px 0 4px 12px}
-textarea						{margin:0; padding:0;width:98%}
+select							{border-width:1px}
+textarea						{font-family:monospace;margin:0; padding:0;width:98%}
 
+input							{font-family:monospace}
 div.row							{display:block;clear:both;border-bottom:1px dotted #BFBFBD;margin-bottom:8px;padding:4px;margin:1px 0}
 div.quicktags					{margin:0}
 div.formlabel					{color:#121210;font-size:0.8em;float:left;width:20%;text-align:right}
@@ -122,7 +125,7 @@ div.formfeedback				{margin:0 12px}
 
 /* parsed elements */
 .bittable td					{padding:0.5em;border:1px solid #969694}
-div.bitbox						{color:#444;border:3px double #bbb;background:#fff;padding:0 6px 4px 6px;margin:0px 12px 0 0;text-align:justify}
+div.bitbox						{color:#444;border:3px double #bbb;background:#fff;padding:0 6px 4px 6px;margin:0px 12px 0 0;min-height:3em}
 div.bitbox:first-letter			{color:#fff;background:#e3bb1d;font-size:48px;font-weight:500;font-family:monospace;padding:4px 0;margin:4px 4px 0 0;display:block;float:left;border:1px solid #fadc00}
 div.bitbox a					{}
 .bitbar							{border-bottom:1px solid #404040; border-top:1px solid #404040}
@@ -168,7 +171,10 @@ ul.data .thumb					{float:right; margin-right:1em}
 
 li.odd							{border-top:1px solid #696967; padding:1em 0; margin-bottom:-1px !important}
 li.even							{border-top:1px solid #696967; padding:1em 0; margin-bottom:-1px !important}
-
+#navigation ul.data li.odd,
+#navigation ul.data li.even,
+#navigation ul.data li.even a,
+#navigation ul.data li.odd a			{border:0px;margin:0;padding:0;text-align:left}
 
 div.ranking	ol					{line-height:1.4em}
 div.ranking	ol li.odd			{border:0px;padding:0;margin:0}
@@ -370,11 +376,11 @@ div.tabcontainer h4.tab			{background:#dddddd;cursor:pointer;top:3px;margin:0 3p
 div.tabcontainer h4.tab-hover	{background:#F2F2F0;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none}
 div.tabcontainer h4.tab-active	{background:#F2F2F0;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none;border:1px solid #ccc;border-width:1px 1px 0 1px}
 
-div.tabcontainer h4.tab	a			{color:#999;text-decoration:none}
-div.tabcontainer h4.tab-active a	{color:#000;text-decoration:none;font-weight:700}
-div.tabcontainer h4.tab-hover a		{color:#00c;text-decoration:underline}
+div.tabcontainer h4.tab	a		{color:#999;text-decoration:none}
+div.tabcontainer h4.tab-active a{color:#000;text-decoration:none;font-weight:700}
+div.tabcontainer h4.tab-hover a	{color:#00c;text-decoration:underline}
 
-
+div.tabsystem h1				{margin-left:8px}
 
 
 /* FAQs */
@@ -404,12 +410,12 @@ div.tabcontainer h4.tab-hover a		{color:#00c;text-decoration:underline}
 
 
 /* links */
-a								{color:#006FC0;text-decoration:underline}
-a:visited						{color:#000000;text-decoration:underline}
-a:hover							{color:#fadc00;text-decoration:underline}
+a								{color:#000;text-decoration:none;border-bottom:1px solid #00f}
+a:visited						{color:#000;text-decoration:none;border-bottom:1px solid #000}
+a:hover							{color:#00f;text-decoration:underline}
                         		
-a.create						{background:transparent url( images/create.gif ) no-repeat top right; border-bottom:1px dotted #004272; padding-right:9px; color:#004272;text-decoration:none}
-a.external						{background:transparent url( images/external.gif ) no-repeat right; padding-right:13px}
+a.create						{color:#000;text-decoration:none;border-bottom:1px dotted #00f}
+a.external						{color:#00f;text-decoration:none;border-bottom:none}
 a.arrow							{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.5em;padding:0;color:#fff;display:block;font-style:normal;font-size:0.7em;text-decoration:none;font-weight:700}
 a.more							{}
 
@@ -420,8 +426,10 @@ em.more a:hover					{color:#000}
 
 #extra	a.more					{background:#014375}
 #extra	a.more:hover			{}
-#extra	li a					{color:#7aa9dd;font-family:sans-serif;text-decoration:none;font-size:0.8em}
-#extra	li a:hover				{color:#005999}
+#extra	li a					{color:#7aa9dd;font-family:sans-serif;text-decoration:none;border:0px}
+#extra	li a:visited			{color:#005999;border:0px}
+#extra	li a:hover				{color:#005999;border:0px}
+
 
 #navigation	a					{text-decoration:none}
 
@@ -429,7 +437,13 @@ h1 a							{color:#000;text-decoration:none}
 h1 a:visited					{color:#000;text-decoration:none}
 h1 a:hover						{color:#005999;text-decoration:none}
 
+a.username						{font-weight:700;font-size:128%;border:0px}
+a.username:visited				{font-weight:700;font-size:128%;border:0px}
+a.username:hover				{font-weight:700;font-size:128%;border:0px}
 
+#navigation div.module h3 a.username					{font-weight:700;font-size:128%}
+#navigation div.module h3 a.username:visited				{font-weight:700;font-size:128%}
+#navigation div.module h3 a.username:hover				{font-weight:700;font-size:128%}
 
 /* menus */                        		
 #navigation div.module a		{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
@@ -453,6 +467,13 @@ h1 a:hover						{color:#005999;text-decoration:none}
 	h3.section					{text-decoration:none;}
 
 
+/* fisheye */
+
+
+/* images */
+img								{border:0}
+img.avatar						{float:left;margin:8px}
+img.portrait					{float:left;margin:8px}
 
 /* certain listings */
 #container #articles	ul.data	li.item,
@@ -499,3 +520,4 @@ div#extra						{clear:both;width:100%}
 /* temp */
 #articles div.display div.image {float:left;margin:0;padding:0}
 #articles div.display div.image img {width:64px}
+#navigation #search_box			{display:none}
