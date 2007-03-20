@@ -3,8 +3,8 @@ hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:b
 small							{font-size:1em}
 p								{margin:12px 0;padding:0}
 embed,object					{display:block;clear:both}
-h1								{font-size:1.5em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;letter-spacing:-0.06em;display:block;clear:both;font-weight:700}
-h2								{font-size:1.3em;margin:12px 0 0 0;color:#000;font-family:'lucida sans unicode','lucida console',monospace;font-weight:500}
+h1								{font-size:1.5em;margin:12px 0 0 0;color:#000;letter-spacing:-0.06em;display:block;clear:both;font-weight:700}
+h2								{font-size:1.3em;margin:12px 0 0 0;color:#000;font-weight:500}
 h3								{font-size:1.0em;margin:12px 0 0 0;color:#000;font-weight:700}
 h4								{font-size:0.8em}
 
@@ -274,7 +274,7 @@ div.bit-holder-0				{margin-left:10%; margin-right:10%}
 
 div.comment div 				{overflow:auto}
 div.comment h3					{color:#aa3f20;border-bottom:2px solid #fff;margin:32px 0 0 00;padding:0}
-div.post div.content 			{font-size:12px;font-family:palatino,'palatino linotype';overflow:hidden;text-align:justify}
+div.comment div.post div.content{font-size:12px;font-family:palatino,'palatino linotype';overflow:hidden;text-align:justify}
 
 
 
@@ -410,12 +410,12 @@ div.tabsystem h1				{margin-left:8px}
 
 
 /* links */
-a								{color:#000;text-decoration:none;border-bottom:1px solid #00f}
-a:visited						{color:#000;text-decoration:none;border-bottom:1px solid #000}
-a:hover							{color:#00f;text-decoration:underline}
+a								{color:#000000;text-decoration:none;border-bottom:1px solid #0048fe}
+a:visited						{color:#000000;text-decoration:none;border-bottom:1px solid #0048fe}
+a:hover							{color:#0048fe;text-decoration:underline}
                         		
-a.create						{color:#000;text-decoration:none;border-bottom:1px dotted #00f}
-a.external						{color:#00f;text-decoration:none;border-bottom:none}
+a.create						{color:#000000;text-decoration:none;border-bottom:1px dotted #0048fe}
+a.external						{color:#0048fe;text-decoration:none;border-bottom:none}
 a.arrow							{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.5em;padding:0;color:#fff;display:block;font-style:normal;font-size:0.7em;text-decoration:none;font-weight:700}
 a.more							{}
 
@@ -433,9 +433,9 @@ em.more a:hover					{color:#000}
 
 #navigation	a					{text-decoration:none}
 
-h1 a							{color:#000;text-decoration:none}
-h1 a:visited					{color:#000;text-decoration:none}
-h1 a:hover						{color:#005999;text-decoration:none}
+h1 a							{color:#000;text-decoration:none;border:0px}
+h1 a:visited					{color:#000;text-decoration:none;border:0px}
+h1 a:hover						{color:#0048fe;text-decoration:none;border:0px}
 
 a.username						{font-weight:700;font-size:128%;border:0px}
 a.username:visited				{font-weight:700;font-size:128%;border:0px}
@@ -456,7 +456,8 @@ a.username:hover				{font-weight:700;font-size:128%;border:0px}
 #navigation	h3					{border:6px solid #006fbf;border-color:#fadc00 #006fbf #006fbf #006fbf;border-width:6px 0px 0px 6px;display:inline}
 #navigation	div.modulecontent	{display:block;clear:both;margin:0 8px;padding-top:8px}
 
-
+li.active a.head 				{font-weight:700;color:#fadc00 !important}
+li.active a.head:visited		{font-weight:700;color:#fadc00 !important}
                         		
 
 /* Pigeonholes */
