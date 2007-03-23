@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.3 2007/03/16 04:59:39 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.4 2007/03/23 00:19:46 laetzer Exp $ *}
 {strip}
 {* if $gBitSystem->isFeatureActive( 'site_style_layout' )}
 	<link rel="stylesheet" title="{$style}" type="text/css" href="{$smarty.const.THEMES_PKG_URL}layouts/{$gBitSystem->getConfig('site_style_layout')}.css" media="all" />
@@ -106,43 +106,45 @@
 
 	/* splash column */
 	#top_bar						{clear:both;margin:0;padding:0}
-	#top_bar #logo					{padding:240px 0 0 0;display:block;clear:both;margin:0 auto;overflow:hidden;z-index:1;position:relative;background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bitweaver_contentmanagement.jpg) no-repeat center top}
-	#top_bar #logo p				{text-align:center;color:#fadc00;clear:both;max-width:23em;text-transform:uppercase;padding:0;margin:0 auto}
-	#top_bar #logo p				{font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
+	#top_bar p						{text-align:center;color:#fff;clear:both;text-transform:uppercase;padding:0;margin:16px 24px}
+	#top_bar p						{font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
+
+	#top_bar #top ul li a			{background:#004bfa}
+	#top_bar #top ul li a:visited	{background:#004bfa}
 
 	/* 3 areas */
 	#dcd							{margin:0 0 0 16px;width:95%}
-	#dcd ul							{width:26%;float:left;margin:8px 0px 12px 16px;padding-top:42px}
-	#dcd ul li						{list-style-type:none;padding-left:0;line-height:1.5em;margin-left:10px;font-weight:700;font-size:0.8em}
-	#dcd ul li a					{text-decoration:none;padding:0 6px 0 0}
+	#dcd ul							{width:26%;float:left;margin:8px 0px 12px 16px;padding-top:46px}
+	#dcd ul li						{list-style-type:none;padding-left:0;line-height:1.5em;margin-left:13px;font-weight:700;font-size:0.8em}
+	#dcd ul li a					{text-decoration:none;padding:0 6px 0 0;border-bottom:1px solid #ddddd0}
 
-	#dcd ul.doc li a				{color:#aa9207;border-bottom:1px dotted #bfa408}
-	#dcd ul.com li a				{color:#aa3f20;border-bottom:1px dotted #aa3f20}
-	#dcd ul.dev li a				{color:#005999;border-bottom:1px dotted #005999}
+	#dcd ul.doc li a				{color:#aa9207}
+	#dcd ul.com li a				{color:#009f0b}
+	#dcd ul.dev li a				{color:#005999}
 
 	#dcd ul.doc li a:hover			{color:#fadc00;border-bottom:1px solid #fadc00}
-	#dcd ul.com li a:hover			{color:#ff0000;border-bottom:1px solid #ff0000}
+	#dcd ul.com li a:hover			{color:#00f411;border-bottom:1px solid #00f411}
 	#dcd ul.dev li a:hover			{color:#3fceee;border-bottom:1px solid #3fceee}
 
 	/* images */
-	ul.doc							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/doc_logo.gif) no-repeat left top}
-	ul.com							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/com_logo.gif) no-repeat left top}
-	ul.dev							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/dev_logo.gif) no-repeat left top}
+	ul.doc							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/logo_doc.gif) no-repeat left top}
+	ul.com							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/logo_com.gif) no-repeat left top}
+	ul.dev							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/logo_dev.gif) no-repeat left top}
 
 	/* arrows */
-	#dcd ul.doc li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/doc_arrow.gif) no-repeat right 50%;margin:2px 0;padding:0;float:left}
-	#dcd ul.com li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/com_arrow.gif) no-repeat right 50%;margin:2px 0;padding:0;float:left}
-	#dcd ul.dev li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/dev_arrow.gif) no-repeat right 50%;margin:2px 0;padding:0;float:left}
+	#dcd ul.doc li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_arrow_doc.gif) no-repeat right 50%;margin:2px 0 2px 28px;padding:0;float:left}
+	#dcd ul.com li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_arrow_com.gif) no-repeat right 50%;margin:2px 0 2px 28px;padding:0;float:left}
+	#dcd ul.dev li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_arrow_dev.gif) no-repeat right 50%;margin:2px 0 2px 28px;padding:0;float:left}
 
-	#dcd ul li em a.arrow			{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.2em;padding:0px 4px 0px 12px;color:#fff;display:block;font-style:normal;text-decoration:none;font-weight:700;font-size:0.9em}
-	#dcd ul li em a.arrow:hover		{border-bottom-width:0.5em;border-bottom-color:#f6f6f6}
+	#dcd ul li em a.more			{color:#121210;border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.2em;padding:0px 4px 0px 12px;display:block;font-style:normal;text-decoration:none;font-weight:700;font-size:0.9em}
+	#dcd ul li em a.more:hover		{color:#fff;border-bottom-width:0.5em;border-bottom-color:#f6f6f6}
 
-	#dcd ul.doc li em a.arrow		{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bg_doc_arrow.gif) no-repeat left top}
-	#dcd ul.com li em a.arrow		{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bg_com_arrow.gif) no-repeat left top}
-	#dcd ul.dev li em a.arrow		{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bg_dev_arrow.gif) no-repeat left top}
-	
-	/* top_bar: download | home | demo */
-	#articles #top ul li a:hover	{background:#3fceee}
+	#dcd ul.doc li em a.more		{background:#fadc00 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_more_doc.gif) no-repeat left top}
+	#dcd ul.com li em a.more		{background:#00f411 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_more_com.gif) no-repeat left top}
+	#dcd ul.dev li em a.more		{background:#3fceee url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_more_dev.gif) no-repeat left top}
+
+	body							{background:#006fbf url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bg_body.gif) repeat-x}
+	#navigation						{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bg_navigation.jpg) no-repeat left top;overflow:hidden}
 
 </style>
 {/literal}

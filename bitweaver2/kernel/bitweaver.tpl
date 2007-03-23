@@ -34,6 +34,7 @@
 				{if $pageError}<div class="error">{$pageError}</div>{/if}
 				{include file=$mid}
 			</div>
+			<div class="clear contentbottom"><!-- --></div>
 		</div>
 
 		{* if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules *}

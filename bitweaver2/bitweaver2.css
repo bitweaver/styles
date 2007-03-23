@@ -1,7 +1,7 @@
 body							{color:#121210;margin:0;padding:0;border:0;font-family:sans-serif;background:#006fbf}
 hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:block;margin:12px 0}
 small							{font-size:1em}
-p								{margin:12px 0;padding:0}
+p								{margin:12px 0;padding:0;max-width:60em}
 embed,object					{display:block;clear:both}
 h1								{font-size:1.5em;margin:12px 0 0 0;color:#000;letter-spacing:-0.06em;display:block;clear:both;font-weight:700}
 h2								{font-size:1.3em;margin:12px 0 0 0;color:#000;font-weight:500}
@@ -11,7 +11,8 @@ h4								{font-size:0.8em}
 
 div#header						{}
 #wrapper						{}
-#content						{background:#f6f6f6;padding:0 0 16px 8px}
+#content						{background:#f6f6f6 url(images/bg_content.gif) right bottom no-repeat;padding:0 0 64px 8px}
+	div.contentbottom			{background:#006fbf url(images/bg_contentbottom.gif) left top no-repeat;padding:0;margin:0;height:114px}
 	div.display					{margin:0 24px 0 12px}
 		div.header				{}
 		div.body				{}
@@ -22,8 +23,8 @@ body.articles #content			{}
 
 #navigation						{}
 
-#extra							{background:#004373 url(images/bg_footer.jpg) repeat-x;border-top:16px solid #006fbf;height:500px;overflow:hidden}
-	#extra	div.module			{width:28%;float:left;margin:64px 8px 8px 32px}
+#extra							{background:#004373 url(images/bg_extra.jpg) no-repeat left top;height:482px;overflow:hidden}
+	#extra	div.module			{width:28%;float:left;margin:64px 8px 0px 32px}
 	#extra	div.module	h3		{color:#e90;font-style:normal;font-family:monospace;margin:0;text-decoration:none}
 	#extra	div.module	ol		{list-style-type:circle;margin:0 0 0 16px;padding:0}
 	#extra	div.module	ul		{list-style-type:circle;margin:0 0 0 16px;padding:0}
@@ -32,8 +33,9 @@ body.articles #content			{}
 	#last_blog_posts div.date	{display:none}
 	#last_blog_posts li br		{display:inline;float:left}	
 
-#footer							{background:#073c6e;color:#fff;padding:16px;text-align:center}
-#footer	a						{color:#fff}
+#footer							{background:#222220 url(images/bg_footer.gif) no-repeat 0% 50%;padding:16px;text-align:center;color:#444;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
+#footer	a						{color:#444;font-weight:700}
+#footer	a:hover					{color:#eee}
 
 
 /* common classes */
@@ -83,7 +85,8 @@ legend							{color:#C96100;font-weight:700;padding:12px 0 4px 12px}
 select							{border-width:1px}
 textarea						{font-family:monospace;margin:0; padding:0;width:98%}
 
-input							{font-family:monospace}
+input							{font-family:monospace;padding:1px 2px}
+input[type="submit"]			{padding:0px 2px}
 div.row							{display:block;clear:both;border-bottom:1px dotted #BFBFBD;margin-bottom:8px;padding:4px;margin:1px 0}
 div.quicktags					{margin:0}
 div.formlabel					{color:#121210;font-size:0.8em;float:left;width:20%;text-align:right}
@@ -96,17 +99,17 @@ div.submit						{text-align:center;border:0}
 
 
 /* feedback */
-.error
 div.errorpage h3				{color:#D60000; font-weight:bold}
 div.errorpage p					{text-align:center}
+
+div.formfeedback				{margin:12px;display:block;clear:both;border-bottom:1px solid white;float:physical;min-height:1em;height:1em}
+.error							{color:#b00000}
 .warning						{color:#F07300}
 .success						{color:#017747}
 li.error						{list-style:none}
 li.success						{list-style:none}
 li.note							{list-style:none}
 li.warning						{list-style:none}
-                    			
-div.formfeedback				{margin:0 12px}
 
 
 /* search */
@@ -137,7 +140,7 @@ div.bitbox a					{}
 
 /* tables */
 fieldset table					{margin:0 2%; width:96%}
-table							{border-collapse:collapse; padding:0; margin:0; width:100%; line-height:normal}
+table							{border-collapse:collapse;padding:0;margin:0;width:99%;border-spacing:0px}
 	table.menutable h3			{text-decoration:none}
 	table.menutable td			{padding:10px 4px}
 	table.optionbar				{font-size:0.8em}
@@ -147,10 +150,13 @@ caption							{display:none}
 th								{border-bottom:1px solid #F2F2F0;background:#fadc00;color:#000;padding:2px 4px;font-weight:500;font-size:0.8em}
 	th a						{color:#000;font-weight:700;text-decoration:none}
 	th a:hover					{color:#fff}
-td								{font-size:0.8em}
+	div.admin th				{text-align:left}
+td								{padding:2px 0}
 	td.actionicon				{text-align:right}
 	tr.odd td					{border-bottom:1px solid #fadc00}
 	tr.even td					{border-bottom:1px solid #fadc00}
+	td input					{}
+tfoot 	 						{text-align:center;border-top:3px double #fadc00}
 
 #wiki table th					{overflow:hidden}
 #wiki table td span				{color:#aaaaa0}
@@ -410,26 +416,31 @@ div.tabsystem h1				{margin-left:8px}
 
 
 /* links */
-a								{color:#000000;text-decoration:none;border-bottom:1px solid #0048fe}
-a:visited						{color:#000000;text-decoration:none;border-bottom:1px solid #0048fe}
+a								{color:#000000;text-decoration:none;border:0px}
+a:visited						{color:#000000;text-decoration:none;border:0px}
 a:hover							{color:#0048fe;text-decoration:underline}
-                        		
+
+div.content a					{border-bottom:1px solid #0048fe}
+div.content a:visited			{border-bottom:1px solid #0048fe}
+div.content a:hover				{color:#0048fe;text-decoration:underline}
+
+div.tabpage a					{border-bottom:1px solid #0048fe}
+div.tabpage a:visited			{border-bottom:1px solid #0048fe}
+div.tabpage a:hover				{color:#0048fe;text-decoration:underline}
+                       		
 a.create						{color:#000000;text-decoration:none;border-bottom:1px dotted #0048fe}
 a.external						{color:#0048fe;text-decoration:none;border-bottom:none}
-a.arrow							{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.5em;padding:0;color:#fff;display:block;font-style:normal;font-size:0.7em;text-decoration:none;font-weight:700}
-a.more							{}
+a.more							{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.5em;padding:0;color:#fff;display:block;font-style:normal;font-size:0.7em;text-decoration:none;font-weight:700}
+	#extra a.more				{border:0px}
 
-em.more							{background:#ddddd0 url(images/more_arrow.gif) no-repeat right 50%;margin:0;padding:0;float:right;font-style:normal}
-em.more a						{color:#fff;border-style:solid;border-color:#f6f6f6;border-width:0;margin:0 1.5em 0 0;padding:0;float:left;font-size:0.7em;text-decoration:none;font-weight:700}
-em.more a:visited				{color:#fff}
+em.more							{background:#ddddd0 url(images/arrow_more.gif) no-repeat right 50%;margin:0;padding:0;float:right;font-style:normal}
+em.more a						{color:#fff;border-style:solid;border-color:#f6f6f6;border-width:0px;margin:0 1.5em 0 0;padding:0 6px;float:left;font-size:0.7em;text-decoration:none;font-weight:700}
+em.more a:visited				{color:#fff;border:0px}
 em.more a:hover					{color:#000}
 
-#extra	a.more					{background:#014375}
-#extra	a.more:hover			{}
 #extra	li a					{color:#7aa9dd;font-family:sans-serif;text-decoration:none;border:0px}
 #extra	li a:visited			{color:#005999;border:0px}
 #extra	li a:hover				{color:#005999;border:0px}
-
 
 #navigation	a					{text-decoration:none}
 
@@ -441,9 +452,10 @@ a.username						{font-weight:700;font-size:128%;border:0px}
 a.username:visited				{font-weight:700;font-size:128%;border:0px}
 a.username:hover				{font-weight:700;font-size:128%;border:0px}
 
-#navigation div.module h3 a.username					{font-weight:700;font-size:128%}
-#navigation div.module h3 a.username:visited				{font-weight:700;font-size:128%}
-#navigation div.module h3 a.username:hover				{font-weight:700;font-size:128%}
+#navigation div.module h3 a.username			{font-weight:700;font-size:128%}
+#navigation div.module h3 a.username:visited	{font-weight:700;font-size:128%}
+#navigation div.module h3 a.username:hover		{font-weight:700;font-size:128%}
+
 
 /* menus */                        		
 #navigation div.module a		{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
@@ -501,11 +513,10 @@ img.portrait					{float:left;margin:8px}
 #top_bar ul	li.dev	a:hover	{background:#3fceee;color:#fff}
 
 /* links above logo */
-#top_bar #top ul 			{margin:12px 0}
-#top_bar #top ul a			{background:#006fbf;color:#ffffff;margin:2px;padding:2px 4px 1px 2px;width:30%}
-#top_bar #top ul a:visited	{background:#006fbf;color:#ffffff}
-#top_bar #top ul a:hover	{background:##3fceee;}
-
+#top_bar #top ul li				{clear:both;display:block;text-align:right}
+#top_bar #top ul li a			{background:#006fbf;border:0px;color:#ffffff;margin:2px;padding:2px 4px 1px 2px;width:30%}
+#top_bar #top ul li a:visited	{background:#006fbf;border:0px;color:#ffffff}
+#top_bar #top ul li a:hover		{background:#006fbf;border:0px;color:#3fceee}
 
 
 /* gala_29.css */
