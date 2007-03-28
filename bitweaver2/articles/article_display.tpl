@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/articles/article_display.tpl,v 1.1 2007/03/16 04:59:39 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/articles/article_display.tpl,v 1.2 2007/03/28 02:55:36 laetzer Exp $ *}
 {strip}
 {if !$showDescriptionsOnly}
 	{include file="bitpackage:liberty/services_inc.tpl" serviceLocation='nav' serviceHash=$article}
@@ -56,7 +56,7 @@
 				</div>
 			{/if}
 
-			{if $article.use_ratings eq 'y'}
+			{* if $article.use_ratings eq 'y'}
 				<span class="rating">
 					{repeat count=$article.rating}
 						{biticon ipackage=articles iname=rating iexplain="Article Rating"}
@@ -66,8 +66,9 @@
 						{biticon ipackage=articles iname=rating_off iexplain="Article Rating"}
 					{/repeat}
 				</span>
-			{/if}
-
+			{/if *}
+			{* include file="bitpackage:liberty/services_inc.tpl" serviceLocation='body' serviceHash=$gContent->mInfo *}
+			
 			{if $showDescriptionsOnly}
 				{$article.parsed_description}
 			{else}

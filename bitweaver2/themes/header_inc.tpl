@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.4 2007/03/23 00:19:46 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.5 2007/03/28 02:55:37 laetzer Exp $ *}
 {strip}
 {* if $gBitSystem->isFeatureActive( 'site_style_layout' )}
 	<link rel="stylesheet" title="{$style}" type="text/css" href="{$smarty.const.THEMES_PKG_URL}layouts/{$gBitSystem->getConfig('site_style_layout')}.css" media="all" />
@@ -101,22 +101,23 @@
 
 
 {if $SCRIPT_NAME eq '/articles/index.php'}
+{assign var="images" value=`$smarty.const.BIT_ROOT_URL`themes/styles/bitweaver2/images}
 {literal}
 <style type="text/css" media="all">
 
 	/* splash column */
 	#top_bar						{clear:both;margin:0;padding:0}
-	#top_bar p						{text-align:center;color:#fff;clear:both;text-transform:uppercase;padding:0;margin:16px 24px}
+	#top_bar p						{text-align:center;color:#fff;clear:both;text-transform:uppercase;padding:0 12px;margin:0 auto 12px auto;max-width:32em}
 	#top_bar p						{font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
 
 	#top_bar #top ul li a			{background:#004bfa}
 	#top_bar #top ul li a:visited	{background:#004bfa}
 
 	/* 3 areas */
-	#dcd							{margin:0 0 0 16px;width:95%}
-	#dcd ul							{width:26%;float:left;margin:8px 0px 12px 16px;padding-top:46px}
-	#dcd ul li						{list-style-type:none;padding-left:0;line-height:1.5em;margin-left:13px;font-weight:700;font-size:0.8em}
-	#dcd ul li a					{text-decoration:none;padding:0 6px 0 0;border-bottom:1px solid #ddddd0}
+	#dcd							{margin:0 0 0 16px}
+	#dcd ul							{width:30%;float:left;margin:80px 8px 0 0;padding-top:46px}
+	#dcd ul li						{list-style-type:none;padding-left:0;line-height:1.5em;margin-left:13px;font-weight:700;font-size:0.8em;border-bottom:1px solid #eeeee0}
+	#dcd ul li a					{text-decoration:none;padding:0 6px 0 0;display:block;border-bottom:1px solid #f6f6f6}
 
 	#dcd ul.doc li a				{color:#aa9207}
 	#dcd ul.com li a				{color:#009f0b}
@@ -127,25 +128,32 @@
 	#dcd ul.dev li a:hover			{color:#3fceee;border-bottom:1px solid #3fceee}
 
 	/* images */
-	ul.doc							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/logo_doc.gif) no-repeat left top}
-	ul.com							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/logo_com.gif) no-repeat left top}
-	ul.dev							{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/logo_dev.gif) no-repeat left top}
+	ul.doc							{background:url({/literal}{$images}{literal}/logo_doc.gif) no-repeat left top}
+	ul.com							{background:url({/literal}{$images}{literal}/logo_com.gif) no-repeat left top}
+	ul.dev							{background:url({/literal}{$images}{literal}/logo_dev.gif) no-repeat left top}
 
 	/* arrows */
-	#dcd ul.doc li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_arrow_doc.gif) no-repeat right 50%;margin:2px 0 2px 28px;padding:0;float:left}
-	#dcd ul.com li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_arrow_com.gif) no-repeat right 50%;margin:2px 0 2px 28px;padding:0;float:left}
-	#dcd ul.dev li em				{background:#f6f6f6 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_arrow_dev.gif) no-repeat right 50%;margin:2px 0 2px 28px;padding:0;float:left}
+	#dcd ul.doc li em				{background:#f6f6f6 url({/literal}{$images}{literal}/arrow_doc.gif) no-repeat right 50%;float:left;margin:4px 0 0 24px}
+	#dcd ul.com li em				{background:#f6f6f6 url({/literal}{$images}{literal}/arrow_com.gif) no-repeat right 50%;float:left;margin:4px 0 0 24px}
+	#dcd ul.dev li em				{background:#f6f6f6 url({/literal}{$images}{literal}/arrow_dev.gif) no-repeat right 50%;float:left;margin:4px 0 0 24px}
 
-	#dcd ul li em a.more			{color:#121210;border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.2em;padding:0px 4px 0px 12px;display:block;font-style:normal;text-decoration:none;font-weight:700;font-size:0.9em}
+	#dcd ul.doc li em:hover			{background-image:url({/literal}{$images}{literal}/hl_arrow_doc.gif)}
+	#dcd ul.com li em:hover			{background-image:url({/literal}{$images}{literal}/hl_arrow_com.gif)}
+	#dcd ul.dev li em:hover			{background-image:url({/literal}{$images}{literal}/hl_arrow_dev.gif)}
+
+	#dcd ul li em a.more			{color:#fff;border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:0.75em;padding:0 4px 0 16px;display:block;font-style:normal;text-decoration:none;font-weight:700;font-size:0.9em}
 	#dcd ul li em a.more:hover		{color:#fff;border-bottom-width:0.5em;border-bottom-color:#f6f6f6}
 
-	#dcd ul.doc li em a.more		{background:#fadc00 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_more_doc.gif) no-repeat left top}
-	#dcd ul.com li em a.more		{background:#00f411 url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_more_com.gif) no-repeat left top}
-	#dcd ul.dev li em a.more		{background:#3fceee url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/hl_more_dev.gif) no-repeat left top}
+	#dcd ul.doc li em a.more		{background:#AA9F4F url({/literal}{$images}{literal}/bg_arrow_doc.gif) no-repeat left top}
+	#dcd ul.com li em a.more		{background:#4DA653 url({/literal}{$images}{literal}/bg_arrow_com.gif) no-repeat left top}
+	#dcd ul.dev li em a.more		{background:#76aab6 url({/literal}{$images}{literal}/bg_arrow_dev.gif) no-repeat left top}
 
-	body							{background:#006fbf url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bg_body.gif) repeat-x}
-	#navigation						{background:url({/literal}{$smarty.const.BIT_ROOT_URL}{literal}themes/styles/bitweaver2/images/bg_navigation.jpg) no-repeat left top;overflow:hidden}
+	#dcd ul.doc li em a.more:hover	{background:#fadc00 url({/literal}{$images}{literal}/hl_bg_arrow_doc.gif) no-repeat left top}
+	#dcd ul.com li em a.more:hover	{background:#00f411 url({/literal}{$images}{literal}/hl_bg_arrow_com.gif) no-repeat left top}
+	#dcd ul.dev li em a.more:hover	{background:#3fceee url({/literal}{$images}{literal}/hl_bg_arrow_dev.gif) no-repeat left top}
+
+	body							{background:#006fbf url({/literal}{$images}{literal}/bg_body.gif) repeat-x}
 
 </style>
-{/literal}
+{/literal} 
 {/if}

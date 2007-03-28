@@ -23,10 +23,6 @@
 
 		<div id="wrapper">
 			<div id="content">
-				<div id="search">
-					{include file="bitpackage:search/global_mini_search.tpl"}
-					<div class="clear"><!-- --></div>
-				</div>
 				{if $SCRIPT_NAME eq '/articles/index.php'}
 					{include file="bitpackage:kernel/display_adnote.tpl"}
 				{/if}
@@ -44,18 +40,20 @@
 				{/if}
 				{include file="bitpackage:kernel/bit_left.tpl"}
 			</div>
+			<span class="clear"><!-- --></span>
 		{* /if *}
 
 		{* if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules *}
 			<div id="extra">
 				{include file="bitpackage:kernel/bit_right.tpl"}
-				<div class="clear"><!-- --></div>
+				<span class="clear"><!-- --></span>
 			</div>
 		{* /if *}
 
 		{* if $gBitSystem->isFeatureActive( 'site_bot_bar' ) *}
 			<div id="footer">
 				{include file="bitpackage:kernel/bot_bar.tpl"}
+				<span class="clear"><!-- --></span>				
 			</div>
 		{* /if *}
 

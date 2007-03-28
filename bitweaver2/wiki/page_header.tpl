@@ -11,7 +11,13 @@
 		<p class="description">{$pageInfo.description|escape}</p>
 	{/if}
 
-	{include file="bitpackage:wiki/page_date_bar.tpl"}	
+	<div class="services">
+		{include file="bitpackage:wiki/page_date_bar.tpl"}
+		{include file="bitpackage:liberty/services_inc.tpl" serviceLocation='body' serviceHash=$gContent->mInfo}
+		<span class="clear"><!-- --></span>
+	</div>
+	
+	<span class="clear"><!-- --></span>
 
 </div>
 

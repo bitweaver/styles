@@ -1,29 +1,37 @@
 body							{color:#121210;margin:0;padding:0;border:0;font-family:sans-serif;background:#006fbf}
-hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:block;margin:12px 0}
-small							{font-size:1em}
-p								{margin:12px 0;padding:0;max-width:60em}
+hr								{border:0; border-top:1px solid #006FC0;padding:0;clear:both;display:block;margin:12px 0} 
+small							{font-size:1em} 
+span.clear						{clear:both;display:block;overflow:hidden;width:0;height:0;line-height:0;font-size:0}
+
+p								{margin:12px 0;padding:0}
+div.content	p					{max-width:60em}
+p.description					{clear:both;margin:0 0 4px 0}
+
 embed,object					{display:block;clear:both}
-h1								{font-size:1.5em;margin:12px 0 0 0;color:#000;letter-spacing:-0.06em;display:block;clear:both;font-weight:700}
+h1								{font-size:1.5em;margin:0;padding:12px 0 0 0;color:#000;letter-spacing:-0.06em;font-weight:700}
 h2								{font-size:1.3em;margin:12px 0 0 0;color:#000;font-weight:500}
 h3								{font-size:1.0em;margin:12px 0 0 0;color:#000;font-weight:700}
-h4								{font-size:0.8em}
+h4								{font-size:0.8em;margin:0}
 
+/* gala_29.css */
+#container						{max-width:1600px;margin:0 auto}
+#wrapper						{float:right}
+div.blocks3  #wrapper			{width:74%}
+div.blocks2e #wrapper			{width:100%}
+div.blocks2n #wrapper			{width:74%}
+div.blocks1  #wrapper			{width:100%}
 
-div#header						{}
-#wrapper						{}
-#content						{background:#f6f6f6 url(images/bg_content.gif) right bottom no-repeat;padding:0 0 64px 8px}
+#content						{background:#f6f6f6 url(images/bg_content.gif) right bottom no-repeat;padding:0 0 64px 0}
 	div.contentbottom			{background:#006fbf url(images/bg_contentbottom.gif) left top no-repeat;padding:0;margin:0;height:114px}
 	div.display					{margin:0 24px 0 12px}
-		div.header				{}
+		div.header				{text-align:center}
 		div.body				{}
 			div.content			{padding:0;line-height:140%}
 			div.content	strong	{}
 	div.post					{margin:0}
-body.articles #content			{}
 
-#navigation						{}
-
-#extra							{background:#004373 url(images/bg_extra.jpg) no-repeat left top;height:482px;overflow:hidden}
+#navigation						{float:left;width:25%;margin:0 auto}
+#extra							{clear:both;width:100%;background:#004373 url(images/bg_extra.jpg) no-repeat left top;height:482px;overflow:hidden}
 	#extra	div.module			{width:28%;float:left;margin:64px 8px 0px 32px}
 	#extra	div.module	h3		{color:#e90;font-style:normal;font-family:monospace;margin:0;text-decoration:none}
 	#extra	div.module	ol		{list-style-type:circle;margin:0 0 0 16px;padding:0}
@@ -33,108 +41,78 @@ body.articles #content			{}
 	#last_blog_posts div.date	{display:none}
 	#last_blog_posts li br		{display:inline;float:left}	
 
-#footer							{background:#222220 url(images/bg_footer.gif) no-repeat 0% 50%;padding:16px;text-align:center;color:#444;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
+#footer							{background:#000;padding:16px;text-align:center;color:#444;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
 #footer	a						{color:#444;font-weight:700}
 #footer	a:hover					{color:#eee}
 
 
-/* common classes */
-.preview						{border:1px dashed #696967; margin:0 0 2em 0}
-.norecords						{font-weight:bold}
-.popup							{background:#F2F2F0; width:250px; border:1px solid #004272}
-.highlight						{font-weight:bolder; color:#8A0000; background:#BFBFBD; border:1px solid #404040}
-.selected						{font-weight:bolder}
-.floaticon						{display:inline;width:128px;float:right}
-.storage						{float:right; border:1px solid #969694; background:#F2F2F0}
-.storage .item					{margin:3px; text-align:center}
-.comment,.footer				{clear:both}
-.icon							{border:0; vertical-align:middle; margin:0 0.2em}
-.menuicon						{text-align:center}
-.clear							{clear:both;height:1px}
-.quicktag						{margin:0 1px}
-#fileslist div span				{border:1px solid #969694; background:#BFBFBD; color:#8A0000; display:block; width:75%; float:left; margin:0 3px 0 0; padding:0 0 0 3px}
-.pagination						{text-align:center; font-size:0.8em; color:#C3A40E; padding:2.5em 0 1em 0;}
-	.pagination	form			{margin:0; padding:0;}
-	.pagination	form input		{border:1px solid #BFA408; background:#CFCA93}
-	.pagination a				{}
-.gallerybar						{font-size:0.8em; color:#696967}
-.structurebar					{font-size:0.8em; color:#696967}
-.gallerybar a					{border:1px solid #969694; background:#BFBFBD; padding:0}
-.structurebar a					{border:1px solid #969694; background:#BFBFBD; padding:0}
-p.description					{font-weight:bold;clear:both;margin:0 0 4px 0}
-
+/* parsed elements */
+.bittable td					{padding:0.5em;border:1px solid #969694}
+.bitbox							{background:#fff;padding:1em;margin:12px 0;min-height:3em;text-align:justify;border-bottom:3px double #fadc00}
+.bitbox:first-letter			{color:#fadc00;font-size:4em;font-family:monospace;line-height:40px}
+.bitbox a						{}
+.bitbar							{border-bottom:1px solid #404040; border-top:1px solid #404040}
+.bittoc							{float:right; border:1px solid #404040; font-size:0.8em; background:#BFBFBD; margin:0 0 1em 1em; padding:0 1em; width:35%}
+.bittoc ul						{margin:0.5em 0 0.5em 1.5em; padding:0}
+.bittoc ul ul					{margin:0 0 0 1em}
 
 
 /* tocs */
-div.maketoc						{background:#fafafa;width:36%;float:right;margin:0 0 0 1em;padding:0;border:1px solid #ddd;border-color:#888 #ddd #ddd #888}
-div.maketoc h3					{background:#dddddd;padding:2px 6px;margin:0;position:relative;top:2px;left:16px;border-width:1px 0 0 1px;border-color:#888;border-style:solid;color:#fff;font-weight:700;line-height:normal;text-transform:uppercase;text-decoration:none;font-size:0.7em;display:inline}
-div.maketoc a					{color:#006FC0;text-decoration:none}
-div.maketoc a:visited			{color:#006FC0;text-decoration:none}
-div.maketoc a:hover				{color:#121210;text-decoration:none}
-div.maketoc ul					{margin:6px 0;padding:0;line-height:140%}
-div.maketoc ul li				{margin:0;padding:0;list-style-type:none;font-size:12px;color:#6CA0DA;line-height:140%}
-div.maketoc ul ul				{margin:0 0 0 1em;padding:0}
+div.body div.maketoc			{width:37%;float:right;background-color:#f2f2f0;margin-left:24px;padding:0 0 1em 0;border-style:solid;border-color:#f6f6f6 #ddddd0 #ddddd0 #ddddd0;border-width:8px 8px 1px 0px;-moz-border-radius:0 0 2em 0}
+div.body div.maketoc h3			{margin:0 0 1em 0;padding:2px 2px 2px 25px;line-height:1em;font-size:0.7em;color:#fff;background:#ddddd0;text-transform:uppercase}
+div.body div.maketoc ul			{margin:0;padding:0 0 0 24px;font-size:0.86em}
+div.body div.maketoc ul li		{margin:0;padding:0;color:#ccccc0;line-height:160%;list-style-type:circle}
+div.body div.maketoc ul ul		{margin:0;padding:0 0 0 16px}
+
+div.body div.maketoc li a		{color:#000;border-color:#ddddd0}
+div.body div.maketoc li li a	{color:#999;border-color:#ddddd0}
+div.body div.maketoc li li li a	{color:#ccc;border-color:#ddddd0}
+div.body div.maketoc a:hover	{color:#00f;border-color:#0000ff;text-decoration:none}
 
 
 
 /* forms */
-form							{margin:12px 0;padding:0;border:none}
-form *							{border-width:1px}
-fieldset						{margin:0;padding:0;border:none}
-legend							{color:#C96100;font-weight:700;padding:12px 0 4px 12px}
-select							{border-width:1px}
-textarea						{font-family:monospace;margin:0; padding:0;width:98%}
+form							{margin:0 0 8px 0;padding:12px 0 0 0;border:none}
+fieldset						{margin:0 0 8px 0;padding:0;border:none}
+legend							{color:#b00000;font-weight:700;padding:8px 16px}
+select							{border-width:1px;margin:2px}
+textarea						{font-family:monospace;margin:0; padding:0;width:98%;border-width:1px}
 
-input							{font-family:monospace;padding:1px 2px}
-input[type="submit"]			{padding:0px 2px}
-div.row							{display:block;clear:both;border-bottom:1px dotted #BFBFBD;margin-bottom:8px;padding:4px;margin:1px 0}
+input							{font-family:monospace;padding:1px 2px;border-width:1px}
+div.row							{display:block;clear:both;margin:8px;padding:4px;border-bottom:1px dotted #f2f2f0}
 div.quicktags					{margin:0}
-div.formlabel					{color:#121210;font-size:0.8em;float:left;width:20%;text-align:right}
-div.formhelp					{color:#C96100;font-size:0.8em}
-div.formhelp a					{font-weight:bold}
+div.formlabel					{color:#121210;font-size:0.9em;float:left;width:20%;text-align:right}
 div.forminput					{margin-left:21%}
+div.formhelp					{color:#b00000;font-size:0.7em}
+div.formhelp a					{font-weight:bold}
 div.closebutton					{position:absolute; top:1px; right:1px}
 div.submit						{text-align:center;border:0}
+	div.submit input			{margin:1px 4px}
 
+
+/* interaction */
+.floaticon						{text-align:right}
+.floaticon img					{border:1px solid #f6f6f6;margin:2px;padding:4px}
+.floaticon img:hover			{border:1px solid #fadc00}
 
 
 /* feedback */
 div.errorpage h3				{color:#D60000; font-weight:bold}
 div.errorpage p					{text-align:center}
 
-div.formfeedback				{margin:12px;display:block;clear:both;border-bottom:1px solid white;float:physical;min-height:1em;height:1em}
+div.formfeedback				{margin:12px;display:block;clear:both;border-bottom:1px solid white;float:physical;min-height:1em;font-weight:700;font-size:0.8em}
 .error							{color:#b00000}
-.warning						{color:#F07300}
+.warning						{color:#000000}
 .success						{color:#017747}
-li.error						{list-style:none}
-li.success						{list-style:none}
-li.note							{list-style:none}
-li.warning						{list-style:none}
-
+.locked							{color:#c0c0c0}
+.note							{font-weight:700;list-style:none}
 
 /* search */
-#search							{display:block;clear:both}
-#search h3						{display:none !important}
-#search form					{margin:16px 0 0 0}
-#search	*						{float:right}
-#search	div.row					{border:0px;display:inline;float:left}
-#search fieldset				{border:0;margin:0;padding:0;border:none}
-#search legend					{display:none}
-#search select					{display:none}
-#search input#fuser				{background:#ffffff;color:#121210;display:block;margin:0 8px}
-#search input#fbutton			{background:#004373;color:#b4cfec;display:block;margin:0}
+#search_new	form				{margin:0;padding:0;text-align:center}
+#search_new	*					{margin:4px;padding:0;text-align:center}
+#search_new	input				{clear:both;display:block}
+#search_new	option				{text-align:left}
 
-
-
-/* parsed elements */
-.bittable td					{padding:0.5em;border:1px solid #969694}
-div.bitbox						{color:#444;border:3px double #bbb;background:#fff;padding:0 6px 4px 6px;margin:0px 12px 0 0;min-height:3em}
-div.bitbox:first-letter			{color:#fff;background:#e3bb1d;font-size:48px;font-weight:500;font-family:monospace;padding:4px 0;margin:4px 4px 0 0;display:block;float:left;border:1px solid #fadc00}
-div.bitbox a					{}
-.bitbar							{border-bottom:1px solid #404040; border-top:1px solid #404040}
-.bittoc							{float:right; border:1px solid #404040; font-size:0.8em; background:#BFBFBD; margin:0 0 1em 1em; padding:0 1em; width:35%}
-.bittoc ul						{margin:0.5em 0 0.5em 1.5em; padding:0}
-.bittoc ul ul					{margin:0 0 0 1em}
 
 
 
@@ -156,13 +134,13 @@ td								{padding:2px 0}
 	tr.odd td					{border-bottom:1px solid #fadc00}
 	tr.even td					{border-bottom:1px solid #fadc00}
 	td input					{}
-tfoot 	 						{text-align:center;border-top:3px double #fadc00}
+tfoot 	 						{border-top:3px solid #fadc00}
+table.data tfoot td	 			{text-align:center;padding:1em 0}
 
 #wiki table th					{overflow:hidden}
 #wiki table td span				{color:#aaaaa0}
 #wiki table td span a			{color:#aaaaa0;text-decoration:none}
 
-tr.norecords td					{height:16em;text-align:center}
 
 
 /* lists */
@@ -204,15 +182,18 @@ div.navbar	ul	li				{list-style-type:none;display:inline}
 
 
 /* header, footer */
-div.header	p.description		{color:#e3bb1d;clear:both;text-align:left;font-size:0.7em;text-transform:uppercase}
-div.header	div.date			{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
-div.post	div.date			{font-size:0.7em;font-family:sans-serif;border:0;margin:2px 0;padding:0 4px;color:#fff;background:#ddddd0}
-	div.date span.info			{padding:0 4px}
-	div.date a					{color:#fff;text-decoration:none;font-weight:700}
-	div.date a:visited			{color:#fff;text-decoration:none;font-weight:700}
-	div.date a:hover			{color:#000;text-decoration:none}
-	div.date:hover				{color:#000}
-	div.date:hover a			{color:#000}
+div.header	p.description			{color:#000;clear:both;font-size:0.7em;text-transform:uppercase;font-weight:700}
+div.services						{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#ddddd0;text-align:left;-moz-border-radius:1em}
+	div.date						{width:63%;float:left}
+	div.stars-container				{width:36%;float:right;text-align:right}
+		#content ul.stars-rating	{list-style-type:none;padding:0;margin:0;float:right;display:inline}
+		#content ul.stars-rating li	{list-style-type:none;padding:0;margin:0;float:right;display:inline}
+		div.stars-container	.small	{float:left;display:inline;text-align:right}
+
+div.header	div.date			{}
+div.post	div.date			{}
+div.date 	span.info			{padding:0 4px}
+
 div.display div.footer			{text-align:left;font-family:monospace;display:block;clear:both;margin:0 0 12px 0;color:#bfbfbd}
 
 
@@ -248,8 +229,8 @@ html>body pre					{width:auto}
 
 
 /* articles */
-div.articles div.content 
-	div.image					{float:right; margin:0.5em 0 0.5em 1em}
+div.articles div.content div.image	{float:right; margin:0.5em 0 0.5em 1em}
+div.articles div.post div.header h1	{text-align:left}
 
 
 /* sticky */
@@ -267,17 +248,7 @@ div.articles div.content
 
 
 
-/* # of columns? */
-div.bit-cols					{margin:10px 50px 10px 64px}
-div.bit-holder-2				{margin-left:130px; margin-right:130px}
-div.bit-holder-1l				{margin-left:130px; margin-right:10px}
-div.bit-holder-1r				{margin-left:10px; margin-right:130px}
-div.bit-holder-0				{margin-left:10%; margin-right:10%}
-
-
-
 /* comments */
-
 div.comment div 				{overflow:auto}
 div.comment h3					{color:#aa3f20;border-bottom:2px solid #fff;margin:32px 0 0 00;padding:0}
 div.comment div.post div.content{font-size:12px;font-family:palatino,'palatino linotype';overflow:hidden;text-align:justify}
@@ -362,43 +333,25 @@ div.comment div.post div.content{font-size:12px;font-family:palatino,'palatino l
 
 
 /* tabs */
-.tabs							{}
-.tabs li						{padding:0.5em 0 0.5em 1px}
-.tabs a							{padding:0.5em 1.5em; margin:0; float:left}
-.tabs a:hover					{}
-.tabs li.current				{padding:0.5em 0 0.5em 1px}
-.tabs .current a				{font-weight:bold}
-/* Commented Backslash Hack hides rule from IE5-Mac \*/
-.tabs a							{float:none}
-/* End IE5-Mac hack */
-
-/* tabs design */
-div.tabsystem 					{margin:0 8px 0 0;min-height:16em}
+div.tabsystem 					{margin:0 8px 8px 0}
 div.tabsystem div.tabcontainer	{margin:0;padding:0;border:0;clear:both;z-index:1}
-div.tabsystem div.tabpage		{background:#fff url(images/bg_tabpage.gif) repeat-x left top;z-index:1;clear:both;border:1px solid #ddd;min-height:16em}
+div.tabsystem div.tabpage		{background:#fff url(images/bg_tabpage.gif) repeat-x left top;z-index:1;clear:both;border:1px solid #ccc;min-height:4em}
                                 	
-div.tabcontainer h4				{margin:0;padding:0;z-index:1;position:relative;display:inline;float:left;white-space:nowrap;font-size:1em;font-weight:500}
-div.tabcontainer h4.tab			{background:#dddddd;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none;border:0px}
-div.tabcontainer h4.tab-hover	{background:#F2F2F0;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none}
-div.tabcontainer h4.tab-active	{background:#F2F2F0;cursor:pointer;top:3px;margin:0 3px; padding:2px 6px;text-decoration:none;border:1px solid #ccc;border-width:1px 1px 0 1px}
+div.tabcontainer 				{}
+div.tabcontainer h4				{background:#f2f2f0;top:1px;margin:0 6px 0 0;padding:2px 6px;z-index:1;position:relative;display:inline;float:left;white-space:nowrap;border:1px solid #ccc}
+div.tabcontainer h4.tab			{}
+div.tabcontainer h4.tab-hover	{background:#fff}
+div.tabcontainer h4.tab-active	{border-bottom:1px solid #f2f2f0}
+div.tabcontainer h4.tab	a		{color:#999}
+div.tabcontainer h4.tab-active a{color:#000}
 
-div.tabcontainer h4.tab	a		{color:#999;text-decoration:none}
-div.tabcontainer h4.tab-active a{color:#000;text-decoration:none;font-weight:700}
-div.tabcontainer h4.tab-hover a	{color:#00c;text-decoration:underline}
-
-div.tabsystem h1				{margin-left:8px}
+div.tabpage h1					{margin-left:8px}
 
 
 /* FAQs */
 .faqtoc	ul						{margin-bottom:1.5em}
 .faqtoc ul li					{font-weight:bold}
 .faqtoc ul li li				{font-weight:normal}
-
-
-
-/* stars */
-#content	ul.stars-rating		{list-style-type:none;padding:0;margin:0}
-#content	ul.stars-rating	li	{list-style-type:none;padding:0;margin:0}
 
 
 
@@ -422,11 +375,9 @@ a:hover							{color:#0048fe;text-decoration:underline}
 
 div.content a					{border-bottom:1px solid #0048fe}
 div.content a:visited			{border-bottom:1px solid #0048fe}
-div.content a:hover				{color:#0048fe;text-decoration:underline}
 
 div.tabpage a					{border-bottom:1px solid #0048fe}
 div.tabpage a:visited			{border-bottom:1px solid #0048fe}
-div.tabpage a:hover				{color:#0048fe;text-decoration:underline}
                        		
 a.create						{color:#000000;text-decoration:none;border-bottom:1px dotted #0048fe}
 a.external						{color:#0048fe;text-decoration:none;border-bottom:none}
@@ -448,18 +399,21 @@ h1 a							{color:#000;text-decoration:none;border:0px}
 h1 a:visited					{color:#000;text-decoration:none;border:0px}
 h1 a:hover						{color:#0048fe;text-decoration:none;border:0px}
 
-a.username						{font-weight:700;font-size:128%;border:0px}
-a.username:visited				{font-weight:700;font-size:128%;border:0px}
-a.username:hover				{font-weight:700;font-size:128%;border:0px}
+a.username						{font-weight:700;border:0px}
+a.username:visited				{font-weight:700;border:0px}
+a.username:hover				{font-weight:700;border:0px}
 
-#navigation div.module h3 a.username			{font-weight:700;font-size:128%}
-#navigation div.module h3 a.username:visited	{font-weight:700;font-size:128%}
-#navigation div.module h3 a.username:hover		{font-weight:700;font-size:128%}
+div.date a						{color:#fff;text-decoration:none;font-weight:700}
+div.date a:visited				{color:#fff;text-decoration:none;font-weight:700}
+div.date a:hover				{color:#000;text-decoration:none}
+div.date:hover					{color:#000}
+div.date:hover a				{color:#000}
+
 
 
 /* menus */                        		
 #navigation div.module a		{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
-#navigation div.module a:visited{color:#dddddd}
+#navigation div.module a:visited{color:#ddddd0}
 #navigation div.module a:hover	{color:#fadc00;border-bottom:1px solid #6ba0d9;line-height:1.4em;text-decoration:none !important}
 #navigation div.module img 		{display:none}
 
@@ -503,7 +457,7 @@ img.portrait					{float:left;margin:8px}
 
 
 /* links below logo */
-#top_bar 					{text-align:center}
+#top_bar 					{text-align:center;overflow:hidden}
 #top_bar ul					{margin:0;padding:0;text-align:center}
 #top_bar ul	li				{display:inline;margin:4px;font-size:1em;font-weight:500;font-family:monospace}
 #top_bar ul	li	a			{background:#004373;color:#6ba0d9;border-width:3px 0;border:double 3px #006fbf;padding:0 6px}
@@ -513,20 +467,36 @@ img.portrait					{float:left;margin:8px}
 #top_bar ul	li.dev	a:hover	{background:#3fceee;color:#fff}
 
 /* links above logo */
+#top_bar #top ul 				{width:8em}
 #top_bar #top ul li				{clear:both;display:block;text-align:right}
 #top_bar #top ul li a			{background:#006fbf;border:0px;color:#ffffff;margin:2px;padding:2px 4px 1px 2px;width:30%}
 #top_bar #top ul li a:visited	{background:#006fbf;border:0px;color:#ffffff}
 #top_bar #top ul li a:hover		{background:#006fbf;border:0px;color:#3fceee}
 
 
-/* gala_29.css */
-div#wrapper						{float:right}
-div.blocks3  #wrapper			{width:74%}
-div.blocks2e #wrapper			{width:100%}
-div.blocks2n #wrapper			{width:74%}
-div.blocks1  #wrapper			{width:100%}
-div#navigation					{float:left;width:25.9%}
-div#extra						{clear:both;width:100%}
+/* MUST start with . or # */
+.preview						{border:1px dashed #696967; margin:0 0 2em 0}
+.norecords						{font-weight:bold;height:6em;text-align:center}
+.popup							{background:#F2F2F0; width:250px; border:1px solid #004272}
+.highlight						{font-weight:bolder; color:#8A0000; background:#BFBFBD; border:1px solid #404040}
+.selected						{font-weight:bolder}
+.storage						{float:right; border:1px solid #969694; background:#F2F2F0}
+.storage .item					{margin:3px; text-align:center}
+.comment,.footer				{clear:both}
+.icon							{border:0; vertical-align:middle; margin:0 0.2em}
+.menuicon						{text-align:center}
+.clear							{clear:both}
+.quicktag						{margin:0 1px}
+#fileslist div span				{border:1px solid #969694; background:#BFBFBD; color:#8A0000; display:block; width:75%; float:left; margin:0 3px 0 0; padding:0 0 0 3px}
+.pagination						{text-align:center; font-size:0.8em; color:#C3A40E; padding:2.5em 0 1em 0;}
+	.pagination	form			{margin:0; padding:0;}
+	.pagination	form input		{border:1px solid #BFA408; background:#CFCA93}
+	.pagination a				{}
+.gallerybar						{font-size:0.8em; color:#696967}
+.structurebar					{font-size:0.8em; color:#696967}
+.gallerybar a					{border:1px solid #969694; background:#BFBFBD; padding:0}
+.structurebar a					{border:1px solid #969694; background:#BFBFBD; padding:0}
+
 
 
 /* temp */
