@@ -30,7 +30,7 @@
 				{if $pageError}<div class="error">{$pageError}</div>{/if}
 				{include file=$mid}
 			</div>
-			<div class="clear contentbottom"><!-- --></div>
+			<div class="clear contentbottom" style="background:url(/themes/styles/bitweaver2/images/bg_contentbottom_{1|rand:2}.gif) no-repeat left top"><!-- --></div>
 		</div>
 
 		{* if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules *}

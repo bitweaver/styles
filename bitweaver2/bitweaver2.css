@@ -23,28 +23,52 @@ div.blocks2n #wrapper			{width:74%}
 div.blocks1  #wrapper			{width:100%}
 
 #content						{background:#f6f6f6;padding:0 0 64px 0;border-left:1px solid #fff} /* url(images/bg_content.gif) right bottom no-repeat*/
-	div.contentbottom			{background:#006fbf url(images/bg_contentbottom.gif) left top no-repeat;height:114px}
+	div.contentbottom			{background:#006fbf url(images/bg_contentbottom_2.gif) left top no-repeat;height:114px}
 	div.display					{margin:0 24px 0 12px}
 		div.header				{text-align:center}
 		div.body				{margin-left:8px}
 			div.content			{line-height:140%}
 			div.content	strong	{}
 	div.post					{}
+#footer							{background:#000;padding:16px;text-align:center;color:#fff;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
+#footer a						{color:#fff !important}
 
+/* nav */
 #navigation						{float:left;width:25%;margin:0 auto}
-#extra							{clear:both;width:100%;background:#004373 url(images/bg_extra.jpg) no-repeat left top;height:482px;overflow:hidden}
-	#extra	div.module			{width:28%;float:left;margin:64px 8px 0px 32px}
-	#extra	div.module	h3		{color:#e90;font-style:normal;font-family:monospace;text-decoration:none}
-	#extra	div.module	ol		{list-style-type:circle;margin:0 0 0 16px;}
-	#extra	div.module	ul		{list-style-type:circle;margin:0 0 0 16px;}
-	#extra	div.module	li		{color:#006fbf;list-style-type:circle;padding:4px 0;font-size:0.8em}
-	#extra	div.module	li:hover{color:#e8f1fa;border-bottom:0px}
-	#last_blog_posts div.date	{display:none}
-	#last_blog_posts li br		{display:inline;float:left}	
 
-#footer							{background:#000;padding:16px;text-align:center;color:#444;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
-#footer	a						{color:#444;font-weight:700}
-#footer	a:hover					{color:#eee}
+
+/* extra */
+#extra							{clear:both;width:100%;background:#004373 url(images/bg_extra.png) no-repeat left top;height:482px;overflow:hidden}
+#extra div.module				{width:22%;float:left;margin:0 0 0 16px;white-space:nowrap;overflow:hidden}
+#extra div.module h3			{color:#fadc00;margin:0;font-weight:500}
+#extra div.module li			{color:#948B46;padding:6px 0;font-size:0.8em}
+#extra div.module li:hover		{color:#e8f1fa}
+#extra a.more					{border:0;font-size:1em;font-weight:500;padding:16px 0}
+#extra a.more:hover				{color:#00f411}
+
+#extra li a						{color:#000;border-bottom:1px solid #fadc00;padding-bottom:4px}
+#extra li a:visited				{color:#000;border-bottom:1px solid #a0964a;padding-right:16px}
+#extra li a:hover				{color:#000;border-bottom:1px solid #00f411;text-decoration:none}
+#extra li a:visited:hover		{background:url(images/bg_a_hover_extra.gif) no-repeat right 50%;border-color:#fadc00}
+
+#extra .even					{border:0px;display:block;clear:both}
+#extra .odd						{border:0px;display:block;clear:both}
+
+#extra #last_blog_posts 		{margin-top:64px}
+#extra #last_blog_posts em		{color:#000;font-style:normal}
+#extra #last_blog_posts q 		{display:none}
+
+#extra #last_board_posts 		{margin-top:40px}
+#extra #last_board_posts em		{color:#000;font-style:normal}
+#extra #last_board_posts var		{display:none}
+
+#extra #last_modif_pages 		{margin-top:64px}
+
+#extra #articles				{margin-top:88px}
+
+
+
+
 
 
 /* parsed elements */
@@ -201,15 +225,6 @@ div.display div.footer			{text-align:left;font-family:monospace;display:block;cl
 /* boxes modules */
 div.box							{}
 div.box	h3						{}
-
-div.module 						{overflow:hidden;margin:6px;background:}
-div.module	h3					{margin:0 4px;color:#BFA408;font-weight:500}
-div.module	ul					{list-style:none;margin:0 4px;}
-div.module	ul	li				{list-style:none;}
-div.module	ul.data				{text-align:center}
-div.module	ol					{margin:0 4px;}
-div.module 	ol	li				{padding:1px 0}
-div.module	form				{text-align:center}
 
 div.popup						{background:#005A99;color:#F2F2F0;border:1px solid #004272;padding:10px}
 div.popup	small				{color:#aaa !important}
@@ -381,17 +396,13 @@ div.tabpage a:visited			{border-bottom:1px solid #0048fe}
                        		
 a.create						{color:#000000;text-decoration:none;border-bottom:1px dotted #0048fe}
 a.external						{color:#0048fe;text-decoration:none;border-bottom:none}
+
 a.more							{border:1em solid #f6f6f6;border-width:0.5em 0;margin-right:2.5em;color:#fff;display:block;font-style:normal;font-size:0.7em;text-decoration:none;font-weight:700}
-	#extra a.more				{border:0}
 
 em.more							{background:#ddddd0 url(images/arrow_more.gif) no-repeat right 50%;float:right;font-style:normal}
 em.more a						{color:#fff;border-style:solid;border-color:#f6f6f6;border-width:0px;margin:0 1.5em 0 0;padding:0 6px;float:left;font-size:0.7em;text-decoration:none;font-weight:700}
 em.more a:visited				{color:#fff;border:0}
 em.more a:hover					{color:#000}
-
-#extra	li a					{color:#7aa9dd;font-family:sans-serif;text-decoration:none;border:0}
-#extra	li a:visited			{color:#005999;border:0}
-#extra	li a:hover				{color:#005999;border:0}
 
 h1 a							{color:#000}
 h1 a:visited					{color:#000}
