@@ -74,7 +74,7 @@ div.blocks1  #wrapper			{width:100%}
 /* parsed elements */
 .bittable td					{padding:0.5em;border:1px solid #969694}
 .bitbox							{background:#fff;padding:1em;margin:12px 0;min-height:3em;text-align:justify;border-bottom:3px double #fadc00}
-.bitbox:first-letter			{color:#fadc00;font-size:4em;font-family:monospace;line-height:40px}
+.bitbox:first-letter			{background:#fadc00;color:#fff;margin:0 2px 0 0;font-size:4em;font-family:monospace;line-height:40px;float:left;}
 .bitbox a						{}
 .bitbar							{border-bottom:1px solid #404040;border-top:1px solid #404040}
 .bittoc							{float:right;border:1px solid #404040;font-size:0.8em;background:#BFBFBD;margin:0 0 1em 1em;padding:0 1em;width:35%}
