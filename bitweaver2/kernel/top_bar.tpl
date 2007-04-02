@@ -11,9 +11,10 @@
 	<div id="top_bar">
 	
 		<div id="top">
+			<a style="display:block;width:64px;height:64px;position:absolute;left:0;top:0" href="http://bitweaver.org/wiki/Try+it+out"><pre style="display:none">There are 50 ways to leave your old CMS for bitweaver: try it out!</pre></a>
 			<ul>
 				<li id="homelink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="homepage" href="/">home</a></li>
-				<li id="downlink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="download latest bitweaver" href="http://bitweaver.org/GetCode">download</a></li>
+				<li id="downlink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="instant download! just add water" href="http://sourceforge.net/project/showfiles.php?group_id=141358">download</a></li>
 				<li id="demolink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="try bitweaver in action" href="http://demo.bitweaver.org">demo</a></li>
 			</ul>
 		</div>
