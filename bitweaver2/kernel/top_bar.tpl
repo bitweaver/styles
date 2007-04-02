@@ -12,9 +12,9 @@
 	
 		<div id="top">
 			<ul>
-				<li><a title="try bitweaver in action" href="http://demo.bitweaver.org"><strong>&rArr;</strong><!--[if lt IE 7]>&rarr;<![endif]-->&nbsp;demo</a></li>
-				<li><a title="download latest bitweaver" href="http://bitweaver.org/GetCode"><strong>&rArr;</strong><!--[if lt IE 7]>&rarr;<![endif]-->&nbsp;download</a></li>
-				<li><a title="homepage" href="/"><strong>&rArr;</strong><!--[if IE 7]>&rarr;<![endif]-->&nbsp;home</a></li>
+				<li id="homelink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="homepage" href="/">home</a></li>
+				<li id="downlink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="download latest bitweaver" href="http://bitweaver.org/GetCode">download</a></li>
+				<li id="demolink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="try bitweaver in action" href="http://demo.bitweaver.org">demo</a></li>
 			</ul>
 		</div>
 

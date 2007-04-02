@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/articles/article_display.tpl,v 1.2 2007/03/28 02:55:36 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/articles/article_display.tpl,v 1.3 2007/04/02 02:30:33 laetzer Exp $ *}
 {strip}
 {if !$showDescriptionsOnly}
 	{include file="bitpackage:liberty/services_inc.tpl" serviceLocation='nav' serviceHash=$article}
@@ -21,9 +21,9 @@
 
 	<div class="header">
 			{if $showDescriptionsOnly and $article.has_more}
-				<h1><a href="{$article.display_url}">{$article.title|escape}</a></h1>
+				<h1 title="{$article.title|escape}"><a href="{$article.display_url}">{$article.title|escape}</a></h1>
 			{else}
-				<h1>{$article.title|escape}</h1>			
+				<h1 title="{$article.title|escape}">{$article.title|escape}</h1>			
 			{/if}
 		{if $article.show_author eq 'y' || $article.show_pubdate eq 'y'}
 			<div class="date">

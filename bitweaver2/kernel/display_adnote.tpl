@@ -7,7 +7,7 @@
 		<li><a href="http://doc.bitweaver.org">online help pages</a></li>
 		<li><a href="/wiki/SiteAdministration">for website admins</a></li>
 		<li><a href="/wiki/Developer_Guide">for developers</a></li>
-		<li style="list-style-type:none;border-width:0px;margin-right:0px;max-width:80em"><em><a class="more" href="/wiki/Documentation">more Documentation</a></em></li>
+		<li style="list-style-type:none;border-width:0px;margin-right:0px;max-width:80em"><em class="more"><a href="/wiki/Documentation">more Documentation</a></em></li>
 	</ul>
 
 	<ul class="com">
@@ -16,7 +16,7 @@
 		<li><a href="/wiki/bitweaverFAQ"><strong>FAQ</strong></a></li>
 		<li><a href="/forums/">user<strong> forums</strong></a></li>
 		<li><a href="/wiki/SelectedVimTips">tipps &amp; tricks</a></li>
-		<li style="list-style-type:none;border-width:0px;margin-right:0px;max-width:80em"><em><a class="more" href="/wiki/ConnectingToIrc">mo' Community</a></em></li>
+		<li style="list-style-type:none;border-width:0px;margin-right:0px;max-width:80em"><em class="more"><a href="/wiki/ConnectingToIrc">mo' Community</a></em></li>
 	</ul>
 
 	<ul class="dev" style="margin-right:0px">
@@ -25,7 +25,7 @@
 		<li><a href="/articles/index.php?topic_id=4">research &amp; dev</a></li>
 		<li><a href="/wiki/APIDocumentation">API details</a></li>
 		<li><a href="/wiki/Tutorial_Custom_Package">create a package?</a></li>
-		<li style="list-style-type:none;border-width:0px;margin-right:0px;max-width:80em"><em><a class="more" href="/wiki/Developer+Center">more Development</a></em></li>
+		<li style="list-style-type:none;border-width:0px;margin-right:0px;max-width:80em"><em class="more"><a href="/wiki/Developer+Center">more Development</a></em></li>
 	</ul>
 	
 	<span class="clear"><!-- --></span>	
