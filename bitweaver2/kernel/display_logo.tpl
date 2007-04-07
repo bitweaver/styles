@@ -1,17 +1,8 @@
-<!--[if lt IE 7]>
-	{literal}
-		<style type="text/css">
-			#top_bar #top ul li a strong {display:none}
-			div.bitbox:first-letter	{display:block;float:left;line-height:0.7em}
-		</style>
-	{/literal}
-<![endif]-->
-
 {strip}
-	<div id="top_bar">
+	<div id="bitweaver">
 	
-		<div id="top">
-			<a style="display:block;width:64px;height:64px;position:absolute;left:0;top:0" href="http://bitweaver.org/wiki/Try+it+out"><pre style="display:none">There are 50 ways to leave your old CMS for bitweaver: try it out!</pre></a>
+		<div id="try">
+			<a title="click to learn how to start using bitweaver" style="display:block;width:64px;height:64px;position:absolute;left:0;top:0" href="http://bitweaver.org/wiki/Try+it+out"><pre style="display:none">There are 50 ways to leave your old CMS for bitweaver: try it out!</pre></a>
 			<ul>
 				<li id="homelink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="homepage" href="/">home</a></li>
 				<li id="downlink"><strong>&rArr;</strong><!--[if lt IE 8]>&rarr;<![endif]--><a title="instant download! just add water" href="http://sourceforge.net/project/showfiles.php?group_id=141358">download</a></li>

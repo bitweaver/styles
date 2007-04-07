@@ -19,12 +19,15 @@
 
 		<div id="header">
 			{* include file="bitpackage:kernel/top.tpl" *}
+			{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
+				{include file="bitpackage:kernel/top_bar.tpl"}
+			{/if}
 		</div>
 
 		<div id="wrapper">
 			<div id="content">
 				{if $SCRIPT_NAME eq '/articles/index.php'}
-					{include file="bitpackage:kernel/display_adnote.tpl"}
+					{include file="bitpackage:kernel/display_carrier.tpl"}
 				{/if}
 				{include file="bitpackage:liberty/display_structure.tpl"}
 				{if $pageError}<div class="error">{$pageError}</div>{/if}
@@ -35,9 +38,7 @@
 
 		{* if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules *}
 			<div id="navigation">
-				{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
-					{include file="bitpackage:kernel/top_bar.tpl"}
-				{/if}
+				{include file="bitpackage:kernel/display_logo.tpl"}
 				{include file="bitpackage:kernel/bit_left.tpl"}
 			</div>
 			<span class="clear"><!-- --></span>

@@ -1,18 +1,18 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.7 2007/04/02 02:30:34 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.8 2007/04/07 02:44:20 laetzer Exp $ *}
 {strip}
-{* if $gBitSystem->isFeatureActive( 'site_style_layout' )}
+{if $gBitSystem->isFeatureActive( 'site_style_layout' )}
 	<link rel="stylesheet" title="{$style}" type="text/css" href="{$smarty.const.THEMES_PKG_URL}layouts/{$gBitSystem->getConfig('site_style_layout')}.css" media="all" />
-{/if *}
-{if $gBitSystem->mStyles.styleSheet}
-	<link rel="stylesheet" title="{$style}" type="text/css" href="{$gBitSystem->mStyles.styleSheet}" media="all" />
 {/if}
-{if $gBitSystem->mStyles.browserStyleSheet}
-	<link rel="stylesheet" title="{$style}" type="text/css" href="{$gBitSystem->mStyles.browserStyleSheet}" media="all" />
+{if $gBitThemes->mStyles.styleSheet}
+	<link rel="stylesheet" title="{$style}" type="text/css" href="{$gBitThemes->mStyles.styleSheet}" media="all" />
 {/if}
-{if $gBitSystem->mStyles.customStyleSheet}
-	<link rel="stylesheet" title="{$style}" type="text/css" href="{$gBitSystem->mStyles.custumStyleSheet}" media="all" />
+{if $gBitThemes->mStyles.browserStyleSheet}
+	<link rel="stylesheet" title="{$style}" type="text/css" href="{$gBitThemes->mStyles.browserStyleSheet}" media="all" />
 {/if}
-{foreach from=$gBitSystem->mStyles.altStyleSheets item=alt_path key=alt_name}
+{if $gBitThemes->mStyles.customStyleSheet}
+	<link rel="stylesheet" title="{$style}" type="text/css" href="{$gBitThemes->mStyles.custumStyleSheet}" media="all" />
+{/if}
+{foreach from=$gBitThemes->mStyles.altStyleSheets item=alt_path key=alt_name}
 	<link rel="alternate stylesheet" title="{$alt_name}" type="text/css" href="{$alt_path}" media="screen" />
 {/foreach}
 
@@ -87,80 +87,85 @@
 	<script type="text/javascript" src="{$smarty.const.UTIL_PKG_URL}javascript/libs/fat.js"></script>
 {/if}
 
-{* this is required for drop menus to work properly on MSIE. Do not remove until all issues are fully handled. - spiderr *}
 {if $gBrowserInfo.browser eq 'ie'}
-      <!-- this wierdness fixes png display and CSS driven dropdown menus in GUESS WHAT BROWSER -->
-      <!--[if lt IE 7]>
-      <script type="text/javascript">
-                 IE7_PNG_SUFFIX = ".png";
-      </script>
-      <script type="text/javascript" src="{$smarty.const.UTIL_PKG_URL}javascript/fixes/ie7/ie7-standard-p.js"></script>
-      <![endif]-->
+{literal}
+	<!--[if lt IE 7]>
+		<script type="text/javascript">
+			IE7_PNG_SUFFIX = ".png";
+		</script>
+		<script type="text/javascript" src="{$smarty.const.UTIL_PKG_URL}javascript/fixes/ie7/ie7-standard-p.js"></script>
+	<![endif]-->
+	
+	<!--[if lt IE 7]>
+		<style type="text/css">
+			#bitweaver #try ul li a strong {display:none}
+			div.bitbox:first-letter	{display:block;float:left;line-height:0.7em}
+		</style>
+	<![endif]-->	
+{/literal}
 {/if}
 
-
-
-{if $SCRIPT_NAME eq '/articles/index.php'}
+{if $SCRIPT_NAME eq '/articles/index.php'} 
 {assign var="images" value=`$smarty.const.BIT_ROOT_URL`themes/styles/bitweaver2/images}
 {literal}
 <style type="text/css" media="all">
+ 
+	/* splash logo column */ 
+	#bitweaver		{clear:both;margin:0;padding:0}
+	#bitweaver p		{text-align:center;color:#fff;text-transform:uppercase;padding:0;margin:0 auto;max-width:32em;font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
+	#bitweaver p#logo		{background:url({/literal}{$images}{literal}/bitweaver.gif) no-repeat 50% top;height:212px;margin:0 auto}
+	#bitweaver p.rule		{background:url({/literal}{$images}{literal}/bitweaver_punchline_{/literal}{1|rand:2}{literal}.gif) no-repeat 50% top;padding-top:32px;margin:0 auto}
+	#bitweaver p.stop		{background:url({/literal}{$images}{literal}/bg_p-stop.gif) no-repeat 50% bottom;padding-bottom:48px}
 
-	/* splash logo column */
-	#top_bar						{clear:both;margin:0;padding:0}
-	#top_bar p						{text-align:center;color:#fff;text-transform:uppercase;padding:0 12px;margin:12px auto;max-width:32em;font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
-	#top_bar p#logo					{background:url({/literal}{$images}{literal}/bitweaver.gif) no-repeat 50% top;height:212px;margin:0 auto}
-	#top_bar p.rule					{background:url({/literal}{$images}{literal}/bitweaver_punchline_{/literal}{1|rand:2}{literal}.gif) no-repeat 50% top;padding-top:32px;margin:0 auto}
-	#top_bar p.stop					{background:url({/literal}{$images}{literal}/bg_p-stop.gif) no-repeat 50% bottom;padding-bottom:48px}
-
-	#navigation						{background:url({/literal}{$images}{literal}/bg_navigation.gif) no-repeat left top}
-	
-	#top_bar #top ul 				{text-align:left}
-	#top_bar #top ul li				{text-align:left;margin-left:70px;color:#fff}
-	#top_bar #top ul li	a:hover		{border-style:dotted !important;border-color:#006fbf !important;border-width:1px 0 !important}
-	#top_bar #top ul #homelink		{display:none}
-
+	#navigation		{background:url({/literal}{$images}{literal}/bg_navigation.gif) no-repeat left top}
+	 
+	#bitweaver #try ul 		{text-align:left}
+	#bitweaver #try ul li	{text-align:left;margin-left:70px;color:#fff}
+	#bitweaver #try ul li a:hover	{border-style:dotted !important;border-color:#006fbf !important;border-width:1px 0 !important} 
+	#bitweaver #try ul #homelink	{display:none} 
+ 
 	/* link list */
-	#dcd							{margin:0 0 40px 12px}
-	#dcd ul							{width:27%;float:left;margin:56px 32px 0 0;padding:48px 0 0 0}
-	#dcd ul li						{list-style-type:none;margin:0 10px;border-bottom:1px solid #fff;max-width:24em}
-	#dcd ul li strong				{background:#ffc;font-weight:500;padding:0 4px 0 0}
-	#dcd ul li a					{text-decoration:none;display:block;border-bottom:1px solid #f6f6f6;white-space:nowrap;overflow:hidden}
-	#dcd ul.doc li a:hover			{background:url({/literal}{$images}{literal}/bg_a_hover_doc.gif) no-repeat right 50%}
-	#dcd ul.com li a:hover			{background:url({/literal}{$images}{literal}/bg_a_hover_com.gif) no-repeat right 50%}
-	#dcd ul.dev li a:hover			{background:url({/literal}{$images}{literal}/bg_a_hover_dev.gif) no-repeat right 50%}
-	#dcd ul li a:visited			{background:url({/literal}{$images}{literal}/bg_a_visited.gif) no-repeat right 50%}
-	#dcd ul.doc li a				{color:#aa9f4f}
-	#dcd ul.com li a				{color:#4da653}
-	#dcd ul.dev li a				{color:#76aab6}
-	#dcd ul.doc li a:hover			{color:#fadc00;border-bottom:1px solid #fadc00}
-	#dcd ul.com li a:hover			{color:#00f411;border-bottom:1px solid #00f411}
-	#dcd ul.dev li a:hover			{color:#3fceee;border-bottom:1px solid #3fceee}
-
-	/* sublogos */
-	ul.doc							{background:#fff url({/literal}{$images}{literal}/logo_doc.gif) no-repeat left top}
-	ul.com							{background:#fff url({/literal}{$images}{literal}/logo_com.gif) no-repeat left top}
-	ul.dev							{background:#fff url({/literal}{$images}{literal}/logo_dev.gif) no-repeat left top}
-
-	/* arrows */
-	#dcd ul 	li em.more			{background-color:#f6f6f6;background-repeat:no-repeat;background-position:-1000 -1000;float:right;margin:4px 0;position:relative;left:0.5em}
-	#dcd ul.doc	li em.more			{background-image:url({/literal}{$images}{literal}/arrow_doc.gif)}
-	#dcd ul.com	li em.more			{background-image:url({/literal}{$images}{literal}/arrow_com.gif)}
-	#dcd ul.dev	li em.more			{background-image:url({/literal}{$images}{literal}/arrow_dev.gif)}
-
+	#dcd			{margin:0 0 40px 12px} 
+	#dcd ul			{width:27%;float:left;margin:56px 32px 0 0;padding:48px 0 0 0} 
+	#dcd ul li		{list-style-type:none;margin:0 10px;border-bottom:1px solid #fff;max-width:24em} 
+	#dcd ul li strong		{background:#ffc;font-weight:500;padding:0 4px 0 0}
+	#dcd ul li a		{text-decoration:none;display:block;border-bottom:1px solid #f6f6f6;white-space:nowrap;overflow:hidden}
+	#dcd ul.doc li a:hover	{background:url({/literal}{$images}{literal}/bg_a_hover_doc.gif) no-repeat right 50%}
+	#dcd ul.com li a:hover	{background:url({/literal}{$images}{literal}/bg_a_hover_com.gif) no-repeat right 50%}
+	#dcd ul.dev li a:hover	{background:url({/literal}{$images}{literal}/bg_a_hover_dev.gif) no-repeat right 50%}
+	#dcd ul li a:visited	{background:url({/literal}{$images}{literal}/bg_a_visited.gif) no-repeat right 50%}
+	#dcd ul.doc li a		{color:#aa9f4f}
+	#dcd ul.com li a		{color:#4da653}
+	#dcd ul.dev li a		{color:#76aab6}
+	#dcd ul.doc li a:hover	{color:#fadc00;border-bottom:1px solid #fadc00}
+	#dcd ul.com li a:hover	{color:#00f411;border-bottom:1px solid #00f411}
+	#dcd ul.dev li a:hover	{color:#3fceee;border-bottom:1px solid #3fceee}
+ 
+	/* sublogos */ 
+	ul.doc			{background:#fff url({/literal}{$images}{literal}/logo_doc.gif) no-repeat left top}
+	ul.com			{background:#fff url({/literal}{$images}{literal}/logo_com.gif) no-repeat left top}
+	ul.dev			{background:#fff url({/literal}{$images}{literal}/logo_dev.gif) no-repeat left top}
+ 
+	/* arrows */ 
+	#dcd ul 	li em.more	{background-color:#f6f6f6;background-repeat:no-repeat;background-position:-1000 -1000;float:right;margin:4px 0;position:relative;left:0.5em} 
+	#dcd ul.doc li em.more	{background-image:url({/literal}{$images}{literal}/arrow_doc.gif)} 
+	#dcd ul.com li em.more	{background-image:url({/literal}{$images}{literal}/arrow_com.gif)} 
+	#dcd ul.dev li em.more	{background-image:url({/literal}{$images}{literal}/arrow_dev.gif)} 
+ 
 	#dcd ul.doc li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_doc.gif);background-position:right 50%}
 	#dcd ul.com li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_com.gif);background-position:right 50%}
 	#dcd ul.dev li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_dev.gif);background-position:right 50%}
-
-	#dcd ul li em.more a			{color:#fff;border-bottom-width:0.5em;border-color:#fff;padding:0 0.2em}
-	#dcd ul li em.more a:hover		{color:#fff;border-bottom-width:0.5em;border-color:#fff}
-	
-	#dcd ul.doc li em.more a		{background:#AA9F4F}
-	#dcd ul.com li em.more a		{background:#4DA653}
-	#dcd ul.dev li em.more a		{background:#76aab6}
-	#dcd ul.doc li em.more a:hover	{background:#fadc00}
-	#dcd ul.com li em.more a:hover	{background:#00f411}
-	#dcd ul.dev li em.more a:hover	{background:#3fceee}
-
-</style>
+ 
+	#dcd ul li em.more a	{color:#fff;border-bottom-width:0.5em;border-color:#fff;padding:0 0.2em} 
+	#dcd ul li em.more a:hover	{color:#fff;border-bottom-width:0.5em;border-color:#fff} 
+ 
+	#dcd ul.doc li em.more a	{background:#AA9F4F} 
+	#dcd ul.com li em.more a	{background:#4DA653} 
+	#dcd ul.dev li em.more a	{background:#76aab6} 
+	#dcd ul.doc li em.more a:hover{background:#fadc00} 
+	#dcd ul.com li em.more a:hover{background:#00f411} 
+	#dcd ul.dev li em.more a:hover{background:#3fceee} 
+ 
+</style> 
 {/literal} 
 {/if}
