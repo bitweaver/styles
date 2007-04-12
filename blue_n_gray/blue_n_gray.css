@@ -1,4 +1,4 @@
-@import url( ../../base.css ); /* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.6 2006/09/15 07:54:56 squareing Exp $ */
+@import url( ../../base.css ); /* $Header: /cvsroot/bitweaver/_bit_styles/blue_n_gray/blue_n_gray.css,v 1.7 2007/04/12 14:57:09 squareing Exp $ */
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -88,6 +88,11 @@ input,textarea,select	{font-size:1em;}
 .box					{margin:10px 0;}
 .box h3					{text-align:left; padding:2px; font-weight:bold; color:#666; font-size:1.2em;}
 .boxcontent				{padding:2px;}
+
+
+				/* modules */
+.module					{margin:10px 0;}
+.module h3				{text-align:left; padding:2px; font-weight:bold; color:#666; font-size:1.2em;}
 
 
 				/* parsed elements */
