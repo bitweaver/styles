@@ -1,25 +1,24 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/articles/article_display.tpl,v 1.3 2007/04/02 02:30:33 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/articles/article_display.tpl,v 1.4 2007/04/23 06:35:01 laetzer Exp $ *}
 {strip}
 {if !$showDescriptionsOnly}
 	{include file="bitpackage:liberty/services_inc.tpl" serviceLocation='nav' serviceHash=$article}
 {/if}
 
 <div class="{$outer_div|default:"post"}">
-	<div class="floaticon">
-		{include file="bitpackage:liberty/services_inc.tpl" serviceLocation='icon' serviceHash=$article}
-		{if $gBitUser->hasPermission( 'p_articles_read_history' ) && !$version && $article.version>1}
-			{smartlink ititle="View History" ipackage=articles ifile="article_history.php" ibiticon="icons/appointment-new" article_id=$article.article_id}
-		{/if}
-		{if $gBitUser->hasPermission('p_articles_admin') || $gBitUser->getField('user_id') == $article.user_id}
-			<a href="{$smarty.const.ARTICLES_PKG_URL}edit.php?article_id={$article.article_id}">{biticon ipackage="icons" iname="accessories-text-editor" iexplain=edit}</a>
-		{/if}
-		{*<a style="display:none;" href="{$smarty.const.ARTICLES_PKG_URL}print.php?article_id={$article.article_id}">{biticon ipackage="icons" iname="document-print" iexplain=print}</a>*}
-		{if $gBitUser->hasPermission( 'p_articles_remove' )}
-			{smartlink ititle="Remove" ipackage=articles ifile="list.php" ibiticon="icons/edit-delete" action=remove remove_article_id=$article.article_id status_id=$smarty.request.status_id}
-		{/if}
-	</div><!-- end .footer -->
-
 	<div class="header">
+		<div class="floaticon">
+			{include file="bitpackage:liberty/services_inc.tpl" serviceLocation='icon' serviceHash=$article}
+			{if $gBitUser->hasPermission( 'p_articles_read_history' ) && !$version && $article.version>1}
+				{smartlink ititle="View History" ipackage=articles ifile="article_history.php" ibiticon="icons/appointment-new" article_id=$article.article_id}
+			{/if}
+			{if $gBitUser->hasPermission('p_articles_admin') || $gBitUser->getField('user_id') == $article.user_id}
+				<a href="{$smarty.const.ARTICLES_PKG_URL}edit.php?article_id={$article.article_id}">{biticon ipackage="icons" iname="accessories-text-editor" iexplain=edit}</a>
+			{/if}
+			{*<a style="display:none;" href="{$smarty.const.ARTICLES_PKG_URL}print.php?article_id={$article.article_id}">{biticon ipackage="icons" iname="document-print" iexplain=print}</a>*}
+			{if $gBitUser->hasPermission( 'p_articles_remove' )}
+				{smartlink ititle="Remove" ipackage=articles ifile="list.php" ibiticon="icons/edit-delete" action=remove remove_article_id=$article.article_id status_id=$smarty.request.status_id}
+			{/if}
+		</div>		
 			{if $showDescriptionsOnly and $article.has_more}
 				<h1 title="{$article.title|escape}"><a href="{$article.display_url}">{$article.title|escape}</a></h1>
 			{else}
@@ -56,7 +55,7 @@
 				</div>
 			{/if}
 
-			{* if $article.use_ratings eq 'y'}
+			{if $article.use_ratings eq 'y'}
 				<span class="rating">
 					{repeat count=$article.rating}
 						{biticon ipackage=articles iname=rating iexplain="Article Rating"}
@@ -66,7 +65,7 @@
 						{biticon ipackage=articles iname=rating_off iexplain="Article Rating"}
 					{/repeat}
 				</span>
-			{/if *}
+			{/if}
 			{* include file="bitpackage:liberty/services_inc.tpl" serviceLocation='body' serviceHash=$gContent->mInfo *}
 			
 			{if $showDescriptionsOnly}
@@ -74,15 +73,12 @@
 			{else}
 				{$article.parsed_data}
 			{/if}
-	
 			{if $showDescriptionsOnly and $article.has_more}
 				{* if $spacer}&nbsp; &bull; &nbsp;{/if}
 				{assign var=spacer value=TRUE *}
 				<em class="more"><a href="{$article.display_url}">&nbsp;{tr}read more{/tr}</a></em>
 			{/if}
-
 		</div>
-
 		<div class="footer">
 			{if $article.allow_comments eq 'y'}
 				{if $spacer}&nbsp; &bull; &nbsp;{/if}

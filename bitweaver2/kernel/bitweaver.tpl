@@ -1,4 +1,4 @@
-{include file="bitpackage:kernel/header.tpl"}
+ {include file="bitpackage:kernel/header.tpl"}
 
 {strip}
 
@@ -19,9 +19,9 @@
 
 		<div id="header">
 			{* include file="bitpackage:kernel/top.tpl" *}
-			{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
+			{* if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 				{include file="bitpackage:kernel/top_bar.tpl"}
-			{/if}
+			{/if *}
 		</div>
 
 		<div id="wrapper">
@@ -33,7 +33,9 @@
 				{if $pageError}<div class="error">{$pageError}</div>{/if}
 				{include file=$mid}
 			</div>
-			<div class="clear contentbottom" style="background-image:url(/themes/styles/bitweaver2/images/bg_contentbottom_{1|rand:2}.gif)"><!-- --></div>
+			<div class="clear contentbottom" style="background-image:url(/themes/styles/bitweaver2/images/bg_contentbottom_{1|rand:3}.gif)">
+				<img alt="" src="/themes/styles/bitweaver2/images/bg_contentbottom_4.gif" width="205" height="21" />
+			</div>
 		</div>
 
 		{* if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules *}

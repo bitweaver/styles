@@ -5,7 +5,8 @@ small			{font-size:0.8em}
 span.clear		{clear:both;display:block;overflow:hidden;width:0;height:0;line-height:0;font-size:0}
 embed, object		{display:block;clear:both}
 a img			{border:0px}
-
+q:before			{content:""}
+q:after			{content:""}
 p			{margin:12px 0;}
 div.content p		{max-width:60em}
 
@@ -24,54 +25,66 @@ div.blocks1  #wrapper	{width:100%;}
 #navigation		{float:left;width:24%}
 #extra			{clear:both;width:100%}
   
-#content			{background:#f6f6f6;padding:0 0 64px 0;border-left:1px solid #004373;border-right:10px solid #006fbf}
-	div.contentbottom	{height:114px;background-color:#006fbf;background-image:url(images/bg_contentbottom_2.gif);background-position:right top;background-repeat:no-repeat;border-right:10px solid #006fbf}
-	div.display	{margin:0 12px}
-	div.admin		{margin:0 12px}
-	div.listing	{margin:0 12px}
+#content			{background:#f6f6f6;padding:0 0 64px 0;border-left:1px solid #fff;border-right:10px solid #006fbf}
+	div.display	{margin:0 12px;padding:8px}
+	div.admin		{margin:0 12px;padding:8px}
+	div.listing	{margin:0 12px;padding:8px}
 	div.header	{text-align:center}
 	div.body		{}
 	div.content	{line-height:144%}
 	div.post		{}
-#footer			{background:#000;text-align:center}
-#footer a			{color:#fff !important;padding:16px;display:block;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
+#footer			{background:#121210;text-align:center}
+#footer a			{color:#f0f0f0 !important;padding:16px;display:block;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
+#footer a:hover		{color:#fff !important}
+div.contentbottom		{height:144px;background-color:#006fbf;background-image:url(images/bg_contentbottom_1.gif);background-position:left top;background-repeat:no-repeat}
+div.contentbottom img	{position:relative;top:0;right:10px;float:right;display:block;text-align:right}
+
+div.last_board_posts	{}
+div.last_board_posts li	{}
+div.last_board_posts cite a	{padding:0 .4em 0 0 !important;margin-left:16px;display:inline !important;color:#000 !important;font-style:normal}
+
 
 /* nav */
 #navigation		{}
+#navigation div.module img 	{display:none}
+
+#navigation div.module	{margin:16px auto;width:85%;max-width:85%;overflow:hidden}
+#navigation h3		{background:#fadc00;color:#000;padding:0 4px 0 10px;text-decoration:none;font-size:0.7em;font-weight:700;text-transform:uppercase}
+#navigation h3		{border:6px solid #006fbf;border-color:#fadc00 #006fbf #006fbf #006fbf;border-width:6px 0px 0px 6px;display:inline}
+#navigation div.modulecontent	{display:block;clear:both;margin:0 8px;padding-top:8px}
+
+li.active a.head 		{font-weight:700;color:#fadc00 !important}
+li.active a.head:visited	{font-weight:700;color:#fadc00 !important}
+
+
+
 
 
 /* extra */
-#extra			{background:#004373 url(images/bg_extra.png) no-repeat left top;height:482px;overflow:hidden}
+#extra			{background:#f3e14e;height:482px;overflow:hidden}
+#articles #extra		{background:#f3e14e url(images/bg_extra.png) no-repeat left top}
 #extra div.module		{width:22%;float:left;margin:0 0 0 16px;white-space:nowrap;overflow:hidden}
 #extra div.module h3	{color:#fadc00;margin:0;font-weight:500}
-#extra div.module li	{color:#948B46;padding:6px 0;font-size:0.8em;border-bottom:1px solid #a0964a}
-#extra div.module li:hover	{color:#e8f1fa}
+#extra div.module li	{color:#d4ba01;padding:6px 0;font-size:0.8em}
 
 #extra a.more		{border:0;font-size:1em;font-weight:500;padding:16px 0}
 #extra a.more:hover		{color:#00f411}
 
-#extra li a		{color:#000;border-bottom:1px solid #fadc00;padding-bottom:4px;background-image:url(images/bg_a_hover_extra.gif);background-repeat:no-repeat;background-position:-1600px -1600px}
-#extra li a:visited		{color:#000;border-bottom:0px solid #a0964a;padding-right:16px}
-#extra li a:hover		{color:#000;border-bottom:1px solid #00f411;text-decoration:none}
-#extra li a:visited:hover	{border-color:#fadc00;background-position:right 50%}
+#extra li a		{color:#000;border-bottom:1px solid #d4ba01;padding-bottom:4px}
+#extra li a:visited		{color:#d4ba01;font-weight:700}
+#extra li a:hover		{border-bottom:1px solid #00f411;text-decoration:none}
 
 #extra .even		{border:0px;display:block;clear:both}
 #extra .odd		{border:0px;display:block;clear:both}
 
-#extra #last_blog_posts 	{margin-top:64px}
-#extra #last_blog_posts em	{color:#000;font-style:normal}
-#extra #last_blog_posts q 	{display:none}
+#extra em			{color:#000;font-style:normal}
+#extra q 			{display:none}
+#extra var		{display:none}
 
-#extra #last_board_posts 	{margin-top:40px}
-#extra #last_board_posts em	{color:#000;font-style:normal}
-#extra #last_board_posts var	{display:none}
-
-#extra #last_modif_pages 	{margin-top:64px}
-
-#extra #articles		{margin-top:88px}
-
-
-
+#extra1			{padding-top:64px}
+#extra2			{padding-top:64px}
+#extra3			{padding-top:64px}
+#extra4			{padding-top:32px}
 
 
 
@@ -120,9 +133,10 @@ div.submit		{text-align:center}
 
 
 /* interaction */
-.floaticon		{text-align:right}
-.floaticon img		{border:1px solid #f6f6f6;margin:2px;padding:4px}
-.floaticon img:hover	{border:1px solid #fadc00}
+div.floaticon		{text-align:right}
+div.content div.floaticon	{float:right}
+div.floaticon img		{border:1px solid #f6f6f6;margin:2px;padding:4px}
+div.floaticon img:hover	{border:1px solid #fadc00}
 
 
 /* feedback */
@@ -149,7 +163,7 @@ div.formfeedback		{margin:12px;display:block;clear:both;border-bottom:1px solid 
 fieldset table		{margin:0 2%;width:96%}
 table			{border-collapse:collapse;width:99%;border-spacing:0px}
 	table.menutable h3	{text-decoration:none}
-	table.menutable td	{padding:10px 4px}
+	table.menutable td	{padding:10px 4px;background:#f6f6f6}
 	table.optionbar	{font-size:0.8em}
 	table .formlabel	{float:none;width:auto;text-align:left}
 	table .forminput	{}
@@ -158,10 +172,10 @@ th			{border-bottom:1px solid #F2F2F0;background:#fadc00;color:#000;padding:2px 
 	th a		{color:#000;font-weight:700;text-decoration:none}
 	th a:hover	{color:#fff}
 	div.admin th	{text-align:left}
-td			{padding:1px 3px}
+td			{padding:2px 4px;background:#fff}
 	td.actionicon	{text-align:right}
-	tr.odd td		{border-bottom:1px solid #fadc00}
-	tr.even td	{border-bottom:1px solid #fadc00}
+	tr.odd td		{border-bottom:1px solid #efe9c2}
+	tr.even td	{border-bottom:1px solid #efe9c2}
 	td input		{}
 tfoot 	 		{border-top:3px solid #fadc00}
 table.data tfoot td	 	{text-align:center;padding:1em 0}
@@ -173,17 +187,15 @@ table.data tfoot td	 	{text-align:center;padding:1em 0}
 
 
 /* lists */
-ul			{list-style-type:none;}
-ul	li		{list-style-type:none;}
-div.display	ul	{list-style-type:square;margin:12px 20px}
-div.display	ul li	{list-style-type:square;margin:12px 20px}
-ul.data, ul.data li.item	{list-style:none}
+ul,ol,li			{list-style-type:none}
+div.display ul		{list-style-type:square;margin:12px 20px}
+div.display ol		{list-style-type:square;margin:12px 20px}
+div.display li		{list-style-type:square;margin:12px 20px}
 ul.data			{margin:1em}
-ul.data li.item		{padding:0.5em;}
-ul.data .thumb		{float:right;margin-right:1em}
+ul.data li.item		{padding:0.5em}
+ul.data .thumb		{float:right:1em}
+li.odd, li.even		{}
 
-li.odd			{border-top:1px solid #696967;padding:1em 0;margin-bottom:-1px !important}
-li.even			{border-top:1px solid #696967;padding:1em 0;margin-bottom:-1px !important}
 #navigation ul.data li.odd,
 #navigation ul.data li.even,
 #navigation ul.data li.even a,
@@ -210,20 +222,22 @@ div.navbar ul		{list-style-type:none;display:block;clear:both}
 div.navbar ul li		{list-style-type:none;display:inline}
 
 
-/* header, footer */
+/* header */
 div.header p.description	{color:#000;clear:both;font-size:0.7em;text-transform:uppercase;font-weight:700}
-div.services		{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#ddddd0;text-align:left;-moz-border-radius:1em}
-div.date			{width:63%;float:left}
-div.stars-container		{width:36%;float:right;text-align:right}
-#content ul.stars-rating	{list-style-type:none;float:right;display:inline}
-#content ul.stars-rating li	{list-style-type:none;float:right;display:inline}
-div.stars-container	.small	{float:left;display:inline;text-align:right}
-
-div.header div.date		{}
-div.post	div.date		{}
+div.date			{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#ddddd0;text-align:left;border:3px double #f6f6f6;border-width:3px 0}
 div.date 	span.info		{padding:0 4px}
 
+/* stars */
+div.stars-container 	{float:right;width:15em;margin:0 0 0 12px;text-align:left}
+div.stars-container ul,
+div.stars-container li	{list-style-type:none !important;margin:0 !important;padding:0 !important}
+div.stars-container a	{border:0px !important}
+div.stars-container a:visited	{border:0px !important}
+div.stars-container div.small	{font-size:0.7em;color:#aaaaa0;padding-left:4px}
+
+/* footer */
 div.display div.footer	{text-align:left;font-family:monospace;display:block;clear:both;margin:0 0 12px 0;color:#bfbfbd}
+
 
 
 /* boxes modules */
@@ -237,7 +251,7 @@ div.popup	h3		{margin:3px;padding:3px;color:#969694;border-bottom:2px solid #F07
 
 
 /* code */
-pre *,code *,.code		{font-family:monospace}
+pre *,code *,.code,var	{font-family:monospace;font-style:normal}
 p.codetitle		{font-size:12px;background:#CFCA93;color:#121210;margin:12px 0 0 0;padding:0px 8px;font-family:monospace}
 pre			{font-size:12px;background:#ffffff;color:#121210;margin:0 0 12px 0;padding:4px 8px;font-family:monospace;overflow:auto}
 html>body pre		{width:auto}
@@ -249,10 +263,7 @@ html>body pre		{width:auto}
 
 
 /* articles */
-div.articles div.content div.image		{float:right;margin:0.5em 0 0.5em 1em}
-div.articles div.post div.header h1		{padding:0;margin:0;position:relative;display:block;text-align:left}
-div.articles div.post div.header h1 a 		{padding:0;margin:0;position:absolute;display:block;top:0px;color:#000}
-div.articles div.post div.header h1:before	{padding:0;margin:0;display:block;padding:1px;content:attr(title);color:#ddd}
+#articles div.image		{float:right;margin:0.5em 0 0.5em 1em}
 
 
 /* sticky */
@@ -357,13 +368,15 @@ div.navigation span a	{display:block}
 
 
 /* tabs */
-div.tabsystem 			{margin:0 8px 8px 0}
+div.tabsystem 			{margin:8px}
 div.tabsystem div.tabcontainer	{clear:both;z-index:1}
 div.tabsystem div.tabpage		{background:#fff url(images/bg_tabpage.gif) repeat-x left top;z-index:1;clear:both;border:1px solid #ccc;min-height:4em}
 div.tabcontainer h4			{background:#f2f2f0;top:1px;margin:0 6px 0 0;padding:2px 6px;z-index:1;position:relative;display:inline;float:left;white-space:nowrap;border:1px solid #ccc}
-div.tabcontainer h4.tab a		{color:#999}
+div.tabcontainer h4 a		{color:#999}
+div.tabcontainer h4 a:hover		{text-decoration:none}
 div.tabcontainer h4.tab-hover		{background:#fff}
 div.tabcontainer h4.tab-active	{border-bottom:1px solid #f2f2f0}
+div.tabcontainer h4.tab-active:hover	{background:#f2f2f0}
 div.tabcontainer h4.tab-active a	{color:#000}
 div.tabpage h1			{margin-left:8px}
 
@@ -388,22 +401,6 @@ div.tabpage h1			{margin-left:8px}
 
 
 
-
-/* menus */
-#navigation div.module a		{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
-#navigation div.module a:visited	{color:#ddddd0}
-#navigation div.module a:hover	{color:#fadc00;border-bottom:1px solid #6ba0d9;line-height:1.4em;text-decoration:none !important}
-#navigation div.module img 		{display:none}
-
-#navigation div.module		{margin:16px auto;width:85%;max-width:85%;overflow:hidden}
-#navigation h3			{background:#fadc00;color:#000;padding:0 4px 0 8px;text-decoration:none;font-size:0.7em;font-weight:700;text-transform:uppercase}
-#navigation h3			{border:6px solid #006fbf;border-color:#fadc00 #006fbf #006fbf #006fbf;border-width:6px 0px 0px 6px;display:inline}
-#navigation div.modulecontent		{display:block;clear:both;margin:0 8px;padding-top:8px}
-
-li.active a.head 			{font-weight:700;color:#fadc00 !important}
-li.active a.head:visited		{font-weight:700;color:#fadc00 !important}
-
-
 /* Pigeonholes */
 .pigeonholes .body ul ul		{margin-top:0 !important;padding-top:0 !important;}
 .pigeonholes table.data		{border-top:1px dotted #B4CFEC;}
@@ -413,6 +410,10 @@ li.active a.head:visited		{font-weight:700;color:#fadc00 !important}
 
 
 /* fisheye */
+#fisheye div.boxcontent img	{display:block;margin:24px auto}
+#fisheye p.sizes		{border-bottom:1px solid #eee;color:#eee;margin-bottom:16px;text-align:left}
+#fisheye p.sizes a		{color:#bbb !important}
+#fisheye p.sizes a:hover	{color:#bbb !important}
 
 
 /* images */
@@ -436,7 +437,7 @@ img.portrait			{float:left;margin:8px}
 /* links below logo */
 #bitweaver 		{text-align:center;overflow:hidden}
 #bitweaver ul 		{text-align:center;padding-bottom:2px}
-#bitweaver ul li		{color:#fff;display:inline;font-family:monospace;text-align:right}
+#bitweaver ul li		{color:#fff;display:inline;font-family:monospace}
 #bitweaver ul li a		{color:#6ba0d9;background:#004373;border:3px double #006fbf;padding:0 6px}
 #bitweaver ul li a:visited	{color:#6ba0d9;background:#004373;border:3px double #006fbf}
 #bitweaver ul li a:hover	{color:#fff;text-decoration:none}
@@ -445,8 +446,8 @@ img.portrait			{float:left;margin:8px}
 #bitweaver ul li.dev a:hover	{background:#3fceee}
 
 /* links above logo */
-#bitweaver #try ul 		{margin:16px 0}
-#bitweaver #try ul li	{clear:both;display:block}
+#bitweaver #try ul 		{margin:16px 0 0 16px}
+#bitweaver #try ul li	{clear:both;display:block;text-align:right}
 #bitweaver #try li a	{color:#fff;background:none;border:0px;padding:0 4px}
 #bitweaver #try li a:visited	{color:#fff;background:none;border:0px}
 #bitweaver #try li a:hover	{color:#fff;background:#3fceee;text-decoration:none}
@@ -459,8 +460,8 @@ a			{color:#000000;text-decoration:none}
 a:visited			{color:#000000;text-decoration:none}
 a:hover			{color:#0048fe;text-decoration:underline}
 
-div.content a		{border-bottom:1px solid #0048fe}
-div.content a:visited	{border-bottom:1px solid #0048fe}
+div.content a		{text-decoration:underline}
+div.content a:visited	{text-decoration:underline}
 
 div.tabpage a		{border-bottom:1px solid #0048fe}
 div.tabpage a:visited	{border-bottom:1px solid #0048fe}
@@ -470,9 +471,12 @@ a.external		{color:#0048fe;text-decoration:none;border-bottom:none}
 a.more			{}
 
 em.more			{background:#f6f6f6 url(images/arrow_more.gif) no-repeat right 50%;float:right;font-style:normal;line-height:normal}
-em.more a			{color:#000;background:#ddddd0 url(images/bg_arrow_more.gif) no-repeat -60px 50%;border-color:#f6f6f6;border-width:0.5em 0;border-style:solid;display:block;margin:0 0.5em 0 0;padding:0 0.5em 0 1em;float:left;text-decoration:none}
-em.more a:visited		{color:#000;border-color:#f6f6f6;border-bottom-width:0.5em}
-em.more a:hover		{color:#fff;border-color:#f6f6f6;border-bottom-width:0.5em}
+em.more a			{color:#ffffff;background:#000 url(images/bg_arrow_more.gif) no-repeat -60px 50%;border-color:#f6f6f6;border-width:0.5em 0;border-style:solid;display:block;margin:0 0.5em 0 0;padding:0 0.5em 0 1em;float:left;text-decoration:none !important}
+em.more a:visited		{color:#ffffff;border-color:#f6f6f6;border-bottom-width:0.5em}
+em.more a:hover		{color:#fadc00;border-color:#f6f6f6;border-bottom-width:0.5em}
+
+#articles div.body	em.more	{font-size:0.6em}
+#articles div.body	em.more a	{padding-left:1.5em;text-transform:uppercase}
 
 h1 a			{color:#000}
 h1 a:visited		{color:#000}
@@ -483,10 +487,15 @@ a.username:visited		{font-weight:700;border:0}
 a.username:hover		{font-weight:700;border:0}
 
 div.date a		{color:#fff;text-decoration:none;font-weight:700}
-div.date a:visited		{color:#fff;text-decoration:none;font-weight:700}
-div.date a:hover		{color:#000;text-decoration:none}
+div.date a:visited		{color:#fff;text-decoration:none}
+div.date a:hover		{color:#000}
 div.date:hover		{color:#000}
 div.date:hover a		{color:#000}
+
+#navigation div.module a		{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
+#navigation div.module a:visited	{color:#ddddd0}
+#navigation div.module a:hover	{color:#fadc00;border-bottom:1px solid #6ba0d9;line-height:1.4em;text-decoration:none !important}
+
 
 
 
@@ -521,3 +530,4 @@ div.date:hover a		{color:#000}
 #articles div.display div.image img	{width:64px}
 #navigation #search_box		{display:none}
 img.thumb 			{border-width:1px;border-style:solid;border-color:#ddd #999 #999 #ddd}
+#languages input[value="Cancel"]	{border:3px outset #f00;background:#c00;color:#fff;font-weight:700}

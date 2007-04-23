@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.8 2007/04/07 02:44:20 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.9 2007/04/23 06:35:01 laetzer Exp $ *}
 {strip}
 {if $gBitSystem->isFeatureActive( 'site_style_layout' )}
 	<link rel="stylesheet" title="{$style}" type="text/css" href="{$smarty.const.THEMES_PKG_URL}layouts/{$gBitSystem->getConfig('site_style_layout')}.css" media="all" />
@@ -98,7 +98,7 @@
 	
 	<!--[if lt IE 7]>
 		<style type="text/css">
-			#bitweaver #try ul li a strong {display:none}
+			#bitweaver #try ul li a em	{display:none}
 			div.bitbox:first-letter	{display:block;float:left;line-height:0.7em}
 		</style>
 	<![endif]-->	
@@ -112,21 +112,20 @@
  
 	/* splash logo column */ 
 	#bitweaver		{clear:both;margin:0;padding:0}
-	#bitweaver p		{text-align:center;color:#fff;text-transform:uppercase;padding:0;margin:0 auto;max-width:32em;font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
+	#bitweaver p		{text-align:center;color:#fff;text-transform:uppercase;padding:0 12px;margin:0 auto;max-width:32em;font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
 	#bitweaver p#logo		{background:url({/literal}{$images}{literal}/bitweaver.gif) no-repeat 50% top;height:212px;margin:0 auto}
-	#bitweaver p.rule		{background:url({/literal}{$images}{literal}/bitweaver_punchline_{/literal}{1|rand:2}{literal}.gif) no-repeat 50% top;padding-top:32px;margin:0 auto}
-	#bitweaver p.stop		{background:url({/literal}{$images}{literal}/bg_p-stop.gif) no-repeat 50% bottom;padding-bottom:48px}
+	#bitweaver p.stop		{background:url({/literal}{$images}{literal}/bg_p-stop.gif) no-repeat 50% bottom;padding-bottom:48px;padding-top:12px}
 
-	#navigation		{background:url({/literal}{$images}{literal}/bg_navigation.gif) no-repeat left top}
+	#navigation		{background:url({/literal}{$images}{literal}/bg_navigation_{/literal}{1|rand:3}{literal}.gif) no-repeat left top}
 	 
-	#bitweaver #try ul 		{text-align:left}
-	#bitweaver #try ul li	{text-align:left;margin-left:70px;color:#fff}
+	#bitweaver #try ul li	{color:#fff}
 	#bitweaver #try ul li a:hover	{border-style:dotted !important;border-color:#006fbf !important;border-width:1px 0 !important} 
-	#bitweaver #try ul #homelink	{display:none} 
+	#bitweaver #try ul #homelink	{} 
+	#bitweaver #try ul #demolink	{}
  
 	/* link list */
 	#dcd			{margin:0 0 40px 12px} 
-	#dcd ul			{width:27%;float:left;margin:56px 32px 0 0;padding:48px 0 0 0} 
+	#dcd ul			{width:27%;float:left;margin:24px 32px 0 0;padding:60px 0 0 0} 
 	#dcd ul li		{list-style-type:none;margin:0 10px;border-bottom:1px solid #fff;max-width:24em} 
 	#dcd ul li strong		{background:#ffc;font-weight:500;padding:0 4px 0 0}
 	#dcd ul li a		{text-decoration:none;display:block;border-bottom:1px solid #f6f6f6;white-space:nowrap;overflow:hidden}
@@ -148,9 +147,9 @@
  
 	/* arrows */ 
 	#dcd ul 	li em.more	{background-color:#f6f6f6;background-repeat:no-repeat;background-position:-1000 -1000;float:right;margin:4px 0;position:relative;left:0.5em} 
-	#dcd ul.doc li em.more	{background-image:url({/literal}{$images}{literal}/arrow_doc.gif)} 
-	#dcd ul.com li em.more	{background-image:url({/literal}{$images}{literal}/arrow_com.gif)} 
-	#dcd ul.dev li em.more	{background-image:url({/literal}{$images}{literal}/arrow_dev.gif)} 
+	#dcd ul.doc li em.more	{background-image:url({/literal}{$images}{literal}/hl_arrow_doc.gif);background-image:url({/literal}{$images}{literal}/arrow_doc.gif)} 
+	#dcd ul.com li em.more	{background-image:url({/literal}{$images}{literal}/hl_arrow_com.gif);background-image:url({/literal}{$images}{literal}/arrow_com.gif)} 
+	#dcd ul.dev li em.more	{background-image:url({/literal}{$images}{literal}/hl_arrow_dev.gif);background-image:url({/literal}{$images}{literal}/arrow_dev.gif)} 
  
 	#dcd ul.doc li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_doc.gif);background-position:right 50%}
 	#dcd ul.com li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_com.gif);background-position:right 50%}
