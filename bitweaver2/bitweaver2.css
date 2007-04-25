@@ -114,7 +114,7 @@ div.body div.maketoc a:hover		{color:#00f;border-color:#0000ff;text-decoration:n
 
 /* forms */
 form			{margin:0 0 8px 0;padding:12px 0 0 0}
-fieldset			{margin:0 0 8px 0;border:none}
+fieldset			{margin:0 0 8px 0;border:3px double #fff}
 legend			{color:#b00000;font-weight:700;padding:8px 16px}
 
 input			{font-family:monospace;border-width:1px}
@@ -126,7 +126,8 @@ div.row			{display:block;clear:both;margin:8px;padding:4px;border-bottom:1px dot
 div.quicktags		{}
 div.formlabel		{color:#121210;font-size:0.9em;float:left;width:20%;text-align:right}
 div.forminput		{margin-left:21%}
-div.formhelp		{color:#b00000;font-size:0.7em}
+div.formhelp		{color:#b00000;font-size:0.7em;padding-left:8px}
+	div.row .formhelp	{padding-left:0}
 div.formhelp a		{font-weight:bold}
 div.closebutton		{position:absolute;top:1px;right:1px}
 div.submit		{text-align:center}
@@ -134,16 +135,17 @@ div.submit		{text-align:center}
 
 /* interaction */
 div.floaticon		{text-align:right}
-div.content div.floaticon	{float:right}
-div.floaticon img		{border:1px solid #f6f6f6;margin:2px;padding:4px}
-div.floaticon img:hover	{border:1px solid #fadc00}
+div.content div.floaticon,
+div.post div.floaticon	{float:right}
+div.floaticon a		{padding:0 2px}
+div.floaticon a:hover	{background:#fadc00}
 
 
 /* feedback */
 div.errorpage h3		{color:#D60000;font-weight:bold}
 div.errorpage p		{text-align:center}
 
-div.formfeedback		{margin:12px;display:block;clear:both;border-bottom:1px solid white;float:physical;min-height:1em;font-weight:700;font-size:0.8em}
+div.formfeedback		{margin:12px;display:block;clear:both;border-bottom:1px solid white;min-height:1em;font-weight:700;font-size:0.8em}
 .error			{color:#b00000}
 .warning			{color:#000000}
 .success			{color:#017747}
@@ -193,7 +195,7 @@ div.display ol		{list-style-type:square;margin:12px 20px}
 div.display li		{list-style-type:square;margin:12px 20px}
 ul.data			{margin:1em}
 ul.data li.item		{padding:0.5em}
-ul.data .thumb		{float:right:1em}
+ul.data .thumb		{float:right;margin:1em}
 li.odd, li.even		{}
 
 #navigation ul.data li.odd,
@@ -228,7 +230,7 @@ div.date			{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#dd
 div.date 	span.info		{padding:0 4px}
 
 /* stars */
-div.stars-container 	{float:right;width:15em;margin:0 0 0 12px;text-align:left}
+div.stars-container 	{float:right;width:14em;margin-left:12px;text-align:left;padding:8px 12px}
 div.stars-container ul,
 div.stars-container li	{list-style-type:none !important;margin:0 !important;padding:0 !important}
 div.stars-container a	{border:0px !important}
@@ -283,8 +285,8 @@ html>body pre		{width:auto}
 
 /* comments */
 div.comment div 			{overflow:auto}
-div.comment h3			{color:#aa3f20;border-bottom:2px solid #fff;margin:32px 0 0 00;}
-div.comment div.post div.content{	font-size:0.8em;font-family:palatino,'palatino linotype';overflow:hidden;text-align:justify}
+div.comment h3			{color:#aa3f20;margin:32px 0 0 0}
+div.comment div.post div.content	{font-size:0.8em;font-family:palatino,'palatino linotype';overflow:hidden;text-align:justify}
 
 
 
@@ -531,3 +533,4 @@ div.date:hover a		{color:#000}
 #navigation #search_box		{display:none}
 img.thumb 			{border-width:1px;border-style:solid;border-color:#ddd #999 #999 #ddd}
 #languages input[value="Cancel"]	{border:3px outset #f00;background:#c00;color:#fff;font-weight:700}
+#bittopbar			{display:none}
