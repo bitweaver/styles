@@ -33,9 +33,6 @@ div.blocks1  #wrapper	{width:100%;}
 	div.body		{}
 	div.content	{line-height:144%}
 	div.post		{}
-#footer			{background:#121210;text-align:center}
-#footer a			{color:#f0f0f0 !important;padding:16px;display:block;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
-#footer a:hover		{color:#fff !important}
 div.contentbottom		{height:144px;background-color:#006fbf;background-image:url(images/bg_contentbottom_1.gif);background-position:left top;background-repeat:no-repeat}
 div.contentbottom img	{position:relative;top:0;right:10px;float:right;display:block;text-align:right}
 
@@ -61,30 +58,38 @@ li.active a.head:visited	{font-weight:700;color:#fadc00 !important}
 
 
 /* extra */
-#extra			{background:#f3e14e;height:482px;overflow:hidden}
+
+
+/* footer */
+#footer			{background:#f3e14e;height:482px;overflow:hidden}
+#footer div.module		{width:22%;float:left;margin:0 0 0 16px;white-space:nowrap;overflow:hidden}
+#footer div.module h3	{color:#fadc00;margin:0;font-weight:500}
+#footer div.module li	{color:#d4ba01;padding:6px 0;font-size:0.8em}
+
+#footer a.more		{border:0;font-size:1em;font-weight:500;padding:16px 0}
+#footer a.more:hover	{color:#00f411}
+
+#footer li a		{color:#000;border-bottom:1px solid #d4ba01;padding-bottom:4px}
+#footer li a:visited	{color:#d4ba01;font-weight:700}
+#footer li a:hover		{border-bottom:1px solid #00f411;text-decoration:none}
+
+#footer .even		{border:0px;display:block;clear:both}
+#footer .odd		{border:0px;display:block;clear:both}
+
+#footer em		{color:#000;font-style:normal}
+#footer q 		{display:none}
+#footer var		{display:none}
+
+#footer #poweredby 		{background:#121210;text-align:center;clear:both}
+#footer #poweredby a	{color:#f0f0f0 !important;padding:16px;display:block;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
+#footer #poweredby a:hover	{color:#fff !important}
+
+/* move */
 #articles #extra		{background:#f3e14e url(images/bg_extra.png) no-repeat left top}
-#extra div.module		{width:22%;float:left;margin:0 0 0 16px;white-space:nowrap;overflow:hidden}
-#extra div.module h3	{color:#fadc00;margin:0;font-weight:500}
-#extra div.module li	{color:#d4ba01;padding:6px 0;font-size:0.8em}
-
-#extra a.more		{border:0;font-size:1em;font-weight:500;padding:16px 0}
-#extra a.more:hover		{color:#00f411}
-
-#extra li a		{color:#000;border-bottom:1px solid #d4ba01;padding-bottom:4px}
-#extra li a:visited		{color:#d4ba01;font-weight:700}
-#extra li a:hover		{border-bottom:1px solid #00f411;text-decoration:none}
-
-#extra .even		{border:0px;display:block;clear:both}
-#extra .odd		{border:0px;display:block;clear:both}
-
-#extra em			{color:#000;font-style:normal}
-#extra q 			{display:none}
-#extra var		{display:none}
-
-#extra1			{padding-top:64px}
-#extra2			{padding-top:64px}
-#extra3			{padding-top:64px}
-#extra4			{padding-top:32px}
+#articles #extra1		{padding-top:64px}
+#articles #extra2		{padding-top:64px}
+#articles #extra3		{padding-top:64px}
+#articles #extra4		{padding-top:32px}
 
 
 
