@@ -116,6 +116,8 @@ div.body div.maketoc a:hover		{color:#00f;border-color:#0000ff;text-decoration:n
 form			{margin:0 0 8px 0;padding:12px 0 0 0}
 fieldset			{margin:0 0 8px 0;border:3px double #fff}
 legend			{color:#b00000;font-weight:700;padding:8px 16px}
+ul.iconlegend		{list-style:none;clear:both;padding:0.5em; margin:0 20%;background-color:#f0f0f0;border:1px inset #f6f6f6;}
+ul.iconlegend li		{list-style:none;}
 
 input			{font-family:monospace;border-width:1px}
 div.submit input		{margin:1px 4px}
@@ -535,3 +537,5 @@ a.username:hover		{font-weight:700;border:0}
 img.thumb 			{border-width:1px;border-style:solid;border-color:#ddd #999 #999 #ddd}
 #languages input[value="Cancel"]	{border:3px outset #f00;background:#c00;color:#fff;font-weight:700}
 #bittopbar			{display:none}
+
+/* vim: set ts=10: */
