@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.14 2007/01/07 16:03:03 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/bwo/bwo.css,v 1.15 2007/05/02 15:47:15 bitweaver Exp $ */
 /**
  * @author   wjames
- * @version  $Revision: 1.14 $
+ * @version  $Revision: 1.15 $
  * @theme    bwo
  * @license  LGPL
  */
@@ -23,8 +23,8 @@ small,.small	{line-height:normal;}
 #bitmain .small	{font-size:0.8em; color:#666;}
 
 /* links */
-:link,
-:visited			{text-decoration:none; color:#06c}
+:link				{text-decoration:none; color:#06c}
+:visited			{text-decoration:none; color:#048}
 :link:hover,
 :visited:hover,
 :link:active,
