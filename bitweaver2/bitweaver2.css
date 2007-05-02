@@ -226,8 +226,8 @@ div.navbar ul li		{list-style-type:none;display:inline}
 
 /* header */
 div.header p.description	{color:#000;clear:both;font-size:0.7em;text-transform:uppercase;font-weight:700}
-div.date			{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#ddddd0;text-align:left;border:3px double #f6f6f6;border-width:3px 0}
-div.date 	span.info		{padding:0 4px}
+div.header div.date			{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#ddddd0;text-align:left;border:3px double #f6f6f6;border-width:3px 0}
+div.header div.date 	span.info		{padding:0 4px}
 
 /* stars */
 div.stars-container 	{float:right;width:14em;margin-left:12px;text-align:left;padding:8px 12px}
@@ -488,11 +488,11 @@ a.username		{font-weight:700;border:0}
 a.username:visited		{font-weight:700;border:0}
 a.username:hover		{font-weight:700;border:0}
 
-div.date a		{color:#fff;text-decoration:none;font-weight:700}
-div.date a:visited		{color:#fff;text-decoration:none}
-div.date a:hover		{color:#000}
-div.date:hover		{color:#000}
-div.date:hover a		{color:#000}
+#content div.date a		{color:#fff;text-decoration:none;font-weight:700}
+#content div.date a:visited		{color:#fff;text-decoration:none}
+#content div.date a:hover		{color:#000}
+#content div.date:hover		{color:#000}
+#content div.date:hover a		{color:#000}
 
 #navigation div.module a		{color:#ffffff;font-size:0.8em;border-bottom:1px solid #197dc5;line-height:1.4em;display:block;padding:0 0 0 16px}
 #navigation div.module a:visited	{color:#ddddd0}
