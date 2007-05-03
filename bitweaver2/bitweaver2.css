@@ -17,15 +17,16 @@ h3			{font-size:1.0em;margin:12px 0 0 0;color:#000;font-weight:700}
 h4			{font-size:0.8em}
 
 
-/* gala_29.css
-#wrapper			{float:right;}
-div.blocks3  #wrapper	{width:75%;}
-div.blocks2e #wrapper	{width:100%;}
-div.blocks2n #wrapper	{width:75%;}
-div.blocks1  #wrapper	{width:100%;}
-#navigation		{float:left;width:24%}
-#extra			{clear:both;width:100%}
- */
+/* gala_01.css */
+div#wrapper		{float:left;width:100%}
+div.blocks3  #content	{margin: 0 6% 0 6%;}
+div.blocks2e #content	{margin: 0 6% 0 0;}
+div.blocks2n #content	{margin: 0  0 0 6%;}
+div.blocks1  #content	{margin: 0  0 0 0;}
+div#navigation		{float:left;width:6%;margin-left:-100%}
+div#extra			{float:left;width:6%;margin-left:-6%}
+div#footer		{clear:left;width:100%}
+
   
 #content			{background:#f6f6f6;padding:0 0 64px 0;border-left:1px solid #fff;border-right:10px solid #006fbf}
 	div.display	{margin:0 12px;padding:8px}
@@ -35,8 +36,6 @@ div.blocks1  #wrapper	{width:100%;}
 	div.body		{}
 	div.content	{line-height:144%}
 	div.post		{}
-div.contentbottom		{height:144px;background-color:#006fbf;background-image:url(images/bg_contentbottom_1.gif);background-position:left top;background-repeat:no-repeat}
-div.contentbottom img	{position:relative;top:0;right:10px;float:right;display:block;text-align:right}
 
 div.last_board_posts	{}
 div.last_board_posts li	{}
