@@ -58,40 +58,31 @@ li.active a.head:visited	{font-weight:700;color:#fadc00 !important}
 
 
 
-
 /* extra */
 
 
-/* footer */
-#footer			{background:#f3e14e;height:482px;overflow:hidden}
-#footer div.module		{width:22%;float:left;margin:0 0 0 16px;white-space:nowrap;overflow:hidden}
-#footer div.module h3	{color:#fadc00;margin:0;font-weight:500}
-#footer div.module li	{color:#d4ba01;padding:6px 0;font-size:0.8em}
 
-#footer a.more		{border:0;font-size:1em;font-weight:500;padding:16px 0}
+/* footer */
+#footer			{background:#f3e14e url(images/bg_extra.png) no-repeat left top;overflow:hidden;padding-top:64px;}
+#footer div.module		{width:30%;float:left;margin:0 0 0 3%;white-space:nowrap;height:416px;overflow:hidden}
+#footer div.module h3	{color:#b00000;margin:0;font-weight:700}
+#footer div.module li	{color:#d4ba01;font-size:0.8em}
+
+#footer a.more		{display:block;border:0;font-size:1em;font-weight:500;padding:16px 0}
 #footer a.more:hover	{color:#00f411}
 
-#footer li a		{color:#000;border-bottom:1px solid #d4ba01;padding-bottom:4px}
+#footer li a		{color:#000;border-bottom:1px solid #d4ba01;padding:5px 0 3px 3px;display:block;}
 #footer li a:visited	{color:#d4ba01;font-weight:700}
 #footer li a:hover		{border-bottom:1px solid #00f411;text-decoration:none}
-
-#footer .even		{border:0px;display:block;clear:both}
-#footer .odd		{border:0px;display:block;clear:both}
 
 #footer em		{color:#000;font-style:normal}
 #footer q 		{display:none}
 #footer var		{display:none}
 
-#footer #poweredby 		{background:#121210;text-align:center;clear:both}
-#footer #poweredby a	{color:#f0f0f0 !important;padding:16px;display:block;font-weight:700;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
-#footer #poweredby a:hover	{color:#fff !important}
 
-/* move */
-#articles #extra		{background:#f3e14e url(images/bg_extra.png) no-repeat left top}
-#articles #extra1		{padding-top:64px}
-#articles #extra2		{padding-top:64px}
-#articles #extra3		{padding-top:64px}
-#articles #extra4		{padding-top:32px}
+#footer #poweredby		{background:#121210;text-align:center;clear:both;color:#e5e5e5 !important;padding:16px;display:block;font-weight:900;font-size:1.2em;letter-spacing:0.4em;text-transform:lowercase}
+#footer #poweredby:hover	{color:#fff !important}
+
 
 
 
@@ -357,35 +348,12 @@ div.pagination form input	{border:1px solid #BFA408;background:#CFCA93}
 
 
 
-/* css driven dropdown menus - horizontal */
-.hor			{line-height:18px;}
-#nav,#nav a,#nav li ul 	{z-index:10000;}
-.hor,.hor a,.hor li ul 	{z-index:1000;}
-.ver,.ver a,.ver li ul 	{z-index:1000;}
-.hor,.hor ul		{list-style:none;}
-.hor a			{display:block;}
-.hor li			{width:auto;}
-.hor li li,
-.hor li ul		{width:13em;display:block;text-align:left;}
-.hor .head		{width:auto;padding:0 0.5em;}
-.hor li			{float:left;position:relative;}
-.hor li ul		{position:absolute;left:-999em;background:#F2F2F0;border:1px solid #969694;}
-.hor li ul ul		{margin:-20px 0 0 13em;}
-.hor .icon		{position:absolute;left:28px;top:2px;vertical-align:middle;margin-left:-26px;}
-.hor li li a		{margin:0 0 0 2em;}
-
-#nav	a		{font-size:0.8em;font-weight:500}
-
-/* css driven dropdown menus - vertical */
-.ver, .ver ul		{list-style:none;float:left;width:13em;}
-.ver li			{position:relative;}
-.ver li li		{position:relative;float:left;width:13em;}
-.ver li ul		{position:absolute;left:-999em;margin-left:11.05em;margin-top:-1.35em;background:#F2F2F0;}
-.ver li ul ul		{left:-999em;}
-.ver li a			{width:13em;w\idth:12em;display:block;}
-
-.hor li:hover ul ul,.hor li:hover ul ul ul,.ver li:hover ul ul,.ver li:hover ul ul ul	{left:-999em;}
-.hor li:hover ul,.hor li li:hover ul,.hor li li li:hover ul,.ver li:hover ul,.ver li li:hover ul,.ver li li li:hover ul	{left:auto;}
+/* top menu */
+#bittopbar		{display:none;}
+#bittopbar ul,
+#bittopbar ul li		{list-style:none;margin:0;padding:0;}
+#bittopbar ul li		{float:left;}
+#bittopbar ul li a		{font-size:0.8em;display:block;padding:1px 5px 2px 5px;}
 
 
 
@@ -558,7 +526,5 @@ a.username:hover		{font-weight:700;border:0}
 #navigation #search_box		{display:none}
 img.thumb 			{border-width:1px;border-style:solid;border-color:#ddd #999 #999 #ddd}
 #languages input[value="Cancel"]	{border:3px outset #f00;background:#c00;color:#fff;font-weight:700}
-#languages input[value="Preview"]	{border:3px outset #0f0;background:#0c0;color:#fff;font-weight:700}
-#bittopbar			{display:none}
 
 /* vim: set ts=10: */
