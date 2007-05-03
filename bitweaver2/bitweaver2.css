@@ -1,5 +1,6 @@
 *			{margin:0;padding:0}
 body			{color:#121210;font-family:sans-serif;background:#006fbf}
+#container		{max-width:1600px;margin:0 auto}
 hr			{border-top:1px solid #006FC0;clear:both;display:block;margin:12px 0} 
 small			{font-size:0.8em} 
 span.clear		{clear:both;display:block;overflow:hidden;width:0;height:0;line-height:0;font-size:0}
@@ -15,8 +16,8 @@ h2			{font-size:1.3em;margin:12px 0 0 0;color:#000;font-weight:500}
 h3			{font-size:1.0em;margin:12px 0 0 0;color:#000;font-weight:700}
 h4			{font-size:0.8em}
 
-/* gala_29.css */
-#container		{max-width:1600px;margin:0 auto}
+
+/* gala_29.css
 #wrapper			{float:right;}
 div.blocks3  #wrapper	{width:75%;}
 div.blocks2e #wrapper	{width:100%;}
@@ -24,6 +25,7 @@ div.blocks2n #wrapper	{width:75%;}
 div.blocks1  #wrapper	{width:100%;}
 #navigation		{float:left;width:24%}
 #extra			{clear:both;width:100%}
+ */
   
 #content			{background:#f6f6f6;padding:0 0 64px 0;border-left:1px solid #fff;border-right:10px solid #006fbf}
 	div.display	{margin:0 12px;padding:8px}
@@ -135,7 +137,7 @@ div.formlabel		{color:#121210;font-size:0.9em;float:left;width:20%;text-align:ri
 div.forminput		{margin-left:21%}
 div.formhelp		{color:#b00000;font-size:0.7em;padding-left:8px}
 	div.row .formhelp	{padding-left:0}
-div.formhelp a		{font-weight:bold}
+	div.formhelp a	{font-weight:bold}
 div.closebutton		{position:absolute;top:1px;right:1px}
 div.submit		{text-align:center}
 
@@ -226,15 +228,12 @@ dd			{margin:-1.3em 0 0.5em 32%}
 
 
 
-div.navbar		{text-align:center;font-family:monospace;display:block;clear:both;margin:12px 0}
-div.navbar ul		{list-style-type:none;display:block;clear:both}
-div.navbar ul li		{list-style-type:none;display:inline}
 
 
 /* header */
 div.header p.description	{color:#000;clear:both;font-size:0.7em;text-transform:uppercase;font-weight:700}
-div.header div.date			{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#ddddd0;text-align:left;border:3px double #f6f6f6;border-width:3px 0}
-div.header div.date 	span.info		{padding:0 4px}
+div.header div.date		{margin:2px 0;padding:0 4px;font-size:0.7em;color:#fff;background:#ddddd0;text-align:left;border:3px double #f6f6f6;border-width:3px 0}
+div.header div.date span.info	{padding:0 4px}
 
 /* stars */
 div.stars-container 	{float:right;width:14em;margin-left:12px;text-align:left;padding:8px 12px}
@@ -285,7 +284,6 @@ html>body pre		{width:auto}
 
 
 
-
 /* sticky */
 .stickies textarea,
 .stickies input[type='text']	{background:#ffc}
@@ -332,14 +330,29 @@ div.comment div.post div.content	{font-size:0.8em;font-family:palatino,'palatino
 
 
 
-/* structure navigation */
-div.structurebar 		{padding:16px 0 0 4px}
+/* bars */
+div.gallerybar 		{padding:16px 0 0 8px;font-family:monospace;font-size:1em}
+div.gallerybar a 		{font-weight:500 !important}
+div.gallerybar span a	{display:block;font-weight:700}
+div.gallerybar span a:hover	{background:#fff !important}
+
+div.structurebar 		{padding:16px 0 0 8px;font-family:monospace;font-size:1em}
 div.structurebar div.path 	{display:block}
 div.structurebar div.path a 	{background:none;border:0px}
+div.structurebar a 		{font-weight:500 !important}
+div.structurebar span a	{display:block;font-weight:700}
+div.structurebar span a:hover	{background:#fff !important}
 
 div.navigation span.left	{background:none;border:0px;display:block;width:49%;text-align:right;float:left}
 div.navigation span.right	{background:none;border:0px;display:block;width:49%;text-align:left;float:right}
 div.navigation span a	{display:block}
+
+div.navbar		{text-align:center;font-family:monospace;display:block;clear:both;margin:12px 0}
+div.navbar ul		{list-style-type:none;display:block;clear:both}
+div.navbar ul li		{list-style-type:none;display:inline}
+
+div.pagination		{text-align:center;font-size:0.8em;color:#C3A40E;padding:2.5em 0 1em 0;}
+div.pagination form input	{border:1px solid #BFA408;background:#CFCA93}
 
 
 
@@ -430,10 +443,10 @@ div.tabpage h1			{margin-left:8px}
 
 
 /* fisheye */
-#fisheye div.boxcontent img	{display:block;margin:24px auto}
-#fisheye p.sizes		{border-bottom:1px solid #eee;color:#eee;margin-bottom:16px;text-align:left}
-#fisheye p.sizes a		{color:#bbb !important}
-#fisheye p.sizes a:hover	{color:#bbb !important}
+#fisheye div.boxcontent img		{display:block;margin:24px auto}
+#fisheye p.sizes			{border-bottom:1px solid #eee;color:#eee;margin-bottom:16px;text-align:left}
+#fisheye p.sizes a			{color:#bbb !important}
+#fisheye p.sizes a:hover		{color:#bbb !important}
 
 
 /* images */
@@ -450,7 +463,7 @@ img.portrait			{float:left;margin:8px}
 #container #articles ul.data	li.item	.thumb,
 #container #themes ul.data	li.item	.thumb,
 #container #fisheye ul.data	li.item	.thumb	{float:right;margin:-35px -200px 0 0}
-#container 				ul.data	li.item	.date	{clear:none;}
+#container ul.data li.item .date		{clear:none;}
 
 
 
@@ -506,7 +519,7 @@ a.username		{font-weight:700;border:0}
 a.username:visited		{font-weight:700;border:0}
 a.username:hover		{font-weight:700;border:0}
 
-#content div.date a		{color:#fff;text-decoration:none;font-weight:700}
+#content div.date a			{color:#fff;text-decoration:none;font-weight:700}
 #content div.date a:visited		{color:#fff;text-decoration:none}
 #content div.date a:hover		{color:#000}
 #content div.date:hover		{color:#000}
@@ -535,14 +548,7 @@ a.username:hover		{font-weight:700;border:0}
 .clear			{clear:both}
 .quicktag			{margin:0 1px}
 #fileslist div span		{border:1px solid #969694;background:#BFBFBD;color:#8A0000;display:block;width:75%;float:left;margin:0 3px 0 0;padding:0 0 0 3px}
-.pagination		{text-align:center;font-size:0.8em;color:#C3A40E;padding:2.5em 0 1em 0;}
-.pagination form		{}
-.pagination form input	{border:1px solid #BFA408;background:#CFCA93}
-.pagination a		{}
-.gallerybar		{font-size:0.8em;color:#696967}
-.structurebar		{font-size:0.8em;color:#696967}
-.gallerybar a		{border:1px solid #969694;background:#BFBFBD}
-.structurebar a		{border:1px solid #969694;background:#BFBFBD}
+
 
 
 
@@ -552,6 +558,7 @@ a.username:hover		{font-weight:700;border:0}
 #navigation #search_box		{display:none}
 img.thumb 			{border-width:1px;border-style:solid;border-color:#ddd #999 #999 #ddd}
 #languages input[value="Cancel"]	{border:3px outset #f00;background:#c00;color:#fff;font-weight:700}
+#languages input[value="Preview"]	{border:3px outset #0f0;background:#0c0;color:#fff;font-weight:700}
 #bittopbar			{display:none}
 
 /* vim: set ts=10: */
