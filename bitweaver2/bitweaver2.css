@@ -278,8 +278,10 @@ html>body pre		{width:auto}
 
 
 /* baords */
-#boards div.mb-post div.header  {text-align:left;border-left:8px solid #dda;padding-left:10px;}
-#boards div.mb-post div.content {border-left:1px solid #dda;margin-left:7px;padding-left:10px;}
+#boards div.mb-post div.header	{text-align:left;border-left:8px solid #dda;padding-left:10px;}
+#boards div.mb-post div.content	{border-left:1px solid #dda;margin-left:7px;padding-left:10px;}
+#boards div.mb-post div.floaticon	{float:right;}
+#content .boards .mb-post 		{margin-bottom:2em;}
 
 
 
