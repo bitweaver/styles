@@ -19,11 +19,11 @@ h4			{font-size:0.8em}
 
 /* gala_01.css */
 div#wrapper		{float:left;width:100%}
-div.blocks3  #content	{margin: 0 6% 0 6%;}
+div.blocks3  #content	{margin: 0 6% 0 25%;}
 div.blocks2e #content	{margin: 0 6% 0 0;}
-div.blocks2n #content	{margin: 0  0 0 6%;}
+div.blocks2n #content	{margin: 0  0 0 25%;}
 div.blocks1  #content	{margin: 0  0 0 0;}
-div#navigation		{float:left;width:6%;margin-left:-100%}
+div#navigation		{float:left;width:25%;margin-left:-100%}
 div#extra			{float:left;width:6%;margin-left:-6%}
 div#footer		{clear:left;width:100%}
 
