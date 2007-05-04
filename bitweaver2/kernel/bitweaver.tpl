@@ -40,7 +40,6 @@
 				{include file="bitpackage:kernel/display_logo.tpl"}
 				{include file="bitpackage:kernel/bit_left.tpl"}
 			</div>
-			<span class="clear"><!-- --></span>
 		{* /if *}
 
 		{* if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules *}
