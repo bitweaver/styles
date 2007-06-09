@@ -21,7 +21,7 @@
 		{else}
 
 			<a href="/">
-				<img src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver2/style_info/preview.gif" height="120" width="120" />
+				<img src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver2/style_info/preview.gif" height="99" width="116" />
 			</a>
 			
 			<ul>
@@ -34,3 +34,9 @@
 
 	</div>
 {/strip}
+
+{if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules}
+	{section name=homeix loop=$l_modules}
+		{$l_modules[homeix].data}
+	{/section}
+{/if}

@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.9 2007/04/23 06:35:01 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/themes/header_inc.tpl,v 1.10 2007/06/09 19:51:33 laetzer Exp $ *}
 {strip}
 {if $gBitSystem->isFeatureActive( 'site_style_layout' )}
 	<link rel="stylesheet" title="{$style}" type="text/css" href="{$smarty.const.THEMES_PKG_URL}layouts/{$gBitSystem->getConfig('site_style_layout')}.css" media="all" />
@@ -88,83 +88,20 @@
 {/if}
 
 {if $gBrowserInfo.browser eq 'ie'}
-{literal}
 	<!--[if lt IE 7]>
 		<script type="text/javascript">
 			IE7_PNG_SUFFIX = ".png";
 		</script>
 		<script type="text/javascript" src="{$smarty.const.UTIL_PKG_URL}javascript/fixes/ie7/ie7-standard-p.js"></script>
+		<link rel="stylesheet" media="all" src="{$smarty.const.BIT_ROOT_URL}themes/styles/bitweaver2/bitweaver2_ie.css" />
 	<![endif]-->
-	
-	<!--[if lt IE 7]>
-		<style type="text/css">
-			#bitweaver #try ul li a em	{display:none}
-			div.bitbox:first-letter	{display:block;float:left;line-height:0.7em}
-		</style>
-	<![endif]-->	
-{/literal}
 {/if}
 
-{if $SCRIPT_NAME eq '/articles/index.php'} 
-{assign var="images" value=`$smarty.const.BIT_ROOT_URL`themes/styles/bitweaver2/images}
-{literal}
-<style type="text/css" media="all">
- 
-	/* splash logo column */ 
-	#bitweaver		{clear:both;margin:0;padding:0}
-	#bitweaver p		{text-align:center;color:#fff;text-transform:uppercase;padding:0 12px;margin:0 auto;max-width:32em;font-size:0.5em;font-family:'Palatino Linotype',Palatino,Georgia,serif;line-height:1.4em}
-	#bitweaver p#logo		{background:url({/literal}{$images}{literal}/bitweaver.gif) no-repeat 50% top;height:212px;margin:0 auto}
-	#bitweaver p.stop		{background:url({/literal}{$images}{literal}/bg_p-stop.gif) no-repeat 50% bottom;padding-bottom:48px;padding-top:12px}
-
-	#navigation		{background:url({/literal}{$images}{literal}/bg_navigation_{/literal}{1|rand:3}{literal}.gif) no-repeat left top}
-	 
-	#bitweaver #try ul li	{color:#fff}
-	#bitweaver #try ul li a:hover	{border-style:dotted !important;border-color:#006fbf !important;border-width:1px 0 !important} 
-	#bitweaver #try ul #homelink	{} 
-	#bitweaver #try ul #demolink	{}
- 
-	/* link list */
-	#dcd			{margin:0 0 40px 12px} 
-	#dcd ul			{width:27%;float:left;margin:24px 32px 0 0;padding:60px 0 0 0} 
-	#dcd ul li		{list-style-type:none;margin:0 10px;border-bottom:1px solid #fff;max-width:24em} 
-	#dcd ul li strong		{background:#ffc;font-weight:500;padding:0 4px 0 0}
-	#dcd ul li a		{text-decoration:none;display:block;border-bottom:1px solid #f6f6f6;white-space:nowrap;overflow:hidden}
-	#dcd ul.doc li a:hover	{background:url({/literal}{$images}{literal}/bg_a_hover_doc.gif) no-repeat right 50%}
-	#dcd ul.com li a:hover	{background:url({/literal}{$images}{literal}/bg_a_hover_com.gif) no-repeat right 50%}
-	#dcd ul.dev li a:hover	{background:url({/literal}{$images}{literal}/bg_a_hover_dev.gif) no-repeat right 50%}
-	#dcd ul li a:visited	{background:url({/literal}{$images}{literal}/bg_a_visited.gif) no-repeat right 50%}
-	#dcd ul.doc li a		{color:#aa9f4f}
-	#dcd ul.com li a		{color:#4da653}
-	#dcd ul.dev li a		{color:#76aab6}
-	#dcd ul.doc li a:hover	{color:#fadc00;border-bottom:1px solid #fadc00}
-	#dcd ul.com li a:hover	{color:#00f411;border-bottom:1px solid #00f411}
-	#dcd ul.dev li a:hover	{color:#3fceee;border-bottom:1px solid #3fceee}
- 
-	/* sublogos */ 
-	ul.doc			{background:#fff url({/literal}{$images}{literal}/logo_doc.gif) no-repeat left top}
-	ul.com			{background:#fff url({/literal}{$images}{literal}/logo_com.gif) no-repeat left top}
-	ul.dev			{background:#fff url({/literal}{$images}{literal}/logo_dev.gif) no-repeat left top}
- 
-	/* arrows */ 
-	#dcd ul 	li em.more	{background-color:#f6f6f6;background-repeat:no-repeat;background-position:-1000 -1000;float:right;margin:4px 0;position:relative;left:0.5em} 
-	#dcd ul.doc li em.more	{background-image:url({/literal}{$images}{literal}/hl_arrow_doc.gif);background-image:url({/literal}{$images}{literal}/arrow_doc.gif)} 
-	#dcd ul.com li em.more	{background-image:url({/literal}{$images}{literal}/hl_arrow_com.gif);background-image:url({/literal}{$images}{literal}/arrow_com.gif)} 
-	#dcd ul.dev li em.more	{background-image:url({/literal}{$images}{literal}/hl_arrow_dev.gif);background-image:url({/literal}{$images}{literal}/arrow_dev.gif)} 
- 
-	#dcd ul.doc li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_doc.gif);background-position:right 50%}
-	#dcd ul.com li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_com.gif);background-position:right 50%}
-	#dcd ul.dev li em.more:hover	{background-image:url({/literal}{$images}{literal}/hl_arrow_dev.gif);background-position:right 50%}
- 
-	#dcd ul li em.more a	{color:#fff;border-bottom-width:0.5em;border-color:#fff;padding:0 0.2em} 
-	#dcd ul li em.more a:hover	{color:#fff;border-bottom-width:0.5em;border-color:#fff} 
- 
-	#dcd ul.doc li em.more a	{background:#AA9F4F} 
-	#dcd ul.com li em.more a	{background:#4DA653} 
-	#dcd ul.dev li em.more a	{background:#76aab6} 
-	#dcd ul.doc li em.more a:hover{background:#fadc00} 
-	#dcd ul.com li em.more a:hover{background:#00f411} 
-	#dcd ul.dev li em.more a:hover{background:#3fceee} 
- 
-</style> 
-{/literal} 
+{if $SCRIPT_NAME eq '/articles/index.php'}  
+	<link rel="stylesheet" media="all" href="{$smarty.const.THEMES_PKG_URL}styles/bitweaver2/bitweaver2_index.css" />
+	<style type="text/css" media="all">
+		#navigation {ldelim}background:url({$smarty.const.THEMES_PKG_URL}styles/bitweaver2/images/bg_navigation_{1|rand:3}.gif) no-repeat left top{rdelim}
+		#articles div.wikipage div.header {ldelim}display:none{rdelim}
+		#articles div.wikipage div.floaticon{ldelim}display:none{rdelim}
+	</style>
 {/if}
