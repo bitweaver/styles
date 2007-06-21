@@ -66,25 +66,30 @@ h3					{color:#999;}
 
 
 /*** menus ***/
-#nav li li ul		{margin-top:-25px;}
-#nav .head			{color:#999;}
-#nav ul .head:visited,
-#nav ul .head		{background:#def;}
-#nav ul a:visited,
-#nav ul a			{color:#666; background:#eee; padding:2px; margin:2px 2px 0 2px; width:auto;}
-#nav ul a:hover		{color:#666; background:#fed !important; text-decoration:none;}
+.hor li li ul		{margin-top:-25px;}
+.hor .head			{color:#999;}
+.hor ul .head:visited,
+.hor ul .head		{background:#def;}
+.hor ul a:visited,
+.hor ul a			{color:#666; background:#eee; padding:2px; margin:2px 2px 0 2px; width:auto;}
+.hor ul a:hover		{color:#666; background:#fed !important; text-decoration:none;}
 
 .menu .item			{}
 
 /* don't display icons in dropdown menu */
 #navigation .menu .icon,
 #extra .menu .icon,
-#nav .icon			{display:none;}
+.hor .icon			{display:none;}
 .hor li li,
 .hor li ul			{width:14em;}
 .hor li ul			{padding-bottom:2px;}
 .hor li li a		{margin:0;}
 
+/* this is css for horizontal suckerfish menus in the top bar */
+/* this might interfere if you put a different module in here */
+#header .suckerfish	{clear:both;}
+#header .module		{border:0; padding:0; margin:0;}
+#header .module h3	{display:none;}
 
 /*** parsed elements ***/
 .bitbar				{border-bottom:1px dashed #ddd;}
