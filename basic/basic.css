@@ -29,9 +29,9 @@ a:hover			{color:#900;}
 .menu a:hover	{background-color:#e9ecef; border:1px solid #dedede;}
 
 /*** menus ***/
-.menu .icon	{vertical-align:middle;}
+.icon			{vertical-align:middle;}
 .hor .head,
-.hor .item	{padding:1px 5px;}
+.hor .item		{padding:1px 5px;}
 .hor .m-admin a	{margin:0 !important;}
 /* specify the width and positioning of 2nd level dropdowns as in admin menu */
 .hor li ul ul	{margin:-23px 0 0 9em;}
