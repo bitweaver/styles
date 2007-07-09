@@ -2,9 +2,9 @@
 body			{background:#a7afca url(images/stripes.png) repeat-x;font-family:arial,helvetica,sans-serif}
 span.clear		{clear:both;display:block;overflow:hidden;width:0;height:0;line-height:0;font-size:0}
 pre, pre *, code, code *	{background:#000;color:#cc9;font-family:monospace !important;overflow:auto} 
-acronym 		{color:#ccc;border-bottom:1px dashed #ccc;cursor:help}
+acronym 			{color:#ccc;border-bottom:1px dashed #ccc;cursor:help}
 hr			{border:0;border-top:1px solid #1e3465;background:#fff;margin:12px 0;line-height:0;height:0;font-size:0;overflow:hidden}
-div.rule		{height:50px;background:url(images/leafrule.gif)}
+div.rule			{height:50px;background:url(images/leafrule.gif)}
 img			{border:0}
 p 			{color:#000;margin:12px 0}
 div.display div.header p	{color:#000;text-align:center;font-weight:700}
@@ -20,13 +20,13 @@ h2			{color:#333333;font-size:0.9em;font-weight:700;margin:0 12px}
 
 /* layout */
 #container		{}
-#header 		{}
-#wrapper 		{width:75%;margin:0 auto;border-top:solid 15px #1e3465;height:auto}
+#header 			{}
+#wrapper 			{width:75%;margin:0 auto;border-top:solid 15px #1e3465;height:auto}
 #bittopbar		{background-image:url(images/stripes_small.gif);background-repeat:repeat-x;background-position:0 50%}
 	#bittop		{text-align:center}
 	#bittop img	{float: left; padding: 5px 65px 5px; 5px;}
 	#bittop h1 	{float: left; font-size:2.5em;color:#1e3465;letter-spacing:0.2em;font-family:'trebuchet ms',sans-serif;padding:1em 0 0 0;text-transform:uppercase;}
-	#bittop strong  {border-bottom:4px solid; padding:0 lem}
+	#bittop strong  	{border-bottom:4px solid; padding:0 lem}
 	#bittop em	{font-size:0.3em;letter-spacing:0.3em;padding:0.5em 0 0 0;display:block;clear:both;font-style:normal;background:url(images/bg_h1-em.png) no-repeat 50% 0}
 #content			{background-color:#fff;padding-bottom:64px; border-right: solid 5px #1e3465}
 	div.display	{margin:12px 12px 0px 27px}
@@ -77,14 +77,14 @@ h2			{color:#333333;font-size:0.9em;font-weight:700;margin:0 12px}
 
 /* extra */
 #extra			{margin-top:27px; background-color:#fff; border:none;}
-#extra div.module	{margin:12px}
-#extra h3		{padding-top:5px;padding-left:5px;background:#000 url(images/stripes_small.gif) repeat-x;color:#fff;border-bottom:3px solid #000}
-#extra li		{list-style:none;}
+#extra div.module		{margin:12px}
+#extra h3			{padding-top:5px;padding-left:5px;background:#000 url(images/stripes_small.gif) repeat-x;color:#fff;border-bottom:3px solid #000}
+#extra li			{list-style:none;}
 
 /* forms */
 form	*		{border-width:1px;border-color:#aaa}
-textarea		{padding:0 4px;width:98%}
-fieldset		{border:0;padding:4px;margin:16px 0 0 0}
+textarea			{padding:0 4px;width:98%}
+fieldset			{border:0;padding:4px;margin:16px 0 0 0}
 legend			{margin:12px 0;padding:0 8px;color:#fff}
 input			{padding:1px 4px}
 /*input[type="text"]	{width:63%}*/
@@ -104,21 +104,21 @@ form.minifind legend	{display:none}
 
 .row			{clear:left;margin-bottom:1em}
 .submit			{text-align:center;padding:1.5em}
-.warning		{color:#000;font-weight:700}
-.success		{color:#090}
+.warning			{color:#000;font-weight:700}
+.success			{color:#090}
 .closebutton 		{position:absolute;top:1px;right:1px}
 
 
 
 /* tables */
 table			{width:98%;border-collapse:collapse;margin:0 auto 32px auto}
-#bittopbar table	{display:inline;width:10px}
+#bittopbar table		{display:inline;width:10px}
 th 			{vertical-align:top;text-align:left;padding:1px 3px;font-weight:700}
 td			{vertical-align:top;text-align:left;padding:1px 3px}
 tr.odd, tr.even		{border-bottom:1px solid #1e3465;border-width:1px 0}
-tr.odd td		{background:#a7afca}
+tr.odd td			{background:#a7afca}
 tr.even td		{background:#cad3f3}
-tfoot td		{padding:24px}
+tfoot td			{padding:24px}
 
 table.data div.content	{background:#f4f4f0}
 table.data div.content p	{font-size:0.8em;margin:12px 6px}
@@ -136,8 +136,8 @@ ul.hor li ul ul li		{border-left:1px solid #ccc}
 ul.hor a			{display:block;font-size:0.7em;font-weight:700}
 
 ul.hor li a		{color:#fff;padding:0em 0.3em 0em 0.3em}
-ul.hor li a:visited	{color:#fff}
-ul.hor li a:hover	{background-color:#000}
+ul.hor li a:visited		{color:#fff}
+ul.hor li a:hover		{background-color:#000}
 ul.hor li.selected a	{background:transparent url(images/nav.gif) repeat-x;background-position:0 -40px}
 
 ul.hor li li a		{color:#000;background:#e0e0e0;padding:2px 6px;font-size:0.8em;letter-spacing:-0em;border-width:0;font-weight:500}
@@ -169,8 +169,8 @@ div.tabpage div.formhelp		{padding:2px 0;color:#fe6e22;cursor:help;font-size:0.9
 dl			{margin:12px 0}
 dt			{font-weight:700}
 
-ul.toc li		{list-style:none}
-ul.toc ul		{margin-left:1.5em;padding:0}
+ul.toc li			{list-style:none}
+ul.toc ul			{margin-left:1.5em;padding:0}
 
 ul.data			{margin:0;padding:0}
 ul.data li.item		{list-style:none;margin:0;padding:0}
@@ -179,14 +179,15 @@ ul.toc li 		{list-style:none}
 
 div.navbar		{font-size:9px;font-family:verdana,sans-serif;display:block;clear:both}
 div.navbar ul		{list-style-type:none;display:block;clear:both;}
-div.navbar ul li	{list-style-type:none;display:inline;padding:0 4px}
+div.navbar ul li		{list-style-type:none;display:inline;padding:0 4px}
 
 div.gallerybar		{margin:0 6px 16px 6px}
 
 
 
 /* interaction */
-div.floaticon		{text-align:right;position:absolute;top:3em;right:1em;float:right}
+div.floaticon		{float:right}
+div.display div.floaticon	{text-align:right;position:absolute;top:3em;right:1em;}
 div.floaticon a		{padding:4px 6px}
 div.floaticon a:hover	{background:#1e3465}
 
@@ -212,12 +213,12 @@ li.note,li.warning		{list-style:none}
 
 /* links */
 a			{color:#1e3465;text-decoration:none}
-a:visited		{color:#000}
+a:visited			{color:#000}
 a:hover			{color:#fff }
 
 a.username		{color:#fff;background:#a7afca;text-decoration:none}
-a.username:visited	{color:#fff;background:#1e3465}
-a.username:hover	{color:#1e3465;background:#fff}
+a.username:visited		{color:#fff;background:#1e3465}
+a.username:hover		{color:#1e3465;background:#fff}
 
 
 /* generics */
@@ -225,15 +226,15 @@ a.username:hover	{color:#1e3465;background:#fff}
 .actionicon a		{padding:0 3px}
 .norecords		{font-weight:bold}
 .popup 			{background:#fff;width:250px;border:1px solid #000;line-height:normal}
-.icon,.icon:hover	{border:0px}		
-.portrait,.avatar 	{float:right;padding:0 0 5px 5px}
+.icon,.icon:hover		{border:0px}
+.portrait,.avatar 		{float:right;padding:0 0 5px 5px}
 .menu .head		{display:block;white-space:nowrap}
 .menu .item		{display:block}
-.quicktag		{margin:1px}
+.quicktag			{margin:1px}
 .panelsubmitrow		{text-align:center}
-.storage		{float:right;clear:both;text-align:center}
+.storage			{float:right;clear:both;text-align:center}
 .clear 			{clear:both}
-.clear br		{display:none}
+.clear br			{display:none}
 .odd, .even		{}
 .code			{font-family:monospace !important;overflow:auto} 
 
