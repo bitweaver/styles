@@ -1,321 +1,321 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.8 2006/11/01 07:47:10 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.9 2007/07/13 06:55:17 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.8 $
+ * @version  $Revision: 1.9 $
  * @theme    essential
  * @license  LGPL
  */
-@media all 	{
+@media all	{
 	/* basics */
-	*									{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
-	body								{line-height:2em; font-size:12px;}
+	*				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
+	body				{line-height:2em; font-size:12px;}
 	pre *,code *,
 	.code,.codelisting,
-	.codelisting *						{font-family:monospace !important; text-align:left !important;}
-	pre									{overflow:auto; text-align:left;}
-	img									{}
-	hr									{}
-	small,.small						{font-size:0.8em;}
+	.codelisting *			{font-family:monospace !important; text-align:left !important;}
+	pre				{overflow:auto; text-align:left;}
+	img				{}
+	hr				{}
+	small,.small			{font-size:0.8em;}
 
 	/* links */
 	:link,
-	:visited							{text-decoration:none;}
+	:visited				{text-decoration:none;}
 	:link:hover,
 	:visited:hover,
 	:link:active,
-	:visited:active						{text-decoration:none;}
+	:visited:active			{text-decoration:none;}
 
 	/* titles */
-	h1,h2,h3							{padding:0; margin:0;}
-	h1									{}
-	h2									{}
-	h3									{}
+	h1,h2,h3				{padding:0; margin:0;}
+	h1				{}
+	h2				{}
+	h3				{}
 
 	/* common classes */
-	.body								{}
-	.date								{}
-	.header .date						{}
-	.content							{}
-	.post								{}
-	.preview							{}
-	.norecords							{}
-	.popup								{}
-	.highlight							{font-weight:bold;}
-	.selected							{}
-	.floaticon							{float:right;}
-	.storage							{}
-	.storage .item						{}
-	.comment,.footer					{}
-	.footer								{}
-	.pagination							{}
+	.body				{}
+	.date				{}
+	.header .date			{}
+	.content				{}
+	.post				{}
+	.preview				{}
+	.norecords			{}
+	.popup				{}
+	.highlight			{font-weight:bold;}
+	.selected				{}
+	.floaticon			{float:right;}
+	.storage				{}
+	.storage .item			{}
+	.comment,.footer			{}
+	.footer				{}
+	.pagination			{}
 
 	/* images */
-	.portrait							{}
-	.icon								{vertical-align:middle; border:0;}
-	.menuicon							{}
-	ul.small							{}
+	.portrait				{}
+	.icon				{vertical-align:middle; border:0;}
+	.menuicon				{}
+	ul.small				{}
 
 	/* tocs */
-	.maketoc							{}
-	.maketoc h3							{}
-	.maketoc a							{}
-	.maketoc ul							{}
-	.maketoc ul li						{}
-	.maketoc ul ul						{}
+	.maketoc				{}
+	.maketoc h3			{}
+	.maketoc a			{}
+	.maketoc ul			{}
+	.maketoc ul li			{}
+	.maketoc ul ul			{}
 
 	/* forms */
-	form								{margin:0; padding:0;}
-	textarea							{width:100%;}
-	input								{}
-	select								{}
-	fieldset							{}
-	legend								{font-weight:bold; margin:0 0 1.5em 0;}
-	.row								{clear:both; margin:0 0 1em 0;}
-	.submit								{text-align:center; margin:1em 0;}
-	.quicktags							{}
-	.formlabel							{float:left; font-weight:bold; width:14em; text-align:right;}
-	.forminput							{margin-left:14.5em;}
-	.formhelp							{cursor:help;}
-	.closebutton						{}
-	.error,.errorpage h3				{}
-	.warning							{}
-	.success							{}
-	.clear								{clear:both;}
+	form				{margin:0; padding:0;}
+	textarea				{width:100%;}
+	input				{}
+	select				{}
+	fieldset				{}
+	legend				{font-weight:bold; margin:0 0 1.5em 0;}
+	.row				{clear:both; margin:0 0 1em 0;}
+	.submit				{text-align:center; margin:1em 0;}
+	.quicktags			{}
+	.formlabel			{float:left; font-weight:bold; width:14em; text-align:right;}
+	.forminput			{margin-left:14.5em;}
+	.formhelp				{cursor:help;}
+	.closebutton			{}
+	.error,.errorpage h3		{}
+	.warning				{}
+	.success				{}
+	.clear				{clear:both;}
 
 	/* the small searchboxes */
-	.minifind							{width:auto;}
-	.minifind fieldset					{border:0;}
-	.minifind legend					{display:none;}
-	.minifind fieldset					{padding:0.5em; margin:0;}
+	.minifind				{width:auto;}
+	.minifind fieldset			{border:0;}
+	.minifind legend			{display:none;}
+	.minifind fieldset			{padding:0.5em; margin:0;}
 
 	/* parsed elements from the tikiwiki parser */
-	.bittable td						{}
-	.bitbox								{margin:0.5em; padding:0.5em 1em;}
-	.bitbox a							{}
-	.bitbar								{border-bottom:3px solid #eee;}
+	.bittable td			{}
+	.bitbox				{margin:0.5em; padding:0.5em 1em;}
+	.bitbox a				{}
+	.bitbar				{border-bottom:3px solid #eee;}
 
 	/* common settings for listings */
-	.odd,.even							{}
-	.odd								{}
-	.even								{}
+	.odd,.even			{}
+	.odd				{}
+	.even				{}
 
 	/* tables */
-	fieldset table						{}
-	table								{border-collapse:collapse; border-spacing:0; padding:0; margin:0; width:100%;}
-	caption								{}
-	th									{}
-	th :link, th :visited				{}
-	td.actionicon						{text-align:right;}
-	table.data							{}
-	table.optionbar						{}
-	.menutable td						{}
+	fieldset table			{}
+	table				{border-collapse:collapse; border-spacing:0; padding:0; margin:0; width:100%;}
+	caption				{}
+	th				{}
+	th :link, th :visited		{}
+	td.actionicon			{text-align:right;}
+	table.data			{}
+	table.optionbar			{}
+	.menutable td			{}
 
 	/* lists */
-	ul,ul li							{}
-	ul.data,ul.data li.item				{}
-	ul.data								{}
-	ul.data li.item						{}
-	ul.data .thumb						{}
+	ul,ul li				{}
+	ul.data,ul.data li.item		{}
+	ul.data				{}
+	ul.data li.item			{}
+	ul.data .thumb			{}
 
-	li.odd,li.even						{}
-	ul.toc,ul.toc ul					{}
-	ul.toc li							{}
-	ul.toc ul.data						{}
-	ul.toc p							{}
+	li.odd,li.even			{}
+	ul.toc,ul.toc ul			{}
+	ul.toc li				{}
+	ul.toc ul.data			{}
+	ul.toc p				{}
 
-	dl									{}
-	dt									{}
-	dd									{}
+	dl				{}
+	dt				{}
+	dd				{}
 
 	/* boxes */
-	.box								{}
-	.box h3								{}
-	.boxcontent							{}
+	.box				{}
+	.box h3				{}
+	.boxcontent			{}
 
 	/* structure navigation */
-	.path								{}
-	.navigation span					{}
-	.navigation .left					{}
-	.navigation .right					{}
-	.navigation span a					{}
+	.path				{}
+	.navigation span			{}
+	.navigation .left			{}
+	.navigation .right			{}
+	.navigation span a			{}
 
 	/* package specific list stylings */
 	.articles ul.data li.item,
 	.themes ul.data li.item,
 	.treasury ul.data li.item,
-	.fisheye ul.data li.item			{clear:both; margin:0.5em 0px 0.5em 200px;}
+	.fisheye ul.data li.item		{clear:both; margin:0.5em 0px 0.5em 200px;}
 	.articles ul.data li.item .thumb,
 	.themes ul.data li.item .thumb,
 	.treasury ul.data li.item .thumb,
-	.fisheye ul.data li.item .thumb		{float:left; margin:-20px 0 0 -200px;}
-	.fisheye .body .image				{}
+	.fisheye ul.data li.item .thumb	{float:left; margin:-20px 0 0 -200px;}
+	.fisheye .body .image		{}
 
 	/* other fisheye settings */
-	.thumb								{}
-	.fisheyegallery .thumb				{}
-	.thumb:hover						{}
-	.thumbnailblock .box				{}
-	.thumbnailblock .box:hover			{}
+	.thumb				{}
+	.fisheyegallery .thumb		{}
+	.thumb:hover			{}
+	.thumbnailblock .box		{}
+	.thumbnailblock .box:hover		{}
 	.thumbnailblock .box a:hover		{}
-	.image								{}
+	.image				{}
 
 	/* sticky notes */
 	.stickies textarea,
 	.stickies input[type='text']		{}
-	.stickynote .hox h3					{}
-	.stickynote							{}
+	.stickynote .hox h3			{}
+	.stickynote			{}
 
 	/* this is the attachment browser */
-	.attbrowser							{}
-	.attbrowser .data					{}
-	.attbrowser .data td				{}
+	.attbrowser			{}
+	.attbrowser .data			{}
+	.attbrowser .data td		{}
 }
 
-@media screen,projection,tv 	{
+@media screen,projection,tv	{
 	/* layout */
-	html								{}
-	body								{margin:0; padding:1em;}
+	html				{}
+	body				{margin:0; padding:1em;}
 
-	#container							{padding:1em;}
-	#header								{padding:1em 1em 0 1em;}
-	#wrapper							{}
+	#container			{padding:1em;}
+	#header				{padding:1em 1em 0 1em;}
+	#wrapper				{}
 	#content .display,
 	#content .edit,
 	#content .listing,
-	#content .admin						{padding:1em;}
-	#navigation							{}
-	#extra								{}
-	#footer								{text-align:center; padding:2em 0; font-size:0.8em;}
+	#content .admin			{padding:1em;}
+	#navigation			{}
+	#extra				{}
+	#footer				{text-align:center; padding:2em 0; font-size:0.8em;}
 
-	#bittop								{}
-	#bittopbar							{border:#999 solid; border-width:2px 0 0 0;}
+	#bittop				{}
+	#bittopbar			{border:#999 solid; border-width:2px 0 0 0;}
 
 	/* html tags */
-	body								{}
-	a.create							{}
-	a.external							{}
+	body				{}
+	a.create				{}
+	a.external			{}
 
 	/* headings */
-	.header								{}
-	.header h1							{}
-	.tabsystem .header h1				{}
-	.header h2							{}
-	.comment							{}
-	.comment h3							{}
-	.post								{}
-	.comment .post						{}
-	.comment .content					{}
-	.display							{}
+	.header				{}
+	.header h1			{}
+	.tabsystem .header h1		{}
+	.header h2			{}
+	.comment				{}
+	.comment h3			{}
+	.post				{}
+	.comment .post			{}
+	.comment .content			{}
+	.display				{}
 
 	/* various settings */
-	.pagination							{}
-	.pagination a						{}
+	.pagination			{}
+	.pagination a			{}
 	.gallerybar,
-	.structurebar						{}
+	.structurebar			{}
 	.gallerybar a,
-	.structurebar a						{}
-	.avatar								{}
-	.errorpage p						{}
+	.structurebar a			{}
+	.avatar				{}
+	.errorpage p			{}
 
 	/* priorities */
-	.prio1								{}
-	.prio2								{}
-	.prio3								{}
-	.prio4								{}
-	.prio5								{}
+	.prio1				{}
+	.prio2				{}
+	.prio3				{}
+	.prio4				{}
+	.prio5				{}
 
 	/* navigation bars */
-	.navbar								{height:2em; line-height:2em;}
-	.navbar ul							{padding:0; margin:0; list-style:none;}
-	.navbar ul li						{float:left; padding:0 1em;}
+	.navbar				{height:2em; line-height:2em;}
+	.navbar ul			{padding:0; margin:0; list-style:none;}
+	.navbar ul li			{float:left; padding:0 1em;}
 
 	/*** miscellaneous settings ***/
-	.quicktag							{}
+	.quicktag				{}
 
 	/* boxes and modules */
-	.box								{}
-	.box h3								{}
-	.popup								{}
-	.popup small						{}
-	.popup h3							{}
+	.box				{}
+	.box h3				{}
+	.popup				{}
+	.popup small			{}
+	.popup h3				{}
 
 	/* modules */
-	.module 							{padding:0.5em; margin:0.5em;}
-	.module h3							{}
-	.module h3 a						{}
+	.module				{padding:0.5em; margin:0.5em;}
+	.module h3			{}
+	.module h3 a			{}
 	.module ul,
-	.module ul li						{list-style:none;}
+	.module ul li			{list-style:none;}
 	.module ol,
-	.module ol li						{}
-	.module form						{}
+	.module ol li			{}
+	.module form			{}
 
 	/* multi file upload */
-	#fileslist div span					{}
+	#fileslist div span			{}
 
 	/* dynamic tree styling */
-	.DynamicTree .text					{}
-	.DynamicTree .text-active			{}
-	.DynamicTree .tree-top				{}
-	.DynamicTree .tree-wrapper1			{}
-	.DynamicTree .tree-tooltip			{}
-	.DynamicTree .navbar a				{}
-	.DynamicTree span .move				{}
+	.DynamicTree .text			{}
+	.DynamicTree .text-active		{}
+	.DynamicTree .tree-top		{}
+	.DynamicTree .tree-wrapper1		{}
+	.DynamicTree .tree-tooltip		{}
+	.DynamicTree .navbar a		{}
+	.DynamicTree span .move		{}
 
 	/* tabs */
-	.tabsystem								{margin:1em;}
-	.tabsystem .tabcontainer				{margin:0; padding:0; border:0; clear:both; z-index:1;}
+	.tabsystem			{margin:1em;}
+	.tabsystem .tabcontainer		{margin:0; padding:0; border:0; clear:both; z-index:1;}
 	.tabsystem .tabcontainer .tab,
 	.tabsystem .tabcontainer .tab-active	{position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
-	.tabsystem .tabpage						{z-index:1; clear:both;}
-	h4										{margin:0; padding:0; z-index:1;}
+	.tabsystem .tabpage			{z-index:1; clear:both;}
+	h4				{margin:0; padding:0; z-index:1;}
 
 	/* tabs design */
 	.tabsystem .tabcontainer .tab,
 	.tabsystem .tabcontainer .tab-hover,
 	.tabsystem .tabcontainer .tab-active	{top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; border:1px solid #bbb; border-bottom:0;}
-	.tabsystem .tabcontainer .tab-hover		{padding:3px 5px 1px 5px; border-top:2px solid #f60;}
+	.tabsystem .tabcontainer .tab-hover	{padding:3px 5px 1px 5px; border-top:2px solid #f60;}
 	.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:inherit; border-top:2px solid #f60;}
-	.tabsystem .tabpage						{border:1px solid #bbb; margin:0; padding:1em;}
+	.tabsystem .tabpage			{border:1px solid #bbb; margin:0; padding:1em;}
 
 	/* css driven dropdown menus - horizontal */
-	ul.hor								{line-height:3em;}
-	ul.hor .icon						{vertical-align:middle; padding:0 0.6em 0 0; margin-left:-2.2em;}
-	ul.hor ul li						{line-height:2em;}
+	ul.hor				{line-height:3em;}
+	ul.hor .icon			{vertical-align:middle; padding:0 0.6em 0 0; margin-left:-2.2em;}
+	ul.hor ul li			{line-height:2em;}
 	ul.hor,
 	ul.hor li,
-	ul.hor ul							{padding:0; margin:0; list-style:none;}
-	ul.hor a							{display:block; padding:0 0.5em;}
-	ul.hor li							{width:auto;}
+	ul.hor ul				{padding:0; margin:0; list-style:none;}
+	ul.hor a				{display:block; padding:0 0.5em;}
+	ul.hor li				{width:auto;}
 	ul.hor li li,
-	ul.hor li ul						{width:13em; display:block; text-align:left;}
-	ul.hor .head						{width:auto;}
-	ul.hor li							{float:left; position:relative;}
-	ul.hor li ul						{position:absolute; left:-999em; border:1px solid;}
-	ul.hor li ul ul						{margin:-2.1em 0 0 13em;}
-	ul.hor li li a						{margin:0 0 0 2em;}
+	ul.hor li ul			{width:13em; display:block; text-align:left;}
+	ul.hor .head			{width:auto;}
+	ul.hor li				{float:left; position:relative;}
+	ul.hor li ul			{position:absolute; left:-999em; border:1px solid;}
+	ul.hor li ul ul			{margin:-2.1em 0 0 13em;}
+	ul.hor li li a			{margin:0 0 0 2em;}
 	/* ensure dropdown is on top */
 	ul.hor,
 	ul.hor a,
-	ul.hor li ul						{z-index:1000;}
+	ul.hor li ul			{z-index:1000;}
 	/* set some background colors for visibility */
-	div#bittopbar						{background:inherit;}
-	ul.hor								{background:inherit;}
-	ul.hor li							{background:inherit;}
-	ul.hor li ul						{background:inherit;}
+	div#bittopbar			{background:inherit;}
+	ul.hor				{background:inherit;}
+	ul.hor li				{background:inherit;}
+	ul.hor li ul			{background:inherit;}
 
 	ul.hor li:hover ul ul,
-	ul.hor li:hover ul ul ul			{left:-999em;}
+	ul.hor li:hover ul ul ul		{left:-999em;}
 	ul.hor li:hover ul,
 	ul.hor li li:hover ul,
-	ul.hor li li li:hover ul			{left:auto;}
+	ul.hor li li li:hover ul		{left:auto;}
 	/* msie specific */
-	ul.hor table						{margin:-1px; width:auto; border-collapse:collapse; font-size:1em;}
+	ul.hor table			{margin:-1px; width:auto; border-collapse:collapse; font-size:1em;}
 }
 
-@media print 	{
-	body								{}
+@media print	{
+	body				{}
 	#wrapper,
-	#content							{width:100% !important;}
+	#content				{width:100% !important;}
 	#header, #navigation, #extra, #footer, .navbar,
-	.bittoc, .floaticon, .minifind		{display:none;}
+	.bittoc, .floaticon, .minifind	{display:none;}
 }
