@@ -1,9 +1,6 @@
 {strip}
 {if $serviceHash.stars_load}
 	{assign var=divid value="stars-display-`$serviceHash.content_id`"}
-	{if $gBitSystem->isFeatureActive( 'stars_use_ajax' )}
-		<script type="text/javascript">/*<![CDATA[*/ show_spinner('spinner'); /*]]>*/</script>
-	{/if}
 	<div class="stars-container" id="stars-{$serviceHash.content_id}">
 		{if $type != 'mini'}
 			{capture name=starsText}
