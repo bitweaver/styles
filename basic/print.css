@@ -1,8 +1,0 @@
-@media print {
-body		{background:#fff;}
-#bitmain	{padding:0 1em;}
-#bitbottom	{clear:both; font-size:0.8em; text-align:center;}
-/* hide stuff */
-.pageactions, .navbar, .tabcontainer, .bittoc, .floaticon, .minifind,
-#bitlogo, #bittop, #bitleft, #bitright, #bittopbar, #toplogin {display:none;}
-}
