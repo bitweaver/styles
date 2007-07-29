@@ -1,5 +1,4 @@
 @import url( ../../base.css );
-@import url( print.css );
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
  * - http://www.bitweaver.org/wiki/index.php?page_id=94
@@ -109,3 +108,10 @@ a:hover			{color:#900;}
 .maketoc ul li	{list-style:square outside;}
 .maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 
+@media print {
+body		{margin:0; padding:0;}
+.blocks1, .blocks2, .blocks3,
+#wrapper, #content	{width:100% !important; margin:0 !important; padding:0 !important;}
+#header, #navigation, #extra, #footer, .navbar, .floaticon,
+.bittoc, .minifind	{display:none;}
+}
