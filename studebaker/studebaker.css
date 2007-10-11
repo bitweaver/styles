@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.4 2007/10/11 11:20:23 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.5 2007/10/11 15:26:12 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.4 $
+ * @version  $Revision: 1.5 $
  * @theme    essential
  * @license  LGPL
  *
@@ -28,7 +28,7 @@
  * light gray shade:      #f5f5f5
  *
  * @TODO:
- * replace: pink, white, silver, gray, black
+ * replace: pink, white, silver, gray, black, orange
  */
 @media all	{
 	/* basics */
@@ -237,7 +237,7 @@
 	ul.bitmenu li.right			{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat;}
 	ul.bitmenu li a			{text-align:center; margin-top:32px; display:block; line-height:38px; color:#0b58cb; font-size:16px; text-transform:uppercase;}
 	ul.bitmenu li:hover a.parent		{color:white;}
-	ul.bitmenu li a:hover		{color:purple;}
+	ul.bitmenu li li a:hover		{background:orange;}
 	/* reverse above effects */
 	ul.bitmenu li li a			{background:transparent; margin:0; line-height:26px; font-size:12px; text-transform:none;}
 	/* logo item is special */
