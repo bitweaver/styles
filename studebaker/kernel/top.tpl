@@ -22,13 +22,38 @@
 	<h1><a href="{$smarty.const.BIT_ROOT_URL}">{$gBitSystem->getConfig('site_title')}</a></h1>
 	<h3>{$gBitSystem->getConfig('site_slogan')}</h3>
 	*}
-	<ul>
+	<ul class="bitmenu">
 		<li class="left"><!-- --></li>
-		<li><a href="">Downloads</a></li>
-		<li><a href="">Docs</a></li>
-		<li class="logo"><a href=""></a></li>
-		<li><a href="">Demo</a></li>
-		<li><a href="">Community</a></li>
+		<li><a class="parent" href="">Downloads</a>
+			<ul>
+				<li><a href="">Dogs</a></li>
+				<li><a href="">Cats</a></li>
+				<li><a href="">Horses</a></li>
+				<li><a href="">Cows</a></li>
+			</ul>
+		</li>
+		<li><a class="parent" href="">Docs</a>
+			<ul>
+				<li><a href="">Green</a></li>
+				<li><a href="">Blue</a></li>
+				<li><a href="">Pink</a></li>
+			</ul>
+		</li>
+		<li class="logo"><a href=""></a>
+			<ul>
+				<li><a href="">Green</a></li>
+				<li><a href="">Pink</a></li>
+			</ul>
+		</li>
+		<li><a class="parent" href="">Demo</a>
+		</li>
+		<li><a class="parent" href="">Community</a>
+			<ul>
+				<li><a href="">Plank</a></li>
+				<li><a href="">Prank</a></li>
+				<li><a href="">Crank</a></li>
+			</ul>
+		</li>
 		<li class="right"><!-- --></li>
 	</ul>
 </div>
