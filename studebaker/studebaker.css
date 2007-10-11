@@ -1,16 +1,34 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.3 2007/10/11 09:53:01 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.4 2007/10/11 11:20:23 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.3 $
+ * @version  $Revision: 1.4 $
  * @theme    essential
  * @license  LGPL
  *
- * colors:
+ * a couple of notes:
+ * please don't use full transparency in png files i.e.: areas where you can
+ * see thorugh the images. these areas will show up gray in MSIE 6. the reason
+ * i prefer png over other image types is good compression, transparency,
+ * quality and licensing.
+ *
+ * please add important colours to the list below. we should limit ourselves to
+ * a total of perhaps 10 colours if possible. if you want to style something
+ * but don't have a colour yet, pleas use a word such as blue, red, green and
+ * add it to the list of stuff that needs to be done.
+ * if you change a colour, please replace all occurances of it in this file at
+ * once. in vim:
+ *       move cursor to old colour 'yiw'
+ *       then type ':%s,<c-r>0,<new colour>,'
+ *
+ *
+ * colours:
  * dark blue border:      #0b58cb
  * light blue background: #a8cbfd
  *
- * stuff that needs to be replaced:
- * pink, white, silver, gray
+ * light gray shade:      #f5f5f5
+ *
+ * @TODO:
+ * replace: pink, white, silver, gray, black
  */
 @media all	{
 	/* basics */
@@ -95,7 +113,7 @@
 
 	/* common settings for listings */
 	.odd,.even			{}
-	.odd				{}
+	.odd				{background:silver;}
 	.even				{}
 
 	/* tables */
@@ -171,9 +189,10 @@
 }
 
 @media screen,projection,tv	{
-	/* layout */
 	html				{}
 	body				{margin:0; padding:0em;}
+	.codetitle			{font-weight:bold; background:pink; color:#fff; margin:1em 0 0 0; padding:3px 0 0 2.5em; border:1px solid silver; border-bottom:0;}
+	pre				{padding:0.5em; margin-top:0; background:#f5f5f5; color:#000; border:1px solid silver;}
 
 	#container			{padding:0em;}
 	#header				{padding:0em;}
@@ -186,8 +205,8 @@
 	#extra				{border-top:2px solid silver;}
 	#footer				{text-align:center; padding:2em 0; font-size:0.8em;}
 
+	/* our custom dropdown menu */
 	#bittop				{height:120px; width:876px; margin:0 auto;}
-	/* css driven dropdown menus - horizontal */
 	ul.bitmenu			{line-height:3em;}
 	ul.bitmenu ul li			{line-height:2em; padding:0; margin:0;}
 	ul.bitmenu,
@@ -199,11 +218,9 @@
 	ul.bitmenu li ul			{position:absolute; left:-999em;}
 	ul.bitmenu li ul ul			{margin:-2.1em 0 0 13em;}
 	ul.bitmenu li li a			{margin:0 0 0 2em;}
-	/* ensure dropdown is on top */
 	ul.bitmenu,
 	ul.bitmenu a,
 	ul.bitmenu li ul			{z-index:1000;}
-	/* set some background colors for visibility */
 	ul.bitmenu li ul			{background:transparent url( images/dropmenu.png ) top repeat-y; border:1px solid #0b58cb; border-top:0;}
 
 	ul.bitmenu li:hover ul ul,
@@ -223,14 +240,12 @@
 	ul.bitmenu li a:hover		{color:purple;}
 	/* reverse above effects */
 	ul.bitmenu li li a			{background:transparent; margin:0; line-height:26px; font-size:12px; text-transform:none;}
-
 	/* logo item is special */
 	ul.bitmenu li.logo			{width:120px;}
 	ul.bitmenu li.logo a		{background:transparent url( images/logo.png ) top no-repeat; margin-top:0; height:100px;}
 	ul.bitmenu li.logo:hover a,
 	ul.bitmenu li.logo a:hover		{background:transparent url( images/logo.png ) bottom no-repeat;}
 	ul.bitmenu li.logo ul		{margin-top:-90px; margin-left:-30px; border:1px solid #0b58cb;}
-	ul.bitmenu li.logo li		{}
 	ul.bitmenu li.logo:hover li a,
 	ul.bitmenu li.logo li a		{background:transparent; height:auto;}
 	ul.bitmenu li.logo li a:hover		{background:transparent;}
@@ -305,15 +320,6 @@
 
 	/* multi file upload */
 	#fileslist span			{display:block;}
-
-	/* dynamic tree styling */
-	.DynamicTree .text			{}
-	.DynamicTree .text-active		{}
-	.DynamicTree .tree-top		{}
-	.DynamicTree .tree-wrapper1		{}
-	.DynamicTree .tree-tooltip		{}
-	.DynamicTree .navbar a		{}
-	.DynamicTree span .move		{}
 
 	/* tabs */
 	.tabsystem			{margin:1em;}
