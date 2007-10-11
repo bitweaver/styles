@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.1 2007/10/10 15:38:04 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.2 2007/10/11 04:55:06 wjames5 Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    essential
  * @license  LGPL
  */
@@ -179,14 +179,14 @@
 	#extra				{border-top:2px solid silver;}
 	#footer				{text-align:center; padding:2em 0; font-size:0.8em;}
 
-	#bittop				{height:120px; width:956px; margin:0 auto;}
+	#bittop				{height:120px; width:876px; margin:0 auto;}
 	#bittop li,
 	#bittop ul			{padding:0; margin:0; list-style:none;}
-	#bittop li			{width:200px; height:100px; float:left;}
+	#bittop li			{width:180px; height:100px; float:left;}
 	#bittop li.left			{width:18px; background:transparent url( images/outside.png ) left 32px no-repeat;}
 	#bittop li.right			{width:18px; background:transparent url( images/outside.png ) right 32px no-repeat;}
-	#bittop li a			{background:transparent url( images/bar.png ) top left repeat-x; text-align:center; margin-top:32px; display:block; line-height:38px; color:#2e4878; font-size:20px;}
-	#bittop li a:hover			{color:#287024;}
+	#bittop li a			{background:transparent url( images/bar.png ) top left repeat-x; text-align:center; margin-top:32px; display:block; line-height:38px; color:#1c48ad; font-size:16px; text-transform:uppercase;}
+	#bittop li a:hover			{color:#1c82d8;}
 	#bittop li.logo			{width:120px;}
 	#bittop li.logo a			{background:transparent url( images/logo.png ) top no-repeat; margin-top:0; height:100px;}
 	#bittop li.logo a:hover		{background:transparent url( images/logo.png ) bottom no-repeat;}
