@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.5 2007/10/11 15:26:12 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.6 2007/10/24 18:00:12 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.5 $
+ * @version  $Revision: 1.6 $
  * @theme    essential
  * @license  LGPL
  *
@@ -200,9 +200,9 @@
 	#content .display,
 	#content .edit,
 	#content .listing,
-	#content .admin			{padding:1em;}
-	#navigation			{border-top:2px solid silver;}
-	#extra				{border-top:2px solid silver;}
+	#content .admin			{padding-left:5em;padding-right:5em}
+	#navigation			{padding-left:3em; padding-right:3em;}
+	#extra				{padding-left:3em; padding-right:3em;}
 	#footer				{text-align:center; padding:2em 0; font-size:0.8em;}
 
 	/* our custom dropdown menu */
