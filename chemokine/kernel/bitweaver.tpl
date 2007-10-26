@@ -17,6 +17,12 @@
 
 		<div id="header">
 			{include file="bitpackage:kernel/top.tpl"}
+
+			{if $gBitSystem->isFeatureActive( 'site_top_column' ) && $t_modules && !$gHideModules}
+				{section name=homeix loop=$t_modules}
+					{$t_modules[homeix].data}
+				{/section}
+			{/if}
 		</div>
 
 		<div id="wrapper">

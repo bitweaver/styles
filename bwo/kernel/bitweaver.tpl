@@ -22,6 +22,12 @@
 
 		{include file="bitpackage:kernel/top.tpl"}
 
+		{if $gBitSystem->isFeatureActive( 'site_top_column' ) && $t_modules && !$gHideModules}
+			{section name=homeix loop=$t_modules}
+				{$t_modules[homeix].data}
+			{/section}
+		{/if}
+
 		<div id="bitbody">
 			<div id="bitmain" class="bit-cols">
 				{include file="bitpackage:liberty/display_structure.tpl"}

@@ -14,6 +14,12 @@
 		{include file="bitpackage:kernel/top_bar.tpl"}
 	{/if}
 
+	{if $gBitSystem->isFeatureActive( 'site_top_column' ) && $t_modules && !$gHideModules}
+		{section name=homeix loop=$t_modules}
+			{$t_modules[homeix].data}
+		{/section}
+	{/if}
+
 	{if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules}
 	<div id="bitleft">
 		{section name=homeix loop=$l_modules}

@@ -37,7 +37,7 @@
 				{/if}
 			</li>
 		{/if}
-		
+
 		{foreach key=key item=menu from=$gBitSystem->mAppMenu}
 			{if $menu.menu_title && $menu.index_url && $menu.menu_template && !$menu.is_disabled}
 				<li class="m-{$key}{if $smarty.const.ACTIVE_PACKAGE eq $menu.active_package} current{/if}">
@@ -66,11 +66,5 @@
 		{/if}
 		addEvent(window, 'load', new Function('listMenu.activateMenu("nav")'));
 	/*]]>*/ </script>
-{/if}
-
-{if $gBitSystem->isFeatureActive( 'site_top_column' ) && $t_modules && !$gHideModules}
-	{section name=homeix loop=$t_modules}
-		{$t_modules[homeix].data}
-	{/section}
 {/if}
 {/strip}

@@ -37,6 +37,11 @@
 	</div>
 	<h1>{$gBitSystem->getConfig('site_title')|default:"Your Site"}</h1>
 
+	{if $gBitSystem->isFeatureActive( 'site_top_column' ) && $t_modules && !$gHideModules}
+		{section name=homeix loop=$t_modules}
+			{$t_modules[homeix].data}
+		{/section}
+	{/if}
 </div>
 
 {if ( $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules ) or ( $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules ) }

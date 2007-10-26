@@ -24,6 +24,12 @@
 				{/if}
 				{include file="bitpackage:kernel/top.tpl"}
 			{/if}
+
+			{if $gbitsystem->isfeatureactive( 'site_top_column' ) && $t_modules && !$ghidemodules}
+				{section name=homeix loop=$t_modules}
+					{$t_modules[homeix].data}
+				{/section}
+			{/if}
 		</div>
 
 		<div id="wrapper">
