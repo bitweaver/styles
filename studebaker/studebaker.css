@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.8 2007/10/25 15:56:03 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.9 2007/10/27 16:46:31 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.8 $
+ * @version  $Revision: 1.9 $
  * @theme    essential
  * @license  LGPL
  *
@@ -54,10 +54,9 @@
 	/* links */
 	:link				{text-decoration:none; color:#769fde;}
 	:link:hover			{text-decoration:none; color:#0b58cb;}
-	:link:active			{text-decoration:underline;}
 	:visited				{text-decoration:none; color:#9f763c;}
 	:visited:hover			{text-decoration:none; color:#49361b;}
-	:visted:active			{text-decoration:underline;}
+	:link:active			{text-decoration:underline;}
 
 	/* titles */
 	h1,h2,h3				{padding:5px 0; margin:0; font-weight:900; font-family:'Arial','Bitstream Vera Sans',sans-serif;}
