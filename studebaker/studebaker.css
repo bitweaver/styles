@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.14 2007/10/31 19:05:52 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.15 2007/10/31 21:33:03 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.14 $
+ * @version  $Revision: 1.15 $
  * @theme    essential
  * @license  LGPL
  *
@@ -27,7 +27,7 @@
  *
  * dark blue:    #003b9a
  * blue:         #326cae
- * light blue:   #dce4fb
+ * light blue:   #d7e7fd
  *
  * dark brown:   #49361b
  * brown:        #9f763c
@@ -123,7 +123,7 @@
 	/* common settings for listings */
 	.odd,.even			{}
 	.odd				{background:#f5f5f5;}
-	.even				{background:#dce4fb;}
+	.even				{background:#d7e7fd;}
 
 	/* tables */
 	fieldset table			{}
@@ -177,7 +177,7 @@
 	.fisheye ul.data li.item .thumb	{float:left; margin:-20px 0 0 -200px;}
 	.fisheye .body .image		{}
 	.display div.header h1		{border-bottom:0}
-	.mb-post .wrapper			{padding: 2em 2em 2em 2em;border-bottom:1px solid #003b9a}
+	.mb-post .wrapper			{padding: 2em 2em 2em 2em;border-bottom:1px solid #003b9a;background:#d7e7fd}
 
 	/* other fisheye settings */
 	.thumb				{}
@@ -215,7 +215,8 @@
 	#content .admin			{padding:1em;}
 	#navigation			{}
 	#extra				{}
-	#footer				{text-align:center; padding:2em 0; font-size:0.8em;}
+	#footer				{}
+	#bitbottom			{clear:both; text-align:center; margin:1em;}
 
 	#bitlogin				{position:absolute; top:0; right:0;}
 
@@ -326,11 +327,13 @@
 	.module				{padding:1em 0.5em; border-bottom:2px solid #c0c0c0;}
 	.module h3			{}
 	.module h3 a			{}
-	.module ul			{margin:0 0.5em 0 1em; padding:0;}
-	.module ul li			{margin:0; padding:0;}
+	.module ul			{margin:0 0.5em 0 1em; padding:0; list-style:none}
+	.module ul li			{margin:0 0 0 -1em; padding:3px;}
 	.module ol			{margin:0 0.5em 0 1em; padding:0;}
 	.module ol li			{margin:0 0 0 1em; padding:0;}
 	.module form			{}
+
+	#footer .module			{width:33%; float:left;}
 
 	/* multi file upload */
 	#fileslist span			{display:block;}
