@@ -4,7 +4,7 @@
 	<div id="bitlogin">
 		{if $gBitUser->isRegistered()}
 			{tr}Welcome{/tr}, <strong>{displayname hash=$gBitUser->mInfo}</strong>
-			<a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
+			&nbsp;[<a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>]
 		{else}
 			<a href="{$smarty.const.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
 			{if $gBitSystem->isFeatureActive( 'users_allow_register' )}
