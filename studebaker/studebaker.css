@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.10 2007/10/31 16:39:52 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.11 2007/10/31 16:54:57 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.10 $
+ * @version  $Revision: 1.11 $
  * @theme    essential
  * @license  LGPL
  *
@@ -25,8 +25,8 @@
  * white:        #ffffff
  * black:        #000000
  *
- * dark blue:    #0b58cb
- * blue:         #769fde
+ * dark blue:    #003b9a
+ * blue:         #326cae
  * light blue:   #dce4fb
  *
  * dark brown:   #49361b
@@ -52,8 +52,8 @@
 	small,.small			{font-size:0.8em;}
 
 	/* links */
-	:link				{text-decoration:none; color:#769fde;}
-	:link:hover			{text-decoration:none; color:#0b58cb;}
+	:link				{text-decoration:none; color:#326cae;}
+	:link:hover			{text-decoration:none; color:#003b9a;}
 	:visited				{text-decoration:none; color:#9f763c;}
 	:visited:hover			{text-decoration:none; color:#49361b;}
 	:link:active			{text-decoration:underline;}
@@ -129,7 +129,7 @@
 	fieldset table			{}
 	table				{border-collapse:collapse; border-spacing:0; width:100%;}
 	caption				{}
-	th				{background:#0b58cb; color:#f5f5f5;}
+	th				{background:#003b9a; color:#f5f5f5;}
 	th :link, th :visited		{color:#ffbb5e;}
 	th :link:hover, th :visited:hover	{color:#ffbb5e;}
 	td.actionicon			{text-align:right;}
@@ -232,7 +232,7 @@
 	ul.bitmenu,
 	ul.bitmenu a,
 	ul.bitmenu li ul			{z-index:1000;}
-	ul.bitmenu li ul			{background:transparent url( images/dropmenu.png ) top repeat-y; border:1px solid #0b58cb; border-top:0;}
+	ul.bitmenu li ul			{background:transparent url( images/dropmenu.png ) top repeat-y; border:1px solid #003b9a; border-top:0;}
 
 	ul.bitmenu li:hover ul ul,
 	ul.bitmenu li:hover ul ul ul		{left:-999em;}
@@ -246,7 +246,7 @@
 	ul.bitmenu li			{background:transparent url( images/bar.png ) 0 32px repeat-x; width:180px; float:left;}
 	ul.bitmenu li.left			{width:18px; height:70px; background:transparent url( images/outside.png ) left 32px no-repeat;}
 	ul.bitmenu li.right			{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat;}
-	ul.bitmenu li a			{text-align:center; margin-top:32px; display:block; line-height:38px; color:#0b58cb; font-size:16px; text-transform:uppercase;}
+	ul.bitmenu li a			{text-align:center; margin-top:32px; display:block; line-height:38px; color:#003b9a; font-size:16px; text-transform:uppercase;}
 	ul.bitmenu li:hover a.parent		{color:#ffffff;}
 	ul.bitmenu li li a:hover		{background:#ffbb5e;}
 	/* reverse above effects */
@@ -256,7 +256,7 @@
 	ul.bitmenu li.logo a		{background:transparent url( images/logo.png ) top no-repeat; margin-top:0; height:100px;}
 	ul.bitmenu li.logo:hover a,
 	ul.bitmenu li.logo a:hover		{background:transparent url( images/logo.png ) bottom no-repeat;}
-	ul.bitmenu li.logo ul		{margin-top:-90px; margin-left:-30px; border:1px solid #0b58cb;}
+	ul.bitmenu li.logo ul		{margin-top:-90px; margin-left:-30px; border:1px solid #003b9a;}
 	ul.bitmenu li.logo:hover li a,
 	ul.bitmenu li.logo li a		{background:transparent; height:auto;}
 	ul.bitmenu li.logo li a:hover		{background:transparent;}

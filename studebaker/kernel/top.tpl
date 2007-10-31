@@ -15,25 +15,31 @@
 	<ul class="bitmenu">
 		<li class="left"><!-- --></li>
 		<li><a class="parent" href="">Downloads</a>
+{*
 			<ul>
 				<li><a href="">Dogs</a></li>
 				<li><a href="">Cats</a></li>
 				<li><a href="">Horses</a></li>
 				<li><a href="">Cows</a></li>
 			</ul>
+*}
 		</li>
 		<li><a class="parent" href="">Docs</a>
+{*
 			<ul>
 				<li><a href="">Green</a></li>
 				<li><a href="">Blue</a></li>
 				<li><a href="">Pink</a></li>
 			</ul>
+*}
 		</li>
 		<li class="logo"><a href=""></a>
+{*
 			<ul>
 				<li><a href="">Green</a></li>
 				<li><a href="">Pink</a></li>
 			</ul>
+*}
 		</li>
 		<li><a class="parent" href="">Demo</a>
 		</li>
