@@ -1,6 +1,5 @@
 {strip}
 <div id="bittop">
-	
 	<div id="bitlogin">
 		{if $gBitUser->isRegistered()}
 			{tr}Welcome{/tr}, <strong>{displayname hash=$gBitUser->mInfo}</strong>
@@ -12,28 +11,27 @@
 			{/if}
 		{/if}
 	</div>
+
 	<ul class="bitmenu">
 		<li class="left"><!-- --></li>
-		<li><a class="parent" href="">Downloads</a>
-{*
+		<li><a class="parent" href="/articles/45">Downloads</a>
 			<ul>
-				<li><a href="">Dogs</a></li>
-				<li><a href="">Cats</a></li>
-				<li><a href="">Horses</a></li>
+				<li><a href="/wiki/bitweaverRequirements">Requirements</a></li>
+				<li><a href="/wiki/InstallbitweaverDoc">Installation</a></li>
+				<li><a href="/wiki/bitweaver+R1+to+R2+Upgrade">R1 to R2 Upgrade</a></li>
 				<li><a href="">Cows</a></li>
 			</ul>
-*}
 		</li>
-		<li><a class="parent" href="">Docs</a>
-{*
+		<li><a class="parent" href="/wiki/documentation">Docs</a>
 			<ul>
-				<li><a href="">Green</a></li>
-				<li><a href="">Blue</a></li>
-				<li><a href="">Pink</a></li>
+				<li><a href="/wiki/Bitweaver+Overview">Overview</a></li>
+				<li><a href="/wiki/Bitweaver+Features">Features</a></li>
+				<li><a href="/wiki/support">Support</a></li>
+				<li><a href="/index.php?structure_id=39">Roadmap</a></li>
+				<li><a href="/wiki/developer+center#Tutorials">Developer Tutorials</a></li>
 			</ul>
-*}
 		</li>
-		<li class="logo"><a href=""></a>
+		<li class="logo"><a href="/"></a>
 {*
 			<ul>
 				<li><a href="">Green</a></li>
@@ -42,12 +40,18 @@
 *}
 		</li>
 		<li><a class="parent" href="">Demo</a>
-		</li>
-		<li><a class="parent" href="">Community</a>
 			<ul>
-				<li><a href="">Plank</a></li>
-				<li><a href="">Prank</a></li>
-				<li><a href="">Crank</a></li>
+				<li><a href="/wiki/Screenshots">Screenshots</a></li>
+				<li><a href="/wiki/bitweaver_sites">Sites using bitweaver</a></li>
+			</ul>
+		</li>
+		<li><a class="parent" href="/wiki/developer+center">Community</a>
+			<ul>
+				<li><a href="/articles/">News</a></li>
+				<li><a href="/wiki/MailingLists">Mailing Lists</a></li>
+				<li><a href="/wiki/ConnectingToIrc">Chat on IRC</a></li>
+				<li><a href="/blogs/">Development Blogs</a></li>
+				<li><a href="/forums/">Forums</a></li>
 			</ul>
 		</li>
 		<li class="right"><!-- --></li>
