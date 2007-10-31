@@ -3,7 +3,7 @@
 	<div id="bitlogin">
 		{if $gBitUser->isRegistered()}
 			{tr}Welcome{/tr}, <strong>{displayname hash=$gBitUser->mInfo}</strong>
-			&nbsp;[<a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>]
+			&nbsp;[<a href="{$smarty.const.USERS_PKG_URL}my.php">My bitweaver</a> &bull; {if $gBitUser->isAdmin()}<a href="{$smarty.const.KERNEL_PKG_URL}admin/">Admin</a> &bull; {/if}<a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>]
 		{else}
 			<a href="{$smarty.const.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
 			{if $gBitSystem->isFeatureActive( 'users_allow_register' )}
@@ -31,13 +31,7 @@
 				<li><a href="/wiki/developer+center#Tutorials" title="Expand your horizons">Developer Tutorials</a></li>
 			</ul>
 		</li>
-		<li class="logo"><a href="/"></a>
-{*
-			<ul>
-				<li><a href="">Green</a></li>
-				<li><a href="">Pink</a></li>
-			</ul>
-*}
+		<li class="logo"><a href="{$smarty.const.BIT_ROOT_URL}"></a>
 		</li>
 		<li><a class="parent" href="" title="Live Demo Coming Soon">Demo</a>
 			<ul>
