@@ -1,10 +1,13 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.1 2007/10/31 21:34:52 wjames5 Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.2 2007/10/31 22:06:13 wjames5 Exp $ *}
 {strip}
 	{if $gBitUser->IsRegistered()}
 		{assign var='nameTitle' value=$gBitUser->mInfo.login}
 		{bitmodule title="Welcome $nameTitle" name="login_box"}
 		<div class="row">
 			<ul>
+				<li><a href="{$smarty.const.WIKI_PKG_URL}edit.php">Create New Documentation</a></li>
+				<li><a href="/photos/list_galleries.php?user_id={$gBitUser->mInfo.user_id}">Go To Your Image Galleries</a><li>
+				<li><a href="/photos/edit.php">Create New Image Gallery</a></li>
 				<li><a href="{$smarty.const.USERS_PKG_URL}index.php?home={$gBitUser->mInfo.login}">Go To Your Blog</a></li>
 				<li><a href="{$smarty.const.BLOGS_PKG_URL}post.php">Create New Blog Post</a></li>
 			</ul>
@@ -57,13 +60,13 @@
 			{/if}
 
 			<div class="row submit">
-				<input type="image" name="login" src="{$smarty.const.THEMES_STYLE_URL}images/login.jpg" value="{tr}Log in{/tr}" />
+				<input type="submit" name="login" value="{tr}Log in{/tr}" />
 			</div>
 
 			{if $gBitSystem->isFeatureActive('users_allow_register')}
-				<div class="lralogin">
+				<div class="login">
 					Don't have an Account? Creating one is easy!<br />
-					<a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}Blog With Us{/tr} &raquo;</a>
+					<a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}Register{/tr} &raquo;</a>
 				</div>
 			{/if}
 		{/form}
