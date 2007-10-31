@@ -19,14 +19,13 @@
 				<li><a href="/wiki/bitweaverRequirements">Requirements</a></li>
 				<li><a href="/wiki/InstallbitweaverDoc">Installation</a></li>
 				<li><a href="/wiki/bitweaver+R1+to+R2+Upgrade">R1 to R2 Upgrade</a></li>
-				<li><a href="">Cows</a></li>
 			</ul>
 		</li>
 		<li><a class="parent" href="/wiki/documentation">Docs</a>
 			<ul>
 				<li><a href="/wiki/Bitweaver+Overview">Overview</a></li>
 				<li><a href="/wiki/Bitweaver+Features">Features</a></li>
-				<li><a href="/wiki/support">Support</a></li>
+				<li><a href="/wiki/bitweaverFAQ">FAQs</a></li>
 				<li><a href="/index.php?structure_id=39">Roadmap</a></li>
 				<li><a href="/wiki/developer+center#Tutorials">Developer Tutorials</a></li>
 			</ul>
@@ -50,6 +49,7 @@
 				<li><a href="/articles/">News</a></li>
 				<li><a href="/wiki/MailingLists">Mailing Lists</a></li>
 				<li><a href="/wiki/ConnectingToIrc">Chat on IRC</a></li>
+				<li><a href="/wiki/support">Support</a></li>
 				<li><a href="/blogs/">Development Blogs</a></li>
 				<li><a href="/forums/">Forums</a></li>
 			</ul>
