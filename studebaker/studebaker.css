@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.17 2007/11/01 09:58:44 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.18 2007/11/01 19:41:23 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.17 $
+ * @version  $Revision: 1.18 $
  * @theme    essential
  * @license  LGPL
  *
@@ -293,12 +293,12 @@
 	.errorpage p			{}
 
 	/* tocs */
-	.maketoc				{float:right; border:2px solid #ffbb5e; width:200px; background:#fff4d9; padding-bottom:1em;}
+	.maketoc				{float:right; border:2px solid #ffbb5e; width:240px; background:#fff4d9; padding-bottom:1em; margin:0 0 5px 5px;}
 	.maketoc h3			{background:#ffbb5e; padding:3px 10px; font-size:1em; margin-bottom:1em;}
 	.maketoc a			{}
-	.maketoc ul			{margin:0 0 0 0.5em; padding:0 1em;}
+	.maketoc ul			{margin:0 0 0 0.5em; padding:0 1em; color:#ffbb5e;}
 	.maketoc ul,
-	.maketoc ul li			{list-style:none;}
+	.maketoc ul li			{}
 	.maketoc ul ul			{}
 
 	/* priorities */
