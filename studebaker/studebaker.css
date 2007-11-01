@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.16 2007/11/01 07:14:24 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.17 2007/11/01 09:58:44 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.16 $
+ * @version  $Revision: 1.17 $
  * @theme    essential
  * @license  LGPL
  *
@@ -75,7 +75,7 @@
 	.popup				{}
 	.highlight			{font-weight:bold;}
 	.selected				{}
-	.floaticon			{float:right;}
+	.floaticon			{float:right; text-align:right;}
 	.storage				{}
 	.storage .item			{}
 	.comment,.footer			{}
@@ -170,7 +170,7 @@
 	.themes ul.data li.item,
 	.treasury ul.data li.item,
 	.fisheye ul.data li.item		{clear:both; margin:0.5em 0px 0.5em 200px;}
-	.articles .post .image		{float:right;padding:5px;}
+	.articles .post .image		{float:right;margin:0 0 5px 5px;}
 	.articles ul.data li.item .thumb,
 	.themes ul.data li.item .thumb,
 	.treasury ul.data li.item .thumb,
@@ -267,8 +267,8 @@
 
 	/* html tags */
 	body				{}
-	a.create				{}
-	a.external			{}
+	a.create				{font-style:italic;}
+	a.external			{font-style:italic;}
 
 	/* headings */
 	.header				{margin-bottom:10px;}
@@ -277,7 +277,7 @@
 	.header h2			{}
 	.comment				{}
 	.comment h3			{}
-	.post				{padding-bottom:5em;}
+	.post				{padding-bottom:5em; clear:both;}
 	.comment .post			{}
 	.comment .content			{}
 	.display				{}
