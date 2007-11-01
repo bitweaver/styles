@@ -1,29 +1,28 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.3 2007/10/31 22:16:23 wjames5 Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.4 2007/11/01 07:14:04 bitweaver Exp $ *}
 {strip}
 	{if $gBitUser->IsRegistered()}
 		{assign var='nameTitle' value=$gBitUser->mInfo.login}
 		{bitmodule title="Welcome $nameTitle" name="login_box"}
 		<div class="row">
 			<ul>
-				<li><a href="/users/my.php">My bitweaver</a><li>
+				<li><a href="/users/my.php">My bitweaver</a></li>
 				<li><a href="{$smarty.const.WIKI_PKG_URL}edit.php">Create New Documentation</a></li>
-				<li><a href="/photos/list_galleries.php?user_id={$gBitUser->mInfo.user_id}">Go To Your Image Galleries</a><li>
-				<li><a href="/photos/edit.php">Create New Image Gallery</a></li>
-				<li><a href="{$smarty.const.USERS_PKG_URL}index.php?home={$gBitUser->mInfo.login}">Go To Your Blog</a></li>
-				<li><a href="{$smarty.const.BLOGS_PKG_URL}post.php">Create New Blog Post</a></li>
+				{if $gBitUser->isAdmin()}
+				<li><a href="{$smarty.const.KERNEL_PKG_URL}admin/">Administration</a></li>
+				{/if}
 			</ul>
 		</div>
 		<div class="row">
 			{* {tr}Logged in as{/tr}: <strong>{displayname}</strong><br />*}
-			<a href="{$smarty.const.USERS_PKG_URL}logout.php"><img alt="{tr}Logout{/tr}" title="{tr}Logout{/tr}" src="{$smarty.const.THEMES_STYLE_URL}images/logout.jpg" /></a>
+			<a href="{$smarty.const.USERS_PKG_URL}logout.php">{biticon iname="system-log-out" iexplain="Logout"}</a>
 		</div>
-		{if $gBitUser->hasPermission( 'p_users_admin' )}
+		{* a bit verbose - use users/ listing and click sunglasses! if $gBitUser->hasPermission( 'p_users_admin' )}
 			<div class="row">
 				{form ipackage=users ifile="admin/index.php"}
 					<input type="text" name="assume_user" value="{tr}Username{/tr}" id="assume_user" size="15" onblur="if (this.value == '') {ldelim}this.value = '{tr}Username{/tr}';{rdelim}" onfocus="if (this.value == '{tr}Username{/tr}') {ldelim}this.value = '';{rdelim}" /> <input type="submit" name="confirm" value="{tr}Assume{/tr}" />
 				{/form}
 			</div>
-		{/if}
+		{/if *}
 		{/bitmodule}
 	{else}
 		{bitmodule title="$moduleTitle" name="login_box"}
