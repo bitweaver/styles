@@ -1,28 +1,17 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.4 2007/11/01 07:14:04 bitweaver Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.5 2007/11/01 07:33:16 squareing Exp $ *}
 {strip}
 	{if $gBitUser->IsRegistered()}
 		{assign var='nameTitle' value=$gBitUser->mInfo.login}
-		{bitmodule title="Welcome $nameTitle" name="login_box"}
-		<div class="row">
+		{bitmodule notra=1 title="Welcome $nameTitle" name="login_box"}
 			<ul>
-				<li><a href="/users/my.php">My bitweaver</a></li>
-				<li><a href="{$smarty.const.WIKI_PKG_URL}edit.php">Create New Documentation</a></li>
+				<li><a href="{$smarty.const.USERS_PKG_URL}my.php">{biticon iname="go-home" iexplain="My bitweaver"} {tr}My bitweaver{/tr}</a></li>
+				<li><a href="{$smarty.const.WIKI_PKG_URL}edit.php">{biticon iname="document-new" iexplain="Create New Documentation"} {tr}Create New Documentation{/tr}</a></li>
+				<li><a href="{$smarty.const.BLOGS_PKG_URL}post.php">{biticon iname="mail-message-new" iexplain="Write Blog Post"} {tr}Write Blog Post{/tr}</a></li>
 				{if $gBitUser->isAdmin()}
-				<li><a href="{$smarty.const.KERNEL_PKG_URL}admin/">Administration</a></li>
+					<li><a href="{$smarty.const.KERNEL_PKG_URL}admin/">{biticon iname="preferences-system" iexplain="Administration"} {tr}Administration{/tr}</a></li>
 				{/if}
+				<li><a href="{$smarty.const.USERS_PKG_URL}logout.php">{biticon iname="system-log-out" iexplain="Logout"} {tr}Logout{/tr}</a></li>
 			</ul>
-		</div>
-		<div class="row">
-			{* {tr}Logged in as{/tr}: <strong>{displayname}</strong><br />*}
-			<a href="{$smarty.const.USERS_PKG_URL}logout.php">{biticon iname="system-log-out" iexplain="Logout"}</a>
-		</div>
-		{* a bit verbose - use users/ listing and click sunglasses! if $gBitUser->hasPermission( 'p_users_admin' )}
-			<div class="row">
-				{form ipackage=users ifile="admin/index.php"}
-					<input type="text" name="assume_user" value="{tr}Username{/tr}" id="assume_user" size="15" onblur="if (this.value == '') {ldelim}this.value = '{tr}Username{/tr}';{rdelim}" onfocus="if (this.value == '{tr}Username{/tr}') {ldelim}this.value = '';{rdelim}" /> <input type="submit" name="confirm" value="{tr}Assume{/tr}" />
-				{/form}
-			</div>
-		{/if *}
 		{/bitmodule}
 	{else}
 		{bitmodule title="$moduleTitle" name="login_box"}
