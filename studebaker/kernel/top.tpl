@@ -1,17 +1,5 @@
 {strip}
 <div id="bittop">
-	<div id="bitlogin">
-		{if $gBitUser->isRegistered()}
-			{tr}Welcome{/tr}, <strong>{displayname hash=$gBitUser->mInfo}</strong>
-			&nbsp;[<a href="{$smarty.const.USERS_PKG_URL}my.php">My bitweaver</a> &bull; {if $gBitUser->isAdmin()}<a href="{$smarty.const.KERNEL_PKG_URL}admin/">Admin</a> &bull; {/if}<a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>]
-		{else}
-			<a href="{$smarty.const.USERS_PKG_URL}login.php">{tr}login{/tr}</a>
-			{if $gBitSystem->isFeatureActive( 'users_allow_register' )}
-				| <a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}register{/tr}</a> 
-			{/if}
-		{/if}
-	</div>
-
 	<ul class="bitmenu">
 		<li class="left"><!-- --></li>
 		<li><a class="parent" href="/articles/45" title="Get the latest release!">Downloads</a>
