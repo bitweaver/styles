@@ -30,11 +30,12 @@
 		<li><a class="parent" href="/wiki/developer+center" title="Get involved!">Community</a>
 			<ul>
 				<li><a href="/articles/" title="The latest on development">News</a></li>
-				<li><a href="/wiki/MailingLists" title="Notifications">Mailing Lists</a></li>
 				<li><a href="/wiki/ConnectingToIrc" title="Where the development action is">Chat on IRC</a></li>
-				<li><a href="/wiki/support" title="Get Help!">Support</a></li>
-				<li><a href="/blogs/" title="Musings from the front lines">Development Blogs</a></li>
 				<li><a href="/forums/" title="Talk amongst yourselves">Forums</a></li>
+				<li><a href="/wiki/MailingLists" title="Notifications">Mailing Lists</a></li>
+				<li><a href="/blogs/" title="Musings from the front lines">Development Blogs</a></li>
+				<li><a href="{$smarty.const.FISHEYE_PKG_URL}" title="Show us what you got!">Photos</a></li>
+				<li><a href="/wiki/support" title="Get Help!">Support</a></li>
 			</ul>
 		</li>
 		<li class="right"><!-- --></li>
