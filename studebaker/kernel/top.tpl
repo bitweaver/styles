@@ -2,7 +2,7 @@
 <div id="bittop">
 	<ul class="bitmenu">
 		<li class="left"><!-- --></li>
-		<li><a class="parent" href="/articles/45" title="Get the latest release!">Downloads</a>
+		<li><a class="parent" href="/wiki/welcome+to+bitweaver.org" title="Get the latest release!">Downloads</a>
 			<ul>
 				<li><a href="/wiki/bitweaverRequirements" title="What you need to run bitweaver">Requirements</a></li>
 				<li><a href="/wiki/InstallbitweaverDoc" title="Installation Help">Installation</a></li>
