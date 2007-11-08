@@ -1,4 +1,4 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/ygg.css,v 1.4 2006/09/15 07:54:58 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/ygg/ygg.css,v 1.5 2007/11/08 19:19:57 squareing Exp $ */
 
 /**
  * @author   Helge_Karl <helge_karl@yahoo.com>
@@ -20,10 +20,10 @@
 /* import screen media */
 @import url( layout.css );
 @import url( modules.css );
-	/* @import url( screen.css ); */
-	@import url( jstabs.css );
+/* @import url( screen.css ); */
+@import url( jstabs.css );
 @import url( calendar.css );
-	 @import url( cssmenus.css ); 
+@import url( cssmenus.css ); 
 
 /* apply print display settings */
 @import url( print.css );

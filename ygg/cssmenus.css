@@ -31,7 +31,6 @@
 .hor li li a			{margin:0 0 0 20px;}
 .hor li ul				{position:absolute; left:-999em;}
 .hor li ul ul			{margin:-24px 0 0 13em;}
-.hor li.m-admin  ul	ul	{margin:-24px 0 0 -13em;}
 
 /* now comes the dropdown style - modify away! */
 .hor a					{margin:0; padding:0.4em 0.4em 0.4em 13px;color:#000;}
