@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.20 2007/11/02 08:23:36 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.21 2007/11/08 17:51:08 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.20 $
+ * @version  $Revision: 1.21 $
  * @theme    essential
  * @license  LGPL
  *
@@ -327,10 +327,11 @@
 	.module				{padding:1em 0.5em; border-bottom:2px solid #c0c0c0;}
 	.module h3			{}
 	.module h3 a			{}
-	.module ul			{margin:0 0.5em 0 1em; padding:0; list-style:none}
-	.module ul li			{margin:0 0 0 -1em; padding:3px;}
-	.module ol			{margin:0 0.5em 0 1em; padding:0;}
-	.module ol li			{margin:0 0 0 1em; padding:0;}
+	.module ul			{margin:0; padding:0; list-style:none;}
+	.module ul ul			{margin:0 0 0.5em 1.2em;}
+	.module ul li			{margin:0; list-style:none;}
+	.module ol			{margin:0 0 0 1.2em;}
+	.module ol li			{margin:0;}
 	.module form			{}
 
 	#footer .module			{width:33%; float:left;}
