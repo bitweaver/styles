@@ -1,14 +1,14 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.11 2007/07/29 14:10:56 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.12 2007/11/08 19:42:46 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.11 $
+ * @version  $Revision: 1.12 $
  * @theme    essential
  * @license  LGPL
  */
 @media all	{
 	/* basics */
 	*				{font-family:verdana,'Bitstream Vera Sans',sans-serif;}
-	body				{line-height:2em; font-size:12px;}
+	body				{line-height:normal; font-size:12px;}
 	pre *,code *,
 	.code,.codelisting,
 	.codelisting *			{font-family:monospace !important; text-align:left !important;}
@@ -70,8 +70,8 @@
 	select				{}
 	fieldset				{}
 	legend				{font-weight:bold; margin:0 0 1.5em 0;}
-	.row				{clear:both; margin:0 0 1em 0;}
-	.submit				{text-align:center; margin:1em 0;}
+	.row				{clear:both; margin:0 0 5px 0;}
+	.submit				{text-align:center; margin:5px 0;}
 	.quicktags			{}
 	.formlabel			{float:left; font-weight:bold; width:14em; text-align:right;}
 	.forminput			{margin-left:14.5em;}
@@ -90,7 +90,7 @@
 
 	/* parsed elements from the tikiwiki parser */
 	.bittable td			{}
-	.bitbox				{margin:0.5em; padding:0.5em 1em;}
+	.bitbox				{margin:0.5em; padding:0.5em 5px;}
 	.bitbox a				{}
 	.bitbar				{border-bottom:3px solid #eee;}
 
@@ -114,7 +114,7 @@
 	ul,ul li				{}
 	ul.data,ul.data li.item		{}
 	ul.data				{}
-	ul.data li.item			{}
+	ul.data li.item			{padding:5px;}
 	ul.data .thumb			{}
 
 	li.odd,li.even			{}
@@ -143,7 +143,7 @@
 	.articles ul.data li.item,
 	.themes ul.data li.item,
 	.treasury ul.data li.item,
-	.fisheye ul.data li.item		{clear:both; margin:0.5em 0px 0.5em 200px;}
+	.fisheye ul.data li.item		{list-style:none; clear:both; margin:0.5em 0px 0.5em 200px;}
 	.articles ul.data li.item .thumb,
 	.themes ul.data li.item .thumb,
 	.treasury ul.data li.item .thumb,
@@ -174,15 +174,15 @@
 @media screen,projection,tv	{
 	/* layout */
 	html				{}
-	body				{margin:0; padding:1em;}
+	body				{margin:0; padding:5px;}
 
-	#container			{padding:1em;}
-	#header				{padding:1em 1em 0 1em;}
+	#container			{padding:5px;}
+	#header				{padding:5px 5px 0 5px;}
 	#wrapper				{}
 	#content .display,
 	#content .edit,
 	#content .listing,
-	#content .admin			{padding:1em;}
+	#content .admin			{padding:5px;}
 	#navigation			{}
 	#extra				{}
 	#footer				{text-align:center; padding:2em 0; font-size:0.8em;}
@@ -227,7 +227,7 @@
 	/* navigation bars */
 	.navbar				{height:2em; line-height:2em;}
 	.navbar ul			{padding:0; margin:0; list-style:none;}
-	.navbar ul li			{float:left; padding:0 1em;}
+	.navbar ul li			{float:left; padding:0 5px;}
 
 	/*** miscellaneous settings ***/
 	.quicktag				{}
@@ -243,11 +243,11 @@
 	.module				{padding:0.5em; margin:0.5em;}
 	.module h3			{}
 	.module h3 a			{}
-	.module ul,
-	.module ul li			{list-style:none;}
-	.module ol,
-	.module ol li			{}
-	.module form			{}
+	.module ul			{margin:0; padding:0; list-style:none;}
+	.module ul ul			{margin:0 0 0.5em 1.2em;}
+	.module ul li			{margin:0;}
+	.module ol			{margin:0 0 0 1.2em;}
+	.module ol li			{margin:0;}
 
 	/* multi file upload */
 	#fileslist div span			{}
@@ -262,7 +262,7 @@
 	.DynamicTree span .move		{}
 
 	/* tabs */
-	.tabsystem			{margin:1em;}
+	.tabsystem			{margin:5px;}
 	.tabsystem .tabcontainer		{margin:0; padding:0; border:0; clear:both; z-index:1;}
 	.tabsystem .tabcontainer .tab,
 	.tabsystem .tabcontainer .tab-active	{position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
@@ -274,24 +274,24 @@
 	.tabsystem .tabcontainer .tab-hover,
 	.tabsystem .tabcontainer .tab-active	{top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; border:1px solid #bbb; border-bottom:0;}
 	.tabsystem .tabcontainer .tab-hover	{padding:3px 5px 1px 5px; border-top:2px solid #f60;}
-	.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:inherit; border-top:2px solid #f60;}
-	.tabsystem .tabpage			{border:1px solid #bbb; margin:0; padding:1em;}
+	.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; border-top:2px solid #f60;}
+	.tabsystem .tabpage			{border:1px solid #bbb; margin:0; padding:5px;}
 
 	/* css driven dropdown menus - horizontal */
-	ul.hor				{line-height:3em;}
+	ul.hor				{line-height:22px;}
 	ul.hor .icon			{vertical-align:middle; padding:0 0.6em 0 0; margin-left:-2.2em;}
-	ul.hor ul li			{line-height:2em;}
+	ul.hor ul li			{line-height:22px;}
 	ul.hor,
 	ul.hor li,
 	ul.hor ul				{padding:0; margin:0; list-style:none;}
-	ul.hor a				{display:block; padding:0 0.5em;}
+	ul.hor a				{display:block; padding:0 5px;}
 	ul.hor li				{width:auto;}
 	ul.hor li li,
 	ul.hor li ul			{width:13em; display:block; text-align:left;}
 	ul.hor .head			{width:auto;}
 	ul.hor li				{float:left; position:relative;}
 	ul.hor li ul			{position:absolute; left:-999em; border:1px solid;}
-	ul.hor li ul ul			{margin:-2.1em 0 0 13em;}
+	ul.hor li ul ul			{margin:-23px 0 0 13em;}
 	ul.hor li li a			{margin:0 0 0 2em;}
 	/* ensure dropdown is on top */
 	ul.hor,
@@ -308,8 +308,6 @@
 	ul.hor li:hover ul,
 	ul.hor li li:hover ul,
 	ul.hor li li li:hover ul		{left:auto;}
-	/* msie specific */
-	ul.hor table			{margin:-1px; width:auto; border-collapse:collapse; font-size:1em;}
 }
 
 @media print	{

@@ -1,0 +1,22 @@
+@import url( ../cascader.css );
+body           {background-color:#999 !important; color:#000 !important;}
+:link,
+:visited       {color:#678 !important;}
+:link:hover,
+:visited:hover {background-color:#eee !important;}
+#container     {background-color:#eee !important;}
+#header        {background-color:#ddd !important;}
+#navigation    {background-color:#ddd !important;}
+#extra         {background-color:#ddd !important;}
+#footer        {background-color:#ddd !important;}
+.odd           {background-color:#ddd !important;}
+.even          {background-color:#e5e5e5 !important;}
+
+/* dropdown menu */
+#bittopbar     {background-color:#ddd !important;}
+ul.hor li ul   {border-color:#e5e5e5;}
+
+/* nicify js tabs */
+.tabsystem .tabcontainer .tab        {background:#ddd;}
+.tabsystem .tabcontainer .tab-hover  {background:#eee;}
+.tabsystem .tabcontainer .tab-active {background:#eee;}
