@@ -35,13 +35,11 @@
 			</div>
 		{/if}
 
-		{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
-			<h3>Site Navigation</h3>
-			{include file="bitpackage:kernel/top_bar.tpl"}
-			<div class="row">
-				<a href="#content">{tr}back to content{/tr}</a><br />
-			</div>
-		{/if}
+		<h3>Site Navigation</h3>
+		{include file="bitpackage:kernel/top_bar.tpl"}
+		<div class="row">
+			<a href="#content">{tr}back to content{/tr}</a><br />
+		</div>
 
 		{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
 			{include file="bitpackage:kernel/bot_bar.tpl"}
