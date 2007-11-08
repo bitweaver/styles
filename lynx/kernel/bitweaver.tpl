@@ -21,20 +21,26 @@
 			{section name=homeix loop=$l_modules}
 				{$l_modules[homeix].data}
 			{/section}
-			<a href="#content">{tr}back to content{/tr}</a><br />
+			<div class="row">
+				<a href="#content">{tr}back to content{/tr}</a><br />
+			</div>
 		{/if}
 
 		{if $gBitSystem->isFeatureActive( 'site_right_column' ) && $r_modules && !$gHideModules}
 			{section name=homeix loop=$r_modules}
 				{$r_modules[homeix].data}
 			{/section}
-			<a href="#content">{tr}back to content{/tr}</a><br />
+			<div class="row">
+				<a href="#content">{tr}back to content{/tr}</a><br />
+			</div>
 		{/if}
 
 		{if $gBitSystem->isFeatureActive( 'site_top_bar' )}
 			<h3>Site Navigation</h3>
 			{include file="bitpackage:kernel/top_bar.tpl"}
-			<a href="#content">{tr}back to content{/tr}</a><br />
+			<div class="row">
+				<a href="#content">{tr}back to content{/tr}</a><br />
+			</div>
 		{/if}
 
 		{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
