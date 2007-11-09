@@ -9,11 +9,22 @@
 
 {* some links that help navigate the site *}
 <link rel="start" title="{$gBitSystem->getConfig('site_title')} {tr}Home{/tr}" href="{$smarty.const.BIT_ROOT_URL}" />
-<link rel="help" title="{tr}Help{/tr}" href="{$gBitSystem->getConfig('site_header_help')}" />
-<link rel="copyright" title="{tr}Copyright{/tr}" href="{$gBitSystem->getConfig('site_header_copyright')}" />
-<link rel="contents" title="{tr}Contents{/tr}" href="{$gBitSystem->getConfig('site_header_contents')}" />
-<link rel="index" title="{tr}Index{/tr}" href="{$gBitSystem->getConfig('site_header_index')}" />
-<link rel="glossary" title="{tr}Glossary{/tr}" href="{$gBitSystem->getConfig('site_header_glossary')}" />
+
+{if $gBitSystem->isFeatureActive( 'site_header_help' )}
+	<link rel="help" title="{tr}Help{/tr}" href="{$gBitSystem->getConfig('site_header_help')}" />
+{/if}
+{if $gBitSystem->isFeatureActive( 'site_header_copyright' )}
+	<link rel="copyright" title="{tr}Copyright{/tr}" href="{$gBitSystem->getConfig('site_header_copyright')}" />
+{/if}
+{if $gBitSystem->isFeatureActive( 'site_header_contents' )}
+	<link rel="contents" title="{tr}Contents{/tr}" href="{$gBitSystem->getConfig('site_header_contents')}" />
+{/if}
+{if $gBitSystem->isFeatureActive( 'site_header_index' )}
+	<link rel="index" title="{tr}Index{/tr}" href="{$gBitSystem->getConfig('site_header_index')}" />
+{/if}
+{if $gBitSystem->isFeatureActive( 'site_header_glossary' )}
+	<link rel="glossary" title="{tr}Glossary{/tr}" href="{$gBitSystem->getConfig('site_header_glossary')}" />
+{/if}
 
 {assign var=headPageUrl value="`$smarty.server.PHP_SELF`?sort_mode=`$listInfo.sort_mode`&amp;find=`$listInfo.find`"}
 {if $listInfo.current_page > 1}
