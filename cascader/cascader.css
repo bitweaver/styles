@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.13 2007/11/09 10:44:17 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.14 2007/11/09 21:48:36 jht001 Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.13 $
+ * @version  $Revision: 1.14 $
  * @theme    essential
  * @license  LGPL
  */
@@ -302,8 +302,7 @@
 	div#bittopbar,
 	ul.hor,
 	ul.hor li,
-	ul.hor li ul			{background:#fff;}
-
+	ul.hor li ul			{background:#fff; z-index:1000;}
 	ul.hor li:hover ul ul,
 	ul.hor li:hover ul ul ul		{left:-999em;}
 	ul.hor li:hover ul,
