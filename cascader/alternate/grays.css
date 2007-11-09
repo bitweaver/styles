@@ -13,7 +13,10 @@ body           {background-color:#999 !important; color:#000 !important;}
 .even          {background-color:#e5e5e5 !important;}
 
 /* dropdown menu */
-#bittopbar     {background-color:#ddd !important;}
+div#bittopbar,
+ul.hor,
+ul.hor li,
+ul.hor li ul   {background-color:#ddd !important;}
 ul.hor li ul   {border-color:#e5e5e5;}
 
 /* nicify js tabs */

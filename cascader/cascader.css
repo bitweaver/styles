@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.12 2007/11/08 19:42:46 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.13 2007/11/09 10:44:17 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.12 $
+ * @version  $Revision: 1.13 $
  * @theme    essential
  * @license  LGPL
  */
@@ -298,10 +298,11 @@
 	ul.hor a,
 	ul.hor li ul			{z-index:1000;}
 	/* set some background colors for visibility */
-	div#bittopbar			{background:#fff;}
-	ul.hor				{background:inherit;}
-	ul.hor li				{background:inherit;}
-	ul.hor li ul			{background:inherit;}
+	/* thanks to our favourite browser we can't simply inherit the values */
+	div#bittopbar,
+	ul.hor,
+	ul.hor li,
+	ul.hor li ul			{background:#fff;}
 
 	ul.hor li:hover ul ul,
 	ul.hor li:hover ul ul ul		{left:-999em;}

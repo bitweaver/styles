@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.21 2007/11/08 17:51:08 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.22 2007/11/09 10:44:17 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.21 $
+ * @version  $Revision: 1.22 $
  * @theme    essential
  * @license  LGPL
  *
@@ -352,11 +352,11 @@
 	.tabsystem .tabcontainer .tab-hover,
 	.tabsystem .tabcontainer .tab-active	{top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; border:1px solid #bbb; border-bottom:0;}
 	.tabsystem .tabcontainer .tab-hover	{padding:3px 5px 1px 5px; border-top:2px solid #f60;}
-	.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:inherit; border-top:2px solid #f60;}
+	.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60;}
 	.tabsystem .tabpage			{border:1px solid #bbb; margin:0; padding:1em;}
 
 	/* css driven dropdown menus - horizontal */
-	ul.hor				{line-height:3em;}
+	ul.hor				{line-height:2em;}
 	ul.hor .icon			{vertical-align:middle; padding:0 0.6em 0 0; margin-left:-2.2em;}
 	ul.hor ul li			{line-height:2em;}
 	ul.hor,
