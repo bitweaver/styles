@@ -51,15 +51,17 @@
 			</div><!-- end #bitbody -->
 		</div></div></div></div><!-- end #wrap2,3,4,5 -->
 
-		<div id="bitbottom">
-			{if $gBitSystem->isFeatureActive( 'site_bot_bar' )}
-				{include file="bitpackage:kernel/bot_bar.tpl"}
-			{/if}
-		</div><!-- end #bitbottom -->
+        <div id="footer">
+            {if $gBitSystem->isFeatureActive( 'site_bottom_column' ) && $b_modules && !$gHideModules}
+                {section name=homeix loop=$b_modules}
+                    {$b_modules[homeix].data}
+                {/section}
+            {/if}
+        </div><!-- end #footer -->
 	</div><!-- end #wrap1 -->
 
 	{if $gBitSystem->isFeatureActive( 'bidirectional_text' )} </div> {/if}
 
-	{include file="bitpackage:kernel/footer.tpl"}
 {/if}
 {/strip}
+{include file="bitpackage:kernel/footer.tpl"}
