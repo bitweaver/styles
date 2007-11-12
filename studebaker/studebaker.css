@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.25 2007/11/12 09:43:25 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.26 2007/11/12 09:59:08 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.25 $
+ * @version  $Revision: 1.26 $
  * @theme    essential
  * @license  LGPL
  *
@@ -325,7 +325,8 @@
 	/* boxes and modules */
 	.box				{}
 	.box h3				{}
-	.popup				{}
+	.popup				{background:#eee; padding:10px; border:2px solid #ffbb5e; width:250px;}
+	.popup .closebutton			{float:right;}
 	.popup small			{}
 	.popup h3				{}
 
