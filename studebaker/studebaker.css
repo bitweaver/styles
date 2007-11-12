@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.23 2007/11/09 21:53:36 jht001 Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.24 2007/11/12 09:41:39 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.23 $
+ * @version  $Revision: 1.24 $
  * @theme    essential
  * @license  LGPL
  *
@@ -116,7 +116,7 @@
 	/* parsed elements from the tikiwiki parser */
 	table.bittable			{border-collapse:separate; border-spacing:2px;}
 	table.bittable td			{padding:1px 2px;}
-	div.bitbox			{margin:0.5em; padding:0.5em 1em;}
+	div.bitbox			{margin:0.5em; padding:0.5em 1em; border:2px solid #ffbb5e; background:#eee;}
 	div.bitbox a			{}
 	div.bitbar			{border-bottom:3px solid #eee;}
 
@@ -138,7 +138,7 @@
 
 	/* lists */
 	ul,ul li				{}
-	ul.data,ul.data li.item		{}
+	ul.data,ul.data li.item		{list-style:none;}
 	ul.data				{}
 	ul.data li.item			{}
 	ul.data .thumb			{}
@@ -161,23 +161,23 @@
 	/* structure navigation */
 	.path				{}
 	.navigation span			{}
-	.navigation .left			{}
-	.navigation .right			{}
+	.navigation .left			{float:left;}
+	.navigation .right			{float:right;}
 	.navigation span a			{}
 
 	/* package specific list stylings */
-	.articles ul.data li.item,
 	.themes ul.data li.item,
 	.treasury ul.data li.item,
 	.fisheye ul.data li.item		{clear:both; margin:0.5em 0px 0.5em 200px;}
-	.articles .post .image		{float:right;margin:0 0 5px 5px;}
-	.articles ul.data li.item .thumb,
 	.themes ul.data li.item .thumb,
 	.treasury ul.data li.item .thumb,
 	.fisheye ul.data li.item .thumb	{float:left; margin:-20px 0 0 -200px;}
 	.fisheye .body .image		{}
 	.display div.header h1		{border-bottom:0}
 	.mb-post .wrapper			{padding: 2em 2em 2em 2em;border-bottom:1px solid #003b9a;background:#d7e7fd}
+
+	/* articles */
+	.articles .post .image		{float:right;margin:0 0 5px 5px;}
 
 	/* other fisheye settings */
 	.thumb				{}
@@ -198,6 +198,12 @@
 	.attbrowser			{}
 	.attbrowser .data			{}
 	.attbrowser .data td		{}
+
+	/* descriptions */
+	ul.data li.item p,
+	.header p,
+	p.description			{font:italic 1.2em Georgia, serif !important;}
+	.treasury .description                            {text-align:center;}
 }
 
 @media screen,projection,tv	{
@@ -396,12 +402,14 @@
 	.faqtoc ul li li			{font-weight:normal;}
 	.bitweaverfaq h2			{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em;}
 
-	.search-box .row			{float:left; clear:none; margin:0; padding:0;}
-	.search-box .submit			{float:right;}
+	.module.search-box .row		{float:left; clear:none; margin:0; padding:0;}
+	.module.search-box .submit		{float:right;}
 
-	.ilike-box h3			{display:none;}
-	.ilike-box .row			{float:left; clear:none; margin:0; padding:0;}
-	.ilike-box .submit			{float:right;}
+	.module.ilike-box h3		{display:none;}
+	.module.ilike-box .row		{float:left; clear:none; margin:0; padding:0;}
+	.module.ilike-box .submit		{float:right;}
+
+	.module.fisheye-images li		{text-align:center;}
 }
 
 @media print	{
