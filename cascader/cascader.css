@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.14 2007/11/09 21:48:36 jht001 Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.15 2007/11/13 18:49:05 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.14 $
+ * @version  $Revision: 1.15 $
  * @theme    essential
  * @license  LGPL
  */
@@ -43,7 +43,7 @@
 	.highlight			{font-weight:bold;}
 	.selected				{}
 	.floaticon			{float:right;}
-	.storage				{}
+	.storage				{float:right;}
 	.storage .item			{}
 	.comment,.footer			{}
 	.footer				{}
@@ -135,8 +135,8 @@
 	/* structure navigation */
 	.path				{}
 	.navigation span			{}
-	.navigation .left			{}
-	.navigation .right			{}
+	.navigation .left			{float:left;}
+	.navigation .right			{float:right;}
 	.navigation span a			{}
 
 	/* package specific list stylings */
