@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/boards/list_posts.tpl,v 1.1 2007/05/03 21:02:37 laetzer Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/boards/list_posts.tpl,v 1.2 2008/02/03 05:43:28 jht001 Exp $ *}
 {strip}
 <div class="listing boards">
 
@@ -80,7 +80,7 @@
 		</div>
 		{/if}
 
-		{libertypagination ihash=$commentsPgnHash}
+		{pagination}
 	</div><!-- end .body -->
 </div><!-- end .bitboard -->
 
