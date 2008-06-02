@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.18 2008/06/02 10:06:22 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.19 2008/06/02 14:29:09 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.18 $
+ * @version  $Revision: 1.19 $
  * @theme    essential
  * @license  LGPL
  */
@@ -279,7 +279,7 @@
 
 	/* css driven dropdown menus - horizontal */
 	ul.hor				{line-height:22px;}
-	ul.hor .icon			{vertical-align:middle; padding:0 0.6em 0 0; margin-left:-2.2em;}
+	ul.hor .icon			{vertical-align:middle; padding:0 6px 0 0; margin-left:-2.2em;}
 	ul.hor ul li			{line-height:22px;}
 	ul.hor,
 	ul.hor li,
@@ -292,7 +292,9 @@
 	ul.hor li				{float:left; position:relative;}
 	ul.hor li ul			{position:absolute; left:-999em; border:1px solid;}
 	ul.hor li ul ul			{margin:-23px 0 0 13em;}
-	ul.hor li li a			{margin:0 0 0 2em;}
+	ul.hor li li a			{margin:0 0 0 20px;}
+	/* remove admin icon margin */
+	ul.hor li.m-admin li a		{margin:0;}
 	/* ensure dropdown is on top */
 	ul.hor,
 	ul.hor a,
