@@ -1,0 +1,4 @@
+/* as usual, our favourite browser requires a hack */
+body       {margin:0; padding:0;}
+#header    {position:relative;}
+#container {border:0;}
