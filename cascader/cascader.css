@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.19 2008/06/02 14:29:09 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.20 2008/06/02 17:35:52 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.19 $
+ * @version  $Revision: 1.20 $
  * @theme    essential
  * @license  LGPL
  */
@@ -278,33 +278,32 @@
 	.tabsystem .tabpage			{border:1px solid #bbb; margin:0; padding:5px;}
 
 	/* css driven dropdown menus - horizontal */
-	ul.hor				{line-height:22px;}
-	ul.hor .icon			{vertical-align:middle; padding:0 6px 0 0; margin-left:-2.2em;}
-	ul.hor ul li			{line-height:22px;}
+	ul.hor *				{line-height:22px;}
 	ul.hor,
 	ul.hor li,
 	ul.hor ul				{padding:0; margin:0; list-style:none;}
-	ul.hor a				{display:block; padding:0 5px;}
+	ul.hor a				{display:block; padding:0 6px;}
 	ul.hor li				{width:auto;}
 	ul.hor li li,
 	ul.hor li ul			{width:13em; display:block; text-align:left;}
 	ul.hor .head			{width:auto;}
 	ul.hor li				{float:left; position:relative;}
+	ul.hor li li a			{margin-left:20px;}
+	ul.hor li li .icon			{vertical-align:middle; margin-left:-23px;}
 	ul.hor li ul			{position:absolute; left:-999em; border:1px solid;}
 	ul.hor li ul ul			{margin:-23px 0 0 13em;}
-	ul.hor li li a			{margin:0 0 0 20px;}
 	/* remove admin icon margin */
 	ul.hor li.m-admin li a		{margin:0;}
-	/* ensure dropdown is on top */
-	ul.hor,
-	ul.hor a,
-	ul.hor li ul			{z-index:1000;}
 	/* set some background colors for visibility */
 	/* thanks to our favourite browser we can't simply inherit the values */
+	div#bittopbar			{z-index:1000;}
+	ul.hor				{z-index:1001;}
+	ul.hor ul				{z-index:1002;}
+	ul.hor ul ul			{z-index:1003;}
 	div#bittopbar,
 	ul.hor,
 	ul.hor li,
-	ul.hor li ul			{background:#fff; z-index:1000;}
+	ul.hor li ul			{background:#fff;}
 	ul.hor li:hover ul ul,
 	ul.hor li:hover ul ul ul		{left:-999em;}
 	ul.hor li:hover ul,
