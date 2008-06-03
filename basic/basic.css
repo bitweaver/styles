@@ -5,55 +5,45 @@
  * - view the files included in the theme 'blank'. also this has a file called 'readme.css'.
  */
 /*** layout ***/
-#bittopbar		{background:#e9ecef; padding:2px; margin-bottom:5px; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
-#bittopbar a	{border:0;}
-body			{font-family:Arial, Verdana, Tahoma; font-size:0.8em;}
+body		{font-family:Arial, Verdana, Tahoma; font-size:0.8em;}
 html>body		{font-size:12px;}
-.header			{margin:2px; border-bottom:4px solid #dedede;}
-.header h2		{font-size:12px; font-weight:normal;}
-.body			{}
+.header		{margin:2px; border-bottom:4px solid #dedede;}
+.header h2	{font-size:12px; font-weight:normal;}
+.body		{}
 .content		{width:100%;}
-.footer			{color:#999; min-height:17px;}
+.footer		{color:#999; min-height:17px;}
 td.actionicon	{text-align:right;}
 .storage		{border:1px solid #dedede; background:#e9ecef;}
 .storage .item	{padding:3px;}
 h1,h2,h3		{margin:0; padding:0.5em 0;}
 
 /*** links ***/
-a				{color:#009; text-decoration:none;}
-a:hover			{color:#900;}
-.navbar a,
-.menu a			{border:1px solid #fff; padding:3px 5px;}
-.navbar a:hover,
-.menu a:hover	{background-color:#e9ecef; border:1px solid #dedede;}
+a		{color:#036; text-decoration:none;}
+a:hover		{color:#900;}
 
 /*** menus ***/
-.icon			{vertical-align:middle;}
-.hor .head,
-.hor .item		{padding:1px 5px;}
-.hor .m-admin a	{margin:0 !important;}
-/* specify the width and positioning of 2nd level dropdowns as in admin menu */
-.hor li ul ul	{margin:-23px 0 0 9em;}
-.hor			{line-height:18px !important;}
-#header .suckerfish		{background:#e9ecef; padding:2px; margin-bottom:5px; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
-#header .suckerfish a	{border:0 !important;}
-#header .module h3		{display:none;}
+.icon		{vertical-align:middle;}
+div#bittopbar	{background:#e9ecef; margin-bottom:5px; border:solid #dedede; border-width:1px 0;}
+ul.hor li		{background-color:#e9ecef;}
+ul.hor li li 	{background-color:#eee;}
+ul.hor li:hover	{background:#fff}
+ul.hor a:hover	{background-color:#036; color:#fff;}
+ul.hor li ul	{border-color:#dedede;}
 
 /* Uncomment this if you want a cool admin menu
-.m-admin				{position:absolute !important; top:0em !important; left:50% !important; margin-left:-286px !important; width:592px !important; text-align:center;}
-.m-admin>a				{border:1px solid #333 !important; background:#036 !important; color:#fff !important;}
-.m-admin>ul				{width:550px !important; padding:20px; background:#eee !important;}
-.m-admin>ul ul			{margin:-30px 0 0 70px !important;}
-.m-admin>ul>li			{width:100px !important; margin:5px;}
-.m-admin>ul>li>a		{text-align:center; background:#fff; border:1px solid #ccc !important;}
-.m-admin>ul>li>a>.icon	{padding:20px; vertical-align:middle;}
+.m-admin		{position:absolute !important; top:0em !important; left:50% !important; margin-left:-286px !important; width:592px !important; text-align:center;}
+.m-admin>a	{border:0 !important; background:#036 !important; color:#fff !important; padding:5px 0 !important;}
+.m-admin>ul	{width:592px !important; padding:0px; background:#036 !important; border:0 !important;}
+.m-admin>ul>li	{width:127px !important; margin:10px;}
+.m-admin>ul ul	{margin:-22px 0 0 126px !important;}
+.m-admin>ul>li>a	{text-align:center; background:#900; color:#fff; border:1px solid #ccc !important;}
 */
 
 /*** wiki ***/
 /* parsed wikiclasses */
 /* wiki -=...=- */
-.bitbox			{background-color:#e9ecef; border:1px solid #dedede; padding:5px;}
-.bitbar			{letter-spacing:4px; font-weight:bold; background-color:#e9ecef; border:1px solid #dedede; padding:2px;}
+.bitbox		{background-color:#e9ecef; border:1px solid #dedede; padding:5px;}
+.bitbar		{letter-spacing:4px; font-weight:bold; background-color:#e9ecef; border:1px solid #dedede; padding:2px;}
 .bittable td	{border:1px solid #dedede;}
 
 /*** data tables ***/
@@ -69,7 +59,7 @@ a:hover			{color:#900;}
 .formhelp	{font-size:0.8em; color:#066;}
 
 /*** find bar ***/
-.minifind			{background:#e9ecef; border:1px solid #dedede; margin:2px 0; text-align:center; padding:0.5em; margin:0.5em auto;}
+.minifind		{background:#e9ecef; border:1px solid #dedede; margin:2px 0; text-align:center; padding:0.5em; margin:0.5em auto;}
 .minifind legend	{display:none;}
 .minifind fieldset	{border:none;}
 
@@ -77,13 +67,13 @@ a:hover			{color:#900;}
 .tabsystem .tabcontainer .tab,
 .tabsystem .tabcontainer .tab-hover,
 .tabsystem .tabcontainer .tab-active	{top:3px; font:12px normal verdana,arial,sans-serif; margin:0 3px; padding:3px 5px 1px 5px; border:1px solid #ccc; border-bottom:0;}
-.tabsystem .tabcontainer .tab-hover		{padding-top:2px; border-top:2px solid #f90; background:#e9ecef;}
+.tabsystem .tabcontainer .tab-hover	{padding-top:2px; border-top:2px solid #f90; background:#e9ecef;}
 .tabsystem .tabcontainer .tab-active	{top:1px; padding:2px 8px 4px 8px; margin:0 0px; border-top:2px solid #f90; background:#fff; color:#000;}
-.tabsystem .tabpage						{border:1px solid #ccc; padding:1.5em;}
+.tabsystem .tabpage			{border:1px solid #ccc; padding:1.5em;}
 
 /*** navigation bars and tabs ***/
 .navbar		{margin:5px 0;}
-.navbar a	{padding:0 5px;}
+.navbar a		{padding:0 5px;}
 
 /*** pagination at the bottom of pages with listings ***/
 .pagination	{margin:10px 0;}
@@ -102,9 +92,9 @@ a:hover			{color:#900;}
 
 /*** tocs ***/
 .maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em;}
-.maketoc h3		{padding:0; border-bottom:1px solid #999;}
-.maketoc a		{color:#666;}
-.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc h3	{padding:0; border-bottom:1px solid #999;}
+.maketoc a	{color:#666;}
+.maketoc ul	{margin:0 0 0 1em; padding:0;}
 .maketoc ul li	{list-style:square outside;}
 .maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 
