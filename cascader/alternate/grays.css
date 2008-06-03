@@ -21,3 +21,7 @@ ul.hor li ul    {border-color:#fff;}
 .tabsystem .tabcontainer .tab        {background:#ddd;}
 .tabsystem .tabcontainer .tab-hover  {background:#eee;}
 .tabsystem .tabcontainer .tab-active {background:#eee;}
+
+@media print	{
+	*     {background:#fff;}
+}
