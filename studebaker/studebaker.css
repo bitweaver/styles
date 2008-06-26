@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.28 2008/06/02 10:06:22 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.29 2008/06/26 15:17:31 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.28 $
+ * @version  $Revision: 1.29 $
  * @theme    essential
  * @license  LGPL
  *
@@ -227,22 +227,22 @@
 	#bitlogin				{position:absolute; top:0; right:0;}
 
 	/* our custom dropdown menu */
-	#bittop				{height:120px; width:876px; margin:0 auto;}
-	ul.bitmenu			{line-height:3em;clear:both;}
+	#bittop						{height:120px; width:876px; margin:0 auto;}
+	ul.bitmenu					{line-height:3em;clear:both;}
 	ul.bitmenu ul li			{line-height:2em; padding:0; margin:0;}
 	ul.bitmenu,
 	ul.bitmenu li,
-	ul.bitmenu ul			{padding:0; margin:0; list-style:none;}
+	ul.bitmenu ul				{padding:0; margin:0; list-style:none;}
 	ul.bitmenu li li,
 	ul.bitmenu li ul			{width:178px; display:block;}
-	ul.bitmenu li			{float:left; position:relative;}
+	ul.bitmenu li				{float:left; position:relative;}
 	ul.bitmenu li ul			{position:absolute; left:-999em;}
 	ul.bitmenu li ul ul			{margin:-2.1em 0 0 13em;}
 	ul.bitmenu li li a			{margin:0 0 0 2em;}
 	ul.bitmenu,
 	ul.bitmenu a,
 	ul.bitmenu li ul			{z-index:1000;}
-	ul.bitmenu li ul			{background:transparent url( images/dropmenu.png ) top repeat-y; border:1px solid #003b9a; border-top:0;}
+	ul.bitmenu li ul			{background-color:#d2e8fe; border:1px solid #003b9a; border-top:0;}
 
 	ul.bitmenu li:hover ul ul,
 	ul.bitmenu li:hover ul ul ul		{left:-999em;}
@@ -252,13 +252,14 @@
 
 	/* some menu styling */
 	ul.bitmenu,
-	ul.bitmenu li			{padding:0; margin:0; list-style:none;}
-	ul.bitmenu li			{background:transparent url( images/bar.png ) 0 32px repeat-x; width:180px; float:left;}
+	ul.bitmenu li				{padding:0; margin:0; list-style:none;}
+	ul.bitmenu li				{background:transparent url( images/bar.png ) 0 32px repeat-x; width:180px; float:left;}
 	ul.bitmenu li.left			{width:18px; height:70px; background:transparent url( images/outside.png ) left 32px no-repeat;}
 	ul.bitmenu li.right			{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat;}
-	ul.bitmenu li a			{text-align:center; margin-top:32px; display:block; line-height:38px; color:#003b9a; font-size:16px; text-transform:uppercase;}
-	ul.bitmenu li:hover a.parent		{color:#ffffff;}
-	ul.bitmenu li li a:hover		{background:#ffbb5e;}
+	ul.bitmenu li a				{text-align:center; margin-top:32px; display:block; line-height:38px; color:#003b9a; font-size:16px; text-transform:uppercase;}
+	ul.bitmenu li:hover a.parent {color:#ffffff;}
+	ul.bitmenu li li a 			{padding-left:5px;text-align:left}
+	ul.bitmenu li li a:hover	{background:#ffbb5e;}
 	/* reverse above effects */
 	ul.bitmenu li li a			{background:transparent; margin:0; line-height:26px; font-size:12px; text-transform:none;}
 	/* logo item is special */
@@ -337,7 +338,7 @@
 	.module ul			{margin:0; padding:0; list-style:none;}
 	.module ul ul			{margin:0 0 0.5em 1.2em;}
 	.module ul li			{margin:0; list-style:none;}
-	.module ol			{margin:0 0 0 1.2em;}
+	.module ol			{margin:0;padding-left:2.3em;}
 	.module ol li			{margin:0;}
 	.module form			{}
 
