@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.29 2008/06/26 15:17:31 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.30 2008/06/28 09:49:01 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.29 $
+ * @version  $Revision: 1.30 $
  * @theme    essential
  * @license  LGPL
  *
@@ -422,4 +422,8 @@
 	.minifind, .navbar	{display:none;}
 }
 
+
+@page	{
+	margin:1.6cm 2cm;
+}
 /* vim: set ts=10: */
