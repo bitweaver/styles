@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.30 2008/06/28 09:49:01 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.31 2008/06/30 21:59:05 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.30 $
+ * @version  $Revision: 1.31 $
  * @theme    essential
  * @license  LGPL
  *
@@ -227,12 +227,12 @@
 	#bitlogin				{position:absolute; top:0; right:0;}
 
 	/* our custom dropdown menu */
-	#bittop						{height:120px; width:876px; margin:0 auto;}
-	ul.bitmenu					{line-height:3em;clear:both;}
+	#bittop				{height:120px; width:876px; margin:0 auto;}
+	ul.bitmenu			{line-height:3em;clear:both;}
 	ul.bitmenu ul li			{line-height:2em; padding:0; margin:0;}
 	ul.bitmenu,
 	ul.bitmenu li,
-	ul.bitmenu ul				{padding:0; margin:0; list-style:none;}
+	ul.bitmenu ul			{padding:0; margin:0; list-style:none;}
 	ul.bitmenu li li,
 	ul.bitmenu li ul			{width:178px; display:block;}
 	ul.bitmenu li				{float:left; position:relative;}
@@ -252,14 +252,14 @@
 
 	/* some menu styling */
 	ul.bitmenu,
-	ul.bitmenu li				{padding:0; margin:0; list-style:none;}
-	ul.bitmenu li				{background:transparent url( images/bar.png ) 0 32px repeat-x; width:180px; float:left;}
+	ul.bitmenu li			{padding:0; margin:0; list-style:none;}
+	ul.bitmenu li			{background:transparent url( images/bar.png ) 0 32px repeat-x; width:180px; float:left;}
 	ul.bitmenu li.left			{width:18px; height:70px; background:transparent url( images/outside.png ) left 32px no-repeat;}
 	ul.bitmenu li.right			{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat;}
-	ul.bitmenu li a				{text-align:center; margin-top:32px; display:block; line-height:38px; color:#003b9a; font-size:16px; text-transform:uppercase;}
-	ul.bitmenu li:hover a.parent {color:#ffffff;}
+	ul.bitmenu li a			{text-align:center; margin-top:32px; display:block; line-height:38px; color:#003b9a; font-size:16px; text-transform:uppercase;}
+	ul.bitmenu li:hover a.parent		{color:#ffffff;}
 	ul.bitmenu li li a 			{padding-left:5px;text-align:left}
-	ul.bitmenu li li a:hover	{background:#ffbb5e;}
+	ul.bitmenu li li a:hover		{background:#ffbb5e;}
 	/* reverse above effects */
 	ul.bitmenu li li a			{background:transparent; margin:0; line-height:26px; font-size:12px; text-transform:none;}
 	/* logo item is special */
@@ -403,6 +403,10 @@
 	.faqtoc ul li			{font-weight:bold;}
 	.faqtoc ul li li			{font-weight:normal;}
 	.bitweaverfaq h2			{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em;}
+
+	/* spcific data plugins only used on bitweaver.org */
+	.bitbox.r2			{border-color:#9f763c;}
+	.bitbox.stub			{border-color:#326cae;}
 
 	.module.search-box .row		{float:left; clear:none; margin:0; padding:0;}
 	.module.search-box .submit		{float:right;}
