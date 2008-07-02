@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.31 2008/06/30 21:59:05 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.32 2008/07/02 13:41:10 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.31 $
+ * @version  $Revision: 1.32 $
  * @theme    essential
  * @license  LGPL
  *
@@ -80,7 +80,7 @@
 	.storage .item			{margin:5px;}
 	.comment,.footer			{}
 	.footer				{}
-	.pagination			{clear:both;}
+	.pagination			{clear:both; text-align:center; font-size:smaller;}
 
 	/* images */
 	.portrait				{}
