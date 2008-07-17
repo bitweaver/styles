@@ -67,7 +67,7 @@ a img:hover			{}
 .menu .head:hover	{}
 .menu .item:hover	{}
 /* css dropdown related stuff */
-.hor .head			{border:0;}
+.hor .head			{border:0; background:#c7d0d9;}
 .hor ul .head		{border:solid #c7d0d9; border-width:0 10px;}
 .hor ul .head:hover	{border-color:#8cacbb;}
 .hor .item			{margin:0;}
