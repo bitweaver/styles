@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.23 2008/07/14 21:59:53 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.24 2008/07/30 19:50:15 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.23 $
+ * @version  $Revision: 1.24 $
  * @theme    essential
  * @license  LGPL
  */
@@ -278,6 +278,8 @@
 	.tabsystem .tabpage			{border:1px solid #bbb; margin:0; padding:5px;}
 
 	/* css driven dropdown menus - horizontal */
+	ul.hor li.current			{font-weight:bolder;}
+	ul.hor li.current li		{font-weight:normal;}
 	ul.hor *				{line-height:22px;}
 	ul.hor,
 	ul.hor li,
