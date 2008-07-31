@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.5 2007/11/01 07:33:16 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.6 2008/07/31 17:54:09 bitweaver Exp $ *}
 {strip}
 	{if $gBitUser->IsRegistered()}
 		{assign var='nameTitle' value=$gBitUser->mInfo.login}
@@ -54,7 +54,6 @@
 
 			{if $gBitSystem->isFeatureActive('users_allow_register')}
 				<div class="login">
-					Don't have an Account? Creating one is easy!<br />
 					<a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}Register{/tr} &raquo;</a>
 				</div>
 			{/if}
