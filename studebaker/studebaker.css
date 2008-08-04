@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.32 2008/07/02 13:41:10 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.33 2008/08/04 05:38:44 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.32 $
+ * @version  $Revision: 1.33 $
  * @theme    essential
  * @license  LGPL
  *
@@ -41,8 +41,7 @@
  */
 @media all	{
 	/* basics */
-	*				{font-family:'Verdana','Bitstream Vera Sans',sans-serif;}
-	body				{line-height:normal; font-size:12px;}
+	body				{line-height:normal; font-size:12px;font-family:'Verdana','Bitstream Vera Sans',sans-serif}
 	pre *,code *,
 	.code,.codelisting,
 	.codelisting *			{font-family:monospace !important; text-align:left !important;}
@@ -52,11 +51,11 @@
 	small,.small			{font-size:0.8em;}
 
 	/* links */
-	:link				{text-decoration:none; color:#326cae;}
-	:link:hover			{text-decoration:none; color:#003b9a;}
-	:visited				{text-decoration:none; color:#9f763c;}
-	:visited:hover			{text-decoration:none; color:#49361b;}
-	:link:active			{text-decoration:underline;}
+	a:link				{text-decoration:none; color:#326cae;}
+	a:link:hover			{text-decoration:none; color:#003b9a;}
+	a:visited				{text-decoration:none; color:#9f763c;}
+	a:visited:hover			{text-decoration:none; color:#49361b;}
+	a:link:active			{text-decoration:underline;}
 
 	/* titles */
 	h1,h2,h3				{padding:5px 0; margin:0; font-weight:900; font-family:'Arial','Bitstream Vera Sans',sans-serif;}
@@ -122,8 +121,8 @@
 
 	/* common settings for listings */
 	.odd,.even			{}
-	.odd				{background:#f5f5f5;}
-	.even				{background:#d7e7fd;}
+	.odd				{background:#d7e7fd;}
+	.even				{background:#f5f5f5;}
 
 	/* tables */
 	fieldset table			{}
@@ -134,11 +133,12 @@
 	th :link:hover, th :visited:hover	{color:#ffbb5e;}
 	td.actionicon			{text-align:right;}
 	table.data			{}
+	 table.data td			{padding:1px 4px}
 	table.optionbar			{}
 
 	/* lists */
 	ul,ul li				{}
-	ul.data,ul.data li.item		{list-style:none;}
+	ul.data,ul.data li.item		{list-style:none;padding:1px 4px}
 	ul.data				{}
 	ul.data li.item			{}
 	ul.data .thumb			{}
@@ -174,7 +174,7 @@
 	.fisheye ul.data li.item .thumb	{float:left; margin:-20px 0 0 -200px;}
 	.fisheye .body .image		{}
 	.display div.header h1		{border-bottom:0}
-	.mb-post .wrapper			{padding: 2em 2em 2em 2em;border-bottom:1px solid #003b9a;background:#d7e7fd}
+	.mb-post .wrapper			{padding: 2em 2em 2em 2em;border-bottom:3px solid #fff;background:#d7e7fd}
 
 	/* articles */
 	.articles .post .image		{float:right;margin:0 0 5px 5px;}
@@ -218,7 +218,7 @@
 	#content .display,
 	#content .edit,
 	#content .listing,
-	#content .admin			{padding:1em;}
+	#content .admin			{padding:1em}
 	#navigation			{}
 	#extra				{}
 	#footer				{}
@@ -253,9 +253,9 @@
 	/* some menu styling */
 	ul.bitmenu,
 	ul.bitmenu li			{padding:0; margin:0; list-style:none;}
-	ul.bitmenu li			{background:transparent url( images/bar.png ) 0 32px repeat-x; width:180px; float:left;}
-	ul.bitmenu li.left			{width:18px; height:70px; background:transparent url( images/outside.png ) left 32px no-repeat;}
-	ul.bitmenu li.right			{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat;}
+	ul.bitmenu li			{background:transparent url( http://www.bitweaver.org/themes/styles/studebaker/images/bar.png ) 0 32px repeat-x; width:180px; float:left;}
+	ul.bitmenu li.left			{width:18px; height:70px; background:transparent url( http://www.bitweaver.org/themes/styles/studebaker/images/outside.png ) left 32px no-repeat;}
+	ul.bitmenu li.right			{width:18px; height:70px; background:transparent url( http://www.bitweaver.org/themes/styles/studebaker/images/outside.png ) right 32px no-repeat;}
 	ul.bitmenu li a			{text-align:center; margin-top:32px; display:block; line-height:38px; color:#003b9a; font-size:16px; text-transform:uppercase;}
 	ul.bitmenu li:hover a.parent		{color:#ffffff;}
 	ul.bitmenu li li a 			{padding-left:5px;text-align:left}
@@ -264,18 +264,17 @@
 	ul.bitmenu li li a			{background:transparent; margin:0; line-height:26px; font-size:12px; text-transform:none;}
 	/* logo item is special */
 	ul.bitmenu li.logo			{width:120px;}
-	ul.bitmenu li.logo a		{background:transparent url( images/logo.png ) top no-repeat; margin-top:0; height:100px;}
+	ul.bitmenu li.logo a		{background:transparent url( http://www.bitweaver.org/themes/styles/studebaker/images/logo.png ) top no-repeat; margin-top:0; height:100px;}
 	ul.bitmenu li.logo:hover a,
-	ul.bitmenu li.logo a:hover		{background:transparent url( images/logo.png ) bottom no-repeat;}
+	ul.bitmenu li.logo a:hover		{background:transparent url( http://www.bitweaver.org/themes/styles/studebaker/images/logo.png ) bottom no-repeat;}
 	ul.bitmenu li.logo ul		{margin-top:-90px; margin-left:-30px; border:1px solid #003b9a;}
 	ul.bitmenu li.logo:hover li a,
 	ul.bitmenu li.logo li a		{background:transparent; height:auto;}
 	ul.bitmenu li.logo li a:hover		{background:transparent;}
 
 	/* html tags */
-	body				{}
-	a.create				{padding-right:8px; background:transparent url( images/create.gif ) right no-repeat; font-style:italic; color:#000;}
-	a.external			{padding-right:8px; background:transparent url( images/external.gif ) right no-repeat;}
+	a.create				{padding-right:8px; background:transparent url( http://www.bitweaver.org/themes/styles/studebaker/images/create.gif ) right no-repeat; font-style:italic; color:#000;}
+	a.external			{padding-right:8px; background:transparent url( http://www.bitweaver.org/themes/styles/studebaker/images/external.gif ) right no-repeat;}
 
 	/* headings */
 	.header				{margin-bottom:10px;}
@@ -293,7 +292,7 @@
 	.pagination			{}
 	.pagination a			{}
 	.gallerybar,
-	.structurebar			{}
+	.structurebar			{margin:1em;line-height:2em}
 	.gallerybar a,
 	.structurebar a			{}
 	img.avatar			{float:right; padding:5px;}
@@ -332,7 +331,7 @@
 	.popup h3				{}
 
 	/* modules */
-	.module				{padding:1em 0.5em; border-bottom:2px solid #c0c0c0;}
+	.module				{padding:1em 0;clear:both}
 	.module h3			{}
 	.module h3 a			{}
 	.module ul			{margin:0; padding:0; list-style:none;}
@@ -404,18 +403,74 @@
 	.faqtoc ul li li			{font-weight:normal;}
 	.bitweaverfaq h2			{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em;}
 
-	/* spcific data plugins only used on bitweaver.org */
+	/* specific data plugins only used on bitweaver.org */
 	.bitbox.r2			{border-color:#9f763c;}
 	.bitbox.stub			{border-color:#326cae;}
 
 	.module.search-box .row		{float:left; clear:none; margin:0; padding:0;}
 	.module.search-box .submit		{float:right;}
 
+	.module.ilike-box			{background:#d7e7fd;padding:1em 0.5em}
 	.module.ilike-box h3		{display:none;}
 	.module.ilike-box .row		{float:left; clear:none; margin:0; padding:0;}
 	.module.ilike-box .submit		{float:right;}
+	.module.ilike-box select 		{font-size:10px;display:block;margin:10px 0 0 0}
+	.module.ilike-box #fuser 		{padding-left:2px}
 
-	.module.fisheye-images li		{text-align:center;}
+	div.ilike div.forminput 		{line-height:18px}
+	div.ilike div.forminput label 	{width:24%;display:block;float:left;white-space:nowrap;overflow:hidden}
+	div.ilike div.forminput label input	{margin:2px 1px;float:left}
+	div.ilike div.forminput div.formhelp	{clear:both}
+	
+	div.ilike ol 			{max-width:50em;margin-left:3em !important}
+	div.ilike ol li br 			{display:none}
+	div.ilike ol 			{list-style:none;margin:0;padding:0}
+	div.ilike ol li 			{padding:8px 0;font-size:9px;color:#ccc;text-transform:uppercase;font-weight:700}
+	div.ilike ol li small		{font-weight:500;font-size:12px;display:block;padding-left:3em;color:#000;text-transform:none}
+	div.ilike ol li a			{font-weight:700;font-size:12px;text-decoration:underline;display:block;text-transform:none}
+
+	div.fisheye-images ul		{padding-bottom:48px}
+	div.fisheye-images li		{width:50px;height:52px;overflow:hidden;float:left;background:#fff !important}
+	div.fisheye-images li a		{width:48px;height:48px;display:block}
+	div.fisheye-images li img		{width:48px;height:48px;display:block}
+
+	div.last-modif-pages ol		{padding:0;margin:0;}
+	div.last-modif-pages li		{list-style:none;padding:2px 0}
+	div.last-modif-pages li a		{white-space:nowrap;overflow:hidden;display:block}
+
+	div.last-board-posts li		{list-style:none;padding:2px 0;background:#fff}
+	div.last-board-posts li a		{white-space:nowrap;overflow:hidden;display:block}
+	div.last-board-posts div.date		{display:none}
+	#boards div.last-board-posts div.date	{display:block;font-size:9px;color:#aaa}
+	#boards div.last-board-posts div.date a {color:#aaa !important}
+	#boards div.last-board-posts li	{padding:2px 4px}
+	#boards div.last-board-posts li a	{display:inline;white-space:normal;overflow:visible}
+	#boards div.last-board-posts li.odd	{background:#d7e7fd;}
+	#boards div.last-board-posts li.even	{background:#f5f5f5;}
+	
+	div.top-authors ol			{padding:0;margin:0;}
+	div.top-authors li			{list-style:none;padding:2px 0}
+	div.top-authors li a		{white-space:nowrap;overflow:hidden;display:block}
+
+	div.login-box li			{list-style:none;white-space:nowrap;overflow:hidden;}
+	div.login-box li a			{font-weight:700}
+
+	div.sf-project-summary li 		{font-size:9px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
+	div.sf-project-summary li small 	{display:none}
+
+	div.pagination			{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-align:center;width:99%;margin:0 auto;font-weight:700}
+	#content div.pagination a 		{text-decoration:none;padding:12px;border:1px solid #fff}
+	#content div.pagination a:hover 	{background:#eee;color:#003b9a;border:1px solid #ddd}
+
+	#extra 				{padding-top:1em}
+	#articles div.wiki div.header		{display:none}
+	div.floaticon 			{line-height:2em}
+	div.floaticon a img			{padding:0 4px}
+	div.spell_container 		{max-width:600px !important}
+	#poweredby, 
+	#footer				{display:block;padding:1em 0}
+	form *, select			{border-width:1px}
+	
 }
 
 @media print	{
