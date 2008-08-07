@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.35 2008/08/07 07:39:11 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.36 2008/08/07 19:14:27 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.35 $
+ * @version  $Revision: 1.36 $
  * @theme    essential
  * @license  LGPL
  *
@@ -417,7 +417,7 @@ ul.hor li li li:hover ul	{left:auto}
 .module.search-box .row	{float:left; clear:none; margin:0; padding:0}
 .module.search-box .submit	{float:right}
 
-.module.ilike-box	{background:#d7e7fd;padding:1em 0.5em}
+.module.ilike-box	{background:#d7e7fd;padding:1em 0.5em;max-width:200px}
 .module.ilike-box h3	{display:none}
 .module.ilike-box .row	{float:left; clear:none; margin:0; padding:0}
 .module.ilike-box .submit	{float:right}
@@ -436,10 +436,10 @@ div.ilike ol li 	{padding:8px 0;font-size:9px;color:#ccc;text-transform:uppercas
 div.ilike ol li small	{font-weight:500;font-size:12px;display:block;padding-left:3em;color:#000;text-transform:none}
 div.ilike ol li a	{font-weight:700;font-size:12px;text-decoration:underline;display:block;text-transform:none}
 
-div.fisheye-images ul	{padding-bottom:48px}
-div.fisheye-images li	{width:50px;height:52px;overflow:hidden;float:left;background:#fff !important}
-div.fisheye-images li a	{width:48px;height:48px;display:block}
-div.fisheye-images li img	{width:48px;height:48px;display:block}
+#articles div.fisheye-images ul	{padding-bottom:48px}
+#articles div.fisheye-images li	{width:50px;height:52px;overflow:hidden;float:left;background:#fff !important;padding-left:0}
+#articles div.fisheye-images li a	{width:48px;height:48px;display:block}
+#articles div.fisheye-images li img	{width:48px;height:48px;display:block}
 
 div.last-modif-pages ol	{padding:0;margin:0}
 div.last-modif-pages li	{list-style:none;padding:1px 0}
@@ -448,9 +448,10 @@ div.last-modif-pages li a	{white-space:nowrap;overflow:hidden;display:block}
 div.last-board-posts li	{list-style:none;padding:1px 0;background:#fff;display:inline}
 div.last-board-posts li a	{white-space:nowrap;overflow:hidden;display:block}
 div.last-board-posts div.date	{display:none}
+
 #boards div.last-board-posts div.date	{display:block;font-size:9px;color:#aaa}
 #boards div.last-board-posts div.date a {display:inline;color:#aaa}
-#boards div.last-board-posts li	{padding:2px 4px}
+#boards div.last-board-posts li	{display:block;padding:3px 4px}
 #boards div.last-board-posts li a	{display:block;white-space:normal;overflow:hidden;max-width:100%}
 #boards div.last-board-posts li.odd	{background:#d7e7fd}
 #boards div.last-board-posts li.even	{background:#f5f5f5}
@@ -477,6 +478,10 @@ div.spell_container 	{max-width:600px !important}
 #poweredby, 
 #footer	{display:block;padding:1em 0}
 form *, select	{border-width:1px}
+#articles #dynamic div.wiki table.bittable {max-width:30em;margin:0 auto}
+
+div.module.packtaward2008 h3 {background:#eeeeee;display:inline;border-bottom:3px double #fff;padding:1px 6px;color:#000}
+div.module.packtaward2008 div {text-align:left !important;padding:4px 0 14px 4px}
 	
 }
 
@@ -504,7 +509,7 @@ body	{margin:0; padding:0}
 
 
 /* gala 30 */
-div#container	{width:92%;margin:0 auto}
+div#container	{width:88%;margin:0 auto}
 div#wrapper	{float:left}
 div.blocks3  #wrapper	{width: 70%}
 div.blocks2e #wrapper	{width:100%}
