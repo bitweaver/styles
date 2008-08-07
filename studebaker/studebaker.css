@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.36 2008/08/07 19:14:27 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.37 2008/08/07 20:37:13 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.36 $
+ * @version  $Revision: 1.37 $
  * @theme    essential
  * @license  LGPL
  *
@@ -42,9 +42,7 @@
 @media all{
 /* basics */
 body	{line-height:normal; font-size:12px;font-family:'Verdana','Bitstream Vera Sans',sans-serif}
-pre *,code *,
-.code,.codelisting,
-.codelisting *	{font-family:monospace !important; text-align:left !important}
+pre, code, .code, .codelisting	{font-family:monospace !important; text-align:left !important}
 pre	{overflow:auto; text-align:left}
 img	{border:0}
 hr	{}
@@ -62,22 +60,21 @@ h2	{}
 h3	{}
 
 /* common classes */
-.body	{}
-.date	{color:#808080}
-.header .date	{}
-.content	{}
-.post	{}
-.preview	{}
+div.body	{}
+div.date	{color:#808080}
+div.header div.date	{}
+div.content	{}
+div.post	{}
+div.preview	{}
 .norecords	{}
-.popup	{}
 .highlight	{font-weight:bold}
 .selected	{}
-.floaticon	{float:right; text-align:right}
+div.floaticon	{float:right; text-align:right}
 .storage	{float:right; text-align:center}
 .storage .item	{margin:5px}
-.comment,.footer	{}
-.footer	{}
-.pagination	{clear:both; text-align:center; font-size:smaller}
+div.comment, div.footer	{}
+div.footer	{}
+div.pagination	{clear:both; text-align:center; font-size:smaller}
 
 /* images */
 .portrait	{}
@@ -92,12 +89,12 @@ input	{}
 select	{}
 fieldset	{}
 legend	{font-weight:bold; margin:0 0 1.5em 0}
-.row	{clear:both; margin:0 0 1em 0}
-.submit	{text-align:center; margin:1em 0}
-.quicktags	{}
-.formlabel	{float:left; font-weight:bold; width:14em; text-align:right}
-.forminput	{margin-left:14.5em}
-.formhelp	{cursor:help}
+div.row	{clear:both; margin:0 0 1em 0}
+div.submit	{text-align:center; margin:1em 0}
+div.quicktags	{}
+div.formlabel	{float:left; font-weight:bold; width:14em; text-align:right}
+div.forminput	{margin-left:14.5em}
+div.formhelp	{cursor:help}
 .closebutton	{}
 .error,.errorpage h3	{}
 .warning	{}
@@ -105,10 +102,10 @@ legend	{font-weight:bold; margin:0 0 1.5em 0}
 .clear	{clear:both}
 
 /* the small searchboxes */
-.minifind	{width:auto}
-.minifind fieldset	{border:0}
-.minifind legend	{display:none}
-.minifind fieldset	{padding:0.5em; margin:0}
+div.minifind	{width:auto}
+div.minifind fieldset	{border:0}
+div.minifind legend	{display:none}
+div.minifind fieldset	{padding:0.5em; margin:0}
 
 /* parsed elements from the tikiwiki parser */
 table.bittable	{border-collapse:separate; border-spacing:2px}
@@ -118,9 +115,8 @@ div.bitbox a	{}
 div.bitbar	{border-bottom:3px solid #eee}
 
 /* common settings for listings */
-.odd,.even	{}
-.odd	{background:#d7e7fd}
-.even	{background:#f5f5f5}
+li.odd, td.odd, tr.odd	{background:#d7e7fd}
+li.even, td.even, tr.even	{background:#f5f5f5}
 
 /* tables */
 fieldset table	{}
@@ -152,62 +148,60 @@ dt	{}
 dd	{}
 
 /* boxes */
-.box	{}
-.box h3	{}
-.boxcontent	{}
+div.box	{}
+div.box h3	{}
+div.boxcontent	{}
 
 /* structure navigation */
-.path	{}
-.navigation span	{}
-.navigation .left	{float:left}
-.navigation .right	{float:right}
-.navigation span a	{}
+div.path	{}
+div.navigation span	{}
+div.navigation .left	{float:left}
+div.navigation .right	{float:right}
+div.navigation span a	{}
 
 /* package specific list stylings */
-.themes ul.data li.item,
-.treasury ul.data li.item,
-.fisheye ul.data li.item	{clear:both; margin:0.5em 0px 0.5em 200px}
-.themes ul.data li.item .thumb,
-.treasury ul.data li.item .thumb,
-.fisheye ul.data li.item .thumb	{float:left; margin:-20px 0 0 -200px}
-.fisheye .body .image	{}
-.display div.header h1	{border-bottom:0}
-.mb-post .wrapper	{padding: 2em 2em 2em 2em;border-bottom:3px solid #fff;background:#d7e7fd}
+div.themes ul.data li.item,
+div.treasury ul.data li.item,
+div.fisheye ul.data li.item	{clear:both; margin:0.5em 0px 0.5em 200px}
+div.themes ul.data li.item img.thumb,
+div.treasury ul.data li.item img.thumb,
+div.fisheye ul.data li.item img.thumb	{float:left; margin:-20px 0 0 -200px}
+div.fisheye .body .image	{}
+div.display div.header h1	{border-bottom:0}
+div.mb-post .wrapper	{padding: 2em 2em 2em 2em;border-bottom:3px solid #fff;background:#d7e7fd}
 
 /* articles */
-.articles .post .image	{float:right;margin:0 0 5px 5px}
+div.articles div.post div.image	{float:right;margin:0 0 5px 5px}
 
 /* other fisheye settings */
-.thumb	{}
-.fisheyegallery .thumb	{}
-.thumb:hover	{}
-.thumbnailblock .box	{}
-.thumbnailblock .box:hover	{}
-.thumbnailblock .box a:hover	{}
-.image	{}
+img.thumb	{}
+img.thumb:hover	{}
+div.thumbnailblock div.box	{}
+div.thumbnailblock div.box:hover	{}
+div.thumbnailblock div.box a:hover	{}
+img.image	{}
 
 /* sticky notes */
-.stickies textarea,
-.stickies input[type='text']	{}
-.stickynote .hox h3	{}
-.stickynote	{}
+div.stickies textarea,
+div.stickies input[type='text']	{}
+div.stickynote div.box h3	{}
+div.stickynote	{}
 
 /* this is the attachment browser */
-.attbrowser	{}
-.attbrowser .data	{}
-.attbrowser .data td	{}
+div.attbrowser	{}
+div.attbrowser .data	{}
+div.attbrowser .data td	{}
 
 /* descriptions */
 ul.data li.item p,
-.header p,
-p.description	{font:italic 1.2em Georgia, serif !important}
-.treasury .description	{text-align:center}
+div.header p, .description	{font:italic 1.2em Georgia, serif !important}
+div.treasury .description	{text-align:center}
 }
 
 @media screen,projection,tv{
 html	{}
 body	{margin:0; padding:0em}
-.codetitle	{font-weight:bold; background:#ffbb5e; color:#49361b; margin:1em 0 0 0; padding:3px 0 0 2.5em; border:1px solid #c0c0c0; border-bottom:0}
+p.codetitle	{font-weight:bold; background:#ffbb5e; color:#49361b; margin:1em 0 0 0; padding:3px 0 0 2.5em; border:1px solid #c0c0c0; border-bottom:0}
 pre	{padding:0.5em; margin-top:0; background:#f5f5f5; color:#000; border:1px solid #c0c0c0}
 
 #container	{padding:0em}
@@ -221,7 +215,6 @@ pre	{padding:0.5em; margin-top:0; background:#f5f5f5; color:#000; border:1px sol
 #extra	{}
 #footer	{}
 #bitbottom	{clear:both; text-align:center; margin:1em}
-
 #bitlogin	{position:absolute; top:0; right:0}
 
 /* our custom dropdown menu */
@@ -275,90 +268,83 @@ a.create	{padding-right:8px; background:transparent url( images/create.gif ) rig
 a.external	{padding-right:8px; background:transparent url( images/external.gif ) right no-repeat}
 
 /* headings */
-.header	{margin-bottom:10px}
-.header h1	{border-bottom:2px solid #c0c0c0}
-.tabsystem .header h1	{}
-.header h2	{}
-.comment	{}
-.comment h3	{}
-.post	{padding-bottom:5em; clear:both}
-.comment .post	{}
-.comment .content	{}
-.display	{}
+div.header	{margin-bottom:10px}
+div.header h1	{border-bottom:2px solid #c0c0c0}
+div.tabsystem div.header h1	{}
+div.header h2	{}
+div.comment	{}
+div.comment h3	{}
+div.post	{padding-bottom:5em; clear:both}
+div.comment div.post	{}
+div.comment div.content	{}
+div.display	{}
 
 /* various settings */
-.pagination	{}
-.pagination a	{}
-.gallerybar,
-.structurebar	{margin:1em;line-height:2em}
-.gallerybar a,
-.structurebar a	{}
+div.pagination	{}
+div.pagination a	{}
+div.gallerybar,
+div.structurebar	{margin:1em;line-height:2em}
+div.gallerybar a,
+div.structurebar a	{}
 img.avatar	{float:right; padding:5px}
-.errorpage p	{}
+div.errorpage p	{}
 
 /* tocs */
-.maketoc	{float:right; border:2px solid #ffbb5e; width:240px; background:#fff4d9; padding-bottom:1em; margin:0 0 5px 5px}
-.maketoc h3	{background:#ffbb5e; padding:3px 10px; font-size:1em; margin-bottom:1em}
-.maketoc a	{}
-.maketoc ul	{margin:0 0 0 0.5em; padding:0 1em; color:#ffbb5e}
-.maketoc ul,
-.maketoc ul li	{}
-.maketoc ul ul	{}
-
-/* priorities */
-.prio1	{}
-.prio2	{}
-.prio3	{}
-.prio4	{}
-.prio5	{}
+div.maketoc	{float:right; border:2px solid #ffbb5e; width:240px; background:#fff4d9; padding-bottom:1em; margin:0 0 5px 5px}
+div.maketoc h3	{background:#ffbb5e; padding:3px 10px; font-size:1em; margin-bottom:1em}
+div.maketoc a	{}
+div.maketoc ul	{margin:0 0 0 0.5em; padding:0 1em; color:#ffbb5e}
+div.maketoc ul,
+div.maketoc ul li	{}
+div.maketoc ul ul	{}
 
 /* navigation bars */
-.navbar	{height:2em; line-height:2em}
-.navbar ul	{padding:0; margin:0; list-style:none}
-.navbar ul li	{float:left; padding:0 1em}
+div.navbar	{height:2em; line-height:2em}
+div.navbar ul	{padding:0; margin:0; list-style:none}
+div.navbar ul li	{float:left; padding:0 1em}
 
-/*** miscellaneous settings ***/
-.quicktag	{}
+
+
 
 /* boxes and modules */
-.box	{}
-.box h3	{}
-.popup	{background:#eee; padding:10px; border:2px solid #ffbb5e; width:250px}
-.popup .closebutton	{position:absolute; top:10px; right:10px}
-.popup small	{}
-.popup h3	{}
+div.box	{}
+div.box h3	{}
+div.popup	{background:#eee; padding:10px; border:2px solid #ffbb5e; width:250px}
+div.popup .closebutton	{position:absolute; top:10px; right:10px}
+div.popup small	{}
+div.popup h3	{}
 
 /* modules */
-.module	{padding:1em 0;clear:both}
-.module h3	{}
-.module h3 a	{}
-.module ul	{margin:0; padding:0; list-style:none}
-.module ul ul	{margin:0 0 0.5em 1.2em}
-.module ul li	{margin:0; list-style:none}
-.module ol	{margin:0;padding-left:2.3em}
-.module ol li	{margin:0}
-.module form	{}
+div.module	{padding:1em 0;clear:both}
+div.module h3	{}
+div.module h3 a	{}
+div.module ul	{margin:0; padding:0; list-style:none}
+div.module ul ul	{margin:0 0 0.5em 1.2em}
+div.module ul li	{margin:0; list-style:none}
+div.module ol	{margin:0;padding-left:2.3em}
+div.module ol li	{margin:0}
+div.module form	{}
 
-#footer .module	{width:33%; float:left}
+#footer div.module	{width:32%; float:left}
 
 /* multi file upload */
 #fileslist span	{display:block}
 
 /* tabs */
-.tabsystem	{margin:1em}
-.tabsystem .tabcontainer	{margin:0; padding:0; border:0; clear:both; z-index:1}
-.tabsystem .tabcontainer .tab,
-.tabsystem .tabcontainer .tab-active	{position:relative; display:inline; float:left; z-index:1; white-space:nowrap}
-.tabsystem .tabpage	{z-index:1; clear:both}
+div.tabsystem	{margin:1em}
+div.tabsystem div.tabcontainer	{margin:0; padding:0; border:0; clear:both; z-index:1}
+div.tabsystem div.tabcontainer h4.tab,
+div.tabsystem div.tabcontainer h4.tab-active {position:relative; display:inline; float:left; z-index:1; white-space:nowrap}
+div.tabsystem div.tabpage	{z-index:1; clear:both}
 h4	{margin:0; padding:0; z-index:1}
 
 /* tabs design */
-.tabsystem .tabcontainer .tab,
-.tabsystem .tabcontainer .tab-hover,
-.tabsystem .tabcontainer .tab-active	{top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; border:1px solid #bbb; border-bottom:0}
-.tabsystem .tabcontainer .tab-hover	{padding:3px 5px 1px 5px; border-top:2px solid #f60}
-.tabsystem .tabcontainer .tab-active	{top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60}
-.tabsystem .tabpage	{border:1px solid #bbb; margin:0; padding:1em}
+div.tabsystem div.tabcontainer h4.tab,
+div.tabsystem div.tabcontainer h4.tab-hover,
+div.tabsystem div.tabcontainer h4.tab-active {top:3px; font:10px verdana,arial,sans-serif; margin:0 3px; padding:4px 5px 1px 5px; border:1px solid #bbb; border-bottom:0}
+div.tabsystem div.tabcontainer h4.tab-hover {padding:3px 5px 1px 5px; border-top:2px solid #f60}
+div.tabsystem div.tabcontainer h4.tab-active {top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60}
+div.tabsystem div.tabpage	{border:1px solid #bbb; margin:0; padding:1em}
 
 /* css driven dropdown menus - horizontal */
 ul.hor	{line-height:2em}
@@ -403,26 +389,25 @@ ul.hor li li li:hover ul	{left:auto}
 
 
 
-/* very specific stuff such as individual wiki pages */
-.faqtoc h3	{font-size:1.6em}
-.faqtoc ul	{margin-bottom:1.5em}
-.faqtoc ul li	{font-weight:bold}
-.faqtoc ul li li	{font-weight:normal}
-.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em}
+/* specific stuff for bitweaver.org */
+div.faqtoc h3	{font-size:1.6em}
+div.faqtoc ul	{margin-bottom:1.5em}
+div.faqtoc ul li	{font-weight:bold}
+div.faqtoc ul li li	{font-weight:normal}
+div.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em}
 
-/* specific data plugins only used on bitweaver.org */
-.bitbox.r2	{border-color:#9f763c}
-.bitbox.stub	{border-color:#326cae}
+div.bitbox.r2	{border-color:#9f763c}
+div.bitbox.stub	{border-color:#326cae}
 
-.module.search-box .row	{float:left; clear:none; margin:0; padding:0}
-.module.search-box .submit	{float:right}
+div.module.search-box .row	{float:left; clear:none; margin:0; padding:0}
+div.module.search-box .submit	{float:right}
 
-.module.ilike-box	{background:#d7e7fd;padding:1em 0.5em;max-width:200px}
-.module.ilike-box h3	{display:none}
-.module.ilike-box .row	{float:left; clear:none; margin:0; padding:0}
-.module.ilike-box .submit	{float:right}
-.module.ilike-box select 	{font-size:10px;display:block;margin:10px 0 0 0}
-.module.ilike-box #fuser 	{padding-left:2px}
+div.module.ilike-box	{background:#d7e7fd;padding:1em 0.5em;max-width:200px}
+div.module.ilike-box h3	{display:none}
+div.module.ilike-box .row	{float:left; clear:none; margin:0; padding:0}
+div.module.ilike-box .submit	{float:right}
+div.module.ilike-box select 	{font-size:10px;display:block;margin:10px 0 0 0}
+div.module.ilike-box #fuser 	{padding-left:2px}
 
 div.ilike div.forminput 	{line-height:18px}
 div.ilike div.forminput label 	{width:24%;display:block;float:left;white-space:nowrap;overflow:hidden}
@@ -477,11 +462,12 @@ div.floaticon a img	{padding:0 4px}
 div.spell_container 	{max-width:600px !important}
 #poweredby, 
 #footer	{display:block;padding:1em 0}
-form *, select	{border-width:1px}
-#articles #dynamic div.wiki table.bittable {max-width:30em;margin:0 auto}
+select,input,textarea	{border-width:1px}
+#articles div.wiki table.bittable	{max-width:30em;margin:0 auto}
 
-div.module.packtaward2008 h3 {background:#eeeeee;display:inline;border-bottom:3px double #fff;padding:1px 6px;color:#000}
-div.module.packtaward2008 div {text-align:left !important;padding:4px 0 14px 4px}
+div.module.packtaward2008 h3 	{background:#eeeeee;display:inline;border-bottom:3px double #fff;padding:1px 6px;color:#000}
+div.module.packtaward2008 div 	{text-align:left !important;padding:4px 0 14px 4px}
+#treasury ul.data img.thumb 	{max-width:160px}
 	
 }
 
