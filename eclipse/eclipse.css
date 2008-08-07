@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/eclipse/eclipse.css,v 1.3 2007/07/10 07:41:04 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/eclipse/eclipse.css,v 1.4 2008/08/07 20:25:04 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.3 $
+ * @version  $Revision: 1.4 $
  * @theme    essential
  * @license  LGPL
  */
@@ -181,7 +181,7 @@
 	/* sticky notes */
 	.stickies textarea,
 	.stickies input[type='text']		{}
-	.stickynote .hox h3					{}
+	.stickynote .box h3					{}
 	.stickynote							{}
 
 	/* this is the attachment browser */
