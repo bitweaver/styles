@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.38 2008/08/07 20:55:41 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.39 2008/08/08 01:21:07 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.38 $
+ * @version  $Revision: 1.39 $
  * @theme    essential
  * @license  LGPL
  *
@@ -123,6 +123,7 @@ fieldset table	{}
 table	{border-collapse:collapse; border-spacing:0; width:100%}
 caption	{}
 th	{background:#003b9a; color:#f5f5f5}
+td	{vertical-align:top}
 th :link, th :visited	{color:#ffbb5e}
 th :link:hover, th :visited:hover	{color:#ffbb5e}
 td.actionicon	{text-align:right}
@@ -450,19 +451,23 @@ div.pagination	{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-al
 #content div.pagination a:hover 	{background:#eee;color:#003b9a;border:1px solid #ddd}
 
 #extra 	{padding-top:1em}
-#articles div.wiki div.header	{display:none}
 div.floaticon 	{line-height:2em}
 div.floaticon a img	{padding:0 4px}
-div.spell_container 	{max-width:600px !important}
 #poweredby, 
 #footer	{display:block;padding:1em 0}
 select,input,textarea	{border-width:1px}
-#articles div.wiki table.bittable	{max-width:30em;margin:0 auto}
 
+/* tmp */
+#articles div.wiki div.header	{display:none}
+#articles div.wiki table.bittable	{max-width:30em;margin:0 auto}
 div.module.packtaward2008 h3 	{background:#eeeeee;display:inline;border-bottom:3px double #fff;padding:1px 6px;color:#000}
 div.module.packtaward2008 div 	{text-align:left !important;padding:4px 0 14px 4px}
+
+/* bugs */
+div.spell_container 	{max-width:600px !important}
 #treasury ul.data img.thumb 	{max-width:160px}
-	
+td pre 	{max-width:555px;overflow:auto}
+
 }
 
 
