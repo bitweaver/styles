@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.42 2008/08/17 03:05:58 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.43 2008/08/23 06:42:21 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.42 $
+ * @version  $Revision: 1.43 $
  * @theme    essential
  * @license  LGPL
  *
@@ -389,7 +389,7 @@ div.faqtoc h3	{font-size:1.6em}
 div.faqtoc ul	{margin-bottom:1.5em}
 div.faqtoc ul li	{font-weight:bold}
 div.faqtoc ul li li	{font-weight:normal}
-div.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em;letter-spacing:-0px}
+div.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em}
 
 div.bitbox.r2	{border-color:#9f763c}
 div.bitbox.stub	{border-color:#326cae}
@@ -451,7 +451,8 @@ div.sf-project-summary li 	{font-size:9px;overflow:hidden;white-space:nowrap;fon
 div.sf-project-summary li small 	{display:none}
 
 div.pagination	{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-align:center;width:99%;margin:0 auto;font-weight:700}
-#content div.pagination a 	{text-decoration:none;padding:12px;border:1px solid #fff}
+div.pagination span.left, div.pagination span.right {display:block;width:100%;float:none !important;text-align:center !important;margin:0 auto;padding:1em 0;text-transform:uppercase}
+#content div.pagination a 	{text-decoration:none;padding:3px;border:1px solid #fff}
 #content div.pagination a:hover 	{background:#eee;color:#003b9a;border:1px solid #ddd}
 
 #extra 	{padding-top:1em}
@@ -468,7 +469,7 @@ div.module.packtaward2008 h3 	{background:#eeeeee;display:inline;border-bottom:3
 div.module.packtaward2008 div 	{padding:16px 0 14px 16px}
 
 /* bugs */
-div.spell_container 	{max-width:42em !important}
+div.spell_container 	{max-width:600px !important}
 #treasury ul.data img.thumb 	{max-width:160px}
 td pre 	{max-width:555px;overflow:auto}
 
@@ -504,7 +505,7 @@ div.blocks3  #wrapper	{width: 70%}
 div.blocks2e #wrapper	{width:100%}
 div.blocks2n #wrapper	{width: 70%}
 div.blocks1  #wrapper	{width:100%}
-#navigation	{float:right;width:29%;max-width:24em}
+#navigation	{float:right;width:29%}
 #extra	{clear:both;width:100%}
 
 #content 	{padding-right:14px}
