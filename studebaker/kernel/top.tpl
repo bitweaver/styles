@@ -2,12 +2,14 @@
 <div id="bittop">
 	<ul class="bitmenu">
 		<li class="left"><!-- --></li>
-		<li><a class="parent" href="http://sourceforge.net/project/showfiles.php?group_id=141358" title="Get the latest release!">Downloads</a>
+		<li><a class="parent" href="/wiki/Download" title="Get the latest release!">Downloads</a>
 			<ul>
+				<li><a href="http://sourceforge.net/project/showfiles.php?group_id=141358" title="Download the most recent Release of Bitweaver version 2 (hosted by Sourceforge.net)">Download Bitweaver 2</a></li>
 				<li><a href="/wiki/bitweaverRequirements" title="What you need to run bitweaver">Requirements</a></li>
 				<li><a href="/wiki/InstallbitweaverDoc" title="Installation Help">Installation</a></li>
 				<li><a href="/wiki/bitweaver+R1+to+R2+Upgrade" title="Upgrading to R2 - Read this First!">R1 to R2 Upgrade</a></li>
 				<li><a href="/wiki/Add+On+Features" title="Optional packages not included with the release">Add On Features</a></li>
+				<li><a href="/wiki/getCode" title="Join the fun by checking out unreleased versions of Bitweaver">Beta Versions</a></li>
 			</ul>
 		</li>
 		<li><a class="parent" href="/wiki/documentation" title="All Documentation">Docs</a>
