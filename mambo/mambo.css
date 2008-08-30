@@ -1,353 +1,340 @@
-@import url( ../../base.css );
-/* this theme is based on one of the themes that is shipped with mambo
- * http://www.mamboserver.com/
- * i think the name of the theme is solar flare ***/
+/* -------------- basic.css ------------- */
+body	{background:#fff;margin:0;padding:0}
+table	{border-collapse:collapse;border-spacing:0;padding:0;margin:0;width:100%}
+table tfoot td	{font-weight:700;text-align:center}
+table.dBug_array	{width:auto;border: 1px solid black;border-spacing:1px}
+pre,pre *,code,code *,.code	{font-family:monospace !important;text-align:left;font-size:1.1em}
+pre	{overflow:auto;text-align:left}
+#footer	{font:10px verdana,sans-serif;color:#999;text-align:center;clear:both}
+.norecords	{font-weight:bold}
+.popup	{background:#fff;width:250px;border:1px solid #000;line-height:normal}
+.icon,.icon:hover,
+a.icon,a.icon:hover	{border:0px}
+.portrait,.avatar	{float:right;padding:0 0 5px 5px}
+.menu .head	{display:block;white-space:nowrap}
+.menu .item	{display:block}
+.active a.head 	{font-weight:bolder}
+.active a.head:visited	{font-weight:bolder}
+.highlight	{font-weight:bolder}
+a.create	{font-style:italic}
+a.skip	{position:absolute;top:0;left:-999em}
+a.skip:active,
+a.skip:focus	{left:0em}
+a img	{border:0}
+.quicktag	{margin:1px}
+.selected	{font-weight:bolder}
+.floaticon	{float:right}
+span.actionicon	{float:right}
+td.actionicon	{text-align:right}
+.actionicon a,
+.floaticon a	{padding:0 3px}
+.navbar,
+.comment,
+.footer	{clear:both}
+.date,
+.footer,
+.pagination,
+small	{color:#999}
+.panelsubmitrow	{text-align:center}
+.pagination	{text-align:center}
+.storage	{float:right;clear:both;text-align:center}
+.clear	{clear:both}
 
-				/*** global settings ***/
-/* these settings should be at the top of the css since they are the defaults and can be overridden further down */
-body {
-	font-family: verdana, tahoma, helvetica, arial, sans-serif;
-	color: #777;
-	font-size: 10px;
-	padding: 10px;
-	margin: 0;
-	background-color: #fff;
-	line-height: 14px;
-}
-th {}
-td {
-	vertical-align: top;
-}
-hr {}
-small {}
-h1, h2, h3 {
-	background: transparent url( images/shade.png ) repeat-x left bottom;
-	border-bottom: 1px solid #ccc;
-	margin: 10px 0 2px 0;
-	font-size: 10px;
-	font-weight: normal;
-	color: #666;
-}
-h1 {}
-h2 {}
-h3 {}
-a {
-	color: #f60;
-	text-decoration: none;
-}
-a:hover {
-	color: #fc0;
-}
+/* forms */
+html>body textarea	{width:100%}
+form	{margin:0;padding:0}
+/*.row	{clear:both}*/
+.formlabel	{float:left;width:14em;text-align:right}
+.forminput	{margin-left:14.5em}
+.formhelp	{cursor:help}
+.closebutton	{position:absolute;top:1px;right:1px}
+.submit	{text-align:center;padding-bottom:10px}
+.minifind	{width:400px}
+.error,
+.warning	{color:#f80}
+.success	{color:#090}
+.display.confirm .body {width:450px;margin:0 auto}
 
-				/*** site layout ***/
-#bitbody {
-	position: absolute;
-	left: 50%;
-	margin-left: -404px;
-	width: 802px;
-	padding: 2px;
-	border: 1px solid #ccc;
-}
-#bittopbar {
-	background: #f60;
-	border: 1px solid #ccc;
-	margin: 0px 0px 2px 0px;
-	padding: 5px 0 4px 0;
-}
-#bittop {
-	height: 130px;
-	width: 614px;
-	padding: 10px;
-	float: left;
-	margin-bottom: 2px;
-}
-#bitleft {
-	width: 160px;
-	float: left;
-	border: 1px solid #ccc;
-	padding: 2px;
-	clear: left;
-}
-#bitright {
-	width: 160px;
-	float: right;
-	border: 1px solid #ccc;
-	padding: 2px;
-}
-#bitmain {
-	float: left;
-	background: #fff;
-	border: 1px solid #ccc;
-	padding: 2px;
-}
-.bit-cols-1 {
-	width: 628px;
-}
-.bit-cols-2 {
-	width: 460px;
-	margin-left: 2px;
-}
-#bitbottom {
-	clear: both;
-}
-#bitprint {}
-#slideshow {}
+/* annoyances and grievances */
+.module textarea	{width:auto}
+.comment .content	{overflow:auto}
 
-ul.data li.item .thumb					{float:right;}
-				/*** common classes ***/
-.display, .admin {}
-.floaticon {
-	padding: 4px 4px 0 0;
-}
-.preview {}
-.header h1 {
-	color: #666;
-	text-transform: uppercase;
-	text-align: left;
-	background: transparent url( images/boxtitle.gif ) repeat-x left top;
-	padding: 4px 0 2px 4px;
-	margin: 0;
-	border: 0;
-}
-.post h1 {
-	background: transparent url( images/shade.png ) repeat-x left bottom;
-	border-bottom: 1px solid #ccc;
-	margin: 10px 0 2px 0;
-}
-.post {
-	margin: 12px 10px;
-}
-.header, .header a, .header a:hover {
-	color: #777;
-}
-.date {
-	color: #ccc;
-}
-.header h2 {
-	padding: 3px 3%;
-	font-weight: normal;
-	color: #333;
-	border-bottom: 1px solid #ccc;
-	background: #fff;
-}
-.body {
-	padding: 2px;
-}
-.content {}
-.footer {}
-.actionicon {}
+/* lists */
+ul,ol,dl	{margin-top:0;margin-bottom:0}
+.module ol,
+.module ul,
+.menu ul	{margin:0;padding:0}
+.module ol li	{margin:0 0 0 3em;padding:0}
+.module ul li,
+.menu li,
+ul.toc li	{list-style:none}
+ul.toc ul	{margin-left:1.5em;padding:0}
+.navbar	{height:2em}
+.navbar ul	{padding:0;margin:0;list-style:none}
+.navbar ul li	{float:left}
 
-				/*** boxes ***/
-.box {
-	border: 1px solid #ccc;
-	padding: 2px;
-}
-.boxtitle {
-	color: #666;
-	text-transform: uppercase;
-	text-align: left;
-	background: transparent url( images/boxtitle.gif ) repeat-x left top;
-	padding: 4px 0 2px 4px;
-}
-.boxtitle a {
-	color: #666;
-}
-.boxcontent {
-	padding: 2px;
-}
-.module {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-.module .boxcontent {
-	padding: 0;
-}
-#bitmain .menu .menuicon {
-	text-align: center;
-	padding: 0 0 5px 0;
-}
-#bitmain .menu .boxtitle {
-	background-position: left bottom;
-}
-.closebutton {
-	position:absolute;
-	top:4px;
-	right:4px;
-}
+ul.data,
+ul.data li.item	{list-style:none;margin:0;padding:0}
+ul.data li.item .thumb	{float:right}
+ul.data h1,
+/* this is needed to make floaticons clickable in data listings */
+ul.data h2	{margin-top:0}
+li.error,li.success,
+li.note,li.warning	{list-style:none}
+ul.toc li	{list-style:none}
+li.treenode	{list-style:none;clear:both;border-top:1px solid #999}
+ul.tree	{margin:0;padding-left:20px}
 
-				/*** menus ***/
-.menu .head {
-	background: #f60 url( images/link.gif ) no-repeat 4px 50%;
-	border-top: 1px solid #fff;
-	margin: 0px;
-	font-size: 11px;
-	font-weight: bold;
-	color: #fff;
-	padding: 5px 0px 5px 18px;
-	text-decoration: none;	
-}
-.menu .head:hover {
-	background: #fc0 url( images/link_h.gif ) no-repeat 4px 50%;
-	color: #f60;
-}
-.menu .item {
-	background: transparent url( images/links.gif ) no-repeat 5px 50%;
-	padding: 1px 0 1px 18px;
-}
-.menu .item:hover {
-	background: transparent url( images/links_h.gif ) no-repeat 5px 50%;
-	color: #f60;
-}
-#bittopbar .menu .head,
-#bittopbar .menu .item {border: 0;}
+/* structures */
+.structurebar	{clear:both}
+.structurebar .path	{display:block}
+.gallerybar .path	{display:block}
+.navigation span	{display:block;width:50%;float:left}
+.navigation .right	{text-align:right}
+
+/* multi file upload */
+#fileslist span	{display:block}
+#upload_div file {display:block}
+
+/* css driven dropdown menus - horizontal */
+ul.hor *	{line-height:20px}
+ul.hor,
+ul.hor li,
+ul.hor ul	{padding:0;margin:0;list-style:none}
+ul.hor a	{display:block;padding:0 6px}
+ul.hor li	{width:auto}
+ul.hor li li,
+ul.hor li ul	{width:13em;display:block;text-align:left}
+ul.hor .head	{width:auto}
+ul.hor li	{float:left;position:relative}
+ul.hor li li a	{margin-left:20px}
+ul.hor li li .icon	{vertical-align:middle;margin-left:-23px}
+ul.hor li ul	{position:absolute;left:-999em;border:1px solid}
+ul.hor li ul ul	{margin:-21px 0 0 13em}
+/* remove admin icon margin */
+ul.hor li.m-admin li a {margin:0}
+/* set some background colors for visibility */
+/* thanks to our favourite browser we can't simply inherit the values */
+#bittopbar	{z-index:1000}
+ul.hor	{z-index:1001}
+ul.hor ul	{z-index:1002}
+ul.hor ul ul	{z-index:1003}
+#bittopbar,
+ul.hor,
+ul.hor li,
+ul.hor li ul	{background:#fff}
+ul.hor li:hover ul ul, ul.hor li:hover ul ul ul {left:-999em}
+ul.hor li:hover ul, ul.hor li li:hover ul, ul.hor li li li:hover ul {left:auto}
+
+/* tabs */
+.tabsystem .tabcontainer	{margin:0;padding:0;border:0;clear:both}
+.tabsystem .tabcontainer ul,
+.tabsystem .tabcontainer li	{margin:0;padding:0;border:0;list-style-type:none;display:inline}
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-active	{position:relative;display:inline;float:left;z-index:1;white-space:nowrap}
+.tabsystem .tabpage	{clear:both}
+h4	{margin:0;padding:0;font-size:1em}
+
+a.external 	{background:transparent url( ../../icons/external_link.png ) no-repeat left; padding-left:12px}
+
+/* should we move these settings to individual packages? */
+.stickies textarea,
+.stickies input[type='text']	{background:#ffc}
+.stickynote h3	{border-bottom: 1px solid #dda}
+.stickynote	{background-color:#ffc;width:300px;padding:3px;float:left}
+
+.phpbb a:hover img	{border:none}
+.phpbb img	{border:none}
+
+.articles .content div.image	{float:left;padding:0 1em 0 0}
+
+.fisheyeimage .boxcontent,
+.fisheyegallery .boxcontent,
+.image .boxcontent	{text-align:center}
+
+.attbrowser table	{text-align:center}
+
+.meta 	{ float: left;width: 30%;}
+
+.suggest 	{background-color:white;border:1px solid #ddd}
+.suggest .suggestion 	{ color: black;padding: 2px;}
+
+.bitboard .title h3 	{margin: 0px;font-size: 1.2em}
+.bitboard .desc 	{font-size: .9em;clear:both}
+.bitboard .topic 	{font-size: .9em}
+
+/* multisites */
+#multisites table.data 	{width:99%;border-collapse:collapse}
+#multisites table.data th	{text-align:center;background:#ddd;color:#fff}
+#multisites table.data td	{border-bottom:1px dotted #ddd;vertical-align:top}
+#multisites table.data em	{border-top:3px solid #ddd;display:block;clear:both}
+#multisites td.server	{width:37%}
+#multisites td.settings 	{width:63%;padding:4px 0 4px 8px}
+#multisites td.settings strong {}
+
+/* differences */
+del {background-color:#fcc}
+ins {background-color:#cfc}
+
+/* -------------- /basic.css ------------- */
+
+
+
+
+
+/* -------------- mambo.css ------------- */
+body	{font-family:sans-serif;color:#444;font-size:11px;padding:0 0 10px 0;margin:0;background:#fff;line-height:16px}
+h1, h2, h3 	{background:transparent url( images/shade.png ) repeat-x left bottom;color:#666;font-size:11px;padding:0 4px;margin:0;display:block}
+div.body h2, div.body h3	{background-image:none}
+a 	{color:#f60;text-decoration:none}
+a:hover 	{color:#fc0}
+
+/* site layout */
+#bitbody 	{position:absolute;left:50%;top:20px;margin-left:-404px;width:802px;padding:2px;border:1px solid #ddd}
+#bittop	{color:#fff;font-weight:700;height:130px;width:614px;padding:10px;float:left;margin-bottom:2px}
+#bitleft 	{width:160px;float:left;border:1px solid #ddd;border-bottom:7px solid #eee;padding:2px;clear:left;margin-bottom:2px}
+#bitright 	{width:160px;float:right;border:1px solid #ddd;border-bottom:7px solid #eee;padding:2px;margin-bottom:2px}
+#bitmain	{float:left;background:#fff;border:1px solid #ddd;border-bottom:7px solid #eee;padding:2px;margin-bottom:2px;overflow:auto}
+.bit-cols-1	{width:628px}
+.bit-cols-2	{width:460px;margin-left:2px}
+#bitbottom	{clear:both;text-align:center;padding:0.25em 0;background:#eee}
+#bitbottom a	{color:#576f8b;font-weight:700}
+#bitprint	{}
+#slideshow	{}
+ul.data li.item .thumb	{float:right}
+
+#bittop h1	{display:none}
+#bittop div	{display:none}
+#bittop #bittopbar	{display:block}
+
+
+
+/* search */
+div.pkg-search-box 	{position:absolute;top:115px;left:0;width:222px;z-index:888}
+div.pkg-search-box * 	{display:block;float:left;margin:1px}
+div.pkg-search-box h3 	{display:none}
+div.pkg-search-box input 	{font-weight:700;color:#000}
+div.pkg-search-box #fuser 	{width:97px;padding:1px 4px}
+div.pkg-search-box div.submit 	{padding:0}
+div.pkg-search-box div.submit input	{padding:1px 4px}
+div.pkg-search-box select 	{width:99px;display:none}
+div.pkg-search-box:hover select 	{display:block;position:absolute;top:-20px}
+
+div.pkg-search-box 	{-moz-opacity:0.7;opacity:0.7;filter:alpha(opacity=70)}
+div.pkg-search-box:hover 	{-moz-opacity:1.0;opacity:1.0;filter:alpha(opacity=100)}
+div.pkg-search-box:hover select 	{-moz-opacity:0.7;opacity:0.7;filter:alpha(opacity=70)}
+div.pkg-search-box:hover select:hover	{-moz-opacity:1.0;opacity:1.0;filter:alpha(opacity=100)}
+div.pkg-search-box:hover select:hover	{z-index:889}
+div.pkg-search-box:hover select:focus	{z-index:889}
+
+
+
+/* edit icons, backlink dropdown */
+div.floaticon 	{position:absolute;width:333px;top:7px;right:177px;text-align:right}
+div.floaticon br 	{display:none}
+div.floaticon select 	{display:block;border-width:1px;float:right;position:absolute;top:111px;right:0}
+div.floaticon a 	{background:#fff;display:block;width:18px;height:18px;padding:1px;margin:1px;float:right}
+div.floaticon a img 	{display:block;width:16px;height:16px;margin:1px}
+
+div.floaticon a	{-moz-opacity:0.8;opacity:0.8;filter:alpha(opacity=80);-moz-border-radius:2px}
+div.floaticon a:hover	{-moz-opacity:1.0;opacity:1.0;filter:alpha(opacity=100)}
+
+
+
+/* common classes */
+.header h1 	{color:#000;text-transform:uppercase;text-align:left;background:transparent url( images/shade.png ) repeat-x left bottom;padding:0 4px;margin:0;border:0;line-height:14px;border-bottom:2px solid #fc0}
+.header h2	{padding:3px;font-weight:normal;border-bottom:1px solid #ddd;background:#fff}
+.header p	{padding:2px}
+.post h1 	{background:transparent url( images/shade.png ) repeat-x left bottom;border-bottom:1px solid #ddd;margin:10px 0 2px 0}
+.post 	{margin:12px 10px}
+.header, .header a, .header a:hover 	{color:#777}
+.date	{padding:4px;color:#ccc}
+.date a	{color:#ccc}
+.body	{padding:4px;margin-bottom:2em}
+.warning	{padding-left:1em;padding-right:1em}
+.footer	{padding:2px}
+
+
+/* boxes */
+.box	{border:1px solid #ddd;padding:2px}
+.boxtitle	{color:#666;text-transform:uppercase;text-align:left;background:transparent url( images/boxtitle.gif ) repeat-x left top;padding:4px 0 2px 4px}
+.boxtitle a	{color:#666}
+
+.module	{margin:0;border:0;padding:0}
+.module .boxcontent	{margin:0;border:0;padding:4px}
+.module h3	{text-transform:lowercase}
+.module li,.module ul,.module ol	{list-style:none}
+
+#bitmain .menu .menuicon	{text-align:center;padding:0 0 5px 0}
+#bitmain .menu .boxtitle	{background-position:left bottom}
+.closebutton	{position:absolute;top:4px;right:4px}
+
+
+div.last-blog-posts div.date	{display:none}
+div.last-modif-pages li	{padding-left:0;margin-left:0}
+
+
+
+/* menus */
+.module .menu .head 	{background:#fff url( images/link.gif ) no-repeat 4px 50%;border-top:1px solid #fff;margin:0px;font-size:11px;font-weight:bold;padding-left:18px;text-decoration:none}
+.module .menu .head:hover	{background:#fff url( images/link_h.gif ) no-repeat 4px 50%;color:#fc0}
+.module .menu .item	{background:transparent url( images/links.gif ) no-repeat 5px 50%;padding:1px 0 1px 18px}
+.module .menu .item:hover	{background:transparent url( images/links_h.gif ) no-repeat 5px 50%;color:#f60}
+
+ 
+
+
+/* parsed elements */
+.bitbox	{padding:3px;border:1px solid gray}
+.bittable	{background:#eee}
+.bittable td	{border:1px solid #fff}
+
+/* forms */
+input,select,textarea 	{border-width:1px}
+textarea 	{width:99%}
+fieldset 	{border:0px;padding:1em}
+legend 	{color:#ff6600;font-weight:bold}
+label:hover	{color:#333}
+.formlabel 	{width:100%;margin:0;clear:both;padding-top:1em;float:none;font-weight:700;text-align:left}
+.forminput 	{width:100%;margin:0;clear:both;padding-bottom:1em;border-bottom:1px dotted #f60}
+.comment .forminput 	{border:0px}
+.submit	{padding:1em}
+
+
+/* data tables */
+table.data
+th	{text-align:left}
+tr.odd td	{background:#ebebea;color:#000;border-top:1px solid #efefee;border-bottom:1px solid #fff}
+tr.even td 	{background:#f9f9f8;color:#000;border-top:1px solid #fff;border-bottom:1px solid #efefee}
+tr.odd:hover td, tr.even:hover td	{background:transparent}
+tr.odd:hover	{background:#f1f1f0}
+tr.even:hover	{background:#fdfdfc}
+
+/* tabstyle */
+.tabsystem .tabcontainer .tab,
+.tabsystem .tabcontainer .tab-hover,
+.tabsystem .tabcontainer .tab-active	{top:3px;font:10px normal verdana,arial,sans-serif;margin:0 3px;padding:3px 5px 1px 5px;background:transparent url( images/tab_shade.png ) repeat-x;border:1px solid #ddd;border-bottom:0}
+.tabsystem .tabcontainer .tab-hover	{padding-top:2px;border-top:2px solid #f90}
+.tabsystem .tabcontainer .tab-active	{top:1px;padding:2px 8px 4px 8px;margin:0 0px;border-top:2px solid #f90;background:#fff;color:#000}
+.tabsystem .tabpage	{border:1px solid #ddd;padding:1.5em}
+
+/* navigation bars */
+.navbar	{text-align:right;margin:10px 0}
+.navbar a	{margin:0 5px}
+
 
 /* css dropdown settings */
-.hor .head {
-	background: #f60;
-	padding: 3px 5px;
-}
-.hor .head:hover {
-	background: #fc0;
-}
-.hor .item {
-	background: #f60;
-	border-top: 1px solid #fff;
-	font-size: 11px;
-	font-weight: bold;
-	color: #fff;
-	padding: 3px 5px;
-	text-decoration: none;	
-}
-.hor ul .item {
-	background: #fff;
-	font-size: 10px;
-	font-weight: normal;
-	color: #f60;
-}
-.hor .item:hover {
-	background-image: none;
-}
-.hor li ul {
-	border-color: #000;
-}
-.hor li li:hover {
-	background: #fc0;
-}
-.hor li li ul {
-	margin-top: -22px;
-}
-				/*** parsed elements ***/
-.bitbar {}
-.bitcache {}
-.bitbox {
-	padding: 3px;
-	border: 1px solid gray;
-}
-.bittable {
-	background: #eee;
-}
-.bittable td {
-	border: 1px solid #fff;
-}
+#bittopbar	{position:absolute;top:-20px;left:0}
+#bittopbar #nav li	{padding-left:2px}
+#bittopbar #nav li a	{font-size:11px;font-weight:700;padding:0 2px 0 2px;color:#000}
+#bittopbar #nav li a:hover	{color:#f60}
+#bittopbar,ul.hor,ul.hor li	{background:transparent !important}
+#bittopbar 	{max-width:99%;white-space:nowrap}
 
-				/*** forms ***/
-input,select,textarea {
-	font-family: verdana, tahoma, helvetica, arial, sans-serif;
-	color: #666;
-	font-size: 12px;
-}
-fieldset {
-	border: 1px dashed #ccc;
-	padding: 5px 0;
-	margin: 5px 0 20px 0;
-}
-legend {
-	color: #fc0;
-	font-weight: bold;
-	font-size: 11px;
-	font-family: arial, sans-serif;
-	background: #f60;
-	margin: 2px;
-	padding: 3px 10px;
-	border: 1px solid #ccc;
-}
-label:hover {
-	color: #333;
-}
-.row {}
-.formlabel {
-	background: #e5e5e5;
-	border-top: 1px solid #ddd;
-	border: 1px solid #ccc;
-	margin-top: 1px;
-	padding: 0 3px 0 0;
-	width: 35%;
-	float: none;
-}
-.forminput {
-	width: 96%;
-	margin: 0 0 0 4%;
-}
-.formhelp {}
-.submit {}
-.clear {}
-.minifind {}
 
-				/*** data tables ***/
-.data {}
-.odd {}
-.even {
-	color: #666;
-	background: #ccc;
-}
-tr.odd:hover, tr.even:hover {
-	color: #000;
-	background: #fed;
-}
-.norecords {}
-.find {}
-
-				/* tabstyle */
-.tabsystem .tabcontainer .tab,.tabsystem .tabcontainer .tab-hover,.tabsystem .tabcontainer .tab-active {
-	top:3px;
-	font:10px normal verdana,arial,sans-serif;
-	margin:0 3px;
-	padding:3px 5px 1px 5px;
-	background:transparent url( images/tab_shade.png ) repeat-x;
-	border:1px solid #ccc;
-	border-bottom:0;
-}
-.tabsystem .tabcontainer .tab-hover {
-	padding-top:2px;
-	border-top:2px solid #f90;
-}
-.tabsystem .tabcontainer .tab-active {
-	top:1px;
-	padding:2px 8px 4px 8px;
-	margin:0 0px;
-	border-top:2px solid #f90;
-	background:#fff;
-	color:#000;
-}
-.tabsystem .tabpage {
-	border:1px solid #ccc;
-	padding:1.5em;
-}
-
-				/*** navigation bars ***/
-.navbar {
-	text-align: right;
-	margin: 10px 0;
-}
-.navbar a {
-	margin: 0 5px;
-}
-.selected {}
-.pagination {}
-
-				/*** bottom bar ***/
-.babelfish {}
-
-				/*** settings that have to be at the end ***/
-.highlight {}
+/* misc */
+.minifind input[type=text] 	{width:70px}
+.minifind input[type=submit] 	{margin:4px;text-align:center}
+.menutable .box	{border:0px}
+.menutable .box img 	{display:none}
+.menutable .box h3 	{font-weight:700;padding-left:0;color:#000}
