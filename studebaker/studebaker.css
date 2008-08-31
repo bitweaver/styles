@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.43 2008/08/23 06:42:21 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.44 2008/08/31 23:08:39 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.43 $
+ * @version  $Revision: 1.44 $
  * @theme    essential
  * @license  LGPL
  *
@@ -407,6 +407,9 @@ div.module.ilike-box .row	{float:left; clear:none; margin:0; padding:0}
 div.module.ilike-box .submit	{float:right}
 div.module.ilike-box select 	{font-size:10px;display:block;margin:10px 0 0 0}
 div.module.ilike-box #fuser 	{padding-left:2px}
+
+div.module.rss-feed li div.date 	{display:none}
+div.module.rss-feed li a.more 	{display:none}
 
 div.ilike div.forminput 	{line-height:18px}
 div.ilike div.forminput label 	{width:24%;display:block;float:left;white-space:nowrap;overflow:hidden}
