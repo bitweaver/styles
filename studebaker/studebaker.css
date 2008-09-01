@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.44 2008/08/31 23:08:39 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.45 2008/09/01 00:08:45 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.44 $
+ * @version  $Revision: 1.45 $
  * @theme    essential
  * @license  LGPL
  *
@@ -408,9 +408,6 @@ div.module.ilike-box .submit	{float:right}
 div.module.ilike-box select 	{font-size:10px;display:block;margin:10px 0 0 0}
 div.module.ilike-box #fuser 	{padding-left:2px}
 
-div.module.rss-feed li div.date 	{display:none}
-div.module.rss-feed li a.more 	{display:none}
-
 div.ilike div.forminput 	{line-height:18px}
 div.ilike div.forminput label 	{width:24%;display:block;float:left;white-space:nowrap;overflow:hidden}
 div.ilike div.forminput label input	{margin:2px 1px;float:left}
@@ -450,7 +447,11 @@ div.login-box li a	{font-weight:700}
 div.treasury-items li	{list-style:none;padding:1px 0 !important;background:#fff}
 div.treasury-items li a	{white-space:nowrap;overflow:hidden;display:block}
 
-div.sf-project-summary li 	{font-size:9px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
+div.module.rss-feed li {background:transparent;font-size:9px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
+div.module.rss-feed li div.date 	{display:none}
+div.module.rss-feed li a.more 	{display:none}
+
+div.sf-project-summary li 	{background:transparent;font-size:9px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
 div.sf-project-summary li small 	{display:none}
 
 div.pagination	{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-align:center;width:99%;margin:0 auto;font-weight:700}
