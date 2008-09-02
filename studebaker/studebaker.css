@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.45 2008/09/01 00:08:45 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.46 2008/09/02 11:55:58 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.45 $
+ * @version  $Revision: 1.46 $
  * @theme    essential
  * @license  LGPL
  *
@@ -389,7 +389,7 @@ div.faqtoc h3	{font-size:1.6em}
 div.faqtoc ul	{margin-bottom:1.5em}
 div.faqtoc ul li	{font-weight:bold}
 div.faqtoc ul li li	{font-weight:normal}
-div.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em}
+div.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em;letter-spacing:0}
 
 div.bitbox.r2	{border-color:#9f763c}
 div.bitbox.stub	{border-color:#326cae}
@@ -441,17 +441,18 @@ div.last-board-posts div.date	{display:none}
 div.top-authors li	{list-style:none}
 div.top-authors li a	{white-space:nowrap;overflow:hidden;display:block;padding:1px 0}
 
+div.login-box ul	{padding-top:4px}
 div.login-box li	{list-style:none;white-space:nowrap;overflow:hidden}
 div.login-box li a	{font-weight:700}
 
 div.treasury-items li	{list-style:none;padding:1px 0 !important;background:#fff}
 div.treasury-items li a	{white-space:nowrap;overflow:hidden;display:block}
 
-div.module.rss-feed li {background:transparent;font-size:9px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
+div.module.rss-feed li 	{background:transparent;font-size:11px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
 div.module.rss-feed li div.date 	{display:none}
 div.module.rss-feed li a.more 	{display:none}
 
-div.sf-project-summary li 	{background:transparent;font-size:9px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
+div.sf-project-summary li 	{background:transparent;font-size:11px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
 div.sf-project-summary li small 	{display:none}
 
 div.pagination	{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-align:center;width:99%;margin:0 auto;font-weight:700}
@@ -468,14 +469,13 @@ select,input,textarea	{border-width:1px}
 
 /* tmp */
 #articles div.wiki div.header	{display:none}
-#articles div.wiki table.bittable	{max-width:30em;margin:0 auto}
-div.module.packtaward2008 h3 	{background:#eeeeee;display:inline;border-bottom:3px double #fff;padding:1px 24px 1px 16px;color:#000}
-div.module.packtaward2008 div 	{padding:16px 0 14px 16px}
 
 /* bugs */
 div.spell_container 	{max-width:600px !important}
 #treasury ul.data img.thumb 	{max-width:160px}
 td pre 	{max-width:555px;overflow:auto}
+div.login-box li,div.package-menu li	{border-bottom:2px solid #fff}
+
 
 }
 
