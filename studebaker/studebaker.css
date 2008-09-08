@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.46 2008/09/02 11:55:58 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.47 2008/09/08 13:46:39 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.46 $
+ * @version  $Revision: 1.47 $
  * @theme    essential
  * @license  LGPL
  *
@@ -503,7 +503,7 @@ body	{margin:0; padding:0}
 
 
 /* gala 30 */
-#container	{width:88%;margin:0 auto}
+#container	{width:88%;margin:0 auto;max-width:111em}
 #wrapper	{float:left}
 div.blocks3  #wrapper	{width: 70%}
 div.blocks2e #wrapper	{width:100%}
