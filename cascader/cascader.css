@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.25 2008/08/07 20:25:04 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.26 2008/09/10 09:48:52 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.25 $
+ * @version  $Revision: 1.26 $
  * @theme    essential
  * @license  LGPL
  */
@@ -80,6 +80,13 @@
 	.warning				{}
 	.success				{}
 	.clear				{clear:both;}
+
+	/* module help on admin page */
+	.modulehelp kbd			{font-family:monospace;}
+	.modulehelp dt			{width:27%; float:left; text-align:right; font-weight:bold;}
+	.modulehelp dd			{width:70%; margin-left:30%;}
+	.modulehelp .example		{text-decoration:underline;}
+	.modulehelp dd em			{color:#444;}
 
 	/* the small searchboxes */
 	.minifind				{width:auto;}
