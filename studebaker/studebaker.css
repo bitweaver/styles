@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.48 2008/09/15 07:17:45 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.49 2008/09/15 14:04:16 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.48 $
+ * @version  $Revision: 1.49 $
  * @theme    essential
  * @license  LGPL
  *
@@ -476,7 +476,7 @@ div.spell_container 	{max-width:600px !important}
 #treasury ul.data img.thumb 	{max-width:160px}
 td pre 	{max-width:555px;overflow:auto}
 div.login-box li,div.package-menu li	{border-bottom:2px solid #fff}
-
+div.module	{background:#fff}
 
 }
 
