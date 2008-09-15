@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.47 2008/09/08 13:46:39 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.48 2008/09/15 07:17:45 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.47 $
+ * @version  $Revision: 1.48 $
  * @theme    essential
  * @license  LGPL
  *
@@ -84,7 +84,7 @@ ul.small	{}
 
 /* forms */
 form	{margin:0; padding:0}
-textarea	{width:100%}
+textarea	{width:99%}
 input	{}
 select	{}
 fieldset	{}
@@ -472,6 +472,7 @@ select,input,textarea	{border-width:1px}
 
 /* bugs */
 div.spell_container 	{max-width:600px !important}
+#boards div.spell_container textarea 	{height:444px !important}
 #treasury ul.data img.thumb 	{max-width:160px}
 td pre 	{max-width:555px;overflow:auto}
 div.login-box li,div.package-menu li	{border-bottom:2px solid #fff}
