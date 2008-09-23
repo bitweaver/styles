@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.50 2008/09/21 02:15:23 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.51 2008/09/23 16:08:50 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.50 $
+ * @version  $Revision: 1.51 $
  * @theme    essential
  * @license  LGPL
  *
@@ -384,19 +384,19 @@ ul.hor li li li:hover ul	{left:auto}
 
 
 
-/* specific stuff for bitweaver.org */
-div.faqtoc h3	{font-size:1.6em}
-div.faqtoc ul	{margin-bottom:1.5em}
-div.faqtoc ul li	{font-weight:bold}
-div.faqtoc ul li li	{font-weight:normal}
-div.bitweaverfaq h2	{font-size:1em; font-weight:bold; border-bottom:1px solid #9f763c; margin-top:2em;letter-spacing:0}
+/* bitweaver.org */
+div.bitweaverfaq div.maketoc 	{float:none; border:0px; width:100%; background:transparent; padding-bottom:1em}
+div.bitweaverfaq div.maketoc ul	{margin-bottom:1.5em}
+div.bitweaverfaq div.maketoc ul li	{font-weight:bold}
+div.bitweaverfaq div.maketoc ul li li	{font-weight:normal}
+div.bitweaverfaq h2	{font-size:1em; font-weight:bold;margin-top:2em;letter-spacing:0}
 
 div.bitbox.r2	{border-color:#9f763c}
 div.bitbox.stub	{border-color:#326cae}
 
 div.module h3 	{padding:1px 0;font-size:12px;font-family:verdana,sans-serif}
 div.module ul, 	
-div.module ol {padding:0;margin:0}
+div.module ol 	{padding:0;margin:0}
 
 div.module.search-box .row	{float:left; clear:none; margin:0; padding:0}
 div.module.search-box .submit	{float:right}
@@ -456,7 +456,8 @@ div.sf-project-summary li 	{background:transparent;font-size:11px;overflow:hidde
 div.sf-project-summary li small 	{display:none}
 
 div.pagination	{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-align:center;width:99%;margin:0 auto;font-weight:700}
-div.pagination span.left, div.pagination span.right {display:block;width:100%;float:none !important;text-align:center !important;margin:0 auto;padding:1em 0;text-transform:uppercase}
+div.pagination span.left, 
+div.pagination span.right	{display:block;width:100%;float:none !important;text-align:center !important;margin:0 auto;padding:1em 0;text-transform:uppercase}
 #content div.pagination a 	{text-decoration:none;padding:3px;border:1px solid #fff}
 #content div.pagination a:hover 	{background:#eee;color:#003b9a;border:1px solid #ddd}
 
