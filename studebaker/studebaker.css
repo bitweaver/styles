@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.51 2008/09/23 16:08:50 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.52 2008/09/27 05:07:12 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.51 $
+ * @version  $Revision: 1.52 $
  * @theme    essential
  * @license  LGPL
  *
@@ -390,6 +390,21 @@ div.bitweaverfaq div.maketoc ul	{margin-bottom:1.5em}
 div.bitweaverfaq div.maketoc ul li	{font-weight:bold}
 div.bitweaverfaq div.maketoc ul li li	{font-weight:normal}
 div.bitweaverfaq h2	{font-size:1em; font-weight:bold;margin-top:2em;letter-spacing:0}
+
+
+
+/* bitweaver_sites */
+table.bw_sites    	{border-collapse:separate;border-spacing:0px;line-height:20px;margin-top:1em;border-top:0px;border-left:0px}
+table.bw_sites td   	{padding:8px;vertical-align:middle;border-bottom:1px solid #f0f0f0}
+table.bw_sites td img  	{display:block;margin:0 auto;max-width:24px;max-height:24px}
+table.bw_sites td a 	{display:block;margin:0 auto;min-width:160px}
+table.bw_sites td a.external 	{display:table-cell;margin:0 auto;width:160px;text-align:center;vertical-align:middle}
+table.bw_sites tr:hover td 	{background:#f9f9f7}
+
+table.bw_sites.bws_showcase td img,
+table.bw_sites.bws_comunity td img  	{max-width:160px;max-height:160px}
+
+
 
 div.bitbox.r2	{border-color:#9f763c}
 div.bitbox.stub	{border-color:#326cae}
