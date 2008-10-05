@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.27 2008/09/10 10:13:57 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.28 2008/10/05 08:51:21 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.27 $
+ * @version  $Revision: 1.28 $
  * @theme    essential
  * @license  LGPL
  */
@@ -223,11 +223,11 @@
 	.errorpage p			{}
 
 	/* priorities */
-	.prio1				{}
-	.prio2				{}
-	.prio3				{}
-	.prio4				{}
-	.prio5				{}
+	.prio1				{background:#dfc !important;}
+	.prio2				{background:#efc !important;}
+	.prio3				{background:#ffc !important;}
+	.prio4				{background:#fec !important;}
+	.prio5				{background:#fdc !important;}
 
 	/* navigation bars */
 	.navbar				{height:2em; line-height:2em;}
@@ -331,3 +331,5 @@
 @page	{
 	margin:1.6cm 2cm;
 }
+
+/* vim: set ts=10: */
