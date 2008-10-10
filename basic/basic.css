@@ -23,7 +23,7 @@ a:hover		{color:#900;}
 
 /*** menus ***/
 .icon		{vertical-align:middle;}
-div#bittopbar	{background:#e9ecef; margin-bottom:5px; border:solid #dedede; border-width:1px 0;}
+div#bittopbar	{background:#e9ecef; margin-bottom:5px; border:solid #dedede; border-width:1px 0; line-height:20px;}
 ul.hor li		{background-color:#e9ecef;}
 ul.hor li li 	{background-color:#eee;}
 ul.hor li:hover	{background:#fff}
