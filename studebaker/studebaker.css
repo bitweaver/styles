@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.52 2008/09/27 05:07:12 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.53 2008/10/10 03:19:28 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.52 $
+ * @version  $Revision: 1.53 $
  * @theme    essential
  * @license  LGPL
  *
@@ -102,10 +102,10 @@ div.formhelp	{cursor:help}
 .clear	{clear:both}
 
 /* the small searchboxes */
-div.minifind	{width:auto}
-div.minifind fieldset	{border:0}
-div.minifind legend	{display:none}
-div.minifind fieldset	{padding:0.5em; margin:0}
+.minifind	{width:auto;text-align:center}
+.minifind fieldset	{border:0;padding:0.5em; margin:0}
+.minifind legend	{display:none}
+
 
 /* parsed elements from the tikiwiki parser */
 table.bittable	{border-collapse:separate; border-spacing:1px}
@@ -294,7 +294,7 @@ div.maketoc ul li	{}
 div.maketoc ul ul	{}
 
 /* navigation bars */
-div.navbar	{height:2em; line-height:2em}
+div.navbar	{}
 div.navbar ul	{padding:0; margin:0; list-style:none}
 div.navbar ul li	{float:left; padding:0 1em}
 
@@ -391,7 +391,11 @@ div.bitweaverfaq div.maketoc ul li	{font-weight:bold}
 div.bitweaverfaq div.maketoc ul li li	{font-weight:normal}
 div.bitweaverfaq h2	{font-size:1em; font-weight:bold;margin-top:2em;letter-spacing:0}
 
-
+div.theabsolutebeginnersguide div.maketoc {float:none; border:0px; width:100%; background:transparent; padding-bottom:1em}
+div.theabsolutebeginnersguide div.maketoc ul {margin-bottom:1.5em}
+div.theabsolutebeginnersguide div.maketoc ul li {font-weight:bold}
+div.theabsolutebeginnersguide div.maketoc ul li li {font-weight:normal}
+div.theabsolutebeginnersguide h2	{font-size:1em; font-weight:bold;margin-top:2em;letter-spacing:0}
 
 /* bitweaver_sites */
 table.bw_sites    	{border-collapse:separate;border-spacing:0px;line-height:20px;margin-top:1em;border-top:0px;border-left:0px}
@@ -446,6 +450,7 @@ div.last-modif-pages li a	{white-space:nowrap;overflow:hidden;display:block}
 div.last-board-posts li	{list-style:none;padding:1px 0;background:#fff}
 div.last-board-posts li a	{white-space:nowrap;overflow:hidden;display:block}
 div.last-board-posts div.date	{display:none}
+
 #boards div.last-board-posts div.date	{display:block;font-size:9px;color:#aaa}
 #boards div.last-board-posts div.date a {display:inline;color:#aaa}
 #boards div.last-board-posts li	{display:block;padding:3px 4px}
@@ -476,6 +481,17 @@ div.pagination span.right	{display:block;width:100%;float:none !important;text-a
 #content div.pagination a 	{text-decoration:none;padding:3px;border:1px solid #fff}
 #content div.pagination a:hover 	{background:#eee;color:#003b9a;border:1px solid #ddd}
 
+/* related items listing */
+div.pigeonholes h2 	{margin-top:4em;background:#ddd;color:#fff;font:bold 11px/14px sans-serif;letter-spacing:3px;padding:1px 4px;text-transform:uppercase}
+html>body div.pigeonholes h2:after 	{content:":"}
+html>body div.pigeonholes h3 	{clear:both;padding-top:4em}
+html>body div.pigeonholes p 	{color:#fff;clear:both;line-height:1px}
+html>body div.pigeonholes p a 	{border-bottom:1px solid #fff;line-height:15px;height:15px;font-size:11px;color:#000;display:block;float:left;margin-right:20px;width:30%;max-width:14em;overflow:hidden}
+html>body div.pigeonholes p a:visited 	{color:#888}
+html>body div.pigeonholes p a:hover 	{border-bottom:1px solid #bbb;text-decoration:none}
+div.pigeonholes p strong a:visited 	{color:#000}
+/*div.pigeonholes p a:after 	{content:"…"}*/
+
 #extra 	{padding-top:1em}
 div.floaticon 	{line-height:2em}
 div.floaticon a img	{padding:0 4px}
@@ -489,6 +505,7 @@ select,input,textarea	{border-width:1px}
 /* bugs */
 div.spell_container 	{max-width:600px !important}
 #boards div.spell_container textarea 	{height:444px !important}
+#boards .minifind	{text-align:center}
 #treasury ul.data img.thumb 	{max-width:160px}
 td pre 	{max-width:555px;overflow:auto}
 div.login-box li,div.package-menu li	{border-bottom:2px solid #fff}
@@ -530,6 +547,7 @@ div.blocks1  #wrapper	{width:100%}
 #extra	{clear:both;width:100%}
 
 #content 	{padding-right:14px}
+#wrapper {border-bottom:6em solid white}
 
 
 
