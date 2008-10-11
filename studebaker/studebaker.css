@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.53 2008/10/10 03:19:28 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.54 2008/10/11 07:32:22 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.53 $
+ * @version  $Revision: 1.54 $
  * @theme    essential
  * @license  LGPL
  *
@@ -414,7 +414,7 @@ div.bitbox.r2	{border-color:#9f763c}
 div.bitbox.stub	{border-color:#326cae}
 
 div.module h3 	{padding:1px 0;font-size:12px;font-family:verdana,sans-serif}
-div.module ul, 	
+div.module ul,
 div.module ol 	{padding:0;margin:0}
 
 div.module.search-box .row	{float:left; clear:none; margin:0; padding:0}
@@ -476,7 +476,7 @@ div.sf-project-summary li 	{background:transparent;font-size:11px;overflow:hidde
 div.sf-project-summary li small 	{display:none}
 
 div.pagination	{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-align:center;width:99%;margin:0 auto;font-weight:700}
-div.pagination span.left, 
+div.pagination span.left,
 div.pagination span.right	{display:block;width:100%;float:none !important;text-align:center !important;margin:0 auto;padding:1em 0;text-transform:uppercase}
 #content div.pagination a 	{text-decoration:none;padding:3px;border:1px solid #fff}
 #content div.pagination a:hover 	{background:#eee;color:#003b9a;border:1px solid #ddd}
@@ -495,7 +495,7 @@ div.pigeonholes p strong a:visited 	{color:#000}
 #extra 	{padding-top:1em}
 div.floaticon 	{line-height:2em}
 div.floaticon a img	{padding:0 4px}
-#poweredby, 
+#poweredby	{display:block;padding:1em 0;background:none}
 #footer	{display:block;padding:1em 0}
 select,input,textarea	{border-width:1px}
 
