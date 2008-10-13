@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.54 2008/10/11 07:32:22 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.55 2008/10/13 18:47:07 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.54 $
+ * @version  $Revision: 1.55 $
  * @theme    essential
  * @license  LGPL
  *
@@ -43,7 +43,7 @@
 /* basics */
 body	{line-height:normal; font-size:12px;font-family:'Verdana','Bitstream Vera Sans',sans-serif}
 pre, code, .code, .codelisting	{font-family:monospace !important; text-align:left !important}
-pre	{overflow:auto; text-align:left}
+pre	{overflow:auto; text-align:left;width:99%}
 img	{border:0}
 hr	{}
 small,.small	{font-size:0.8em}
@@ -58,6 +58,8 @@ h1,h2,h3	{padding:5px 0; margin:0; font-weight:700; font-family:Arial,'Bitstream
 h1	{letter-spacing:-1px}
 h2	{letter-spacing:-1px}
 h3	{}
+h4	{border-bottom:1px solid #ddd;text-indent:2em}
+h4.tab	{border-bottom:0px;text-indent:0em}
 
 /* common classes */
 div.body	{}
@@ -110,7 +112,7 @@ div.formhelp	{cursor:help}
 /* parsed elements from the tikiwiki parser */
 table.bittable	{border-collapse:separate; border-spacing:1px}
 table.bittable td	{padding:1px 2px}
-div.bitbox	{margin:0.5em; padding:0.5em 1em; border:2px solid #ffbb5e; background:#eee}
+div.bitbox	{margin:0.5em 0; padding:0.5em 1em; border:2px solid #ffbb5e; background:#f5f5f7}
 div.bitbox a	{}
 div.bitbar	{border-bottom:3px solid #eee}
 
@@ -331,7 +333,7 @@ div.tabsystem div.tabcontainer	{margin:0; padding:0; border:0; clear:both; z-ind
 div.tabsystem div.tabcontainer h4.tab,
 div.tabsystem div.tabcontainer h4.tab-active {position:relative; display:inline; float:left; z-index:1; white-space:nowrap}
 div.tabsystem div.tabpage	{z-index:1; clear:both}
-h4	{margin:0; padding:0; z-index:1}
+h4.tab	{margin:0; padding:0; z-index:1}
 
 /* tabs design */
 div.tabsystem div.tabcontainer h4.tab,
