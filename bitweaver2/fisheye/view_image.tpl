@@ -25,7 +25,7 @@
 					{if $url != $gContent->mInfo.display_url}<a href="{$gContent->getDisplayUrl(0,$size)|escape}">{/if}{tr}{$size}{/tr}{if $url != $gContent->mInfo.display_url}</a>{/if}
 					{if !$smarty.foreach.size.last}&nbsp;|&nbsp;{/if}
 				{/foreach}
-				{if $gContent->hasEditPermission() || $gGallery && $gGallery->getPreference('link_original_images')}
+				{if $gContent->hasUpdatePermission() || $gGallery && $gGallery->getPreference('link_original_images')}
 					&nbsp;|&nbsp;
 					<a href="{$gContent->mInfo.image_file.source_url|escape}">{tr}Original{/tr}</a>
 					{if $gContent->mInfo.width && $gContent->mInfo.height}
