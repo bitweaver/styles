@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.57 2008/11/12 05:48:58 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.58 2008/11/12 16:28:51 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.57 $
+ * @version  $Revision: 1.58 $
  * @theme    essential
  * @license  LGPL
  *
@@ -260,9 +260,12 @@ ul.bitmenu li.logo:hover li a,
 ul.bitmenu li.logo li a	{background:transparent; height:auto}
 ul.bitmenu li.logo li a:hover	{background:transparent}
 
-/* html tags */
+/* links */
 a.create	{padding-right:8px; background:transparent url( images/create.gif ) right no-repeat; font-style:italic; color:#000}
 a.external	{padding-right:12px; background:transparent url( images/external.gif ) right 3px no-repeat}
+a[href^="http://www.bitweaver"],
+a[href^="http://bitweaver"]	{background-image:none;padding-right:0}
+
 
 /* headings */
 div.header	{margin-bottom:10px}
