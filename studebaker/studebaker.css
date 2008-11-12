@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.56 2008/11/11 22:28:48 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.57 2008/11/12 05:48:58 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.56 $
+ * @version  $Revision: 1.57 $
  * @theme    essential
  * @license  LGPL
  *
@@ -411,12 +411,11 @@ table.bw_sites.bws_showcase td img,
 table.bw_sites.bws_comunity td img  	{max-width:160px;max-height:160px}
 
 /* bitweaver features */
-table#bwfeats    	{border-collapse:separate;border-spacing:0px;line-height:20px}
-table#bwfeats th   	{text-align:left;padding:0 8px}
-table#bwfeats td   	{padding:8px;vertical-align:middle}
-table#bwfeats td img  	{display:block;margin:0 auto;max-width:32px;max-height:32px}
-table#bwfeats td a 	{margin:0 auto;font-weight:700}
-table#bwfeats td a.external 	{font-weight:500}
+table.bwfeats    	{border-collapse:separate;border-spacing:0px;line-height:20px;margin-top:1em}
+table.bwfeats th   	{text-align:left;padding:0 8px}
+table.bwfeats td   	{padding:8px;vertical-align:middle}
+table.bwfeats td img  	{display:block;margin:0 auto;max-width:32px;max-height:32px}
+table.bwfeats td a 	{margin:0 auto}
 
 
 div.bitbox.r2	{border-color:#9f763c}
