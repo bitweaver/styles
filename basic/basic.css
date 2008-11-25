@@ -87,6 +87,9 @@ ul.hor li ul	{border-color:#dedede;}
 .module		{margin:10px 0;}
 .module h3	{padding:2px; font-weight:900;}
 
+/*** tickets ***/
+.ticket ul li {padding-top: 1em;}
+
 /*** miscellaneous ***/
 .cached		{font-size:10px;}
 
