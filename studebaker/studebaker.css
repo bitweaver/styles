@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.58 2008/11/12 16:28:51 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.59 2008/11/25 08:13:38 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.58 $
+ * @version  $Revision: 1.59 $
  * @theme    essential
  * @license  LGPL
  *
@@ -390,17 +390,21 @@ ul.hor li li li:hover ul	{left:auto}
 
 
 /* bitweaver.org */
+div.samplepackagedissection div.maketoc,
+div.theabsolutebeginnersguide div.maketoc,
 div.bitweaverfaq div.maketoc 	{float:none; border:0px; width:100%; background:transparent; padding-bottom:1em}
+div.samplepackagedissection div.maketoc ul,
+div.theabsolutebeginnersguide div.maketoc ul,
 div.bitweaverfaq div.maketoc ul	{margin-bottom:1.5em}
+div.samplepackagedissection div.maketoc ul li,
+div.theabsolutebeginnersguide div.maketoc ul li,
 div.bitweaverfaq div.maketoc ul li	{font-weight:bold}
+div.samplepackagedissection div.maketoc ul li li,
+div.theabsolutebeginnersguide div.maketoc ul li li,
 div.bitweaverfaq div.maketoc ul li li	{font-weight:normal}
-div.bitweaverfaq h2	{font-size:1em; font-weight:bold;margin-top:2em;letter-spacing:0}
-
-div.theabsolutebeginnersguide div.maketoc {float:none; border:0px; width:100%; background:transparent; padding-bottom:1em}
-div.theabsolutebeginnersguide div.maketoc ul {margin-bottom:1.5em}
-div.theabsolutebeginnersguide div.maketoc ul li {font-weight:bold}
-div.theabsolutebeginnersguide div.maketoc ul li li {font-weight:normal}
-div.theabsolutebeginnersguide h2	{font-size:1em; font-weight:bold;margin-top:2em;letter-spacing:0}
+div.samplepackagedissection h2,
+div.theabsolutebeginnersguide h2,
+div.bitweaverfaq h2	{font-size:1em;font-weight:bold;margin:2em 0 0.5em 0;padding-bottom:0;letter-spacing:0;border-bottom:1px solid #ffbb5e}
 
 /* bitweaver_sites */
 table.bw_sites    	{border-collapse:separate;border-spacing:0px;line-height:20px;margin-top:1em;border-top:0px;border-left:0px}
