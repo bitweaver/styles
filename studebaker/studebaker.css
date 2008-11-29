@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.59 2008/11/25 08:13:38 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.60 2008/11/29 13:04:26 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.59 $
+ * @version  $Revision: 1.60 $
  * @theme    essential
  * @license  LGPL
  *
@@ -459,11 +459,16 @@ div.ilike ol li a	{font-weight:700;font-size:12px;text-decoration:underline;disp
 #articles div.fisheye-images li a	{width:48px;height:48px;display:block}
 #articles div.fisheye-images li img	{width:48px;height:48px;display:block}
 
-div.last-modif-pages li	{list-style:none;padding:1px 0}
-div.last-modif-pages li a	{white-space:nowrap;overflow:hidden;display:block}
 
+
+div.last-modif-pages li,
+div.last-comments li,
 div.last-board-posts li	{list-style:none;padding:1px 0;background:#fff}
+
+div.last-modif-pages li a,
 div.last-board-posts li a	{white-space:nowrap;overflow:hidden;display:block}
+
+div.last-comments li {overflow:hidden;white-space:nowrap;width:98%}
 div.last-board-posts div.date	{display:none}
 
 #boards div.last-board-posts div.date	{display:block;font-size:9px;color:#aaa}
@@ -505,7 +510,7 @@ html>body div.pigeonholes p a 	{border-bottom:1px solid #fff;line-height:15px;he
 html>body div.pigeonholes p a:visited 	{color:#888}
 html>body div.pigeonholes p a:hover 	{border-bottom:1px solid #bbb;text-decoration:none}
 div.pigeonholes p strong a:visited 	{color:#000}
-/*div.pigeonholes p a:after 	{content:"…"}*/
+/*div.pigeonholes p a:after 	{content:"?"}*/
 
 #extra 	{padding-top:1em}
 div.floaticon 	{line-height:2em}
