@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.28 2008/10/05 08:51:21 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.29 2009/01/07 16:52:00 squareing Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.28 $
+ * @version  $Revision: 1.29 $
  * @theme    essential
  * @license  LGPL
  */
@@ -332,4 +332,4 @@
 	margin:1.6cm 2cm;
 }
 
-/* vim: set ts=10: */
+/* vim: set sw=10 ts=10: */
