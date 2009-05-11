@@ -1,6 +1,6 @@
 {strip}
 <div id="bittop">
-	<ul class="bitmenu">
+	<ul id="nav" class="dropmenu">
 		<li class="left"><!-- --></li>
 		<li><a class="parent" href="/wiki/Download" title="Get the latest release!">Downloads</a>
 			<ul>
@@ -42,4 +42,10 @@
 		<li class="right"><!-- --></li>
 	</ul>
 </div>
+<!--[if lt IE 8]>
+<script type="text/javascript">
+	    BitBase.fixIEDropMenu( 'nav' );
+</script>
+<![endif]-->
+
 {/strip}

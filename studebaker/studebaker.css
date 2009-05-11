@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.62 2009/05/06 15:10:18 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.63 2009/05/11 16:46:49 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.62 $
+ * @version  $Revision: 1.63 $
  * @theme    essential
  * @license  LGPL
  *
@@ -216,49 +216,33 @@ pre	{padding:0.5em; margin-top:0; background:#f5f5f7; color:#000; border:1px sol
 
 /* our custom dropdown menu */
 #bittop	{height:120px; width:876px; margin:0 auto}
-ul.bitmenu	{line-height:3em;clear:both}
-ul.bitmenu ul li	{line-height:2em; padding:0; margin:0}
-ul.bitmenu,
-ul.bitmenu li,
-ul.bitmenu ul	{padding:0; margin:0; list-style:none}
-ul.bitmenu li li,
-ul.bitmenu li ul	{width:178px; display:block}
-ul.bitmenu li	{float:left; position:relative}
-ul.bitmenu li ul	{position:absolute; left:-999em}
-ul.bitmenu li ul ul	{margin:-2.1em 0 0 13em}
-ul.bitmenu li li a	{margin:0 0 0 2em}
-ul.bitmenu,
-ul.bitmenu a,
-ul.bitmenu li ul	{z-index:1000}
-ul.bitmenu li ul	{background-color:#d2e8fe; border:1px solid #003b9a; border-top:0}
 
-ul.bitmenu li:hover ul ul,
-ul.bitmenu li:hover ul ul ul	{left:-999em}
-ul.bitmenu li:hover ul,
-ul.bitmenu li li:hover ul,
-ul.bitmenu li li li:hover ul	{left:auto}
+ul.dropmenu	{line-height:3em;clear:both}
+ul.dropmenu>ul>li	{line-height:2em; padding:0; margin:0}
+ul.dropmenu,
+ul.dropmenu li,
+ul.dropmenu ul	{padding:0; margin:0; list-style:none}
+ul.dropmenu>li>ul li	{width:178px; display:block;padding:6px}
+ul.dropmenu li ul	{background-color:#d2e8fe; border:1px solid #003b9a; border-top:0}
+ul.dropmenu li ul li ul	{margin:-2.1em 0 0 13em}
 
 /* some menu styling */
-ul.bitmenu,
-ul.bitmenu li	{padding:0; margin:0; list-style:none}
-ul.bitmenu li	{background:transparent url( images/bar.png ) 0 32px repeat-x; width:180px; float:left}
-ul.bitmenu li.left	{width:18px; height:70px; background:transparent url( images/outside.png ) left 32px no-repeat}
-ul.bitmenu li.right	{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat}
-ul.bitmenu li a	{text-align:center; margin-top:32px; display:block; line-height:38px; color:#003b9a; font-size:16px; text-transform:uppercase}
-ul.bitmenu li:hover a.parent	{color:#ffffff}
-ul.bitmenu li li a 	{padding-left:5px;text-align:left}
-ul.bitmenu li li a:hover	{background:#ffbb5e}
-/* reverse above effects */
-ul.bitmenu li li a	{background:transparent; margin:0; line-height:26px; font-size:12px; text-transform:none}
+ul.dropmenu>li	{background:transparent url( images/bar.png ) 0 32px repeat-x; line-height:38px; width:180px;float:left}
+ul.dropmenu>li.left	{width:18px; height:70px; background:transparent url( images/outside.png ) left 32px no-repeat}
+ul.dropmenu>li.right	{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat}
+ul.dropmenu>li>a	{text-align:center; margin-top:32px; display:block; color:#003b9a; font-size:16px; text-transform:uppercase}
+ul.dropmenu>li:hover a.parent	{color:#ffffff}
+ul.dropmenu>li>ul>li  	{text-align:left}
+ul.dropmenu>li>ul>li:hover	{background:#ffbb5e}
 /* logo item is special */
-ul.bitmenu li.logo	{width:120px}
-ul.bitmenu li.logo a	{background:transparent url( images/logo.png ) top no-repeat; margin-top:0; height:100px}
-ul.bitmenu li.logo:hover a,
-ul.bitmenu li.logo a:hover	{background:transparent url( images/logo.png ) bottom no-repeat}
-ul.bitmenu li.logo ul	{margin-top:-90px; margin-left:-30px; border:1px solid #003b9a}
-ul.bitmenu li.logo:hover li a,
-ul.bitmenu li.logo li a	{background:transparent; height:auto}
-ul.bitmenu li.logo li a:hover	{background:transparent}
+ul.dropmenu li.logo	{width:120px}
+ul.dropmenu li.logo a	{background:transparent url( images/logo.png ) top no-repeat; margin-top:0; height:100px}
+ul.dropmenu li.logo:hover a,
+ul.dropmenu li.logo a:hover	{background:transparent url( images/logo.png ) bottom no-repeat}
+ul.dropmenu li.logo ul	{margin-top:-90px; margin-left:-30px; border:1px solid #003b9a}
+ul.dropmenu li.logo:hover li a,
+ul.dropmenu li.logo li a	{background:transparent; height:auto}
+ul.dropmenu li.logo li a:hover	{background:transparent}
 
 /* links */
 a.create	{padding-right:8px; background:transparent url( images/create.gif ) right no-repeat; font-style:italic; color:#000}
@@ -348,26 +332,6 @@ div.tabsystem div.tabcontainer h4.tab-hover {padding:3px 5px 1px 5px; border-top
 div.tabsystem div.tabcontainer h4.tab-active {top:1px; margin:0 0px; color:#000; padding:2px 8px 4px 8px; background:#fff; border-top:2px solid #f60}
 div.tabsystem div.tabpage	{border:1px solid #bbb; margin:0; padding:1em}
 
-/* css driven dropdown menus - horizontal */
-ul.hor	{line-height:2em}
-ul.hor .icon	{vertical-align:middle; padding:0 0.6em 0 0; margin-left:-2.2em}
-ul.hor ul li	{line-height:2em}
-ul.hor,
-ul.hor li,
-ul.hor ul	{padding:0; margin:0; list-style:none}
-ul.hor a	{display:block; padding:0 0.5em}
-ul.hor li	{width:auto}
-ul.hor li li,
-ul.hor li ul	{width:13em; display:block; text-align:left}
-ul.hor .head	{width:auto}
-ul.hor li	{float:left; position:relative}
-ul.hor li ul	{position:absolute; left:-999em; border:1px solid}
-ul.hor li ul ul	{margin:-2.1em 0 0 13em}
-ul.hor li li a	{margin:0 0 0 2em}
-/* ensure dropdown is on top */
-ul.hor,
-ul.hor a,
-ul.hor li ul	{z-index:1000}
 /* set some background colors for visibility */
 /* thanks to our favourite browser we can't simply inherit the values */
 div#bittopbar,
