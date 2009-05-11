@@ -1,4 +1,4 @@
-/* @import url( ../../base.css ); */
+/* @import url( ../../css/base.css ); */
 /* @import url( showdiv.css ); */
 /* @import url( showsitelayout.css ); */
 /* @import url( showpagelayout.css ); */
@@ -102,7 +102,7 @@ div.box                 {}       /* any box on the site, including <div class="b
 
                         /*** menus ***/
 /* menus can be tricky to define since we use CSS dropdown menus which require
- * a lot of sophisticated css code. please view existing themes and base.css
+ * a lot of sophisticated css code. please view existing themes and css/base.css
  * on how to create a working css dropdown menu.  a working css menu dropdown
  * is included as an example towards the end of this file. */
 .menu .head             {}       /* main section of menus - also menu items in #bittopbar */

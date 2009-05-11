@@ -1,7 +1,7 @@
 {strip}
 <div id="bittopbarwrap">
 	<div id="bittopbar">
-		<ul id="nav" class="menu hor">
+		<ul id="nav" class="dropmenu">
 			<li class="m-home">
 				<a class="head" accesskey="h" href="{$smarty.const.BIT_ROOT_URL}">{$gBitSystem->getConfig('site_menu_title')|default:$gBitSystem->getConfig('site_title')}</a>
 				{include file="bitpackage:kernel/menu_global.tpl"}
