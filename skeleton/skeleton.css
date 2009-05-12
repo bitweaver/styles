@@ -1,0 +1,240 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/skeleton/skeleton.css,v 1.1 2009/05/12 17:43:35 squareing Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>
+ * @version  $Revision: 1.1 $
+ * @theme    essential
+ * @license  LGPL
+ */
+
+@import url( ../../css/base.css );
+@media all	{
+	/* basics */
+	*				{}
+	body				{}
+	pre *,code *,
+	.code,.codelisting,
+	.codelisting *			{}
+	pre				{}
+	img				{}
+	hr				{}
+	small,.small			{}
+
+	/* links */
+	:link,
+	:visited				{}
+	:link:hover,
+	:visited:hover,
+	:link:active,
+	:visited:active			{}
+	/* links to external sites */
+	a.external			{}
+
+	/* titles */
+	h1,h2,h3				{}
+	h1				{}
+	h2				{}
+	h3				{}
+
+	/* common classes */
+	.body				{}
+	.date				{}
+	.header .date			{}
+	.content				{}
+	.post				{}
+	.preview				{}
+	.norecords			{}
+	.popup				{}
+	.highlight			{}
+	.selected				{}
+	.floaticon			{}
+	.comment				{}
+	.footer				{}
+	.pagination			{}
+
+	/* images */
+	.portrait				{}
+	.icon				{}
+	.small				{}
+	.menuicon				{}
+
+	/* tocs */
+	.maketoc				{}
+
+	/* forms */
+	form				{}
+	textarea				{}
+	input				{}
+	select				{}
+	fieldset				{}
+	legend				{}
+	.row				{}
+	.submit				{}
+	.quicktags			{}
+	.formlabel			{}
+	.forminput			{}
+	.formhelp				{}
+	.error				{}
+	.warning				{}
+	.success				{}
+	.clear				{}
+
+	/* module help on admin page */
+	.modulehelp kbd			{}
+	.modulehelp dt			{}
+	.modulehelp dd			{}
+	.modulehelp .example		{}
+
+	/* the small searchboxes */
+	.minifind				{}
+	.minifind fieldset			{}
+	.minifind legend			{}
+	.minifind fieldset			{}
+
+	/* common settings for listings */
+	.odd				{}
+	.even				{}
+
+	/* tables */
+	fieldset table			{}
+	table				{}
+	caption				{}
+	th				{}
+	th :link, th :visited		{}
+	td.actionicon			{}
+	table.data			{}
+	table.optionbar			{}
+	.menutable td			{}
+
+	/* lists */
+	ul,ul li				{}
+	ul.data,ul.data li.item		{}
+	ul.data				{}
+	ul.data li.item			{}
+	ul.data .thumb			{}
+
+	li.odd,li.even			{}
+	ul.toc,ul.toc ul			{}
+	ul.toc li				{}
+	ul.toc ul.data			{}
+	ul.toc p				{}
+
+	dl				{}
+	dt				{}
+	dd				{}
+
+	/* boxes */
+	.box				{}
+	.boxcontent			{}
+
+	/* structure navigation */
+	.path				{}
+	.navigation span			{}
+	.navigation .left			{}
+	.navigation .right			{}
+	.navigation span a			{}
+
+	/* this is the attachment browser */
+	.attbrowser			{}
+	.attbrowser .data			{}
+	.attbrowser .data td		{}
+
+	/* parsed elements from the tikiwiki parser */
+	table.bittable			{}
+	div.bitbox			{}
+	div.bitbar			{}
+}
+
+@media screen,projection,tv	{
+	/* layout */
+	html				{}
+	body				{}
+
+	#container			{}
+	#header				{}
+	#wrapper				{}
+	#content .display,
+	#content .edit,
+	#content .listing,
+	#content .admin			{}
+	#navigation			{}
+	#extra				{}
+	#footer				{}
+
+	#bittop				{}
+	#bittopbar			{}
+
+	/* html tags */
+	body				{}
+	a.create				{}
+	a.external			{}
+
+	/* headings */
+	.header				{}
+	.header h1			{}
+	.tabsystem .header h1		{}
+	.header h2			{}
+	.comment				{}
+	.comment h3			{}
+	.post				{}
+	.comment .post			{}
+	.comment .content			{}
+	.display				{}
+
+	/* various settings */
+	.pagination			{}
+	.pagination a			{}
+	.gallerybar,
+	.structurebar			{}
+	.gallerybar a,
+	.structurebar a			{}
+	.avatar				{}
+	.errorpage p			{}
+
+	/* priorities */
+	.prio1				{}
+	.prio2				{}
+	.prio3				{}
+	.prio4				{}
+	.prio5				{}
+
+	/* navigation bars */
+	.navbar				{}
+	.navbar ul			{}
+	.navbar ul li			{}
+
+	/*** miscellaneous settings ***/
+	.quicktag				{}
+
+	/* boxes and modules */
+	.box				{}
+	.box h3				{}
+	.popup				{}
+	.popup small			{}
+	.popup h3				{}
+	.closebutton			{}
+
+	/* modules */
+	.module				{}
+	.module h3			{}
+	.module h3 a			{}
+	.module ul			{}
+	.module ul ul			{}
+	.module ul li			{}
+	.module ol			{}
+	.module ol li			{}
+}
+
+@media print	{
+	body				{margin:0; padding:0;}
+	.blocks1, .blocks2, .blocks3,
+	#wrapper, #content			{width:100% !important; margin:0 !important; padding:0 !important;}
+	#header, #navigation, #extra, #footer,
+	.bittoc, .floaticon, .minifind, .navbar	{display:none;}
+	.post,.item			{page-break-inside:avoid;}
+}
+
+@page	{
+	margin:1.6cm 2cm;
+}
+
+/* vim: set sw=10 ts=10: */
