@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.64 2009/05/11 17:26:12 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.65 2009/05/17 05:51:47 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.64 $
+ * @version  $Revision: 1.65 $
  * @theme    essential
  * @license  LGPL
  *
@@ -96,7 +96,7 @@ div.submit	{text-align:center; margin:1em 0}
 div.quicktags	{}
 div.formlabel	{float:left; font-weight:bold; width:14em; text-align:right}
 div.forminput	{margin-left:14.5em}
-div.formhelp	{cursor:help}
+div.formhelp	{cursor:help; font-size:smaller;}
 .closebutton	{}
 .error,.errorpage h3	{}
 .warning	{}
