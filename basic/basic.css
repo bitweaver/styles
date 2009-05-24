@@ -1,5 +1,4 @@
-@import url( ../../css/base.css );
-@import url( ../../css/tabsystem.css );
+@import url( ../../css/import.css );
 
 /*
  * if you require information on how this css is set up and how to create a theme, please visit
@@ -25,21 +24,12 @@ a:hover		{color:#900;}
 
 /*** menus ***/
 .icon		{vertical-align:middle;}
-div#bittopbar	{background:#e9ecef; margin-bottom:5px; border:solid #dedede; border-width:1px 0; line-height:20px;}
+div#bittopbar	{background:#e9ecef; margin-bottom:5px; border:solid #dedede; border-width:1px 0; height:22px;}
 ul.hor li		{background-color:#e9ecef;}
 ul.hor li li 	{background-color:#eee;}
 ul.hor li:hover	{background:#fff}
 ul.hor a:hover	{background-color:#036; color:#fff;}
 ul.hor li ul	{border-color:#dedede;}
-
-/* Uncomment this if you want a cool admin menu
-.m-admin		{position:absolute !important; top:0em !important; left:50% !important; margin-left:-286px !important; width:592px !important; text-align:center;}
-.m-admin>a	{border:0 !important; background:#036 !important; color:#fff !important; padding:5px 0 !important;}
-.m-admin>ul	{width:592px !important; padding:0px; background:#036 !important; border:0 !important;}
-.m-admin>ul>li	{width:127px !important; margin:10px;}
-.m-admin>ul ul	{margin:-22px 0 0 126px !important;}
-.m-admin>ul>li>a	{text-align:center; background:#900; color:#fff; border:1px solid #ccc !important;}
-*/
 
 /*** wiki ***/
 /* parsed wikiclasses */

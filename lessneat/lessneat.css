@@ -1,6 +1,13 @@
-@import url( ../../css/base.css ); /* this theme is based on the classic www.tikiwiki.org theme 'moreneat' */
 @import url( ../../css/import.css );
 
+ul.data,
+ul.data li.item			{list-style:none; margin:0; padding:0;}
+ul.data li.item .thumb	{float:right;}
+ul.data h1,
+/* this is needed to make floaticons clickable in data listings */
+ul.data h2				{margin-top:0;}
+
+/* this theme is based on the classic www.tikiwiki.org theme 'moreneat' */
 /*** global settings ***/
 /* these settings should be at the top of the css since they are the defaults and can be overridden further down */
 body				{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:10px; background-color:#e9ecef;}
@@ -31,7 +38,7 @@ a img:hover			{}
 
 
 /*** site layout ***/
-#bittopbar			{background:#c7d0d9; border-top:1px solid #8cacbb; border-bottom:1px solid #8cacbb;}
+#bittopbar			{background:#c7d0d9; border-top:1px solid #8cacbb; border-bottom:1px solid #8cacbb; height:2em;}
 #bittopbar a		{text-decoration:none;}
 #bitprint			{}
 
@@ -120,27 +127,16 @@ a img:hover			{}
 /* find table found on pages with listings */
 .find				{}
 
-/* tabs */
-.tabsystem .tabcontainer             {margin:0; padding:0; border:0; clear:both; z-index:1;}
-.tabsystem .tabcontainer .tab,
-.tabsystem .tabcontainer .tab-active {position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
-.tabsystem .tabpage                  {z-index:1; clear:both;}
-
-/* tabstyle */
-.tabsystem .tabcontainer .tab a,
-.tabsystem .tabcontainer .tab-hover a,
-.tabsystem .tabcontainer .tab-active a	{text-decoration:none;}
-.tabsystem .tabcontainer .tab a:hover,
-.tabsystem .tabcontainer .tab-hover a:hover,
-.tabsystem .tabcontainer .tab-active a:hover	{background:transparent;}
+/*** tabstyle ***/
+.tabsystem .tabcontainer a				{text-decoration:none;}
+.tabsystem .tabcontainer a:hover		{background:transparent;}
 .tabsystem .tabcontainer .tab,
 .tabsystem .tabcontainer .tab-hover,
-.tabsystem .tabcontainer .tab-active	{top:3px; font:10px normal verdana,arial,sans-serif; margin:0 3px; padding:3px 5px 1px 5px; background:#c7d0d9; border:1px solid #ccc; border-bottom:0;}
-.tabsystem .tabcontainer .tab-hover		{padding-top:2px; border-top:2px solid #f90;}
-.tabsystem .tabcontainer .tab-active	{top:1px; padding:2px 8px 4px 8px; margin:0 0px; border-top:2px solid #f90; background:#e9ecef; color:#000;}
-.tabsystem .tabpage						{border:1px solid #ccc; padding:1.5em;}
-
-
+.tabsystem .tabcontainer .tab-active	{border-color:#ccc; background-color:#c7d0d9;}
+.tabsystem .tabcontainer .tab-hover		{border-top-color:#f90;}
+.tabsystem .tabcontainer .tab-active	{border-top-color:#f90; background-color:#fff; color:#000;}
+.tabsystem .tabcontainer h4				{font-size:10px;}
+.tabsystem .tabpage						{border-color:#ccc; padding:1.5em;}
 
 /*** navigation bars and tabs ***/
 .navbar				{}
