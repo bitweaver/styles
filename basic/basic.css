@@ -21,6 +21,7 @@ h1,h2,h3		{margin:0; padding:0.5em 0;}
 /*** links ***/
 a		{color:#036; text-decoration:none;}
 a:hover		{color:#900;}
+a img		{border:0}
 
 /*** menus ***/
 .icon		{vertical-align:middle;}
@@ -66,6 +67,7 @@ ul.hor li ul	{border-color:#dedede;}
 /*** navigation bars and tabs ***/
 .navbar		{margin:5px 0;}
 .navbar a		{padding:0 5px;}
+#navigation ol, #extra ol{ margin:16px; padding:0;}
 
 /*** pagination at the bottom of pages with listings ***/
 .pagination	{margin:10px 0;}
