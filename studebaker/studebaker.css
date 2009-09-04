@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.65 2009/05/17 05:51:47 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.66 2009/09/04 19:08:36 bitweaver Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.65 $
+ * @version  $Revision: 1.66 $
  * @theme    essential
  * @license  LGPL
  *
@@ -225,6 +225,7 @@ ul.dropmenu ul	{padding:0; margin:0; list-style:none}
 ul.dropmenu>li>ul li	{width:178px; display:block;padding:6px}
 ul.dropmenu li ul	{background-color:#d2e8fe; border:1px solid #003b9a; border-top:0}
 ul.dropmenu li ul li ul	{margin:-2.1em 0 0 13em}
+ul.dropmenu a   {padding:0 0;}
 
 /* some menu styling */
 ul.dropmenu>li	{background:transparent url( images/bar.png ) 0 32px repeat-x; line-height:38px; width:180px;float:left}
