@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.30 2009/05/04 08:04:54 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.31 2009/11/06 02:34:18 wjames5 Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.30 $
+ * @version  $Revision: 1.31 $
  * @theme    essential
  * @license  LGPL
  */
@@ -273,7 +273,7 @@
 	.tabsystem .tabcontainer .tab,
 	.tabsystem .tabcontainer .tab-active	{position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
 	.tabsystem .tabpage			{z-index:1; clear:both;}
-	h4				{margin:0; padding:0; z-index:1;}
+	.tabsystem .tabcontainer h4				{margin:0; padding:0; z-index:1;}
 
 	/* tabs design */
 	.tabsystem .tabcontainer .tab,
