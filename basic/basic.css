@@ -56,14 +56,6 @@ ul.hor li ul	{border-color:#dedede;}
 .minifind legend	{display:none;}
 .minifind fieldset	{border:none;}
 
-/* tabs */
-.tabsystem			{margin:5px;}
-.tabsystem .tabcontainer		{margin:0; padding:0; border:0; clear:both; z-index:1;}
-.tabsystem .tabcontainer .tab,
-.tabsystem .tabcontainer .tab-active	{position:relative; display:inline; float:left; z-index:1; white-space:nowrap;}
-.tabsystem .tabpage				{z-index:1; clear:both;}
-.tabsystem .tabcontainer h4		{margin:0; padding:0; z-index:1;}
-
 /*** tabstyle ***/
 .tabsystem .tabcontainer .tab,
 .tabsystem .tabcontainer .tab-hover,
