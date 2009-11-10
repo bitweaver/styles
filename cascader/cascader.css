@@ -1,7 +1,9 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.31 2009/11/06 02:34:18 wjames5 Exp $ */
+@import url( ../../css/import.css );
+
+/* $Header: /cvsroot/bitweaver/_bit_styles/cascader/cascader.css,v 1.32 2009/11/10 04:03:32 wjames5 Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.31 $
+ * @version  $Revision: 1.32 $
  * @theme    essential
  * @license  LGPL
  */
@@ -183,7 +185,7 @@
 
 	#container			{padding:5px;}
 	#header				{padding:5px 5px 0 5px;}
-	#wrapper				{}
+	#wrapper			{}
 	#content .display,
 	#content .edit,
 	#content .listing,
