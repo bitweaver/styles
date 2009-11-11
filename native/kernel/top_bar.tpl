@@ -53,6 +53,13 @@
 		<div class="clear"></div>
 	</div>
 </div>
+
+<!--[if lt IE 8]>
+<script type="text/javascript">
+    BitBase.fixIEDropMenu( 'nav' );
+</script>
+<![endif]-->
+
 {if $gBitSystem->isFeatureActive('site_top_bar_js') && $gBitSystem->isFeatureActive('site_top_bar_dropdown')}
 	<script type="text/javascript"> /*<![CDATA[*/
 		var listMenu = new FSMenu('listMenu', true, 'left', 'auto', '-999');
