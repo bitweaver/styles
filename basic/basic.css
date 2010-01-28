@@ -25,12 +25,8 @@ a img		{border:0}
 
 /*** menus ***/
 .icon		{vertical-align:middle;}
+div#header div.nexus-menu,
 div#bittopbar	{background:#e9ecef; margin-bottom:5px; border:solid #dedede; border-width:1px 0; height:22px;}
-ul.hor li		{background-color:#e9ecef;}
-ul.hor li li 	{background-color:#eee;}
-ul.hor li:hover	{background:#fff}
-ul.hor a:hover	{background-color:#036; color:#fff;}
-ul.hor li ul	{border-color:#dedede;}
 
 /*** wiki ***/
 /* parsed wikiclasses */
