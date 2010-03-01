@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.66 2009/09/04 19:08:36 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.67 2010/03/01 18:48:23 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.66 $
+ * @version  $Revision: 1.67 $
  * @theme    essential
  * @license  LGPL
  *
@@ -89,7 +89,7 @@ form	{margin:0; padding:0}
 textarea	{width:99%}
 input	{}
 select	{}
-fieldset	{}
+fieldset	{border:0px}
 legend	{font-weight:bold; margin:0 0 1.5em 0}
 div.row	{clear:both; margin:0 0 1em 0}
 div.submit	{text-align:center; margin:1em 0}
@@ -415,33 +415,33 @@ div.last-comments li,
 div.last-board-posts li	{list-style:none;padding:1px 0;background:#fff}
 
 div.last-modif-pages li a,
-div.last-board-posts li a	{white-space:nowrap;overflow:hidden;display:block}
+div.last-board-posts li a	{white-space:nowrap;overflow:hidden;display:block;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%}
 
-div.last-comments li {overflow:hidden;white-space:nowrap;width:98%}
+div.last-comments li	{overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%}
 div.last-board-posts div.date	{display:none}
 
 #boards div.last-board-posts div.date	{display:block;font-size:9px;color:#aaa}
 #boards div.last-board-posts div.date a {display:inline;color:#aaa}
 #boards div.last-board-posts li	{display:block;padding:3px 4px}
-#boards div.last-board-posts li a	{display:block;white-space:normal;overflow:hidden;max-width:100%}
+#boards div.last-board-posts li a	{display:block;white-space:normal;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%;max-width:100%}
 #boards div.last-board-posts li.odd	{background:#e7f1fe}
 #boards div.last-board-posts li.even	{background:#f5f5f7}
 
 div.top-authors li	{list-style:none}
-div.top-authors li a	{white-space:nowrap;overflow:hidden;display:block;padding:1px 0}
+div.top-authors li a	{white-space:nowrap;overflow:hidden;display:block;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%;padding:1px 0}
 
 div.login-box ul	{padding-top:4px}
 div.login-box li	{list-style:none;white-space:nowrap;overflow:hidden}
 div.login-box li a	{font-weight:700}
 
 div.treasury-items li	{list-style:none;padding:1px 0 !important;background:#fff}
-div.treasury-items li a	{white-space:nowrap;overflow:hidden;display:block}
+div.treasury-items li a	{white-space:nowrap;overflow:hidden;display:block;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%}
 
-div.module.rss-feed li 	{background:transparent;font-size:11px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
+div.module.rss-feed li 	{background:transparent;font-size:11px;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%;font-family:arial,helvetica,sans-serif}
 div.module.rss-feed li div.date 	{display:none}
 div.module.rss-feed li a.more 	{display:none}
 
-div.sf-project-summary li 	{background:transparent;font-size:11px;overflow:hidden;white-space:nowrap;font-family:arial,helvetica,sans-serif}
+div.sf-project-summary li 	{background:transparent;font-size:11px;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;width:100%;font-family:arial,helvetica,sans-serif}
 div.sf-project-summary li small 	{display:none}
 
 div.pagination	{font-family:monospace;font-size:14px;padding:4em 0 2em 0;text-align:center;width:99%;margin:0 auto;font-weight:700}
@@ -476,7 +476,7 @@ div.spell_container 	{max-width:600px !important}
 #boards div.spell_container textarea 	{height:444px !important}
 #boards .minifind	{text-align:center}
 #treasury ul.data img.thumb 	{max-width:160px}
-td pre 	{max-width:555px;overflow:auto}
+div.tabsystem table.bittable td pre 	{background:#fff;border:0px}
 div.login-box li,div.package-menu li	{border-bottom:2px solid #fff}
 
 
