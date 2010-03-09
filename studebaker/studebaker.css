@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.67 2010/03/01 18:48:23 laetzer Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/studebaker.css,v 1.68 2010/03/09 16:28:36 laetzer Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>
- * @version  $Revision: 1.67 $
+ * @version  $Revision: 1.68 $
  * @theme    essential
  * @license  LGPL
  *
@@ -231,7 +231,7 @@ ul.dropmenu a   {padding:0 0;}
 ul.dropmenu>li	{background:transparent url( images/bar.png ) 0 32px repeat-x; line-height:38px; width:180px;float:left}
 ul.dropmenu>li.left	{width:18px; height:70px; background:transparent url( images/outside.png ) left 32px no-repeat}
 ul.dropmenu>li.right	{width:18px; height:70px; background:transparent url( images/outside.png ) right 32px no-repeat}
-ul.dropmenu>li>a	{text-align:center; margin-top:32px; display:block; color:#003b9a; font-size:16px; text-transform:uppercase}
+ul.dropmenu>li>a	{text-align:center; margin-top:32px; display:block; color:#003b9a; font-size:17px; text-transform:uppercase}
 ul.dropmenu>li:hover a.parent	{color:#ffffff}
 ul.dropmenu>li>ul>li  	{text-align:left}
 ul.dropmenu>li>ul>li:hover	{background:#ffbb5e}
@@ -244,6 +244,8 @@ ul.dropmenu li.logo ul	{margin-top:-90px; margin-left:-30px; border:1px solid #0
 ul.dropmenu li.logo:hover li a,
 ul.dropmenu li.logo li a	{background:transparent; height:auto}
 ul.dropmenu li.logo li a:hover	{background:transparent}
+
+ul.dropmenu li:hover	{background-position:0 32px}
 
 /* links */
 a.create	{padding-right:8px; background:transparent url( images/create.gif ) right no-repeat; font-style:italic; color:#000}
