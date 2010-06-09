@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/studebaker/users/mod_login_box.tpl,v 1.6 2008/07/31 17:54:09 bitweaver Exp $ *}
+{* $Header$ *}
 {strip}
 	{if $gBitUser->IsRegistered()}
 		{assign var='nameTitle' value=$gBitUser->mInfo.login}

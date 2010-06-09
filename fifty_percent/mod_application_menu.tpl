@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/fifty_percent/mod_application_menu.tpl,v 1.6 2006/09/07 16:54:37 squareing Exp $ *}
+{* $Header$ *}
 {strip}
 
 {bitmodule title="$moduleTitle" name="application_menu"}

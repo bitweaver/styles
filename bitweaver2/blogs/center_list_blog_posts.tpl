@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/blogs/center_list_blog_posts.tpl,v 1.1 2007/05/02 17:42:54 laetzer Exp $ *}
+{* $Header$ *}
 {if $blogPosts || $showEmpty}
 <div class="floaticon">{bithelp}</div>
 

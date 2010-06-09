@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/blogs/mod_last_blog_posts.tpl,v 1.2 2007/06/09 19:51:33 laetzer Exp $ *}
+{* $Header$ *}
 
 {if $gBitSystem->isPackageActive('blogs')}
 	{bitmodule title="$moduleTitle" name="last_blog_posts"}

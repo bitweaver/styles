@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/boards/list_posts.tpl,v 1.2 2008/02/03 05:43:28 jht001 Exp $ *}
+{* $Header$ *}
 {strip}
 <div class="listing boards">
 

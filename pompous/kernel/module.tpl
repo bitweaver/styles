@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/pompous/kernel/module.tpl,v 1.2 2006/09/03 20:14:20 squareing Exp $ *}
+{* $Header$ *}
 {strip}
 <div class="module box {$module_name|replace:"_":"-"}">
 	{if $module_title}

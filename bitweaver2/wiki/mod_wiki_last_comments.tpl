@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/bitweaver2/wiki/mod_wiki_last_comments.tpl,v 1.1 2007/06/09 19:51:33 laetzer Exp $ *}
+{* $Header$ *}
 {if $lastComments}
 	{if $nonums eq 'y'}
 		{eval var="{tr}Last `$module_rows` wiki comments{/tr}" assign="tpl_module_title"}

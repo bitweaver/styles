@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/lynx/kernel/module.tpl,v 1.4 2006/09/03 20:14:19 squareing Exp $ *}
+{* $Header$ *}
 {strip}
 	{if $module_title}
 		<h3>

@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_styles/chemokine/kernel/module.tpl,v 1.7 2006/09/03 20:14:19 squareing Exp $ *}
+{* $Header$ *}
 {strip}
 <div class="module box {$module_name|replace:"_":"-"}">
 
