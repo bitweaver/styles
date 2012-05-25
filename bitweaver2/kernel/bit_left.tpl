@@ -12,7 +12,7 @@
 			</ul>
 		</div>
 
-		{if $SCRIPT_NAME eq '/articles/index.php'}
+		{if $smarty.server.SCRIPT_NAME eq '/articles/index.php'}
 		
 		<p id="logo">&nbsp;</p>
 		<p>Out of the box bitweaver comes with a full set of content packages like Articles, Wiki, Blogs, Image and Video Galleries &ndash; and framework packages like User Management, Choice of Database, Languages, Theming, Comments &hellip; and many, many more.</p>

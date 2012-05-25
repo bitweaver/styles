@@ -97,7 +97,7 @@
 	<![endif]-->
 {/if}
 
-{if $SCRIPT_NAME eq '/articles/index.php'}  
+{if $smarty.server.SCRIPT_NAME eq '/articles/index.php'}  
 	<link rel="stylesheet" media="all" href="{$smarty.const.THEMES_PKG_URL}styles/bitweaver2/bitweaver2_index.css" />
 	<style type="text/css" media="all">
 		#navigation {ldelim}background:url({$smarty.const.THEMES_PKG_URL}styles/bitweaver2/images/bg_navigation_{1|rand:3}.gif) no-repeat left top{rdelim}
